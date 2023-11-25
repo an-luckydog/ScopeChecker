@@ -1,20 +1,21 @@
-# wxappUnpacker
+# PCDA
 
-这是著名微信小程序反编译脚本项目，我不是原作者，我只是该项目的搬运工，用于自己的项目中，同时修复了因微信升级导致该脚本运行报错的BUG。上传该项目的初衷就是有两个：
-1. 原项目已被作者移除，估计是涉及到不可描述的社会问题；
-2. 备份一份项目，供大家使用，也是给自己一份保障
+这是小程序缺陷配置（PCDA）问题自动化分析工具的源代码，其中有两个自动化检测工具：
+1. 小程序api检测工具：pcdapit.py
+2. 问题小程序排查工具：pcdappt.py
 
 ## 使用方法
 1. 第一步
 ```
 npm install
 ```
+加载配置依赖，然后根据报错缺哪个依赖补充哪个
 
 2. 第二步
 ```
 node wuWxapkg.js <wx_mini_progranm_file_path>
 ```
-之后会在你运行JS脚本的同级目录生成跟.wxapkg同名的目录，解压后的源码就在该目录下面
+运行python脚本，获得检测结果
 
 ## 常见问题
 ```
@@ -27,7 +28,7 @@ npm i escodegen -S
 ```
 2. Error: This Package is unrecognizable, please decrypted every type of file by hand.
 ```
-#### 解决办法：虽然微信小程序的包后缀是.wxapkg，但有一些包的依赖后缀也是.wxapkg，真正的小程序包大小1M左右，而依赖包大小2、3M甚至更多。所以一股脑的反编译.wxapkg 类型的文件可能会报错，遇见这个问题的小伙伴请自知，你可能没找对包哦
+#### 解决办法：虽然微信小程序的包后缀是.wxapkg，但有一些包的依赖后缀也是.wxapkg，真正的小程序包大小1M左右，而依赖包大小2、3M甚至更多。所以一股脑的反编译.wxapkg 类型的文件可能会报错，遇见这个问题很可能没找对包和位置
 
 ```
 3. _vd_version_info__ is not defined （本项目已经修复该问题）
@@ -83,13 +84,13 @@ function runVM(name,code){
 
 > 欢迎大家使用本程序解包一些开源或经作者授权的小程序包供学习小程序编写或供在电脑端使用小程序或通过研究本项目代码来了解小程序本地运行的部分原理、发现小程序编译时本身的[一些问题](https://github.com/qwerty472123/wxappUnpacker/commit/73580c3afecad8c59e14ea7252dcedd8034e6c3a)（这个或许现在已经修了）...
 
-## 当前功能如下（分包功能尚未完成）
+## 当前功能如下（异常api检测目前是半自动化完成）
 
-- `node wuConfig.js <files...>` 将 app-config.json 中的内容拆分到各个文件对应的 .json 和 app.json , 并通过搜索 app-config.json 所在文件夹下的所有文件尝试将 iconData 还原为 iconPath 。
-- `node wuJs.js <files...>` 将 app-service.js (或小游戏中的 game.js ) 拆分成一系列原先独立的 javascript 文件，并使用 Uglify-ES 美化，从而尽可能还原编译前的情况。
-- `node wuWxml.js [-m] <files...>` 将编译/混合到 page-frame.html ( 或 app-wxss.js ) 中的 wxml 和 wxs 文件还原为独立的、未编译的文件。如果加上`-m`指令，就会阻止`block`块自动省略，可能帮助解决一些相关过程的 bug 。
-- `node wuWxss.js <dirs...>` 通过获取文件夹下的 page-frame.html ( 或 app-wxss.js ) 和其他 html 文件的内容，还原出编译前 wxss 文件的内容。
-- `node wuWxapkg.js [-o] [-d] [-s=<Main Dir>] <files...>` 将 wxapkg 文件解包，并将包中上述命令中所提的被编译/混合的文件自动地恢复原状。如果加上`-o`指令，表示仅解包，不做后续操作。如果加上`-d`指令，就会保留编译/混合后所生成的新文件，否则会自动删去这些文件。同时，前面命令中的指令也可直接加在这一命令上。~~而如果需要解压分包，请先解压主包，然后执行`node wuWxapkg.js [-d] -s=<Main Dir> <subPackages...>`，其中`Main Dir`为主包解压地址。除`-d`与`-s`外，这些指令两两共存的后果是未定义的（当然，是不会有危险的）。~~
+- `pcdapit.py` 将协助完成对待测api的顺利执行和执行后getSetting方法的调用以获取到实际配置值。
+- `pcdapit.py` 然后自动将实际配置值和标准配置值进行预处理，然后进行比对，返回并报告比对结果。
+- `pcdappt.py` 能够自动化的识别目标小程序是否使用了具有PCDA问题的异常api。
+- `pcdappt.py` 根据构建抽象语法树，分析语法，能够报告出问题小程序的异常api的使用情况（名称、方法名、上下文等），提高准确率。
+- 在使用 `pcdappt.py` 时只需要打开待测小程序，然后启动我们的排查工具即可进行检测。
 
 ### wxapkg 包的获取
 
