@@ -55,7 +55,7 @@ Node.js Version: >= 12.22.12
 
 Start by cloning the PCDA_APP from GitHub using the following command:
 
-git clone https://github.com/chenyu9999/ScopeChecker
+git clone https://github.com/an-luckydog/ScopeChecker
 
 #### Installing the Required Packages
 
