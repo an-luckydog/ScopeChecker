@@ -9,7 +9,7 @@
 
   - Motivation
 
-  - Approach
+- ScopeChecker
 
     - API-ScopeChecker
     - APP-ScopeChecker
@@ -18,10 +18,10 @@
 
     - API-ScopeChecker
     - APP-ScopeChecker
+   
+- Result
  
   - Data
-  
-  - Result
  
   - Attack  Video Demos
  
