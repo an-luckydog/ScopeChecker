@@ -1,26 +1,31 @@
 # Uncovering API-Scope Misalignment in the App-in-AppEcosystem
 
 ## Table of Contents
+- Abstract
 
-- Uncovering API-Scope Misalignment in the App-in-AppEcosystem
+- API-Scope Misalignment in the App-in-App Ecosystem
 
-  - Table of Contents
+  - Backgrund
 
-  - PCDA
+  - Motivation
 
   - Approach
 
-    - Problem API Detaction
-    - Affected APP Detaction
+    - API-ScopeChecker
+    - APP-ScopeChecker
 
   - Getting Started
 
-    - Environment
-    - How to Use
+    - API-ScopeChecker
+    - APP-ScopeChecker
+ 
+  - Data
   
-  - Results
-  
-  - Reference
+  - Result
+ 
+  - Attack  Video Demos
+ 
+  - Vendor Response
 
 ## PCDA
 
