@@ -1,0 +1,1 @@
+P-E: The WeChat MiniApp Standard ID Photo utilizes the wx.chooseImage() to implement the camera launching and image selection. Since the wx.chooseImage() can result in l-scope (as shown in Table 5), the miniApp is allowed to access the user’s camera and album resources without user granting access when invoking the API, thus achieving permission escalation.

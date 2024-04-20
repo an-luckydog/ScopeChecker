@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "gpt.proxy",
+      "type": "com.ttpfx.config.ChatGptConfig",
+      "sourceType": "com.ttpfx.config.ChatGptConfig"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}

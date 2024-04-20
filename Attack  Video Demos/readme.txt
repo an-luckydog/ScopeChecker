@@ -1,0 +1,1 @@
+Scope misalignment may result in at least four types of malicious exploitation and management threats, namely Permission Escalation (P-E), Phishing Attack (P-A), Privacy Leak (P-L) and Trust Crisis (T-C). We illustrate how these attacks occur through the following example cases. The detailed processes have been recorded into these videos. 
