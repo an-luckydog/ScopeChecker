@@ -1,0 +1,77 @@
+$gwx_XC_98=function(_,_v,_n,_p,_s,_wp,_wl,$gwn,$gwl,$gwh,wh,$gstack,$gwrt,gra,grb,TestTest,wfor,_ca,_da,_r,_rz,_o,_oz,_1,_1z,_2,_2z,_m,_mz,nv_getDate,nv_getRegExp,nv_console,nv_parseInt,nv_parseFloat,nv_isNaN,nv_isFinite,nv_decodeURI,nv_decodeURIComponent,nv_encodeURI,nv_encodeURIComponent,$gdc,nv_JSON,_af,_gv,_ai,_grp,_gd,_gapi,$ixc,_ic,_w,_ev,_tsd){return function(path,global){
+if(typeof global==='undefined'){if (typeof __GWX_GLOBAL__==='undefined')global={};else global=__GWX_GLOBAL__;}if(typeof __WXML_GLOBAL__ === 'undefined') {__WXML_GLOBAL__={};
+}__WXML_GLOBAL__.modules = __WXML_GLOBAL__.modules || {};
+var e_={}
+if(typeof(global.entrys)==='undefined')global.entrys={};e_=global.entrys;
+var d_={}
+if(typeof(global.defines)==='undefined')global.defines={};d_=global.defines;
+var f_={}
+if(typeof(global.modules)==='undefined')global.modules={};f_=global.modules || {};
+var p_={}
+__WXML_GLOBAL__.ops_cached = __WXML_GLOBAL__.ops_cached || {}
+__WXML_GLOBAL__.ops_set = __WXML_GLOBAL__.ops_set || {};
+__WXML_GLOBAL__.ops_init = __WXML_GLOBAL__.ops_init || {};
+var z=__WXML_GLOBAL__.ops_set.$gwx_XC_98 || [];
+function gz$gwx_XC_98_1(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_XC_98_1)return __WXML_GLOBAL__.ops_cached.$gwx_XC_98_1
+__WXML_GLOBAL__.ops_cached.$gwx_XC_98_1=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([1,false])
+Z([[7],[3,'pageTitle']])
+Z([3,'c-page'])
+Z([[7],[3,'ready']])
+Z([3,'doRequest'])
+Z([3,'onSubmit'])
+Z([3,'getOption'])
+Z([3,'initOption'])
+Z([3,'sendCode'])
+Z([[7],[3,'formFooter']])
+Z([[7],[3,'formList']])
+Z([1,true])
+})(__WXML_GLOBAL__.ops_cached.$gwx_XC_98_1);return __WXML_GLOBAL__.ops_cached.$gwx_XC_98_1
+}
+__WXML_GLOBAL__.ops_set.$gwx_XC_98=z;
+__WXML_GLOBAL__.ops_init.$gwx_XC_98=true;
+var x=['./pages/form/index/index.wxml'];d_[x[0]]={}
+var m0=function(e,s,r,gg){
+var z=gz$gwx_XC_98_1()
+var hEBB=_mz(z,'header',['onlyTitle',0,'title',1],[],e,s,gg)
+_(r,hEBB)
+var oFBB=_n('view')
+_rz(z,oFBB,'class',2,e,s,gg)
+var cGBB=_v()
+_(oFBB,cGBB)
+if(_oz(z,3,e,s,gg)){cGBB.wxVkey=1
+var oHBB=_mz(z,'form-box',['bind:doRequest',4,'bind:formSubmit',1,'bind:getOption',2,'bind:initOption',3,'bind:sendCode',4,'footer',5,'formConf',6,'privacy',7],[],e,s,gg)
+_(cGBB,oHBB)
+}
+else{cGBB.wxVkey=2
+var lIBB=_n('loading')
+_(cGBB,lIBB)
+}
+cGBB.wxXCkey=1
+cGBB.wxXCkey=3
+cGBB.wxXCkey=3
+_(r,oFBB)
+return r
+}
+e_[x[0]]={f:m0,j:[],i:[],ti:[],ic:[]}
+if(path&&e_[path]){
+return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
+;g="$gwx_XC_98";var main=e_[path].f
+if (typeof global==="undefined")global={};global.f=$gdc(f_[path],"",1);
+try{
+main(env,{},root,global);
+_tsd(root)
+}catch(err){
+console.log(err)
+}
+;g="";
+return root;
+}
+}
+}
+}(__g.a,__g.b,__g.c,__g.d,__g.e,__g.f,__g.g,__g.h,__g.i,__g.j,__g.k,__g.l,__g.m,__g.n,__g.o,__g.p,__g.q,__g.r,__g.s,__g.t,__g.u,__g.v,__g.w,__g.x,__g.y,__g.z,__g.A,__g.B,__g.C,__g.D,__g.E,__g.F,__g.G,__g.H,__g.I,__g.J,__g.K,__g.L,__g.M,__g.N,__g.O,__g.P,__g.Q,__g.R,__g.S,__g.T,__g.U,__g.V,__g.W,__g.X,__g.Y,__g.Z,__g.aa);if(__vd_version_info__.delayedGwx||false)$gwx_XC_98();	if (__vd_version_info__.delayedGwx) __wxAppCode__['pages/form/index/index.wxml'] = [$gwx_XC_98, './pages/form/index/index.wxml'];else __wxAppCode__['pages/form/index/index.wxml'] = $gwx_XC_98( './pages/form/index/index.wxml' );
+	;__wxRoute = "pages/form/index/index";__wxRouteBegin = true;__wxAppCurrentFile__="pages/form/index/index.js";define("pages/form/index/index.js",function(require,module,exports,window,document,frames,self,location,navigator,localStorage,history,Caches,screen,alert,confirm,prompt,XMLHttpRequest,WebSocket,Reporter,webkit,WeixinJSCore){
+"use strict";var e=require("../../../@babel/runtime/helpers/regeneratorRuntime"),t=require("../../../@babel/runtime/helpers/asyncToGenerator");require("../../../@babel/runtime/helpers/Arrayincludes");var a=require("../../../@babel/runtime/helpers/objectSpread2"),n=require("../../../utils/util"),i=getApp(),r={act:{name:"线下会议"},register:{name:"小程序注册",refer:1},consult:{name:"上云咨询",refer:2},download:{name:"资料下载",refer:3},enroll:{name:"报名",refer:4},scene:{name:"场景库",refer:3},brand:{name:"品牌专题",refer:5},meet_reserve:{name:"云上直播 - 预约报名",refer:"6"},cooper:{name:"生态合作"}};Page({data:{pageTitle:"",ready:!1,formList:[],lastContentId:"",lastNameOfPage:"",CampaignID:"",formName:"",formFooter:{}},onLoad:function(e){var t=this;console.log("page form index options",e),e.CampaignID&&this.setData({CampaignID:e.CampaignID}),this.data.lastContentId=i.QD.getLastContentId(),this.data.lastContentId&&(this.data.lastNameOfPage=i.QD.getLastNameOfPage()),e.tplId||(e.tplId=i.globalData.config.formTpl.common),e.type||(e.type="consult");var a=e.tplId,n=void 0===a?"":a,r=e.type,o=void 0===r?"":r,s=e.actId,c=void 0===s?"":s,d=e.cooperId,l=void 0===d?"":d;e.actType;n?(this.formInitData={f_id:e.f_id,tplId:n,r_url:e.r_url||"",type:o,actId:c,cooperId:l,industry_id:e.industry_id,data_type:e.data_type,data_id:e.data_id,actType:e.actType,op_type:e.op_type,op_id:e.op_id,isSendWxMessage:e.sendMsg},i.loginCallback().then((function(){t.getFormTpl()}))):wx.showToast({title:"表单配置读取失败，缺少TplId",icon:"none"})},onShow:function(){},getFormTpl:function(){var e=this;this.formInitData.type,this.formInitData.data_id,this.formInitData.data_type;i.API.getFormTpl(this.formInitData.tplId).then((function(t){console.log("getFormTpl res",t),e.setData({ready:!0,pageTitle:t.content.display_label,formDesc:t.content.desc,formBanner:t.content.pic_url,formList:e.converterOfPolarisForm(t.content.itemList),formName:t.content.title,formFooter:t.content.footer}),i.QD.track("contentView",{ContentID:e.formInitData.tplId,menu:i.globalData.currentTab,name_of_page:t.content.title,TrackEvent:"form"})})).catch((function(e){console.log("getFormTpl err",e)})),this.tarFormView("BrowseForm")},converterOfPolarisForm:function(e){var t=this,n=[];return e.sort((function(e,t){return e.seq-t.seq})),e.forEach((function(e){var i=e.historyData||e.default||"";e.defaultValue=i;var r={};e.isCode?r={name:"phoneGroup",formType:"group",label:e.label,required:e.required,isHideLabel:!0,children:[a({name:e.name,label:e.label||e.name,required:e.required,placeholder:e.desc||"",value:i},t.polarisFieldFilter(e)),{name:"code",label:"验证码",isHideLabel:!0,dependentPropertyName:e.name,required:e.required,placeholder:"请输入验证码",layout:"inline",maxLength:-1,isCode:!0}]}:("region"===e.name&&n.push({name:"__region_combine",label:"区域",required:e.required,placeholder:"请选择区域",value:t.getDefaultValueByName("__region_combine"),skipSubmit:!0,formType:"region"}),r=a({name:e.name,label:e.label||e.name,required:e.required,placeholder:e.desc||"",value:i},t.polarisFieldFilter(e))),n.push(r)})),n},getDefaultValueByName:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"";return t},polarisFieldFilter:function(e){var t={};switch(e.type){case"date":t.formType="dateTime";break;case"datetime":t.formType="dateTime",t.dateMode="dateTime";break;case"enum_single":t.formType="picker",t.options=this.polarisGetEnums(e.enum||e.enums,e.enums_hide||[],e.defaultValue);break;case"enum_multiple":t.formType="checkbox",t.checkMulti=!0,t.options=this.polarisGetEnums(e.enum||e.enums,e.enums_hide||[],e.defaultValue);break;case"text":case"textarea":t.formType="textarea",t.minLength=e.min_len||-1,t.maxLength=e.max_len||-1,t.validExec=this.polarisFiledValidExec(e);break;case"float":t.formType="input",t.inputType="digit",t.minLength=e.min_len||-1,t.maxLength=e.max_len||-1,t.validExec=this.polarisFiledValidExec(e);break;case"int":t.formType="input",t.inputType="number",t.minLength=e.min_len||-1,t.maxLength=e.max_len||-1,t.validExec=this.polarisFiledValidExec(e);break;case"image":t.formType="image";break;default:t.formType="input",t.minLength=e.min_len||-1,t.maxLength=e.max_len||-1,t.validExec=this.polarisFiledValidExec(e)}switch(e.name){case"Sub_Industry":t.dependentPropertyName="Industry",t.initOptionRequest=!0,t.dependentShow="all",t.dependentRequiredValue="all";break;case"Industry":this.__field_industry=!0;break;case"region":case"province":case"city":t.dependentPropertyName="__region_combine",t.isCombined=!0,t.dependentShow=[],t.requiredText="请完善地址信息"}return t},polarisFiledValidExec:function(e){var t=[],a=e.reg_pattern;return a&&t.push({type:"custom",rule:a}),t},polarisGetEnums:function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:[],t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:[],a=arguments.length>2&&void 0!==arguments[2]?arguments[2]:"",n=[],i=a.split(",");if(e.constructor===Array)e.forEach((function(e){t.includes(e.id)||n.push({label:e.value,value:e.id,checked:-1!=i.indexOf(String(e.id)),dependentValue:"all"})}));else if(e.constructor===Object)for(var r in e)e.hasOwnProperty(r)&&(t.includes(r)||n.push({label:e[r],value:r,checked:-1!=i.indexOf(String(r)),dependentValue:"all"}));else console.warn("返回枚举值格式有误");return n},getOption:function(e){this.tarFormView("fomr_change");var t=e.detail,a=t.name,n=t.value,i=t.callback;t.fieldObject;switch(a){case"company":this.getCompanySearch(n,i)}},initOption:function(e){var t=e.detail,a=t.fieldObject,n=t.callback;switch(a.name){case"Sub_Industry":this.__field_industry&&this.getIndustryOptions(a,n)}},getIndustryOptions:function(a,i){return t(e().mark((function t(){var r;return e().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:return e.abrupt("return",{});case 5:r=e.sent.content,(0,n._saveStorageData)("SubIndustry",r,3e5);case 7:a.options.forEach((function(e){var t=e.label.trim();e.dependentValue=r[t]})),i(a.options);case 9:case"end":return e.stop()}}),t)})))()},getFieldByName:function(e){var t=null;return this.formList.some((function(a){return a.name===e&&(t=a,!0)})),t},getCompanySearch:function(e,t){var a=(0,n._getStorageData)("comp_".concat(e));a?t(a):i.API.getSearchCompany({keywords:e}).then((function(a){var i=a.content||[];t(i),(0,n._saveStorageData)("comp_".concat(e),i,3e5)}))},sendCode:function(e){var t=e.detail,a=(t.name,t.value),n=t.callback;i.API.formSendCode(a).then(n)},doRequest:function(e){var t=e.detail,a=t.name,n=t.value,r=t.callback;switch(a){case"uploadImage":i.Api.uploadFile({filePath:n}).then((function(e){r(e.content.url)}))}},onSubmit:function(e){var t=e.detail;wx.showLoading({title:"提交数据中"});var a={tplId:this.formInitData.tplId,version:i.globalData.sysInfo.system,dataType:this.formInitData.dataType};Object.keys(t).forEach((function(e){var n=t[e];n.skipSubmit||(a[e]=n.value)}));var n=r[this.formInitData.type];switch(console.log("表单提交数据",a,n,t),this.formInitData.type){case"act":this.actSubmit(a);break;case"meet_reserve":this.reserveMeet(a);break;case"register":case"consult":case"download":case"scene":case"brand":case"enroll":this.leadSubmit(a,n.refer);break;case"cooper":this.cooperLeadSubmit(a)}},actSubmit:function(e){var t=this;(e.actId=this.formInitData.actId,e.siteId=this.formInitData.data_id,e.refer=this.formInitData.data_type,e.CampaignID=this.data.CampaignID,"act"==this.formInitData.type&&(e.data_id=this.formInitData.actId,e.data_type=1,e.refer=6),console.log("mark 2",e,this.formInitData),console.log("form submit",e),this.data.submitRequest)||(this.data.submitRequest=!0,i.API.formSubmit(e).then((function(e){t.data.submitRequest=!1,0==e.code?(e.content&&1!=e.content.alreadySubmit&&t.qdSubmit(),t.submitCallback()):wx.showToast({title:e.message,icon:"none"})})).catch((function(e){t.data.submitRequest=!1,console.log("form page app.API.formSubmit",e),wx.showToast({title:"请稍后重试",icon:"none"})})))},leadSubmit:function(e,t){var a=this;console.log("form leadSubmit consult",e),e.refer=t,e.CampaignID=this.data.CampaignID,3==t||5==t||4==t?(e.data_type=this.formInitData.data_type,e.data_id=this.formInitData.data_id):2==t&&this.formInitData.industry_id&&(e.industry_id=this.formInitData.industry_id),this.data.submitRequest||(this.data.submitRequest=!0,i.API.formSubmit(e).then((function(e){a.data.submitRequest=!1,0==e.code?(e.content&&1!=e.content.alreadySubmit&&a.qdSubmit(),a.submitCallback()):wx.showToast({title:e.message,icon:"none"})})).catch((function(e){a.data.submitRequest=!1,console.log("form page app.API.formSubmit",e),wx.showToast({title:"请稍后重试",icon:"none"})})))},cooperLeadSubmit:function(e){var t=this;e.cooperId=this.formInitData.cooperId,e.data_type=this.formInitData.data_type,e.data_id=this.formInitData.data_id,i.Api.formCpLeadSubmit(e).then((function(e){t.submitCallback()}))},reserveMeet:function(e){var t=this;e.meetId=this.formInitData.data_id,e.status=this.formInitData.data_type,e.refer=4,e.data_type=5,e.data_id=this.formInitData.actId,e.CampaignID=this.data.CampaignID,e.__isSendWxMessage=1==this.formInitData.isSendWxMessage?1:0,console.log("form submit reserveMeet",e),this.data.submitRequest||(this.data.submitRequest=!0,i.API.formSubmit(e).then((function(e){t.data.submitRequest=!1,0==e.code?(e.content&&1!=e.content.alreadySubmit&&t.qdSubmit(),t.submitCallback()):wx.showToast({title:e.message,icon:"none"})})).catch((function(e){t.data.submitRequest=!1,console.log("form page app.API.formSubmit",e),wx.showToast({title:"请稍后重试",icon:"none"})})))},submitCallback:function(){var e=this.formInitData,t=e.type,a=e.actId,n=this.formInitData.r_url,r=this.formInitData.data_type,o=this.formInitData.data_id,s=this.formInitData.f_id;wx.hideLoading(),this._prevStatusRefresh();var c={1:"cases",2:"tool",3:"coopernews",4:"coopertool"};if(s){switch(t){case"act":"activity",a||o;break;case"meet_reserve":o,"lives";break;case"download":case"cooper":o,c[r];break;case"brand":"topic",o}}var d=this.formInitData,l=d.op_type,m=d.op_id,u=decodeURIComponent(n);if("download"===l)return i.QD.action("contentDownload",i.globalData.downloadFileParams.contentDonwload),i.API.downloadRecord(i.globalData.downloadFileParams.record),wx.redirectTo({url:u});var p=this.formInitData.actType;wx.redirectTo({url:"/pages/form/info/index?op_id=".concat(m,"&type=").concat(t,"&data_type=").concat(r,"&data_id=").concat(o,"&r_url=").concat(n,"&act_id=").concat(a,"&act_type=").concat(p)})},_prevStatusRefresh:function(){var e=getCurrentPages(),t=e.length;if(t>1){var a=e[t-2];a.waitStatusRefresh&&a.waitStatusRefresh()}"register"==this.formInitData.type&&i.setRegStatus()},tarFormView:function(n){var i=this;return t(e().mark((function t(){var n,r;return e().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:n={name_of_page:"表单页面"},r=i.formInitData.type,i.formInitData.data_type,i.formInitData.data_id,e.t0=r,e.next="meet_reserve"===e.t0?7:"scene"===e.t0?9:"act"===e.t0?11:"register"===e.t0?13:"consult"===e.t0?15:"download"===e.t0?17:"cooper"===e.t0?19:"brand"===e.t0?21:23;break;case 7:case 9:case 11:return n=a({},n),e.abrupt("break",24);case 13:return n={ContentTheme:"小程序注册",$name_of_marketing_event:"小程序注册",name_of_content:"小程序注册"},e.abrupt("break",24);case 15:return n={ContentTheme:"上云咨询",$name_of_marketing_event:"上云咨询",name_of_content:"上云咨询"},e.abrupt("break",24);case 17:case 19:case 21:return n=a({},n),e.abrupt("break",24);case 23:return e.abrupt("break",24);case 24:case"end":return e.stop()}}),t)})))()},qdSubmit:function(){i.QD.formSubmit("submit_form",{name_of_page:this.data.formName,SubCampaign:this.data.lastNameOfPage,SubCampaignID:this.data.lastContentId,CampaignID:i.QD.currentParams.CampaignID||"",NameOfCampaign:i.QD.currentParams.NameOfCampaign||""})}});
+},{isPage:true,isComponent:true,currentFile:'pages/form/index/index.js'});require("pages/form/index/index.js");

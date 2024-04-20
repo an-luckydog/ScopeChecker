@@ -1,0 +1,9 @@
+{
+    "name": "bd_bcp_sdk_mini",
+    "publicComponents": {
+    },
+    "pages": [
+        "pages/cip/cip"
+    ],
+    "main": "index.js"
+}

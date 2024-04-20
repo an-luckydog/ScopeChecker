@@ -1,0 +1,50 @@
+<import src="../../../../components/tag/index.wxml"></import>
+<view class="recommend-box" wx:if="{{localRecommendDishList&&localRecommendDishList.length}}">
+    <view class="title-ul">
+        <view bind:tap="changeRecommend" class="title-li {{index===recommendIndex?'active':''}}" data-index="{{index}}" wx:for="{{localRecommendDishList}}" wx:key="index">
+            <image class="img" src="{{item.imgUrl}}"></image>
+            <view class="title">{{item.title}}</view>
+        </view>
+    </view>
+    <scroll-view enhanced bindscrolltolower="getNextPageDish" class="dish-list-scroll" hidden="{{recommendIndex!==index}}" lowerThreshold="{{400}}" scrollLeft="{{scrollLeft}}" scrollX="true" showScrollbar="{{false}}" wx:for="{{localRecommendDishList}}" wx:key="index">
+        <view class="list-box">
+            <view bind:tap="openDetail" class="li {{dish.status!==1?'invalid':''}}" data-dish="{{dish}}" wx:for="{{localRecommendDishList[recommendIndex].dishList||[]}}" wx:for-item="dish" wx:key="index">
+                <dish-item-static dish="{{dish}}" type="dishRecommend" wx:if="{{dish.dishType===6}}"></dish-item-static>
+                <block wx:else>
+                    <block wx:if="{{dish.name}}">
+                        <view class="img-box">
+                            <image class="img" src="{{dish.pic||'https://p0.meituan.net/scarlett/ca45859124838c068622a75a818b064a1640.jpg'}}"></image>
+                            <view class="surplus">
+                                <dish-status dish="{{dish}}"></dish-status>
+                            </view>
+                            <view class="rank-tag" wx:if="{{dish.tags&&dish.tags.length&&tag.getTags( dish.tags,[0] ).length}}">
+                                <template is="tag" data="{{...tagItem,size:'middle'}}" wx:for="{{tag.getTags( dish.tags,[0] )}}" wx:for-index="tagIndex" wx:for-item="tagItem" wx:key="tagIndex"></template>
+                            </view>
+                            <view class="market-label" wx:elif="{{dish.marketingLabel}}">
+                                <market-label label="{{dish.marketingLabel}}" price="{{dish.currentPrice}}" size="small"></market-label>
+                            </view>
+                        </view>
+                        <view class="container">
+                            <view class="name">{{dish.name}}</view>
+                            <view class="tags">
+                                <block wx:if="{{dish.tags&&dish.tags.length}}">
+                                    <template is="tag" data="{{...tagItem}}" wx:for="{{tag.getTags( dish.tags,[1,2,3,4] )}}" wx:for-index="tagIndex" wx:for-item="tagItem" wx:key="tagIndex"></template>
+                                </block>
+                            </view>
+                            <view class="price-field">
+                                <price needTip="{{false}}" price="{{dish}}" showEst="{{showEstPrice}}" size="middle"></price>
+                                <view class="op-field" wx:if="{{dish.status===1}}">
+                                    <view class="op-mask"></view>
+                                    <view class="op-container">
+                                        <add-common count="{{dishCountMap[dish.spuId]||0}}" dish="{{dish}}" wx:if="{{dish.status===1}}"></add-common>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </block>
+                </block>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<wxs module="tag" src="index.wxs" />

@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-button": "../../node-modules/uview-plus/components/u-button/u-button",
+        "u-modal": "../../node-modules/uview-plus/components/u-modal/u-modal"
+    }
+}

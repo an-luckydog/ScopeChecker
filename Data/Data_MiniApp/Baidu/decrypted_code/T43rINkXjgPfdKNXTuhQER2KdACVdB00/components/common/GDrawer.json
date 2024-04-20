@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "g-popup-mask": "./GPopupMask"
+    },
+    "component": true
+}

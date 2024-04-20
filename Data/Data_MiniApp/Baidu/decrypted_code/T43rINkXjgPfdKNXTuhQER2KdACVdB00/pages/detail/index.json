@@ -1,0 +1,1 @@
+{"navigationStyle":"custom","usingComponents":{"game-detail-card":"./components/GameDetailCard","game-detail-guide":"../../components/GameDetailGuide"},"isUsingComponents":true,"skeleton":"\\skeleton\\page\\detail","usingDynamicLibs":[],"usingPlugins":[],"usingDependencies":[],"isUsingSJS":false,"_hasVideo":true}

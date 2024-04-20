@@ -1,0 +1,14 @@
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-modal": "../../components/cy-modal/cy-modal",
+        "cy-navigator": "../../components/cy-navigator/index",
+        "cy-userinfo": "../../components/cy-userinfo/index",
+        "doctor-topic": "../../components/doctor-mainpage-topic/index",
+        "doctor-avatar": "../../components/doctor-avatar/index",
+        "identify-info-tip": "./components/identify-info-tip/index",
+        "tip-dialog": "./components/tip-dialog/index",
+        "live-info": "./components/live-info/live-info"
+    }
+}

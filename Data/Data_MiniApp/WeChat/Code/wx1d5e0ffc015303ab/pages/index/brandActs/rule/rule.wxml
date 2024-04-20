@@ -1,0 +1,6 @@
+<view>
+    <text bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'back',['$event'] ] ] ] ]}}">返回</text>
+    <image bindload="__e" data-event-opts="{{[ [ 'load',[ [ 'imgLoad',['$event'] ] ] ] ]}}" hidden="{{!loadEnd}}" mode="widthFix" src="{{ruleImg}}"></image>
+    <image class="rule-img" mode="widthFix" src="{{ruleImg01}}" wx:if="{{ruleImg01}}"></image>
+    <image class="rule-img" mode="widthFix" src="{{ruleImg02}}" wx:if="{{ruleImg02}}"></image>
+</view>

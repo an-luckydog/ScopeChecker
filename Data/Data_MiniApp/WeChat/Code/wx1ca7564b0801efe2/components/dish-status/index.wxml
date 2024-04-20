@@ -1,0 +1,11 @@
+<view class="bottom op-tips {{size}}" wx:if="{{dish.status===3}}">
+    <view class="tips-txt">今日售罄</view>
+</view>
+<view catch:tap="onValidSold" class="bottom op-tips {{size}}" wx:elif="{{dish.status===2}}">
+    <view class="tips-txt">非可售时间</view>
+    <view class="base-icon icon-wenhao"></view>
+</view>
+<view class="bottom op-tips {{size}}" wx:elif="{{lgc.getStock(dish)}}">
+    <view class="tips-txt">还剩{{lgc.getStock(dish)}}份</view>
+</view>
+<wxs module="lgc" src="index.wxs" />

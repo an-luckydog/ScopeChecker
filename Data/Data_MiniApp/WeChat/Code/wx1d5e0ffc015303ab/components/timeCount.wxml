@@ -1,0 +1,7 @@
+<view class="page data-v-d21d90c8" style="{{'color:'+fontColor+';'}}">
+    <view class="title data-v-d21d90c8" wx:if="{{!isStart}}">距开始:</view>
+    <view class="title data-v-d21d90c8" wx:else>仅剩:</view>
+    <view class="hour data-v-d21d90c8">{{''+(time.hour||'00')+':'}}</view>
+    <view class="minutes data-v-d21d90c8">{{''+(time.min||'00')+':'}}</view>
+    <view class="security data-v-d21d90c8">{{''+(time.sec||'00')+''}}</view>
+</view>

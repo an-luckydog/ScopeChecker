@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "取消送货上门",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

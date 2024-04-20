@@ -1,0 +1,1 @@
+window.skeleton=window.skeleton||{},window.skeleton.skeletonMap={"pages/question/question":"skeleton/page/index","pages/squestion/squestion":"skeleton/page/index","pages/daily/daily":"skeleton/page/daily"};

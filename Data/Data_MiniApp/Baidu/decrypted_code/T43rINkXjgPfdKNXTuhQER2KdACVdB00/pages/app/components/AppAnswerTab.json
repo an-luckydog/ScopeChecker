@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "question-card": "../../../components/QuestionCard",
+        "tab-footer": "../../../components/Footer"
+    },
+    "component": true
+}

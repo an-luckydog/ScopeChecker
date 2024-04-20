@@ -1,0 +1,53 @@
+<view class="page-box data-v-5340ce92">
+    <uni-popup bind:__l="__l" class="data-v-5340ce92 vue-ref" data-ref="coupon_pup" maskClick="{{false}}" type="top" vueId="4a8c491c-1" vueSlots="{{['default']}}">
+        <view class="main-box data-v-5340ce92">
+            <view class="coupon-box data-v-5340ce92" wx:if="{{goodsInfo.diyPrizeType!=8}}">
+                <image bindtap="__e" class="close-icon data-v-5340ce92" data-event-opts="{{[ [ 'tap',[ [ 'handleClosePop',['$event'] ] ] ] ]}}" mode="widthFix" src="{{img120Th+'welfareCenter/ferrisWheel/close.png'}}"></image>
+                <view class="data-v-5340ce92" wx:if="{{goodsInfo.diyPrizeType==2}}">
+                    <view class="kind-in-box data-v-5340ce92">
+                        <image class="data-v-5340ce92" mode="widthFix" src="{{goodsImgRoot+goodsInfo.turntablePic}}"></image>
+                    </view>
+                    <view class="tips-text data-v-5340ce92">可在“个人中心”查看</view>
+                </view>
+                <view class="tripartite-bond data-v-5340ce92" wx:if="{{goodsInfo.diyPrizeType==3}}">
+                    <view class="tripartite-coupon data-v-5340ce92">
+                        <image class="data-v-5340ce92" mode="widthFix" src="{{goodsImgRoot+goodsInfo.ticketPicUrl}}"></image>
+                    </view>
+                    <view class="tips-text data-v-5340ce92">可在“我的-我的卡券”查看</view>
+                </view>
+                <block wx:else>
+                    <view class="data-v-5340ce92" wx:if="{{goodsInfo.diyPrizeType==4}}">
+                        <view class="hop-box data-v-5340ce92">{{''+goodsInfo.vpoints}}<text class="data-v-5340ce92">啤酒花</text>
+                        </view>
+                        <view class="tips-text mt44 data-v-5340ce92">可在“我的-我的啤酒花”查看</view>
+                    </view>
+                    <block wx:else>
+                        <coupon bind:__l="__l" class="data-v-5340ce92" vpointsCoupon="{{goodsInfo.vpointsCoupon}}" vueId="{{'4a8c491c-2'+','+'4a8c491c-1'}}" wx:if="{{goodsInfo.diyPrizeType==6}}"></coupon>
+                    </block>
+                </block>
+                <view class="data-v-5340ce92">
+                    <view class="coupon-name data-v-5340ce92">{{''+goodsInfo.goodsName+''}}</view>
+                    <button bindtap="__e" class="btn btn_120_m data-v-5340ce92" data-event-opts="{{[ [ 'tap',[ [ 'handleGoBtn',['$event'] ] ] ] ]}}">{{btnText}}</button>
+                </view>
+            </view>
+            <view class="red-envelope-box data-v-5340ce92" wx:else>
+                <view class="red-envelope data-v-5340ce92">
+                    <block wx:if="{{goodsInfo.isWinning}}">
+                        <view class="red-title data-v-5340ce92">恭喜获得红包一个</view>
+                        <view class="red-price data-v-5340ce92">{{''+goodsInfo.money}}<text class="data-v-5340ce92">元</text>
+                        </view>
+                        <view class="red-tips data-v-5340ce92">{{'你的账户余额为'+goodsInfo.surplusMoney+'元 个人账户余额大于0.3元即可直接提现哦'}}</view>
+                    </block>
+                    <block wx:else>
+                        <view class="red-title data-v-5340ce92">很遗憾 未中奖</view>
+                        <view class="tips data-v-5340ce92">你离红包只差一点点<view class="_br data-v-5340ce92"></view>在抽一次试试看～</view>
+                    </block>
+                </view>
+                <view class="red-other data-v-5340ce92">
+                    <button bindtap="__e" class="red-btn btn_120 data-v-5340ce92" data-event-opts="{{[ [ 'tap',[ [ 'handleGoRed',['$event'] ] ] ] ]}}" wx:if="{{goodsInfo.isWinning}}">去提现</button>
+                    <image bindtap="__e" class="data-v-5340ce92" data-event-opts="{{[ [ 'tap',[ [ 'handleClosePop',['$event'] ] ] ] ]}}" mode="widthFix" src="{{img120Th+'welfareCenter/ferrisWheel/close.png'}}"></image>
+                </view>
+            </view>
+        </view>
+    </uni-popup>
+</view>

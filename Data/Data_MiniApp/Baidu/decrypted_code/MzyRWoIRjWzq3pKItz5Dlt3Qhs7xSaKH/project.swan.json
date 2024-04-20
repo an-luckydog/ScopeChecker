@@ -1,0 +1,125 @@
+{
+    "appid": "11540180",
+    "compilation-args": {
+        "common": {},
+        "options": [
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/list/list",
+                    "isPrefetch": false,
+                    "query": "cate=jiajuweixiu&city=huaxi&pagetype=4",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 0,
+                "text": "pages/list/list"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/details/index/detail",
+                    "query": "detailtype=details_house&infoId=44646473290144&cate=zufang&cid=1616492583809tEwH7Xbj0SX09i0BfDEx6waLW3s4BUyW&sid=1616492582412REbGN0fZl1tk2Zia1CsP84mjDwgqQHlC&pos=1&slot=lm_list&regtitle=&city=fz&hugid=1918730690241551&lego_tid=4f19270c-3e9e-4e3d-8f49-7bed9b46517c&entityType=6&encUrl=https%3A%2F%2Flegoclick.58.com%2Fjump%3Ftarget%3DszqBpB3draOWUvYKuad-Pj-huW6hPadhn1cdsHwWrHnVmhc1nad-uHDOPAndrADOmWEKnWNOrjnYP1bYPHnOPH9KTHDOnH9Ln1TvrHTzPjDdPHDKn1DQnjTKn1DQnjTKnikQnEDQTHDvnHmYrHcdrjcdPH0KnE7AEzL-bc1-M3e-oGYoOOhSOUJhOUa5OlBsOUJ5OlXxOCB4OmBgl2AClpAdTHDKnEDKnk7Huy6VybGGrAGdndDQuguHiZ7a0YRBRDNOR-D10H7MPLuR0ADvuA6R0bQBULu2I1cOwdRfyg7BmdIznbdOnvGDwH7GH-78NLRkH-wEndG2yRwORb9vwdwuH9DQn10YnWbdnWT3P1nznHE1PWDvTHmKTHDKuWm1PjNYnvcVPHn3PBYYn1-hsy7brymVPWTvrHNkmH6WnvcdTHD1P1EzrHNznj93rjnQn19dPWTKnHnLPjcOPHckrj0YnjNzrjDzrTDKTEDKTiYKH-RnH7qRRDYKIiYzuHFBuydYpAEOPLK8m1whnWD8UyGCgvF6pywdXA-6UvPCuyOMXZRxXh-zmy3KpZwY0ZnlszqBuAdksWN3shPfUiq_pgPYsMPCIAd_5zYQPHYznau1UAqY5yQVgvQG0LEhUAF15HThuvRf5iYQFMPWULF-5HThm1DqnHDvsWnOrj9QrjmdnHb1r7t1ri33rH03PWmzPWDLPHbzFhnz5HKxnauWn1Ykg1Th0LKV5gNVnhNzmhRVIA6brHIkUhnYuWcQshdJp7qBmy-bIg6GmyqWpAR8uL6dgLGG0h78FMRYURq1ULRzmvNqH-RnH7qRRDYKNvRCURG2pH6JIHPwnyRvNY6QEMP7m-w7rRuwnLDQu1IvRgK6PhwCRgFnmhqviM0zrNIRUd-QmhPg0WFPXHPJwDNQpNOwU-Pd0DONNjPpi--NXRucPbINyN3KnWc1sW0ksWDYni3QrHcKnTDkTEDKXLYKnHTkn1nKnHTknHmYnTDYuWDOnW0kmzY1uH--sHw-nvEVrAmYriYLmhRbrycYPWNQPvnKTHTKmhwV0T7Bmy-bIEDkTEDQTyOdUAkKPhDkmymLuHDOPyN3n103n9%26nojump%3D1%26referinfo%3DTRUE&isLego=1&adType=10",
+                    "scene": {}
+                },
+                "id": 1,
+                "text": "pages/details/index/detail"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/list/list",
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 2,
+                "text": "pages/list/list"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/weapp/pages/job/index/index",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 3,
+                "text": "pages/weapp/pages/job/index/index"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/details/index/detail",
+                    "isPrefetch": false,
+                    "query": "adType=0&cate=zpshengchankaifa&cid=1642750162672HECQu9pdqSIZpBLzYdukqytVALpo90cD&detailtype=details_job&finalCp=&infoId=48991963803835&pos=1&psid=1642749804795uMxzXXPAcdKaKSbn8XQJxaHHw05rJeOq&sid=1642749804795uMxzXXPAcdKaKSbn8XQJxaHHw05rJeOq&slot=lm_list_template&tjfrom=lm_list_pt__1642749804795uMxzXXPAcdKaKSbn8XQJxaHHw05rJeOq__6__pt__adtypes__1__null__1642750162672HECQu9pdqSIZpBLzYdukqytVALpo90cD__eyJyIjp7InNwbSI6InUtMmUyYmVtdGhkOTdwbmM0ZjIxLm1qaF9iYWlkdXhpYW9jaGVuZ3h1X3ppcmFuIiwiaW5mb2lkIjoiNDg5OTE5NjM4MDM4MzUiLCJzbG90IjoibG1fbGlzdF9wdCIsInR5cGUiOiIxNDkiLCJzaWQiOiIxNjQyNzQ5ODA0Nzk1dU14elhYUEFjZEthS1NibjhYUUp4YUhIdzA1ckplT3EifSwidCI6MSwidiI6MSwidyI6eyJ0Y2IiOiIwIiwibG1fc2xvdCI6ImxtX2xpc3RfdGVtcGxhdGUifX0=",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 4,
+                "text": "pages/details/index/detail"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/index/index",
+                    "isPrefetch": false,
+                    "isUpdate": false,
+                    "query": "",
+                    "scene": {},
+                    "selected": 5,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 5,
+                "text": "pages/index/index"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/aifang/index",
+                    "query": "from_weapp=weapp&weapp_source=wbalipay",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 6,
+                "text": "爱房页面"
+            }
+        ],
+        "selected": 5
+    },
+    "host": "baiduboxapp",
+    "preview": {
+        "packageId": 963339
+    },
+    "projectname": "baidu",
+    "publish": {
+        "hideTips": true,
+        "tips": [
+            "小程序包内容将被百度解析和收录，用于内容的风险控制。",
+            "您已开通分享web化，请确保分享web化体验无问题后，再进行发布。"
+        ],
+        "version": "3.8.42"
+    },
+    "setting": {
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.450.11",
+            "extensionJsVersion": "1.21.2"
+        }
+    }
+}

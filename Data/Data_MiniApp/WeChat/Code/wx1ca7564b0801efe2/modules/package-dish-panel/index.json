@@ -1,0 +1,14 @@
+{
+    "component": true,
+    "usingComponents": {
+        "dish-panel": "../../components/dish-panel/index",
+        "package-dish-item": "../../components/package-dish-item/index",
+        "dish-detail-extend": "../../async-custom-plugins/components/dish-detail-extend/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "dish-detail-extend": "view",
+        "lottery": "view"
+    }
+}

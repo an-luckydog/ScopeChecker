@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "rank-style-games": "./RankStyleGames",
+        "half-px-line": "./HalfPxLine",
+        "footer": "./Footer"
+    },
+    "component": true
+}

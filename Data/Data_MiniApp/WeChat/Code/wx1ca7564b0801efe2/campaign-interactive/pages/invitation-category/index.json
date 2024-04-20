@@ -1,0 +1,13 @@
+{
+    "defaultTitle": "裂变活动",
+    "navigationBarTitleText": "裂变活动",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "disableScroll": false,
+    "transparentTitle": "auto",
+    "componentPlaceholder": {
+        "lottery": "view"
+    },
+    "enablePullDownRefresh": true
+}

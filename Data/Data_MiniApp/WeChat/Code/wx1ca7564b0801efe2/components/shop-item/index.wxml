@@ -1,0 +1,28 @@
+<import src="../tag/index.wxml"></import>
+<view bind:tap="clickCard" class="shop-item {{active?'active':''}} {{shop.grayedOut?'disable':''}}">
+    <view class="nearest" wx:if="{{index===0&&shop.distance}}">距离最近</view>
+    <view class="left">
+        <view class="name content-item" wx:if="{{shop.name}}">
+            <view catchtap="collect" class="base-icon {{collected?'icon-shoucang-mian':'.icon-shoucang-xian'}}" wx:if="{{shop.collectable}}"></view>{{shop.name}}</view>
+        <view class="progress content-item" wx:if="{{shop.orderProductionProcess&&shop.orderProductionProcess.processProgress}}">
+            <product-progress processProgress="{{shop.orderProductionProcess.processProgress}}" processText="{{shop.orderProductionProcess.processText}}"></product-progress>
+        </view>
+        <view class="address content-item" wx:if="{{shop.address}}">
+            <view class="base-icon icon-dizhi-xian"></view>{{shop.address}}</view>
+        <view class="open-period content-item" wx:if="{{shop.openPeriod}}">
+            <view class="base-icon icon-shijian"></view>{{shop.openPeriod}}</view>
+        <view class="tags" wx:if="{{shop.tags&&shop.tags.length}}">
+            <view class="tag-item" wx:for="{{shop.tags}}" wx:key="index">
+                <template is="tag" data="{{...item}}"></template>
+            </view>
+        </view>
+    </view>
+    <view class="right">
+        <view>去下单</view>
+        <view class="distance" wx:if="{{shop.distance}}">{{shop.distance}}</view>
+        <view class="btns">
+            <view catch:tap="makePhone" class="base-icon icon-dianhua"></view>
+            <view catch:tap="makeAddress" class="base-icon icon-dingwei"></view>
+        </view>
+    </view>
+</view>

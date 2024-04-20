@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "支付失败",
+    "usingComponents": {
+        "u-icon": "../../../node-modules/uview-plus/components/u-icon/u-icon",
+        "u-count-down": "../../../node-modules/uview-plus/components/u-count-down/u-count-down",
+        "u-button": "../../../node-modules/uview-plus/components/u-button/u-button",
+        "c-page": "../../../components/c-page/c-page"
+    }
+}

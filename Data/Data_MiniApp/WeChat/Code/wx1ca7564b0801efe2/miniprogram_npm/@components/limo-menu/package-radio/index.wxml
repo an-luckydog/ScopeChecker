@@ -1,0 +1,3 @@
+<view catchtap="radioClick" class="radio-container {{selected?'active':'normal'}} {{needCare?'care-shadow':''}}">
+    <view class="radio-icon"></view>
+</view>

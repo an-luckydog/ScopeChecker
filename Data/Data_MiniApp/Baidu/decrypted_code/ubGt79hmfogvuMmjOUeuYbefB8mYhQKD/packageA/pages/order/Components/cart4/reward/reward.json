@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "alert-box1": "../../common/pub3/pub3"
+  }
+}

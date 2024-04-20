@@ -1,0 +1,24 @@
+{
+  "name": "waimai_baidu_applet",
+  "version": "1.0.2",
+  "description": "* [开发者工具下载地址](https://smartprogram.baidu.com/docs/introduction/register_prepare/) * [百度小程序之web-view组件](https://juejin.im/post/5ba383aff265da0abb143153)",
+  "main": "app.js",
+  "dependencies": {
+    "@analytics/wechat-sdk": "^3.9.0",
+    "@dp/owl-wxapp": "^2.0.14",
+    "@mtfe/baidu-login-sdk": "^1.2.1",
+    "@mtfe/horn-sdk": "^0.1.6",
+    "@mtfe/swan-jsguard": "^1.1.2",
+    "@mtfe/yoda-swanmp-h5": "^0.0.1-beta",
+    "@smt-ui/component": "^1.2.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://dev.sankuai.com/code/repo-detail/WM/waimai_baidu_applet"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,10 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "超级神券节",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "u-image": "../../node-modules/uview-plus/components/u-image/u-image",
+        "c-page": "../../components/c-page/c-page"
+    }
+}

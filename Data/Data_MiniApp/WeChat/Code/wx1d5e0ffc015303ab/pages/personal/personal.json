@@ -1,0 +1,14 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "个人中心",
+    "usingComponents": {
+        "progress-bar": "/components/progress-bar/progress-bar",
+        "custom-call-phone": "/components/custom-call-phone/custom-call-phone",
+        "privacy": "/components/privacy/privacy",
+        "mask-template": "/components/mask-template/mask-template",
+        "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
+        "app-title": "/components/app-title",
+        "show-modal": "/components/show-modal-province",
+        "app": "/components/privacy/privacy"
+    }
+}

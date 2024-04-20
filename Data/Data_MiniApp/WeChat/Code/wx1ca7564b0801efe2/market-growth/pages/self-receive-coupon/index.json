@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "自主领券",
+    "navigationBarTitleText": "自主领券",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

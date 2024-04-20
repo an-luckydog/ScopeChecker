@@ -1,0 +1,17 @@
+{
+    "navigationBarTitleText": "搜索",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "u-icon": "../../node-modules/uview-plus/components/u-icon/u-icon",
+        "c-toggle-button": "../../components/c-toggle-button/c-toggle-button",
+        "c-list-select": "../../components/c-list-select/c-list-select",
+        "c-drop-down": "../../components/c-drop-down/c-drop-down",
+        "u-skeleton": "../../node-modules/uview-plus/components/u-skeleton/u-skeleton",
+        "c-privacy-dialog": "../../components/c-privacy-dialog/c-privacy-dialog",
+        "c-page": "../../components/c-page/c-page",
+        "film-list": "./film-list",
+        "product-list": "./product-list",
+        "hotel-list": "./hotel-list"
+    }
+}

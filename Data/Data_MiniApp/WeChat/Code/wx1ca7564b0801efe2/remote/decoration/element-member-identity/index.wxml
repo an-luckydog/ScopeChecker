@@ -1,0 +1,8 @@
+<view class="element-member-identity">
+    <view class="vip-name ellipsis {{!elConfig.showCardName&&!elConfig.showCardGrade?'full-width':''}}" style="{{nameStyle}}" wx:if="{{elConfig.showName}}">{{nickName||elConfig.customName}}</view>
+    <view class="vip-tag {{!elConfig.showName?'full-width':''}}" style="{{tagStyle}}" wx:if="{{elConfig.showCardName||elConfig.showCardGrade}}">
+        <view class="card-type ellipsis" wx:if="{{elConfig.showCardName}}">{{cardTypeName}}</view>
+        <view wx:if="{{elConfig.showCardName&&elConfig.showCardGrade}}">{{'·'}}</view>
+        <view class="card-grade ellipsis" wx:if="{{elConfig.showCardGrade}}">{{cardGradeName}}</view>
+    </view>
+</view>

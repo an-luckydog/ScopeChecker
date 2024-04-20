@@ -1,0 +1,20 @@
+{
+    "component": true,
+    "usingComponents": {
+        "dish-status": "../dish-status/index",
+        "market-label": "../../async-diancan-minor/components/market-label/index",
+        "price": "../price/index",
+        "common-error": "../common-error/index",
+        "add-common": "../../extensions/components/add-common/index",
+        "dish-review-info": "../../async-review/dish-review-info/index",
+        "dish-detail-recommend": "../../async-diancan-minor/components/dish-detail-recommend/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "market-label": "view",
+        "dish-review-info": "view",
+        "dish-detail-recommend": "view",
+        "lottery": "view"
+    }
+}

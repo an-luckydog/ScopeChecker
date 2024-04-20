@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "兔喜生活上门服务协议",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 50,
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

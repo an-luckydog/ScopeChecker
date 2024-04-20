@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "come-again-pup": "/components/comeAgain/index",
+        "app": "/components/privacy/privacy"
+    }
+}

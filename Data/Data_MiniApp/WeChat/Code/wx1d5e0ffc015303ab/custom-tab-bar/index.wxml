@@ -1,0 +1,8 @@
+<view class="dibu">
+    <view class="controls_title">
+        <view bindtap="handleSwitchTab" class="{{item.bulge?'Scan':''}}" data-index="{{index}}" data-path="{{item.pagePath}}" wx:for="{{navList}}" wx:key="index">
+            <image class="{{item.is120?'img-120':''}}" src="{{selected===index?item.selectIconPath:item.iconPath}}"></image>
+            <text>{{item.text}}</text>
+        </view>
+    </view>
+</view>

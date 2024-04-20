@@ -1,0 +1,20 @@
+<view class="activeShops data-v-a9df2c9a">
+    <view bindtap="__e" class="activeShops-item data-v-a9df2c9a" data-event-opts="{{[ [ 'tap',[ [ 'toKillDetail',['$0',index],[ [ ['actList','goodsId',item[$orig].goodsId,'goodsId'] ] ] ] ] ] ]}}" wx:for="{{$root.l0}}" wx:key="goodsId">
+        <view class="item-title data-v-a9df2c9a">{{item[$orig].hotRecommendTitle}}</view>
+        <view class="item-center data-v-a9df2c9a">
+            <view class="msIcon data-v-a9df2c9a" wx:if="{{item[$orig].secKill=='0'}}">
+                <image class="data-v-a9df2c9a" mode="widthFix" src="{{qpImgUrl+'index/miaoLogoNew.png'}}"></image>
+            </view>
+            <block wx:else>
+                <view class="ptIcon data-v-a9df2c9a" wx:if="{{item[$orig].isGroupBuying=='1'}}">
+                    <image class="data-v-a9df2c9a" mode="widthFix" src="{{qpImgUrl+'index/pintuanLogoNew.png'}}"></image>
+                </view>
+                <block wx:else>
+                    <image class="giftCardIcon data-v-a9df2c9a" mode="widthFix" src="{{qpImgUrl+'index/lipinkaLogo.png'}}" wx:if="{{item[$orig].isGiftCard=='1'&&item[$orig].halfPriceType==0}}"></image>
+                </block>
+            </block>
+            <view class="activity_half data-v-a9df2c9a" wx:if="{{item[$orig].halfPriceType==1}}">{{item.m0+'折'}}</view>
+            <image class="item-center-img data-v-a9df2c9a" mode="widthFix" src="{{goodsImgRoot+( item[$orig].isGiftCard==1?item.g0[1]:item.g1[0] )}}"></image>
+        </view>
+    </view>
+</view>

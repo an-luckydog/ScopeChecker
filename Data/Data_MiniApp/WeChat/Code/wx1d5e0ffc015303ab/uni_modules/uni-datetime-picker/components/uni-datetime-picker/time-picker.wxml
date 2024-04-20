@@ -1,0 +1,72 @@
+<view class="uni-datetime-picker">
+    <view bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'initTimePicker',['$event'] ] ] ] ]}}">
+        <slot wx:if="{{$slots.default}}"></slot>
+        <view class="{{['uni-datetime-picker-timebox-pointer',disabled?'uni-datetime-picker-disabled':'',border?'uni-datetime-picker-timebox':'']}}" wx:else>
+            <text class="uni-datetime-picker-text">{{time}}</text>
+            <view class="uni-datetime-picker-time" wx:if="{{!time}}">
+                <text class="uni-datetime-picker-text">{{selectTimeText}}</text>
+            </view>
+        </view>
+    </view>
+    <view bindtap="__e" class="uni-datetime-picker-mask" data-event-opts="{{[ [ 'tap',[ [ 'tiggerTimePicker',['$event'] ] ] ] ]}}" id="mask" wx:if="{{visible}}"></view>
+    <view class="{{['uni-datetime-picker-popup',dateShow&&timeShow?'':'fix-nvue-height']}}" style="{{fixNvueBug}}" wx:if="{{visible}}">
+        <view class="uni-title">
+            <text class="uni-datetime-picker-text">{{selectTimeText}}</text>
+        </view>
+        <view class="uni-datetime-picker__container-box" wx:if="{{dateShow}}">
+            <picker-view bindchange="__e" class="uni-datetime-picker-view" data-event-opts="{{[ [ 'change',[ [ 'bindDateChange',['$event'] ] ] ] ]}}" indicatorStyle="{{indicatorStyle}}" value="{{ymd}}">
+                <picker-view-column>
+                    <view class="uni-datetime-picker-item" wx:for="{{$root.l0}}" wx:key="index">
+                        <text class="uni-datetime-picker-item">{{item.m0}}</text>
+                    </view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view class="uni-datetime-picker-item" wx:for="{{$root.l1}}" wx:key="index">
+                        <text class="uni-datetime-picker-item">{{item.m1}}</text>
+                    </view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view class="uni-datetime-picker-item" wx:for="{{$root.l2}}" wx:key="index">
+                        <text class="uni-datetime-picker-item">{{item.m2}}</text>
+                    </view>
+                </picker-view-column>
+            </picker-view>
+            <text class="uni-datetime-picker-sign sign-left">-</text>
+            <text class="uni-datetime-picker-sign sign-right">-</text>
+        </view>
+        <view class="uni-datetime-picker__container-box" wx:if="{{timeShow}}">
+            <picker-view bindchange="__e" class="{{['uni-datetime-picker-view',hideSecond?'time-hide-second':'']}}" data-event-opts="{{[ [ 'change',[ [ 'bindTimeChange',['$event'] ] ] ] ]}}" indicatorStyle="{{indicatorStyle}}" value="{{hms}}">
+                <picker-view-column>
+                    <view class="uni-datetime-picker-item" wx:for="{{$root.l3}}" wx:key="index">
+                        <text class="uni-datetime-picker-item">{{item.m3}}</text>
+                    </view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view class="uni-datetime-picker-item" wx:for="{{$root.l4}}" wx:key="index">
+                        <text class="uni-datetime-picker-item">{{item.m4}}</text>
+                    </view>
+                </picker-view-column>
+                <picker-view-column wx:if="{{!hideSecond}}">
+                    <view class="uni-datetime-picker-item" wx:for="{{$root.l5}}" wx:key="index">
+                        <text class="uni-datetime-picker-item">{{item.m5}}</text>
+                    </view>
+                </picker-view-column>
+            </picker-view>
+            <text class="{{['uni-datetime-picker-sign',hideSecond?'sign-center':'sign-left']}}">:</text>
+            <text class="uni-datetime-picker-sign sign-right" wx:if="{{!hideSecond}}">:</text>
+        </view>
+        <view class="uni-datetime-picker-btn">
+            <view bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'clearTime',['$event'] ] ] ] ]}}">
+                <text class="uni-datetime-picker-btn-text">{{clearText}}</text>
+            </view>
+            <view class="uni-datetime-picker-btn-group">
+                <view bindtap="__e" class="uni-datetime-picker-cancel" data-event-opts="{{[ [ 'tap',[ [ 'tiggerTimePicker',['$event'] ] ] ] ]}}">
+                    <text class="uni-datetime-picker-btn-text">{{cancelText}}</text>
+                </view>
+                <view bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'setTime',['$event'] ] ] ] ]}}">
+                    <text class="uni-datetime-picker-btn-text">{{okText}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

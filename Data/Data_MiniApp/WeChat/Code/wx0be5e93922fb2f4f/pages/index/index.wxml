@@ -1,0 +1,42 @@
+<import src="../../component/template/tab.wxml"></import>
+<view class="pt-header-24">
+    <view class="p30">
+        <view bindtap="goMyFunc" class="index-info" wx:if="{{loginState}}">
+            <image src="{{userInfo.headImg}}"></image>
+            <view>{{userInfo.nickname}}</view>
+        </view>
+        <view class="login-box" wx:if="{{!loginState}}">
+            <button bindtap="onGotUserInfo" class="loginBtn" plain="true" size="mini">
+                <image src="./../../img/indexIcon.png"></image>
+                <text class="textClass">暂未授权</text>
+            </button>
+        </view>
+        <view class="swiper-container-syf">
+            <swiper autoplay="{{autoplay}}" class="swiper-demo" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}">
+                <swiper-item wx:for="{{background}}" wx:key="*this">
+                    <view class="swiper-item">
+                        <image src="{{item.url}}"></image>
+                    </view>
+                </swiper-item>
+            </swiper>
+        </view>
+        <view class="index-order">
+            <view class="border"></view>
+            <view bindtap="goOrderList" class="index-order-list" wx:if="{{loginState}}">
+                <view class="index-order-left" wx:if="{{isOrderingFlag&&loginState}}">
+                    <image src="./../../img/icon3.png"></image> 您有正在进行的订单 <text>({{orderingNum}})</text>
+                </view>
+                <view class="index-order-left" wx:if="{{!isOrderingFlag&&loginState}}">
+                    <image src="./../../img/icon3.png"></image> 您没有正在进行的订单哦 </view>
+                <view class="index-order-right" wx:if="{{isOrderingFlag}}">立即查看</view>
+            </view>
+            <view class="index-order-list" wx:if="{{!loginState}}">
+                <view class="index-order-left">
+                    <button bindtap="onGotUserInfo" class="login-order-btn" plain="true" size="mini">
+                        <image src="./../../img/icon3.png"></image> 您还没有登录，请先登录 </button>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"></template>

@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "today-goods": "./today-goods",
+        "film-tab-card": "./film-tab-card",
+        "center-banner": "./center-banner"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "navigationStyle": "default",
+    "navigationBarTitleText": "风险提示",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

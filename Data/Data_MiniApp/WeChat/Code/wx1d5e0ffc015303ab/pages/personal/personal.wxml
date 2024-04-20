@@ -1,0 +1,156 @@
+<view class="personalCenter tab-height data-v-3152c9ee" id="personalCenter">
+    <view class="data-v-3152c9ee" id="title" style="{{'padding-top:'+safeAreaTopCur+';'+'z-index:'+'100'+';'+'width:'+'100%'+';'+'line-height:'+safeAreaTopCur+';'+'background:'+'#02984B'+';'}}">
+        <app-title bind:__l="__l" class="data-v-3152c9ee" safeHeight="{{safeAreaTopCur}}" showLogo="{{true}}" showTitle="{{false}}" vueId="ffa91980-1"></app-title>
+    </view>
+    <view class="personalCenter-header data-v-3152c9ee" id="wr-center-top">
+        <view class="personalCenter-userInfor-box data-v-3152c9ee">
+            <view class="pc-titleBox flex-xsb-yc data-v-3152c9ee">
+                <view class="pct-userInfor flex-xn-yc data-v-3152c9ee">
+                    <view class="pct-userInfor-userImg data-v-3152c9ee">
+                        <image bindtap="__e" class="avatar data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'toModifyUserInfo',['$event'] ] ] ] ]}}" mode="widthFix" src="{{userInfo.headImgUrl||'https://xcxsite.vjifen.com/v/qpCommonImgs/index/shangchuantouxiang.png'}}"></image>
+                    </view>
+                    <view bindtap="__e" class="data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'toModifyUserInfo',['$event'] ] ] ] ]}}">
+                        <view class="pct-userInfor-nickName text-overflow-ellipsis data-v-3152c9ee">{{(userInfo.nickName||'微信用户')+''}}</view>
+                    </view>
+                </view>
+                <view class="mypoint-font flex-xn-yc data-v-3152c9ee" style="font-weight:500;">
+                    <image class="data-v-3152c9ee" mode="widthFix" src="{{qpImgUrl+'point5.png'}}"></image>{{'啤酒花：'+(surplusVpoints||0)+''}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="mypoint data-v-3152c9ee">
+        <view class="mypoint-top data-v-3152c9ee">
+            <view class="flex-xsb-yn data-v-3152c9ee" style="padding-top:36rpx;">
+                <view class="mypoint-font data-v-3152c9ee">
+                    <view class="mypoint-font1 data-v-3152c9ee">{{vpsConsumerMemberInfo.vipName||''}}</view>
+                    <view class="mypoint-font2 data-v-3152c9ee">{{'(还差 '+(vpsConsumerMemberInfo.showScanNextLev||'')+' 瓶升级\n\t\t\t\t\t\t'+(vpsConsumerMemberInfo.lastVipName||'')+')'}}</view>
+                </view>
+                <view bindtap="__e" class="mypoint-jilu data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ ['toGradeDescription'] ] ] ]}}">等级说明</view>
+            </view>
+            <view class="progress-bar-box data-v-3152c9ee">
+                <progress-bar bind:__l="__l" class="data-v-3152c9ee" color="#fff" curNum="{{$root.m2}}" maxNum="{{$root.m1}}" minNum="{{$root.m0}}" vueId="ffa91980-2"></progress-bar>
+            </view>
+        </view>
+        <view class="tabs flex-xsb-yc data-v-3152c9ee">
+            <view class="type-list data-v-3152c9ee" wx:for="{{categoryData}}" wx:key="index">
+                <view class="menuBox data-v-3152c9ee">
+                    <image class="data-v-3152c9ee" mode="widthFix" src="{{item.imageUrl}}"></image>
+                    <view class="menuName data-v-3152c9ee">{{''+item.text+''}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="personalCenter-tabs flex-xsb-yc data-v-3152c9ee">
+        <view bindtap="__e" class="flex-xc-yc-dirY data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'listNav',['$0'],[ [ ['tabsArr','id',item.id] ] ] ] ] ] ]}}" wx:for="{{tabsArr}}" wx:for-index="__i0__" wx:key="id">
+            <image class="data-v-3152c9ee" src="{{item.icon}}"></image>
+            <text class="data-v-3152c9ee">{{''+item.name+''}}</text>
+            <view class="showCenter data-v-3152c9ee" wx:if="{{item.showCenter&&item.showCenter>0}}">{{item.showCenter}}</view>
+        </view>
+    </view>
+    <view class="topointMall data-v-3152c9ee" wx:if="{{isShowVpointsShop}}">
+        <image bindtap="__e" class="data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'toPonitMall',['$event'] ] ] ] ]}}" mode="widthFix" src="https://xcxsite.vjifen.com/v/static/hb2020/bg_tomall.png"></image>
+    </view>
+    <view class="wrc-listBox data-v-3152c9ee">
+        <view class="pct-list-top-box pct-common data-v-3152c9ee">
+            <view bindtap="__e" class="flex-xsb-yc pct-list  data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'listNav',['$0'],[ [ ['pctList','id',item.id] ] ] ] ] ] ]}}" wx:if="{{item.isShow}}" wx:for="{{pctList}}" wx:for-index="__i1__" wx:key="id">
+                <view class="flex-xn-yc pct-list-left data-v-3152c9ee">
+                    <image class="icon data-v-3152c9ee" mode="widthFix" src="{{item.icon}}"></image>
+                    <text class="data-v-3152c9ee">{{item.name}}</text>
+                </view>
+                <view class="pct-list-right flex-xR-yc data-v-3152c9ee">
+                    <image class="icon data-v-3152c9ee" src="{{item.rightIcon}}" wx:if="{{item.rightIcon}}"></image>
+                    <text class="data-v-3152c9ee" wx:if="{{item.showCenter}}">{{item.showCenter}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="pct-list-top-box pct-common data-v-3152c9ee">
+            <view bindtap="__e" class="flex-xsb-yc pct-list  data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'listNav',['$0'],[ [ ['pctListBot','id',item.id] ] ] ] ] ] ]}}" wx:for="{{pctListBot}}" wx:for-index="__i2__" wx:key="id">
+                <view class="flex-xn-yc pct-list-left data-v-3152c9ee">
+                    <image class="icon data-v-3152c9ee" mode="widthFix" src="{{item.icon}}"></image>
+                    <text class="data-v-3152c9ee">{{item.name}}</text>
+                </view>
+                <view class="pct-list-right flex-xR-yc data-v-3152c9ee">
+                    <image class="icon data-v-3152c9ee" src="{{item.rightIcon}}" wx:if="{{item.rightIcon}}"></image>
+                    <text class="data-v-3152c9ee" wx:if="{{item.showCenter}}">{{item.showCenter}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="pct-list-top-box pct-common data-v-3152c9ee">
+            <view bindtap="__e" class="flex-xsb-yc pct-list  data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'listNav',['$0'],[ [ ['pctListBot0','id',item.id] ] ] ] ] ] ]}}" wx:for="{{pctListBot0}}" wx:for-index="__i3__" wx:key="id">
+                <view class="flex-xn-yc pct-list-left data-v-3152c9ee">
+                    <image class="icon data-v-3152c9ee" mode="widthFix" src="{{item.icon}}"></image>
+                    <text class="data-v-3152c9ee">{{item.name}}</text>
+                </view>
+                <view class="pct-list-right flex-xR-yc data-v-3152c9ee">
+                    <image class="icon data-v-3152c9ee" src="{{item.rightIcon}}" wx:if="{{item.rightIcon}}"></image>
+                    <text class="data-v-3152c9ee" wx:if="{{item.showCenter}}">{{item.showCenter}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="pct-list-top-box pct-common data-v-3152c9ee">
+            <view bindtap="__e" class="flex-xsb-yc pct-list  data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'listNav',['$0'],[ [ ['pctListBot1','id',item.id] ] ] ] ] ] ]}}" wx:for="{{pctListBot1}}" wx:for-index="__i4__" wx:key="id">
+                <view class="flex-xn-yc pct-list-left data-v-3152c9ee">
+                    <image class="icon data-v-3152c9ee" mode="widthFix" src="{{item.icon}}"></image>
+                    <text class="data-v-3152c9ee">{{item.name}}</text>
+                </view>
+                <view class="pct-list-right flex-xR-yc data-v-3152c9ee">
+                    <image class="icon data-v-3152c9ee" src="{{item.rightIcon}}" wx:if="{{item.rightIcon}}"></image>
+                    <text class="data-v-3152c9ee" wx:if="{{item.showCenter}}">{{item.showCenter}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <custom-call-phone bind:WxOpenSettingColse="__e" bind:__l="__l" callPhoneList="{{callPhoneList}}" class="data-v-3152c9ee" customCallPhoneIsShow="{{customCallPhoneIsShow}}" data-event-opts="{{[ [ '^WxOpenSettingColse',[ ['WxOpenSettingColse'] ] ] ]}}" vueId="ffa91980-3"></custom-call-phone>
+    <privacy bind:__l="__l" bind:unLoadPrivacy="__e" class="data-v-3152c9ee" data-event-opts="{{[ [ '^unLoadPrivacy',[ ['e0'] ] ] ]}}" vueId="ffa91980-4" wx:if="{{isShowPrivacy}}"></privacy>
+    <mask-template bind:__l="__l" class="data-v-3152c9ee" isShow="{{isShowMaskTemplate}}" vueId="ffa91980-5" vueSlots="{{['default']}}">
+        <view class="mask-template-main data-v-3152c9ee">
+            <view bindtap="__e" class="mtm-colse data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'e1',['$event'] ] ] ] ]}}">
+                <image class="data-v-3152c9ee" mode="widthFix" src="{{staticUrlSD+'index/tingfu_colse.png'}}"></image>
+            </view>
+            <view class="mtm-title data-v-3152c9ee">
+                <text class="data-v-3152c9ee">停服升级公告</text>
+            </view>
+            <view class="mtm-center data-v-3152c9ee">
+                <view class="mtm-center1 data-v-3152c9ee">亲爱的用户：</view>
+                <view class="mtm-center2 data-v-3152c9ee">纯生产品扫码活动将于2021年9月15日（周三）0:00-24:00暂停。</view>
+                <view class="mtm-center2 data-v-3152c9ee">停服期间无法扫码，请保留瓶盖。升级后的活动内容以扫码页面显示为准。</view>
+                <view class="mtm-center3 data-v-3152c9ee">注：依据实际情况，停服升级时间可能会有所延长，如有调整请以最新公告为准</view>
+            </view>
+        </view>
+    </mask-template>
+    <show-modal bind:__l="__l" bind:changePro="__e" bind:closeShowModel="__e" bind:comfrimShowModel="__e" class="data-v-3152c9ee" data-event-opts="{{[ [ '^comfrimShowModel',[ ['comfrimShowModel'] ] ],[ '^changePro',[ ['changePro'] ] ],[ '^closeShowModel',[ ['e2'] ] ] ]}}" isShowCloseTip="{{true}}" provinceList="{{provinceListArr}}" showTipWindow="{{showTipWindow}}" vueId="ffa91980-6"></show-modal>
+    <view class="duifuka-mask flex-xc-yc data-v-3152c9ee" wx:if="{{isShowExchangeCard}}">
+        <view class="duifuka data-v-3152c9ee">
+            <image bindtap="__e" class="duifuka-colse data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'e3',['$event'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'/hb2020/lipinka/tanchaungguanbi.png'}}"></image>
+            <view class="duifuka-title data-v-3152c9ee">温馨提示</view>
+            <view class="duifuka-center data-v-3152c9ee">
+                <view class="duifuka-center-title data-v-3152c9ee">兑付礼品卡</view>
+                <view class="duifuka-center-name flex-xc-yc data-v-3152c9ee">{{duifukaItem.goodsInfo.goodsShortName}}</view>
+                <view class="duifuka-center-mes data-v-3152c9ee">仅限本产品使用</view>
+            </view>
+            <view bindtap="__e" class="duifuka-but data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ ['duifukaShouxia'] ] ] ]}}">收下</view>
+        </view>
+    </view>
+    <view class="duifuka-mask flex-xc-yc data-v-3152c9ee" wx:if="{{isShowExchangeCardErr}}">
+        <view class="duifuka data-v-3152c9ee">
+            <image bindtap="__e" class="duifuka-colse data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'e4',['$event'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'/hb2020/lipinka/tanchaungguanbi.png'}}"></image>
+            <view class="duifuka-title data-v-3152c9ee">温馨提示</view>
+            <view class="duifuka-center-err flex-xc-yc data-v-3152c9ee">
+                <view class="data-v-3152c9ee">{{''+exchangeCardErr+''}}</view>
+            </view>
+            <view bindtap="__e" class="duifuka-but data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'e5',['$event'] ] ] ] ]}}">我知道了</view>
+        </view>
+    </view>
+    <uni-popup bind:__l="__l" class="data-v-3152c9ee vue-ref" data-ref="actionPopup" isMaskClick="{{false}}" maskClick="{{false}}" vueId="ffa91980-7" vueSlots="{{['default']}}">
+        <view class="action-box data-v-3152c9ee">
+            <view class="action-content data-v-3152c9ee">
+                <view class="action-title data-v-3152c9ee">专属客服</view>
+                <view class="action-text data-v-3152c9ee">专属客服-每一次服务都无微不至</view>
+            </view>
+            <view bindtap="__e" class="action-btn data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'handleCloseAction',['$event'] ] ] ] ]}}">
+                <button class="data-v-3152c9ee" openType="contact" sessionFrom="{{sessionFrom}}" size="40" type="primary">立即联系</button>
+            </view>
+            <image bindtap="__e" class="action-close data-v-3152c9ee" data-event-opts="{{[ [ 'tap',[ [ 'handleCloseAction',['$event'] ] ] ] ]}}" mode="widthFix" src="https://xcxsite.vjifen.com/v/static/qp120/alert_close.png"></image>
+        </view>
+    </uni-popup>
+</view>

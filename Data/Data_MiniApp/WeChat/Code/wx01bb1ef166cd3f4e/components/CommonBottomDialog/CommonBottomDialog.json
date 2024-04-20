@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "activity-views": "../../miniprogram_npm/@mina-components/activity-views/index",
+        "ClickButton": "/components/ClickButton/ClickButton"
+    }
+}

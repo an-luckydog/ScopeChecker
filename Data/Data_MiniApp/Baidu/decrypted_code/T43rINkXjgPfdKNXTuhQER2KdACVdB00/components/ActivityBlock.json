@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "infinite-scroller": "./InfiniteScroller"
+    },
+    "component": true
+}

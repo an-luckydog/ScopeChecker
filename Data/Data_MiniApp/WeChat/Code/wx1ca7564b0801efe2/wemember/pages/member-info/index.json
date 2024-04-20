@@ -1,0 +1,10 @@
+{
+    "navigationBarBackgroundColor": "#f4f4f4",
+    "navigationBarTitleText": "会员信息",
+    "backgroundColor": "#f4f4f4",
+    "disableScroll": true,
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

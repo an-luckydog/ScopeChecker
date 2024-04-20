@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "gift-common-modal": "./GiftCommonModal"
+    },
+    "component": true
+}

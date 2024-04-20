@@ -1,0 +1,5 @@
+<view catch:tap="onTap" class="bottom-bar-container {{tabBar?'':'no-tab'}}" wx:if="{{tips}}">
+    <text class="{{status===USER_GEO_AUTH_FAILED?'tips-text':''}}">{{tips}}</text>
+    <view catch:tap="goToAuth" class="auth-button" wx:if="{{status===USER_GEO_AUTH_FAILED}}">去授权</view>
+    <view class="base-icon icon-jiantou-xia" wx:if="{{isShowRecommend}}"></view>
+</view>

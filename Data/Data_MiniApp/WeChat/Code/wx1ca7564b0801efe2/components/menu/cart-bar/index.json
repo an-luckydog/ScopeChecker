@@ -1,0 +1,14 @@
+{
+    "component": true,
+    "usingComponents": {
+        "cart-price": "../cart-price/index",
+        "cart-toast": "../cart-toast/index",
+        "ui-button": "../../../miniprogram_npm/@components/limo-ui/ui-button/index",
+        "red-point": "../../../miniprogram_npm/@components/limo-ui/ui-redpoint/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

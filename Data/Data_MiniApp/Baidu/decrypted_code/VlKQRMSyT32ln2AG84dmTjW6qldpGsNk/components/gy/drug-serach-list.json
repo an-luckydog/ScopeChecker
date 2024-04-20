@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"drug-list-item":"./drug-list-item","list-loading":"../common/list-loading","page-loading":"../common/pageloading","navigate":"../common/navigate","c-btn":"../../mars_modules/@baidu/med-ui/dist/swan/components/Button/Button"}}

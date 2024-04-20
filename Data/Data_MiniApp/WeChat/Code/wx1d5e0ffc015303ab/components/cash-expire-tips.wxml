@@ -1,0 +1,5 @@
+<view class="data-v-f8c37b90">
+    <view bindtap="__e" class="expire_content data-v-f8c37b90" data-event-opts="{{[ [ 'tap',[ [ '_readTips',['$event'] ] ] ] ]}}" style="{{'background-color:'+theme+';'+'border-color:'+theme+';'+'color:'+theme+';'}}" wx:if="{{showTip&&showExpireTips}}">
+        <text class="data-v-f8c37b90">{{expireTips}}</text>
+    </view>
+</view>

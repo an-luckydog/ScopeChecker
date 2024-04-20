@@ -1,0 +1,7 @@
+<view bind:tap="jumpToSvipCardPage" class="container">
+    <image class="card-icon" src="https://p0.meituan.net/travelcube/750893e83223a656ba567c32ed8e2f8d2916.png"></image>
+    <view class="text-{{item.type}}" wx:if="{{richText&&richText.length>0}}" wx:for="{{richText}}" wx:key="index">{{item.text}}</view>
+    <view>
+        <base-icon customIconStyle="color: #FFEDDE; font-size: 24rpx" customStyle=" width: unset" iconType="right-arrow"></base-icon>
+    </view>
+</view>

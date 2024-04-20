@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/login/login",
+        "pages/my/my",
+        "pages/index/index",
+        "pages/my/passWord/passWord",
+        "pages/activityList/activityList",
+        "pages/signIn/signIn",
+        "pages/error/error",
+        "pages/activity/news",
+        "pages/my/introduce/introduce",
+        "pages/my/offer/offer",
+        "pages/my/offer/offerPage",
+        "pages/scoreInquiry/score",
+        "pages/activity/activity",
+        "pages/my/center/center",
+        "pages/company/companyIntroduces",
+        "pages/activityJoin/activityJoin"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "enablePullDownRefresh": true,
+        "navigationBarBackgroundColor": "#6CB7F4",
+        "navigationBarTitleText": "河北工大掌上二课堂",
+        "navigationBarTextStyle": "white",
+        "background-color": "#6CB7F4"
+    },
+    "tabBar": {
+        "custom": true,
+        "color": "#111",
+        "selectedColor": "#6CB7F4",
+        "backgroundColor": "#d2d2d2",
+        "borderStyle": "white",
+        "list": [
+            {
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "pages/images/home1.png",
+                "selectedIconPath": "pages/images/home.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/my/my",
+                "iconPath": "pages/images/person1.png",
+                "selectedIconPath": "pages/images/person.png"
+            }
+        ]
+    }
+}

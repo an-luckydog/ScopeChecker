@@ -1,0 +1,7 @@
+{
+  "host_min_version": "2.29.0",
+  "host_max_version": "255.255.255.255",
+  "version_name": "3.65.0",
+  "package_name": "program-compiler",
+  "loader_version": 43
+}

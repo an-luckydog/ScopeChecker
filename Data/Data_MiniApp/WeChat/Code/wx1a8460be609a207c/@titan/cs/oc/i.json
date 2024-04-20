@@ -1,0 +1,40 @@
+{
+    "component": true,
+    "usingComponents": {
+        "f_cms_sdk_CMSSDKErrorModal": "/cms_sdk/RAW/mats/error-modal/c",
+        "f_cms_sdk_CMSSDKLandingPage": "/cms_sdk/RAW/mats/loading/c",
+        "f_cms_sdk_CMSSDKImageMask": "/cms_sdk/RAW/mats/image-mask/c",
+        "f_cms_sdk_CMSSDKCollectBarPage": "/cms_sdk/RAW/mats/collect-bar/c",
+        "f_cms_sdk_CMSSDKNavMenuPage": "/cms_sdk/RAW/mats/nav-menu/page",
+        "f_onecrm_public_register_register": "/onecrm_public_register/RAW/index",
+        "f_cms_userAgreement": "/cms/RAW/components/userAgreement/index",
+        "f_cms_marketing": "/cms/RAW/components/marketingModal/index",
+        "f_cms_registLogin": "/cms/RAW/components/registLogin/index",
+        "f_cms_changePhoneModal": "/cms/RAW/components/registLogin/common/changePhoneModal/index",
+        "f_cms_mergeWidInfos": "/cms/RAW/components/registLogin/common/mergewidalert/index",
+        "f_cms_verifyAuth": "/cms/RAW/components/verifyAuth/index",
+        "f_cms_pageUserAgreement": "/cms/RAW/components/pageUserAgreement/index",
+        "f_cms_bindPhone": "/cms/RAW/components/bindPhone/index",
+        "f_cms_wxPrivacy": "/cms/RAW/components/wxPrivacy/index",
+        "f_ec_wxworkShareProxy": "/ec/RAW/components/wxworkShareProxy/wxworkShare",
+        "f_cms_cmsThemeProvider": "/cms/RAW/components/cmsThemeProvider/index",
+        "titan-perf-dog": "/@titan/cs/pd/i",
+        "f_rprm_wrapComp": "/rprm/RAW/wrap/index"
+    },
+    "componentPlaceholder": {
+        "f_cms_sdk_CMSSDKErrorModal": "view",
+        "f_cms_sdk_CMSSDKLandingPage": "view",
+        "f_cms_sdk_CMSSDKCollectBarPage": "view",
+        "f_onecrm_public_register_register": "view",
+        "f_cms_userAgreement": "view",
+        "f_cms_marketing": "view",
+        "f_cms_registLogin": "view",
+        "f_cms_changePhoneModal": "view",
+        "f_cms_mergeWidInfos": "view",
+        "f_cms_verifyAuth": "view",
+        "f_cms_bindPhone": "view",
+        "f_cms_wxPrivacy": "view",
+        "f_ec_wxworkShareProxy": "view",
+        "titan-perf-dog": "view"
+    }
+}

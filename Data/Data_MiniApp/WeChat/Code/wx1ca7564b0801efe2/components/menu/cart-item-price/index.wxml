@@ -1,0 +1,10 @@
+<view class="cart-item-price-wrapper">
+    <view class="cart-item-price">
+        <view class="curr" wx:if="{{actualPrice!==''}}">
+            <view class="price-unit">{{currency}}</view>
+            <text>{{actualPrice}}</text>
+        </view>
+        <view class="origin" wx:if="{{actualPrice<originPrice&&originPrice!==''}}">{{currency+originPrice}}</view>
+    </view>
+    <view class="point-purchase-text" wx:if="{{dish.pointDiscountText}}">{{dish.pointDiscountText}}</view>
+</view>

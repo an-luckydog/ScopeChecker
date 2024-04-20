@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "切换会员卡",
+    "navigationBarTitleText": "切换会员卡",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

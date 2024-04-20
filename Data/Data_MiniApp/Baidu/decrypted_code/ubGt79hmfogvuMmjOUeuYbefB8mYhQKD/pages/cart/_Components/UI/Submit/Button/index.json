@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "telepay-vericode":"../vericode/vericode"
+  }
+}

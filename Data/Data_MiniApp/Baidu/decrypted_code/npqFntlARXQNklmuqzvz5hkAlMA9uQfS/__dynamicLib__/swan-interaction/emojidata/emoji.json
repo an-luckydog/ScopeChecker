@@ -1,0 +1,1034 @@
+{
+    "version": "1",
+    "packages": [{
+        "id": "1",
+        "name": "emoji",
+        "package_icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/package_01.png",
+        "emoticons": [{
+                "id": "001001",
+                "text": "[微笑]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_01.png"
+            },
+            {
+                "id": "001004",
+                "text": "[大笑]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_04.png"
+            },
+            {
+                "id": "001005",
+                "text": "[鼓掌]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_05.png"
+            },
+            {
+                "id": "001206",
+                "text": "[嘻嘻]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_206.png"
+            },
+            {
+                "id": "001023",
+                "text": "[色]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_23.png"
+            },
+            {
+                "id": "001025",
+                "text": "[得意]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_25.png"
+            },
+            {
+                "id": "001159",
+                "text": "[挤眼]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_159.png"
+            },
+            {
+                "id": "001071",
+                "text": "[滑稽]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_71.png"
+            },
+            {
+                "id": "001197",
+                "text": "[困]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_197.png"
+            },
+            {
+                "id": "001271",
+                "text": "[虎年大吉]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_271.png"
+            },
+            {
+                "id": "001079",
+                "text": "[财神]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_79.png"
+            },
+            {
+                "id": "001251",
+                "text": "[牛福到]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_251.png"
+            },
+            {
+                "id": "001056",
+                "text": "[中国加油]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_56.png"
+            },
+            {
+                "id": "001011",
+                "text": "[汗]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_11.png"
+            },
+            {
+                "id": "001073",
+                "text": "[左捂脸]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_73.png"
+            },
+            {
+                "id": "001266",
+                "text": "[金牌]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_266.png"
+            },
+            {
+                "id": "001274",
+                "text": "[银牌]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_274.png"
+            },
+            {
+                "id": "001275",
+                "text": "[铜牌]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_275.png"
+            },
+            {
+                "id": "001272",
+                "text": "[虎妞妞]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_272.png"
+            },
+            {
+                "id": "001273",
+                "text": "[小脑斧]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_273.png"
+            },
+            {
+                "id": "001196",
+                "text": "[可怜]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_196.png"
+            },
+            {
+                "id": "001024",
+                "text": "[舔屏]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_24.png"
+            },
+            {
+                "id": "001065",
+                "text": "[打call]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_65.png"
+            },
+            {
+                "id": "001003",
+                "text": "[期待]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_03.png"
+            },
+            {
+                "id": "001098",
+                "text": "[亲吻]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_98.png"
+            },
+            {
+                "id": "001012",
+                "text": "[抠鼻]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_12.png"
+            },
+            {
+                "id": "001219",
+                "text": "[ok啊]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_219.png"
+            },
+            {
+                "id": "001068",
+                "text": "[没眼看]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_68.png"
+            },
+            {
+                "id": "001034",
+                "text": "[偷笑]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_34.png"
+            },
+            {
+                "id": "001013",
+                "text": "[哼]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_13.png"
+            },
+            {
+                "id": "001033",
+                "text": "[你懂的]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_33.png"
+            },
+            {
+                "id": "001215",
+                "text": "[欧耶]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_215.png"
+            },
+            {
+                "id": "001016",
+                "text": "[不高兴]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_16.png"
+            },
+            {
+                "id": "001066",
+                "text": "[尬笑]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_66.png"
+            },
+            {
+                "id": "001239",
+                "text": "[泪奔]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_239.png"
+            },
+            {
+                "id": "001019",
+                "text": "[大哭]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_19.png"
+            },
+            {
+                "id": "001020",
+                "text": "[流泪]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_20.png"
+            },
+            {
+                "id": "001038",
+                "text": "[鄙视]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_38.png"
+            },
+            {
+                "id": "001015",
+                "text": "[委屈]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_15.png"
+            },
+            {
+                "id": "001228",
+                "text": "[挠头]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_228.png"
+            },
+            {
+                "id": "001192",
+                "text": "[费解]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_192.png"
+            },
+            {
+                "id": "001026",
+                "text": "[疑问]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_26.png"
+            },
+            {
+                "id": "001226",
+                "text": "[苦思冥想]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_226.png"
+            },
+            {
+                "id": "001027",
+                "text": "[晕]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_27.png"
+            },
+            {
+                "id": "001051",
+                "text": "[爱钱]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_51.png"
+            },
+            {
+                "id": "001069",
+                "text": "[嘿哈]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_69.png"
+            },
+            {
+                "id": "001029",
+                "text": "[二哈]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_29.png"
+            },
+            {
+                "id": "001028",
+                "text": "[大哈]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_28.png"
+            },
+            {
+                "id": "001030",
+                "text": "[三哈]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_30.png"
+            },
+            {
+                "id": "001217",
+                "text": "[惊恐]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_217.png"
+            },
+            {
+                "id": "001241",
+                "text": "[石化]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_241.png"
+            },
+            {
+                "id": "001041",
+                "text": "[衰]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_41.png"
+            },
+            {
+                "id": "001018",
+                "text": "[惊哭]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_18.png"
+            },
+            {
+                "id": "001009",
+                "text": "[啊]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_09.png"
+            },
+            {
+                "id": "001166",
+                "text": "[生病]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_166.png"
+            },
+            {
+                "id": "001037",
+                "text": "[再见]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_37.png"
+            },
+            {
+                "id": "001036",
+                "text": "[哈欠]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_36.png"
+            },
+            {
+                "id": "001187",
+                "text": "[并不简单]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_187.png"
+            },
+            {
+                "id": "001218",
+                "text": "[社会]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_218.png"
+            },
+            {
+                "id": "001216",
+                "text": "[嫌弃]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_216.png"
+            },
+            {
+                "id": "001031",
+                "text": "[白眼]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_31.png"
+            },
+            {
+                "id": "001002",
+                "text": "[开心]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_02.png"
+            },
+            {
+                "id": "001067",
+                "text": "[坏笑]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_67.png"
+            },
+            {
+                "id": "001022",
+                "text": "[亲亲]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_22.png"
+            },
+            {
+                "id": "001221",
+                "text": "[撇嘴]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_221.png"
+            },
+            {
+                "id": "001188",
+                "text": "[馋嘴]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_188.png"
+            },
+            {
+                "id": "001203",
+                "text": "[思考]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_203.png"
+            },
+            {
+                "id": "001220",
+                "text": "[耶耶耶]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_220.png"
+            },
+            {
+                "id": "001191",
+                "text": "[顶]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_191.png"
+            },
+            {
+                "id": "001154",
+                "text": "[感冒]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_154.png"
+            },
+            {
+                "id": "001222",
+                "text": "[emmm]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_222.png"
+            },
+            {
+                "id": "001044",
+                "text": "[闭嘴]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_44.png"
+            },
+            {
+                "id": "001231",
+                "text": "[摸头]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_231.png"
+            },
+            {
+                "id": "001209",
+                "text": "[右哼哼]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_209.png"
+            },
+            {
+                "id": "001210",
+                "text": "[左哼哼]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_210.png"
+            },
+            {
+                "id": "001202",
+                "text": "[失望]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_202.png"
+            },
+            {
+                "id": "001017",
+                "text": "[囧]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_17.png"
+            },
+            {
+                "id": "001039",
+                "text": "[抓狂]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_39.png"
+            },
+            {
+                "id": "001040",
+                "text": "[咒骂]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_40.png"
+            },
+            {
+                "id": "001070",
+                "text": "[前面的别走]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_70.png"
+            },
+            {
+                "id": "001050",
+                "text": "[友军]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_50.png"
+            },
+            {
+                "id": "001049",
+                "text": "[同上]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_49.png"
+            },
+            {
+                "id": "001195",
+                "text": "[互粉]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_195.png"
+            },
+            {
+                "id": "001122",
+                "text": "[加油啊]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_122.png"
+            },
+            {
+                "id": "001238",
+                "text": "[呕]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_238.png"
+            },
+            {
+                "id": "001189",
+                "text": "[吃瓜]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_189.png"
+            },
+            {
+                "id": "001227",
+                "text": "[奥利给]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_227.png"
+            },
+            {
+                "id": "001043",
+                "text": "[嘘]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_43.png"
+            },
+            {
+                "id": "001224",
+                "text": "[拒绝]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_224.png"
+            },
+            {
+                "id": "001225",
+                "text": "[观望]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_225.png"
+            },
+            {
+                "id": "001232",
+                "text": "[nonono]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_232.png"
+            },
+            {
+                "id": "001237",
+                "text": "[戳脸]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_237.png"
+            },
+            {
+                "id": "001236",
+                "text": "[走你]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_236.png"
+            },
+            {
+                "id": "001230",
+                "text": "[无所谓]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_230.png"
+            },
+            {
+                "id": "001223",
+                "text": "[暗中观察]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_223.png"
+            },
+            {
+                "id": "001190",
+                "text": "[打脸]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_190.png"
+            },
+            {
+                "id": "001010",
+                "text": "[哟]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_10.png"
+            },
+            {
+                "id": "001233",
+                "text": "[握草]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_233.png"
+            },
+            {
+                "id": "001234",
+                "text": "[苦笑]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_234.png"
+            },
+            {
+                "id": "001032",
+                "text": "[阴险]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_32.png"
+            },
+            {
+                "id": "001045",
+                "text": "[呆]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_45.png"
+            },
+            {
+                "id": "001168",
+                "text": "[太开心]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_168.png"
+            },
+            {
+                "id": "001186",
+                "text": "[悲伤]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_186.png"
+            },
+            {
+                "id": "001148",
+                "text": "[爱你]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_148.png"
+            },
+            {
+                "id": "001006",
+                "text": "[悠闲]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_06.png"
+            },
+            {
+                "id": "001046",
+                "text": "[什么鬼]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_46.png"
+            },
+            {
+                "id": "001235",
+                "text": "[饮酒醉]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_235.png"
+            },
+            {
+                "id": "001047",
+                "text": "[吐]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_47.png"
+            },
+            {
+                "id": "001240",
+                "text": "[额]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_240.png"
+            },
+            {
+                "id": "001229",
+                "text": "[凝视]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_229.png"
+            },
+            {
+                "id": "001008",
+                "text": "[不要啊]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_08.png"
+            },
+            {
+                "id": "001175",
+                "text": "[武汉加油]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_175.png"
+            },
+            {
+                "id": "001256",
+                "text": "[温暖]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_256.png"
+            },
+            {
+                "id": "001257",
+                "text": "[Salute]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_257.png"
+            },
+            {
+                "id": "001258",
+                "text": "[叹气]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_258.png"
+            },
+            {
+                "id": "001259",
+                "text": "[裂开]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_259.png"
+            },
+            {
+                "id": "001260",
+                "text": "[厉害]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_260.png"
+            },
+            {
+                "id": "001261",
+                "text": "[吃鲸]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_261.png"
+            },
+            {
+                "id": "001263",
+                "text": "[AWSL]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_263.png"
+            },
+            {
+                "id": "001072",
+                "text": "[捂脸]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_72.png"
+            },
+            {
+                "id": "001007",
+                "text": "[笑哭]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_07.png"
+            },
+            {
+                "id": "001014",
+                "text": "[发怒]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_14.png"
+            },
+            {
+                "id": "001021",
+                "text": "[害羞]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_21.png"
+            },
+            {
+                "id": "001194",
+                "text": "[黑线]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_194.png"
+            },
+            {
+                "id": "001156",
+                "text": "[给力]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_156.png"
+            },
+            {
+                "id": "001262",
+                "text": "[比心]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_262.png"
+            },
+            {
+                "id": "001057",
+                "text": "[庆祝]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_57.png"
+            },
+            {
+                "id": "001264",
+                "text": "[打工人]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_264.png"
+            },
+            {
+                "id": "001265",
+                "text": "[小红花]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_265.png"
+            },
+            {
+                "id": "001048",
+                "text": "[已阅]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_48.png"
+            },
+            {
+                "id": "001162",
+                "text": "[男孩儿]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_162.png"
+            },
+            {
+                "id": "001163",
+                "text": "[女孩儿]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_163.png"
+            },
+            {
+                "id": "001185",
+                "text": "[抱抱]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_185.png"
+            },
+            {
+                "id": "001193",
+                "text": "[跪了]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_193.png"
+            },
+            {
+                "id": "001204",
+                "text": "[摊手]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_204.png"
+            },
+            {
+                "id": "001167",
+                "text": "[酸]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_167.png"
+            },
+            {
+                "id": "001074",
+                "text": "[666]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_74.png"
+            },
+            {
+                "id": "001123",
+                "text": "[勤洗手]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_123.png"
+            },
+            {
+                "id": "001125",
+                "text": "[n95口罩]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_125.png"
+            },
+            {
+                "id": "001207",
+                "text": "[心]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_207.png"
+            },
+            {
+                "id": "001124",
+                "text": "[中国]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_124.png"
+            },
+            {
+                "id": "001055",
+                "text": "[鲜花]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_55.png"
+            },
+            {
+                "id": "001160",
+                "text": "[礼物]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_160.png"
+            },
+            {
+                "id": "001176",
+                "text": "[喜]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_176.png"
+            },
+            {
+                "id": "001150",
+                "text": "[旅行]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_150.png"
+            },
+            {
+                "id": "001173",
+                "text": "[围脖]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_173.png"
+            },
+            {
+                "id": "001165",
+                "text": "[伤心]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_165.png"
+            },
+            {
+                "id": "001060",
+                "text": "[赞同]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_60.png"
+            },
+            {
+                "id": "001095",
+                "text": "[双手鼓掌]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_95.png"
+            },
+            {
+                "id": "001211",
+                "text": "[作揖]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_211.png"
+            },
+            {
+                "id": "001200",
+                "text": "[拳头]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_200.png"
+            },
+            {
+                "id": "001212",
+                "text": "[haha]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_212.png"
+            },
+            {
+                "id": "001208",
+                "text": "[耶]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_208.png"
+            },
+            {
+                "id": "001205",
+                "text": "[握手]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_205.png"
+            },
+            {
+                "id": "001214",
+                "text": "[ok]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_214.png"
+            },
+            {
+                "id": "001198",
+                "text": "[来]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_198.png"
+            },
+            {
+                "id": "001201",
+                "text": "[弱]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_201.png"
+            },
+            {
+                "id": "001101",
+                "text": "[加油]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_101.png"
+            },
+            {
+                "id": "001213",
+                "text": "[NO]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_213.png"
+            },
+            {
+                "id": "001184",
+                "text": "[good]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_184.png"
+            },
+            {
+                "id": "001105",
+                "text": "[小黄鸭]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_105.png"
+            },
+            {
+                "id": "001102",
+                "text": "[泡泡枪]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_102.png"
+            },
+            {
+                "id": "001104",
+                "text": "[棒棒糖]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_104.png"
+            },
+            {
+                "id": "001114",
+                "text": "[小老鼠]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_114.png"
+            },
+            {
+                "id": "001199",
+                "text": "[喵喵]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_199.png"
+            },
+            {
+                "id": "001053",
+                "text": "[国宝]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_53.png"
+            },
+            {
+                "id": "001054",
+                "text": "[羊驼]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_54.png"
+            },
+            {
+                "id": "001170",
+                "text": "[兔子]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_170.png"
+            },
+            {
+                "id": "001174",
+                "text": "[围观]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_174.png"
+            },
+            {
+                "id": "001118",
+                "text": "[钱袋]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_118.png"
+            },
+            {
+                "id": "001117",
+                "text": "[灯笼]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_117.png"
+            },
+            {
+                "id": "001151",
+                "text": "[点亮平安灯]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_151.png"
+            },
+            {
+                "id": "001120",
+                "text": "[舞狮]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_120.png"
+            },
+            {
+                "id": "001149",
+                "text": "[奥特曼]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_149.png"
+            },
+            {
+                "id": "001061",
+                "text": "[药丸]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_61.png"
+            },
+            {
+                "id": "001063",
+                "text": "[鸡蛋]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_63.png"
+            },
+            {
+                "id": "001155",
+                "text": "[干杯]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_155.png"
+            },
+            {
+                "id": "001180",
+                "text": "[炸鸡腿]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_180.png"
+            },
+            {
+                "id": "001152",
+                "text": "[肥皂]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_152.png"
+            },
+            {
+                "id": "001171",
+                "text": "[威武]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_171.png"
+            },
+            {
+                "id": "001157",
+                "text": "[给你小心心]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_157.png"
+            },
+            {
+                "id": "001178",
+                "text": "[音乐]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_178.png"
+            },
+            {
+                "id": "001082",
+                "text": "[火车]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_82.png"
+            },
+            {
+                "id": "001083",
+                "text": "[飞机]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_83.png"
+            },
+            {
+                "id": "001158",
+                "text": "[话筒]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_158.png"
+            },
+            {
+                "id": "001182",
+                "text": "[钟]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_182.png"
+            },
+            {
+                "id": "001181",
+                "text": "[照相机]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_181.png"
+            },
+            {
+                "id": "001161",
+                "text": "[绿丝带]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_161.png"
+            },
+            {
+                "id": "001172",
+                "text": "[微风]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_172.png"
+            },
+            {
+                "id": "001169",
+                "text": "[太阳]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_169.png"
+            },
+            {
+                "id": "001126",
+                "text": "[月亮]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_126.png"
+            },
+            {
+                "id": "001153",
+                "text": "[浮云]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_153.png"
+            },
+            {
+                "id": "001177",
+                "text": "[下雨]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_177.png"
+            },
+            {
+                "id": "001164",
+                "text": "[沙尘暴]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_164.png"
+            },
+            {
+                "id": "001179",
+                "text": "[赞啊]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_179.png"
+            },
+            {
+                "id": "001247",
+                "text": "[雪花]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_247.png"
+            },
+            {
+                "id": "001252",
+                "text": "[云红包]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_252.png"
+            },
+            {
+                "id": "001255",
+                "text": "[云喝酒]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_255.png"
+            },
+            {
+                "id": "001103",
+                "text": "[气球]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_103.png"
+            },
+            {
+                "id": "001268",
+                "text": "[星星]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_268.png"
+            },
+            {
+                "id": "001269",
+                "text": "[半星]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_269.png"
+            },
+            {
+                "id": "001267",
+                "text": "[牛啤]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_267.png"
+            },
+            {
+                "id": "001276",
+                "text": "[滑雪]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_276.png"
+            },
+            {
+                "id": "001078",
+                "text": "[鞭炮]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_78.png"
+            },
+            {
+                "id": "001090",
+                "text": "[足球]",
+                "icon": "https://b.bdstatic.com/miniapp/assets/docs/swan-interaction/emoji/face_90.png"
+            }
+        ]
+    }]
+}

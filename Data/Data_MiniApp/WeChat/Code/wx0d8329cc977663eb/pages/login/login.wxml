@@ -1,0 +1,16 @@
+<view class="loginBody">
+    <view class="checktable_content">
+        <view>
+            <image src="../images/login/user.png"></image>
+            <input bindconfirm="toPassWord" bindinput="setName" placeholder="请输入账号" placeholderStyle="padding:3rpx 15px;" type="text"></input>
+        </view>
+        <view>
+            <image src="../images/login/pass.png"></image>
+            <input bindinput="setPassword" focus="{{focus2}}" placeholder="请输入密码" placeholderStyle="padding:3rpx 15px;" type="{{passwordtype}}"></input>
+        </view>
+    </view>
+    <view style="width:100%;text-align:center;">
+        <view class="prompt_word">{{message}}</view>
+    </view>
+    <button bindtap="login" formType="submit">登录</button>
+</view>

@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "peace-cell-group": "/components/peace-cell-group/peace-cell-group",
+        "peace-cell": "/components/peace-cell/peace-cell",
+        "select-deduction": "/components/select-deduction/select-deduction",
+        "peace-select": "/components/peace-select/peace-select",
+        "select-service-package": "/components/select-service-package/select-service-package",
+        "select-sb": "/components/select-commercial-insurance/select-commercial-insurance",
+        "verify-mpsdk": "/wxcomponents/verify_mpsdk/index/index"
+    }
+}

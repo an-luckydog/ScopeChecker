@@ -1,0 +1,16 @@
+{
+    "navigationBarTitleText": "我的",
+    "usingComponents": {
+        "Layout": "/components/Layout/Layout",
+        "BottomNavigation": "/components/BottomNavigation/BottomNavigation",
+        "LoginDialog": "/components/LoginDialog/LoginDialog",
+        "Modal": "/components/Modal/Modal",
+        "PageLoading": "/components/PageLoading/PageLoading",
+        "NocodeSponsor": "../profilePackage/NocodeSponsor/NocodeSponsor",
+        "UserProfile": "../profilePackage/UserProfile/UserProfile"
+    },
+    "componentPlaceholder": {
+        "NocodeSponsor": "view",
+        "UserProfile": "view"
+    }
+}

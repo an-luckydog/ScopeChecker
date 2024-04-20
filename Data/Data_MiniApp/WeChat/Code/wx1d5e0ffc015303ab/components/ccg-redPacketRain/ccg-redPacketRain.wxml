@@ -1,0 +1,26 @@
+<view class="page data-v-c19e6866">
+    <view class="rain-wrap data-v-c19e6866" hidden="{{!isActivity}}">
+        <view class="r-content data-v-c19e6866" style="{{'top:'+rcTop+'rpx'+';'+'left:'+rcLeft+'rpx'+';'+'transition:'+'all '+activityData.totalTime+'s linear'+';'}}">
+            <image bindtap="__e" class="{{['r-packet','_img','data-v-c19e6866',packet.small?'sPacket':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'cClick',['$0',index],[ [ ['redPackets','id',packet.id] ] ] ] ] ] ]}}" src="https://xcxsite.vjifen.com/v/static/qp120/redpack.png" style="{{'left:'+''+packet.x+'rpx'+';'+'top:'+''+packet.y+'rpx'+';'}}" wx:for="{{redPackets}}" wx:for-item="packet" wx:key="id"></image>
+        </view>
+    </view>
+    <view class="s-wrap data-v-c19e6866" hidden="{{!!isActivity}}">
+        <view bindtap="__e" class="s-bt data-v-c19e6866" data-event-opts="{{[ [ 'tap',[ [ 'countdownStart',['$event'] ] ] ] ]}}">开始活动</view>
+    </view>
+    <view class="countdown-wrap data-v-c19e6866" wx:if="{{countdownFlag}}">
+        <view class="c-t-num data-v-c19e6866">3</view>
+        <view class="c-t-num data-v-c19e6866">2</view>
+        <view class="c-t-num data-v-c19e6866">1</view>
+        <view class="c-t-num data-v-c19e6866">GO</view>
+    </view>
+    <view class="{{['popup','data-v-c19e6866',!showHint?'hidden':'']}}">
+        <view class="prize-wrap data-v-c19e6866">
+            <view class="prize-card data-v-c19e6866">
+                <view class="p-c-t-1 data-v-c19e6866">恭喜抢到</view>
+                <view class="p-c-t-2 data-v-c19e6866">{{''+$root.g0}}<text class="p-c-t-2_1 data-v-c19e6866">个红包</text>
+                </view>
+            </view>
+            <image bindtap="__e" class="alert-close data-v-c19e6866" data-event-opts="{{[ [ 'tap',[ [ 'close',['$event'] ] ] ] ]}}" mode="widthFix" src="https://xcxsite.vjifen.com/v/static/qp120/alert_close.png"></image>
+        </view>
+    </view>
+</view>

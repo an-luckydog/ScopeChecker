@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "取件",
+    "usingComponents": {
+        "popup": "../innerCabQuery/popup/index"
+    }
+}

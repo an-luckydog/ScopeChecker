@@ -1,0 +1,51 @@
+<view class="searchtab">
+    <view class="section">
+        <picker bindchange="bindDateChange" end="2050-1-23" mode="date" start="1978-01-01" value="{{date}}">
+            <image class="icon" src="../images/时间.png"></image>
+            <view class="actname">日期：</view>
+            <view class="picker">  
+       {{dates}}  
+    </view>
+            <image class="down" src="../images/下拉.png"></image>
+        </picker>
+    </view>
+    <view class="section">
+        <image class="icon" src="../images/精品(1).png"></image>
+        <view class="actname">是否精品：</view>
+        <radio-group bindchange="favorChange" class="radio-group">
+            <label class="radio" wx:for="{{favor}}">
+                <radio checked="{{item.checked}}" value="{{item.value}}"></radio>{{item.name}}
+ </label>
+        </radio-group>
+    </view>
+    <view class="section">
+        <picker bindchange="bindfunPickerChange" range="{{funArray}}" value="{{funIndex}}">
+            <image class="icon" src="../images/功能.png"></image>
+            <view class="actname">功能所属：</view>
+            <view class="picker">  
+      {{funArray[funIndex]}}  
+    </view>
+            <image class="down" src="../images/下拉.png"></image>
+        </picker>
+    </view>
+    <view class="section">
+        <picker bindchange="bindrankPickerChange" range="{{rankArray}}" value="{{rankIndex}}">
+            <image class="icon" src="../images/院校.png"></image>
+            <view class="actname">级别：</view>
+            <view class="picker">  
+    {{rankArray[rankIndex]}}  
+    </view>
+            <image class="down" src="../images/下拉.png"></image>
+        </picker>
+    </view>
+    <view class="section">
+        <image class="icon" src="../images/参与.png"></image>
+        <view class="actname">可参与：</view>
+        <radio-group bindchange="joinChange" class="radio-group">
+            <label class="radio" wx:for="{{join}}">
+                <radio checked="{{item.checked}}" value="{{item.value}}"></radio>{{item.name}}
+ </label>
+        </radio-group>
+    </view>
+    <button bindtap="clickButton" class="button">查询</button>
+</view>

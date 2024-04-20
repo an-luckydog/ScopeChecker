@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "JiaFenAvatar": "/components/JiaFenAvatar/JiaFenAvatar"
+    }
+}

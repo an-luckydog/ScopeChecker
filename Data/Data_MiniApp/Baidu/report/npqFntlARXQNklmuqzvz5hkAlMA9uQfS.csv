@@ -1,0 +1,8 @@
+problem_file_path,problem_function_name,problem_api,occurrences_in_frontend
+app.js,{'share_go'},chooseImage,0
+app.js,{'uploadImgH5'},chooseImage,0
+app.js,{'returnValue'},scanCode,0
+app.js,{'success'},chooseImage,0
+app.js,{'chooseImage'},chooseImage,0
+__dynamicLib__/swan-interaction/allCusomComponents.swan.js,{'replyComplete'},chooseImage,0
+__dynamicLib__/swan-interaction/allCusomComponents.swan.js,{'chooseImage'},chooseImage,0

@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "tag-item": "./TagItem"
+    },
+    "component": true
+}

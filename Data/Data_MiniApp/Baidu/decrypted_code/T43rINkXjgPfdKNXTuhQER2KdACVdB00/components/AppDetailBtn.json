@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "privacy-line": "./PrivacyLine"
+    },
+    "component": true
+}

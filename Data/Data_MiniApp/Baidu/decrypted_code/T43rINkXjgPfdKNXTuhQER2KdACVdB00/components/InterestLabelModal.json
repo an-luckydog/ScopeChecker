@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "interest-label-card": "./InterestLabelCard"
+    },
+    "component": true
+}

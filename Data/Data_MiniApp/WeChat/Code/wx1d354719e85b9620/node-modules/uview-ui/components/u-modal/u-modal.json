@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "u-popup": "/node-modules/uview-ui/components/u-popup/u-popup",
+        "u-loading": "/node-modules/uview-ui/components/u-loading/u-loading",
+        "verify-mpsdk": "/wxcomponents/verify_mpsdk/index/index"
+    },
+    "component": true
+}

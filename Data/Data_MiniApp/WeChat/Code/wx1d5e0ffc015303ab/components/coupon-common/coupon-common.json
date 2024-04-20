@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "uni-popup": "/uni_modules/uni-popup/components/uni-popup/uni-popup",
+        "coupon": "/components/coupon/coupon",
+        "app": "/components/privacy/privacy"
+    }
+}

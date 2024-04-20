@@ -1,0 +1,18 @@
+<swiper autoplay="{{isAutoplay}}" bindchange="changeSwiper" circular="{{true}}" class="pop-container" displayMultipleItems="{{1}}" duration="{{1500}}" indicatorDots="{{false}}" interval="{{1500}}" previousMargin="56rpx" scrollWithAnimation="{{true}}" vertical="{{true}}" wx:if="{{isShow}}">
+    <swiper-item wx:for="{{list}}" wx:for-item="listItem" wx:key="*this">
+        <view class="swiper-item">
+            <view class="{{toastClass}} {{currentIndex==index+1?'animation-toast':''}}" wx:if="{{listItem.cartToastText||listItem.isHaveOperateData}}">
+                <view class="text ellipsis" wx:if="{{listItem.cartToastText}}">
+                    <image class="avatar" src="{{listItem.cartToastImg||'https://p1.meituan.net/travelcube/7ef30faf98c6e29cce3cc10498f2a6337347.png'}}"></image>{{listItem.cartToastText}}</view>
+                <view class="text-block" wx:if="{{listItem.isHaveOperateData}}">
+                    <image class="avatar" src="{{listItem.userImgSrc}}" wx:if="{{listItem.userImgSrc}}"></image>
+                    <view class="text-content" wx:if="{{listItem.userDish}}">
+                        <text class="dish-name ellipsis">{{listItem.userDish}}</text>
+                        <text class="dish-count ellipsis">{{listItem.userDishCount}}</text>
+                    </view>
+                </view>
+                <view class="text ellipsis" wx:if="{{listItem.userClearDishTxt}}">{{listItem.userClearDishTxt}}</view>
+            </view>
+        </view>
+    </swiper-item>
+</swiper>

@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-bar-header": "./GameBarHeader",
+        "grid-style-game": "./GridStyleGame"
+    },
+    "component": true
+}

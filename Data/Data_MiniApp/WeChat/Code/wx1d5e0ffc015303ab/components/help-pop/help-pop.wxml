@@ -1,0 +1,13 @@
+<view class="data-v-72850337">
+    <uni-popup bind:__l="__l" bind:maskClick="__e" class="data-v-72850337 vue-ref" data-event-opts="{{[ [ '^maskClick',[ ['handleMaskClick'] ] ] ]}}" data-ref="help_pup" maskClick="{{maskClick}}" type="top" vueId="6190643c-1" vueSlots="{{['default']}}">
+        <view class="help_pop data-v-72850337">
+            <view class="choose_info data-v-72850337">
+                <view class="tishi data-v-72850337">温馨提示</view>
+                <view class="box data-v-72850337"></view>
+                <view class="text data-v-72850337" style="{{'font-size:'+fontSize+';'}}">{{contentText}}</view>
+                <view class="come data-v-72850337" wx:if="{{isCome}}">coming soon ~</view>
+            </view>
+            <view bindtap="__e" class="my_choose more data-v-72850337" data-event-opts="{{[ [ 'tap',[ [ 'handleHelpFun',['$event'] ] ] ] ]}}">{{btnText||'关闭'}}</view>
+        </view>
+    </uni-popup>
+</view>

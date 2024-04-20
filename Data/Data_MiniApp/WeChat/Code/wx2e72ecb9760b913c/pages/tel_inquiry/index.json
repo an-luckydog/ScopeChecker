@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "电话咨询",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "mp-html": "../../miniprogram_npm/mp-html/index"
+    }
+}

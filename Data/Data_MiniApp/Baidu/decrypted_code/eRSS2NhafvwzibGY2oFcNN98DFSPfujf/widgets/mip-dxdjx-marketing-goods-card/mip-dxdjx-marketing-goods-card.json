@@ -1,0 +1,19 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "product-list": "/components/product-list/product-list",
+        "product-card": "/components/product-card/product-card",
+        "product-card-single":"/components/product-card-single/product-card-single",
+        "product-card-double":"/components/product-card-double/product-card-double",
+        "product-card-triple":"/components/product-card-triple/product-card-triple",
+        "product-card-single-seckill":"/components/product-card-single-seckill/product-card-single-seckill",
+        "product-card-double-seckill":"/components/product-card-double-seckill/product-card-double-seckill",
+        "product-card-triple-seckill":"/components/product-card-triple-seckill/product-card-triple-seckill",
+        "product-card-normal-single":"/components/product-card-normal-single/product-card-normal-single",
+        "product-card-one":"/components/product-card-one/product-card-one",
+        "live-card": "/widgets/mip-dxdjx-live-list/components/live-card/live-card",
+        "live-card-triple": "/components/live-card-triple/live-card-triple",
+        "optimize-image":"/components/optimize-image/optimize-image"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "商品详情",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "c-count-down": "../../components/c-count-down/c-count-down",
+        "c-privacy-dialog": "../../components/c-privacy-dialog/c-privacy-dialog",
+        "c-page": "../../components/c-page/c-page",
+        "share-pop": "./pop/share-pop"
+    }
+}

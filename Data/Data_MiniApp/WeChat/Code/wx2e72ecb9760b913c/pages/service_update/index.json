@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "服务升级",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-vip": "../../components/cy-vip/index"
+    }
+}

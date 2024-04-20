@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "充值兑换",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

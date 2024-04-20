@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "制作写真",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "van-image": "../../wxcomponents/vant/image/index",
+        "van-loading": "../../wxcomponents/vant/loading/index",
+        "navbar": "../../components/navbar/navbar",
+        "operation-popup": "../../components/operation-popup/operation-popup"
+    }
+}

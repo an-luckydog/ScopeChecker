@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "telepay-vericode":"../../../../../pages/cart/_Components/Submit/vericode/vericode"
+  }
+}

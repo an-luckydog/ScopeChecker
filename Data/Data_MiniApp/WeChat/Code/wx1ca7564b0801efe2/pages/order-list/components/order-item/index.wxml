@@ -1,0 +1,81 @@
+<template name="dish-info">
+    <view class="merchan-dish">
+        <image class="merchan-item-img" lazyLoad="false" src="{{dishPic?dishPic:defaultImg}}"></image>
+        <view class="item-description" wx:if="{{saleable==2}}">已停售</view>
+        <view class="item-description" wx:if="{{saleable==3}}">已下架</view>
+    </view>
+</template>
+<import src="../../../../components/tag/index.wxml"></import>
+<view bindtap="gotoDetail" class="order-item">
+    <view class="name-wrap">
+        <view class="s-item" wx:if="{{orderbaseInfo.tagInfo}}">
+            <template is="tag" data="{{...orderbaseInfo.tagInfo}}"></template>
+        </view>
+        <view class="shop-name ellipsis" wx:if="{{orderbaseInfo.shopName}}">{{orderbaseInfo.shopName}}</view>
+        <view class="order-status ellipsis {{statusMsgColor}}">{{orderStatus.statusText}}</view>
+    </view>
+    <view class="times">
+        <view class="time-info">{{orderbaseInfo.orderTime}}</view>
+        <view class="expire-seconds" wx:if="{{expireSeconds}}">剩余支付时间：<text class="seconds">{{expireSeconds}}</text>
+        </view>
+    </view>
+    <view class="merchan-info">
+        <scroll-view bindscrolltolower="scrolllower" class="scroll-view_H" enhanced="true" fastDeceleration="true" lowerThreshold="400" scrollX="true" showScrollbar="false" style="width: 100%" wx:if="{{localDishList&&localDishList.length>1}}">
+            <view class="merchan-item" wx:for="{{localDishList}}" wx:for-item="dishitem" wx:key="index">
+                <template is="dish-info" data="{{...dishitem,defaultImg:defaultImg}}"></template>
+                <view class="merchan-item-name">{{dishitem.dishName}}</view>
+            </view>
+            <view class="merchan-item last-item"></view>
+        </scroll-view>
+        <view class="show-dish-detail" wx:if="{{localDishList&&localDishList.length<=1}}">
+            <view class="dish-detail" wx:for="{{localDishList}}" wx:for-item="detailitem" wx:key="index">
+                <template is="dish-info" data="{{...detailitem,defaultImg:defaultImg}}"></template>
+                <view class="detail-order">
+                    <view class="detail-name">{{detailitem.dishName}}</view>
+                    <view class="detail-info" wx:if="{{detailitem.skuSubName}}">{{detailitem.skuSubName}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="order-info">
+            <view class="dish-info">
+                <view class="price" wx:if="{{orderDishInfo.currency&&orderDishInfo.totalPrice}}">{{orderDishInfo.currency}}<text class="price-num">{{orderDishInfo.totalPrice}}</text>
+                </view>
+                <view class="dish-count">共{{orderDishInfo.totalCount}}件</view>
+            </view>
+        </view>
+    </view>
+    <view class="order-code" wx:if="{{extendDisplayInfo.length}}">
+        <view class="order-label" wx:if="{{!moduleItem.type}}" wx:for="{{extendDisplayInfo}}" wx:for-item="moduleItem" wx:key="index">
+            <view class="label-item">
+                <view class="left">
+                    <block wx:if="{{moduleItem.title&&moduleItem.title.length}}">
+                        <block wx:for="{{moduleItem.title}}" wx:for-item="descItem" wx:key="index">
+                            <block wx:if="{{descItem.descType===1}}">
+                                <view class="label-text {{desc.style}}" wx:for="{{descItem.list}}" wx:for-item="desc" wx:key="index">{{desc.text}}</view>
+                            </block>
+                            <block wx:if="{{descItem.descType===2}}">
+                                <template is="tag" data="{{...item}}" wx:for="{{descItem.tags}}" wx:key="index"></template>
+                            </block>
+                        </block>
+                    </block>
+                </view>
+                <view class="right {{moduleItem.actionType===0?'ellipsis more-text-right':'nowrap'}}">
+                    <block wx:if="{{moduleItem.descList&&moduleItem.descList.length}}">
+                        <block wx:for="{{moduleItem.descList}}" wx:for-item="descItem" wx:key="index">
+                            <block wx:if="{{descItem.descType===1}}">
+                                <view class="label-text {{desc.style}}" wx:if="{{desc.text}}" wx:for="{{descItem.list}}" wx:for-item="desc" wx:key="index">{{desc.text}}</view>
+                            </block>
+                            <block wx:if="{{descItem.descType===2}}">
+                                <template is="tag" data="{{...item,size:'large'}}" wx:for="{{descItem.tags}}" wx:key="index"></template>
+                            </block>
+                        </block>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="pay-btn-wrap" wx:if="{{actionBtnList.length}}">
+        <view catchtap="btnClick" class="btn btn-{{item.btnType}}" data-btn="{{item}}" wx:for="{{actionBtnList}}" wx:key="index">{{item.btnText}}<image class="rms-review-reward" src="{{REWARD_BG[item.extend.rewardType]}}" wx:if="{{item.btnType==='goComment'&&item.extend&&item.extend.rewardType}}"></image>
+        </view>
+    </view>
+</view>

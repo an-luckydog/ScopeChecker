@@ -1,0 +1,8 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "点餐加好友",
+    "disableScroll": true,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

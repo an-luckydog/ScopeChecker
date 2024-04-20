@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mask": "../mask/mask",
+        "number": "../num-wheel/num-wheel",
+        "banner": "/./miniprogram_npm/@tmsfe/tms-ui/banner/banner",
+        "navbar": "/./miniprogram_npm/@tmsfe/tms-ui/navbar/navbar"
+    }
+}

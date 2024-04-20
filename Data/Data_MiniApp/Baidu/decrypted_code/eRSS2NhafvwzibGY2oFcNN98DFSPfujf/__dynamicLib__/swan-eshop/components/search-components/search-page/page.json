@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "history": "./components/history/index",
+        "recommend": "./components/recommend/index",
+        "result": "./components/result/index",
+        "search-box": "./components/search-box/index"
+    }
+}

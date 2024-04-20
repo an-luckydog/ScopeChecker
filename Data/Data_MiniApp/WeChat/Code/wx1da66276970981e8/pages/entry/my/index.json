@@ -1,0 +1,17 @@
+{
+    "navigationBarTitleText": "我的",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+        "subscribe-alert": "../../common/subscribe-alert/subscribe-alert",
+        "u-image": "../../../node-modules/uview-plus/components/u-image/u-image",
+        "u-avatar": "../../../node-modules/uview-plus/components/u-avatar/u-avatar",
+        "u-loading-icon": "../../../node-modules/uview-plus/components/u-loading-icon/u-loading-icon",
+        "c-debug": "../../../components/c-debug/c-debug",
+        "c-privacy-dialog": "../../../components/c-privacy-dialog/c-privacy-dialog",
+        "c-page": "../../../components/c-page/c-page",
+        "entry-invite-code": "./components/entry-invite-code",
+        "cash-tip": "./components/cash-tip",
+        "cell": "plugin://wx4d2deeab3aed6e5a/cell"
+    }
+}

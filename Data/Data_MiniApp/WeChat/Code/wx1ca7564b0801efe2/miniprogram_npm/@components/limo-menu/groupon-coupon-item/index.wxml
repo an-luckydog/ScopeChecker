@@ -1,0 +1,21 @@
+<view class="groupon-coupon-item" wx:if="{{coupon}}">
+    <image class="avatar" src="{{coupon.avatar||'https://p0.meituan.net/scarlett/f18555a39cbcf6e2240e334dd1b1560e1141.jpg'}}"></image>
+    <view class="detail">
+        <view class="name ellipsis">{{coupon.name}}</view>
+        <view class="expired-time ellipsis" wx:if="{{coupon.amount&&coupon.amount>0}}">价值 ￥{{coupon.amount}}</view>
+    </view>
+    <view class="operation" wx:if="{{coupon.skuDish&&coupon.skuDish.skuId}}">
+        <block wx:if="{{coupon.skuDish.canSaleNow||coupon.skuDish.validity}}">
+            <ui-button customClass="btn-pick" size="small" text="{{SOLD_OUT_TEXT}}" wx:if="{{coupon.skuDish.soldOut}}"></ui-button>
+            <ui-button bind:onClick="useGrouponCouponEvent" customClass="btn-pick" size="small" text="使用" wx:elif="{{!groupon.getCount(coupon)}}"></ui-button>
+            <ui-button bind:onClick="cancelGrouponCouponEvent" customClass="btn-pick active" size="small" text="已使用" wx:elif="{{coupon.couponStatusList.length===1&&coupon.couponStatusList[0].selectStatus===1}}"></ui-button>
+            <view class="number-count-wrapper" wx:else>
+                <number-count bind:addToCart="useGrouponCouponEvent" bind:minusDish="cancelGrouponCouponEvent" count="{{groupon.getCount(coupon)}}" minBoughtCount="{{coupon.minBoughtCount}}" stockCount="{{coupon.stockCount}}"></number-count>
+            </view>
+        </block>
+        <ui-button customClass="btn-pick" size="small" text="{{NOT_CAN_SALE}}" wx:else></ui-button>
+    </view>
+    <view class="count">{{coupon.couponStatusList.length}}张券</view>
+</view>
+<wxs module="common" src="../../../../components/menu/wxsModules/common.wxs" />
+<wxs module="groupon" src="../../../../components/menu/wxsModules/groupon.wxs" />

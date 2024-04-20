@@ -1,0 +1,7 @@
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'success'}}"中找到匹配: {"getClipboardData}"
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'success'}}"中找到匹配: {"getClipboardData}"
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'success'}}"中找到匹配: {"getClipboardData}"
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'getPasteboard'}}"中找到匹配: {"getClipboardData}"
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'tapPaste'}}"中找到匹配: {"getClipboardData}"
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'setTimeout'}}"中找到匹配: {"getClipboardData}"
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'success'}}"中找到匹配: {"getClipboardData}"

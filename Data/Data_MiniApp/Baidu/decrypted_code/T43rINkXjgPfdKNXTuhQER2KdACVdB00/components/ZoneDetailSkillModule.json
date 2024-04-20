@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-bar-header": "./GameBarHeader",
+        "zone-fold-text-card": "./ZoneFoldTextCard"
+    },
+    "component": true
+}

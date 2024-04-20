@@ -1,0 +1,28 @@
+<view class="content">
+    <view class="text1">亲爱的同学：</view>
+    <view class="text2"></view>
+    <view class="text3">对啊背单词的攻城狮们正在进行系统升级和维护，升级期间，背单词小程序将无法正常使用，造成不便请谅解。</view>
+    <view class="text4">
+        <view class="text4_ti">
+            <image class="text4_ti_img" src="../../img/co@3x.png"></image>
+            <view class="text4_ti_mp">升级时间：</view>
+        </view>
+        <view class="text4_con">
+            <view class="text4_con_list">{{times}}</view>
+        </view>
+    </view>
+    <view class="text4 text5">
+        <view class="text4_ti">
+            <image class="text4_ti_img" src="../../img/co@3x.png"></image>
+            <view class="text4_ti_mp">升级内容：</view>
+        </view>
+        <view class="text4_con">
+            <view class="text4_con_list" wx:for="{{content_lsit}}">{{item}}</view>
+        </view>
+    </view>
+    <view class="yingyu">
+        <image class="yingyu_img" src="../../img/tu@2x.png"></image>
+        <view class="yingyu_text">对啊背单词君</view>
+    </view>
+    <image class="img_ko" src="../../img/pic@2x.png"></image>
+</view>

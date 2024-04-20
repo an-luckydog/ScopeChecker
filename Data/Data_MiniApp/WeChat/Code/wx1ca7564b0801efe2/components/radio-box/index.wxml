@@ -1,0 +1,5 @@
+<view class="radio-box {{disabled?'radio-disabled':''}}">
+    <view catchtap="clickRadio" class="radio-container {{checked?'radio-active':'radio-normal'}}">
+        <view class="base-icon icon-gou"></view>
+    </view>
+</view>

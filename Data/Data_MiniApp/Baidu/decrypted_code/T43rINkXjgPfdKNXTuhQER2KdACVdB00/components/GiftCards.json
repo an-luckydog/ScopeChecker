@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "gift-card": "./GiftCard"
+    },
+    "component": true
+}

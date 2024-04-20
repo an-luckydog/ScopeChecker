@@ -1,0 +1,29 @@
+<view class="dish-categories" style="height: {{categoryHeight}}px;">
+    <scroll-view enhanced bindscroll="categoryScroll" class="{{categoryClass}}" enableFlex="{{flexSwitch}}" id="category-list" scrollAnchoring="{{false}}" scrollTop="{{categoryScrollOffset}}" scrollWithAnimation="{{false}}" scrollY="{{true}}" showScrollbar="{{false}}" style="height:{{categoryHeight}}px;">
+        <view bindtap="switchCategoryTab" class="child-list-item child-item-{{menuType}} {{curCategoryId==item.categoryId?'active':''}} {{curCategoryId===categoriesList[idx+1].categoryId?'child-list-item-prev':''}} {{categoryHasIcon?'has-icon':''}}" data-category-id="{{item.categoryId}}" data-index="{{idx}}" wx:for="{{categoriesList}}" wx:for-index="idx" wx:key="categoryId">
+            <midas-simple bind:impressionend="exposeCategory" bottom="{{-100}}" data-expose-category="{{item}}" data-index="{{idx}}" top="{{-200}}">
+                <view class="child-item-container">
+                    <view class="child-1st-container {{item.icon?'child-1st-icon':''}} {{'child-1st-container-'+DISH_CATEGORY_CLASS_MAP[item.iconType]}}" id="cate-{{item.categoryId}}">
+                        <view class="icon" style="background:url({{item.icon.selectedUrl}}) no-repeat; background-size: 100%;" wx:if="{{item.iconType&&item.icon.selectedUrl}}"></view>
+                        <view class="icon {{'icon-'+DISH_CATEGORY_CLASS_MAP[item.iconType]}}" wx:elif="{{item.iconType}}"></view>
+                        <view class="child-icon-container">
+                            <view class="no-sale-text" wx:if="{{item.categorySellableType===categoryType.ONLY_NOT_SALE_NOW||item.categorySellableType===categoryType.NOT_SALE_NOW_AND_SOLD_OUT||item.categorySellableType===categoryType.ONLY_SOLD_OUT}}">暂不可售</view>
+                            <view class="child-icon" style="background-image: url('{{item.icon.selectedUrl}}')" wx:if="{{curCategoryId==item.categoryId&&item.icon&&item.icon.selectedUrl&&!item.iconType}}"></view>
+                            <view class="child-icon" style="background-image: url('{{item.icon.unSelectedUrl}}')" wx:elif="{{item.icon&&item.icon.unSelectedUrl&&!item.iconType}}"></view>
+                            <text class="child-text text-ellipsis {{item.categoryId===DISH_CATEGORY_ID.MEMBER?'child-special-text':''}}">{{item.categoryName}}</text>
+                        </view>
+                    </view>
+                    <view catchtap="switchSecondCategoryTab" class="child-2nd-container {{curSecondCategoryId==childCategory.categoryId?'child-category-active':''}} {{categoryHasIcon?'has-icon-2nd':'no-icon-2nd'}} {{curCategoryId==item.categoryId?'':'hide-child-category'}}" data-category-id="{{childCategory.categoryId}}" data-father-category-id="{{curCategoryId}}" data-index="{{childCategoryIndex}}" id="cate-{{childCategory.categoryId}}" wx:if="{{item.childDishCategories&&menuType!==0&&item.childDishCategories.length}}" wx:for="{{item.childDishCategories}}" wx:for-index="childCategoryIndex" wx:for-item="childCategory" wx:key="childCategoryId">
+                        <view class="no-sale-text" wx:if="{{childCategory.categorySellableType===categoryType.ONLY_NOT_SALE_NOW||childCategory.categorySellableType===categoryType.NOT_SALE_NOW_AND_SOLD_OUT||childCategory.categorySellableType===categoryType.ONLY_SOLD_OUT}}">暂不可售</view>
+                        <view class="icon {{'icon-'+DISH_CATEGORY_CLASS_MAP[item.iconType]}}" wx:if="{{childCategory.iconType}}"></view>
+                        <text class="text-ellipsis">{{childCategory.categoryName}}</text>
+                        <red-point count="{{childCategory.count}}" customClass="{{categoryHasIcon?'icon-sub-count':'sub-meal-count'}} {{item.maxPadding?'':''}}"></red-point>
+                    </view>
+                </view>
+            </midas-simple>
+            <red-point count="{{item.count}}"></red-point>
+        </view>
+        <view class="out-box child-item-{{menuType}} {{curCategoryId===categoriesList[categoriesList.length-1].categoryId?'is-last-item':''}}"></view>
+    </scroll-view>
+    <nav-header showMoreSecondCategory bind:onCouponAssistantCheckMore="onCouponAssistantCheckMore" bind:onMoreOrderedTab="onMoreOrderedTab" bind:onNavTab="switchSecondCategoryTab" categoryHeader="{{categoryHeader}}" containerStyle="top-category-container" couponAssistantStyle="{{couponAssistantStyle}}" couponCount="{{couponCount}}" curSecondCategoryId="{{curSecondCategoryId}}" customClass="top-category-container-vertical" hasMtLogin="{{hasMtLogin}}" menuType="{{menuType}}" payCouponDecoInfo="{{payCouponDecoInfo}}" secondCategoryList="{{secondCategoryList}}" showCouponPackage="{{showCouponPackage}}" winWidth="{{winWidth}}"></nav-header>
+</view>

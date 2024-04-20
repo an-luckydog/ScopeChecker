@@ -1,0 +1,13 @@
+{
+    "component": true,
+    "usingComponents": {
+        "ui-button": "../../limo-ui/ui-button/index",
+        "tab-bar": "../../../../async-main/components/tab-bar/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "tab-bar": "view",
+        "lottery": "view"
+    }
+}

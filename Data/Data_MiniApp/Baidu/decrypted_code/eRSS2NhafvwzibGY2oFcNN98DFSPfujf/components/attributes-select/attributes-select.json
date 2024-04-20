@@ -1,0 +1,9 @@
+{
+    "component": true,
+     "usingComponents": {
+        "input-number": "/components/input-number/input-number",
+        "optimize-image": "/components/optimize-image/optimize-image",
+        "login-button":"/components/login-button/login-button",
+        "format-price": "/components/format-price/format-price"
+    }
+}

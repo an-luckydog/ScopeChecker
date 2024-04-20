@@ -1,0 +1,12 @@
+{
+  "component": true,
+  "usingComponents": {
+		"baidu-ad": "../component/ad/ad",
+		"resume-delivery": "/pages/components/resumeDelivery/resumeDelivery",
+    "more": "../component/more/more",
+	"code": "../component/code/index",
+    "backtop": "/pages/components/backTop/backTop",
+    "recommend-list": "/pages/components/recommendList/recommendList",
+    "pop-hy": "/pages/components/pop_hy/pop_hy"
+  }
+}

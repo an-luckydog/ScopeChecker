@@ -1,0 +1,14 @@
+<u-popup bind:__l="__l" bind:close="__e" bind:input="__e" borderRadius="20" class="data-v-4b3a6ad6" data-event-opts="{{[ [ '^close',[ ['close'] ] ],[ '^input',[ [ '__set_model',[ '','show','$event',[] ] ] ] ] ]}}" mode="center" value="{{show}}" vueId="269d7568-1" vueSlots="{{['default']}}" width="80%">
+    <view class="box data-v-4b3a6ad6">
+        <view class="title data-v-4b3a6ad6">用户隐私保护提示</view>
+        <view class="content data-v-4b3a6ad6">
+            <text class="cont-text data-v-4b3a6ad6">亲爱的用户，感谢您的信任！您使用本小程序提供的产品服务前应当阅读并同意</text>
+            <text catchtap="__e" class="cont-text links data-v-4b3a6ad6" data-event-opts="{{[ [ 'tap',[ [ 'openPrivacyContract',['$event'] ] ] ] ]}}">{{''+urlTitle+''}}</text>
+            <text class="cont-text data-v-4b3a6ad6">当您点击同意并开始使用产品服务时，即表示你已理解并同意该条款内容，该条款将对您产生法律约束力。如您拒绝，将无法使用本小程序提供的相关产品及服务。</text>
+        </view>
+        <view class="footer data-v-4b3a6ad6">
+            <button bindtap="__e" class="data-v-4b3a6ad6" data-event-opts="{{[ [ 'tap',[ [ 'handleDisagree',['$event'] ] ] ] ]}}">不同意</button>
+            <button bindagreeprivacyauthorization="__e" class="active data-v-4b3a6ad6" data-event-opts="{{[ [ 'agreeprivacyauthorization',[ [ 'handleAgree',['$event'] ] ] ] ]}}" openType="agreePrivacyAuthorization">同意</button>
+        </view>
+    </view>
+</u-popup>

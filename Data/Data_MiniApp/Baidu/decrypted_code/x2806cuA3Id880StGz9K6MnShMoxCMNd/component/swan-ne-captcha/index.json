@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "captcha-core": "./components/captcha-core/captcha-core",
+    "captcha-bind": "./components/captcha-bind/captcha-bind"
+  }
+}

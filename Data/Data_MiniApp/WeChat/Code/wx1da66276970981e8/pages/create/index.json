@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "正在启动...",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+        "u-loading-page": "../../node-modules/uview-plus/components/u-loading-page/u-loading-page"
+    }
+}

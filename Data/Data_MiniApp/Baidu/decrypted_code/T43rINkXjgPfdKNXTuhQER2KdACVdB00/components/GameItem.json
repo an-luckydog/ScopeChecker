@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "one-px-line": "./OnePxLine",
+        "game-item-btn": "./GameItemBtn",
+        "game-ranting-badge": "./GameRantingBadge",
+        "good-news-label": "./GoodNewsLabel"
+    },
+    "component": true
+}

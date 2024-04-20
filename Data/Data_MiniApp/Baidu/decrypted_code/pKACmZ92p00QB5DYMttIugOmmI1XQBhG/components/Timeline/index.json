@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"flow-loader":"../FlowLoader/index","weekly-release":"./WeeklyRelease/index","activity-module":"./ActivityModule/index","card-module":"./CardModule/index"}}

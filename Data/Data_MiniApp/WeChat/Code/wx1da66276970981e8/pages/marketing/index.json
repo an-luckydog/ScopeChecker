@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "u-image": "../../node-modules/uview-plus/components/u-image/u-image",
+        "c-page": "../../components/c-page/c-page",
+        "brick-compose": "./brick-compose"
+    }
+}

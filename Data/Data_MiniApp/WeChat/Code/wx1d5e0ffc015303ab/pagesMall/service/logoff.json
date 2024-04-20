@@ -1,0 +1,10 @@
+{
+    "navigationStyle": "default",
+    "navigationBarTitleText": "注销账号",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColorTop": "#fff",
+    "backgroundColorBottom": "#000",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "disableScroll": true
+}

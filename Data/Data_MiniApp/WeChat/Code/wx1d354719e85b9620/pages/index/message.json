@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "消息",
+    "usingComponents": {
+        "verify-mpsdk": "/wxcomponents/verify_mpsdk/index/index"
+    }
+}

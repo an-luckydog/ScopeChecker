@@ -1,0 +1,7 @@
+{
+    "navigationStyle": "custom",
+    "componentPlaceholder": {
+        "common-error-page": "view",
+        "lottery": "view"
+    }
+}

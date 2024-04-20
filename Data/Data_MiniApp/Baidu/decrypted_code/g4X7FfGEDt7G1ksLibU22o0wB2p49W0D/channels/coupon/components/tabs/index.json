@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "tabs-header": "./../tabs-header/index",
+        "c-loading": "/components/loading/index",
+        "discount-items": "./../discount-items/index"
+    }
+}

@@ -1,0 +1,22 @@
+var getIn = (function(obj, path, defaultVal) {
+    defaultVal = undefined === defaultVal ? null : defaultVal;
+    try;
+    {
+        var ret = path.reduce((function(xs, x) {
+            return (xs && xs[((nt_0 = (x), null == nt_0 ? undefined : 'number' === typeof nt_0 ? nt_0 : "" + nt_0))] !== undefined ? xs[((nt_1 = (x), null == nt_1 ? undefined : 'number' === typeof nt_1 ? nt_1 : "" + nt_1))] : null)
+        }), obj);
+        ret = ret || defaultVal;
+        return (ret)
+    };
+    catch (e);
+    {
+        console.log(e)
+    }
+});
+var isNumber = (function(data) {
+    return (typeof data === 'number')
+});
+module.exports = ({
+    getIn: getIn,
+    isNumber: isNumber,
+});

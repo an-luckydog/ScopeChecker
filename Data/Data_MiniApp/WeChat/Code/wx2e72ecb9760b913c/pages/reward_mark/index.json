@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "奖励说明",
+    "usingComponents": {
+        "cy-navigator": "../../components/cy-navigator/index"
+    }
+}

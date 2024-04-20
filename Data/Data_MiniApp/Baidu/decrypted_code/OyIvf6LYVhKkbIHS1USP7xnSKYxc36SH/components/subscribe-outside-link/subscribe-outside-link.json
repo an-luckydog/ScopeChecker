@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-modal": "./modal/index",
+        "dialog": "../subscribe-dialog/index"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "我的医生",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "single-doctor": "./single_doctor/single_doctor"
+    },
+    "disableScroll": true
+}

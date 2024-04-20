@@ -1,0 +1,12 @@
+<view class="normal-coupon-tag-wrapper-{{couponTagsItem.colorType}}">
+    <view bind:tap="onClick" class="main-content">
+        <view class="normal-coupon-left" wx:if="{{couponTagsItem.leftTextList}}">
+            <image class="normal-coupon-logo" src="https://p0.meituan.net/travelcube/de51161a94e5f9aee2dacbb75d89fb913473.png" wx:if="{{couponTagsItem.colorType===LABEL_TYPE.USER_GROUP_COUPON}}"></image>
+            <image class="normal-coupon-logo" src="https://p0.meituan.net/travelcube/8d68f889f2f48d44e86aa72753a0ee822119.png" wx:if="{{couponTagsItem.colorType===LABEL_TYPE.COUPON_COLLECT_CURRENCY}}"></image>
+            <view class="common-text text-type-{{item.type}}" wx:for="{{couponTagsItem.leftTextList}}" wx:key="index">{{item.text}}</view>
+        </view>
+        <view class="normal-coupon-right" wx:if="{{couponTagsItem.rightTextList}}">
+            <view class="common-text text-type-{{item.type}}" wx:for="{{couponTagsItem.rightTextList}}" wx:key="index">{{item.text}}</view>
+        </view>
+    </view>
+</view>

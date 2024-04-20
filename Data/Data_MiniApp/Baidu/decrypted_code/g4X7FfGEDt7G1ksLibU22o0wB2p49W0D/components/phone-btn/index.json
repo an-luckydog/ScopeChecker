@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-shop-card": "/components/c-shop-card/index",
+        "c-panel": "/components/c-panel/index"
+    }
+}

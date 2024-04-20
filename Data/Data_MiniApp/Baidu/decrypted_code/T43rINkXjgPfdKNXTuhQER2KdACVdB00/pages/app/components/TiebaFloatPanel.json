@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "panel-item-get": "./TiebaFloatPanelItemGet",
+        "panel-item-view": "./TiebaFloatPanelItemView"
+    },
+    "component": true
+}

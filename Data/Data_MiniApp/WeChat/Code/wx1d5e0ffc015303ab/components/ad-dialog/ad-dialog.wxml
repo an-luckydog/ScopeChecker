@@ -1,0 +1,7 @@
+<view class="common-dialog data-v-08305c76" wx:if="{{$root.g0}}">
+    <uni-transition bind:__l="__l" bind:change="__e" class="common-dialog data-v-08305c76" data-event-opts="{{[ [ '^change',[ ['transitionChange'] ] ] ]}}" duration="{{duration}}" modeClass="{{modeClass}}" show="{{transition_show}}" styles="{{height:'100%'}}" vueId="4e959dc8-1" vueSlots="{{['default']}}">
+        <view class="common-dialog data-v-08305c76">
+            <ad-dialog-item bind:__l="__l" bind:closeCurDialog="__e" bind:tapDialog="__e" class="data-v-08305c76" currentMoney="{{currentMoney}}" data-event-opts="{{[ [ '^tapDialog',[ [ 'tapDialog',['$0'],[ [ ['listData_dialog','key',item.key] ] ] ] ] ],[ '^closeCurDialog',[ [ 'closeCurDialog',['$0'],[ [ ['listData_dialog','key',item.key] ] ] ] ] ] ]}}" initTimeout="{{showDialog}}" itemData="{{item}}" showScanLadder="{{showScanLadder}}" vueId="{{'4e959dc8-2-'+index+','+'4e959dc8-1'}}" wx:if="{{!item.hide&&(showType!=='oneByone'||curIndex===item.key)}}" wx:for="{{listData_dialog}}" wx:key="key"></ad-dialog-item>
+        </view>
+    </uni-transition>
+</view>

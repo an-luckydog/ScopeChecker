@@ -1,0 +1,1 @@
+{"navigationStyle":"custom","navigationBarTextStyle":"white","usingComponents":{"med-container":"../../../components/common/container","b-top-bar":"../../../components/common/topbar","shop-list-item":"../../../components/gy/shop-list-item","drug":"../../../components/gy/drug","modal":"./modal"}}

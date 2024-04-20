@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "one-px-line": "./OnePxLine",
+        "clamp-text": "./ClampText"
+    },
+    "component": true
+}

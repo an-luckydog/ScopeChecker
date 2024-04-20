@@ -1,0 +1,17 @@
+<view class="page-noneFml">
+    <view class="box-adv">
+        <view class="tit">健康档案</view>
+        <view class="body">
+            <view class="list-two" wx:for="{{list}}" wx:key="index">
+                <view class="list-icon">
+                    <image src="{{item.icon}}"></image>
+                </view>
+                <view class="list-content">
+                    <view class="content-title">{{item.tit}}</view>
+                    <view class="content-brief">{{item.txt}}</view>
+                </view>
+            </view>
+            <view bindtap="__e" class="btn block" data-event-opts="{{[ [ 'tap',[ [ 'goFamilyListPage',['$event'] ] ] ] ]}}">添加家人信息</view>
+        </view>
+    </view>
+</view>

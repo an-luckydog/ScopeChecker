@@ -1,0 +1,9 @@
+{
+    "components": true,
+    "usingComponents": {
+        "mip-bdxd-consult-sdk": "/widgets/mip-bdxd-consult-sdk/mip-bdxd-consult-sdk",
+        "mip-dxdjx-shop-good-product": "/widgets/mip-dxdjx-shop-good-product/mip-dxdjx-shop-good-product",
+        "gt-dxdjx-h5-score-tag": "/widgets/gt-dxdjx-h5-score-tag/gt-dxdjx-h5-score-tag",
+        "login-button":"/components/login-button/login-button"
+    }
+}

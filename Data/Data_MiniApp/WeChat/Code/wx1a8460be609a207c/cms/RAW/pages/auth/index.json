@@ -1,0 +1,16 @@
+{
+    "navigationBarTitleText": "授权",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "disableScroll": true,
+    "usingComponents": {
+        "getUserInfo": "../../components/verifyAuth/index",
+        "f_cms_userAgreement": "/cms/RAW/components/userAgreement/index",
+        "f_cms_mergeWidInfos": "/cms/RAW/components/registLogin/common/mergewidalert/index",
+        "f_cms_cmsThemeProvider": "/cms/RAW/components/cmsThemeProvider/index"
+    },
+    "componentPlaceholder": {
+        "f_cms_userAgreement": "view",
+        "f_cms_mergeWidInfos": "view"
+    },
+    "component": true
+}

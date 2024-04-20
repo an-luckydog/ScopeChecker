@@ -1,0 +1,128 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.0.0",
+	"appid": "11540180",
+	"projectname": "58tongcheng",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "二手车",
+					"pathName": "pages/list/list",
+					"query": "cate=ershouche&spm=test&utm_source=123",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "list",
+					"pathName": "pages/list/list",
+					"query": "pagetype=2&cate=ershoufang&kw=%E4%B8%80%E5%B1%85%E5%AE%A4",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "专题大类页",
+					"pathName": "pages/subjectPage/subjectPage",
+					"query": "pagetype=3&bg=fangchan",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "主页投放",
+					"pathName": "pages/index/index",
+					"query": "from=1&pagetype=1&city=tj",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "详情",
+					"pathName": "pages/details/index/detail",
+					"query": "detailtype=details_secondCar&infoId=39216384560258&cate=ershouche",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "spm= s-31352896546060-ms-f-801.mhy_bendifuwu_xiaochengxu_path01",
+					"scene": 1037,
+					"referrerInfo": {
+						"extraData": "{}"
+					}
+				},
+				{
+					"id": 6,
+					"name": "pages/details/index/detail",
+					"pathName": "pages/details/index/detail",
+					"query": "infoId=38153924161319&adType=28&psid=15855519968536dSNuQ9cmuFGsJtEafvLAJtPGm0RZarU&slot=lm_list_template&sid=15855519968536dSNuQ9cmuFGsJtEafvLAJtPGm0RZarU&detailtype=details_job&cate=zpshengchankaifa&pos=1&cid=1585551998011Tnd6VC0TvU7BXEDH40A9qTCMrQ5M4dwg&deliveryCode=12000018&ppu=%22UID%3D68422626969365%26UN%3Dsxz58xj002%26TT%3D42f4d75ce6e92978be82aa1abfda273b%26PBODY%3DgpMU9Vbrk3cf0UtbSa3ZbTwe-FNamja6GNlgICBYsKa3gvHskYrOdl84m2KLnAp6FQI4F64rdzKvOtb3ORsvm7BwKQyhduLu3OpIip7uPWgUAS_fc0tViTyZXhYOYqK-DgxD1fMzr0KXfcJIoOLLjNQZ9msdbYN_taRT5IrVYhw%26VER%3D1%22",
+					"scene": 1037,
+					"referrerInfo": {
+						"extraData": "{}"
+					}
+				},
+				{
+					"id": -1,
+					"name": "pages/details/index/detail",
+					"pathName": "pages/details/index/detail",
+					"query": "infoId=41615813052940&adType=28&psid=1585294548625jAms7KAy8xRwe8I0jAsCef5fRblHyRfB&slot=lm_list_template&sid=1585294548625jAms7KAy8xRwe8I0jAsCef5fRblHyRfB&detailtype=details_job&cate=zpshengchankaifa&pos=1&cid=1585294550481IXVA4xBHzk1mbusrNnpVJWjSJotGfVkt&deliveryCode=12000010&ppu=%22UID%3D47642617068557%26UN%3D735v63%26TT%3D40d61b2fcc6a8924dd87a61ac3a42420%26PBODY%3Dbs8qiXnUTplyvboLVQo59I7CIeVO1uJMe_ZyIPQdyo35eIaivhHAXLS-fxiIqe32fqdqWkflq2ujyUO3jiPm_qLagr2lM_dviAx3Am88SHinOUI1Aob6L1Uys3GpPCBfDk2F0PKOENuGbb0NLsLr9MrH3DrvzL7ajiiBgjUTN98%26VER%3D1%22",
+					"scene": 1037,
+					"referrerInfo": {
+						"appId": "wxa9a9dec97e6ee639",
+						"extraData": "{}"
+					}
+				}
+			]
+		}
+	}
+}

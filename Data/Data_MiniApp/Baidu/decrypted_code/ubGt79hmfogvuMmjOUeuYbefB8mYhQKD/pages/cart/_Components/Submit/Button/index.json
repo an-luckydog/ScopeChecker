@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "telepay-vericode":"../vericode/vericode",
+    "price-change": "/pages/cart/_Components/Submit/PriceChange/index",
+    "goods-remove":"/pages/cart/_Components/Submit/GoodsRemove/index",
+    "ui-popup": "/pages/cart/_Components/UI/Popup/index"
+  }
+}

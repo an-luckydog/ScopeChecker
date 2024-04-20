@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "van-picker": "/miniprogram_npm/vant-weapp/picker/index"
+    },
+    "enablePullDownRefresh": false,
+    "navigationBarTitleText": "续租柜体"
+}

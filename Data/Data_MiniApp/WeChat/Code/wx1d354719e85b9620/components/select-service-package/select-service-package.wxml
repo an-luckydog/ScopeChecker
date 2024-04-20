@@ -1,0 +1,32 @@
+<u-popup bind:__l="__l" bind:close="__e" bind:input="__e" borderRadius="32" class="data-v-780d541f" data-event-opts="{{[ [ '^close',[ ['close'] ] ],[ '^input',[ [ '__set_model',[ '','visible','$event',[] ] ] ] ] ]}}" maskCloseAble="{{true}}" maskCustomStyle="{{backgroundColor:'rgba(0, 0, 0, 0.4)'}}" mode="bottom" safeAreaInsetBottom="{{true}}" value="{{visible}}" vueId="e6be403c-1" vueSlots="{{['default']}}">
+    <view class="jk-dialog data-v-780d541f">
+        <view class="jk-dialog-head data-v-780d541f">
+            <view class="jk-dialog-title data-v-780d541f">请选择您要使用的服务包</view>
+        </view>
+        <view class="jk-dialog-content data-v-780d541f">
+            <scroll-view class="data-v-780d541f" scrollTop="1" scrollY="true" style="min-height:200rpx;max-height:800rpx;">
+                <view class="list data-v-780d541f">
+                    <u-radio-group bind:__l="__l" bind:change="__e" bind:input="__e" class="data-v-780d541f" customStyle="{{wdith:'100%'}}" data-event-opts="{{[ [ '^change',[ ['selectEquity'] ] ],[ '^input',[ [ '__set_model',[ '','patientEquitiesId','$event',[] ] ] ] ] ]}}" size="48" value="{{patientEquitiesId}}" vueId="{{'e6be403c-2'+','+'e6be403c-1'}}" vueSlots="{{['default']}}">
+                        <view class="item data-v-780d541f" wx:for="{{list}}" wx:key="index">
+                            <view class="title data-v-780d541f" stylw="margin-top:0;">{{item.servicePackageName}}</view>
+                            <view class="equities data-v-780d541f">
+                                <view class="equities-item data-v-780d541f" wx:for="{{item.equities}}" wx:for-index="index1" wx:for-item="equity" wx:key="index1">
+                                    <u-radio activeColor="#00C6AE" bind:__l="__l" class="equities-item-radio data-v-780d541f" iconSize="32" labelPosition="left" name="{{equity.patientEquitiesId}}" shape="circle" vueId="{{'e6be403c-3-'+index+'-'+index1+','+'e6be403c-2'}}" vueSlots="{{['default']}}">
+                                        <view class="equities-item-name data-v-780d541f">
+                                            <view class="data-v-780d541f">{{equity.equitiesName}}</view>
+                                            <view class="data-v-780d541f">{{'(剩余'+equity.residueNum+'次)'}}</view>
+                                        </view>
+                                    </u-radio>
+                                </view>
+                            </view>
+                        </view>
+                    </u-radio-group>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="jk-dialog-foot data-v-780d541f">
+            <peace-button bind:__l="__l" bind:click="__e" class="data-v-780d541f" customStyle="width: 310rpx;" data-event-opts="{{[ [ '^click',[ ['close'] ] ] ]}}" popup="{{true}}" vueId="{{'e6be403c-4'+','+'e6be403c-1'}}" vueSlots="{{['default']}}">取消</peace-button>
+            <peace-button bind:__l="__l" bind:click="__e" class="data-v-780d541f" customStyle="width: 310rpx;" data-event-opts="{{[ [ '^click',[ ['submit'] ] ] ]}}" popup="{{true}}" type="primary" vueId="{{'e6be403c-5'+','+'e6be403c-1'}}" vueSlots="{{['default']}}">确认</peace-button>
+        </view>
+    </view>
+</u-popup>

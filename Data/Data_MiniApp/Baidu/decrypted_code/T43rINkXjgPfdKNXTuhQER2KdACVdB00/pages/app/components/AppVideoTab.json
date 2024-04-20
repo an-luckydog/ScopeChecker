@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "app-video-card": "./AppVideoCard",
+        "video-footer": "../../../components/Footer"
+    },
+    "component": true
+}

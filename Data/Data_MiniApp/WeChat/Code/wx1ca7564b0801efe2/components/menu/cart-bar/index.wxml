@@ -1,0 +1,15 @@
+<view class="cart-bar {{customClass}}" id="cart-bar" wx:if="{{!hasPageError&&cartBarShowState}}">
+    <view bindtap="toggleCartPanel" class="icon" id="cart-num" style="background-image:url({{cartIcon}});">
+        <red-point count="{{newCartCount}}" customClass="cart-count-container"></red-point>
+    </view>
+    <view class="cart-price-wrap">
+        <cart-price bind:toggle="toggleCartPanel" cartPriceInfo="{{cartPriceInfo}}" class="cart-price-wrap" showTotalPrice="{{!!showTotalPrice}}"></cart-price>
+    </view>
+    <ui-button bind:onClick="gotoOrder" customClass="{{cart.getBtnStyle(cartCount,isMustDishEnough,lackOfDeliveryMoney,cartBtnClickable)}}" size="{{UI_SIZE.MIDDLE}}" text="{{orderText}}" type="{{BUTTON_TYPE.DEFAULT}}" wx:if="{{isShopOpen}}"></ui-button>
+    <view class="forbid-btn" wx:elif="{{isShopOffline}}">
+        <view>商家设备离线</view>
+        <view class="sub-text">请联系服务员下单</view>
+    </view>
+    <cart-toast cartToastImg="{{cartToast.img}}" cartToastInfo="{{cartToastInfo}}" cartToastText="{{cartToast.text}}" fromOrderConfirm="{{cartToast.fromOrderConfirm}}" isShow="{{cartToast.isShow}}" toastList="{{cartToast.toastList}}"></cart-toast>
+</view>
+<wxs module="cart" src="../wxsModules/cart.wxs" />

@@ -1,0 +1,1 @@
+window._swanWebGlobal.vhStylePolyfill={"pages/account/account.css":[".user-home.is-ver .user-container {height:calc(var(--vh,vh) * 100 - 11.733333333333333vw);}"],"pages/channel/channel.css":[".channel-wrap.is-ver {height:calc(var(--vh,vh) * 100 - 11.733333333333333vw);}"]};

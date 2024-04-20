@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "advertising-modal": "../advertising-modal/index",
+        "take-coupon-dialog": "../take-coupon-dialog/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

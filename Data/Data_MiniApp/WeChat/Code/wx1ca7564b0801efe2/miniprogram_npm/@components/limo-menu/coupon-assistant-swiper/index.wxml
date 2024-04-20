@@ -1,0 +1,12 @@
+<view class="coupon-assistant-swiper coupon-as">
+    <view class="coupon-as__header">
+        <coupon-assistant-header bind:checkMore="onCheckMore" bizId="eco_moofi8jd" couponCount="{{couponCount}}" couponStyle="{{couponStyle}}"></coupon-assistant-header>
+    </view>
+    <scroll-view bindscrolltolower="onScrollToLower" class="coupon-as__coupons-box" lowerThreshold="100" scrollX="{{true}}" wx:if="{{couponList&&couponList.length}}">
+        <view class="coupon-as__coupons">
+            <view class="coupon-as__coupon" wx:for="{{couponList}}" wx:for-item="coupon" wx:key="*this">
+                <coupon-item bind:onCheck="onUseCoupon" bizId="eco_8nlqcltt" count="{{coupon.couponInfo.usedCouponCodes.length}}" coupon="{{coupon}}"></coupon-item>
+            </view>
+        </view>
+    </scroll-view>
+</view>

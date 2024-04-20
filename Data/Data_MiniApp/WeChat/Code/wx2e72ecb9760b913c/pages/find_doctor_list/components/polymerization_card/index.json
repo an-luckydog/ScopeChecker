@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "doctor-card": "/components/doctor-card/index"
+    }
+}

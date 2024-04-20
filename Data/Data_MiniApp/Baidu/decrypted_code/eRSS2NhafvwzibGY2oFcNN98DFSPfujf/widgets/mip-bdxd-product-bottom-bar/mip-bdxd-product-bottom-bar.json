@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mip-bdxd-consult-sdk": "/widgets/mip-bdxd-consult-sdk/mip-bdxd-consult-sdk",
+        "login-button":"/components/login-button/login-button",
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "buy-btn-text": "/widgets/mip-bdxd-product-bottom-bar/components/buy-btn",
+        "coupon-count-down-bar": "/widgets/gt-dxdjx-h5-coupon-count-down-bar/gt-dxdjx-h5-coupon-count-down-bar",
+        "address-bottom-bar": "/widgets/mip-dxdjx-address-bottom-bar/mip-dxdjx-address-bottom-bar"
+    }
+}

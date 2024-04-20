@@ -1,0 +1,2 @@
+<view class="{{redPointClass}}" style="{{styleString}}" wx:if="{{count&&type===RED_POINT_TYPE.NUMBER}}">{{showCount}}</view>
+<view class="{{redPointClass}}" style="{{styleString}}" wx:elif="{{type===RED_POINT_TYPE.POINT}}"></view>

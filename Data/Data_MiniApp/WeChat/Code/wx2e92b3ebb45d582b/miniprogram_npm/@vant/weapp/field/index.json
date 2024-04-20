@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "van-cell": "../cell/index",
+        "van-icon": "../icon/index",
+        "banner": "/./miniprogram_npm/@tmsfe/tms-ui/banner/banner",
+        "navbar": "/./miniprogram_npm/@tmsfe/tms-ui/navbar/navbar"
+    }
+}

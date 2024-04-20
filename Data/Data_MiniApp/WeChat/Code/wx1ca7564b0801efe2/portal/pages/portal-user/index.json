@@ -1,0 +1,7 @@
+{
+    "navigationStyle": "custom",
+    "componentPlaceholder": {
+        "tab-bar": "view",
+        "lottery": "view"
+    }
+}

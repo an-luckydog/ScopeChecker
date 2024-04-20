@@ -1,0 +1,13 @@
+{
+    "navigationBarTitleText": "搜索",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "container-panel": "view",
+        "take-coupon-panel": "view",
+        "dish-time-info-modal": "view",
+        "register-panel": "view",
+        "must-dish-panel": "view",
+        "lottery": "view"
+    }
+}

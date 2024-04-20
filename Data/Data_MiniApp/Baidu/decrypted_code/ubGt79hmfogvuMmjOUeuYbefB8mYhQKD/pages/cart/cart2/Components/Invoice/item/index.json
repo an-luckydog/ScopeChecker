@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ui-icon":"/pages/cart/_Components/UI/Icon/index"
+  }
+}

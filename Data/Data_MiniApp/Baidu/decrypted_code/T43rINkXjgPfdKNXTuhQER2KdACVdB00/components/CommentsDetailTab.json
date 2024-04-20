@@ -1,0 +1,12 @@
+{
+    "usingComponents": {
+        "footer-label": "./Footer",
+        "mod-line": "./ModLine",
+        "game-detail-marking": "./GameDetailMarking",
+        "comment-card": "./CommentCard",
+        "comment-filter": "./CommentFilter",
+        "one-px-line": "./OnePxLine",
+        "game-bar-header": "./GameBarHeader"
+    },
+    "component": true
+}

@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "activity-banner": "/components/activity-banner/index",
+        "activity-feed-icon": "/components/activity-feed-icon/index"
+    }
+}

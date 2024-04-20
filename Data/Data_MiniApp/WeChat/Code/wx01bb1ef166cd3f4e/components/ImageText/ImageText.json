@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "ImgTextInput": "../ImgTextInput/ImgTextInput",
+        "ImgTextJiaFen": "../ImgTextJiaFen/ImgTextJiaFen",
+        "ImgTextCopy": "../ImgTextCopy/ImgTextCopy",
+        "ErrorBar": "/components/ErrorBar/ErrorBar"
+    }
+}

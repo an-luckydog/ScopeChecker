@@ -1,0 +1,287 @@
+<view class="choice-cabinet-container">
+    <view class="swiper-container-syf" wx:if="{{background.length}}">
+        <swiper autoplay="{{autoplay}}" class="swiper-demo" duration="{{duration}}" indicatorDots="{{indicatorDots}}" interval="{{interval}}">
+            <swiper-item wx:for="{{background}}" wx:key="*this">
+                <view class="swiper-item">
+                    <image src="{{item.url}}"></image>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="cabinet-contianer">
+        <view class="left-con">
+            <view class="store-title">{{storeInfo.storeName||'-'}}</view>
+            <view class="time-box">
+                <image src="{{imgUrl}}/info/time.png"></image>
+                <text>{{storeInfo.startTime||'-'}}-{{storeInfo.endTime||'-'}}（此门店营业时间）</text>
+            </view>
+        </view>
+        <view class="right-con">
+            <view class="line"></view>
+            <view bindtap="openAddress" class="address-con" data-item="{{storeInfo}}">
+                <view>
+                    <image src="{{imgUrl}}/info/address.png"></image>
+                </view>
+                <view class="text0">查看位置</view>
+            </view>
+        </view>
+    </view>
+    <view class="choice-member-container">
+        <view class="member-li">
+            <view class="left-info">
+                <image src="{{imgUrl}}/info/icon1-syf.png"></image>
+            </view>
+            <view class="left-right-box">
+                <text>选择柜体</text>
+                <view bindtap="startCheckFunc" class="right-info">
+                    <input disabled="disabled" placeholder="请选择柜体" value="{{chenckedCabinet}}"></input>
+                    <view class="jt">
+                        <image src="{{imgUrl}}/info/icon8.png"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="member-li time-li">
+            <view class="left-info">
+                <image src="{{imgUrl}}/info/icon2-syf.png"></image>
+            </view>
+            <view class="left-right-box">
+                <text>租用时间</text>
+                <view bindtap="startTimeFunc" class="right-info">
+                    <input disabled="disabled" placeholder="请选择租用时间" value="{{time}}"></input>
+                    <view class="jt">
+                        <image src="{{imgUrl}}/info/icon8.png"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="member-li name-li">
+            <view class="left-info">
+                <image src="{{imgUrl}}/info/icon3-syf.png"></image>
+            </view>
+            <view class="left-right-box">
+                <text decode="{{true}}">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</text>
+                <view class="right-info">
+                    <input bindinput="bindNameInput" placeholder="请填写姓名"></input>
+                    <view class="jt"></view>
+                </view>
+            </view>
+        </view>
+        <view class="member-li {{!timeSatisfy||!deductionFlag?'last-li':''}}">
+            <view class="left-info">
+                <image src="{{imgUrl}}/info/icon4-syf.png"></image>
+            </view>
+            <view class="left-right-box">
+                <text>联系方式</text>
+                <view class="right-info">
+                    <input bindinput="bindTelInput" placeholder="请填写联系方式" type="number" wx:if="{{loginState&&!phoneState&&rejectPhone}}"></input>
+                    <button catchgetphonenumber="getPhoneNumber" class="phone-button" openType="getPhoneNumber" plain="true" wx:if="{{loginState&&!phoneState&&!rejectPhone}}">获取手机号</button>
+                    <input bindinput="bindTelInput" disabled="disabled" placeholder="请填写联系方式" type="number" value="{{params.tel}}" wx:if="{{loginState&&phoneState}}"></input>
+                    <button bindtap="onGotUserInfo" class="phone-button" plain="true" wx:if="{{!loginState}}">获取手机号</button>
+                    <view class="jt"></view>
+                </view>
+            </view>
+        </view>
+        <view class="member-li time-li last-li" style="display:{{!timeSatisfy||!deductionFlag?'none':'flex'}};">
+            <view class="left-info">
+                <image src="{{imgUrl}}/integral/integral_icon.png"></image>
+            </view>
+            <view class="left-right-box">
+                <text>{{ruleName}}</text>
+                <view bindtap="integralSelect" class="right-info">
+                    <input disabled="disabled" placeholder="请选择抵扣类型" value="{{integralName}}"></input>
+                    <view class="jt">
+                        <image src="{{imgUrl}}/info/icon8.png"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="integral-detail" hidden="{{!timeSatisfy||!deductionFlag}}">
+            <view class="member-info" wx:if="{{integralGradeName}}">{{integralGradeName}}会员</view>
+            <view class="detail-item current">当前积分 {{totalIntegral}}</view>
+            <view class="detail-item deduction">抵扣积分 <text class="deduction-text">{{deductionIntegral}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="empty-bot"></view>
+    <view class="agreement-pay-contanier" style="padding-bottom:{{isFullSucreen}}rpx">
+        <view class="member-agreement-container">
+            <image bindtap="selectRep" class="multi-img" data-selectIndex="{{0}}" src="{{selectIndex[0].sureid?hasSelect:noSelect}}"></image>
+            <text class="tetx0">下单表示您已同意</text>
+            <text bindtap="openAgreeFunc" class="tetx1">《用户使用协议》</text>
+        </view>
+        <view class="pay-container">
+            <view class="left-con">
+                <view class="money-box">
+                    <text class="tetx0">支付金额：</text>
+                    <text class="tetx1">¥</text>
+                    <text class="tetx2">{{total}}</text>
+                </view>
+                <view bindtap="openCostFunc" class="des">
+                    <text>收费规则</text>
+                    <image src="{{imgUrl}}/info/icon5-syf.png"></image>
+                </view>
+            </view>
+            <view class="right-con">
+                <button bindtap="payClick" formType="submit" wx:if="{{loginState}}">去支付</button>
+                <button bindtap="onGotUserInfo" plain="true" wx:if="{{!loginState}}">去支付</button>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="cabinet-dialog-mask" wx:if="{{isCheckCabinetShow}}">
+    <view class="cabinet-dialog-contianer">
+        <view class="cabinet-dialog-content-title" style="background:url({{cabinetTitle}}) no-repeat;background-size: 100%;">选择柜体</view>
+        <view class="cabinet-dialog-content-container" style="background:url({{cabinetBg}}) no-repeat;background-size: 100%;">
+            <view class="cabinet-dialog-content-box">
+                <view class="tabview">
+                    <view class="tabs {{position=='top'?'top':'bottom'}}">
+                        <view bindtap="toggleTab" class="tab-son {{activeIndex==index?'active':''}}" data-index="{{index}}" wx:for="{{tabs}}" wx:key="index">
+                            <view class="tab-text">{{item.name}}</view>
+                        </view>
+                    </view>
+                    <swiper bindchange="swiperChange" class="tab-swiper" current="{{activeIndex}}">
+                        <swiper-item class="tab-contents" wx:for="{{tabsCont}}" wx:key="*this">
+                            <view class="swiper-container-tabs">
+                                <view class="tab-text">
+                                    <view bindtap="checkCabinetFunc" class="item-wapper {{activeIndexFlg==activeIndex&&activeCheckedFlag==index?'activeChecked':''}}" data-cell="{{cell}}" data-index="{{index}}" wx:for="{{item}}" wx:for-item="cell" wx:key="index">
+                                        <view class="item-box {{cell.status==1||cell.status==2?'activeColor':''}}">
+                                            <view class="num-type">{{cell.cabinetNumAndSize||'-'}}</view>
+                                            <view class="price-box">{{cell.lowPrice||'-'}}</view>
+                                            <image src="{{imgUrl}}/choice/man.png" wx:if="{{cell.status==2}}"></image>
+                                            <image src="../../img/yu.png" wx:if="{{cell.status==1}}"></image>
+                                        </view>
+                                    </view>
+                                    <view class="empty-text" wx:if="{{item.length==0}}">暂无此类型的柜子～</view>
+                                </view>
+                            </view>
+                        </swiper-item>
+                    </swiper>
+                    <view class="cabinet-dialog-bottom">
+                        <view bindtap="checkedSuccessCabinetFunc" class="button">确认 <button bindtap="onGotUserInfo" class="user-button" plain="true" wx:if="{{!loginState}}"></button>
+                        </view>
+                        <view bindtap="getStoreListFunc" class="tips-views">没有合适的柜子,点我查看附近其他储物柜</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view bindtap="closeCabinetFunc" class="close-btn">
+            <image src="{{imgUrl}}/choice/close.png"></image>
+        </view>
+    </view>
+</view>
+<view class="cabinet-dialog-mask" wx:if="{{isTimeShow}}">
+    <view class="time-dialog-container">
+        <view class="time-dialog-wrapper-box">
+            <view class="time-dialog-wrapper">
+                <view class="time-title">请选择使用时间</view>
+                <view class="check-title-contianer">
+                    <van-picker bind:change="onChange" columnClass="list-column-class" columns="{{columns}}" defaultIndex="{{params.timeVal-1}}" itemHeight="40" visibleItemCount="3"></van-picker>
+                </view>
+                <view bindtap="sureTimeFunc" class="sure-button">确认</view>
+                <view class="time-des-box">
+                    <view class="time-des">{{storeInfo.priceComment}}</view>
+                </view>
+            </view>
+        </view>
+        <view bindtap="closeTimeFunc" class="close-btn">
+            <image src="{{imgUrl}}/choice/close.png"></image>
+        </view>
+    </view>
+</view>
+<view class="cabinet-dialog-mask" wx:if="{{isIntegralShow}}">
+    <view class="time-dialog-container">
+        <view class="time-dialog-wrapper-box">
+            <view class="time-dialog-wrapper">
+                <view class="time-title">请选择抵扣类型</view>
+                <view class="check-title-contianer">
+                    <van-picker bind:change="onIntegralChange" columnClass="list-column-class" columns="{{deductionNameList}}" defaultIndex="{{integralIndex}}" itemHeight="40" visibleItemCount="3"></van-picker>
+                </view>
+                <view bindtap="sureIntegralFunc" class="sure-button">确认</view>
+            </view>
+        </view>
+        <view bindtap="closeIntegralFunc" class="close-btn">
+            <image src="{{imgUrl}}/choice/close.png"></image>
+        </view>
+    </view>
+</view>
+<view class="cabinet-dialog-mask" wx:if="{{isAgreementShow}}">
+    <view class="agreement-container-dialog-wrapper">
+        <view class="agreement-container-dialog">
+            <view class="dialog-title">用户使用协议</view>
+            <view class="dialog-content-box">
+                <view class="dialog-content-wrapper"> 用户使用协议
+根据《中华人民共和国合同法》等法律法规之规定，甲方向符合本协议规定条件的乙方提供储物柜使用服务，乙方完全同意并接受本协议的全部条款，享受甲方提供的服务。
+一、甲方储物柜严禁存放以下物品：
+1.易燃、易爆、易渗漏、易挥发、易潮物品。
+2.有毒有害、有辐射、化学性、突变性危险品。
+3.易腐烂、易霉变、易变质及超限等特殊物品。
+4.毒品、枪支弹药等违禁违纪类物品。
+5.动物及活物。
+6.法律法规等规定禁止的其他物品。
+二、乙方身份条件
+1．本协议乙方只接受个人用户。
+2．办理使用储物柜时需填写本人有效身份证明一致的真实姓名。
+3．办理非使用储物柜服务的其他业务时（包括但不限于变更信息、挂失、超期取物、查看监控、办理保险等）需在甲方审验确认乙方身份后进行。
+4．乙方委托他人办理非使用储物柜服务的其他服务时，需出具亲自签名的授权委托书，被委托人要携带委托书、乙方身份证件、委托人身份证件。
+5．乙方无法出具授权委托书的，由其直系亲属携带有法律效力的无法到场证明、乙方身份证件、直系亲属证明文件、直系亲属身份证件等一并办理，具体情况要咨询甲方。
+三、储物柜使用期
+1.乙方付费成功后，视为拥有对应储物柜的使用期，可以对储物柜做开、关门处理。
+2.在使用期满前，乙方没有办理退租手续，视为乙方自动延长使用期，乙方应及时办理续租使用手续。
+3.乙方使用期到期后且未续费时，乙方无权继续使用储物柜。
+四、储物柜使用
+1.乙方使用储物柜只用于储物用途，不得用于其它用途。
+2.乙方应严格按照本协议第一条规定存放物品。
+3.乙方不应将储物柜用于违反法律法规的各项活动。
+4.乙方已阅读并知晓所使用储物柜张贴的本储物柜特殊使用条件。
+5.乙方应严格按照储物柜形状和承受力存储物品，超长、超重物品禁止存放。
+6.乙方如存储粉末颗粒状、液体、气体、有气味、生鲜食物、植物等物品时，需自行包装保管，因包装不善造成的甲方和乙方以及第三方损失由乙方负责。存储物品因自然条件发生的变化由乙方负责。
+7.乙方应妥善使用储物柜，退租时清除柜内所有物品、恢复柜内原状，自行办理退柜手续，若有柜体损坏等，乙方应负责赔偿。
+8.乙方在使用储物柜时，不应干扰其他用户使用，不应长期占用储物柜外空间。
+9.乙方应听从甲方及储物柜场地方安排。
+五、储物柜收费
+1.储物柜采取预付费方式，乙方付费完成后视为拥有付费储物柜在付费周期内的使用权，即可以在使用期内使用储物柜。
+2.乙方自动延长使用期及超期取物，需要办理续租，续租期必须是自未付费时段至现时以后的时段，付清费用后，方可使用。
+六、超期及使用
+1. 乙方使用期到期后未续租或未退租视为使用超期。
+2. 甲方在乙方使用超期前、超期后会通知乙方，用于确认乙方超期的储物柜是否延期使用：
+a．乙方如继续使用储物柜，乙方续费后方可使用；
+b．乙方如不继续使用储物柜，甲方将对应储物柜恢复为待使用状态。
+3. 乙方超期超过最长欠费期限后，甲方自动将对应储物柜恢复为待使用状态，不论储物柜内是否有遗留物品：
+a. 即时储物柜最长欠费期限为24小时；如乙方超期使用24小时，并且不付费的情况下视为乙方自动放弃柜体使用权。甲方会自动释放柜体为其他客户使用，如果发生物品遗失，甲方不予负责，乙方自行承担所有责任。
+七、通知
+1.甲方联系方式是公示的客服电话，是乙方对甲方的常用及紧急联系方式。
+2.乙方填写电话号码视为甲方对乙方的联系方式，甲方联系乙方的方式有：拨打乙方电话和发送消息，乙方不接听电话，甲方向乙方发送消息后视为通知送达。
+3.乙方租用储物柜成功、续用储物柜成功、储物柜使用期满后，甲方均有消息通知乙方，请乙方及时核对信息内容，通知消息内容由乙方适时保存，甲方不再重复发送。
+八、甲方权利与义务
+1.甲方对储物柜储物单元及安置场所有修缮制义务，因修缮、迁移储物柜或结束储物柜业务时，甲方须以电话或短信方式提前一周通知乙方，并协商解决后续事宜。
+2.在乙方不违反本协议其他相关条款的情况，甲方不得擅自开启乙方的储物柜，不得使用储物柜内的物品，其不对此货物享有所有权和使用权。
+3.甲方在营业时间内向乙方提供服务，但有下列情况时除外：
+a.所租储物柜被公检法等权利机关采取了封查、扣押等强制性措施的；
+b.乙方未按期交纳使用费等费用的；
+c.不符合甲方规定的服务条件的。
+4. 甲方须严守保密义务，不得随意泄露乙方个人资料和有关用柜信息。
+5. 甲方不承担乙方所存放物品因为自身属性造成的变质、自然耗损所造成的损失。
+6. 甲方不承担乙方身份信息泄露、操作终端保管不当、操作软件账号保管不当造成的储物损失。
+7．按照国家相关法律规定。并为了保障甲方乙方双方及其他客户的利益，在有充足的理由怀疑乙方违反本协议之规定在智能储物柜内储存禁止存放类物品（禁止存放的物品仅指国家明令的违禁品及已腐烂、变质的生鲜蔬果、肉类等。）的情况下，甲方有权要求乙方共同开柜、验柜，乙方应采取积极配合 </view>
+            </view>
+        </view>
+        <view bindtap="closeAgreementFunc" class="close-btn">
+            <image src="{{imgUrl}}/choice/close.png"></image>
+        </view>
+    </view>
+</view>
+<view class="cabinet-dialog-mask" wx:if="{{isCostShow}}">
+    <view class="agreement-container-dialog-wrapper">
+        <view class="agreement-container-dialog">
+            <view class="dialog-title">收费规则说明</view>
+            <view class="dialog-content-box">
+                <view class="dialog-content-wrapper"> {{storeInfo.priceCommentDetail}} </view>
+            </view>
+        </view>
+        <view bindtap="closeCostFunc" class="close-btn">
+            <image src="{{imgUrl}}/choice/close.png"></image>
+        </view>
+    </view>
+</view>
+<view class="wh-cabinet-dialog-mask-loading" wx:if="{{loading}}"></view>

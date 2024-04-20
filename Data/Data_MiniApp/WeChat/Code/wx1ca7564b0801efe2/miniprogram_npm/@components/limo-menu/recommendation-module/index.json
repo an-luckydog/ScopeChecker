@@ -1,0 +1,13 @@
+{
+    "component": true,
+    "usingComponents": {
+        "dish-item": "../../../../components/menu/dish/dish-item/index",
+        "common-operation": "../../limo-common/common-operation/index",
+        "midas-simple": "../../../../components/midas-simple/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

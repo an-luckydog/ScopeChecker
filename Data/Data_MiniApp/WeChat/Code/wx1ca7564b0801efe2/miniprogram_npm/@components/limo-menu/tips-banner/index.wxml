@@ -1,0 +1,12 @@
+<view class="tips-banner {{tipsBannerFixedBottom?'attach-bottom':''}}">
+    <view class="left">
+        <view class="tip-message">{{tipMessage}}</view>
+        <view class="time-period" wx:if="{{timePeriod}}">
+            <text class="label" wx:if="{{timePeriod.shopOpenPeriodLabel}}">{{timePeriod.shopOpenPeriodLabel}}{{timePeriod.shopOpenPeriods.length>2?'\n':''}}</text>
+            <text class="period" wx:if="{{timePeriod.shopOpenPeriods&&timePeriod.shopOpenPeriods.length}}" wx:for="{{timePeriod.shopOpenPeriods}}" wx:for-item="period" wx:key="index">{{period}}</text>
+        </view>
+    </view>
+    <view class="right">
+        <ui-button bind:onClick="onTapButton" size="middle" text="{{buttonText}}" wx:if="{{buttonText&&buttonText.length}}"></ui-button>
+    </view>
+</view>

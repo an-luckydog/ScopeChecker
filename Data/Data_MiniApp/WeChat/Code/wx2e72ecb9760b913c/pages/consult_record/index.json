@@ -1,0 +1,10 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "相似问题",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-navigator": "../../components/cy-navigator/index",
+        "cy-loading": "../../components/cy-loading/index",
+        "mp-html": "../../miniprogram_npm/mp-html/index"
+    }
+}

@@ -1,0 +1,26 @@
+.wrap{display:flex;flex:1;flex-direction:column}.page_title{display:flex;padding:2.933333333333333vw 4vw;flex-direction:row}.city, .loaction, .city .switch{display:flex;flex-direction:row;justify-content:center}.city swan-text{font-family:'微软雅黑';font-size:3.466666666666667vw;color:#333;height:4vw;line-height:6vw;padding-right:1.3333333333333333vw;margin-left:1.3333333333333333vw}.city swan-image{width:2.6666666666666665vw;height:2vw;line-height:4vw;padding-top:2vw}.location{display:flex;flex-direction:row;align-items:center}.location .image1{width:3.2vw;height:4vw;line-height:5.333333333333333vw;padding-right:1.3333333333333333vw;padding-left:1.3333333333333333vw}.location .image2{width:3.7333333333333334vw;height:2.1333333333333333vw;line-height:5.333333333333333vw;padding-left:1.0666666666666667vw;padding-right:1.3333333333333333vw}.location swan-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:'微软雅黑';font-size:4vw;color:#333;line-height:4vw}.search{width:100%;height:7.466666666666667vw;background:#f5f5f5;border-radius:8prx}.search swan-image{width:3.466666666666667vw;height:3.466666666666667vw;padding-left:2.6666666666666665vw;padding-top:0.6666666666666666vw;vertical-align:middle}.search swan-text{font-family:'微软雅黑';color:#999;font-size:3.466666666666667vw;padding-left:2.1333333333333333vw}.hf-header-wrap{width:100vw}.hf-img{width:100vw;height:21.333333333333332vw}.consult{display:flex;align-items:center;flex-direction:row;height:25.6vw;background:url('https://jiaxiaozhijia.image.mucang.cn/jiaxiaozhijia/2018/09/20/10/7eb71d94b29a42a99e1e9ec308ebbd50.png') no-repeat;background-size:100%;padding-left:4vw}.consult-count{width:69.33333333333333vw;height:21.333333333333332vw;background-color:red;background:url(https://jiaxiaozhijia.image.mucang.cn/jiaxiaozhijia/2021/02/02/11/10d99418846c41f48e795b1b5be84333.png) no-repeat center center/contain}
+
+/* .consult-count view {
+  font-size: 56rpx;
+  line-height: 30rpx;
+  color: #ff4c4c;
+  font-weight: bold;
+}
+
+.consult-count text {
+  font-size: 24rpx;
+  color: #333;
+  font-weight: normal;
+}
+
+.consult-btn {
+  width: 188rpx;
+  height: 64rpx;
+  margin-left: 94rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+  line-height: 64rpx;
+  background: url('https://jiaxiaozhijia.image.mucang.cn/jiaxiaozhijia/2018/09/20/11/e421f082be7749ebafd5db77bf0b853c.png') no-repeat;
+  background-size: 100%;
+} */.page_sx{padding-right:2.6666666666666665vw}.page_nav{display:flex;flex-direction:row;justify-content:space-around;font-size:4vw;padding:2.6666666666666665vw 1.3333333333333333vw 1.3333333333333333vw;border-top:2.6666666666666665vw solid #eee}.page_nav swan-text{font-family:'微软雅黑';color:#333;display:block;font-size:4vw;padding-bottom:1.3333333333333333vw}.filter{display:flex;flex-direction:row}.filter swan-image{width:4vw;height:4vw;padding-top:1.0666666666666667vw}.seclted{font-weight:bold;border-bottom:1.5px solid #333}.page_content{position:relative;height:calc(100vh - 53.333333333333336vw)}.page_item{display:flex;flex-direction:row;border-bottom:1px solid #eee;padding:4vw 0}.page_left{display:flex;position:relative;justify-content:center;width:33.333333333333336vw}.page_logo{width:24.533333333333335vw;height:17.6vw}.page_rank{position:absolute;top:-1%;left:12%;width:10.666666666666666vw;height:5.333333333333333vw}.page_mid{display:flex;flex:1;flex-direction:column;justify-content:space-between}.page_name{display:flex;flex-direction:row;align-items:center}.page_name swan-text{font-family:'微软雅黑';display:inline-block;margin-right:1.3333333333333333vw;font-size:4.266666666666667vw;color:#333}.page_rz{width:4.8vw;height:4.8vw}.page_name swan-image{width:4.266666666666667vw;height:4.266666666666667vw}.page_score{display:flex;flex-direction:row;align-items:center;font-family:'微软雅黑';font-size:2.933333333333333vw;color:#666}.page_start{display:flex;align-content:center;width:17.6vw;height:2.933333333333333vw;position:relative;padding-right:1.3333333333333333vw}.page_start swan-image{width:17.6vw;height:2.933333333333333vw;line-height:2.933333333333333vw}.start_wrap{position:absolute;top:0;left:0;height:2.933333333333333vw;line-height:2.933333333333333vw;overflow:hidden}.page_price{font-family:'微软雅黑';font-size:4vw;color:#1dacf9}.page_right{font-family:'微软雅黑';font-size:2.6666666666666665vw;color:#999;padding-top:13.333333333333334vw;padding-right:2.6666666666666665vw}.showloading{position:absolute;width:66.66666666666667vw;height:40vw;top:26.666666666666668vw;left:20vw}.nodata{display:flex;flex-direction:column;text-align:center}.nodata swan-image{width:62.666666666666664vw;height:49.06666666666667vw;margin:6.666666666666667vw 16vw}.nodata swan-text{font-family:'微软雅黑';font-size:3.466666666666667vw;color:#ccc}.loading{width:6.666666666666667vw;height:6.666666666666667vw}

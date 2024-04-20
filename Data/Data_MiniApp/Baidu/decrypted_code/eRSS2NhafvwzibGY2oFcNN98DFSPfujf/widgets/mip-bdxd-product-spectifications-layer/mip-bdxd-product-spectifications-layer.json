@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "attributes-select": "/components/attributes-select/attributes-select",
+        "mip-bdxd-product-coupon": "/widgets/mip-bdxd-product-coupon/mip-bdxd-product-coupon",
+        "pop-up": "/components/popup/popup",
+        "coupon-count-down-bar": "/widgets/gt-dxdjx-h5-coupon-count-down-bar/gt-dxdjx-h5-coupon-count-down-bar",
+        "guarantee-sdk": "/widgets/mip-dxdjx-guarantee-sdk/mip-dxdjx-guarantee-sdk"
+    }
+}

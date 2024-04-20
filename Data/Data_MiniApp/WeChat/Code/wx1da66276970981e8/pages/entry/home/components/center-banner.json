@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "red-banner": "./red-banner",
+        "subscribe-alert": "../../../common/subscribe-alert/subscribe-alert"
+    }
+}

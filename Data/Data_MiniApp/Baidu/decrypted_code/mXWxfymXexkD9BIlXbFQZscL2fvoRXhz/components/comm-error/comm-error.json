@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "default-page": "../default-page/default-page"
+  }
+}

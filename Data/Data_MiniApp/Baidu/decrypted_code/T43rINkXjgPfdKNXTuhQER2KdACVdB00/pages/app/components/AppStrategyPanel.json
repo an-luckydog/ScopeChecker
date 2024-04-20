@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "g-drawer": "../../../components/common/GDrawer",
+        "tag-item": "../../../components/TagItem"
+    },
+    "component": true
+}

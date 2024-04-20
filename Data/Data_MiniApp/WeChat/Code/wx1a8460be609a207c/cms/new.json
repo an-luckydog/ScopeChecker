@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "target-page": "./RAW/pages/new/index"
+    }
+}

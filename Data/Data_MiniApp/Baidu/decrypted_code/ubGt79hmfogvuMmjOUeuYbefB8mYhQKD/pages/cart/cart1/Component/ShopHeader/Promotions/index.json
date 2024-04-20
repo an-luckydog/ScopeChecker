@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ui-checkbox": "/pages/cart/_Components/UI/Checkbox/index",
+    "ui-popup": "/pages/cart/_Components/UI/Popup/index",
+    "ui-order-full-gift": "./FullGift/index"
+  }
+}

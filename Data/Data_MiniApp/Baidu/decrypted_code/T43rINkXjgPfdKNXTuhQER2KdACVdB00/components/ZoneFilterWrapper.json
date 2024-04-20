@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "one-px-line": "./OnePxLine",
+        "mod-line": "./ModLine"
+    },
+    "component": true
+}

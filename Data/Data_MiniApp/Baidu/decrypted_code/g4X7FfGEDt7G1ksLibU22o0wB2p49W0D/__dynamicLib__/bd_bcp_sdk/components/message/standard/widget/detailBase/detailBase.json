@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "text-box": "../../../widgets/textBox/textBox",
+        "rank": "../../../widgets/rank/rank",
+        "consult": "../../../widgets/consult/consult",
+        "price": "../price/price"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "全部服务",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-userinfo": "../../components/cy-userinfo/index",
+        "cy-top-tip": "../../components/cy-top-tip/index",
+        "cy-navigator": "../../components/cy-navigator/index",
+        "cy-modal": "../../components/cy-modal/cy-modal",
+        "cy-user-phone": "../../components/cy_user_phone/cy_user_phone"
+    }
+}

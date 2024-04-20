@@ -1,0 +1,14 @@
+{
+    "navigationBarTitleText": "外卖会场",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "u-image": "../../node-modules/uview-plus/components/u-image/u-image",
+        "c-privacy-dialog": "../../components/c-privacy-dialog/c-privacy-dialog",
+        "c-page": "../../components/c-page/c-page",
+        "common-list": "./component/common-list",
+        "subscribe-alert": "../common/subscribe-alert/subscribe-alert",
+        "brick-compose": "../marketing/brick-compose"
+    }
+}

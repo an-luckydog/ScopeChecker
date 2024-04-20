@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "cart-label-base-infos": "/pages/cart/_Components/Cart/Commodity/LabelBaseInfos/index",
+    "cart-panel": "/pages/cart/_Components/Cart/Commodity/Panel/index",
+    "cart-install": "/pages/cart/_Components/Cart/Commodity/Install/index",
+    "ui-counter": "/pages/cart/_Components/UI/Counter/index",
+    "cart-public-welfare":"/pages/cart/_Components/Cart/Commodity/PublicWelfare/index"
+  }
+}

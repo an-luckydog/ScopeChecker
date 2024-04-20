@@ -1,0 +1,1 @@
+<limo-modal advId="{{advId}}" bind:clickModalEvent="clickAdvertise" bind:closeModalEvent="closeAdvertise" layout="{{layout}}" modalConfigResource="{{modalConfigResource}}" preview="{{preview}}" show="{{show}}" wx:if="{{showModal}}"></limo-modal>

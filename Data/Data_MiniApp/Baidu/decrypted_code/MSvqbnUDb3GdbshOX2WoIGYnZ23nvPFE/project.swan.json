@@ -1,0 +1,32 @@
+{
+    "appid": "15398224",
+    "compilation-args": {
+        "common": {
+            "quickPreview": true
+        },
+        "options": [],
+        "selected": -3,
+        "forceChanged": {
+            "quickPreview": true
+        }
+    },
+    "host": "baiduboxapp",
+    "preview": {
+        "packageId": 1094819
+    },
+    "projectname": "dist",
+    "publish": {
+        "hideTips": true,
+        "tips": [],
+        "version": "1.1.23"
+    },
+    "setting": {
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.600.3",
+            "extensionJsVersion": "1.21.2"
+        }
+    }
+}

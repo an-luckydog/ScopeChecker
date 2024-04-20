@@ -1,0 +1,13 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mip-bdxd-user-login":"/widgets/mip-bdxd-user-login/mip-bdxd-user-login",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "mip-dxdjx-like-list": "/widgets/mip-dxdjx-like-list/mip-dxdjx-like-list",
+        "gap":"/components/gap/gap",
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "feed": "/components/feed/feed",
+        "gt-dxdjx-h5-marketing-anchor": "/widgets/gt-dxdjx-h5-marketing-anchor/gt-dxdjx-h5-marketing-anchor",
+        "gt-dxdjx-h5-atmosphere-tab": "/widgets/gt-dxdjx-h5-atmosphere-tab/gt-dxdjx-h5-atmosphere-tab"
+    }
+}

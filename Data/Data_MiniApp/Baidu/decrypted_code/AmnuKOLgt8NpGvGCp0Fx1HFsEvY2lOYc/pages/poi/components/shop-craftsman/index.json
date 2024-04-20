@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "lazy-img":"../../../../common/components/lazyload-image/lazyload-image"
+    }
+}

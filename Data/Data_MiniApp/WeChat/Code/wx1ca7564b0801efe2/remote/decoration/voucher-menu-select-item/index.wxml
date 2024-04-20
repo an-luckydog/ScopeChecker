@@ -1,0 +1,21 @@
+<view class="voucher-menu-select-item">
+    <view class="main-container">
+        <view class="left">
+            <image class="img" mode="scaleToFill" src="{{productImages[0]}}"></image>
+            <view class="main-info">
+                <view class="title">{{name||''}}</view>
+                <view class="labels" wx:if="{{productLabels.length>0}}">
+                    <view class="label" data-index="{{index}}" wx:for="{{productLabels}}" wx:key="index">{{item}}</view>
+                </view>
+                <view class="countdown" wx:if="{{showCountDown}}">{{countDownText}}</view>
+            </view>
+        </view>
+        <view class="right">
+            <button bindtap="handleButtonClick" class="button">{{rightButtonTxt}}</button>
+            <view class="buyLimit" wx:if="{{perCardBuyLimit>0}}">每人限购{{perCardBuyLimit}}份</view>
+        </view>
+    </view>
+    <view class="reward-coupon-total-num">共{{rewardCouponTotalNum}}张</view>
+    <view class="shadow-box one" wx:if="{{!hideShadow}}"></view>
+    <view class="shadow-box two" wx:if="{{!hideShadow}}"></view>
+</view>

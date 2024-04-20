@@ -1,0 +1,38 @@
+{
+    "navigationBarTitleText": "扫码点餐",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "privacy-popup": "../../components/privacy-popup/index",
+        "menu-list": "../../components/menu/menu-list/index",
+        "cart": "../../components/menu/cart/index",
+        "theme-container": "../../components/theme-container/index",
+        "container-panel": "../../async-meal/components/container-panel/index",
+        "bottom-bar-container": "../../components/menu/bottom-bar-container/index",
+        "must-dish-panel": "../../async-meal/components/must-dish-panel/index",
+        "take-coupon-panel": "../../async-meal/components/take-coupon-panel/index",
+        "dish-time-info-modal": "../../async-meal/components/dish-time-info-modal/index",
+        "limo-container": "./components/limo-container/index",
+        "adapter": "../../components/menu/adapter/index",
+        "common-error-page": "../../miniprogram_npm/@components/limo-common/common-error-page/index",
+        "coupon-assistant-floating": "../../miniprogram_npm/@components/limo-menu/coupon-assistant-floating/index",
+        "alipay-modal": "../../async-plugin/components/alipay-modal/index",
+        "coupon-panel": "../../async-meal/components/coupon-panel/index",
+        "coupon-dish-panel": "../../async-meal/components/coupon-dish-panel/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "container-panel": "view",
+        "must-dish-panel": "view",
+        "take-coupon-panel": "view",
+        "dish-time-info-modal": "view",
+        "alipay-modal": "view",
+        "coupon-panel": "view",
+        "coupon-dish-panel": "view",
+        "tab-bar": "view",
+        "lottery": "view"
+    },
+    "titlePenetrate": "YES"
+}

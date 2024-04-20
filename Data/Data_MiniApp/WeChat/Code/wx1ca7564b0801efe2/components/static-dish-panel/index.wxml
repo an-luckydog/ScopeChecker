@@ -1,0 +1,24 @@
+<view class="dish-panel {{hasTabBar?'':'no-tab'}}">
+    <view bindtap="closePanel" class="base-icon icon-guanbi-xi"></view>
+    <scroll-view enhanced scrollWithAnimation scrollY showScrollbar="{{false}}" style="height: 100%; position: relative">
+        <view class="content">
+            <image class="commodity-img" src="{{dishInfo.pic}}"></image>
+            <view class="market-label">
+                <market-label label="{{dishInfo.marketingLabel}}" price="{{dishInfo.currentPrice}}"></market-label>
+            </view>
+            <view class="detail">
+                <view class="dish-panel-head">
+                    <view class="name">{{dishInfo.name}}</view>
+                </view>
+                <view class="dish-info">
+                    <view class="desc">
+                        <block wx:if="{{dishInfo.desc}}">{{dishInfo.desc}}</block>
+                    </view>
+                    <text class="desc">
+                        <block wx:if="{{dishInfo.detailDesc}}">{{dishInfo.detailDesc}}</block>
+                    </text>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

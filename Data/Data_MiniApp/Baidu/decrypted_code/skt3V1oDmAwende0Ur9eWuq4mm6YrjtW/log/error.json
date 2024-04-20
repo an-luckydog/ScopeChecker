@@ -1,0 +1,38 @@
+[
+    {
+        "type": "Compsonent this api",
+        "file": "E:/百度小程序/顺丰速运+/pages/order/package-info/fresh-package/fresh-package.js",
+        "row": 60,
+        "column": 27,
+        "before": "this.selectComponent",
+        "after": "this.selectComponent",
+        "message": "自定义组件---this.selectComponent: 不支持在onLoad中调用"
+    },
+    {
+        "type": "Compsonent this api",
+        "file": "E:/百度小程序/顺丰速运+/pages/order/package-info/large-package/large-package.js",
+        "row": 103,
+        "column": 31,
+        "before": "this.selectComponent",
+        "after": "this.selectComponent",
+        "message": "自定义组件---this.selectComponent: 不支持在onLoad中调用"
+    },
+    {
+        "type": "Compsonent this api",
+        "file": "E:/百度小程序/顺丰速运+/pages/order/package-info/medicine-package/medicine-package.js",
+        "row": 46,
+        "column": 27,
+        "before": "this.selectComponent",
+        "after": "this.selectComponent",
+        "message": "自定义组件---this.selectComponent: 不支持在onLoad中调用"
+    },
+    {
+        "type": "Compsonent this api",
+        "file": "E:/百度小程序/顺丰速运+/pages/order/package-info/package-message/package-message.js",
+        "row": 93,
+        "column": 27,
+        "before": "this.selectComponent",
+        "after": "this.selectComponent",
+        "message": "自定义组件---this.selectComponent: 不支持在onLoad中调用"
+    }
+]

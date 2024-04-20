@@ -1,0 +1,46 @@
+{
+    "appid": 17561730,
+    "projectname": "百度游戏中心",
+    "description": "最新好玩的手游下载，超丰富的小游戏即点即玩~",
+    "setting": {
+        "urlCheck": false
+    },
+    "host": "baiduboxapp",
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.570.9",
+            "extensionJsVersion": "1.21.2"
+        }
+    },
+    "compilation-args": {
+        "selected": 0,
+        "common": {
+            "quickPreview": true
+        },
+        "options": [
+            {
+                "text": "pages/app/index",
+                "id": 0,
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "scene": {},
+                    "ext": {},
+                    "single": false,
+                    "singleArgs": null,
+                    "selected": 0,
+                    "isPrefetch": false,
+                    "index": "pages/app/index",
+                    "query": "appId=131864266244366336&channelid=111",
+                    "isUpdate": false
+                }
+            }
+        ],
+        "forceChanged": {}
+    },
+    "preview": {
+        "packageId": 1333568
+    },
+    "publish": {
+        "version": "2.24.48.0"
+    }
+}

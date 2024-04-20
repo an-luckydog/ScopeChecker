@@ -1,0 +1,65 @@
+<template name="sold-out">
+    <view class="corner sold-out">售罄</view>
+</template>
+<template name="stock">
+    <view class="corner stock" wx:if="{{stockCount>0&&stockCount<10}}">还剩{{stockCount}}份</view>
+</template>
+<template name="reduce">
+    <view class="icon-wrapper minus">
+        <view catch:tap="onReduce" class="base-icon icon-jian"></view>
+    </view>
+</template>
+<template name="add">
+    <view class="icon-wrapper plus {{disablePlus?'disable':''}}">
+        <view catch:tap="onAdd" class="base-icon icon-jia"></view>
+    </view>
+</template>
+<import src="../badge/index.wxml"></import>
+<view class="box-btn {{pic?'box-has-pic':''}} {{selected?'selected-btn':''}}">
+    <image bindtap="clickBox" class="pic" src="{{pic}}" wx:if="{{pic}}"></image>
+    <view class="box {{selected?'selected':''}} {{stockCount===0?'sold-out':''}} {{mutex?'mutex':''}}">
+        <block wx:if="{{repeatable}}">
+            <view class="whole-line" wx:if="{{wholeLine}}">
+                <template is="stock" data="{{stockCount:stockCount}}"></template>
+                <view class="content{{count?'-selected':''}}">
+                    <view class="base-icon icon-shoucang-mian" wx:if="{{star}}"></view>
+                    <view class="name ellipsis">{{name}}</view>
+                    <view class="price" wx:if="{{price>0}}">¥{{price}}</view>
+                </view>
+                <view class="sold-out-text" wx:if="{{stockCount===0}}">今日售罄</view>
+                <view class="operation" wx:else>
+                    <template is="reduce" data wx:if="{{count}}"></template>
+                    <view class="count" wx:if="{{count}}">{{count}}</view>
+                    <template is="add" data="{{disablePlus:disablePlus}}" wx:if="{{!mutex}}"></template>
+                </view>
+            </view>
+            <view class="repeatable" wx:else>
+                <template is="stock" data="{{stockCount:stockCount}}"></template>
+                <template is="reduce" data wx:if="{{count}}"></template>
+                <view class="content{{count?'-selected':''}}">
+                    <view class="base-icon icon-shoucang-mian" wx:if="{{star&&!count}}"></view>
+                    <view class="name ellipsis">{{name}}</view>
+                    <view class="price" wx:if="{{price>0}}">¥{{price}}</view>
+                </view>
+                <view class="sold-out-text" wx:if="{{stockCount===0}}">今日售罄</view>
+                <block wx:elif="{{!mutex}}">
+                    <template is="add" data="{{disablePlus:disablePlus}}"></template>
+                    <view class="count-corner">
+                        <template is="badge" data="{{count:count}}"></template>
+                    </view>
+                </block>
+            </view>
+        </block>
+        <block wx:else>
+            <template is="sold-out" data wx:if="{{stockCount===0}}"></template>
+            <view bindtap="clickBox" class="normal {{pic?'has-pic':''}}">
+                <view class="base-icon icon-shoucang-mian" wx:if="{{star}}"></view>
+                <view class="content">
+                    <view class="name ellipsis">{{name}}</view>
+                    <view class="price" wx:if="{{price>0}}">¥{{price}}</view>
+                </view>
+            </view>
+        </block>
+        <view bindtap="mutexClickHandle" class="prompt" wx:if="{{mutex}}"></view>
+    </view>
+</view>

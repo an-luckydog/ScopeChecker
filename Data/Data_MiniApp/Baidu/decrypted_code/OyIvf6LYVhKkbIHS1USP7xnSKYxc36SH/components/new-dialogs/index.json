@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "dialog": "/ui/base/popups/Dialog/Dialog"
+    }
+}

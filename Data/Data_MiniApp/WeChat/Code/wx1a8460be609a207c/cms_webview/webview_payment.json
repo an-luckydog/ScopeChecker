@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "确认支付",
+    "usingComponents": {
+        "target-page": "./RAW/webview_payment/index"
+    }
+}

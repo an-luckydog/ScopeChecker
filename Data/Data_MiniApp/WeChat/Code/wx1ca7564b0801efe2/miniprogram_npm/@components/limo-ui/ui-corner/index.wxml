@@ -1,0 +1,5 @@
+<view class="{{cornerClass}}" style="{{styleString}}">
+    <view class="{{footerClass}}" wx:if="{{needFooter}}"></view>
+    <text class="{{textClass}}" wx:if="{{text}}">{{text}}</text>
+    <text class="{{remTextCLass}}" wx:if="{{remText}}">{{remText}}</text>
+</view>

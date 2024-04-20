@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "element-vhost": "../../index-vhost",
+        "indicator": "./Indicator",
+        "mprn-component": "../../../../../../../components/mprn-component/index",
+        "custom-mach-container": "../../../../../../../pages/index/components/custom-mach-container/index",
+        "custom-native-container": "../../../../../../../pages/index/components/custom-native-container/index",
+        "common-container": "../../../container/index",
+        "weapp-comp-privacy": "../../../../../../../privacy/components/index"
+    }
+}

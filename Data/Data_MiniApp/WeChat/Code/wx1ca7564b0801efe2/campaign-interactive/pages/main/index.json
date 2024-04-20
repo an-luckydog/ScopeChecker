@@ -1,0 +1,14 @@
+{
+    "defaultTitle": "营销活动",
+    "navigationBarTitleText": "营销活动",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "disableScroll": false,
+    "transparentTitle": "auto",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

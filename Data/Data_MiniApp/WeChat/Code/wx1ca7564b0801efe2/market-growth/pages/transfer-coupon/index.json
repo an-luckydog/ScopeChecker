@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "券转赠",
+    "navigationBarTitleText": "券转赠",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "switchs": "/component/switchcheckbox",
+    "numbers": "/component/number"
+  }
+}

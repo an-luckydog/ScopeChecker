@@ -1,0 +1,25 @@
+.exam-p{
+    /*position: relative;*/height:100%;background:#fff;display:flex;flex-direction:column
+    /* overflow: hidden; */}.time-w{display:block;height:16vw;position:relative}.time-w swan-text{padding:1.3333333333333333vw 4vw;font-family:PingFangSC-Regular;font-size:4vw;color:#1dacf9;letter-spacing:0px;line-height:4vw;border:1px solid #1dacf9;border-radius:5.333333333333333vw;display:inline-block;transform:translate(100%,50%)}.ques-con{background:#fff;
+    /* position: absolute;
+    top: 90rpx;
+    bottom: 90rpx;
+    left: 0;
+    right: 0; */width:94.66666666666667vw;padding:0 2.6666666666666665vw;height:90%}
+
+/*.ques-wrap {
+
+ 
+}*/
+
+/*.ques-wrap {
+  background: #efeff4;
+  position: absolute;
+  top: 80rpx;
+  bottom: 90rpx;
+  left: 0;
+  right: 0;
+  width: 100%;
+}*/.swiper1{height:70%;overflow-y:auto}.swiper2{height:90%;overflow-y:auto}.swiper-item{overflow-y:auto}.lb-opt{border:1px solid #ccc;display:block;width:7.2vw;height:7.2vw;font-family:PingFangSC-Regular;font-size:4vw;color:#333;border-radius:50%;text-align:center;line-height:7.2vw}swan-image.lb-opt{border:none}.lb-opt.chose{background:#ccc}.lb-opt.unchose{background:#1dacf9;color:#fff}.ques-t{display:block;font-family:PingFangSC-Regular;font-size:4.266666666666667vw;color:#333;line-height:6.933333333333334vw;margin-bottom:5.333333333333333vw}.lb-wrap{display:flex;flex-direction:row;padding:2.6666666666666665vw 0}.lb-txt{flex:1;display:block;font-family:PingFangSC-Regular;font-size:4.266666666666667vw;color:#333;line-height:7.733333333333333vw;padding-left:4vw;word-break:break-all}.ques-bott{position:fixed;bottom:0;right:0;left:0;z-index:10;max-height:146.66666666666666vw;background:#fff}.ques-exp{display:flex;flex-direction:row;padding:6.666666666666667vw}.exp-t{font-family:PingFangSC-Regular;font-size:4.266666666666667vw;color:#333;line-height:4.266666666666667vw;padding:0 2.4vw}.exp-s{flex:1;flex:1;display:flex;align-items:center;justify-content:center}.exp-l{display:block;height:0.26666666666666666vw;flex:1;background:#ccc}.exp-d{display:block;width:1.3333333333333333vw;height:1.3333333333333333vw;background:#ccc;border-radius:50%}.ques-exp-txt{font-family:PingFangSC-Regular;font-size:4.266666666666667vw;color:#333;line-height:6.933333333333334vw}.confirm-w{display:flex;align-items:center;justify-content:center;padding:2.6666666666666665vw}.confirm-b{background:#1dacf9;border-radius:1.3333333333333333vw;display:block;font-family:PingFangSC-Regular;font-size:4.266666666666667vw;color:#fff;line-height:4.266666666666667vw;padding:3.7333333333333334vw 13.866666666666667vw}.right-c, .wrong-c, .total-c{display:flex;padding:0 4vw}.right-c swan-text, .wrong-c swan-text, .total-c swan-text{font-family:PingFangSC-Regular;font-size:3.7333333333333334vw;color:#1dacf9;line-height:4vw;padding-left:1.3333333333333333vw}.wrong-c swan-text{color:#fe4648}.total-c swan-text{color:#333}.total-c .total-t2{color:#999}.right-c swan-image, .wrong-c swan-image, .total-c swan-image{display:block;width:4vw;height:4vw}.dt-card{border-top:0.26666666666666666vw solid #eee;padding:2vw 0;height:133.33333333333334vw;overflow:scroll}.dt-card .card-i{display:block;width:12vw;height:12vw;border-radius:50%;line-height:12vw;text-align:center;font-family:PingFangSC-Regular;font-size:32prx;color:#999;border:0.5px solid #ccc;float:left;margin:2vw}.dt-card .current{color:#ccc;background:#eee;border:0.5px solid #ccc}.dt-card .right{color:#1dacf9;background:#e6fdff;border:0.5px solid #1dacf9}.dt-card .wrong{color:#fe4648;background:#ffebea;border:0.5px solid #fe4648}.hide{display:none}.video{width:80vw;height:20%;margin-top:5.333333333333333vw;margin-left:8vw}.loading{width:80vw;height:20%;margin-top:5.333333333333333vw;margin-left:8vw;background:#000}.loadingcar{position:absolute;top:20vw;left:43.333333333333336vw;width:9.333333333333334vw;height:9.333333333333334vw;margin:0 auto}.page-loading{width:100%;height:100%;background:#efeff4}.page_loading{width:40vw;height:26.666666666666668vw;margin-top:53.333333333333336vw;margin-left:29.333333333333332vw}.png{width:26.666666666666668vw;height:26.666666666666668vw;margin-top:8vw;margin-left:26.666666666666668vw}
+
+/* 2018-11-14  添加， 百度优化swiper后去除此代码 */.button-tab-style{position:fixed;bottom:24vw;right:4vw}.button-tab-style swan-view{width:11.2vw;height:11.2vw;border-radius:50%;box-shadow:0px 2px 8px 0px rgba(0,0,0,0.1);background:#fff;margin:4.8vw 0vw;display:flex;justify-content:center;align-items:center;opacity:0.85}.icon-sjx-top,.icon-sjx-bottom{width:4.8vw;height:2.6666666666666665vw}.icon-sjx-top{transform:rotate(180deg)}.icon-sjx-bottom{transform:rotate(0deg)}

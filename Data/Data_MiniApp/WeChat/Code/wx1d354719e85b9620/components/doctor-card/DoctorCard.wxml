@@ -1,0 +1,29 @@
+<view bindtap="__e" class="{{['doctor-item','data-v-3498d8bb',isCard?'is-card':'',noBorder?'no-border':'']}}" data-doctor="{{item}}" data-event-opts="{{[ [ 'tap',[ [ 'goDoctorHome',['$event'] ] ] ] ]}}">
+    <view class="doctor-wrap data-v-3498d8bb">
+        <view class="{{['data-v-3498d8bb',doctorAvatarClass]}}">
+            <image class="doctor-avatar-img data-v-3498d8bb" src="{{doctorAvartor}}"></image>
+            <view class="doctor-avatar-dot data-v-3498d8bb" wx:if="{{workStatus&&!isChaoJu}}"></view>
+            <view class="{{['data-v-3498d8bb',doctorWorkStatusClass]}}" wx:if="{{isChaoJu}}">
+                <image class="doctor-status-img data-v-3498d8bb" src="{{statusImage}}"></image>
+                <view class="data-v-3498d8bb">{{workStatus?'在线':'离线'}}</view>
+            </view>
+        </view>
+        <view class="doctor-content data-v-3498d8bb">
+            <view class="doctor-info data-v-3498d8bb">
+                <view class="doctor-name data-v-3498d8bb">{{doctorName}}</view>
+                <view class="doctor-title data-v-3498d8bb">{{doctorTitle}}</view>
+            </view>
+            <view class="doctor-hospital data-v-3498d8bb">{{''+hospitalName+'丨'+deptName}}</view>
+            <view class="doctor-skill data-v-3498d8bb" wx:if="{{specialSkill}}">
+                <view class="doctor-skill-label data-v-3498d8bb">擅长：</view>
+                <view class="doctor-skill-value data-v-3498d8bb">{{specialSkill}}</view>
+            </view>
+            <view class="doctor-tag-wrap data-v-3498d8bb" wx:if="{{item.tags&&item.tags.length>0}}">
+                <view class="doctor-tag data-v-3498d8bb" wx:for="{{item.tags}}" wx:for-item="it" wx:key="index">
+                    <view class="data-v-3498d8bb">{{it.value}}</view>
+                    <view class="doctor-tag-price data-v-3498d8bb">{{'¥'+it.price}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

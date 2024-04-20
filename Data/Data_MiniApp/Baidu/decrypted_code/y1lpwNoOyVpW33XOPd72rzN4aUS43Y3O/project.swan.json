@@ -1,0 +1,27 @@
+{
+    "appid": "16811305",
+    "appInfo": {},
+    "appkey": "",
+    "condition": {},
+    "setting": {
+        "urlCheck": false
+    },
+    "libVersion": "",
+    "projectname": "csdn_mini",
+    "host": "baiduboxapp",
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.800.1",
+            "extensionJsVersion": "1.21.2"
+        }
+    },
+    "compilation-args": {
+        "common": {
+            "quickPreview": true
+        },
+        "forceChanged": {}
+    },
+    "preview": {
+        "packageId": 1359647
+    }
+}

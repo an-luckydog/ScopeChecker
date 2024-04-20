@@ -1,0 +1,21 @@
+<view class="{{['avtive-red',typebg=='image'?'avtive-red-bgimage':'']}}">
+    <view class="openred">
+        <view class="{{['lightScan',isBigScreen?'':'smallScreen']}}">
+            <view class="op_pack_main onepack">
+                <view class="up">
+                    <view class="tit">恭喜！额外激活现金红包</view>
+                    <view class="next"></view>
+                    <view class="num">{{$root.f0+''}}<text>元</text>
+                    </view>
+                    <view class="pack_text"></view>
+                </view>
+                <view class="pack_text">
+                    <text wx:if="{{txMoney}}">{{$root.f1+'元已为您提现至微信零钱包'}}<view class="_br"></view>
+                    </text>请到“我的-我的红包”中查看明细</view>
+            </view>
+            <view class="close">
+                <image bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'handleCloseredpackPup',['$event'] ] ] ] ]}}" src="{{img120Th+'index/daijihuoclose.png'}}"></image>
+            </view>
+        </view>
+    </view>
+</view>

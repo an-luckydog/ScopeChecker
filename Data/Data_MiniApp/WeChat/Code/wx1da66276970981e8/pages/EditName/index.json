@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "更改名字",
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

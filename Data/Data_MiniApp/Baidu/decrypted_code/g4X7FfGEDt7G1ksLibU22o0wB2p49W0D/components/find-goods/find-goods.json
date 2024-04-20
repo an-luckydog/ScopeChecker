@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-swiper-banner": "/components/c-swiper-banner/index",
+        "c-sku-landing-tabs": "/components/c-sku-landing-tabs/c-sku-landing-tabs"
+    }
+}

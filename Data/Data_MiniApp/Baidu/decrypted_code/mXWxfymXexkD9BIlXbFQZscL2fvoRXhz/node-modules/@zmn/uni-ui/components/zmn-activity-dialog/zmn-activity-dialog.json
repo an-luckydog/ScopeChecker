@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "zmn-button": "../zmn-button/zmn-button"
+  }
+}

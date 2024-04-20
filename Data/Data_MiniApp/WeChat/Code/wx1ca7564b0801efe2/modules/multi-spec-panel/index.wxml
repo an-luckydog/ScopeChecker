@@ -1,0 +1,18 @@
+<import src="../../components/panel-title/index.wxml"></import>
+<dish-panel addDishInfo="{{addDishInfo}}" autoScroll="{{autoScroll}}" bind:handleButtonClick="confirmDish" bind:reload="initData" cartDishInfo="{{cartDishInfo}}" dishInfo="{{dishInfo}}" hasRecommendMatch="{{extraParams.hasRecommendMatch}}" id="dish-panel" isLoading="{{isLoading}}" showRemark="{{showRemark}}">
+    <view class="spec" slot="spec">
+        <block wx:if="{{lgc.visible(cluster)}}" wx:for="{{clusters}}" wx:for-item="cluster" wx:key="index">
+            <template is="big-title" data="{{title:cluster.title,subTitle:cluster.subTitle}}" wx:if="{{cluster.title}}"></template>
+            <view class="group" wx:for="{{cluster.groups}}" wx:for-item="group" wx:key="index">
+                <template is="{{cluster.title?'small':'big'}}-title" data="{{title:group.title,subTitle:group.subTitle}}" wx:if="{{group.title}}"></template>
+                <view class="boxs">
+                    <choose-box bind:clickBoxAdd="selectAttr" bind:clickBoxReduce="reduceAttr" bind:clickChooseBox="selectAttr" bind:handleMutex="mutexClick" count="{{attr.count}}" data-groupid="{{group.groupId}}" data-id="{{attr.id}}" data-name="{{attr.name}}" data-type="{{cluster.type}}" disablePlus="{{cluster.disablePlus||group.disablePlus||attr.disablePlus}}" mutex="{{attr.mutex}}" name="{{attr.name}}" pic="{{attr.pic}}" price="{{attr.price}}" repeatable="{{group.repeatable}}" selected="{{attr.count>0}}" star="{{attr.star}}" stockCount="{{attr.stockCount}}" wholeLine="{{itemWholeLine}}" wx:for="{{group.attrs}}" wx:for-item="attr" wx:key="index"></choose-box>
+                </view>
+            </view>
+        </block>
+    </view>
+    <view class="extend-box {{clusters&&clusters.length?'':'mt24'}}" slot="dish-detail-extend" wx:if="{{plugins&&plugins['dish-detail-extend']}}">
+        <dish-detail-extend data="{{plugins['dish-detail-extend']}}" dishInfo="{{dishInfo}}" pluginId="dish-detail-extend" skuId="{{skuId}}" updatedData="{{updatedPlugins['dish-detail-extend']}}"></dish-detail-extend>
+    </view>
+</dish-panel>
+<wxs module="lgc" src="index.wxs" />

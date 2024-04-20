@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "takeout-item": "./takeout-item",
+        "shops-item": "./shops-item",
+        "c-mt-takeout-card": "../c-mt-takeout-card/c-mt-takeout-card"
+    }
+}

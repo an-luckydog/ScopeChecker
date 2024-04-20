@@ -1,0 +1,15 @@
+<template name="no_data-template">
+    <view class="alert-box_yin"></view>
+    <view class="alert-box">
+        <image class="alert-box_img" src="/img/data.png"></image>
+        <view>暂无数据</view>
+    </view>
+</template>
+<template name="no_network-template">
+    <view class="alert-box_yin"></view>
+    <view class="alert-box">
+        <image class="alert-box_img" src="/img/net.png"></image>
+        <view>暂无网络</view>
+    </view>
+</template>
+<import src="../../wxParse/wxParse.wxml"></import>

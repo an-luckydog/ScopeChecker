@@ -1,0 +1,18 @@
+<view class="shop-info-pickup">
+    <view class="address-name">
+        <view class="address-box" wx:if="{{selectedAddress||address}}">
+            <view bind:tap="selectAddress" class="left">
+                <view class="base-icon icon-dizhi-xian"></view>
+                <view class="name">{{selectedAddress||address}}</view>
+                <view class="base-icon icon-jiantou-you"></view>
+            </view>
+        </view>
+        <view bind:tap="selectShop" class="distance">
+            <view class="base-icon icon-qiehuan inline"></view>
+            <view class="shop-box inline">
+                <view class="inline name">{{shopName}}</view>
+                <view class="desc">送出外卖</view>
+            </view>
+        </view>
+    </view>
+</view>

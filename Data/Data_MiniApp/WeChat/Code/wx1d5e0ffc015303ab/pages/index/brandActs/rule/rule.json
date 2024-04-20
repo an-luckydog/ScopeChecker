@@ -1,0 +1,6 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "app": "/components/privacy/privacy"
+    }
+}

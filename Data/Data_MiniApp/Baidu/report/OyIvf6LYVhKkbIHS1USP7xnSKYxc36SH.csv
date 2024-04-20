@@ -1,0 +1,9 @@
+problem_file_path,problem_function_name,problem_api,occurrences_in_frontend
+app.js,{'getImageForPhotoAlbum'},chooseImage,0
+app.js,{'getImageForPhotoCamera'},chooseImage,0
+app.js,{'forEach'},chooseImage,0
+app.js,{'Promise'},chooseImage,0
+app.js,{'Promise'},chooseImage,0
+app.js,{'wrap'},getClipboardData,0
+app.js,{'handleLocalFile'},chooseImage,0
+app.js,{'handleLocalFile'},chooseImage,0

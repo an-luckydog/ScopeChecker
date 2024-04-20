@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "input-dialog": "./input-dialog/index",
+        "bottom-confirm": "../bottom-confirm/bottom-confirm"
+    }
+}

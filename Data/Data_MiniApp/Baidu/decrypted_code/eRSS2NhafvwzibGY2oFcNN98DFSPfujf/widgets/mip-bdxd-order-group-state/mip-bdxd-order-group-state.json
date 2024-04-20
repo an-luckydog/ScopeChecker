@@ -1,0 +1,8 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "avatar-list":"/components/avatar-list/avatar-list"
+        
+    }
+}

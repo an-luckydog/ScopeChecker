@@ -1,0 +1,45 @@
+<view class="container">
+    <view class="msg-box">
+        <view class="head-box">
+            <image bindtap="__e" class="headimg" data-event-opts="{{[ [ 'tap',[ [ 'showModify',[2] ] ] ] ]}}" src="{{headImgUrl||maleHeadImgUrlAry[0]}}"></image>
+            <text bindtap="__e" class="tip" data-event-opts="{{[ [ 'tap',[ [ 'showModify',[2] ] ] ] ]}}">点击更换</text>
+        </view>
+        <view bindtap="__e" class="nickname" data-event-opts="{{[ [ 'tap',[ [ 'showModify',[1] ] ] ] ]}}">
+            <text>昵称</text>
+            <text>{{nickName||oldName||'微信用户'}}</text>
+            <view class="right"></view>
+        </view>
+    </view>
+    <view class="mask" wx:if="{{isShowModify}}">
+        <view class="modify-box">
+            <text class="title">{{modifyTitle}}</text>
+            <view class="modify-content">
+                <view class="modify-nickname" wx:if="{{modifyType==1}}">
+                    <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','nickName','$event',[] ] ] ] ] ]}}" maxlength="12" placeholder="请输入昵称" type="text" value="{{nickName}}"></input>
+                    <image bindtap="__e" class="clear" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}" mode="widthFix" src="https://xcxsite.vjifen.com/v/static/common-spring/icon-clear.png" wx:if="{{$root.g0>0}}"></image>
+                    <text>{{$root.g1+'/12'}}</text>
+                </view>
+                <view class="modify-headimg" wx:else>
+                    <text class="type-title">—————— 男生头像 ——————</text>
+                    <view class="head-list">
+                        <view bindtap="__e" class="headimg-item" data-event-opts="{{[ [ 'tap',[ [ 'selectHead',['$0'],[ [ ['maleHeadImgUrlAry','',index] ] ] ] ] ] ]}}" wx:for="{{maleHeadImgUrlAry}}" wx:key="index">
+                            <image mode class="headimg" src="{{item}}"></image>
+                            <image class="selected" mode="widthFix" src="https://xcxsite.vjifen.com/v/static/common-spring/icon-selected.png" wx:if="{{item==headImgUrl}}"></image>
+                        </view>
+                    </view>
+                    <text class="type-title">—————— 女生头像 ——————</text>
+                    <view class="head-list">
+                        <view bindtap="__e" class="headimg-item" data-event-opts="{{[ [ 'tap',[ [ 'selectHead',['$0'],[ [ ['femaleHeadImgUrlAry','',index] ] ] ] ] ] ]}}" wx:for="{{femaleHeadImgUrlAry}}" wx:key="index">
+                            <image mode class="headimg" src="{{item}}"></image>
+                            <image class="selected" mode="widthFix" src="https://xcxsite.vjifen.com/v/static/common-spring/icon-selected.png" wx:if="{{item==headImgUrl}}"></image>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="btn-box">
+                <view bindtap="__e" class="cancel" data-event-opts="{{[ [ 'tap',[ [ 'e1',['$event'] ] ] ] ]}}">取 消</view>
+                <view bindtap="__e" class="confirm" data-event-opts="{{[ [ 'tap',[ [ 'updateUserInfo',['$event'] ] ] ] ]}}">确 定</view>
+            </view>
+        </view>
+    </view>
+</view>

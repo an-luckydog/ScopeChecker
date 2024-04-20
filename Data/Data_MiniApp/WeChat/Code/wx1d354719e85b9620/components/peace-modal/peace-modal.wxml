@@ -1,0 +1,16 @@
+<u-popup bind:__l="__l" bind:close="__e" bind:input="__e" borderRadius="16" class="data-v-b29920b0" data-event-opts="{{[ [ '^close',[ ['close'] ] ],[ '^input',[ [ '__set_model',[ '','visible','$event',[] ] ] ] ] ]}}" maskCloseAble="{{maskCloseAble}}" maskCustomStyle="{{backgroundColor:'rgba(0, 0, 0, 0.4)'}}" mode="bottom" safeAreaInsetBottom="{{true}}" value="{{visible}}" vueId="e0718eb8-1" vueSlots="{{['default']}}">
+    <view class="yb-dialog data-v-b29920b0">
+        <view class="yb-title data-v-b29920b0" wx:if="{{title}}">{{title||'提示'}}</view>
+        <view class="yb-content data-v-b29920b0" style="{{'text-align:'+align+';'}}">
+            <slot></slot>
+            <label class="_span data-v-b29920b0" wx:if="{{message}}">{{message}}</label>
+        </view>
+        <view class="yb-foot data-v-b29920b0">
+            <block wx:if="{{cancelText}}">
+                <peace-button bind:__l="__l" bind:click="__e" class="data-v-b29920b0" customStyle="width: 328rpx;font-size:32rpx;" data-event-opts="{{[ [ '^click',[ ['cancel'] ] ] ]}}" popup="{{true}}" vueId="{{'e0718eb8-2'+','+'e0718eb8-1'}}" vueSlots="{{['default']}}">{{cancelText||'取消'}}</peace-button>
+                <peace-button bind:__l="__l" bind:click="__e" class="data-v-b29920b0" customStyle="width: 328rpx;" data-event-opts="{{[ [ '^click',[ ['confirm'] ] ] ]}}" disabled="{{loading}}" loading="{{loading}}" type="primary" vueId="{{'e0718eb8-3'+','+'e0718eb8-1'}}" vueSlots="{{['default']}}">{{confirmText||'确定'}}</peace-button>
+            </block>
+            <peace-button bind:__l="__l" bind:click="__e" class="data-v-b29920b0" customStyle="width: 702rpx;" data-event-opts="{{[ [ '^click',[ ['confirm'] ] ] ]}}" disabled="{{loading}}" loading="{{loading}}" type="primary" vueId="{{'e0718eb8-4'+','+'e0718eb8-1'}}" vueSlots="{{['default']}}" wx:else>{{confirmText||'确定'}}</peace-button>
+        </view>
+    </view>
+</u-popup>

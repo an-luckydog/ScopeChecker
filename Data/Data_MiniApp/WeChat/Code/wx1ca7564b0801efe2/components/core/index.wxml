@@ -1,0 +1,41 @@
+<template name="dialog-header">
+    <view class="dialog-header" style="background-color:{{backgroundColor||'#fff'}}">
+        <view class="title-all" style="align-items:{{position||'center'}};" wx:if="{{title}}">
+            <view class="main-title">{{title}}</view>
+            <view class="sub-title" wx:if="{{subTitle}}">{{subTitle}}</view>
+        </view>
+        <view bindtap="closeDialog" class="rms-close" wx:if="{{closeable}}">
+            <view class="base-icon icon-cha"></view>
+        </view>
+    </view>
+</template>
+<template name="rms-tooltip">
+    <view catchtap="onTooltipTouchMove" catchtouchmove="onTooltipTouchMove" class="container-mask transparent" style="z-index: 10001"></view>
+    <view class="rms-tooltip {{placement}}" style="z-index: 10001; {{positionStyle}}">
+        <rich-text nodes="{{text}}"></rich-text>
+    </view>
+</template>
+<template name="rms-modal">
+    <view catchtap="onMaskTouchMove" catchtouchmove="onMaskTouchMove" class="container-mask" style="z-index: 10001"></view>
+    <view class="mask-item center" style="z-index: 10001">
+        <view class="rms-modal">
+            <view class="title" wx:if="{{title}}">{{title}}</view>
+            <view class="content-wrap" wx:if="{{content}}">
+                <view class="content">{{content}}</view>
+            </view>
+            <slot name="modal-body" wx:else></slot>
+            <view class="btn-content">
+                <view catch:tap="onLimoCancel" class="btn cancel" wx:if="{{showCancel}}">{{cancelText||'取消'}}</view>
+                <view catch:tap="onLimoConfirm" class="btn confirm">{{confirmText||'确认'}}</view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="rms-toast">
+    <view catchtap="onMaskTouchMove" catchtouchmove="onMaskTouchMove" class="container-mask" style="z-index: 10001" wx:if="{{toast.mask}}"></view>
+    <view class="mask-toast-item" style="z-index: 10001">
+        <view class="toast-item" style="{{toast.customStyle}}">
+            <view class="txt">{{toast.title}}</view>
+        </view>
+    </view>
+</template>

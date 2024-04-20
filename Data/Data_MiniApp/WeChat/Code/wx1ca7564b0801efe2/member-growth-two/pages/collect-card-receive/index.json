@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

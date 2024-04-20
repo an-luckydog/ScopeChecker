@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "red-pack-money-scan-wait-item": "/components/red-pack-scan/red-pack-scan-wait-item",
+        "app": "/components/privacy/privacy"
+    }
+}

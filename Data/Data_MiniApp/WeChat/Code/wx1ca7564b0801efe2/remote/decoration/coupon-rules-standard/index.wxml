@@ -1,0 +1,62 @@
+<view catch:touchmove="preventPropagation" class="coupon-popup-container" style="{{safePadding>0?'padding-bottom: '+safePadding+'rpx':''}}">
+    <view catch:tap="closePopup">
+        <image class="close-btn" src="https://p0.meituan.net/componenticon/39586b09c7f0dafe4cb7bebcd45fdcd4622.png"></image>
+    </view>
+    <view class="coupon-rule-title">优惠券详情</view>
+    <scroll-view class="coupon-rules" scrollY="{{true}}">
+        <view class="centered-text" wx:if="{{loadingRules}}">
+            <view class="loading-bg">
+                <view class="loading"></view>
+                <text>加载中...</text>
+            </view>
+        </view>
+        <view class="centered-text" wx:elif="{{!loadingRules&&!couponRules.length}}">
+            <view class="failed-loading">
+                <image src="https://p0.meituan.net/scarlett/33a9f790b5a7879d67773f1dca27415f451961.png"></image>
+                <text>加载失败，请稍后重试</text>
+                <view catch:tap="checkCouponRules" class="reload-btn">重新加载</view>
+            </view>
+        </view>
+        <scroll-view scrollY="{{true}}" style="height:100%; overflow-y: scroll;" wx:if="{{!collect&&!loadingRules&&couponRules.length}}">
+            <view class="couponlistcontent">
+                <view class="couponlist" wx:for="{{couponRules}}" wx:for-item="coupon" wx:key="index">
+                    <view class="coupon-wrapper">
+                        <coupon-item-ele config="{{coupon.displayData.leftTag}}" customClass="left-tag" displayStyle="{{coupon.displayStyle.leftTagWrapperStyle}}" wx:if="{{coupon.displayData.leftTag&&coupon.displayData.leftTag.value}}"></coupon-item-ele>
+                        <view class="left-content">
+                            <view class="name-wrapper">
+                                <coupon-item-ele config="{{coupon.displayData.name}}" displayStyle="{{coupon.displayStyle.nameStyle}}"></coupon-item-ele>
+                                <view class="type-wrapper">
+                                    <coupon-item-ele config="{{coupon.displayData.typeName}}" customClass="detail-type-name" displayStyle="{{coupon.displayStyle.typeNameWrapperStyle}}"></coupon-item-ele>
+                                </view>
+                            </view>
+                            <coupon-item-ele config="{{coupon.displayData.time}}" customClass="detail-time" displayStyle="{{coupon.displayStyle.timeStyle}}"></coupon-item-ele>
+                        </view>
+                        <view class="title-wrapper">
+                            <coupon-item-ele config="{{coupon.displayData.titlePrefix}}" customClass="detail-title-prefix" displayStyle="{{coupon.displayStyle.titlePrefixStyle}}" wx:if="{{coupon.displayData.titlePrefix}}"></coupon-item-ele>
+                            <coupon-item-ele config="{{coupon.displayData.title}}" customClass="detail-title" displayStyle="{{coupon.displayStyle.titleStyle}}"></coupon-item-ele>
+                            <coupon-item-ele config="{{coupon.displayData.titleSuffix}}" customClass="detail-title-suffix" displayStyle="{{coupon.displayStyle.titleSuffixStyle}}" wx:if="{{coupon.displayData.titleSuffix}}"></coupon-item-ele>
+                        </view>
+                        <coupon-item-ele config="{{coupon.displayData.rightTag}}" customClass="right-tag" displayStyle="{{coupon.displayStyle.rightTagWrapperStyle}}" wx:if="{{coupon.displayData.leftTag&&coupon.displayData.leftTag.value}}"></coupon-item-ele>
+                    </view>
+                    <view class="coupon-code" wx:if="{{coupon.simpleCoupon&&coupon.simpleCoupon.couponCode&&coupon.simpleCoupon.type===200}}">
+                        <image class="coupon-barcode" src="data:image/png;base64,{{coupon.couponCodeDisplayInfos.barcode}}"></image>
+                        <view class="coupon-code-num">{{coupon.simpleCoupon.couponCode}}</view>
+                        <image class="coupon-qrcode" src="data:image/png;base64,{{coupon.couponCodeDisplayInfos.qrcode}}"></image>
+                    </view>
+                    <view class="rule" wx:for="{{coupon.displayRules}}" wx:key="index">
+                        <view class="ruleitem">{{item.title}}</view>
+                        <view class="rulecontent">
+                            <view catch:tap="redictRules" class="rulecontentitem {{item.redirectUrl?'redirect':''}}" data-redirect-url="{{item.redirectUrl}}" wx:for="{{item.contents}}" wx:for-item="itemrule" wx:key="index">{{itemrule}}<image src="https://p0.meituan.net/componenticon/5c2a87ad0bae94671b3a61fa3c361bc0711.png" style="width:24rpx;height:24rpx" wx:if="{{item.redirectUrl}}"></image>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <scroll-view scrollY="{{true}}" style="max-height: 75vh" wx:if="{{collect&&!loadingRules&&couponRules.length!=0}}">
+            <view class="rule" wx:for="{{couponRules}}" wx:key="index">
+                <text>·{{item}}</text>
+            </view>
+        </scroll-view>
+    </scroll-view>
+</view>

@@ -1,0 +1,12 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "kcadv": "/common/kcadv/kcadv",
+        "xbrmadv": "/common/xbrmadv/xbrmadv",
+        "kcrmadv": "/common/kcrmadv/kcrmadv",
+        "comnavbar": "/common/comnavbar/comnavbar"
+    },
+    "usingSwanComponents": {
+        "comment-list": "dynamicLib://myDynamicLib/comment-list"
+    }
+}

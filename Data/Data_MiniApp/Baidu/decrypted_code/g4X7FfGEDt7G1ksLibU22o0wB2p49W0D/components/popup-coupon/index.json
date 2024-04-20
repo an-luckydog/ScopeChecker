@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-button-login": "/components/c-button-login/c-button-login",
+        "coupon": "@baidu/smart-kit/dist/components/coupon"
+    }
+}

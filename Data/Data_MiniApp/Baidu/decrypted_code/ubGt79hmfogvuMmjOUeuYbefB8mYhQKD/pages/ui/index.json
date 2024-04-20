@@ -1,0 +1,1 @@
+{"navigationBarTitleText":"订单详情","usingComponents":{"pop-component":"./popup/popUp"},"isUsingComponents":true,"skeleton":"","usingDynamicLibs":[],"usingPlugins":[],"usingDependencies":[],"isUsingSJS":false,"_hasVideo":false,"compileOption":{"dependencies":["otherComponents.swan.js"],"preloadTpl":["sharedComponents.swan.js"],"resourceStrategyVersion":"0.0.0"}}

@@ -1,0 +1,943 @@
+{
+    "lazyCodeLoading": "requiredComponents",
+    "__lazyCodeLoadingChunk": true,
+    "pages": [
+        "pages/index/index",
+        "pages/login/login",
+        "pages/loginV2/login",
+        "pages/loginAuth/loginAuth",
+        "pages/restaurant/restaurant",
+        "pages/loc-select/loc-select",
+        "pages/addr-add/addr-add",
+        "pages/orders/orders",
+        "pages/order-info/order-info",
+        "pages/preview/preview",
+        "pages/preview/caution",
+        "pages/channel-page/channel-page",
+        "pages/search/search",
+        "pages/shop-inner-search/shop-inner-search",
+        "pages/mine/mine",
+        "pages/external/poi",
+        "pages/external/food",
+        "pages/external/brand",
+        "pages/order-info/order-info-map",
+        "pages/web-view/web-view",
+        "pages/activity-invite/activity-invite",
+        "pages/verify-phone/verify-phone",
+        "pages/my-address/my-address",
+        "pages/request-refund/request-refund",
+        "pages/refund-detail/refund-detail",
+        "pages/non-delivery/non-delivery",
+        "pages/poi-comment/poi-comment",
+        "pages/my-coupons/my-coupons",
+        "pages/my-poi-coupons/my-poi-coupons",
+        "pages/my-poi-coupons-expired/my-poi-coupons-expired",
+        "pages/my-coupons-expired/my-coupons-expired",
+        "pages/qualification/qualification",
+        "pages/refund-progress/refund-progress",
+        "pages/poi-complain/poi-complain",
+        "pages/complain/complain",
+        "pages/refund-apply/refund-apply",
+        "pages/city-select/city-select",
+        "pages/favoritelist/favoritelist",
+        "pages/product-detail/product-detail",
+        "pages/otherPay/otherPay",
+        "pages/magical-price/magical-price",
+        "pages/full-category/full-category",
+        "pages/transfer/transfer",
+        "privacy/page/index"
+    ],
+    "requiredPrivateInfos": [
+        "getLocation",
+        "startLocationUpdate"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "位置信息将用于为你推荐附近商家"
+        }
+    },
+    "subPackages": [
+        {
+            "root": "account/account-ext/",
+            "pages": [
+                "pages/activate-ok/index",
+                "pages/activate/index",
+                "pages/bind/index",
+                "pages/change-bind-phone/index",
+                "pages/confirm-phone/index",
+                "pages/entry/index",
+                "pages/webview/index",
+                "pages/secondary-mobile/index"
+            ]
+        },
+        {
+            "root": "login/login/",
+            "pages": [
+                "login-pages/subpages/entry/index"
+            ]
+        },
+        {
+            "root": "packages/shooter/",
+            "pages": [
+                "landPage",
+                "couponSelect",
+                "my_expire_coupon_list/index"
+            ]
+        },
+        {
+            "root": "packages/coupon_package/",
+            "pages": [
+                "detailPage"
+            ]
+        },
+        {
+            "root": "packages/vip-bargain/",
+            "pages": [
+                "owner/index"
+            ]
+        },
+        {
+            "root": "sub_address/",
+            "pages": [
+                "address/pages/index/index",
+                "address/pages/addressModify/addressModify",
+                "address/pages/locSelect/locSelect",
+                "address/pages/myAddress/myAddress",
+                "address/pages/closedAOIMapRecommend/closedAOIMapRecommend",
+                "address/pages/city/city",
+                "address/pages/imAddressModify/imAddressModify",
+                "address/pages/imAddressLocation/imAddressLocation"
+            ]
+        },
+        {
+            "root": "sub_pages/",
+            "pages": [
+                "common/auth",
+                "web-view/web-view",
+                "web-view/web-view-preview",
+                "sharecoupon/shareInit",
+                "sharecoupon/sharePage",
+                "sharecoupon/sharePageNew",
+                "sharecoupon/sharePageGuest",
+                "sharecoupon/sharePageMain",
+                "mppay-for-h5/mppay-for-h5",
+                "mppay-for-twelve/mppay-for-twelve",
+                "prepare-for-couponLive/prepare-for-couponLive",
+                "wxpay-for-couponLive/wxpay-for-couponLive",
+                "bargain-coupon/index/index",
+                "bargain-coupon/helper/index",
+                "bargain-coupon/history/index",
+                "nav-to-other-miniprogram/index",
+                "ad/allowance_center/index",
+                "ad/my_allowance/index",
+                "ad/allowance_share/index",
+                "ad/allowance_share_step/index",
+                "ad/allowance_share_detail/index",
+                "ad/allowance_rule/index",
+                "ad/allowance_history/index",
+                "ad/allowance_search/index",
+                "ad/allowance_association/index"
+            ]
+        },
+        {
+            "root": "sub_inner_pages/",
+            "pages": [
+                "activity-invite/activity-invite",
+                "verify-phone/verify-phone",
+                "my-address/my-address",
+                "request-refund/request-refund",
+                "refund-detail/refund-detail",
+                "non-delivery/non-delivery",
+                "poi-comment/poi-comment",
+                "my-coupons/my-coupons",
+                "my-poi-coupons/my-poi-coupons",
+                "my-poi-coupons-expired/my-poi-coupons-expired",
+                "my-coupons-expired/my-coupons-expired",
+                "qualification/qualification",
+                "refund-progress/refund-progress",
+                "poi-complain/poi-complain",
+                "complain/complain",
+                "refund-apply/refund-apply",
+                "account-notice/account-notice",
+                "diet-clock/diet-clock",
+                "my-favorite/my-favorite",
+                "preview/preview",
+                "favoritelist/favoritelist",
+                "full-category/full-category",
+                "full-category-rocks/full-category-rocks",
+                "login/login",
+                "external/brand",
+                "external/food",
+                "external/poi",
+                "magical-price-shop/magical-price-shop",
+                "evaluate-list/evaluate-list",
+                "empty/empty",
+                "r2x/pages/order-modify-record/orderModifyRecord"
+            ]
+        },
+        {
+            "root": "sub_rice/",
+            "pages": [
+                "poi-goods-list/poi-goods-list",
+                "rice/pages/task-home/task-home",
+                "rice/pages/scan-task/scan-task",
+                "rice/pages/task-list/index"
+            ]
+        },
+        {
+            "root": "sub_devtools_pages/",
+            "pages": [
+                "index",
+                "env-param/env-param",
+                "switch-env/switch-env",
+                "clear-data/clear-data",
+                "switch-page/switch-page",
+                "user-info/user-info",
+                "api-mock/api-mock",
+                "auto-test/auto-test",
+                "abtest-console/abtest-console",
+                "stringify-test/stringify-test",
+                "cat-webview/cat-webview",
+                "r2x/pages/home/home",
+                "live-player/index",
+                "portm-panel/portm-panel",
+                "mprn/mprn",
+                "mprn/local-server/index",
+                "ae-player/index",
+                "position-change/index",
+                "privacy-log/index"
+            ]
+        },
+        {
+            "root": "sub_tango_pages/",
+            "pages": [
+                "tango/pages/gundam/index"
+            ]
+        },
+        {
+            "root": "packages/promo/",
+            "pages": [
+                "magical-price/magical-price",
+                "magical-price-shop/magical-price-shop"
+            ]
+        },
+        {
+            "root": "packages/shop/",
+            "pages": [
+                "shop-inner-search/shop-inner-search",
+                "shop-inner-search_bak/shop-inner-search",
+                "product-detail/product-detail",
+                "product-detail_bak/product-detail",
+                "shop-detail/shop-detail"
+            ]
+        },
+        {
+            "root": "packages/search-business/",
+            "pages": [
+                "search/index",
+                "search-guide/index"
+            ]
+        },
+        {
+            "root": "packages/loc/",
+            "pages": [
+                "loc-select/loc-select",
+                "addr-add/addr-add",
+                "city-select/city-select"
+            ]
+        },
+        {
+            "root": "packages/machpro-restaurant-template/",
+            "pages": [
+                "index"
+            ]
+        },
+        {
+            "root": "packages/mach-user-template/",
+            "pages": [
+                "pages/index"
+            ]
+        },
+        {
+            "root": "packages/mach-order-template/",
+            "pages": [
+                "pages/index"
+            ]
+        },
+        {
+            "root": "packages/mach-supermarket-template/",
+            "pages": [
+                "pages/index"
+            ]
+        },
+        {
+            "root": "packages/mach-im-template/",
+            "pages": [
+                "pages/index"
+            ]
+        },
+        {
+            "root": "packages/mach-common-template/",
+            "pages": [
+                "pages/index"
+            ]
+        },
+        {
+            "root": "packages/mach-fullcategory-template/",
+            "pages": [
+                "pages/index"
+            ]
+        },
+        {
+            "root": "packages/mach-mactivity-template/",
+            "pages": [
+                "pages/index"
+            ]
+        },
+        {
+            "root": "packages/mach-ad-template/",
+            "pages": [
+                "pages/index"
+            ]
+        },
+        {
+            "root": "packages/mach-search-template/",
+            "pages": [
+                "pages/index"
+            ]
+        },
+        {
+            "root": "packages/loc-new/",
+            "pages": [
+                "index/index",
+                "list/list"
+            ]
+        },
+        {
+            "root": "packages/loc-new2/",
+            "pages": [
+                "index/index",
+                "list/list",
+                "map/map",
+                "city/city"
+            ]
+        },
+        {
+            "root": "packages/other-pay/",
+            "pages": [
+                "otherPay/otherPay"
+            ]
+        },
+        {
+            "root": "packages/yoda/",
+            "pages": [
+                "modules/index/index",
+                "yoda-silder/yoda-silder",
+                "yoda-middle/yoda-middle",
+                "modules/index/public"
+            ]
+        },
+        {
+            "root": "packages/yoda2/",
+            "pages": [
+                "modules/index/index",
+                "modules/index/public"
+            ]
+        },
+        {
+            "root": "packages/order/",
+            "pages": [
+                "order-info/order-info",
+                "order-info-bargain/order-info",
+                "order-info/order-info-map",
+                "comment-succ/comment-succ",
+                "mppay-for-h5/mppay-for-h5"
+            ]
+        },
+        {
+            "root": "packages/index/",
+            "pages": [
+                "search/search",
+                "channel-page/channel-page"
+            ]
+        },
+        {
+            "root": "packages/preview/",
+            "pages": [
+                "preview",
+                "caution"
+            ]
+        },
+        {
+            "root": "packages/preview2/",
+            "pages": [
+                "preview",
+                "prescription/index/index",
+                "prescription/patient-info/index",
+                "prescription/yoda/yoda-silder/yoda-silder"
+            ]
+        },
+        {
+            "root": "packages/preview_bargain/",
+            "pages": [
+                "preview"
+            ]
+        },
+        {
+            "root": "packages/restaurant/",
+            "pages": [
+                "restaurant/restaurant",
+                "pages/multiPersonBill/multiPersonBill"
+            ]
+        },
+        {
+            "root": "packages/restaurant_bak/",
+            "pages": [
+                "restaurant/restaurant"
+            ]
+        },
+        {
+            "root": "packages/bargainprice/",
+            "pages": [
+                "status/index",
+                "join/index"
+            ]
+        },
+        {
+            "root": "packages/bargain/",
+            "pages": [
+                "transfer-page/index",
+                "product-detail/index",
+                "special/my-goods-coupons-special/my-poi-coupons",
+                "poi-comment/bargain-poi-comment/bargain-poi-comment"
+            ]
+        },
+        {
+            "root": "packages/bargain-raffle/",
+            "pages": [
+                "index"
+            ]
+        },
+        {
+            "root": "packages/live-player/",
+            "pages": [
+                "home/home"
+            ],
+            "plugins": {
+                "live-player-plugin": {
+                    "version": "1.2.5",
+                    "provider": "wx2b03c6e691cd7370"
+                }
+            }
+        },
+        {
+            "root": "packages/lazy/",
+            "pages": [
+                "pages/lazy/lazy"
+            ]
+        },
+        {
+            "root": "packages/mprn/",
+            "pages": [
+                "pages/mprn-page/index",
+                "pages/mprn-page/nav"
+            ]
+        },
+        {
+            "root": "packages/alita/",
+            "pages": [
+                "index/index"
+            ]
+        },
+        {
+            "root": "packages/finance-pay/",
+            "pages": [
+                "index/index",
+                "pages/cashier/index",
+                "pages/debug/index",
+                "pages/debug/result",
+                "pages/promotion/index",
+                "pages/h5/index",
+                "pages/sign/index"
+            ]
+        },
+        {
+            "root": "packages/bargain-promotion/",
+            "pages": [
+                "promotion/index"
+            ]
+        },
+        {
+            "root": "packages/logan/",
+            "pages": [
+                "index/index"
+            ]
+        },
+        {
+            "root": "touchmatrix_bundles/",
+            "pages": []
+        },
+        {
+            "root": "outer_packages/r2xinvite/",
+            "pages": [
+                "coupon/coupon"
+            ]
+        },
+        {
+            "root": "outer_packages/lingbo/",
+            "pages": [
+                "monopoly/index",
+                "pages/award/index",
+                "pages/webview/index"
+            ]
+        },
+        {
+            "root": "outer_packages/mactivity/",
+            "pages": [
+                "pages/index/index",
+                "pages/jump/index",
+                "pages/promotion/index",
+                "pages/brand/index",
+                "pages/teamup/home/index",
+                "pages/teamup/redpack-record/index",
+                "pages/teamup/team-record/index",
+                "pages/collectWool/index",
+                "pages/dinnerFriends/index",
+                "pages/redpacket/effective/index",
+                "pages/redpacket/ineffective/index",
+                "pages/mapgame/index",
+                "pages/middlePage/index",
+                "pages/boost/index",
+                "pages/boost/redpacketRecord/index",
+                "pages/recieveCoupon/index"
+            ]
+        },
+        {
+            "root": "static_bundles/",
+            "pages": [
+                "order-address-modify/orderAddressModify",
+                "order-remark/index",
+                "my-poi-coupons/my-poi-coupons",
+                "poi-coupons-expired/poi-coupons-expired",
+                "refund-status/index",
+                "refund-appeal/index",
+                "points-detail/points-detail",
+                "wmCommunity/pages/group/index",
+                "wmCommunity/pages/union/index",
+                "wmCommunity/pages/personal/index"
+            ]
+        },
+        {
+            "root": "waimai-bargain-sub2/",
+            "pages": [
+                "packages/loc/loc-select/loc-select",
+                "packages/loc/city-select/city-select",
+                "packages/loc-new/index/index",
+                "packages/loc-new/list/list",
+                "packages/loc-new/map/map",
+                "packages/loc-new/city/city",
+                "packages/bargain/product-detail/index",
+                "packages/yoda/modules/index/index",
+                "packages/yoda/modules/index/public",
+                "packages/yoda/yoda-middle/yoda-middle"
+            ]
+        },
+        {
+            "root": "waimai-bargain-sub1/",
+            "pages": [
+                "pages/index/index",
+                "pages/transfer/guide/index",
+                "pages/sub_pages_mx/index"
+            ]
+        },
+        {
+            "root": "fup-cashback/",
+            "pages": [
+                "cashback/pages/index-v3/index"
+            ]
+        },
+        {
+            "root": "packages/dx/",
+            "pages": [
+                "pages/index/index",
+                "pages/home/index"
+            ]
+        },
+        {
+            "root": "packages/expenses-landing/",
+            "pages": [
+                "pages/landing/index"
+            ]
+        },
+        {
+            "root": "packages/im/",
+            "pages": [
+                "pages/im-rider/index",
+                "pages/im-poi/index",
+                "pages/im-group/index",
+                "pages/im-safe-food/index"
+            ]
+        },
+        {
+            "root": "outer_packages/mactivitydyna/",
+            "pages": [
+                "pages/share-coupon/share-coupon",
+                "pages/annual-summary-2023/home",
+                "pages/annual-summary-2023/components/webview/webview",
+                "pages/annual-summary-2023/components/no-network/index",
+                "pages/coupon-fission/coupon-fission",
+                "pages/coupon-fission/coupon-record/coupon-record",
+                "pages/coupon-fission/fission-detail/fission-detail",
+                "pages/tenth-anniversary/tenth-anniversary",
+                "pages/redpacket/effective/index",
+                "pages/redpacket/ineffective/index",
+                "pages/boost/boost",
+                "pages/boost/redpacket-record/redpacket-record"
+            ]
+        },
+        {
+            "root": "sub_medicine_pages/",
+            "pages": [
+                "medicine/sub-packages/recommend/recommend-name/index",
+                "medicine/pages/epidemic/index",
+                "medicine/sub-packages/activity/act-packet-coupon/index",
+                "medicine/sub-packages/activity/second-collection-page/index",
+                "medicine/pages/msc/activities-collection/index",
+                "medicine/pages/msc/drug-goods-detail/index",
+                "medicine/pages/msc/makeup-order/index",
+                "medicine/pages/msc/similar-store/index",
+                "medicine/pages/msc/activities-product-set/index",
+                "medicine/pages/msc/store-search/index",
+                "medicine/sub-packages/marketing/coupon-list/index",
+                "medicine/pages/msc/mine/index",
+                "medicine/sub-packages/marketing/applicable-merchant-list/index",
+                "medicine/pages/wmp/restaurant/restaurant",
+                "medicine/pages/msc/spu-image-viewer/index",
+                "medicine/pages/msc/medication-combination/index"
+            ]
+        },
+        {
+            "root": "packages/member/",
+            "pages": [
+                "pages/select-redpacket/index",
+                "pages/float-layer/index"
+            ]
+        },
+        {
+            "root": "packages/mine/",
+            "pages": [
+                "pages/mine/index",
+                "pages/account/index"
+            ]
+        },
+        {
+            "root": "packages/password-free/",
+            "pages": [
+                "pages/sign/index"
+            ]
+        },
+        {
+            "root": "packages/pouch-common-pkg/",
+            "pages": [
+                "pages/index"
+            ]
+        },
+        {
+            "root": "packages/r-container/",
+            "pages": [
+                "pages/index/index"
+            ]
+        },
+        {
+            "root": "sub_shangou/",
+            "pages": [
+                "sg/pages/index/index",
+                "sg/pages/search/search",
+                "sg/pages/channel-page/channel-page",
+                "sg/pages/restaurant/restaurant",
+                "sg/sub-trade/restaurant/restaurant",
+                "sg/pages/preview-middle/index",
+                "sg/pages/shop-inner-search/shop-inner-search",
+                "sg/pages/goods-details/goods-details",
+                "sg/pages/preview/preview",
+                "sg/pages/preview/caution",
+                "sg/pages/other-pay/other-pay",
+                "sg/pages/order-info/order-info",
+                "sg/sub-inner/poi-comment/poi-comment",
+                "sg/pages/order-info/order-info-map",
+                "sg/sub-inner/refund-apply/refund-apply",
+                "sg/sub-inner/refund-progress/refund-progress",
+                "sg/sub-inner/refund-detail/refund-detail",
+                "sg/sub-inner/coupon-fit-commodity/coupon-fit-commodity",
+                "sg/sub-inner/select-apply-pois/select-apply-pois",
+                "sg/sub-inner/qualification/qualification",
+                "sg/sub-inner/poi-complain/poi-complain",
+                "sg/sub-drug/channel-page/channel-page",
+                "sg/sub-drug/search-new/search",
+                "sg/sub-drug/prescription-drug/prescription-drug",
+                "sg/sub-drug/prescription-drug/medical-user/index",
+                "sg/sub-drug/new-zone/index",
+                "sg/sub-drug/new-exclusive/index",
+                "sg/sub-drug/kingkong-ground/kingkong-ground",
+                "sg/sub-drug/epidemic/index",
+                "sg/sub-drug/inquiry/index/index",
+                "sg/sub-drug/inquiry/search/index",
+                "sg/sub-drug/inquiry/doctor/index",
+                "sg/sub-drug/inquiry/doctor-detail/index",
+                "sg/sub-drug/inquiry/order-list/index",
+                "sg/sub-drug/inquiry/order-status/index",
+                "sg/sub-im/drug-im/drug-im",
+                "sg/sub-im/drug-guide/drug-guide",
+                "sg/sub-im/drug-ask-doctor/drug-ask-doctor",
+                "sg/sub-drug/apply-pois/index",
+                "sg/sub-drug/msc-middle/msc-middle",
+                "sg/sub-drug/msc-middle-view/index",
+                "sg/sub-drug/third-mp-middle/third-mp-middle",
+                "sg/sub-activity/new-comer/index",
+                "sg/sub-activity/spell-lucky/index/index",
+                "sg/sub-activity/shopping-cash/index/index",
+                "sg/sub-activity/spell-lucky/exchange/index",
+                "sg/sub-activity/new-landing/index",
+                "sg/sub-activity/spell-lucky/collection_award/index",
+                "sg/sub-activity/new-user-coupon/index/index",
+                "sg/sub-activity/new-user-coupon/exchange/index",
+                "sg/sub-activity/new-user-coupon/collection_award/index",
+                "sg/pages/load-components/index",
+                "sg/sub-tile/tile-activity/index",
+                "sg/sub-async-components-package/pages/index"
+            ]
+        },
+        {
+            "root": "sub_shangou2/",
+            "pages": [
+                "sg2/package/goods-details-dynamic/goods-details",
+                "sg2/package/preview/preview",
+                "sg2/package/channel-search/channel-search",
+                "sg2/package/preview/caution",
+                "sg2/package/other-pay/other-pay",
+                "sg2/package/order-info/order-info",
+                "sg2/package/order-info/order-info-map",
+                "sg2/sub-restaurant/restaurant-tabs/restaurant-tabs",
+                "sg2/sub-activity-inner/new-comer/index",
+                "sg2/sub-activity-inner/new-comer-new/index",
+                "sg2/package/shop-inner-search/shop-inner-search",
+                "sg2/sub-activity-inner/spell-lucky/index/index",
+                "sg2/sub-activity-inner/shopping-cash/index/index",
+                "sg2/sub-activity-inner/spell-lucky/exchange/index",
+                "sg2/sub-activity-inner/new-landing/index",
+                "sg2/sub-activity-inner/spell-lucky/collection_award/index",
+                "sg2/sub-activity-inner/new-user-coupon/index/index",
+                "sg2/sub-activity-inner/new-user-coupon/exchange/index",
+                "sg2/sub-activity-inner/select-poi/index",
+                "sg2/sub-activity-inner/new-user-coupon/collection_award/index"
+            ]
+        },
+        {
+            "root": "sub_shangou_mach/",
+            "pages": [
+                "sgmach/sub-mach/mach/index"
+            ]
+        },
+        {
+            "root": "packages/trade/",
+            "pages": [
+                "pages/order-info/index",
+                "pages/preview/index"
+            ]
+        },
+        {
+            "root": "packages/transaction/",
+            "pages": [
+                "pages/order-list/index",
+                "pages/order-search/index"
+            ]
+        },
+        {
+            "root": "fup-wallet/",
+            "pages": [
+                "wallet/pages/index/index",
+                "wallet/pages/index-v3/index",
+                "wallet/pages/index-v4/index",
+                "wallet/pages/verification/preauth"
+            ]
+        },
+        {
+            "root": "wallet-entrance/",
+            "pages": [
+                "wallet-wx/index"
+            ]
+        },
+        {
+            "root": "sub_drug/",
+            "pages": [
+                "wmdrug/sub-drug-inner/channel-page/channel-page",
+                "wmdrug/sub-drug-inner/search-new/search",
+                "wmdrug/sub-drug-inner/prescription-drug/prescription-drug",
+                "wmdrug/sub-drug-inner/prescription-drug/medical-user/index",
+                "wmdrug/sub-drug-inner/new-zone/index",
+                "wmdrug/sub-drug-inner/new-exclusive/index",
+                "wmdrug/sub-drug-inner/kingkong-ground/kingkong-ground",
+                "wmdrug/sub-drug-inner/inquiry/index/index",
+                "wmdrug/sub-drug-inner/inquiry/search/index",
+                "wmdrug/sub-drug-inner/inquiry/doctor/index",
+                "wmdrug/sub-drug-inner/inquiry/doctor-detail/index",
+                "wmdrug/sub-drug-inner/inquiry/order-list/index",
+                "wmdrug/sub-drug-inner/inquiry/order-status/index",
+                "wmdrug/sub-drug-inner/sub-im/drug-im/drug-im",
+                "wmdrug/sub-drug-inner/sub-im/drug-guide/drug-guide",
+                "wmdrug/sub-drug-inner/sub-im/drug-ask-doctor/drug-ask-doctor",
+                "wmdrug/sub-drug-inner/apply-pois/index",
+                "wmdrug/sub-drug-inner/msc-middle-view/index",
+                "wmdrug/sub-drug-inner/third-mp-middle/third-mp-middle"
+            ]
+        }
+    ],
+    "preloadRule": {
+        "packages/restaurant/restaurant/restaurant": {
+            "network": "all",
+            "packages": [
+                "account/account-ext",
+                "packages/trade",
+                "packages/machpro-restaurant-template"
+            ]
+        },
+        "packages/restaurant_bak/restaurant/restaurant": {
+            "network": "all",
+            "packages": [
+                "packages/preview",
+                "packages/preview2",
+                "account/account-ext",
+                "packages/trade"
+            ]
+        },
+        "packages/bargain/product-detail/index": {
+            "network": "all",
+            "packages": [
+                "packages/preview2",
+                "account/account-ext"
+            ]
+        },
+        "pages/order-info/order-info": {
+            "network": "all",
+            "packages": [
+                "packages/loc",
+                "packages/loc-new",
+                "sub_rice"
+            ]
+        },
+        "packages/preview/preview": {
+            "network": "all",
+            "packages": [
+                "packages/order",
+                "packages/other-pay",
+                "packages/loc"
+            ]
+        },
+        "pages/mine/mine": {
+            "network": "all",
+            "packages": [
+                "account/account-ext",
+                "sub_rice",
+                "packages/preview2"
+            ]
+        },
+        "pages/index/index": {
+            "network": "all",
+            "packages": [
+                "packages/loc-new",
+                "packages/index",
+                "packages/restaurant",
+                "packages/lazy",
+                "packages/mprn"
+            ]
+        },
+        "packages/order/order-info/order-info": {
+            "network": "all",
+            "packages": [
+                "packages/loc",
+                "packages/loc-new",
+                "sub_rice"
+            ]
+        },
+        "pages/orders/orders": {
+            "network": "all",
+            "packages": [
+                "packages/order",
+                "account/account-ext"
+            ]
+        },
+        "packages/index/channel-page/channel-page": {
+            "network": "all",
+            "packages": [
+                "packages/restaurant"
+            ]
+        },
+        "packages/search-business/search/index": {
+            "network": "all",
+            "packages": [
+                "packages/restaurant"
+            ]
+        }
+    },
+    "tabBar": {
+        "custom": true,
+        "color": "#575859",
+        "backgroundColor": "#fafafa",
+        "selectedColor": "#000000",
+        "borderStyle": "white",
+        "list": [
+            {
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "/imgs/569f6f8f-home.png",
+                "selectedIconPath": "/imgs/ee2d6db2-home-active.png"
+            },
+            {
+                "text": "订单",
+                "pagePath": "pages/orders/orders",
+                "iconPath": "/imgs/5b753312-orders.png",
+                "selectedIconPath": "/imgs/25a66486-orders-active.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/mine/mine",
+                "iconPath": "/imgs/ea679f25-user.png",
+                "selectedIconPath": "/imgs/7f263f1e-user-active.png"
+            }
+        ],
+        "position": "bottom"
+    },
+    "window": {
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "美团外卖",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#2C2D31",
+        "backgroundTextStyle": "light",
+        "enablePullDownRefresh": false
+    },
+    "widgets": [
+        {
+            "type": "search",
+            "path": "searchWidget"
+        }
+    ],
+    "networkTimeout": {
+        "request": 30000,
+        "connectSocket": 30000
+    },
+    "navigateToMiniProgramAppIdList": [
+        "wx84d3c06952bb4072",
+        "wxc341b03f979e49ad",
+        "wxde8ac0a21135c07d",
+        "wxfd2e340553ce980d",
+        "wxecf23ac17039bf5d"
+    ],
+    "usingComponents": {
+        "mprn-component": "./components/mprn-component/index",
+        "custom-mach-container": "./pages/index/components/custom-mach-container/index",
+        "custom-native-container": "./pages/index/components/custom-native-container/index",
+        "common-container": "./npm/r2x/module-container1_1_4/lib/container/index",
+        "weapp-comp-privacy": "./privacy/components/index"
+    },
+    "debug": false
+}

@@ -1,0 +1,49 @@
+<view class="{{isH5Page?'h5-class':'mp-class'}}">
+    <view class="common-head" id="common-head-container" style="{{commonHeadStyle}}">
+        <view class="common-title-wrapper" wx:if="{{!(isH5Page||isTT)||isPreviewPage}}">
+            <base-icon bindtap="goBackHome" customStyle="height: unset; width: unset;margin:0rpx 18rpx 0rpx 30rpx;" iconType="{{iconType}}" wx:if="{{!isTabPage}}"></base-icon>
+            <view class="{{commonTitleOverflow?'header-title-overflow':'shop-title ellipsis'}}" style="{{!isTabPage?'max-width:470rpx;padding-left:0rpx;':''}}">{{topHeadTxt}}</view>
+            <base-icon bindtap="changeShopFunc" customStyle="height: unset; width: unset" iconType="right-arrow" wx:if="{{multiShop&&!shopLogo}}"></base-icon>
+        </view>
+        <view class="common-head-bottom">
+            <view className="left">
+                <view class="line-text" wx:if="{{tableName}}">桌号{{tableName}}</view>
+                <view class="division-style" wx:if="{{tableName}}"></view>
+                <view class="line-text" wx:if="{{fastFoodCanSelectNumOfCustomer}}">{{peopleCount}}人就餐</view>
+                <view class="line-text" wx:elif="{{peopleCountText}}">{{peopleCountText}}</view>
+                <view class="line-text" wx:if="{{takeawayTips}}">{{takeawayTips}}</view>
+            </view>
+            <view class="actions-wrap">
+                <view class="action" wx:if="{{item.showItem&&item.type!==ACTION_ITEM_TYPE.MEMBER_LOGIN&&item.type!==ACTION_ITEM_TYPE.MEMBER_COUPON}}" wx:for="{{headActionList}}" wx:for-index="idx" wx:key="icon">
+                    <base-icon bindtap="onHeadIconClick" data-item="{{item}}" iconType="{{item.type}}"></base-icon>
+                    <view class="toast" wx:if="{{item.showToastText}}">
+                        <view class="triangle"></view>{{item.toastText}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="common-head-fixed {{isTT?'tt-common-head-fixed':''}}" style="opacity: {{searchBannerOpacity}}; visibility: {{showFixedHeader?'visible':'hidden'}}" wx:if="{{hasSearchIcon}}">
+        <view class="common-title-wrapper" wx:if="{{!(isH5Page||isTT)}}">
+            <base-icon bindtap="goBackHome" customIconStyle="color: #333" customStyle="height: unset; width: unset;margin-right:18rpx;" iconType="{{iconType}}" wx:if="{{!isTabPage}}"></base-icon>
+            <view bindtap="changeShopFunc" class="{{commonTitleOverflow?'header-title-overflow':'shop-title ellipsis'}}" style="{{!isTabPage?'max-width:470rpx;padding-left:0rpx;':''}}">{{pageTitle}}</view>
+            <base-icon bindtap="changeShopFunc" customIconStyle="color: #333" customStyle="height: unset; width: unset" iconType="right-arrow" wx:if="{{multiShop}}"></base-icon>
+        </view>
+        <view class="common-head-fixed-bottom" wx:if="{{!hideSearch}}">
+            <view bindtap="jumpToSearch" class="search-input">请输入菜品名称</view>
+            <image bind:tap="openUserCouponPanel" class="member-coupon" src="https://p0.meituan.net/travelcube/227f87c5ad3a9dce67bcc9bf3e2e23047195.png" wx:if="{{showCouponIcon&&headActionList.length&&headActionList[0].type===ACTION_ITEM_TYPE.MEMBER_COUPON}}"></image>
+            <view class="actions-wrap">
+                <view class="{{item.type===ACTION_ITEM_TYPE.MEMBER_LOGIN?'action diamond-action':'action'}}" wx:if="{{item.showItem&&item.type!==ACTION_ITEM_TYPE.SEARCH&&item.type!==ACTION_ITEM_TYPE.MEMBER_COUPON}}" wx:for="{{headActionList}}" wx:for-index="idx" wx:key="type">
+                    <view bindtap="onHeadIconClick" class="{{disableVipDiamondAnimation?'join-member':'join-member join-member-animation'}}" data-item="{{item}}" wx:if="{{item.type===ACTION_ITEM_TYPE.MEMBER_LOGIN}}">
+                        <view class="join-icon join-diamond"></view>
+                        <view class="join-icon join-tips join-tips-animation" wx:if="{{!disableVipDiamondAnimation}}"></view>
+                        <view class="join-icon join-tips" wx:else></view>
+                    </view>
+                    <base-icon bindtap="onHeadIconClick" customIconStyle="color:#333" data-item="{{item}}" iconType="{{item.type}}" wx:else></base-icon>
+                </view>
+            </view>
+        </view>
+        <view class="ui-order-progress-wrapper">
+            <order-progress bind:closeOrderProgress="closeOrderProgress" progressInfo="{{progressInfo}}" templateType="{{progressType}}"></order-progress>
+        </view>
+    </view>
+</view>

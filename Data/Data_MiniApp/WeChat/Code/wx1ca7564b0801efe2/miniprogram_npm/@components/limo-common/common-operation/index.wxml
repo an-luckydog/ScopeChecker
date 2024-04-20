@@ -1,0 +1,24 @@
+<view class="operation-container {{isBigSize?'operation-big':''}} {{customClass}}" wx:if="{{type&&showDishOperation}}">
+    <view catch:tap="showDishTimeInfoModal" class="operation-element operation-text operation-text-{{size}}" wx:if="{{type===DISH_OPERATION_TYPE_VAL.TEXT}}">
+        <text>{{text}}</text>
+        <view class="operation-help" wx:if="{{needHelp}}"></view>
+    </view>
+    <view class="operation-element operation-number" wx:elif="{{type===DISH_OPERATION_TYPE_VAL.NUMBER}}">
+        <view bind:tap="operationClick" class="{{needBase?'base-minus':'operation-minus'}}" data-operation="minus" wx:if="{{displayMinus}}">
+            <base-icon customClass="operation-minus-img{{needBase?'':' large'}}" iconType="reduce"></base-icon>
+            <view catch:tap="operationClick" class="operation-minus-mask" data-operation="minus" wx:if="{{displayMinus&&isBigSize}}"></view>
+        </view>
+        <view bind:tap="numberClick" class="number-count number-count-{{countColor}}" wx:if="{{displayMinus}}">
+            <view class="number-click-area{{showCountStyle?' number-click-bg':''}}">{{showCount}}</view>
+        </view>
+        <view bind:tap="operationClick" class="operation-plus {{disablePlus?'disabled-plus':''}}" data-operation="plus">
+            <base-icon customClass="operation-plus-img{{needBase?'':' large'}}" iconType="add"></base-icon>
+            <view catch:tap="operationClick" class="operation-plus-mask" data-operation="plus" wx:if="{{!disablePlus&&isBigSize}}"></view>
+        </view>
+        <ui-redpoint count="{{showCount}}" customClass="mini-count" wx:if="{{miniPlusRedPoint}}"></ui-redpoint>
+    </view>
+    <view class="operation-element" wx:elif="{{type===DISH_OPERATION_TYPE_VAL.BUTTON}}">
+        <ui-button bind:onClick="operationClick" customClass="operation-button" data-operation="button" hotSpotClass="hot-spot" isBigSize="{{isBigSize}}" size="{{isBigSize?UI_SIZE.EXTRALARGE:UI_SIZE.SMALL}}" text="{{text}}"></ui-button>
+        <ui-redpoint count="{{showCount}}" customClass="count-container"></ui-redpoint>
+    </view>
+</view>

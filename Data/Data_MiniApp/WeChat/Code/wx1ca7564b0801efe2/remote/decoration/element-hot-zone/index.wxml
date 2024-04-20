@@ -1,0 +1,1 @@
+<view bind:tap="handleClick" class="element-hot-zone"></view>

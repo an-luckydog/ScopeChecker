@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation"
+    },
+    "component": true
+}

@@ -1,0 +1,11 @@
+<theme-container options="{{options}}">
+    <view class="theme-container" style="{{backgroundInfo}}">
+        <customer-header showHomeBtn="true" titleInfo="{{titleInfo}}" wx:if="{{titleSwitch}}">{{titleName}}</customer-header>
+        <view class="custom-page-container {{hasTabBar?'has-tab-bar':''}} {{isNativeTabbarPage?'has-native-tabbar':''}}">
+            <limo-container bind:limo-modal-setLimoShowStorage="setLimoShowStorage" data="{{previewData}}" id="limo-container" wx:if="{{!errorTitle}}"></limo-container>
+            <common-error-page errorTitle="{{errorTitle}}" wx:if="{{!!errorTitle}}"></common-error-page>
+            <tab-bar bind:tabBarRenderEvent="tabBarRenderFn" requestParams="{{requestParams}}" selectedPageType="{{PORTAL_TAB_TYPE.CUSTOM}}" tabBarList="{{catchTabBarList}}"></tab-bar>
+        </view>
+    </view>
+</theme-container>
+<privacy-popup></privacy-popup>

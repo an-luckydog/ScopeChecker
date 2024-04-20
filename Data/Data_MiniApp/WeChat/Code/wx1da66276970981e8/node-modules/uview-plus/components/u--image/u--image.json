@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "uv-image": "../u-image/u-image"
+    }
+}

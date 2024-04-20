@@ -1,0 +1,55 @@
+<template name="shop-notices">
+    <view bind:tap="toggleShopInfoFlag" class="announcement">
+        <swiper autoplay circular vertical class="swiper" interval="{{3000}}">
+            <swiper-item class="swiper-item" wx:for="{{shopNotices}}" wx:key="index">
+                <image class="icon-img" mode="heightFix" src="{{item.imgUrl}}" wx:if="{{item.imgUrl}}"></image>
+                <view class="content">{{item.content}}</view>
+            </swiper-item>
+        </swiper>
+        <view class="more">详情</view>
+    </view>
+</template>
+<view class="head-container" id="head-container">
+    <view class="shop-info-zone-style">
+        <view class="header-left" style="background-image:url({{shopHeadInfo.shopLogo}});" wx:if="{{shopHeadInfo.shopLogo}}"></view>
+        <view class="header-right single-shop-name {{titleOverflow?'':'info-overflow-hidden'}}">
+            <view bindtap="changeShopFunc" class="shop-name-container" wx:if="{{shopHeadInfo.shopLogo&&shopHeadInfo.shopName}}">
+                <view class="{{titleOverflow?'shop-title-overflow':'shop-name ellipsis'}}">{{shopHeadInfo.shopName}}</view>
+                <base-icon bindtap="changeShopFunc" customIconStyle="color: #333" iconType="right-arrow" wx:if="{{multiShop}}"></base-icon>
+            </view>
+            <view class="{{titleOverflow?'title-overflow-margin':''}}" wx:if="{{shopHeadInfo.shopRankTag}}">
+                <view class="rank-tag-container">
+                    <view class="comment-tag">
+                        <view class="{{'tag-type '+mustTagClass}}" wx:if="{{mustTagClass}}"></view>
+                        <view class="tag-content">{{shopRankTag.rankText}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="coupons-container" wx:if="{{headCouponTagList.length}}">
+        <scroll-view class="coupons-list-outer-container" id="scroll-container-header-coupons" scrollAnchoring="true" scrollWithAnimation="true" scrollX="true">
+            <view class="coupons-inner-item" wx:for="{{headCouponTagList}}" wx:for-item="couponTagsItem" wx:key="index">
+                <normal-coupon-tag bind:handelCouponEvent="clickCouponEvent" couponTagsItem="{{couponTagsItem}}"></normal-coupon-tag>
+            </view>
+            <view bindtap="clickCouponEvent" class="more-coupons" wx:if="{{shopHeadInfo.totalCouponNum>7}}">查看更多</view>
+        </scroll-view>
+    </view>
+    <view class="dish-tag-container" wx:if="{{shopHeadInfo.shopTagList&&shopHeadInfo.shopTagList.length}}">
+        <view class="tags-wrapper">
+            <ui-label bindtap="toggleShopInfoFlag" colorType="{{tag.colorType}}" customClass="wrapper-tag" size="{{common.UI_SIZE.MIDDLE}}" text="{{tag.tagDesc}}" wx:for="{{shopHeadInfo.shopTagList}}" wx:for-item="tag" wx:key="index"></ui-label>
+        </view>
+        <view bindtap="toggleShopInfoFlag" class="more-tag" wx:if="{{togglePosition===HEAD_RIGHT_TYPE.TAG}}">
+            <toggle-more></toggle-more>
+        </view>
+    </view>
+    <template is="shop-notices" data="{{shopNotices:shopNotices}}" wx:if="{{shopNotices&&shopNotices.length}}"></template>
+    <view bindtap="toggleShopInfoFlag" class="shop-description-style notice-single-zone" wx:elif="{{textContent}}">
+        <view class="shop-description-text ellipsis" id="shop-description">{{textContent}}</view>
+        <toggle-more></toggle-more>
+    </view>
+    <view class="ui-order-progress-wrapper" style="opacity: {{progressInfoOpacity}}">
+        <order-progress bind:closeOrderProgress="closeOrderProgress" progressInfo="{{progressInfo}}" templateType="{{progressType}}"></order-progress>
+    </view>
+</view>
+<wxs module="common" src="../common-wxs/enum.wxs" />

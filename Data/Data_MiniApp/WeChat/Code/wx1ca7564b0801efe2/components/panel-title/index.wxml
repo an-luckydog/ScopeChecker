@@ -1,0 +1,11 @@
+<template name="small-title">
+    <view class="small-title" wx:if="{{title}}">{{title}}</view>
+</template>
+<template name="big-title">
+    <view class="big-title">
+        <view class="title ellipsis" wx:if="{{title}}">{{title}}</view>
+        <view class="sub-titles">
+            <view class="sub-title {{sub.type}} ellipsis" wx:for="{{subTitle}}" wx:for-item="sub" wx:key="index">{{sub.text}}</view>
+        </view>
+    </view>
+</template>

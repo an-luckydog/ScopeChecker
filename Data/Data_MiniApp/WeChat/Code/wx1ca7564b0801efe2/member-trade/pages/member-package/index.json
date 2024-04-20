@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "购买权益包",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

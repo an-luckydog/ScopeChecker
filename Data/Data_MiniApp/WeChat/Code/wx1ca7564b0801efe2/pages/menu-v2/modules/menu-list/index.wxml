@@ -1,0 +1,128 @@
+<template name="category">
+    <view catchtap="onCatTap" class="cat-item {{act.getCatClassName(item.id,item.icon.url,item.icon.activeUrl,selectCategory)}}" data-category="c{{item.id}}" data-id="{{item.id}}" data-index="{{index}}" data-section="s{{item.id}}" data-title="{{item.name}}" id="c{{item.id}}" wx:for="{{categories}}" wx:key="id">
+        <view class="label" wx:if="{{item.label}}">{{item.label}}</view>
+        <image lazyLoad class="{{item.id[0]==='-'?'icon':'pic'}}" src="{{selectCategory==='c'+item.id?item.icon.activeUrl||item.icon.url:item.icon.url}}" wx:if="{{item.icon&&(item.icon.url||selectCategory==='c'+item.id&&item.icon.activeUrl)}}"></image>
+        <view class="title">{{item.name}}</view>
+        <view class="cat-count" wx:if="{{cateCount[item.id]||item.count}}">
+            <template is="badge" data="{{count:cateCount[item.id]||item.count}}"></template>
+        </view>
+    </view>
+</template>
+<template name="section-header">
+    <view class="section-header section-anchor" data-category="c{{id}}">
+        <view class="header" wx:if="{{sectionHeader}}">
+            <view class="cat-title">{{sectionHeader.title}}</view>
+            <view catch:tap="showTooltip" class="base-icon icon-wenhao" data-id="{{id}}" data-prompt="{{sectionHeader.prompt}}" id="prompt{{id}}" wx:if="{{sectionHeader.prompt}}"></view>
+        </view>
+        <view class="cat-title" wx:else>{{name}}</view>
+    </view>
+</template>
+<template name="coupon-assistant">
+    <coupon-assistant-cate></coupon-assistant-cate>
+</template>
+<template name="deal-coupons">
+    <deal-coupons coupons="{{itemList}}"></deal-coupons>
+</template>
+<template name="lottery">
+    <view class="dish-item" style="position: relative; padding: 0">
+        <lottery brandid="{{data.brandId}}"></lottery>
+    </view>
+</template>
+<template name="plugin-list">
+    <template is="{{p.pluginId}}" data="{{data:act.getData(p.data),dishShowType:dishShowType,dishCountMap:dishCountMap,isShowAddCommon:true}}" wx:for="{{itemList}}" wx:for-index="idx" wx:for-item="p" wx:key="idx"></template>
+</template>
+<template name="dish-list">
+    <view class="dish-item {{dishShowType===2?'large':''}}" id="{{'d'+dish.spuId}}" wx:if="{{dish.name}}" wx:for="{{itemList}}" wx:for-index="idx" wx:for-item="dish" wx:key="idx">
+        <template is="dish" data="{{dish:dish,spuExtra:spuExtra,showEstPrice:showEstPrice,dishShowType:dishShowType,dishCountMap:dishCountMap,isShowAddCommon:true,showRecommendPairing:showRecommendPairing,categoriesId:catParId}}"></template>
+    </view>
+    <block wx:if="{{invalidList&&invalidList.length}}">
+        <block wx:if="{{spread}}">
+            <view class="dish-item" wx:if="{{dish.name}}" wx:for="{{invalidList}}" wx:for-index="idx" wx:for-item="dish" wx:key="idx">
+                <template is="dish" data="{{dish:dish,spuExtra:spuExtra,showEstPrice:showEstPrice,dishShowType:dishShowType,dishCountMap:dishCountMap,isShowAddCommon:false}}"></template>
+            </view>
+        </block>
+        <view catch:tap="onInvalidList" class="toggle-line-wrapper" data-cat-id="{{catParId}}" data-cat-sec-idx="{{catSecIdx}}">
+            <view class="toggle-line-text">{{spread?'收起':'其他'+invalidList.length+'件不可售商品'}}</view>
+            <view class="base-icon {{spread?'icon-jiantou-shang':'icon-jiantou-xia'}}"></view>
+        </view>
+    </block>
+</template>
+<template name="dish">
+    <dish-item-static dish="{{dish}}" dishShowType="{{dishShowType}}" wx:if="{{dish.dishType===6}}"></dish-item-static>
+    <block wx:else>
+        <large-dish-item dish="{{dish}}" extra="{{spuExtra[dish.spuId]||null}}" showEst="{{showEstPrice}}" wx:if="{{dishShowType===2}}">
+            <add-common count="{{dishCountMap[ d.getId(dish) ]||0}}" dish="{{dish}}" extras="{{act.getExtras(showRecommendPairing,categoriesId)}}" slot="add-common" wx:if="{{isShowAddCommon}}"></add-common>
+        </large-dish-item>
+        <dish-item dish="{{dish}}" extra="{{spuExtra[dish.spuId]||null}}" showEst="{{showEstPrice}}" wx:else>
+            <add-common count="{{dishCountMap[ d.getId(dish) ]||0}}" dish="{{dish}}" extras="{{act.getExtras(showRecommendPairing,categoriesId)}}" slot="add-common" wx:if="{{isShowAddCommon}}"></add-common>
+        </dish-item>
+        <single-recommend-dish categoriesId="{{categoriesId||''}}" dish="{{dish}}" wx:if="{{showRecommendPairing}}"></single-recommend-dish>
+    </block>
+</template>
+<import src="../../../../components/badge/index.wxml"></import>
+<view bind:touchmove="outerTouch" class="menu-scroll" style="{{menuStyles}} height: calc(100vh - {{secTop}} + var(--sticky-top));">
+    <view class="header-hidden"></view>
+    <scroll-view enablePassive enhanced scrollY bindscrolltoupper="onDishListScrollToUpper" bounces="{{false}}" class="menu-list" scrollIntoView="{{selectSection}}" scrollTop="{{scrollTop}}" showScrollbar="{{false}}">
+        <view id="menu-start">
+            <slot name="reserve-tip"></slot>
+            <slot name="decorator-components"></slot>
+            <view class="poster"></view>
+            <slot name="mt-bind"></slot>
+            <slot name="coupon-login"></slot>
+            <slot name="coupon-assistant-top"></slot>
+            <block wx:if="{{menuSettings.categoryShowType===1}}">
+                <view id="first-cat-anchor"></view>
+                <include src="./category-top.wxml"></include>
+            </block>
+            <view class="menu-body" wx:else>
+                <scroll-view enablePassive enhanced scrollY catchtouchmove="prevent" class="cat-list" scrollIntoView="{{selectCategory}}" showScrollbar="{{false}}" style="height: calc(100vh - {{secTop}})">
+                    <view class="cat-scroll" style="{{categoryStyle}}">
+                        <template is="category" data="{{categories:act.ArrayMerge( [specialCategories,dealCouponCates,categories] ),selectCategory:selectCategory,cateCount:cateCount}}"></template>
+                        <view class="cat-empty-slot"></view>
+                    </view>
+                </scroll-view>
+                <view class="dish-list" style="min-height: calc(100vh - {{secTop}} + 24rpx)">
+                    <view class="dish-list-container">
+                        <view class="coupon-package-slot">
+                            <slot name="coupon-package"></slot>
+                        </view>
+                        <view class="section-item" id="s{{item.id}}" wx:for="{{act.ArrayMerge( [specialCategories,dealCouponCates,categories] )}}" wx:for-index="catIdx" wx:key="catIdx">
+                            <block wx:if="{{item.children&&item.children.length}}">
+                                <view class="section-header section-anchor" data-category="c{{item.id}}">
+                                    <view class="cat-title">{{item.name}}</view>
+                                    <view class="cat-sed-container">
+                                        <scroll-view enableFlex enhanced scrollX class="cat-sed-scroll" scrollIntoView="{{selectSecCategory['c'+item.id]||'c'+item.children[0].id}}" showScrollbar="{{false}}">
+                                            <view class="cat-sed">
+                                                <view catch:tap="onSecCatTap" class="cat-sed-item {{!selectSecCategory['c'+item.id]&&catSecIdx===0||selectSecCategory['c'+item.id]==='c'+catSec.id?'sec-active':''}}" data-category="c{{item.id}}" data-id="{{catSec.id}}" data-sec-category="c{{catSec.id}}" data-section="s{{catSecIdx>0?catSec.id:item.id}}" data-title="{{catSec.name}}" id="c{{catSec.id}}" wx:for="{{item.children}}" wx:for-index="catSecIdx" wx:for-item="catSec" wx:key="catSecIdx">{{catSec.name}}</view>
+                                                <view class="cat-sed-empty"></view>
+                                            </view>
+                                        </scroll-view>
+                                        <view class="sed-spread"></view>
+                                    </view>
+                                </view>
+                                <view class="sec-section" wx:for="{{item.children}}" wx:for-index="catSecIdx" wx:for-item="secItem" wx:key="catSecIdx">
+                                    <view class="section-header sec" wx:if="{{catSecIdx>0}}">
+                                        <view class="cat-title">{{secItem.name}}</view>
+                                    </view>
+                                    <view class="sec-cat-anchor anchor-prev section-anchor" data-category="c{{item.id}}" data-sec-category="c{{secItem.id}}" id="s{{secItem.id}}"></view>
+                                    <template is="dish-list" data="{{...secItem,catParId:item.id,catSecIdx:catSecIdx,dishCountMap:dishCountMap,spuExtra:spuExtra,showEstPrice:showEstPrice,...menuSettings}}"></template>
+                                    <view class="sec-cat-anchor anchor-after section-anchor" data-category="c{{item.id}}" data-sec-category="c{{secItem.id}}"></view>
+                                </view>
+                                <view class="sec-cat-anchor anchor-prev section-anchor" data-category="c{{item.id}}" data-sec-category="c{{secItem.id}}" id="s{{secItem.id}}"></view>
+                                <template is="dish-list" data="{{...secItem,catParId:item.id,catSecIdx:catSecIdx,dishCountMap:dishCountMap,spuExtra:spuExtra,showEstPrice:showEstPrice,...menuSettings}}"></template>
+                                <view class="sec-cat-anchor anchor-after section-anchor" data-category="c{{item.id}}" data-sec-category="c{{secItem.id}}"></view>
+                            </block>
+                            <block wx:else>
+                                <template is="section-header" data="{{...item}}"></template>
+                                <template is="{{act.getTemplate(item.id)}}" data="{{...item,catParId:item.id,dishCountMap:dishCountMap,spuExtra:spuExtra,showEstPrice:showEstPrice,...menuSettings}}"></template>
+                            </block>
+                        </view>
+                        <view class="section-item-empty-slot"></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+</view>
+<wxs module="act" src="index.wxs" />
+<wxs module="d" src="../../../../components/dish-item/index.wxs" />

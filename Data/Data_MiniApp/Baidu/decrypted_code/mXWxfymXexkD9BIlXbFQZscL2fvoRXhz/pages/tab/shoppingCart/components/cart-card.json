@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "common-dialog": "../../../../components/common-dialog",
+    "valuation-fixed": "../../../../components/valuation-fixed/index",
+    "valuation": "../../../../components/valuation/index",
+    "product-pop-shopping": "./product-pop-shopping",
+    "icon-svg": "../../../../components/icon-svg/icon-svg",
+    "product-price": "../../../../components/product-price/product-price"
+  }
+}

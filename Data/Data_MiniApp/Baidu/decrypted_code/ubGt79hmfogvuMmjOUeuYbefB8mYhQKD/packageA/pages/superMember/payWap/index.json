@@ -1,0 +1,1 @@
+{"navigationBarTitleText":"支付中心","usingComponents":{"pay-ways":"../Sp_components/payWay/payWay"},"isUsingComponents":true,"skeleton":"","usingDynamicLibs":[],"usingPlugins":[],"usingDependencies":[],"isUsingSJS":false,"_hasVideo":false,"compileOption":{"dependencies":["otherComponents.swan.js"],"preloadTpl":["sharedComponents.swan.js"],"resourceStrategyVersion":"0.0.0"}}

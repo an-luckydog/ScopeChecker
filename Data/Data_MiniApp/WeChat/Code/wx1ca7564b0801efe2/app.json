@@ -1,0 +1,499 @@
+{
+    "window": {
+        "navigationBarTitleText": "点餐"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    },
+    "preloadRule": {
+        "pages/index/index": {
+            "network": "all",
+            "packages": [
+                "diancan-order"
+            ]
+        }
+    },
+    "__usePrivacyCheck__": true,
+    "ext": {
+        "multiShop": "1",
+        "decorationConfig": {
+            "suitType": "2",
+            "themeColor": "#b41411",
+            "defaultHeadImg": "http://p0.meituan.net/rmsminamaterial/76b84fcf77e83fa880e0e9dfe754721e22164.png@201w",
+            "lightColor": "#FEECEC",
+            "loadingIcon": "http://p0.meituan.net/rmsminamaterial/f8af0ddafe2fc64e693746fa5642f569871311.gif"
+        },
+        "bizType": "100",
+        "color": "#bbbbbb",
+        "extAppid": "wx1ca7564b0801efe2",
+        "plugins": [
+            "mercPlugin",
+            "studentVerify"
+        ],
+        "bizIdType": "40",
+        "tabbar": [
+            {
+                "selectedIconPath": "http://p1.meituan.net/rmsminamaterial/466323d51e24472eb6766c0295d0877430754.jpg@66w",
+                "text": "首页",
+                "iconPath": "http://p0.meituan.net/rmsminamaterial/d38fac33909291d2fa5bb639dfe5788620463.jpg@66w",
+                "pagePath": "/pages/index/index"
+            },
+            {
+                "selectedIconPath": "http://p0.meituan.net/rmsminamaterial/9a8b91592f33428ae0a40cb7adae2d9735169.jpg@66w",
+                "text": "点餐",
+                "iconPath": "http://p1.meituan.net/rmsminamaterial/30703d33ce77406c981126dbfc66fbb924900.jpg@66w",
+                "pagePath": "/pages/menu-v2/index"
+            },
+            {
+                "selectedIconPath": "http://p0.meituan.net/rmsminamaterial/6367b7e14e056d86caef8ed6188c761e34197.jpg@66w",
+                "text": "订单",
+                "iconPath": "http://p0.meituan.net/rmsminamaterial/afbd8a0ceb4324040c6ca4973f059a2c18609.jpg@66w",
+                "pagePath": "/pages/order-list/index"
+            },
+            {
+                "selectedIconPath": "http://p0.meituan.net/rmsminamaterial/f3b144dda281c086102191904251018a30877.jpg@66w",
+                "text": "个人中心",
+                "iconPath": "http://p0.meituan.net/rmsminamaterial/e5e33e1772a1d9a26c2387616f7e915124504.jpg@66w",
+                "pagePath": "/pages/user/index"
+            }
+        ],
+        "showNativeTabBar": "1",
+        "selectedColor": "#000",
+        "url": "",
+        "tabBarStyle": "1",
+        "restaurantViewId": "202395",
+        "tenantId": "11155978",
+        "bizId": "202395",
+        "borderStyle": "black",
+        "authGeo": "1"
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "您的位置信息将用于为您提供更适合您的服务"
+        }
+    },
+    "requiredPrivateInfos": [
+        "getLocation",
+        "chooseAddress"
+    ],
+    "subPackages": [
+        {
+            "name": "plugin-packages",
+            "pages": [
+                "pages/index/index"
+            ],
+            "plugins": {
+                "mercPlugin": {
+                    "provider": "wx87ebb56764fea681",
+                    "version": "2.5.21"
+                },
+                "studentVerify": {
+                    "provider": "wxa16657d57059e0f0",
+                    "version": "latest"
+                }
+            },
+            "root": "plugin-packages"
+        },
+        {
+            "name": "portal",
+            "pages": [
+                "pages/outer-link-warning/index",
+                "pages/portal-account/index",
+                "pages/portal-decorate/index",
+                "pages/portal-user/index",
+                "pages/preview/index",
+                "pages/user-decorate/index",
+                "pages/shop-homepage/index"
+            ],
+            "root": "portal"
+        },
+        {
+            "name": "async-main",
+            "pages": [],
+            "root": "async-main"
+        },
+        {
+            "name": "review",
+            "pages": [
+                "pages/review/index",
+                "pages/review-list/index",
+                "pages/review-detail/index"
+            ],
+            "root": "review"
+        },
+        {
+            "name": "async-review",
+            "pages": [],
+            "root": "async-review"
+        },
+        {
+            "name": "coupon-validate",
+            "pages": [
+                "pages/coupon-entry/index",
+                "pages/tt-coupon-validate/index",
+                "pages/tt-remark/index"
+            ],
+            "root": "coupon-validate"
+        },
+        {
+            "name": "orderPackages",
+            "pages": [
+                "pages/order-confirm/index",
+                "pages/order-detail/index",
+                "pages/shop-list/index",
+                "pages/city/index",
+                "pages/search/index",
+                "pages/address/index",
+                "pages/address-edit/index",
+                "pages/address-map-select/index",
+                "pages/scan-qr-code/index"
+            ],
+            "root": "orderPackages"
+        },
+        {
+            "name": "async-custom-plugins",
+            "pages": [],
+            "root": "async-custom-plugins"
+        },
+        {
+            "name": "async-diancan-minor",
+            "pages": [],
+            "root": "async-diancan-minor"
+        },
+        {
+            "name": "async-plugin",
+            "pages": [],
+            "root": "async-plugin"
+        },
+        {
+            "name": "points-exchange",
+            "pages": [
+                "pages/points-exchange-record/index",
+                "pages/points-exchange-success/index",
+                "pages/points-record/index",
+                "pages/points-redemption/index",
+                "pages/points-redemption-details/index"
+            ],
+            "root": "points-exchange"
+        },
+        {
+            "name": "marketing-common",
+            "pages": [
+                "pages/card-list/index",
+                "pages/city-list/index",
+                "pages/shop-list/index",
+                "pages/shop-register/index",
+                "pages/shop-select/index"
+            ],
+            "root": "marketing-common"
+        },
+        {
+            "name": "async-decoration",
+            "pages": [],
+            "root": "async-decoration"
+        },
+        {
+            "name": "decoration",
+            "pages": [
+                "pages/annual-report/index"
+            ],
+            "root": "decoration"
+        },
+        {
+            "name": "member-trade",
+            "pages": [
+                "pages/buy-record/index",
+                "pages/card-list/index",
+                "pages/member-package/index",
+                "pages/package-order/index",
+                "pages/recharge/index",
+                "pages/recharge-exchange/index",
+                "pages/recharge-record/index",
+                "pages/shop-register/index",
+                "pages/shop-select/index",
+                "pages/svip-membership/index",
+                "pages/voucher-list/index",
+                "pages/voucher-purchase/index"
+            ],
+            "root": "member-trade"
+        },
+        {
+            "name": "wemember",
+            "pages": [
+                "pages/member-benefits/index",
+                "pages/member-center/index",
+                "pages/member-code/index",
+                "pages/member-debug/index",
+                "pages/member-info/index",
+                "pages/member-membership-card/index",
+                "pages/member-portal/index",
+                "pages/member-reset-password/index",
+                "pages/member-rights-detail/index",
+                "pages/recharge-invoice/index",
+                "pages/student-rights/index",
+                "pages/transaction-record/index"
+            ],
+            "root": "wemember"
+        },
+        {
+            "name": "gift-card",
+            "pages": [
+                "pages/card-exchange/index",
+                "pages/consume-record/index",
+                "pages/dynamic-code/index",
+                "pages/edit-present/index",
+                "pages/gift-card-detail/index",
+                "pages/home/index",
+                "pages/order-detail/index",
+                "pages/order-list/index",
+                "pages/receive-info/index",
+                "pages/reciprocity-record/index",
+                "pages/sale-menu/index",
+                "pages/shop-list/index"
+            ],
+            "root": "gift-card"
+        },
+        {
+            "name": "cloud-mall",
+            "pages": [
+                "pages/bargain-details/index",
+                "pages/goods-detail/index",
+                "pages/group-detail/index",
+                "pages/home/index",
+                "pages/my-center/index",
+                "pages/order-detail/index",
+                "pages/order-list/index",
+                "pages/pay-result/index",
+                "pages/seckill-list/index",
+                "pages/shopping-cart/index"
+            ],
+            "root": "cloud-mall"
+        },
+        {
+            "name": "member",
+            "pages": [
+                "pages/login/index",
+                "pages/universal-login-page/index",
+                "miniprogram_npm/@mtfe/yoda-static-weapp/modules/index/index"
+            ],
+            "root": "member"
+        },
+        {
+            "name": "async-member",
+            "pages": [],
+            "root": "async-member"
+        },
+        {
+            "name": "enterprise",
+            "pages": [
+                "pages/enterprise-add-friend/index"
+            ],
+            "root": "enterprise"
+        },
+        {
+            "name": "coupon",
+            "pages": [
+                "pages/list/index"
+            ],
+            "root": "coupon"
+        },
+        {
+            "name": "async-coupon",
+            "pages": [],
+            "root": "async-coupon"
+        },
+        {
+            "name": "async-meal",
+            "pages": [],
+            "root": "async-meal"
+        },
+        {
+            "name": "diancan-main",
+            "pages": [
+                "pages/main/index",
+                "pages/launch/index",
+                "pages/address/index",
+                "pages/address-edit/index",
+                "pages/address-map-select/index"
+            ],
+            "root": "diancan-main"
+        },
+        {
+            "name": "diancan-menu",
+            "pages": [
+                "pages/must-dish/index",
+                "pages/search/index",
+                "pages/recommend-list/index",
+                "pages/login/index",
+                "pages/login-mt/index",
+                "pages/debug/index",
+                "pages/takeaway/index",
+                "pages/error-tip/index",
+                "pages/webview/index",
+                "pages/pay-result/index",
+                "pages/splash/index",
+                "pages/privacy-settings/index",
+                "pages/agreements-page/index",
+                "pages/menu/index",
+                "pages/dish-detail/index"
+            ],
+            "root": "diancan-menu"
+        },
+        {
+            "name": "diancan-order",
+            "pages": [
+                "pages/main/index",
+                "pages/shop-list/index",
+                "pages/city-list/index",
+                "pages/portal/index",
+                "pages/order-confirm/index",
+                "pages/order-confirm-takeaway-setting/index",
+                "pages/order-confirm-coupon-list/index",
+                "pages/order-confirm-promotion-select/index",
+                "pages/order-confirm-remark/index",
+                "pages/order-detail/index",
+                "pages/pay-confirm/index",
+                "pages/pay-confirm-coupon-list/index",
+                "pages/order-list/index",
+                "pages/pay/index",
+                "pages/webview/index",
+                "pages/menu-joint/index",
+                "pages/group-order/index"
+            ],
+            "root": "diancan-order"
+        },
+        {
+            "name": "diancan-orderdetail",
+            "pages": [
+                "pages/order-detail/index",
+                "pages/order-list/index"
+            ],
+            "root": "diancan-orderdetail"
+        },
+        {
+            "name": "order-center",
+            "pages": [
+                "pages/index"
+            ],
+            "root": "order-center"
+        },
+        {
+            "name": "async-campaign",
+            "pages": [],
+            "root": "async-campaign"
+        },
+        {
+            "name": "async-campaign-dc",
+            "pages": [],
+            "root": "async-campaign-dc"
+        },
+        {
+            "name": "campaign-interactive",
+            "pages": [
+                "pages/collect-category/index",
+                "pages/fission-ranking/index",
+                "pages/invitation-category/index",
+                "pages/lottery-category/index",
+                "pages/main/index",
+                "pages/sign-in-page/index",
+                "pages/take-incentive-category/index"
+            ],
+            "root": "campaign-interactive"
+        },
+        {
+            "name": "market-growth",
+            "pages": [
+                "pages/blind-box-main/index",
+                "pages/collect-points/index",
+                "pages/collect-points-record/index",
+                "pages/coupon-exchange/index",
+                "pages/coupon-list/index",
+                "pages/exchange-receive-coupon/index",
+                "pages/fission-main/index",
+                "pages/lottery-main/index",
+                "pages/member-card-switch/index",
+                "pages/member-shop-switch/index",
+                "pages/prize-receive-details/index",
+                "pages/prize-receive-main/index",
+                "pages/random-amount/index",
+                "pages/random-amount-record/index",
+                "pages/recommend-gifts/index",
+                "pages/recommend-record-list/index",
+                "pages/scan-receive-coupon/index",
+                "pages/self-receive-coupon/index",
+                "pages/task-center/index",
+                "pages/task-center-record/index",
+                "pages/transfer-coupon/index",
+                "pages/watch-word-coupon/index"
+            ],
+            "root": "market-growth"
+        },
+        {
+            "name": "member-growth-two",
+            "pages": [
+                "pages/collect-card/index",
+                "pages/collect-card-center/index",
+                "pages/collect-card-receive/index",
+                "pages/collect-card-record/index",
+                "pages/coupon-dishs/index",
+                "pages/coupon-shops/index",
+                "pages/fragment-exchange/index"
+            ],
+            "root": "member-growth-two"
+        },
+        {
+            "name": "campaign-common",
+            "pages": [
+                "pages/incentive-record/index"
+            ],
+            "root": "campaign-common"
+        },
+        {
+            "pages": [
+                "pages/portal/index",
+                "pages/pay/index"
+            ],
+            "root": "diancan-kbone"
+        }
+    ],
+    "extEnable": true,
+    "extAppid": "wx1ca7564b0801efe2",
+    "pages": [
+        "pages/index/index",
+        "pages/splash/index",
+        "pages/portal/index",
+        "pages/menu-v2/index",
+        "pages/order-list/index",
+        "pages/user/index",
+        "pages/custom-page/index",
+        "pages/menu/index"
+    ],
+    "usingComponents": {
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "tabBar": {
+        "borderStyle": "black",
+        "color": "#bbbbbb",
+        "custom": true,
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/menu-v2/index",
+                "text": "点餐"
+            },
+            {
+                "pagePath": "pages/order-list/index",
+                "text": "订单"
+            },
+            {
+                "pagePath": "pages/user/index",
+                "text": "个人中心"
+            }
+        ],
+        "selectedColor": "#000"
+    }
+}

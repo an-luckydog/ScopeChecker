@@ -1,0 +1,11 @@
+<view class="page-error-container {{className}}">
+    <view class="error-content {{btnConfig&&btnConfig.buttonText?'has-button-content':'no-button-content'}}">
+        <view class="icon-container">
+            <image alt="错误页icon" class="icon-image" mode="widthFix" src="{{iconUrl}}"></image>
+        </view>
+        <view class="error-title">{{errorTitle}}</view>
+        <view class="error-text">{{errorSubTitle}}</view>
+        <ui-button bind:onClick="handleUiBtnClick" class="error-handle-btn" itemInfo="{{btnConfig}}" size="{{btnSize}}" text="{{btnConfig.buttonText}}" type="{{btnType}}" wx:if="{{btnConfig&&btnConfig.buttonText}}"></ui-button>
+    </view>
+</view>
+<tab-bar bind:tabBarRenderEvent="handleTabBarRender" customOptions="{{tabBarConfig.customOptions}}" requestParams="{{tabBarConfig.requestParams}}" selectedPageType="{{tabBarConfig.selectedPageType}}" tabBarList="{{tabBarConfig.tabBarList}}" wx:if="{{tabBarConfig&&tabBarConfig.selectedPageType!=-1}}"></tab-bar>

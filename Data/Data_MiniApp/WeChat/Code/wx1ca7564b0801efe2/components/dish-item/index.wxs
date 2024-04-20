@@ -1,0 +1,50 @@
+function getPrice(dish, extra) {
+    if (extra) {
+        dish.estimatedPrice = extra.estimatedPrice
+    };
+    return (JSON.parse(JSON.stringify(dish)))
+};
+
+function getDish(dish, size, key) {
+    var attributes = ({});
+    if (size === "large") {
+        attributes.name = typeof dish.name === "string" ? [({
+            name: "div",
+            attrs: ({
+                style: "width: 100%;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;",
+            }),
+            children: [({
+                type: "text",
+                text: dish.name,
+            })],
+        })] : dish.name;
+        attributes.size = "middle";
+        attributes.pic = dish.pic || "https://p0.meituan.net/scarlett/d3a2a935c8d18fc7828f7f069fb8ba4f3410.jpg@_80q"
+    } else {
+        attributes.name = typeof dish.name === "string" ? [({
+            type: "text",
+            text: dish.name,
+        })] : dish.name;
+        attributes.size = "mini";
+        attributes.pic = dish.pic || "https://p0.meituan.net/scarlett/ca45859124838c068622a75a818b064a1640.jpg";
+        if (dish.displayName) {
+            attributes.name = dish.displayName
+        }
+    };
+    return (attributes[((nt_0 = (key), null == nt_0 ? undefined : 'number' === typeof nt_0 ? nt_0 : "" + nt_0))])
+};
+
+function getId(d) {
+    var displayId;
+    if (d.extendList && d.extendList.length) {
+        displayId = d.extendList.map((function(ext) {
+            return (ext && ext[(1)] && ext[(1)].displayId || "")
+        })).join("")
+    };
+    return (displayId || d.spuId)
+};
+module.exports = ({
+    getPrice: getPrice,
+    getDish: getDish,
+    getId: getId,
+});

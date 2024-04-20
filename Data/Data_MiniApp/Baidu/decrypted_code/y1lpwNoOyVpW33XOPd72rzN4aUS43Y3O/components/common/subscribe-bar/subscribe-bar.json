@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "login-modal": "/components/common/login-modal/login"
+  }
+}

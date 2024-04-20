@@ -1,0 +1,11 @@
+<view class="wx-open-setting data-v-06128afe" wx:if="{{customCallPhoneIsShow}}">
+    <view bindtap="__e" class="activityRule-mask data-v-06128afe" data-event-opts="{{[ [ 'tap',[ [ 'closeWxOpenSetting',['$event'] ] ] ] ]}}"></view>
+    <view animation="{{actAni}}" class="{{['data-v-06128afe',isStartAnimation?'activityRule-initAni':'','activityRule-center']}}">
+        <view class="opensetting data-v-06128afe">
+            <view class="head data-v-06128afe">
+                <view bindtap="__e" class="data-v-06128afe" data-event-opts="{{[ [ 'tap',[ [ 'calFun',['$0'],[ [ ['callPhoneList','id',item.id,'text'] ] ] ] ] ] ]}}" wx:for="{{callPhoneList}}" wx:for-index="__i0__" wx:key="id">{{(item.label?item.label+'：':'')+' '+item.text}}</view>
+            </view>
+            <button bindtap="__e" class="set data-v-06128afe" data-event-opts="{{[ [ 'tap',[ [ 'closeWxOpenSetting',['$event'] ] ] ] ]}}">取消</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,293 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/index/message",
+        "pages/index/health",
+        "pages/index/user"
+    ],
+    "subPackages": [
+        {
+            "root": "pages/consult/",
+            "pages": [
+                "chating/chating",
+                "chating/video",
+                "inquiry/card",
+                "order/detail",
+                "service-remind/list",
+                "service-remind/detail",
+                "appraise/index",
+                "inquiry/case"
+            ]
+        },
+        {
+            "root": "pages/doctor/",
+            "pages": [
+                "list/list",
+                "list/platform",
+                "detail/index",
+                "visit/index",
+                "visit/doctorList",
+                "guide/assistant",
+                "guide/announcement",
+                "guide/upload",
+                "advance/index",
+                "service-package/list",
+                "service-package/detail",
+                "my-doctor/index",
+                "service-package/equity",
+                "service-package/advance",
+                "service-package/order",
+                "check-in/index"
+            ]
+        },
+        {
+            "root": "pages/other/",
+            "pages": [
+                "h5/index",
+                "h5/ali-message",
+                "condition/search",
+                "condition/addAllergen",
+                "test/index"
+            ]
+        },
+        {
+            "root": "pages/hospital/",
+            "pages": [
+                "brief/index",
+                "department/departmentList",
+                "department/hospitalHomeDept",
+                "list/list",
+                "list/platform",
+                "notice/hospitalHomeNotice",
+                "notice/hospitalListNotices",
+                "visitPrescription/hospitalHomeDept",
+                "guide/index",
+                "advertisement/index",
+                "chain/list"
+            ]
+        },
+        {
+            "root": "pages/diagnose/",
+            "pages": [
+                "diagnoseGroup",
+                "diagnoseSelectHumen",
+                "diagnoseSelectBody",
+                "diagnoseHome"
+            ]
+        },
+        {
+            "root": "pages/report/",
+            "pages": [
+                "query/index",
+                "pacs/index",
+                "inspection/index",
+                "inspect/advance/index",
+                "inspect/register-advance/index",
+                "inspect/detail/index",
+                "inspect/register-detail/index"
+            ]
+        },
+        {
+            "root": "pages/prescription/",
+            "pages": [
+                "list/index",
+                "detail/index",
+                "other-doctor-advice/detail",
+                "doctor-advice/index"
+            ]
+        },
+        {
+            "root": "pages/drug/",
+            "pages": [
+                "store/list",
+                "store/detail",
+                "instructions/list",
+                "instructions/detail",
+                "advance/index",
+                "order/detail",
+                "cancel/apply",
+                "cancel/detail",
+                "logistics/index"
+            ]
+        },
+        {
+            "root": "pages/health/",
+            "pages": [
+                "user/index",
+                "case/userCaseDetail",
+                "health/index"
+            ]
+        },
+        {
+            "root": "pages/person/",
+            "pages": [
+                "order/list",
+                "order/pay-wait",
+                "order/pay-result",
+                "order/pay-other",
+                "order/pay-fail",
+                "order/pay-wx",
+                "consult/list",
+                "address/addressList",
+                "address/editAddress",
+                "family/list",
+                "family/detail",
+                "family/add",
+                "guardian/list",
+                "ec/h5",
+                "ec/code",
+                "ec/introduce",
+                "ec/ecIntr",
+                "face/index",
+                "face/faceIntr",
+                "login/index"
+            ]
+        },
+        {
+            "root": "pages/payment/",
+            "pages": [
+                "wxorder/detail",
+                "nucleic/index",
+                "advance/index",
+                "order/list",
+                "order/detail"
+            ]
+        },
+        {
+            "root": "pages/registration/",
+            "pages": [
+                "department/list",
+                "doctor/list",
+                "order/advance",
+                "order/list",
+                "order/detail"
+            ]
+        },
+        {
+            "root": "pages/patient/",
+            "pages": [
+                "list"
+            ]
+        },
+        {
+            "root": "pages/result/",
+            "pages": [
+                "appoint/index",
+                "pay/index"
+            ]
+        },
+        {
+            "root": "pages/mall/",
+            "pages": [
+                "open-mall/index",
+                "open-mall/pay"
+            ]
+        },
+        {
+            "root": "pages/zoos/",
+            "pages": [
+                "zoostalk/index"
+            ]
+        },
+        {
+            "root": "hospital/",
+            "pages": [
+                "home/hospitalHomeIndex"
+            ]
+        },
+        {
+            "root": "doctor/",
+            "pages": [
+                "home/index",
+                "list/index",
+                "service-package/order"
+            ]
+        },
+        {
+            "root": "drug/",
+            "pages": [
+                "order/detail"
+            ]
+        },
+        {
+            "root": "report/",
+            "pages": [
+                "query/index"
+            ]
+        },
+        {
+            "root": "user/",
+            "pages": [
+                "consult/userConsultDetail",
+                "prescrip/userPrescripList",
+                "prescrip/userPrescripDetail"
+            ]
+        }
+    ],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "",
+        "navigationBarBackgroundColor": "#FFFFFF",
+        "backgroundColor": "#FFFFFF",
+        "backgroundTextStyle": "light",
+        "renderingMode": "seperated",
+        "pageOrientation": "portrait",
+        "enablePullDownRefresh": false
+    },
+    "tabBar": {
+        "color": "#999999",
+        "selectedColor": "#00C6AE",
+        "borderStyle": "black",
+        "backgroundColor": "#FFFFFF",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "static/icon/icon-menu/index.png",
+                "selectedIconPath": "static/icon/icon-menu/index_active.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/index/message",
+                "iconPath": "static/icon/icon-menu/message.png",
+                "selectedIconPath": "static/icon/icon-menu/message_active.png",
+                "text": "消息"
+            },
+            {
+                "pagePath": "pages/index/health",
+                "iconPath": "static/icon/icon-menu/health.png",
+                "selectedIconPath": "static/icon/icon-menu/health_active.png",
+                "text": "健康档案"
+            },
+            {
+                "pagePath": "pages/index/user",
+                "iconPath": "static/icon/icon-menu/user.png",
+                "selectedIconPath": "static/icon/icon-menu/user_active.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "preloadRule": {
+        "pages/index/index": {
+            "network": "all",
+            "packages": [
+                "pages/person",
+                "pages/consult",
+                "pages/doctor",
+                "pages/report",
+                "pages/payment"
+            ]
+        }
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "您的位置信息将用于获取距离您最近的优质医疗资源"
+        }
+    },
+    "__usePrivacyCheck__": true,
+    "requiredPrivateInfos": [
+        "getLocation"
+    ],
+    "usingComponents": {
+        "verify-mpsdk": "/wxcomponents/verify_mpsdk/index/index"
+    }
+}

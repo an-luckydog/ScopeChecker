@@ -1,0 +1,20 @@
+<view class="content">
+    <view class="content_one">
+        <view class="content_one_left">
+            <view>提示音效</view>
+        </view>
+        <view class="content_one_right">
+            <switch bindchange="switch1" checked="{{swif1}}" class="content_ps" color="#FFD656"></switch>
+        </view>
+    </view>
+    <view class="content_one2">
+        <view class="content_one_left">
+            <view>单词发音</view>
+        </view>
+        <view class="content_one_right">
+            <view class="content_one_right">
+                <switch bindchange="switch2" checked="{{swif2}}" class="content_ps" color="#FFD656"></switch>
+            </view>
+        </view>
+    </view>
+</view>

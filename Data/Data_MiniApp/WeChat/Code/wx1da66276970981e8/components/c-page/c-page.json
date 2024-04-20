@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-loading-page": "../../node-modules/uview-plus/components/u-loading-page/u-loading-page",
+        "c-navbar": "../c-navbar/c-navbar",
+        "c-page-tracer": "../c-page-tracer/c-page-tracer",
+        "c-page-pop": "../c-page-pop/c-page-pop"
+    }
+}

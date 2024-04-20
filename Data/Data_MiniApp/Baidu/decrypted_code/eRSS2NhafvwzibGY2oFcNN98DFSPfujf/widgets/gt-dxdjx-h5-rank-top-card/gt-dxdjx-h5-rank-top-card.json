@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "optimize-image": "/components/optimize-image/optimize-image",
+        "count-up":"/components/count-up/count-up",
+        "number-font": "/components/number-font/number-font"
+    }
+}

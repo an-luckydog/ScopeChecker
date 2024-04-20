@@ -1,0 +1,9 @@
+<view class="meal-list-category-name {{picClassName}} {{customClass}}" id="{{'parentDishCategoryID-'+category.categoryId}}">
+    <view wx:if="{{DISH_CATEGORY_ID.HOT===category.categoryId||DISH_CATEGORY_ID.RECOMMEND===category.categoryId}}"></view>
+    <coupon-assistant-header bind:checkMore="onCouponAssistantCheckMore" bizId="eco_cafs20kw" couponCount="{{couponCount}}" couponStyle="{{couponAssistantStyle}}" hideMore="{{true}}" wx:elif="{{category.categoryId===DISH_CATEGORY_ID.COUPON}}"></coupon-assistant-header>
+    <view bindtap="gotoThirdLogin" class="category-right" wx:elif="{{DISH_CATEGORY_ID.MT_SPECIAL_DISCOUNT===category.categoryId&&!hasMtLogin}}">{{LOGIN_IN_TEXT}}</view>
+    <view class="category-ellipsis ellipsis" wx:else>{{titleTxt}}<view class="grey-text" wx:if="{{category.subTitle}}">{{category.subTitle}}</view>
+        <view class="point-text" wx:if="{{pointText}}">{{pointText}}</view>
+        <view class="member-login-text" wx:if="{{showMemberLogin}}">登录会员查看可用积分</view>
+    </view>
+</view>

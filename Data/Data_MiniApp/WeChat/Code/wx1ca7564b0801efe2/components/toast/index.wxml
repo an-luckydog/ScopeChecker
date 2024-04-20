@@ -1,0 +1,8 @@
+<template name="rms-toast">
+    <view catchtap="onMaskTouchMove" catchtouchmove="onMaskTouchMove" class="container-mask" style="z-index: 10001" wx:if="{{toast.mask}}"></view>
+    <view class="mask-toast-item" style="z-index: 10001">
+        <view class="toast-item" style="{{toast.customStyle}}">
+            <view class="txt">{{toast.title}}</view>
+        </view>
+    </view>
+</template>

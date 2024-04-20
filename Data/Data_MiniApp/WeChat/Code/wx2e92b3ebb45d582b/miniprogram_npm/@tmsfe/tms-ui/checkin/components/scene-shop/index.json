@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "navbar": "../../../navbar/navbar",
+        "c-btn": "../button/index",
+        "banner": "/./miniprogram_npm/@tmsfe/tms-ui/banner/banner"
+    }
+}

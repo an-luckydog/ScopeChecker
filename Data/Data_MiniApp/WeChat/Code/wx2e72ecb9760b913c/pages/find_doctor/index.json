@@ -1,0 +1,10 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "找医生",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "intellect-diagnose": "../../components/intellect-diagnose/index",
+        "doctor-list": "./components/doctor-list/index",
+        "empty": "../../components/empty/index"
+    }
+}

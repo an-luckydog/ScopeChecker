@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-bar-header": "./GameBarHeader",
+        "host-multigraph-item": "./HostMultigraphItem"
+    },
+    "component": true
+}

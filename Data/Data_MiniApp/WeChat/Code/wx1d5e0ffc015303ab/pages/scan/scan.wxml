@@ -1,0 +1,5 @@
+<view>
+    <about-location authAgainText="您的地理位置信息将用于接近大红包" bind:__l="__l" bind:location_colse="__e" bind:location_iknow="__e" class="vue-ref" data-event-opts="{{[ [ '^location_colse',[ ['location_colse'] ] ],[ '^location_iknow',[ ['location_iknow'] ] ] ]}}" data-ref="compslocation" isMustHasLocation="{{isMustHasLocation}}" vueId="ce9a8ac0-1"></about-location>
+    <privacy bind:__l="__l" bind:unLoadPrivacy="__e" data-event-opts="{{[ [ '^unLoadPrivacy',[ ['unLoadPrivacy'] ] ] ]}}" from="scan" vueId="ce9a8ac0-2" wx:if="{{isShowPrivacy}}"></privacy>
+    <come-again-pup activationType="{{activationType}}" bind:__l="__l" bind:acitvation="__e" bind:updateActivationType="__e" class="vue-ref" data-event-opts="{{[ [ '^updateActivationType',[ [ '__set_sync',['$0','activationType','$event'],[''] ] ] ],[ '^updateActivationType',[ [ '__set_sync',['$0','activationType','$event'],[''] ] ] ],[ '^acitvation',[ ['acitvation'] ] ] ]}}" data-ref="comeAgainPupRef" vueId="ce9a8ac0-3"></come-again-pup>
+</view>

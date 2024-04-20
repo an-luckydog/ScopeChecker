@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "适用门店",
+    "navigationBarTitleText": "适用门店",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

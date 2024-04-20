@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "任务中心",
+    "navigationBarTitleText": "任务中心",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

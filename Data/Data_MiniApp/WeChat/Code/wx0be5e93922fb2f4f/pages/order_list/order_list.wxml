@@ -1,0 +1,142 @@
+<view>
+    <view class="order-tab pt-header-24">
+        <view class="tcont" wx:for="{{tabArr}}" wx:key="index">
+            <view bindtap="tabClcik" class="fs34 tit navbar__item {{activeIndex==index?'active':''}}" id="{{index}}"> {{item.title}} <view style="text-align:center; padding-top: 6rpx; font-size: 0">
+                    <text class="button-active {{activeIndex==index?'active':''}}"></text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="no-img-box" wx:if="{{!orderListFlg}}">
+        <view>
+            <image class="bg-no-order" src="{{imgUrl}}/info/order1.png"></image>
+            <view class="fs28 caaa">您还没有订单哦!</view>
+            <view bindtap="toIndex" class="btn"> 扫码下单 </view>
+        </view>
+    </view>
+    <view class="has-order" wx:if="{{orderListFlg}}">
+        <swiper bindanimationfinish="animationFinish" current="{{activeIndex}}" duration="{{duration}}">
+            <swiper-item wx:for="{{categoryData}}" wx:key="index">
+                <scroll bind:more="more" bind:refresh="refresh" emptyShow="{{item.emptyShow}}" end="{{item.end}}" hasTop="{{true}}" listCount="{{item.listData.length}}" requesting="{{item.requesting}}" topSize="{{80}}">
+                    <view class="cells">
+                        <view class="order-list-box" wx:for="{{item.listData}}" wx:key="*this">
+                            <view>
+                                <view class="order-title">
+                                    <view class="order-shop-name">{{item.storeName}}</view>
+                                    <view class="order-Ing jin-xing-zhong fs24 cfff" wx:if="{{item.status==1}}">进行中</view>
+                                    <view class="order-Ing fs24 cfff yi-chao-shi" wx:if="{{item.status==2}}">已超时</view>
+                                    <view class="order-Ing wei-zhi-fu fs24 cfff" wx:if="{{item.status==0}}">未支付</view>
+                                </view>
+                                <view bindtap="toDetailFuc" class="order-shop-detail" id="{{item.id}}">
+                                    <view class="shop-left">
+                                        <image src="{{imgUrl}}/info/order02.png"></image>
+                                    </view>
+                                    <view class="shop-detail">
+                                        <view class="det01">
+                                            <view class="det02">
+                                                <view>
+                                                    <image src="{{imgUrl}}/info/order01.png"></image>
+                                                    <text>柜号：</text>
+                                                </view>
+                                                <view>{{item.lockName}}</view>
+                                            </view>
+                                        </view>
+                                        <view class="det01">
+                                            <view class="det02">
+                                                <view>
+                                                    <image src="{{imgUrl}}/info/order03.png"></image>
+                                                    <text>使用时间：</text>
+                                                </view>
+                                                <view style="display: block">
+                                                    <view>{{item.startTime}} 至</view>
+                                                    <view>{{item.endTime}}</view>
+                                                </view>
+                                            </view>
+                                        </view>
+                                        <view class="det01">
+                                            <view class="det02">
+                                                <view>
+                                                    <image src="{{imgUrl}}/info/order04.png"></image>
+                                                    <text>柜体地址：</text>
+                                                </view>
+                                                <view>{{item.address}}</view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                                <view class="order-money">
+                                    <view class="money">
+                                        <text class="fs28">¥</text> {{item.amount}}</view>
+                                    <view class="btn_view">
+                                        <view bindtap="bindChangeFuc" class="qr-code" data-item="{{item}}" data-status="11" wx:if="{{item.status==1}}">临时开锁</view>
+                                        <view bindtap="bindChangeFuc" class="order-btn jin-xing-zhong" data-item="{{item}}" data-status="{{item.status}}" wx:if="{{item.status==1}}">结束订单</view>
+                                        <view bindtap="bindChangeFuc" class="order-btn wei-zhi-fu" data-item="{{item}}" data-status="{{item.status}}" wx:if="{{item.status==2}}">续费</view>
+                                        <view bindtap="bindChangeFuc" class="order-btn wei-zhi-fu" data-item="{{item}}" data-status="{{item.status}}" wx:if="{{item.status==0}}">去支付</view>
+                                    </view>
+                                    <view class="order-btn wei-zhi-fu" wx:if="{{item.status==7}}">已取消</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </scroll>
+            </swiper-item>
+        </swiper>
+    </view>
+</view>
+<view class="wh-cabinet-dialog-mask" hidden="{{!qrCodeDialog}}">
+    <view class="calc-code">
+        <view class="top">
+            <view>
+                <view class="fs40 cfff">{{cabinetInfo.storeName||'-'}}</view>
+            </view>
+        </view>
+        <view class="calc-box">
+            <view class="qr-code-dialog">
+                <view class="fs24 c2a pb20">请将二维码对准柜体扫码器</view>
+                <view class="fs24 c2a pb20" wx:if="{{errorDialog}}">完成后订单将作废</view>
+                <view class="qrcode-img">
+                    <canvas bindlongtap="save" canvasId="canvas" class="canvas" style="width:{{code_w}}px; height:{{code_w}}px;"></canvas>
+                </view>
+                <view class="fs24 c2a pt20 gui-num">{{cabinetInfo.lockName||'-'}}</view>
+            </view>
+        </view>
+        <view bindtap="cloneOpenLock" class="btn-alert" wx:if="{{!errorDialog}}">
+            <view class="fs34 cred" style="width: 100%;border-right:0px solid #000">关闭</view>
+        </view>
+        <view bindtap="cloneOpenLock" class="btn-alert" wx:if="{{errorDialog}}">
+            <view class="fs34 cred" style="width: 100%;border-right:0px solid #000">物品已取，结束订单</view>
+        </view>
+    </view>
+</view>
+<view class="wh-cabinet-dialog-mask" wx:if="{{openLock}}">
+    <view class="openQrcode">
+        <view class="fs36 c333 pb39">结束订单</view>
+        <view class="fs32 c333 pb39">点击“确认”会弹开柜门，并且结束您的订单，释放您的柜体，请您务必在柜体前进行操作！避免物品丢失！</view>
+        <view class="btn-open">
+            <view bindtap="sureOpenLock" class="sure-open">确定</view>
+            <view bindtap="cloneOpenLock2" class="clean-open">取消</view>
+        </view>
+    </view>
+</view>
+<view class="customer">
+    <view class="customer-service">
+        <view bindtap="telPhone" class="tel-service fs34">
+            <view>电话客服</view>
+        </view>
+        <view class="scal-box" wx:if="{{orderListFlg&&activeIndex==0}}">
+            <view bindtap="goScanCodeFunc" class="scal">
+                <text>扫码下单</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="wh-cabinet-dialog-mask" wx:if="{{telPhoneDig}}">
+    <view class="openQrcode">
+        <view class="fs36 c333 pb39">客服电话</view>
+        <view class="fs28 c666 pb39">400-0027-287</view>
+        <view class="btn-open">
+            <view bindtap="telPhoneClear" class="clean-open">取消</view>
+            <view bindtap="phoneCall" class="sure-open" data-reply-phone="400-0027-287">拨打</view>
+        </view>
+    </view>
+</view>

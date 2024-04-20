@@ -1,0 +1,14 @@
+{
+    "component": true,
+    "usingComponents": {
+        "ui-label": "../../limo-ui/ui-label/index",
+        "ui-member-price-tag-v2": "../../limo-ui/ui-member-price-tag-v2/index",
+        "ui-member-price-tag-v3": "../../limo-ui/ui-member-price-tag-v3/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "ui-member-price-tag-v3": "view",
+        "lottery": "view"
+    }
+}

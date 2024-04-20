@@ -1,0 +1,9 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-userinfo": "../../components/cy-userinfo/index",
+        "mp-html": "../../miniprogram_npm/mp-html/index"
+    }
+}

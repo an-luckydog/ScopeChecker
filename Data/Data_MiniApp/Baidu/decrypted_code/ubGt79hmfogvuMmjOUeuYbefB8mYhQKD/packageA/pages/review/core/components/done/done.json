@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "product-comment": "components/product/product",
+        "shop-comment": "components/shop/shop",
+        "express-comment": "components/express/express",
+        "install-comment": "components/install/install",
+        "no-more-comment": "components/no-more/no-more",
+        "empty-comment": "components/empty/empty"
+    }
+}

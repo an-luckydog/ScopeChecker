@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "订单",
+    "usingComponents": {
+        "cy-loading": "../../components/cy-loading/index"
+    }
+}

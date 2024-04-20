@@ -1,0 +1,12 @@
+<view class="progress-bar flex-xc-yc data-v-293873f0">
+    <view class="minNum data-v-293873f0" style="{{'color:'+color+';'}}">{{minNum}}</view>
+    <view class="curNum-box data-v-293873f0">
+        <view class="curNum data-v-293873f0" style="{{'left:'+posLeft+'%'+';'}}">
+            <text class="{{['data-v-293873f0',posLeft<-70?'textRight':'']}}">
+                <block wx:if="{{posLeft==-100}}"></block>
+                <block wx:else>{{''+curNum+''}}</block>
+            </text>
+        </view>
+    </view>
+    <view class="maxNum data-v-293873f0" style="{{'color:'+color+';'}}">{{maxNum}}</view>
+</view>

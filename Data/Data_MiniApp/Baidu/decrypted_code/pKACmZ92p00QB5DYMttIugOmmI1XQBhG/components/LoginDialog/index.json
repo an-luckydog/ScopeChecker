@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"bili-login":"../../npm/@bilibili/taro-login/dist/weapp/components/bili-login-entry/index","dialog":"../Dialog/index"}}

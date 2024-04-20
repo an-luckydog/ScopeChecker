@@ -1,0 +1,4 @@
+<view class="{{[ (selectable?'_select ':'')+'_root' ]}}" id="_root" style="{{containerStyle}}">
+    <slot wx:if="{{!nodes[0]}}"></slot>
+    <node bind:__l="__l" childs="{{nodes}}" name="span" opts="{{[lazyLoad,loadingImg,errorImg,showImgMenu,selectable]}}" vueId="63e2b14f-1" wx:else></node>
+</view>

@@ -1,0 +1,15 @@
+{
+    "component": true,
+    "usingComponents": {
+        "limo-layout": "./layout/index",
+        "loading": "../../../../miniprogram_npm/@limo/container/components/loading/index",
+        "toast": "../../../../miniprogram_npm/@limo/container/components/toast/index",
+        "modal": "../../../../miniprogram_npm/@limo/container/components/modal/index",
+        "action-sheet": "../../../../miniprogram_npm/@limo/container/components/action-sheet/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

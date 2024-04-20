@@ -1,0 +1,6 @@
+{
+    "components": true,
+    "usingComponents": {
+        "optimize-image":"/components/optimize-image/optimize-image"
+    }
+}

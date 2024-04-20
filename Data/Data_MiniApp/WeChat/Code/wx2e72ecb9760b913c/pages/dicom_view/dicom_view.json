@@ -1,0 +1,7 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "医学影像文件查看",
+    "navigationBarTextStyle": "black",
+    "styleIsolation": "apply-shared",
+    "usingComponents": {}
+}

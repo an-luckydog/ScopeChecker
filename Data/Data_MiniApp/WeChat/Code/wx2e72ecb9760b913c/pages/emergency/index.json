@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "图文急诊",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-userinfo": "../../components/cy-userinfo/index"
+    }
+}

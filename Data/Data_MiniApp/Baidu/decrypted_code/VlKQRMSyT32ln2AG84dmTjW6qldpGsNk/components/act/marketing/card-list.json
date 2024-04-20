@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"card-act-article":"../../search/card-act-article","card-act-ticket":"../../search/card-act-ticket","card-gh-expert":"../../search/card-gh-expert","card-wz-doctor":"../../search/card-wz-doctor","card-hos-item":"../../zyy/hospital-item","card-act-expert":"../WzExpertItem","list-loading":"../../common/list-loading"}}

@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "取件页",
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

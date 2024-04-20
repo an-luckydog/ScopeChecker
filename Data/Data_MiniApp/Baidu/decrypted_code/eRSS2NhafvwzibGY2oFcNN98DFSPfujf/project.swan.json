@@ -1,0 +1,33 @@
+{
+    "appid": 21486171,
+    "compilation-args": {
+        "selected": -2,
+        "common": {
+            "quickPreview": true
+        },
+        "options": [
+            {
+                "text": "wjz/bdxd/order-submit/order-submit",
+                "id": 0,
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "scene": {},
+                    "ext": {},
+                    "single": false,
+                    "singleArgs": null,
+                    "index": "wjz/bdxd/order-submit/order-submit",
+                    "selected": 0,
+                    "isPrefetch": false,
+                    "query": "shopId=32771345&ch=&isFullScreen=true&bdVid=nW0snj64nH64Pj04PWRLrjbzn7tLnH-xnNt1nj0sg1PxPWbvP1bYPjf4rHmL&bd_vid=nW0snj64nH64Pj04PWRLrjbzn7tLnH-xnNt1nj0sg1PxPWbvP1bYPjf4rHmL&dxdPvId=4b534c47-3228-458a-f129-169900039255&sPvId=&zjopen=1&skus=%5B%7B%22salePrice%22%3A%22427%22%2C%22count%22%3A1%2C%22skuId%22%3A%2220175209950%22%2C%22longPrice%22%3A%2242700%22%2C%22packageId%22%3A%2218182000%22%2C%22spuId%22%3A%2220101236986%22%2C%22cpsInfo%22%3A%7B%22sceneValue%22%3A%22148%22%2C%22contentId%22%3A%22%22%2C%22authorId%22%3A%22%22%2C%22position%22%3A%22%22%2C%22ch%22%3A%2210000%22%2C%22sch%22%3A%22800%22%2C%22subSceneValue%22%3A%22ssv_113%22%2C%22cpsType%22%3A%22%22%2C%22contentType%22%3A%22%22%2C%22pageType%22%3A%22%22%2C%22goodsId%22%3A%22%22%2C%22duSid%22%3A%22%22%2C%22keyWords%22%3A%22%22%2C%22zhiboParams%22%3A%22%7B%5C%22zhiboFrom%5C%22%3A%5C%22%5C%22%2C%5C%22zhiboExt%5C%22%3A%7B%5C%22compTargetIdGroup%5C%22%3A%5C%22product_card%5C%22%7D%2C%5C%22zhiboXiaodian%5C%22%3A%5C%22%5C%22%2C%5C%22zhiboSceneValue%5C%22%3A%5C%22%5C%22%2C%5C%22zhiboNid%5C%22%3A%5C%22%5C%22%7D%22%2C%22dxdPvId%22%3A%224b534c47-853d-4aef-d853-169900089392%22%2C%22expId%22%3A%22%22%2C%22fromHost%22%3A%22%22%2C%22mid%22%3A%22%22%2C%22channelValue%22%3A%22%22%2C%22pageId%22%3A0%2C%22widgetInfoId%22%3A%22%22%2C%22marketingType%22%3A%22%22%2C%22extParams%22%3A%22%7B%7D%22%7D%7D%5D&url=https%3A%2F%2Faisite.wejianzhan.com%2Fsite%2Fwjz0dkj0%2F73fbae81-89bc-483b-8887-656af10064af"
+                }
+            }
+        ],
+        "forceChanged": {}
+    },
+    "preview": {
+        "packageId": 1038340
+    },
+    "publish": {
+        "version": "1.0.348"
+    }
+}

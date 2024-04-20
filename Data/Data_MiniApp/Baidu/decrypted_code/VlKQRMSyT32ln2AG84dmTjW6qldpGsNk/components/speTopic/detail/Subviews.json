@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"advert":"./../../common/advert","statement":"./Statement","recommends":"./../Recommend/index","service-button":"./ServiceButton","related-entries":"./RelatedEntries","float-operation":"./../../common/floatOperation"}}

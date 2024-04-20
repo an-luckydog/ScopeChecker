@@ -1,0 +1,1 @@
+{"navigationStyle":"custom","navigationBarTextStyle":"white","usingComponents":{"med-container":"../../../components/common/container","b-top-bar":"../../../components/common/topbar","c-icon":"../../../mars_modules/@baidu/med-ui/dist/swan/components/Icon/Icon","insurance-company":"../../../components/bx/InsuranceCompany","login-btn":"../../../components/common/login-btn"}}

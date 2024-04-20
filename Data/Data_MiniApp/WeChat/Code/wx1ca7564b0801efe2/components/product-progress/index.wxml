@@ -1,0 +1,10 @@
+<view class="order-now" wx:if="{{processProgress.isOrderNow}}">下单后立即制作</view>
+<view class="product-progress" wx:elif="{{processProgress.process}}">
+    <view class="progress-wrapper">
+        <rich-text class="progress-text" nodes="{{inlineText}}" wx:if="{{inlineText}}"></rich-text>
+        <view class="progress-bar" style="{{inlineStyle}}"></view>
+    </view>
+</view>
+<view class="text-info-area" wx:elif="{{processText}}">
+    <text decode="{{true}}" space="nbsp" style="{{item.style}}" wx:for="{{processText}}" wx:key="index">{{item.text}}</text>
+</view>

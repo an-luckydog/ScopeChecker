@@ -1,0 +1,10 @@
+<view class="avtive-red-wait flex-xc-yc">
+    <view>
+        <red-pack-money-scan-wait-item bind:__l="__l" bind:toWaitWinningRecordRule="__e" data-event-opts="{{[ [ '^toWaitWinningRecordRule',[ ['toWaitWinningRecordRule'] ] ] ]}}" sqwaExpireTime="{{sqwaExpireTime}}" sqwaMoney="{{sqwaMoney}}" vueId="38a0f775-1"></red-pack-money-scan-wait-item>
+        <view bindtap="__e" class="avtive-red-wait-but" data-event-opts="{{[ [ 'tap',[ [ 'toScan',['$event'] ] ] ] ]}}">扫码激活</view>
+        <view bindtap="__e" class="avtive-red-wait-msg" data-event-opts="{{[ [ 'tap',[ [ 'toWaitWinningRecordRule',['$event'] ] ] ] ]}}">激活规则 ></view>
+        <view class="close">
+            <image bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'handleCloseredpackPup',['$event'] ] ] ] ]}}" src="{{img120Th+'index/daijihuoclose.png'}}"></image>
+        </view>
+    </view>
+</view>

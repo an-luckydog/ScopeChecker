@@ -1,0 +1,41 @@
+{
+    "appid": "18763417",
+    "compilation-args": {
+        "selected": -3,
+        "common": {
+            "babelSetting": {
+                "ignore": []
+            },
+            "enhance": true,
+            "ignorePrefixCss": false,
+            "quickPreview": true
+        },
+        "options": [],
+        "forceChanged": {}
+    },
+    "host": "baiduboxapp",
+    "projectname": "啄木鸟家庭维修",
+    "setting": {
+        "autoAudits": false,
+        "urlCheck": false
+    },
+    "condition": {
+        "miniprogram": {
+            "current": 0,
+            "list": [
+                {
+                    "name": "",
+                    "path": "",
+                    "query": "",
+                    "id": 0
+                }
+            ]
+        }
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.500.16",
+            "extensionJsVersion": "1.21.2"
+        }
+    }
+}

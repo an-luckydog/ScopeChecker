@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "vcode-slide": "slide/slide",
+        "vcode-spin": "spin/spin"
+    }
+}

@@ -1,0 +1,21 @@
+<view wx:if="{{loaded}}">
+    <none-page bind:__l="__l" src="common/none/ic_no_report.png" text="暂无检验报告" vueId="629e528e-1" wx:if="{{noData}}"></none-page>
+    <view class="content" wx:else>
+        <view class="time-tree" wx:for="{{$root.l0}}" wx:for-index="date" wx:key="date">
+            <view class="tit">{{''+item.f0+''}}<view class="small">{{item.f1}}</view>
+            </view>
+            <view class="body">
+                <view bindtap="__e" class="card-source" data-event-opts="{{[ [ 'tap',[ [ 'goReportPage',['$event'] ] ] ] ]}}" data-info="{{it}}" wx:for="{{item[$orig]}}" wx:for-item="it" wx:key="index">
+                    <view class="icon" style="width:70rpx;height:70rpx;">
+                        <image src="{{imgUrl+'pages/health/ic_jianyan.png'}}" wx:if="{{it.checkType==='inspection'}}"></image>
+                        <image src="{{imgUrl+'pages/health/ic_yinxiang.png'}}" wx:if="{{it.checkType==='pacs'}}"></image>
+                    </view>
+                    <view class="info">
+                        <view class="h4">{{it.itemName}}</view>
+                        <view class="small" style="width:380rpx;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">{{''+(it.netHospitalName||'--')+' | '+(it.netDeptName||'--')}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

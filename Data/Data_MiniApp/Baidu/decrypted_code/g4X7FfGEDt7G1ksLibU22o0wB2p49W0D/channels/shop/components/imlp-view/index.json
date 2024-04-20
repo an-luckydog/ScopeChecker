@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "csdk": "dynamicLib://bd_im_sdk/csdk"
+    }
+}

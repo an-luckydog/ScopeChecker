@@ -1,0 +1,76 @@
+<import src="../../components/price/index.wxml"></import>
+<import src="../../components/tag/index.wxml"></import>
+<view class="cart-list {{hasTabBar?'':'no-tab'}} {{cartStyles.position===2?'float':''}}">
+    <view class="tips" style="{{cartTipBg}}" wx:if="{{cartTips&&cartTips.length&&cartStyles.tipSwitch}}">
+        <view class="cart-tips">
+            <view class="tips-txt" style="{{cartTipsStyles[item.style]}}" wx:for="{{cartTips}}" wx:key="index">{{item.msg}}</view>
+        </view>
+    </view>
+    <view class="header">
+        <view class="header-txt">已选{{dishCount}}件商品</view>
+        <view catch:tap="onDelete" class="clear-txt">
+            <view class="base-icon icon-lajitong"></view>清空已选</view>
+    </view>
+    <view class="gap-line" wx:if="{{dishSectionList&&dishSectionList.length&&!dishSectionList[0].discountType}}"></view>
+    <scroll-view enhanced scrollY class="scroll-list" showScrollbar="{{false}}">
+        <view class="section-list">
+            <view class="section-item {{item.discountType?'discount':''}}" wx:for="{{dishSectionList}}" wx:key="index">
+                <block wx:if="{{item.discountType}}">
+                    <view class="c-item gap-header"></view>
+                    <view class="c-item section-header">
+                        <view class="s-item" wx:if="{{item.tagInfo}}">
+                            <template is="tag" data="{{...item.tagInfo}}"></template>
+                        </view>
+                        <view class="s-item tips-txt" style="{{cartTipsStyles[item.style]}}" wx:for="{{item.tips}}" wx:key="index">{{item.msg}}</view>
+                    </view>
+                    <view class="c-item section-header-gap-line"></view>
+                </block>
+                <block wx:for="{{item.dishItems}}" wx:for-index="idx" wx:for-item="dish" wx:key="idx">
+                    <view class="c-item dish-item" wx:if="{{dish.count>0}}">
+                        <view class="d-item pic-field">
+                            <image class="pic" src="{{dish.pic||'https://p0.meituan.net/scarlett/ca45859124838c068622a75a818b064a1640.jpg'}}"></image>
+                        </view>
+                        <view class="d-item info">
+                            <view class="info-top">
+                                <view class="title-field">
+                                    <view class="t-item title">{{dish.name}}</view>
+                                    <view class="t-item tags">
+                                        <template is="tag" data="{{...tag}}" wx:if="{{dish.tags&&dish.tags.length}}" wx:for="{{dish.tags}}" wx:for-item="tag" wx:key="index"></template>
+                                    </view>
+                                </view>
+                                <view catch:tap="onDesc" class="desc" data-index="{{idx}}" data-section="{{index}}" wx:if="{{dish.desc}}">
+                                    <view class="desc-txt">{{dish.desc}}</view>
+                                    <view class="base-icon icon-jiantou-you"></view>
+                                </view>
+                                <view catch:tap="onDesc" class="desc" data-index="{{idx}}" data-section="{{index}}" wx:if="{{dish.displayDishRemark}}">
+                                    <view class="desc-txt">{{dish.displayDishRemark}}</view>
+                                    <view class="base-icon icon-jiantou-you"></view>
+                                </view>
+                            </view>
+                            <view class="price-line">
+                                <template is="price" data="{{currentPrice:dish.currentPrice,originalPrice:dish.originalPrice,size:'middle'}}"></template>
+                                <view class="campaign-tags" wx:if="{{dish.campaignTags&&dish.campaignTags.length}}">
+                                    <template is="tag" data="{{...item,size:'middle'}}" wx:for="{{dish.campaignTags}}" wx:key="index"></template>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="op-field">
+                            <view catch:tap="onReduce" class="th" data-index="{{idx}}" data-section="{{index}}">
+                                <view class="base-icon icon-jian"></view>
+                            </view>
+                            <view catch:tap="onCount" class="th-c" data-index="{{idx}}" data-section="{{index}}">
+                                <view class="op-count-content">{{dish.count}}</view>
+                            </view>
+                            <view catch:tap="onAdd" class="th" data-index="{{idx}}" data-section="{{index}}">
+                                <view class="base-icon icon-jia"></view>
+                            </view>
+                        </view>
+                    </view>
+                    <cart-dish-extend data="{{dish.plugins['cart-dish-extend']}}" pluginId="cart-dish-extend" wx:if="{{dish.plugins&&dish.plugins['cart-dish-extend']}}"></cart-dish-extend>
+                </block>
+                <view class="c-item gap-bottom" wx:if="{{item.discountType}}"></view>
+            </view>
+            <view class="section-item-empty"></view>
+        </view>
+    </scroll-view>
+</view>

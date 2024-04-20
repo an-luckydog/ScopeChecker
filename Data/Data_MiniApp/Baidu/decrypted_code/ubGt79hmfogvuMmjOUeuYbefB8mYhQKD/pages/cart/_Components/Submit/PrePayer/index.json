@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ui-popup": "/pages/cart/_Components/UI/Popup/index",
+    "ui-icon":"/pages/cart/_Components/UI/Icon/index"
+  }
+}

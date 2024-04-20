@@ -1,0 +1,73 @@
+<view bindmouseleave="__e" class="uni-calendar" data-event-opts="{{[ [ 'mouseleave',[ [ 'leaveCale',['$event'] ] ] ] ]}}">
+    <view bindtap="__e" class="{{['uni-calendar__mask',aniMaskShow?'uni-calendar--mask-show':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'maskClick',['$event'] ] ] ] ]}}" wx:if="{{!insert&&show}}"></view>
+    <view class="{{['uni-calendar__content',!insert?'uni-calendar--fixed':'',aniMaskShow?'uni-calendar--ani-show':'',aniMaskShow?'uni-calendar__content-mobile':'']}}" wx:if="{{insert||show}}">
+        <view class="{{['uni-calendar__header',!insert?'uni-calendar__header-mobile':'']}}">
+            <view catchtap="__e" class="uni-calendar__header-btn-box" data-event-opts="{{[ [ 'tap',[ [ 'changeMonth',['pre'] ] ] ] ]}}">
+                <view class="uni-calendar__header-btn uni-calendar--left"></view>
+            </view>
+            <picker bindchange="__e" data-event-opts="{{[ [ 'change',[ [ 'bindDateChange',['$event'] ] ] ] ]}}" fields="month" mode="date" value="{{date}}">
+                <text class="uni-calendar__header-text">{{(nowDate.year||'')+yearText+(nowDate.month||'')+monthText}}</text>
+            </picker>
+            <view catchtap="__e" class="uni-calendar__header-btn-box" data-event-opts="{{[ [ 'tap',[ [ 'changeMonth',['next'] ] ] ] ]}}">
+                <view class="uni-calendar__header-btn uni-calendar--right"></view>
+            </view>
+            <view bindtap="__e" class="dialog-close" data-event-opts="{{[ [ 'tap',[ [ 'close',['$event'] ] ] ] ]}}" wx:if="{{!insert}}">
+                <view class="dialog-close-plus" data-id="close"></view>
+                <view class="dialog-close-plus dialog-close-rotate" data-id="close"></view>
+            </view>
+        </view>
+        <view class="uni-calendar__box">
+            <view class="uni-calendar__box-bg" wx:if="{{showMonth}}">
+                <text class="uni-calendar__box-bg-text">{{nowDate.month}}</text>
+            </view>
+            <view class="uni-calendar__weeks" style="padding-bottom:7px;">
+                <view class="uni-calendar__weeks-day">
+                    <text class="uni-calendar__weeks-day-text">{{SUNText}}</text>
+                </view>
+                <view class="uni-calendar__weeks-day">
+                    <text class="uni-calendar__weeks-day-text">{{MONText}}</text>
+                </view>
+                <view class="uni-calendar__weeks-day">
+                    <text class="uni-calendar__weeks-day-text">{{TUEText}}</text>
+                </view>
+                <view class="uni-calendar__weeks-day">
+                    <text class="uni-calendar__weeks-day-text">{{WEDText}}</text>
+                </view>
+                <view class="uni-calendar__weeks-day">
+                    <text class="uni-calendar__weeks-day-text">{{THUText}}</text>
+                </view>
+                <view class="uni-calendar__weeks-day">
+                    <text class="uni-calendar__weeks-day-text">{{FRIText}}</text>
+                </view>
+                <view class="uni-calendar__weeks-day">
+                    <text class="uni-calendar__weeks-day-text">{{SATText}}</text>
+                </view>
+            </view>
+            <view class="uni-calendar__weeks" wx:for="{{weeks}}" wx:for-index="weekIndex" wx:key="weekIndex">
+                <view class="uni-calendar__weeks-item" wx:for="{{item}}" wx:for-index="weeksIndex" wx:for-item="weeks" wx:key="weeksIndex">
+                    <calendar-item bind:__l="__l" bind:change="__e" bind:handleMouse="__e" calendar="{{calendar}}" checkHover="{{range}}" class="uni-calendar-item--hook" data-event-opts="{{[ [ '^change',[ ['choiceDate'] ] ],[ '^handleMouse',[ ['handleMouse'] ] ] ]}}" selected="{{selected}}" vueId="{{'031a06b8-1-'+weekIndex+'-'+weeksIndex}}" weeks="{{weeks}}"></calendar-item>
+                </view>
+            </view>
+        </view>
+        <view class="uni-date-changed uni-calendar--fixed-top" style="padding:0 80px;" wx:if="{{!insert&&!range&&hasTime}}">
+            <view class="uni-date-changed--time-date">{{tempSingleDate?tempSingleDate:selectDateText}}</view>
+            <time-picker bind:__l="__l" bind:input="__e" border="{{false}}" class="time-picker-style" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '','time','$event',[] ] ] ] ] ]}}" disabled="{{!tempSingleDate}}" end="{{timepickerEndTime}}" hideSecond="{{hideSecond}}" start="{{timepickerStartTime}}" type="time" value="{{time}}" vueId="031a06b8-2"></time-picker>
+        </view>
+        <view class="uni-date-changed uni-calendar--fixed-top" wx:if="{{!insert&&range&&hasTime}}">
+            <view class="uni-date-changed--time-start">
+                <view class="uni-date-changed--time-date">{{(tempRange.before?tempRange.before:startDateText)+''}}</view>
+                <time-picker bind:__l="__l" bind:input="__e" border="{{false}}" class="time-picker-style" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','startTime','$event',[] ],['timeRange'] ] ] ] ]}}" disabled="{{!tempRange.before}}" hideSecond="{{hideSecond}}" start="{{timepickerStartTime}}" type="time" value="{{timeRange.startTime}}" vueId="031a06b8-3"></time-picker>
+            </view>
+            <view style="line-height:50px;">
+                <uni-icons bind:__l="__l" color="#999" type="arrowthinright" vueId="031a06b8-4"></uni-icons>
+            </view>
+            <view class="uni-date-changed--time-end">
+                <view class="uni-date-changed--time-date">{{tempRange.after?tempRange.after:endDateText}}</view>
+                <time-picker bind:__l="__l" bind:input="__e" border="{{false}}" class="time-picker-style" data-event-opts="{{[ [ '^input',[ [ '__set_model',[ '$0','endTime','$event',[] ],['timeRange'] ] ] ] ]}}" disabled="{{!tempRange.after}}" end="{{timepickerEndTime}}" hideSecond="{{hideSecond}}" type="time" value="{{timeRange.endTime}}" vueId="031a06b8-5"></time-picker>
+            </view>
+        </view>
+        <view class="uni-date-changed uni-date-btn--ok" wx:if="{{!insert}}">
+            <view bindtap="__e" class="uni-datetime-picker--btn" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}">{{confirmText}}</view>
+        </view>
+    </view>
+</view>

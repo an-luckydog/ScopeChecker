@@ -1,0 +1,20 @@
+{
+  "/thirdlogin/ajax/auth": {
+    "needAccessToken": false
+  },
+  "/cocktail-node-mtdp/api/echo": {
+    "needAccessToken": false
+  },
+  "/an/gear/dpmapp/api/readLionConfig/listFeeds": {
+    "needAccessToken": false
+  },
+  "/an/gear/dpmapp/api/readLionConfig/loadCity": {
+    "needAccessToken": false
+  },
+  "/discovery/api/getFeedList": {
+    "needAccessToken": false
+  },
+  "/an/gear/dpmapp/api/readLionConfig/queryIndexTabIcon": {
+    "needAccessToken": false
+  }
+}

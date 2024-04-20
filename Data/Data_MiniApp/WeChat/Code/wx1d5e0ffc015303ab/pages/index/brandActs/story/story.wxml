@@ -1,0 +1,11 @@
+<view class="content">
+    <view class="storybox">
+        <image bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'toStory',['lucky'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'/hb2020/story_lucky.png'}}"></image>
+        <image mode="widthFix" src="{{imgUrl+'/hb2020/story_line_1.png'}}"></image>
+        <image bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'toStory',['august'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'/hb2020/story_august.png'}}"></image>
+        <image mode="widthFix" src="{{imgUrl+'/hb2020/story_line_2.png'}}"></image>
+        <image bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'toStory',['weissbier'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'/hb2020/story_weissbier.png'}}"></image>
+        <image mode="widthFix" src="{{imgUrl+'/hb2020/story_line_3.png'}}"></image>
+        <image bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ 'toStory',['stout'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'/hb2020/story_stout.png'}}"></image>
+    </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="yellow-strip {{yellowStripClass}}" wx:if="{{excutedText&&excutedText.length||memberTexts.length}}">
+    <view class="yellow-strip-left" wx:if="{{excutedText&&excutedText.length}}">
+        <view class="promotion-text ellipsis">
+            <view class="{{item.type}}" wx:for="{{excutedText}}" wx:key="index">{{item.text}}</view>
+        </view>
+    </view>
+    <view class="svip-entry" wx:if="{{svipTextView.length}}">
+        <svip-entry richText="{{svipTextView}}" svipCardDetailUrl="{{svipCardDetailUrlView}}"></svip-entry>
+    </view>
+    <member-label catch:collectCoupon="collectCouponAction" customClass="{{memberLabelCustomClass}}" labelType="{{memberLabelType}}" texts="{{memberTexts}}" wx:elif="{{memberTexts.length&&!isDishDetail}}"></member-label>
+</view>

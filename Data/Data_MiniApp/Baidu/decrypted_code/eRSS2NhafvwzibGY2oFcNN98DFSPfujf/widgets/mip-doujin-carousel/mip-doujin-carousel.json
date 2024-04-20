@@ -1,0 +1,9 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "carousel": "/components/carousel/carousel",
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "observe-instance": "/components/observe-instance/observe-instance"
+    }
+}

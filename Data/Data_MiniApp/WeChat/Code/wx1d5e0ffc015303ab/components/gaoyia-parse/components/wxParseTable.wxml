@@ -1,0 +1,3 @@
+<view class="tablebox _div">
+    <rich-text class="{{[node.classStr]}}" nodes="{{nodes}}" style="{{'user-select:'+parseSelect}}"></rich-text>
+</view>

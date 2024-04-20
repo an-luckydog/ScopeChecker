@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"daka-modal":"./daka-modal","tip-modal":"./daka-tipModal","tool-modal":"./daka-toolModal","red-modal":"./daka-redModal","popup-modal":"./daka-popup","exchange-modal":"./daka-exchange","center-tip":"./daka-centerTip","exchange-tip":"./daka-exchange-modal"}}

@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "brick-main": "./brick-main",
+        "brick-middle-goods": "./brick-middle-goods",
+        "brick-banner-goods": "./brick-banner-goods",
+        "brick-text-image": "./brick-text-image",
+        "brick-safety-goods": "./brick-safety-goods"
+    }
+}

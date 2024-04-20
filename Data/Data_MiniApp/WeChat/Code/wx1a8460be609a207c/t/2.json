@@ -1,0 +1,8 @@
+{
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "container": "/@titan/cs/container/index",
+        "tab-bar": "./tab-bar/index"
+    }
+}

@@ -1,0 +1,3 @@
+<view catch:tap="toLogin" class="coupon-layout {{isPadding?'left-right-padding':''}} {{customClass}}">
+    <image class="coupon-image" src="{{imageUrl||loginModeMap[loginMode].loginBg||loginModeMap[2].loginBg}}"></image>
+</view>

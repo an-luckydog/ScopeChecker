@@ -1,0 +1,4 @@
+<view bindtap="__e" class="{{['u-tag','data-v-32a6d858',disabled?'u-disabled':'','u-size-'+size,'u-shape-'+shape,'u-mode-'+mode+'-'+type]}}" data-event-opts="{{[ [ 'tap',[ [ 'clickTag',['$event'] ] ] ] ]}}" style="{{$root.s0}}" wx:if="{{show}}">{{''+text+''}}<view catchtap="__e" class="u-icon-wrap data-v-32a6d858" data-event-opts="{{[ [ 'tap',[ [ '',['$event'] ] ] ] ]}}">
+        <u-icon bind:__l="__l" bind:click="__e" class="u-close-icon data-v-32a6d858" color="{{closeIconColor}}" data-event-opts="{{[ [ '^click',[ ['close'] ] ] ]}}" name="close" size="22" style="{{$root.s1}}" vueId="48533d07-1" wx:if="{{closeable}}"></u-icon>
+    </view>
+</view>

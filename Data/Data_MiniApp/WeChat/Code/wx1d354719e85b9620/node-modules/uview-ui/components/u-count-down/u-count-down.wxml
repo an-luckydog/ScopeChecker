@@ -1,0 +1,18 @@
+<view class="u-countdown data-v-2c643736">
+    <view class="u-countdown-item data-v-2c643736" style="{{$root.s0}}" wx:if="{{showDays&&(hideZeroDay||!hideZeroDay&&d!='00')}}">
+        <view class="u-countdown-time data-v-2c643736" style="{{$root.s1}}">{{''+d+''}}</view>
+    </view>
+    <view class="u-countdown-colon data-v-2c643736" style="{{'font-size:'+separatorSize+'rpx'+';'+'color:'+separatorColor+';'+'padding-bottom:'+(separator=='colon'?'4rpx':0)+';'}}" wx:if="{{showDays&&(hideZeroDay||!hideZeroDay&&d!='00')}}">{{''+(separator=='colon'?':':'天')+''}}</view>
+    <view class="u-countdown-item data-v-2c643736" style="{{$root.s2}}" wx:if="{{showHours}}">
+        <view class="u-countdown-time data-v-2c643736" style="{{'font-size:'+fontSize+'rpx'+';'+'color:'+color+';'}}">{{''+h+''}}</view>
+    </view>
+    <view class="u-countdown-colon data-v-2c643736" style="{{'font-size:'+separatorSize+'rpx'+';'+'color:'+separatorColor+';'+'padding-bottom:'+(separator=='colon'?'4rpx':0)+';'}}" wx:if="{{showHours}}">{{''+(separator=='colon'?':':'时')+''}}</view>
+    <view class="u-countdown-item data-v-2c643736" style="{{$root.s3}}" wx:if="{{showMinutes}}">
+        <view class="u-countdown-time data-v-2c643736" style="{{'font-size:'+fontSize+'rpx'+';'+'color:'+color+';'}}">{{''+i+''}}</view>
+    </view>
+    <view class="u-countdown-colon data-v-2c643736" style="{{'font-size:'+separatorSize+'rpx'+';'+'color:'+separatorColor+';'+'padding-bottom:'+(separator=='colon'?'4rpx':0)+';'}}" wx:if="{{showMinutes}}">{{''+(separator=='colon'?':':'分')+''}}</view>
+    <view class="u-countdown-item data-v-2c643736" style="{{$root.s4}}" wx:if="{{showSeconds}}">
+        <view class="u-countdown-time data-v-2c643736" style="{{'font-size:'+fontSize+'rpx'+';'+'color:'+color+';'}}">{{''+s+''}}</view>
+    </view>
+    <view class="u-countdown-colon data-v-2c643736" style="{{'font-size:'+separatorSize+'rpx'+';'+'color:'+separatorColor+';'+'padding-bottom:'+(separator=='colon'?'4rpx':0)+';'}}" wx:if="{{showSeconds&&separator=='zh'}}">秒</view>
+</view>

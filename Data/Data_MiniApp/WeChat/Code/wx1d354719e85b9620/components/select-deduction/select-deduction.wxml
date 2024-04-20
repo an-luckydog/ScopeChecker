@@ -1,0 +1,18 @@
+<u-popup bind:__l="__l" bind:close="__e" bind:input="__e" borderRadius="32" class="data-v-7126f8e0" data-event-opts="{{[ [ '^close',[ ['close'] ] ],[ '^input',[ [ '__set_model',[ '','visible','$event',[] ] ] ] ] ]}}" maskCustomStyle="{{backgroundColor:'rgba(0, 0, 0, 0.4)'}}" mode="bottom" safeAreaInsetBottom="{{true}}" value="{{visible}}" vueId="3526de02-1" vueSlots="{{['default']}}">
+    <view class="jk-dialog data-v-7126f8e0">
+        <view class="jk-dialog-head data-v-7126f8e0">
+            <view class="jk-dialog-title data-v-7126f8e0">抵扣类型</view>
+            <view class="jk-dialog-close data-v-7126f8e0">
+                <image bindtap="__e" class="close-img data-v-7126f8e0" data-event-opts="{{[ [ 'tap',[ [ 'close',['$event'] ] ] ] ]}}" src="{{images.close}}"></image>
+            </view>
+        </view>
+        <view class="jk-dialog-content data-v-7126f8e0">
+            <view class="select-list data-v-7126f8e0">
+                <view bindtap="__e" class="select-item data-v-7126f8e0" data-event-opts="{{[ [ 'tap',[ [ 'selectDeductionType',['$0'],[ [ ['deduction','',index] ] ] ] ] ] ]}}" wx:for="{{deduction}}" wx:key="index">
+                    <view class="select-name data-v-7126f8e0">{{item.name}}</view>
+                    <image class="select-status data-v-7126f8e0" src="{{item.type==payType?images.check:images.uncheck}}"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</u-popup>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "choose-sku": "/components/mall/modal/choose-sku",
+    "choose-address": "/components/mall/modal/choose-address"
+  }
+}

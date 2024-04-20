@@ -1,0 +1,10 @@
+{
+    "name": "echarts_4_7_0",
+    "publicComponents": {
+        "chart": {
+            "path": "swanComponents/chart/chart",
+            "isSwanComponent": true
+        }
+    },
+    "version": "0.0.1"
+}

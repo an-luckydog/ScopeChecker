@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "引导授权页",
+    "usingComponents": {
+        "cy-authorize": "../../components/cy-authorize/index"
+    }
+}

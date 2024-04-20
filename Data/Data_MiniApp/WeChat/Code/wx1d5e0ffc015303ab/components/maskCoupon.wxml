@@ -1,0 +1,62 @@
+<view class="maskCoupon data-v-1cc05a6b" wx:if="{{isShowCoupon}}">
+    <view class="mask data-v-1cc05a6b"></view>
+    <view class="couponCenter couponCenterOn data-v-1cc05a6b">
+        <view bindtap="__e" class="colse data-v-1cc05a6b" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}">
+            <image class="colseImg data-v-1cc05a6b" mode="widthFix" src="{{imgUrl+'couponColse.png'}}"></image>
+        </view>
+        <view class="center data-v-1cc05a6b">
+            <view class="mainMes mainMesOn data-v-1cc05a6b">
+                <view class="couponOver data-v-1cc05a6b" wx:if="{{couponDetail.couponStatus==1}}">您已有此券请使用后再领取！</view>
+                <view class="couponMes data-v-1cc05a6b">
+                    <block wx:if="{{couponDetail.couponType=='0'}}">
+                        <block wx:if="{{couponDetail.couponPayType=='0'}}">{{''+couponDetail.vpointsFullReduction}}<text class="danwei data-v-1cc05a6b">啤酒花</text>
+                            <text class="danwei data-v-1cc05a6b" style="display:block;">{{'(满'+couponDetail.vpointsFullLimit+'积分可用)'}}</text>
+                        </block>
+                        <block wx:else>
+                            <block wx:if="{{couponDetail.couponPayType=='1'}}">
+                                <text class="danwei data-v-1cc05a6b">¥</text>{{couponDetail.moneyFullReduction+''}}<text class="danwei data-v-1cc05a6b" style="display:block;">{{'(满'+couponDetail.moneyFullLimit+'元可用)'}}</text>
+                            </block>
+                        </block>
+                    </block>
+                    <block wx:else>
+                        <block wx:if="{{couponDetail.couponType=='2'}}">
+                            <block wx:if="{{couponDetail.couponPayType=='0'}}">
+                                <text class="danwei data-v-1cc05a6b">折</text>{{couponDetail.couponDiscount+''}}<text class="danwei data-v-1cc05a6b" style="display:block;">{{'(满'+couponDetail.vpointsFullLimit+'积分可用\n最多减'+couponDetail.discountMaxVpoints+'啤酒花)'}}</text>
+                            </block>
+                            <block wx:else>
+                                <block wx:if="{{couponDetail.couponPayType=='1'}}">{{''+couponDetail.couponDiscount}}<text class="danwei data-v-1cc05a6b">折</text>
+                                    <text class="danwei data-v-1cc05a6b" style="display:block;">{{'(满'+couponDetail.moneyFullLimit+'元可用，最多减'+couponDetail.discountMaxMoney+'元)'}}</text>
+                                </block>
+                            </block>
+                        </block>
+                        <block wx:else>
+                            <block wx:if="{{couponDetail.couponType=='1'}}">
+                                <view class="data-v-1cc05a6b" wx:if="{{couponDetail.couponPayType=='0'}}">{{couponDetail.vpointsDirectReduction}}<text class="danwei data-v-1cc05a6b">啤酒花</text>
+                                </view>
+                                <block wx:else>
+                                    <view class="data-v-1cc05a6b" wx:if="{{couponDetail.couponPayType=='1'}}">
+                                        <text class="danwei data-v-1cc05a6b">¥</text>{{couponDetail.moneyDirectReduction}}</view>
+                                </block>
+                            </block>
+                        </block>
+                    </block>
+                </view>
+                <view class="couponTime data-v-1cc05a6b">{{'使用有效期:\n\t\t\t\t\t'+$root.g0+'-'+$root.g1+''}}</view>
+                <view class="couponType data-v-1cc05a6b" style="margin-top:8rpx;">
+                    <block wx:if="{{couponDetail.couponType==0}}">满减券</block>
+                    <block wx:else>
+                        <block wx:if="{{couponDetail.couponType==1}}">直减券</block>
+                        <block wx:else>
+                            <block wx:if="{{couponDetail.couponType==2}}">折扣券</block>
+                        </block>
+                    </block>
+                </view>
+                <view class="couponName data-v-1cc05a6b">{{''+couponDetail.couponName+''}}</view>
+            </view>
+            <view bindtap="__e" class="couponBtn data-v-1cc05a6b" data-event-opts="{{[ [ 'tap',[ [ 'butHandle',['$0'],['couponDetail.couponStatus'] ] ] ] ]}}">
+                <block wx:if="{{couponDetail.couponStatus==0}}">立即领取</block>
+                <block wx:else>去使用</block>
+            </view>
+        </view>
+    </view>
+</view>

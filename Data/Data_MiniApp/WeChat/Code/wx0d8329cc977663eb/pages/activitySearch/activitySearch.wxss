@@ -1,0 +1,168 @@
+page {
+    background-color: #f6f6f6;
+}
+
+.searchtab {
+    font-size: 26rpx;
+}
+
+.section {
+    background: #ffffff;
+    width: 100%;
+    margin-top: 40rpx;
+    height: 76rpx;
+    line-height: 76rpx;
+    box-shadow: 0 0 20rpx #e7e7e7;
+}
+
+.on {
+    display: block;
+}
+
+.off {
+    display: none;
+}
+
+.icon {
+    width: 40rpx;
+    height: 40rpx;
+    float: left;
+    margin-left: 40rpx;
+    margin-top: 18rpx;
+}
+
+.down {
+    width: 40rpx;
+    height: 40rpx;
+    float: right;
+    margin-right: 60rpx;
+    margin-top: 11px;
+}
+
+.picker {
+    margin-left: 40rpx;
+    float: left;
+}
+
+.actname {
+    display: inline-block;
+    width: 185rpx;
+    float: left;
+    font-size: 26rpx;
+    line-height: 76rpx;
+    margin-left: 20rpx;
+}
+
+radio .wx-radio-input {
+    border-radius: 50%;
+    width: 40rpx;
+    height: 40rpx;
+}
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+    border-radius: 50%;
+    width: 40rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+    font-size: 30rpx;
+    color: #3cb371;
+    background: #3cb371;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.button {
+    width: 670rpx;
+    height: 76rpx;
+    font-size: 28rpx;
+    line-height: 76rpx;
+    color: #ffffff;
+    border: 1px solid #3cb371;
+    box-shadow: 2px #3cb371;
+    background-color: #3cb371;
+    margin-top: 40rpx;
+}
+
+.table {
+    border: 0px solid darkgray;
+}
+
+.tr {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+}
+
+.td {
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+}
+
+.bg-w {
+    background: snow;
+}
+
+.bg-g {
+    background: #dfdfdf;
+}
+
+.th {
+    width: 40%;
+    justify-content: center;
+    background: #3cb371;
+    color: #fff;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+}
+
+.table {
+    border: 0px solid darkgray;
+}
+
+.tr {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+}
+
+.td {
+    width: 40%;
+    justify-content: center;
+    text-align: center;
+}
+
+.bg-w {
+    background: snow;
+}
+
+.bg-g {
+    background: #f3f3f3;
+}
+
+.th {
+    width: 40%;
+    justify-content: center;
+    background: #3cb371;
+    color: #fff;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+}
+
+.joinin {
+    width: 58px;
+    height: 25px;
+    font-size: 20rpx;
+    line-height: 23px;
+    color: #ffffff;
+    border: 1px solid #3cb371;
+    border-radius: 20px;
+    box-shadow: 2px #3cb371;
+    background-color: #3cb371;
+}

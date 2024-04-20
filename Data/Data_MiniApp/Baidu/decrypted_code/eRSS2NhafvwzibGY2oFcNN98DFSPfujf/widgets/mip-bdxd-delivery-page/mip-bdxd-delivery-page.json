@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mip-bdxd-delivery-info": "/widgets/mip-bdxd-delivery-info/mip-bdxd-delivery-info",
+        "mip-bdxd-delivery-context": "/widgets/mip-bdxd-delivery-context/mip-bdxd-delivery-context",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "gap": "/components/gap/gap",
+        "mip-bdxd-order-store-button": "/widgets/mip-bdxd-order-store-button/mip-bdxd-order-store-button",
+        "login": "/components/login/login",
+        "mip-dxdjx-like-list": "/widgets/mip-dxdjx-like-list/mip-dxdjx-like-list"
+    }
+}

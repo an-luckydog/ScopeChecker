@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ad-background": "../adBackground/adBackground"
+  }
+}

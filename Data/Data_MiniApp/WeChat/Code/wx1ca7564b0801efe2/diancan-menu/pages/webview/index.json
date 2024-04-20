@@ -1,0 +1,8 @@
+{
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "加载中",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

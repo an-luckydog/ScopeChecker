@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "captcha-img": "../captcha-img/captcha-img"
+  }
+}

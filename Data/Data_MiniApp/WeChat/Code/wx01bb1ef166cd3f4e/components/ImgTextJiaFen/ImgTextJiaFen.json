@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "KefuSponsorDialog": "/components/KefuSponsorDialog/KefuSponsorDialog",
+        "JiaFenCard": "/components/JiaFenCard/JiaFenCard"
+    }
+}

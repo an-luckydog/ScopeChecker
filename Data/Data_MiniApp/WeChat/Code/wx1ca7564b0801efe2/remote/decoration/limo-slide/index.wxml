@@ -1,0 +1,21 @@
+<view class="limo-foot-ad-layout" wx:if="{{imgList&&imgList.length>0}}">
+    <midas-report bind:moduleEvent="moduleEvent" moduleId="{{advId}}">
+        <swiper autoplay="{{imgList&&imgList.length>1&&autoplay}}" bindchange="swiperSwitchChange" circular="{{imgList&&imgList.length>1&&circular}}" class="limo-footer-swiper" current="{{current}}" duration="{{duration}}" interval="{{bannerInterval*1000}}" style="height:{{heightImg}}rpx;" wx:if="{{imgList&&imgList.length>1}}">
+            <swiper-item class="limo-footer-swiper-item" style="width: 100%" wx:for="{{imgList}}" wx:key="imgUrl">
+                <image binderror="onImageError" bindload="onImageLoad" bindtap="redirectTo" class="limo-footer-swiper-image" data-ad-item="{{item.redirectUrl}}" data-index="{{index}}" mode="{{imgMode}}" showMenuByLongpress="true" src="{{item.imgUrl}}" style="height:{{heightImg}}rpx; {{compStyle}}"></image>
+            </swiper-item>
+        </swiper>
+        <view class="limo-footer-swiper-item" style="{{compStyle}}" wx:if="{{imgList&&imgList.length===1}}" wx:for="{{imgList}}" wx:key="imgUrl">
+            <image binderror="onImageError" bindload="onImageLoad" bindtap="redirectTo" class="limo-footer-swiper-image limo-footer-swiper-image-block" data-ad-item="{{item.redirectUrl}}" data-index="{{index}}" mode="{{imgMode}}" showMenuByLongpress="true" src="{{item.imgUrl}}" style="height:{{heightImg}}rpx;{{compStyle}}"></image>
+        </view>
+        <view class="limo-dot-layout" wx:if="{{imgList.length>1}}">
+            <view class="limo-dot {{index===currentIndex?'limo-active':''}}" wx:for="{{imgList}}" wx:key="imgUrl"></view>
+        </view>
+    </midas-report>
+</view>
+<view class="limo-default-layout" style="height:{{heightImg}}rpx;{{compStyle}}" wx:else>
+    <image class="limo-default-image {{!defaultImgUrl&&'limo-default-img-pic'}}" src="{{defaultImgUrl}}"></image>
+    <view class="limo-dot-layout">
+        <view class="limo-dot {{index===0?'limo-active':''}}" wx:for="{{[1,2,3,4]}}" wx:key="index"></view>
+    </view>
+</view>

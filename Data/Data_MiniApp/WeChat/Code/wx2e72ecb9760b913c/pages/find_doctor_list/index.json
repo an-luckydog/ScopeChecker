@@ -1,0 +1,18 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "找医生",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "doctor-search": "./components/doctor_search/index",
+        "cy-search": "/components/cy-search/index",
+        "doctor-card": "/components/doctor-card/index",
+        "intellect-diagnose": "../../components/intellect-diagnose/index",
+        "try-search": "./components/try_search/index",
+        "doctor-filter": "./components/filter/filter",
+        "polymerization-card": "./components/polymerization_card/index",
+        "psychological-counseling-banner": "../../components/psychological-counseling-banner/index",
+        "empty": "../../components/empty/index",
+        "ranking-list-card": "./components/ranking_list_card/index",
+        "nps-card": "../../components/nps-card/index"
+    }
+}

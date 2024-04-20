@@ -1,0 +1,29 @@
+{
+    "appid": "18431756",
+    "compilation-args": {
+        "common": {
+            "babelSetting": {
+                "ignore": []
+            },
+            "enhance": true,
+            "imgCompress": true
+        }
+    },
+    "host": "baiduboxapp",
+    "preview": {
+        "packageId": 640698
+    },
+    "projectname": "service-xcx",
+    "publish": {
+        "version": "1.0.1.1"
+    },
+    "setting": {
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.190.255-rc",
+            "extensionJsVersion": "100.14.255"
+        }
+    }
+}

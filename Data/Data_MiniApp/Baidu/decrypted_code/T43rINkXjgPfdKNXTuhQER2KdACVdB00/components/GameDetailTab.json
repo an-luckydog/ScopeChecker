@@ -1,0 +1,23 @@
+{
+    "usingComponents": {
+        "game-detail-games-grid": "./GameDetailGamesGrid",
+        "tieba-card": "./TiebaCard",
+        "gift-card": "./GiftCard",
+        "game-detail-update-module": "./GameDetailUpdateModule",
+        "game-detail-marking": "./GameDetailMarking",
+        "comment-card": "./CommentCard",
+        "game-detail-video-module": "./GameDetailVideoModule",
+        "game-bar-header": "./GameBarHeader",
+        "game-detail-dynamic-module": "./GameDetailDynamicModule",
+        "game-item": "./GameItem",
+        "description-block": "./DescriptionBlock",
+        "one-px-line": "./OnePxLine",
+        "game-detail-tags": "./GameDetailTags",
+        "scroll-tab-video-module": "./ScrollTabVideoModule",
+        "game-video-and-pic-module": "./GameVideoAndPicModule",
+        "activity-block": "./ActivityBlock",
+        "privacy-line": "./PrivacyLine",
+        "game-list-module": "./GameListModule"
+    },
+    "component": true
+}

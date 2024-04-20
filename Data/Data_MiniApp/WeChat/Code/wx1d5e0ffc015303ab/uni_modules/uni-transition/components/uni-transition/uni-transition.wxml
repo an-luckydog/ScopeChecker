@@ -1,0 +1,3 @@
+<view animation="{{animationData}}" bindtap="__e" class="{{['vue-ref',customClass]}}" data-event-opts="{{[ [ 'tap',[ [ 'onClick',['$event'] ] ] ] ]}}" data-ref="ani" style="{{transformStyles}}" wx:if="{{isShow}}">
+    <slot></slot>
+</view>

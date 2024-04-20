@@ -1,0 +1,13 @@
+<import src="../../wxParse/wxParse.wxml"></import>
+<view class="main">
+    <view class="activityName">
+        <view class="activityIntroduce">{{newsTitle}}</view>
+    </view>
+    <view class="activityBody">
+        <view class="m-t-3">
+            <view class="activityContent">
+                <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
+            </view>
+        </view>
+    </view>
+</view>

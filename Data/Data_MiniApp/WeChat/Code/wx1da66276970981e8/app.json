@@ -1,0 +1,281 @@
+{
+    "pages": [
+        "pages/create/index",
+        "pages/entry/home/index",
+        "pages/entry/express/index",
+        "pages/entry/my/index",
+        "pages/entry2/film/home",
+        "pages/common/login/index",
+        "pages/common/city-select/index",
+        "pages/entry/menu/menuWm",
+        "pages/entry/menu/ka",
+        "pages/entry/menu/menuDp",
+        "pages/entry/menu/menuGroup",
+        "pages/search2/search",
+        "pages/common/agreements/index",
+        "pages/common/helper/index",
+        "pages/marketing/index",
+        "pages/common/payment/success",
+        "pages/common/payment/fail",
+        "pages/common/customer-service/index",
+        "pages/debug/index",
+        "pages/innerCabQuery/index",
+        "pages/innerCabTakeOut/index",
+        "pages/search2/index",
+        "pages/activity/index",
+        "pages/goods1/detail",
+        "pages/shop/detail2/index",
+        "pages/shop/mt/mt",
+        "pages/shop/list/index",
+        "pages/goods1/mt-takeout-detail",
+        "pages/common/location-pick/index",
+        "pages/coupon/takeout",
+        "pages/coupon/list",
+        "pages/coupon/timeoutList",
+        "pages/coupon/index",
+        "pages/accredit/index",
+        "pages/launch",
+        "pages/myExpress/index",
+        "pages/pickupReminder/index",
+        "pages/pickupReminderDetail/index",
+        "pages/sending/index",
+        "pages/loginout/index",
+        "pages/login/index",
+        "pages/privacy/index",
+        "pages/address/index",
+        "pages/userCenter/index",
+        "pages/orderSubmit/index",
+        "pages/orderDetail/index",
+        "pages/edit/index",
+        "pages/realName/index",
+        "pages/cut/index",
+        "pages/tips/index",
+        "pages/EditPhone/index",
+        "pages/editMobile/index",
+        "pages/selfHelpPiece/index",
+        "pages/getRecordList/index",
+        "pages/EditName/index",
+        "pages/webView/index",
+        "pages/protocol/index",
+        "pages/nearStore/index",
+        "pages/queryOrder/index",
+        "pages/express/index",
+        "pages/logisticsDetails/index",
+        "pages/receiveHobby/index",
+        "pages/complaint/index",
+        "pages/choosePackage/index",
+        "pages/history/index",
+        "pages/pickupFriend/index",
+        "pages/complaintDetail/index",
+        "pages/signature/index",
+        "pages/wechat/index",
+        "pages/advertDetail/index",
+        "pages/signCode/index",
+        "pages/signCodeFinish/index",
+        "pages/signCodeHorizontal/index",
+        "pages/followAccount/index",
+        "pages/othersTake/index",
+        "pages/bindFriends/index",
+        "pages/pickupReminderSuccess/index",
+        "pages/customService/index",
+        "pages/transition/index",
+        "pages/queryTakeCode/index",
+        "pages/adLanding/index",
+        "pages/openDoor/index",
+        "pages/openDoorDetail/index",
+        "pages/deliveryAddress/index",
+        "pages/deliveryHome/index",
+        "pages/tuxiProtocol/index",
+        "pages/cancelDeliveryHome/index",
+        "pages/relaAgreement/index",
+        "pages/orderRecord/index",
+        "previews/mkt/page/index"
+    ],
+    "subPackages": [
+        {
+            "root": "tgl/",
+            "pages": [
+                "pages/account/user/index",
+                "pages/account/lottery/lottery",
+                "pages/account/revenue/index",
+                "pages/account/fans/index",
+                "pages/account/orders/index",
+                "pages/account/income/index",
+                "pages/account/poster/index",
+                "pages/account/wallet/index",
+                "pages/account/wallet/cashSuccess",
+                "pages/account/wallet/cash",
+                "pages/account/wallet/cashRealName",
+                "pages/account/realName/detail",
+                "pages/account/realName/fill",
+                "pages/account/record/index",
+                "pages/account/applySenior/applySenior",
+                "pages/account/join/group",
+                "pages/demo/index"
+            ],
+            "name": "tgl"
+        },
+        {
+            "root": "film/",
+            "pages": [
+                "pages/orderInfo/index",
+                "pages/detail/detail",
+                "pages/cinema/cinema",
+                "pages/ticket/ticket",
+                "pages/seat/seat",
+                "pages/checkout/checkout"
+            ],
+            "name": "film"
+        },
+        {
+            "root": "kdcs/",
+            "pages": [
+                "pages/customerMiddlePage/index",
+                "pages/customServiceToB/index",
+                "pages/create/index",
+                "pages/sending/index",
+                "pages/login/index",
+                "pages/loginout/index",
+                "pages/privacy/index",
+                "pages/accredit/index",
+                "pages/address/index",
+                "pages/userCenter/index",
+                "pages/orderSubmit/index",
+                "pages/orderDetail/index",
+                "pages/orderWay/index",
+                "pages/orderRecord/index",
+                "pages/edit/index",
+                "pages/realName/index",
+                "pages/cut/index",
+                "pages/tips/index",
+                "pages/EditPhone/index",
+                "pages/editMobile/index",
+                "pages/selfHelpPiece/index",
+                "pages/getRecordList/index",
+                "pages/EditName/index",
+                "pages/webView/index",
+                "pages/protocol/index",
+                "pages/nearStore/index",
+                "pages/queryOrder/index",
+                "pages/express/index",
+                "pages/logisticsDetails/index",
+                "pages/receiveHobby/index",
+                "pages/complaint/index",
+                "pages/choosePackage/index",
+                "pages/history/index",
+                "pages/pickupReminder/index",
+                "pages/pickupFriend/index",
+                "pages/pickupReminderDetail/index",
+                "pages/complaintDetail/index",
+                "pages/signature/index",
+                "pages/wechat/index",
+                "pages/advertDetail/index",
+                "pages/signCode/index",
+                "pages/signCodeFinish/index",
+                "pages/signCodeHorizontal/index",
+                "pages/followAccount/index",
+                "pages/othersTake/index",
+                "pages/bindFriends/index",
+                "pages/relaAgreement/index",
+                "pages/pickupReminderSuccess/index",
+                "pages/customService/index",
+                "pages/transition/index",
+                "pages/queryTakeCode/index",
+                "pages/adLanding/index",
+                "pages/openDoor/index",
+                "pages/openDoorDetail/index",
+                "pages/deliveryAddress/index",
+                "pages/deliveryHome/index",
+                "pages/tuxiProtocol/index",
+                "pages/cancelDeliveryHome/index"
+            ],
+            "name": "kdcs"
+        }
+    ],
+    "window": {
+        "autoscan": true,
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "兔喜生活",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "color": "#A8A3A0",
+        "selectedColor": "#FD3E53",
+        "backgroundColor": "#ffffff",
+        "borderStyle": "black",
+        "position": "bottom",
+        "list": [
+            {
+                "pagePath": "pages/entry/home/index",
+                "text": "首页",
+                "iconPath": "/static/image/home.png",
+                "selectedIconPath": "/static/image/home_act.png"
+            },
+            {
+                "pagePath": "pages/entry/express/index",
+                "text": "我的快递",
+                "iconPath": "/static/image/express.png",
+                "selectedIconPath": "/static/image/express_act.png"
+            },
+            {
+                "pagePath": "pages/coupon/takeout",
+                "text": "社区活动",
+                "iconPath": "/static/image/wm.png",
+                "selectedIconPath": "/static/image/wm_act.png"
+            },
+            {
+                "pagePath": "pages/entry/my/index",
+                "text": "我的",
+                "iconPath": "/static/image/my.png",
+                "selectedIconPath": "/static/image/my_act.png"
+            }
+        ]
+    },
+    "preloadRule": {
+        "pages/entry/home/index": {
+            "network": "all",
+            "packages": [
+                "kdcs",
+                "film",
+                "tgl"
+            ]
+        },
+        "pages/launch": {
+            "network": "all",
+            "packages": [
+                "kdcs",
+                "film",
+                "tgl"
+            ]
+        }
+    },
+    "__usePrivacyCheck__": true,
+    "plugins": {
+        "materialPlugin": {
+            "version": "1.0.5",
+            "provider": "wx4d2deeab3aed6e5a"
+        },
+        "coral-adv": {
+            "version": "1.0.21",
+            "provider": "wx0e203209e27b1e66"
+        }
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于审核"
+        }
+    },
+    "requiredPrivateInfos": [
+        "getLocation",
+        "chooseLocation",
+        "chooseAddress"
+    ],
+    "embeddedAppIdList": [
+        "wxece3a9a4c82f58c9",
+        "wxde8ac0a21135c07d"
+    ],
+    "lazyCodeLoading": "requiredComponents",
+    "usingComponents": {},
+    "__warning__": "invalid app.json window[\"autoscan\"]、app.json [\"__usePrivacyCheck__\"]、app.json [\"requiredPrivateInfos\"]、app.json [\"embeddedAppIdList\"]"
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "chatbox": "/dim/index/chat_box"
+  }
+}

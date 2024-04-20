@@ -1,0 +1,15 @@
+{
+    "component": true,
+    "usingComponents": {
+        "ui-corner": "../../../../miniprogram_npm/@components/limo-ui/ui-corner/index",
+        "ui-hot-selling": "../../../../miniprogram_npm/@components/limo-ui/ui-hot-selling/index",
+        "tag-list": "../../../../miniprogram_npm/@components/limo-common/tag-list/index",
+        "pre-price": "../../../../miniprogram_npm/@components/limo-menu/pre-price/index",
+        "ui-member-price-tag-v2": "../../../../miniprogram_npm/@components/limo-ui/ui-member-price-tag-v2/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

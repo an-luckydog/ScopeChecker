@@ -1,0 +1,198 @@
+var float1 = (function(val) {
+    val = Number(val);
+    return ((val % 1 === 0 ? parseInt(val) : val.toFixed(1)));
+});
+var subStr = (function(val, length) {
+    if (val.length > length) {
+        val = val.substring(0, length) + '...'
+    };
+    return (val)
+});
+var subArr = (function(arr) {
+    arr.shift();
+    return (arr)
+});
+var subOrderPrice = (function(price, sumInsurancePrice, additionalsPrice, studyPackagePrice) {
+    if (price <= 0) {
+        price = 1 + sumInsurancePrice + additionalsPrice + studyPackagePrice
+    };
+    return (price)
+});
+var subNum = (function(num) {
+    if (num >= 10000) {
+        num = (num / 10000).toFixed(1) + '万';
+        return (num)
+    };
+    return (num)
+});
+var subDiscountPrice = (function(realPrice, discountPrice) {
+    if (realPrice - discountPrice <= 0) {
+        discountPrice = realPrice - 1
+    };
+    return (discountPrice)
+});
+var comItemPrice = (function(comItem) {
+    var price = comItem.costPrice;
+    if (comItem.insurance) {
+        if (comItem.insurance.checked) {
+            price = price + comItem.insurance.price
+        }
+    };
+    return ((price.toFixed(1)))
+});
+var comListPrice = (function(comListItem, showType) {
+    var comList = comListItem.commoditySpecial.comList;
+    var discountPrice = comListItem.commoditySpecial.discountPrice ? JSON.parse(comListItem.commoditySpecial.discountPrice) : null;
+    var realpayPrice = 0;
+    var costPrice = 0;
+    var num = 0;
+    switch (showType) {
+        case 2:
+            realpayPrice = comListItem.commoditySpecial.realpayPrice;
+            costPrice = comListItem.commoditySpecial.costPrice;
+            for (var i = 0; i < comList.length; i++) {
+                if (comList[((nt_0 = (i), null == nt_0 ? undefined : 'number' === typeof nt_0 ? nt_0 : "" + nt_0))].insurance) {
+                    if (comList[((nt_1 = (i), null == nt_1 ? undefined : 'number' === typeof nt_1 ? nt_1 : "" + nt_1))].insurance.checked) {
+                        realpayPrice += comList[((nt_2 = (i), null == nt_2 ? undefined : 'number' === typeof nt_2 ? nt_2 : "" + nt_2))].insurance.price;
+                        costPrice += comList[((nt_3 = (i), null == nt_3 ? undefined : 'number' === typeof nt_3 ? nt_3 : "" + nt_3))].insurance.price
+                    }
+                }
+            };
+            break;
+        case 3:
+            for (var i = 0; i < comList.length; i++) {
+                if (comList[((nt_4 = (i), null == nt_4 ? undefined : 'number' === typeof nt_4 ? nt_4 : "" + nt_4))].checked || 0) {
+                    realpayPrice += comList[((nt_5 = (i), null == nt_5 ? undefined : 'number' === typeof nt_5 ? nt_5 : "" + nt_5))].costPrice;
+                    num++;
+                    if (comList[((nt_6 = (i), null == nt_6 ? undefined : 'number' === typeof nt_6 ? nt_6 : "" + nt_6))].insurance) {
+                        if (comList[((nt_7 = (i), null == nt_7 ? undefined : 'number' === typeof nt_7 ? nt_7 : "" + nt_7))].insurance.checked) {
+                            realpayPrice += comList[((nt_8 = (i), null == nt_8 ? undefined : 'number' === typeof nt_8 ? nt_8 : "" + nt_8))].insurance.price
+                        }
+                    }
+                }
+            };
+            if (discountPrice) {
+                if (discountPrice[((nt_9 = ((num + "")), null == nt_9 ? undefined : 'number' === typeof nt_9 ? nt_9 : "" + nt_9))]) {
+                    costPrice = realpayPrice - (discountPrice[((nt_10 = ((num + "")), null == nt_10 ? undefined : 'number' === typeof nt_10 ? nt_10 : "" + nt_10))] - 0)
+                } else {
+                    costPrice = realpayPrice
+                }
+            } else {
+                costPrice = realpayPrice
+            };
+            break;
+    };
+    realpayPrice = realpayPrice.toFixed(1);
+    costPrice = (costPrice <= 0 ? 1 : costPrice).toFixed(1);
+    return ([realpayPrice, costPrice])
+});
+var comListNum = (function(comListItem) {
+    var num = 0;
+    var comList = comListItem.commoditySpecial.comList;
+    for (var i = 0; i < comList.length; i++) {
+        comList[((nt_11 = (i), null == nt_11 ? undefined : 'number' === typeof nt_11 ? nt_11 : "" + nt_11))].checked ? num++ : num
+    };
+    return (num)
+});
+var comPrice = (function(commodityData, goNextPageData, servicePrice) {
+    if (!commodityData.classId) return ('0.0');;
+    var price = 0;
+    var checkedone = servicePrice.comList[(0)].checked;
+    var checkedtwo = servicePrice.comList[(1)].checked;
+    var guaType = goNextPageData.comList[(0)].guaType;
+    var CostPrice = (commodityData.commodityPromotion && commodityData.commodityPromotion.type == 7) ? commodityData.commodityPromotion.costPrice : commodityData.CostPrice;
+    var insuranceInfo = commodityData.insuranceInfo;
+    var secondPrice = commodityData.protocolInfoPrice || 0;
+    switch (guaType) {
+        case 0:
+            price = CostPrice;
+            if (checkedone) {
+                price += secondPrice
+            };
+            if (checkedtwo) {
+                price += insuranceInfo.price
+            };
+            break;
+        case 1:
+            price = CostPrice;
+            if (checkedone) {
+                price += secondPrice
+            };
+            if (checkedtwo) {
+                price += insuranceInfo.price
+            };
+            break;
+        case 2:
+            price = CostPrice;
+            if (checkedone) {
+                price += secondPrice
+            };
+            if (checkedtwo) {
+                price += insuranceInfo.price
+            };
+            break;
+    };
+    return (price % 1 === 0 ? parseInt(price) : price.toFixed(1))
+});
+var selectedText = (function(commodityData, goNextPageData, servicePrice) {
+    if (!commodityData.classId) return ('');;
+    var text = '已选：';
+    var checkedone = servicePrice.comList[(0)].checked;
+    var checkedtwo = servicePrice.comList[(1)].checked;
+    var guaType = goNextPageData.comList[(0)].guaType;
+    var bookType = goNextPageData.comList[(0)].bookType;
+    var guaMul = commodityData.guaMul;
+    if (guaMul) {
+        var firstData = commodityData.guaTitle[(0)];
+        var secondData = commodityData.guaTitle[(1)];
+        text += (guaType === 1 ? firstData.title : secondData.title)
+    } else {
+        text += '第' + commodityData.issue + '期'
+    };
+    if (bookType) {
+        text += '，' + (bookType === 1 ? '初中教材' : '') + (bookType === 2 ? '高中教材' : '')
+    };
+    if (checkedone) {
+        text += '，' + '增值服务'
+    };
+    if (checkedtwo) {
+        text += '，' + '服务保障'
+    };
+    return (text)
+});
+var getJSONItem = (function(JSONString, key) {
+    var value = null;
+    var JSONObject = JSON.parse(JSONString);
+    value = JSONObject[((nt_21 = (key), null == nt_21 ? undefined : 'number' === typeof nt_21 ? nt_21 : "" + nt_21))];
+    return (value)
+});
+var selectedGroupText = (function(commodityData) {
+    var hasStudyPack = commodityData.hasStudyPack;
+    var bookType = commodityData.bookType;
+    var insurance = commodityData.insurance;
+    var text = '';
+    if ((hasStudyPack === 1 || (hasStudyPack === 2 && bookType === 0)) && insurance) {
+        text = insurance.checked ? (insurance.checked == 2 ? "已选：" + insurance.name + "服务保障" : (insurance.checked == 1 ? "已选：" + increaseContent.name + "延保协议" : "可选：服务保障")) : "可选：服务保障";
+        return (text)
+    };
+    text = "已选：" + (bookType === 1 ? '初中教材' : '') + (bookType === 2 ? '高中教材' : '');
+    if (insurance) {
+        text = text + (insurance.checked ? +'服务保障' : '')
+    };
+    return (text)
+});
+module.exports = ({
+    float1: float1,
+    subStr: subStr,
+    subArr: subArr,
+    subNum: subNum,
+    subOrderPrice: subOrderPrice,
+    subDiscountPrice: subDiscountPrice,
+    comItemPrice: comItemPrice,
+    comListPrice: comListPrice,
+    comListNum: comListNum,
+    comPrice: comPrice,
+    selectedText: selectedText,
+    getJSONItem: getJSONItem,
+    selectedGroupText: selectedGroupText,
+});

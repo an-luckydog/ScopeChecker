@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-item": "./GameItem",
+        "good-news-label": "./GoodNewsLabel"
+    },
+    "component": true
+}

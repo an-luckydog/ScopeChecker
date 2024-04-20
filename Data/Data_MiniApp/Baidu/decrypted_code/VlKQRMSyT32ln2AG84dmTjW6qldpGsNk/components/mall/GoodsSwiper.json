@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"c-image":"../common/image","goods-card":"./GoodsCard","goods-swiper-indication":"./GoodsSwiperIndication","promotion-bar":"./promotion-bar","top-bubble":"../gy/top-bubble","drug-info-video":"./druginfo-video"}}

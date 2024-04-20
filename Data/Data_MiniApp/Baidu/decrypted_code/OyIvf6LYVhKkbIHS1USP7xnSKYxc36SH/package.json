@@ -1,0 +1,28 @@
+{
+    "name": "netdisk-bp-smartprogram",
+    "version": "1.4.0",
+    "description": "",
+    "main": "app.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://wangjian44@icode.baidu.com:8235/baidu/wangpan-en-webv5/netdisk-bp-smartprogram"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@baidu/bpdata-swan": "^1.1.3",
+        "@baidu/union-design-swan": "^1.0.18",
+        "lp-file-name-sort": "^1.0.3",
+        "miniprogram-computed": "^2.1.1",
+        "qs": "^6.10.1"
+    },
+    "devDependencies": {
+        "eslint": "^7.7.0"
+    }
+}

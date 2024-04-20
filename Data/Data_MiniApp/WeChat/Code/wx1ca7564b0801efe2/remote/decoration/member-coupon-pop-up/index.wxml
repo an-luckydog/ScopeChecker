@@ -1,0 +1,17 @@
+<view class="coupon-warn" style="{{compBgStyle}}" wx:if="{{showModal}}">
+    <view class="coupon-title">
+        <text style="{{writerStyle}}">优惠券即将过期</text>
+        <view bind:tap="closePopup" class="close-pop">
+            <icon bind:tap="closePopup" class="icon-cancel iconfont icon-close"></icon>
+        </view>
+    </view>
+    <view class="coupon-main">
+        <view class="text-tip" style="{{writerStyle}}">{{writer}}<view bind:tap="skipMean" class="view-all" data-type="allText" wx:if="{{showViewAll}}">全部<icon class="icon-arrow iconfont icon-right"></icon>
+            </view>
+        </view>
+        <view class="coupon-list" wx:for="{{couponList}}">
+            <coupon-item-standard couponData="{{item.couponData}}" displayStyle="{{couponStyle[index]}}"></coupon-item-standard>
+        </view>
+    </view>
+    <view bind:tap="skipMean" class="action-btn" data-type="button" style="{{buttonStyle}}">去享用吧</view>
+</view>

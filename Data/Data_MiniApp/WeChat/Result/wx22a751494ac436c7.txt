@@ -1,0 +1,6 @@
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'uploadImg'}}"中找到匹配: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\pages\index\index.wxml}"中的方法{"                <button bindtap="uploadImg" class="getBtn"></button>
+}"中找到对应: {"chooseImage}"
+在后端文件{"D:\wxappUnpacker-master\dec\pages\index\index.js}"中的方法{"{'uploadImg'}}"中找到匹配: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\pages\index\index.wxml}"中的方法{"                <button bindtap="uploadImg" class="getBtn"></button>
+}"中找到对应: {"chooseImage}"

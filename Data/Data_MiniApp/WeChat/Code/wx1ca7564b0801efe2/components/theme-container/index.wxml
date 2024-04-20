@@ -1,0 +1,4 @@
+<view class="theme-wrapper" style="{{themes}}">
+    <slot></slot>
+    <view class="{{beta?'default-safe-bot':''}} {{nativeTabbar?'with-tabbar':''}}" wx:if="{{beta}}"></view>
+</view>

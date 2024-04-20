@@ -1,0 +1,32 @@
+<view class="nearby-list-contianer pt24">
+    <view class="nearby-list-warpper">
+        <view bindtap="listClick" class="nearby-content-warpper" data-item="item" wx:for="{{list}}" wx:key="index">
+            <view class="nearby-list-box">
+                <view class="img-box">
+                    <image src="{{imgUrl}}/info/icon2.png"></image>
+                </view>
+                <view class="list-content-box">
+                    <view class="nearby-title">西直门旗舰店</view>
+                    <view class="nearby-address">北京市海淀区交大东路66号哈哈哈哈哈哈</view>
+                    <view class="nearby-distance">距您0.1km</view>
+                </view>
+            </view>
+            <view class="nearby-bottom">
+                <view class="left-bot">
+                    <text class="unit">¥</text>
+                    <text class="price">1.00元</text>
+                    <text class="text0">起</text>
+                </view>
+                <view class="bot-btn-box">
+                    <view bindtap="goClick" class="bot-btn">
+                        <icon class="icon" color="#fff" size="20" type="search"></icon> 到这去? </view>
+                </view>
+            </view>
+        </view>
+        <view class="load_more" wx:if="{{loading}}">
+            <view class="load_loading"></view>
+            <view class="load-tips">正在加载……</view>
+        </view>
+        <view class="load_end" wx:if="{{loaded}}">没有更多数据了……</view>
+    </view>
+</view>

@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "placeholder": "../placeholder/index",
+        "virtual-placeholder": "../virtual-placeholder/index"
+    }
+}

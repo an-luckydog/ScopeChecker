@@ -1,0 +1,13 @@
+{
+    "usingComponents": {
+        "game-detail-bottom-btn": "../../../components/GameDetailBottomBtn",
+        "game-detail-tab": "../../../components/GameDetailTab",
+        "tieba-detail-tab": "../../../components/TiebaDetailTab",
+        "tieba-filter": "../../../components/TiebaFilter",
+        "game-video-tab": "../../../components/GameVideoTab",
+        "game-video-tab-filter": "../../../components/GameVideoTabFilter",
+        "comments-detail-tab": "../../../components/CommentsDetailTab",
+        "game-detail-navigation-bar": "../../../components/GameDetailNavigationBar"
+    },
+    "component": true
+}

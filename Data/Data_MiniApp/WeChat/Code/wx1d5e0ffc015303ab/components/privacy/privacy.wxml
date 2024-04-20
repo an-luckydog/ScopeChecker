@@ -1,0 +1,27 @@
+<view class="data-v-d39e49cc">
+    <view class="privacy_box data-v-d39e49cc" wx:if="{{showPrivacy}}">
+        <view class="privacy_content data-v-d39e49cc" wx:if="{{showContent}}">
+            <image class="privacy_title data-v-d39e49cc" mode="widthFix" src="{{scanImgUrl+'logo.png'}}"></image>
+            <view class="privacy_tips data-v-d39e49cc">
+                <image class="privacy_title data-v-d39e49cc" mode="widthFix" src="{{scanImgUrl+'yinsiTxt.png'}}"></image>
+            </view>
+            <view class="{{['data-v-d39e49cc','privacy_warning',isRefuse?'ani':'']}}" style="{{'visibility:'+(!isRefuse?'hidden':'visible')+';'}}">未满18周岁不可继续使用</view>
+            <button bindtap="__e" class="confirm data-v-d39e49cc" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}" wx:if="{{!isNewPrivacySetting}}">确定</button>
+            <button bindagreeprivacyauthorization="__e" class="confirm data-v-d39e49cc" data-event-opts="{{[ [ 'agreeprivacyauthorization',[ [ 'confirm',['$event'] ] ] ] ]}}" id="agree-btn" openType="agreePrivacyAuthorization" wx:else>确定</button>
+            <text bindtap="__e" class="refuse data-v-d39e49cc" data-event-opts="{{[ [ 'tap',[ [ 'refuse',['$event'] ] ] ] ]}}" wx:if="{{!isRefuse}}">未满18周岁</text>
+            <text bindtap="__e" class="again data-v-d39e49cc" data-event-opts="{{[ [ 'tap',[ [ 'again',['$event'] ] ] ] ]}}" wx:else>未满18周岁</text>
+            <view class="check_box flex-xc-yc data-v-d39e49cc">
+                <view bindtap="__e" class="check_box_image flex-xc-yc data-v-d39e49cc" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}">
+                    <image class="data-v-d39e49cc" mode="widthFix" src="{{scanImgUrl+'yinsitongyi.png'}}" wx:if="{{ischecked}}"></image>
+                    <image class="data-v-d39e49cc" mode="widthFix" src="{{scanImgUrl+'yinsibutongyi.png'}}" wx:else></image>
+                </view>
+                <view class="check_box_font data-v-d39e49cc" wx:if="{{!isNewPrivacySetting}}">我已阅读并同意<text bindtap="__e" class="data-v-d39e49cc" data-event-opts="{{[ [ 'tap',[ ['toPrivacy'] ] ] ]}}">《用户协议及隐私政策》</text>
+                </view>
+                <view class="check_box_font data-v-d39e49cc" wx:else>我已阅读并同意<text bindtap="__e" class="data-v-d39e49cc" data-event-opts="{{[ [ 'tap',[ ['toPrivacy'] ] ] ]}}">《用户协议及隐私政策》</text>
+                    <text bindtap="__e" class="data-v-d39e49cc" data-event-opts="{{[ [ 'tap',[ [ '$ToPrivacyWX',['$event'] ] ] ] ]}}">《用户隐私保护指引》</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <come-again-pup activationType="{{activationType}}" bind:__l="__l" bind:acitvation="__e" bind:updateActivationType="__e" class="data-v-d39e49cc vue-ref" data-event-opts="{{[ [ '^updateActivationType',[ [ '__set_sync',['$0','activationType','$event'],[''] ] ] ],[ '^updateActivationType',[ [ '__set_sync',['$0','activationType','$event'],[''] ] ] ],[ '^acitvation',[ ['acitvation'] ] ] ]}}" data-ref="comeAgainPupRef" vueId="7c84ecb0-1"></come-again-pup>
+</view>

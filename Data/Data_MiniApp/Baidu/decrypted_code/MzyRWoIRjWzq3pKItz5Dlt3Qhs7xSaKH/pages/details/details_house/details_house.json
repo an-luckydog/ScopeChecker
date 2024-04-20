@@ -1,0 +1,12 @@
+{
+  "component": true,
+  "usingComponents": {
+		"more": "../component/more/more",
+		"baidu-ad": "../component/ad/ad",
+    "carousel": "/pages/components/carousel/carousel",
+    "backtop": "/pages/components/backTop/backTop",
+    "recommend-list": "/pages/components/recommendList/recommendList",
+    "pop-hy": "/pages/components/pop_hy/pop_hy",
+    "phone-keyboard": "/pages/components/keyBoard/keyBoard"
+  }
+}

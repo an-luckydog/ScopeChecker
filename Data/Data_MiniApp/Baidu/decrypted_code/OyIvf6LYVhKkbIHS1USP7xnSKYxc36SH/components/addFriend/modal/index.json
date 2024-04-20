@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "u-grid": "../../../node_modules/@baidu/union-design-swan/union-design-wechat/grid/index",
+    "u-grid-item": "../../../node_modules/@baidu/union-design-swan/union-design-wechat/grid-item/index",
+    "u-icon": "../../../node_modules/@baidu/union-design-swan/union-design-wechat/icon/index",
+    "u-button": "../../../node_modules/@baidu/union-design-swan/union-design-wechat/button/index"
+  }
+}

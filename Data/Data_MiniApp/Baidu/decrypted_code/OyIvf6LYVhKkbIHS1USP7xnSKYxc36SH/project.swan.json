@@ -1,0 +1,638 @@
+{
+    "compilation-args": {
+        "selected": 2,
+        "common": {
+            "quickPreview": true
+        },
+        "options": [
+            {
+                "text": "外链页",
+                "id": 0,
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/outsite-chain/share-code/index",
+                    "isPrefetch": false,
+                    "query": "url=https://pan.baidu.com/s/1edVfYxz-PFSobnirG1hCSg",
+                    "scene": {
+                        "channel_id": "1081000900000000",
+                        "first": "自然搜索",
+                        "fourth": "",
+                        "id": "36",
+                        "name": "阿拉丁",
+                        "parent_id": "23",
+                        "second": "阿拉丁",
+                        "smt": "老编码1003",
+                        "third": ""
+                    },
+                    "selected": 0,
+                    "singleArgs": null
+                }
+            },
+            {
+                "text": "错误页面",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/error/index",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 1
+            },
+            {
+                "text": "下载任务",
+                "id": 2,
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/task/index",
+                    "scene": {
+                        "channel_id": "1081000800000000",
+                        "first": "自然搜索",
+                        "fourth": "",
+                        "id": "34",
+                        "name": "自然结果",
+                        "parent_id": "23",
+                        "second": "自然结果",
+                        "smt": "",
+                        "third": ""
+                    },
+                    "singleArgs": null,
+                    "query": "current_type=sp_native_upload&page_mode=1",
+                    "selected": 2,
+                    "isUpdate": false,
+                    "isPrefetch": false
+                }
+            },
+            {
+                "text": "非三方外链",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/outsite-chain/share-code/index",
+                    "isPrefetch": false,
+                    "query": "url=https://pan.baidu.com/s/15fqWhwLvD7Uo93rnfa5_Zw&pwdcode=usdz",
+                    "scene": {}
+                },
+                "id": 3
+            },
+            {
+                "text": "三方外链带视频",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/outsite-chain/share-code/index",
+                    "isPrefetch": false,
+                    "query": "url=https%3A%2F%2Fpan.baidu.com%2Flink%2Fzhidao%2F7ilhWzaoSaUd6HpHSV13Q110RmBVRzFwZvFWU%3D%3D",
+                    "scene": {},
+                    "selected": 4
+                },
+                "id": 4
+            },
+            {
+                "text": "知乎外链",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/outsite-chain/share-code/index",
+                    "query": "url=https%3A%2F%2Fpan.baidu.com%2Flink%2Fzhihu%2F7ZhGzSuVhBilZyln1md5ho5mWzMxd3bwdLNU%3D%3D",
+                    "scene": {}
+                },
+                "id": 5
+            },
+            {
+                "text": "超级会员日",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/super-vip-day/index",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 6
+            },
+            {
+                "text": "收银台",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "payment/pay/pages/cashierDesk/index",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "selected": 7
+                },
+                "id": 7
+            },
+            {
+                "text": "pages/usercenter/usercenter",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/usercenter/usercenter",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 8
+            },
+            {
+                "text": "回端",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/home/index",
+                    "query": "",
+                    "scene": {
+                        "channel_id": "1081000800000000",
+                        "first": "自然搜索",
+                        "fourth": "",
+                        "id": "34",
+                        "name": "自然结果",
+                        "parent_id": "23",
+                        "second": "自然结果",
+                        "smt": "",
+                        "third": ""
+                    }
+                },
+                "id": 9
+            },
+            {
+                "text": "首页视频播放",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/home/index",
+                    "query": "action=playvideo&path=/%E6%9D%A5%E8%87%AA%EF%BC%9A%E7%99%BE%E5%BA%A6App/0QkFYLpts28A.mp4",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 10
+            },
+            {
+                "text": "pages/download-page/index",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/download-page/index",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 11
+            },
+            {
+                "text": "pages/download-permission/index",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/download-permission/index",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 12
+            },
+            {
+                "text": "pages/task/index",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/task/index",
+                    "isPrefetch": false,
+                    "query": "source=spnative&from=1025163w_1025163x&current_type=sp_native_upload",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 13
+            },
+            {
+                "text": "视频跳转播放",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/file/play-video/index",
+                    "isPrefetch": false,
+                    "query": "source=spnative&from=1025163u_1025163v&savepath=/%E6%9D%A5%E8%87%AA%EF%BC%9A%E7%99%BE%E5%BA%A6App/0QkFYLpts28A.mp4",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 14
+            },
+            {
+                "text": "外链列表页",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/outsite-chain/file-list/file-list",
+                    "isPrefetch": false,
+                    "query": "s=1B6wixLuiae5Du-00_HGhqQ&pageType=outsiteChainShareCode",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 15
+            },
+            {
+                "text": "首页",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/home/index",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "selected": 16,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 16
+            },
+            {
+                "text": "pages/file/play-video/index",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/file/play-video/index",
+                    "isPrefetch": false,
+                    "query": "source=spnative&savepath=%2F%E6%9D%A5%E8%87%AA%EF%BC%9A%E7%99%BE%E5%BA%A6App%2F%E6%A1%83%E4%B8%8E%E6%A2%85%E7%AC%AC02%E9%9B%86-%E6%A1%83%E4%B8%8E%E6%A2%85%E6%9C%80%E6%96%B0%E7%94%B5%E5%BD%B1%E5%9C%A8%E7%BA%BF%E8%A7%82%E7%9C%8B-%E6%A1%83%E4%B8%8E%E6%A2%85%E5%AE%8C%E6%95%B4%E7%89%88%E8%A7%86%E9%A2%91%E5%9C%A8%E7%BA%BF%E8%A7%82%E7%9C%8B-%E5%A2%A8%E5%A2%A8%E5%BD%B1%E8%A7%86.mp4",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 17
+            },
+            {
+                "text": "pages/image-clip/index",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/image-clip/index",
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 18
+            },
+            {
+                "text": "流畅播秒传视频实验方案",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/file/play-video/index",
+                    "isPrefetch": false,
+                    "query": "source=spnative&savepath=%2F%E6%9D%A5%E8%87%AA%EF%BC%9A%E7%99%BE%E5%BA%A6App&from=1027940c_1027940d&type=0&http_type=1&path=/pages/file/play-video/index&app_id=5494197&is_rapid=1&is_sniff_video=1&exp_id=3&source_url=https%3A%2F%2Fnew.iskcd.com%2F20220219%2F0mdXpm7F%2F1100kb%2Fhls%2Findex.m3u8&file_name=%E6%B5%8B%E8%AF%95%E8%A7%86%E9%A2%912.mp4",
+                    "scene": {},
+                    "selected": 19,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 19
+            },
+            {
+                "text": "pages/puzzle/puzzle",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/puzzle/puzzle",
+                    "isPrefetch": false,
+                    "query": "image=[[0,\"1076471296432524\"],[0,\"314916494245139\"],[0,\"447511286028122\"],[0,\"576951601288083\"]]",
+                    "scene": {},
+                    "selected": 20,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 20
+            },
+            {
+                "text": "pages/puzzle/puzzle",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/puzzle/puzzle",
+                    "isPrefetch": false,
+                    "query": "image=[[0,\"1076471296432524\"],[0,\"314916494245139\"],[0,\"447511286028122\"],[0,\"576951601288083\"]]",
+                    "scene": {},
+                    "selected": 20,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 20
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/document-scan-introduce/index",
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 21
+            },
+            {
+                "text": "pages/puzzleDom/puzzleDom",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/puzzleDom/puzzleDom",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "selected": 22,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 22
+            },
+            {
+                "text": "pages/puzzleDom/puzzleDom",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/puzzleDom/puzzleDom",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "selected": 22,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 22
+            },
+            {
+                "text": "pages/puzzle/puzzle",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/puzzle/puzzle",
+                    "isPrefetch": false,
+                    "query": "image=[[0,\"1076471296432524\"],[0,\"314916494245139\"]]",
+                    "scene": {},
+                    "selected": 23,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 23
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/camera/index",
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 24
+            },
+            {
+                "text": "pages/mobile-camera/mobile-camera",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/mobile-camera/mobile-camera",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "selected": 25,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 25
+            },
+            {
+                "text": "工具箱",
+                "id": 26,
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/tools/tools",
+                    "isPrefetch": false,
+                    "scene": {},
+                    "selected": 26,
+                    "single": false,
+                    "singleArgs": null,
+                    "query": "showFooter=0"
+                }
+            },
+            {
+                "text": "pages/image-process/index",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/image-process/index",
+                    "isPrefetch": false,
+                    "query": "type=3006&from=scanIntroduce&images=%5B%7B%22width%22%3A640%2C%22height%22%3A480%2C%22path%22%3A%22bdfile%3A%2F%2Ftmp%2F1658925057824296.jpg%22%2C%22type%22%3A%22jpg%22%2C%22orientation%22%3A%22up%22%2C%22hash%22%3A%22a31cefb7b0cdb47e639f7611d9579a3b%22%7D%2C%7B%22width%22%3A480%2C%22height%22%3A640%2C%22path%22%3A%22bdfile%3A%2F%2Ftmp%2F1658925057824333.jpg%22%2C%22type%22%3A%22jpg%22%2C%22orientation%22%3A%22up%22%2C%22hash%22%3A%2256d85b4ee99365f52680b05f0b85a472%22%7D%2C%7B%22width%22%3A1920%2C%22height%22%3A1440%2C%22path%22%3A%22bdfile%3A%2F%2Ftmp%2F1658925058109.jpg%22%2C%22type%22%3A%22jpeg%22%2C%22orientation%22%3A%22up%22%2C%22hash%22%3A%225c9174ca2652dad32673a8805eeec486%22%7D%5D",
+                    "scene": {},
+                    "selected": 27,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 27
+            },
+            {
+                "text": "pages/toword-middle-page/toword-middle-page",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/toword-middle-page/toword-middle-page",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "selected": 28,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 28
+            },
+            {
+                "text": "pages/image-tools/compress/index",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/image-tools/compress/index",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "selected": 29,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 29
+            },
+            {
+                "text": "pages/deWatermark/entrance/index",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/deWatermark/entrance/index",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "selected": 30,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 30
+            },
+            {
+                "text": "pages/image-tools/deWatermark/index",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/image-tools/deWatermark/index",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "selected": 31,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 31
+            },
+            {
+                "text": "pages/deWatermark/entrance/index",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/deWatermark/entrance/index",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "selected": 32,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 32
+            },
+            {
+                "text": "pages/image-tools/deWatermark/proccess/index",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/image-tools/deWatermark/proccess/index",
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 33
+            },
+            {
+                "text": "pages/deWatermark/pdf-process/index",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/deWatermark/pdf-process/index",
+                    "isPrefetch": false,
+                    "query": "params={\"taskId\":\"724370895_2d3765739e5d0990666d9ddf51373bdb_1_1660741398511\",\"originPath\":\"/_pcs_.appdata/mips_ai_hide/b91763e073e17e098d277bb8e914ce99/mips-dosp-a79036103871608ad634481fedbe3acf.jpg\",\"resultPath\":\"/_pcs_.appdata/mips_ai_hide/e8cf5b2090459829c0e3126334c07edb/mips-dosp-63a8ad01388ca70e68fdca1cd096e5a5_res_11267.jpg\",\"originFsids\":[573608619229999,24035126246278,114200788279413,507551621443930,235548641899923,904666866322042,445284722536394],\"resultFsids\":[562248379772380,1020056057352013,630044608665812,745178227607739,41242051348103,284758093153129,280546532591149]}",
+                    "scene": {},
+                    "selected": 34,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 34
+            },
+            {
+                "text": "pages/home/index",
+                "id": 35,
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "scene": {},
+                    "ext": {},
+                    "single": false,
+                    "singleArgs": null,
+                    "index": "pages/home/index",
+                    "selected": 35,
+                    "isPrefetch": false,
+                    "query": "source=spnative&recently=1"
+                }
+            },
+            {
+                "text": "文档预览页",
+                "id": 36,
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "scene": {},
+                    "ext": {},
+                    "single": false,
+                    "singleArgs": null,
+                    "index": "pages/file/load-doc-file/load-doc-file",
+                    "selected": 36,
+                    "isPrefetch": false,
+                    "query": "path=/文档测试/ppt测试_水印.pdf&action=docPreview&previewFromType=scheme_view"
+                }
+            },
+            {
+                "text": "图片协议预览",
+                "id": 37,
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "scene": {},
+                    "ext": {},
+                    "single": false,
+                    "singleArgs": null,
+                    "index": "pages/file/preview-image/preview-image",
+                    "selected": 37,
+                    "isPrefetch": false,
+                    "query": "path=/郭小凤/公考/新建文件夹/04 行政执法法律专项课/课表.png&action=imagePreview&previewFromType=scheme_view"
+                }
+            },
+            {
+                "text": "音频协议预览",
+                "id": 38,
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "scene": {},
+                    "ext": {},
+                    "single": false,
+                    "singleArgs": null,
+                    "index": "pages/audio/index",
+                    "selected": 38,
+                    "isPrefetch": false,
+                    "query": "path=/音乐/梁博 - 给我一点温度【大事发声第三集版】.mp3&action=audioPreview&previewFromType=scheme_view"
+                }
+            },
+            {
+                "text": "百度知道外链",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/outsite-chain/share-code/index",
+                    "query": "url=https://pan.baidu.com/s/1SNVY7pDQhfB3npvcamztoQ",
+                    "scene": {},
+                    "selected": 39,
+                    "isPrefetch": false
+                },
+                "id": 39
+            }
+        ],
+        "forceChanged": {}
+    },
+    "host": "baiduboxapp",
+    "preview": {
+        "packageId": 1284438
+    },
+    "projectname": "program",
+    "publish": {
+        "tips": [
+            "小程序包内容将被百度解析和收录，用于内容的风险控制。",
+            "您已开通分享web化，请确保分享web化体验无问题后，再进行发布。"
+        ],
+        "version": "2.2.44"
+    },
+    "setting": {
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.560.11",
+            "extensionJsVersion": "1.21.2"
+        }
+    },
+    "appid": "16426097"
+}

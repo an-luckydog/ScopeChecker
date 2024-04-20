@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "header": "./components/header/index",
+        "month": "./components/month/index",
+        "van-button": "../button/index",
+        "van-popup": "../popup/index",
+        "van-toast": "../toast/index",
+        "banner": "/./miniprogram_npm/@tmsfe/tms-ui/banner/banner",
+        "navbar": "/./miniprogram_npm/@tmsfe/tms-ui/navbar/navbar"
+    }
+}

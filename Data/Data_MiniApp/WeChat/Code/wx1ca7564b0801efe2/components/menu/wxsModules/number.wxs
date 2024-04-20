@@ -1,0 +1,13 @@
+var judgeAddDisable = (function(menuDish, dishCount, stockCount) {
+    if (!menuDish) {
+        return (false)
+    };
+    if (menuDish.hasExceedMaxNum || stockCount > -1 && dishCount > 0 && stockCount <= dishCount) {
+        return (true)
+    } else {
+        return (false)
+    }
+});
+module.exports = ({
+    judgeAddDisable: judgeAddDisable,
+});

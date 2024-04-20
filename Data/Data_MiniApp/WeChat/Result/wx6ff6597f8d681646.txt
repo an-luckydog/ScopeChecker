@@ -1,0 +1,39 @@
+在后端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\enter\enter.js}"中的方法{"{'chooseShareThumb'}}"中找到匹配: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\enter\enter.wxml}"中的方法{"                <view bindtap="chooseShareThumb" class="back-showImg">
+}"中找到对应: {"chooseImage}"
+在后端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\enter\enter.js}"中的方法{"{'choosethumb'}}"中找到匹配: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\enter\enter.wxml}"中的方法{"            <view bindtap="choosethumb" class="back-addImg">
+}"中找到对应: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\publishA\publishA.wxml}"中的方法{"    <image bindtap="choosethumb" class="changeImage" src="../../../resource/icon/publish/changeImg.png"></image>
+}"中找到对应: {"chooseImage}"
+在后端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\enter\enter.js}"中的方法{"{'introImgDelete'}}"中找到匹配: {"chooseVideo}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\enter\enter.wxml}"中的方法{"                <view bindtap="introImgDelete" class="back-imgDelete" data-index="{{index}}">
+}"中找到对应: {"chooseVideo}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\publishA\publishA.wxml}"中的方法{"            <view bindtap="introImgDelete" class="back-imgDelete" data-index="{{index}}">
+}"中找到对应: {"chooseVideo}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\publishD\publishD.wxml}"中的方法{"            <view bindtap="introImgDelete" class="back-imgDelete">
+}"中找到对应: {"chooseVideo}"
+在后端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\enter\enter.js}"中的方法{"{'chooseVideo'}}"中找到匹配: {"chooseVideo}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\enter\enter.wxml}"中的方法{"            <view bindtap="chooseVideo" class="back-addImg">
+}"中找到对应: {"chooseVideo}"
+在后端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\help\help.js}"中的方法{"{'chooseimage'}}"中找到匹配: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\help\help.wxml}"中的方法{"            <image bindtap="chooseimage" class="add_img" src="/itlian_votev2/resource/icon/add.png"></image>
+}"中找到对应: {"chooseImage}"
+在后端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\imagecut\imagecut.js}"中的方法{"{'getImage'}}"中找到匹配: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\imagecut\imagecut.wxml}"中的方法{"        <button bindtap="getImage" class="rechoice" type="primary reverse"> 重新选择 </button>
+}"中找到对应: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\imagecut\imagecut.wxml}"中的方法{"        <button bindtap="getImageInfo" class="done"> 裁剪完成 </button>
+}"中找到对应: {"chooseImage}"
+在后端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\publishA\publishA.js}"中的方法{"{'choosethumb'}}"中找到匹配: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\enter\enter.wxml}"中的方法{"            <view bindtap="choosethumb" class="back-addImg">
+}"中找到对应: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\publishA\publishA.wxml}"中的方法{"    <image bindtap="choosethumb" class="changeImage" src="../../../resource/icon/publish/changeImg.png"></image>
+}"中找到对应: {"chooseImage}"
+在后端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\publishA\publishA.js}"中的方法{"{'chooseIntroImages'}}"中找到匹配: {"chooseImage}"
+在后端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\publishB\publishB.js}"中的方法{"{'bindzbfCode'}}"中找到匹配: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\publishC\publishC.wxml}"中的方法{"        <view bindtap="bindzbfCode" class="back-showImg" data-index="{{1}}">
+}"中找到对应: {"chooseImage}"
+在后端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\publishC\publishC.js}"中的方法{"{'bindzbfCode'}}"中找到匹配: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\publishC\publishC.wxml}"中的方法{"        <view bindtap="bindzbfCode" class="back-showImg" data-index="{{1}}">
+}"中找到对应: {"chooseImage}"
+在后端文件{"D:\wxappUnpacker-master\dec\itlian_votev2\pages\publishlist\publishD\publishD.js}"中的方法{"{'chooseIntroImages'}}"中找到匹配: {"chooseImage}"

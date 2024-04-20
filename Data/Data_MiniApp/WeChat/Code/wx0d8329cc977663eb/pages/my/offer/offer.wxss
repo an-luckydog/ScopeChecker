@@ -1,0 +1,93 @@
+page {
+    background-color: #e8e8e8;
+    font-family: 'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;
+}
+
+.activityRow {
+    margin: 15rpx;
+    width: 660rpx;
+    border: 1px solid #d2d2d2;
+    background: #ffffff;
+    padding: 20rpx 30rpx 15rpx 20rpx;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.activityName {
+    font-size: 30rpx;
+    margin-bottom: 10rpx;
+    vertical-align: top;
+    color: #5bc0de;
+    font-weight: bold;
+}
+
+.activityIntroduce {
+    color: #333;
+    font-size: 25rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.startTime {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+    color: #a2a2a2;
+    font-size: 23rpx;
+}
+
+.place {
+    width: 50%;
+    display: inline-block;
+    text-align: laft;
+    color: #a2a2a2;
+    font-size: 23rpx;
+}
+
+.info {
+    margin-left: 10px;
+    padding: 3rpx 12rpx 5rpx 12rpx;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #5bc0de;
+    display: inline-block;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+.end {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #f0ad4e;
+    padding: 3rpx 12rpx 5rpx 12rpx;
+    display: inline-block;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+.inTime {
+    margin-left: 10px;
+    padding: 3rpx 12rpx 5rpx 12rpx;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background: #18bc93;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+.noMsg {
+    width: 690rpx;
+    padding: 30rpx;
+    text-align: center;
+    font-size: 27rpx;
+}

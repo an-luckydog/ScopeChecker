@@ -1,0 +1,126 @@
+<view class="data-v-bb05456e">
+    <guide-add bind:__l="__l" class="data-v-bb05456e" vueId="8dd740cc-1" wx:if="{{hsp.nethospitalStatus&&!loading}}"></guide-add>
+    <view class="{{['data-v-bb05456e','hospital-home',isChaoJu?'noBrief':'']}}" wx:if="{{hsp.nethospitalStatus&&!loading}}">
+        <view class="hospital-top data-v-bb05456e" wx:if="{{!isChaoJu}}">
+            <view class="data-v-bb05456e">{{hospitalTags}}</view>
+            <view bindtap="__e" class="more data-v-bb05456e" data-event-opts="{{[ [ 'tap',[ [ 'gotoBriefPage',['$event'] ] ] ] ]}}">
+                <text class="data-v-bb05456e">医院简介</text>
+                <image class="data-v-bb05456e" src="{{imgUrl+'hospital/ic_arrow_primary.png'}}"></image>
+            </view>
+        </view>
+        <view class="hospital-banner data-v-bb05456e" wx:if="{{bannerList.length>0}}">
+            <swiper acceleration="{{swiperOptions.acceleration}}" autoplay="{{swiperOptions.autoplay}}" circular="{{swiperOptions.circular}}" class="data-v-bb05456e" indicatorDots="{{swiperOptions.indicatorDots}}">
+                <swiper-item class="data-v-bb05456e" wx:for="{{bannerList}}" wx:for-index="__i0__" wx:for-item="banner" wx:key="id">
+                    <image bindtap="__e" class="banner-img data-v-bb05456e" data-event-opts="{{[ [ 'tap',[ [ 'gotoBanner',['$0'],[ [ ['bannerList','id',banner.id] ] ] ] ] ] ]}}" mode="aspectFill" src="{{banner.imgUrl}}"></image>
+                </swiper-item>
+            </swiper>
+        </view>
+        <view class="hospital-service-main data-v-bb05456e" wx:if="{{!isChaoJu}}">
+            <view bindtap="__e" class="hospital-service-main-item data-v-bb05456e" data-event-opts="{{[ [ 'tap',[ [ 'goServicePage',['$0'],['returnVisitServiceInfo'] ] ] ] ]}}">
+                <image class="hospital-service-main-icon data-v-bb05456e" src="{{imgUrl+'index/hospital/ic_icon_fz.png'}}"></image>
+                <view class="hospital-service-main-name data-v-bb05456e">复诊开药</view>
+                <view class="hospital-service-main-tip data-v-bb05456e">在线开药 寄到家</view>
+            </view>
+            <view bindtap="__e" class="hospital-service-main-item data-v-bb05456e" data-event-opts="{{[ [ 'tap',[ [ 'goServicePage',['$0'],['inquryServiceInfo'] ] ] ] ]}}">
+                <image class="hospital-service-main-icon data-v-bb05456e" src="{{imgUrl+'index/hospital/ic_icon_zx.png'}}"></image>
+                <view class="hospital-service-main-name data-v-bb05456e">在线问诊</view>
+                <view class="hospital-service-main-tip data-v-bb05456e">随时随地 问专家</view>
+            </view>
+        </view>
+        <view class="hospital-service-block data-v-bb05456e">
+            <view class="hospital-service-waterfall data-v-bb05456e" wx:if="{{isChaoJu}}">
+                <view class="hospital-service-main-item data-v-bb05456e">
+                    <view bindtap="__e" class="hospital-service-main-item-child service-item-inquiry data-v-bb05456e" data-event-opts="{{[ [ 'tap',[ [ 'goServicePage',['$0'],['inquryServiceInfo'] ] ] ] ]}}">
+                        <image class="hospital-service-main-icon data-v-bb05456e" src="{{imgUrl+'index/hospital/ic_icon_inquiry_cj.png'}}"></image>
+                        <view class="hospital-service-main-name data-v-bb05456e">在线问诊</view>
+                        <view class="hospital-service-main-tip data-v-bb05456e">随时随地 问专家</view>
+                    </view>
+                    <view bindtap="__e" class="hospital-service-main-item-child service-item-chain data-v-bb05456e" data-event-opts="{{[ [ 'tap',[ [ 'goServicePage',[ [ 'o',['serviceLogoId',997],['isExist',997],['serviceName','连锁服务'] ] ] ] ] ] ]}}">
+                        <image class="hospital-service-main-icon data-v-bb05456e" src="{{imgUrl+'index/hospital/ic_icon_chain_cj.png'}}"></image>
+                        <view class="hospital-service-main-name data-v-bb05456e">连锁服务</view>
+                        <view class="hospital-service-main-tip data-v-bb05456e">创造便捷生活</view>
+                    </view>
+                </view>
+                <view class="hospital-service-main-item data-v-bb05456e">
+                    <view bindtap="__e" class="hospital-service-main-item-child service-item-optometry-mall data-v-bb05456e" data-event-opts="{{[ [ 'tap',[ [ 'goServicePage',[ [ 'o',['serviceLogoId',998],['isExist',998],['serviceName','视光商城'] ] ] ] ] ] ]}}">
+                        <image class="hospital-service-main-icon data-v-bb05456e" src="{{imgUrl+'index/hospital/ic_icon_mall_cj.png'}}"></image>
+                        <view class="hospital-service-main-name data-v-bb05456e">视光商城</view>
+                        <view class="hospital-service-main-tip data-v-bb05456e">看清未来视界</view>
+                    </view>
+                    <view bindtap="__e" class="hospital-service-main-item-child service-item-returnVisit data-v-bb05456e" data-event-opts="{{[ [ 'tap',[ [ 'goServicePage',[ [ 'o',['serviceLogoId',999],['isExist',999],['serviceName','预约咨询'] ] ] ] ] ] ]}}">
+                        <image class="hospital-service-main-icon data-v-bb05456e" src="{{imgUrl+'index/hospital/ic_icon_register_cj.png'}}"></image>
+                        <view class="hospital-service-main-name data-v-bb05456e">预约咨询</view>
+                        <view class="hospital-service-main-tip data-v-bb05456e">就诊疑问 急速答</view>
+                    </view>
+                </view>
+            </view>
+            <view class="data-v-bb05456e" wx:else>
+                <view class="hospital-service data-v-bb05456e" wx:if="{{hospitalServiceList.length>0}}">
+                    <view bindtap="__e" class="{{['hospital-service-item','data-v-bb05456e',item.isExist==2?'disabled':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'goServicePage',['$0'],[ [ ['hospitalServiceList','',index] ] ] ] ] ] ]}}" wx:for="{{hospitalServiceList}}" wx:key="index">
+                        <image class="hospital-service-icon data-v-bb05456e" src="{{imgUrl+'index/hospital/ic_icon_'+item.serviceLogoId+'.png'}}"></image>
+                        <view class="hospital-service-name data-v-bb05456e">{{item.serviceName}}</view>
+                    </view>
+                </view>
+                <view class="hospital-service-line data-v-bb05456e" wx:if="{{hospitalServiceList.length>0}}"></view>
+            </view>
+            <view class="hospital-service-line data-v-bb05456e" wx:if="{{isChaoJu}}"></view>
+            <view class="hospital-notice-wrap data-v-bb05456e">
+                <image class="hospital-notice-icon data-v-bb05456e" src="{{imgUrl+'index/hospital/ic_icon_notice.png'}}"></image>
+                <view class="hospital-notice data-v-bb05456e" wx:if="{{notices.length>0}}">
+                    <u-notice-bar bgColor="#ffffff" bind:__l="__l" bind:click="__e" class="data-v-bb05456e" color="#999999" data-event-opts="{{[ [ '^click',[ ['goHospitalHomeNotice'] ] ] ]}}" fontSize="28" list="{{notices}}" mode="horizontal" moreIcon="{{false}}" volumeIcon="{{false}}" vueId="8dd740cc-2"></u-notice-bar>
+                </view>
+                <view class="hospital-notice none data-v-bb05456e" wx:if="{{notices.length==0}}">暂无通知</view>
+                <view class="hospital-notice-line data-v-bb05456e"></view>
+                <view bindtap="__e" class="hospital-notices-icon data-v-bb05456e" data-event-opts="{{[ [ 'tap',[ [ 'callPhone',['$event'] ] ] ] ]}}">
+                    <image class="data-v-bb05456e" src="{{imgUrl+'index/hospital/ic_icon_phone.png'}}"></image>
+                </view>
+            </view>
+        </view>
+        <view class="hospital-item data-v-bb05456e" wx:if="{{deptList.length>0}}">
+            <view class="hospital-item-header data-v-bb05456e">
+                <view class="hospital-item-title data-v-bb05456e">特色科室</view>
+                <view bindtap="__e" class="hospital-item-icon data-v-bb05456e" data-event-opts="{{[ [ 'tap',[ [ 'goDeptPage',['$event'] ] ] ] ]}}">
+                    <text class="data-v-bb05456e">更多</text>
+                    <image class="hospital-item-more data-v-bb05456e" src="{{imgUrl+'index/hospital/ic_icon_right.png'}}"></image>
+                </view>
+            </view>
+            <view class="hospital-department-list data-v-bb05456e">
+                <view bindtap="__e" class="hospital-department-item data-v-bb05456e" data-event-opts="{{[ [ 'tap',[ [ 'goDoctorListPage',['$0'],[ [ ['deptList','',index] ] ] ] ] ] ]}}" wx:if="{{index<8}}" wx:for="{{deptList}}" wx:key="index">
+                    <image class="data-v-bb05456e" src="{{item.icon}}"></image>
+                    <text class="data-v-bb05456e">{{item.name}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="hospital-item star-doctor data-v-bb05456e">
+            <view class="hospital-item-header data-v-bb05456e">
+                <view class="hospital-item-title data-v-bb05456e">热门医生</view>
+                <view bindtap="__e" class="hospital-item-icon data-v-bb05456e" data-event-opts="{{[ [ 'tap',[ [ 'goStarDoctorListPage',['$event'] ] ] ] ]}}">
+                    <text class="data-v-bb05456e">更多</text>
+                    <image class="hospital-item-more data-v-bb05456e" src="{{imgUrl+'index/hospital/ic_icon_right.png'}}"></image>
+                </view>
+            </view>
+            <view class="data-v-bb05456e" wx:if="{{hsp.doctorList.length>0}}">
+                <doctor-card bind:__l="__l" class="data-v-bb05456e" item="{{item}}" noBorder="{{index==hsp.doctorList.length-1?true:false}}" vueId="{{'8dd740cc-3-'+index}}" wx:for="{{hsp.doctorList}}" wx:key="index"></doctor-card>
+            </view>
+        </view>
+    </view>
+    <view class="hospital-close-tips data-v-bb05456e" wx:if="{{!hsp.nethospitalStatus&&!loading}}">
+        <image class="hospital-close-img data-v-bb05456e" src="{{imgUrl+'index/hospital/icon_no_hospital.png'}}"></image>
+        <view class="hospital-close-text data-v-bb05456e">本院暂时无法提供互联网医院服务</view>
+    </view>
+    <u-modal bind:__l="__l" bind:cancel="__e" bind:confirm="__e" bind:input="__e" cancelColor="#00C6AE" cancelText="在线问诊" class="data-v-bb05456e" confirmColor="#00C6AE" confirmText="复诊开药" data-event-opts="{{[ [ '^confirm',[ ['gotoReturnVisitDept'] ] ],[ '^cancel',[ ['gotoInquiryDoctorList'] ] ],[ '^input',[ [ '__set_model',[ '$0','show','$event',[] ],['tipsDialog'] ] ] ] ]}}" maskCloseAble="{{true}}" showCancelButton="{{true}}" showTitle="{{false}}" value="{{tipsDialog.show}}" vueId="8dd740cc-4" vueSlots="{{['default']}}" width="560">
+        <view class="data-v-bb05456e">
+            <view class="tips-dialog-title data-v-bb05456e" slot="title">提示</view>
+            <view class="tips-dialog-content data-v-bb05456e">
+                <rich-text class="data-v-bb05456e" nodes="{{tipsDialog.content}}"></rich-text>
+            </view>
+        </view>
+    </u-modal>
+    <u-modal bind:__l="__l" bind:cancel="__e" bind:confirm="__e" bind:input="__e" cancelColor="#00C6AE" cancelText="联系客服" class="data-v-bb05456e" confirmColor="#333333" confirmText="确认" data-event-opts="{{[ [ '^confirm',[ ['closeForbiddenYibao'] ] ],[ '^cancel',[ ['forbiddenYibaoCallPhone'] ] ],[ '^input',[ [ '__set_model',[ '','forbiddenYibao','$event',[] ] ] ] ] ]}}" maskCloseAble="{{false}}" showCancelButton="{{true}}" title="温馨提示" value="{{forbiddenYibao}}" vueId="8dd740cc-5" vueSlots="{{['default']}}" width="640">
+        <view class="forbidden-content data-v-bb05456e">
+            <text class="data-v-bb05456e" style="color:#f2223b;">医保系统正在升级，暂不支持在线医保结算。</text>
+            <text class="data-v-bb05456e">如需医保购药，请您到医院线下就诊。给您带来不便敬请谅解！</text>
+        </view>
+    </u-modal>
+    <drag-ball bind:__l="__l" bind:btnClick="__e" class="data-v-bb05456e" data-custom-hidden="{{!!loading}}" data-event-opts="{{[ [ '^btnClick',[ ['gotoZoostalk'] ] ] ]}}" positionY="{{60}}" vueId="8dd740cc-6" wx:if="{{isChaoJu}}"></drag-ball>
+</view>

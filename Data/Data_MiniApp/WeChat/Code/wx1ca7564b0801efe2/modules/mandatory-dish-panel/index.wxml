@@ -1,0 +1,42 @@
+<import src="../../components/tag/index.wxml"></import>
+<view class="panel">
+    <scroll-view enhanced scrollY class="scroll-list" showScrollbar="{{false}}">
+        <view class="content">
+            <view class="solution" wx:for="{{solutions}}" wx:key="index">
+                <view class="header">
+                    <view class="title">{{item.name}}</view>
+                    <view class="desc">{{item.desc}}</view>
+                    <view class="desc">（已选<text class="highlight">{{d.calculateDish(item.items,dishCountMap)}}</text>份）</view>
+                </view>
+                <view class="dish-item {{dish.status!==1?'invalid':''}}" wx:for="{{item.items}}" wx:for-item="dish" wx:key="index">
+                    <view class="pic-wrap">
+                        <image class="pic" src="{{dish.pic}}"></image>
+                        <view class="inventory">
+                            <dish-status dish="{{dish}}"></dish-status>
+                        </view>
+                    </view>
+                    <view class="dish-info">
+                        <view class="content-wrap">
+                            <view class="dish-title">{{dish.name}}</view>
+                        </view>
+                        <view class="content-wrap">
+                            <view class="price-field">
+                                <view class="price-box">
+                                    <view class="op-mask"></view>
+                                    <price memberTag="{{memberTag}}" price="{{dish}}" size="middle"></price>
+                                </view>
+                                <view class="op-field" wx:if="{{dish.status===1}}">
+                                    <add-common count="{{dishCountMap[dish.spuId]||0}}" dish="{{dish}}" extras="{{d.getExtras(dish)}}"></add-common>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+    <view bindtap="onConfirm" class="footer">
+        <view class="btn">选好了</view>
+    </view>
+</view>
+<wxs module="d" src="utils.wxs" />

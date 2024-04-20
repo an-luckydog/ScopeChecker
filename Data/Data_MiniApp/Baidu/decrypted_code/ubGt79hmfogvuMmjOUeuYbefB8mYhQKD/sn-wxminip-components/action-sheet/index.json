@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents":
+  {
+    "sn-button": "../button/index"
+  }
+}

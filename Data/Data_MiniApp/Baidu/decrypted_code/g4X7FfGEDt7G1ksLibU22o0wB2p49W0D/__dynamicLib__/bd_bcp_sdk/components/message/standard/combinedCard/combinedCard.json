@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "standard-card": "../standardCard/standardCard",
+        "consult": "../../widgets/consult/consult",
+        "combined-card": "../combinedCard/combinedCard",
+        "brand": "../widget/brand/brand"
+    }
+}

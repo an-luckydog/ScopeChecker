@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "pop-hy": "/pages/components/pop_hy/pop_hy"
+  }
+}

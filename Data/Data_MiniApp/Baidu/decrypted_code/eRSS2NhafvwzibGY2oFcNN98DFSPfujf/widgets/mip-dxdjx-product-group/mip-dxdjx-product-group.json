@@ -1,0 +1,10 @@
+{
+    "component":true,
+    "usingComponents":{
+        "gt-dxdjx-h5-navigation":"/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "mip-doujin-product-tab":"/widgets/mip-doujin-product-tab/mip-doujin-product-tab",
+        "mip-doujin-product-list":"/widgets/mip-doujin-product-list/mip-doujin-product-list",
+        "mip-bdxd-product-spectifications-layer": "/widgets/mip-bdxd-product-spectifications-layer/mip-bdxd-product-spectifications-layer",
+        "mip-dxdjx-inflate-coupon-modal": "/widgets/mip-dxdjx-inflate-coupon-modal/mip-dxdjx-inflate-coupon-modal"
+    }
+}

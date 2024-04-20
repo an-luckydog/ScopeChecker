@@ -1,0 +1,11 @@
+{
+  "name": "@dzfe/mina-ktv-book-shelf",
+  "version": "1.0.6",
+  "description": "小程序商户详情页KTV预订货架（已适配百度小程序）",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

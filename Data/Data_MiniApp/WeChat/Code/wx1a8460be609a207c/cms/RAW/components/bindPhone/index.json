@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "realBindPhone": "/cms_extension_package/RAW/bindPhone/index",
+        "c_8fwg2961decw": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "realBindPhone": "c_8fwg2961decw"
+    }
+}

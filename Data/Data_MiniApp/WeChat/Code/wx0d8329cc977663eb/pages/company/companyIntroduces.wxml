@@ -1,0 +1,38 @@
+<view class="main">
+    <view class="activityName">
+        <view class="lineTab">公司名称</view>
+        <view class="activityIntroduce">{{companyName}}</view>
+    </view>
+    <view class="activityBody">
+        <view class="lineBox">
+            <view class="lineTab">经营范围</view>
+            <view class="activityIntroduce">{{businessScope}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">公司类型</view>
+            <view class="activityIntroduce">{{companyType}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">成立时间</view>
+            <view class="activityIntroduce">{{creteTime}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">公司地点</view>
+            <view class="activityIntroduce">{{companyPosition}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">年营业额</view>
+            <view class="activityIntroduce">{{yearGetMoney}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">员工数量</view>
+            <view class="activityIntroduce">{{peopleNumber}}</view>
+        </view>
+        <view class="m-t-3">
+            <view class="lineBox">
+                <view class="lineTab">公司口号</view>
+            </view>
+            <view class="activityContent">{{companySlogan}}</view>
+        </view>
+    </view>
+</view>

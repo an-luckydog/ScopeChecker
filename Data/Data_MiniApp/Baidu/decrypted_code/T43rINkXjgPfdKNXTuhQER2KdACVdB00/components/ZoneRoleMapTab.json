@@ -1,0 +1,12 @@
+{
+    "usingComponents": {
+        "game-bar-header": "./GameBarHeader",
+        "zone-fold-text-card": "./ZoneFoldTextCard",
+        "zone-detail-skill-module": "./ZoneDetailSkillModule",
+        "zone-equipment-module": "./ZoneEquipmentModule",
+        "zone-rune-module": "./ZoneRuneModule",
+        "game-detail-video-module": "./GameDetailVideoModule",
+        "mod-line": "./ModLine"
+    },
+    "component": true
+}

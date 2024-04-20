@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "verify-mpsdk": "/wxcomponents/verify_mpsdk/index/index"
+    },
+    "component": true
+}

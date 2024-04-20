@@ -1,0 +1,16 @@
+<view catchtouchmove="true">
+    <view class="content-alert"></view>
+    <view class="alert-mmsa">
+        <image class="dialog-bg" src="../../img/pop_test_bg.png"></image>
+        <view>
+            <slot></slot>
+        </view>
+        <view class="confirm-btn">
+            <block wx:if="{{defaultBtn}}">
+                <view bindtap="handleClose" class="btn-cancel">取消</view>
+                <view bindtap="handleConfirm" class="btn-certain">确认</view>
+            </block>
+            <slot name="btn" wx:else></slot>
+        </view>
+    </view>
+</view>

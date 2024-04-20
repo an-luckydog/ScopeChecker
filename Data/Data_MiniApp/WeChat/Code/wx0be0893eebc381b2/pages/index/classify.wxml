@@ -1,0 +1,46 @@
+<import src="../template/template/template.wxml"></import>
+<privacy-popup></privacy-popup>
+<view>
+    <view class="top_nav">
+        <scroll-view scrollX class="top_nav_view" scrollLeft="{{indexs>4?200:0}}" style="white-space: nowrap;">
+            <view bindtap="active" class="nav {{active==item.id?'active':''}}" data-id="{{item.id}}" data-index="{{index}}" style="margin-right:{{index==bookTypeList.length-1?'0':bookTypeList.length>5?'25rpx':'40rpx'}}" wx:for="{{bookTypeList}}" wx:key="{{index}}">{{item.value}}</view>
+        </scroll-view>
+    </view>
+    <view class="nav_bottom">
+        <text>单词书</text>
+        <text class="text2">/ 不断更新中</text>
+    </view>
+</view>
+<view class="content" style="height:{{scroll_height}}px">
+    <scroll-view bindscrolltolower="bindscrolltolower" class="list" scrollY="true" style="height:{{scroll_height}}px">
+        <view catchtap="{{attenyion?'list_li':''}}" class="list_li" data-index="{{index}}" style="padding-bottom:{{index==bookList.length-1?'70rpx':'0'}}" wx:for="{{bookList}}" wx:key="{{index}}">
+            <button bindtap="bindGetUserInfo" class="btns_right" data-index="{{index}}" wx:if="{{!attenyion}}"></button>
+            <view class="list_li_imgs">
+                <image class="list_li_img_lik" src="{{tu_imgs+item.cover}}"></image>
+                <image class="list_li_img_lim" src="../../img/bdc_dc@2x.png"></image>
+            </view>
+            <view class="list_li_right">
+                <view class="list_li_right_top">{{item.name}}</view>
+                <view class="list_li_right_con">
+                    <view>单词数量：{{item.wordNumber}} </view>
+                    <text class="msl">|</text>
+                    <view> {{item.studyNumber}}人在背</view>
+                </view>
+                <view class="list_li_right_bottom">来源：对啊网英语课程研究中心</view>
+            </view>
+        </view>
+        <view class="no_network_data" wx:if="{{no_book}}">
+            <template is="no_data-template" data="{{n:n}}"></template>
+        </view>
+    </scroll-view>
+</view>
+<view class="no_network" wx:if="{{networkType=='none'||!isConnected}}">
+    <template is="no_network-template" data="{{n:n}}"></template>
+</view>
+<view class="failed" wx:if="{{failed}}">
+    <view class="failed_dd">
+        <image class="failed_dd_img" src="../../img/jiazai.png"></image>
+        <view class="failed_dd_text">加载失败</view>
+        <view catchtap="failed" class="failed_dd_btn">点击重试</view>
+    </view>
+</view>

@@ -1,0 +1,3 @@
+<view class="base-content">
+    <view class="base-icon base-icon-{{iconType}}" style="{{fontSize}} {{iconColor}}"></view>
+</view>

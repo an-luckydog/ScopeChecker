@@ -1,0 +1,16 @@
+<view class="wrap">
+    <view class="show">
+        <view class="head_portrait">
+            <image class="imageUser" src="../images/user.png"></image>
+        </view>
+        <view class="student_id">用户:<text>{{num}}</text>
+        </view>
+    </view>
+    <view class="content">
+        <view bindtap="{{item.bindtap}}" class="list" wx:for="{{listarray}}" wx:for-index="idx">
+            <image src="{{item.imgsrc}}"></image>
+            <text>{{item.text}}</text>
+            <mp-badge content="New" style="margin-left: 5px;display:{{idx==1?showCNews:'none'}}"></mp-badge>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+{
+    "name": "generate-image",
+    "publicComponents": {
+        "generateImage": {
+            "path": "components/generateImage/generateImage",
+            "isSwanComponent": true
+        }
+    }
+}

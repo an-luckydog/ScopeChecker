@@ -1,0 +1,34 @@
+{
+    "component": true,
+    "usingComponents": {
+        "design-sdk": "../../miniprogram_npm/@design-platform/wx-sdk/index",
+        "quicker": "/cms_sdk_extension_package/RAW/mats/quicker/c",
+        "share-modal": "/cms_sdk_extension_package/RAW/mats/share/c",
+        "powered-by": "/cms_sdk_extension_package/RAW/mats/powered-by/c",
+        "error-placeholder": "/cms_sdk/RAW/mats/error-modal/c",
+        "official-account": "/cms_sdk_extension_package/RAW/mats/official-account/c",
+        "ad": "/cms_extension_package/RAW/ad/index",
+        "start-page": "/cms_sdk/RAW/mats/start-page/c",
+        "design-modal": "../design-modal/index",
+        "sku-component": "/ec_expg/RAW/components/skuComponent/index",
+        "bullet-chat": "/ec_expg/RAW/components/bulletChat/index",
+        "debug-modal": "/cms_debug/RAW/components/debug-modal/index",
+        "background-music": "/cms_expg/RAW/components/background-music/index",
+        "delivery-popup": "/ec_expg/RAW/components/deliveryPopup/index",
+        "c_29xqoxvkdgo2fa": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "design-sdk": "c_29xqoxvkdgo2fa",
+        "quicker": "c_29xqoxvkdgo2fa",
+        "share-modal": "c_29xqoxvkdgo2fa",
+        "powered-by": "c_29xqoxvkdgo2fa",
+        "official-account": "c_29xqoxvkdgo2fa",
+        "ad": "c_29xqoxvkdgo2fa",
+        "design-modal": "c_29xqoxvkdgo2fa",
+        "debug-modal": "c_29xqoxvkdgo2fa",
+        "sku-component": "c_29xqoxvkdgo2fa",
+        "bullet-chat": "c_29xqoxvkdgo2fa",
+        "background-music": "c_29xqoxvkdgo2fa",
+        "delivery-popup": "c_29xqoxvkdgo2fa"
+    }
+}

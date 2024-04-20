@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "coupon-six": "/components/coupon-card/coupon-six/index",
+        "rule-pop": "/widgets/gt-dxdjx-h5-expand-coupon/components/rule-pop/rule-pop",
+        "mip-dxdjx-inflate-coupon-modal": "/widgets/mip-dxdjx-inflate-coupon-modal/mip-dxdjx-inflate-coupon-modal"
+    }
+}

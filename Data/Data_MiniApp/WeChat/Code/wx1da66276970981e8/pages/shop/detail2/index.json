@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "店铺详情",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "c-page": "../../../components/c-page/c-page",
+        "shop-detail": "./shop-detail"
+    }
+}

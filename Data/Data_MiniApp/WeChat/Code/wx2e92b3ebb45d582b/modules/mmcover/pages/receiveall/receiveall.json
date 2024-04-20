@@ -1,0 +1,12 @@
+{
+    "navigationStyle": "custom",
+    "backgroundColor": "#f5f8fa",
+    "backgroundColorTop": "#f5f8fa",
+    "backgroundColorBottom": "#f5f8fa",
+    "navigationBarBackgroundColor": "#f5f8fa",
+    "usingComponents": {
+        "share-mask": "../../components/share-mask/share-mask",
+        "banner": "../../../../miniprogram_npm/@tmsfe/tms-ui/banner/banner",
+        "navbar": "../../../../miniprogram_npm/@tmsfe/tms-ui/navbar/navbar"
+    }
+}

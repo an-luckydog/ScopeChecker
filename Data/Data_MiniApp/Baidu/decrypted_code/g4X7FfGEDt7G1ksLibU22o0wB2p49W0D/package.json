@@ -1,0 +1,93 @@
+{
+    "name": "service-xcx",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "modCheck": "gulp modCheck",
+        "docs": "export GULP_ENV=docs && gulp docs",
+        "jscpd": "npx jscpd ./*",
+        "prepare": "cp project.json project.swan.json",
+        "mock": "node ./scripts/server.js",
+        "build": "echo \"Please implement your build script and modify scripts.build section in package.json\" && exit 1",
+        "start": "npm i && gulp dev",
+        "dev": "gulp dev",
+        "postinstall": "node build/postinstall.js",
+        "prod": "gulp prod",
+        "add": "plop",
+        "lint": "lint-staged",
+        "test": "node ./scripts/test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://yangyoucun@icode.baidu.com:8235/baidu/ps-aladdin/service-xcx"
+    },
+    "author": "yangyoucun",
+    "license": "UNLICENSED",
+    "dependencies": {
+        "@baidu/antifraud-swan": "^1.3.1",
+        "@baidu/fmc-phone-sdk": "1.0.7",
+        "@baidu/smart-kit": "~1.0.32",
+        "@baidu/smart-utils": "~1.0.17",
+        "@baidu/ug-swan-logger": "1.6.2",
+        "@baidu/ug-task-supplier": "~2.2.0",
+        "angelia-swan": "0.0.11",
+        "big.js": "^6.2.1",
+        "md5": "^2.2.1"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "linters": {
+            "*.{js, vue}": "eslint --fix",
+            "*.{css, stylus, less}": "stylelint --fix"
+        },
+        "ignore": [
+            "dist/**/*"
+        ]
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.16.4",
+        "@baidu/eslint-config-sfe-javascript": "^1.5.0",
+        "@baidu/stylelint-config-sfe-style": "^1.5.0",
+        "@jest/test-sequencer": "~27.4.1",
+        "babel-eslint": "^10.0.0",
+        "babel-jest": "^27.3.1",
+        "chalk": "^4.1.1",
+        "colors": "^1.4.0",
+        "connect": "^3.6.6",
+        "cross-env": "^5.2.0",
+        "eslint": "^7.0.0",
+        "eslint-plugin-babel": "^5.0.0",
+        "fs-extra": "^8.1.0",
+        "gulp": "^4.0.2",
+        "gulp-cached": "^1.1.1",
+        "gulp-cssnano": "^2.1.3",
+        "gulp-if": "^3.0.0",
+        "gulp-load-plugins": "^2.0.5",
+        "gulp-nodemon": "^2.4.2",
+        "gulp-postcss": "^8.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-stylus": "^2.7.0",
+        "husky": "^1.2.0",
+        "jest": "^27.3.1",
+        "jest-junit": "^13.0.0",
+        "jscpd": "^3.3.19",
+        "lint-staged": "^8.1.0",
+        "markdown-it": "12.3.0",
+        "plop": "^2.7.4",
+        "postcss": "^7.0.6",
+        "postcss-unittrans": "^0.1.0",
+        "postcss-url": "^8.0.0",
+        "shelljs": "^0.8.4",
+        "simple-git": "^2.20.1",
+        "stylelint": "^13.13.1",
+        "stylus": "^0.54.5",
+        "table": "^6.0.3",
+        "through2": "4.0.2",
+        "vinyl": "2.2.1"
+    }
+}

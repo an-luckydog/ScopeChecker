@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-bar-header": "./GameBarHeader",
+        "activity-card": "./ActivityCard"
+    },
+    "component": true
+}

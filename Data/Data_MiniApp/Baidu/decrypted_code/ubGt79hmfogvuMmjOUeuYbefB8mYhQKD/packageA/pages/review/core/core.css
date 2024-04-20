@@ -1,0 +1,1 @@
+.tab{display:flex;position:fixed;top:0;left:0;width:100%;height:10.4vw;line-height:10.4vw;font-size:4vw;background:#fff;z-index:1}.tab .tab-item{position:relative;flex:1;text-align:center}.tab .tab-item.on{color:#f50}.tab .tab-item.on:after{content:"";position:absolute;width:2.4vw;height:0.8vw;background:#f50;border-radius:0.4vw;left:50%;bottom:0.4vw;margin-left:-1.2vw}

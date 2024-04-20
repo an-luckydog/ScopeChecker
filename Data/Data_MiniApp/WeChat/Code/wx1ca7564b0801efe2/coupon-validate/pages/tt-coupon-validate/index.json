@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "自助验券",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F1F1F1",
+    "componentPlaceholder": {
+        "lottery": "view"
+    },
+    "titlePenetrate": "YES"
+}

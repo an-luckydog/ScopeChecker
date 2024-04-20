@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "tp": "../common/tp/tp",
+    "toast": "../common/toast/toast"
+  }
+}

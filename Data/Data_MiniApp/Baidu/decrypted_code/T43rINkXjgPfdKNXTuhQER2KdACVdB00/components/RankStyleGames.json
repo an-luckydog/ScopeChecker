@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-item": "./GameItem",
+        "card-style-game": "./CardStyleGame"
+    },
+    "component": true
+}

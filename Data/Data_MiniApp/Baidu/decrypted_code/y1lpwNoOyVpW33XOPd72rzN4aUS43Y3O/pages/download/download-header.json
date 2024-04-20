@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "header-bar": "/components/common/header/header-bar",
+    "text-expandsion": "/pages/download/text-expandsion"
+  }
+}

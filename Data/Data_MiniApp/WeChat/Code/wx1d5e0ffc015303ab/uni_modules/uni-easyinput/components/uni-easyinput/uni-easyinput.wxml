@@ -1,0 +1,25 @@
+<view class="{{['uni-easyinput',msg?'uni-easyinput-error':'']}}" style="{{boxStyle}}">
+    <view class="{{['uni-easyinput__content',inputContentClass]}}" style="{{inputContentStyle}}">
+        <slot name="prefixIcon" wx:if="{{$slots.prefixIcon}}"></slot>
+        <block wx:else>
+            <uni-icons bind:__l="__l" bind:click="__e" class="content-clear-icon" color="#c0c4cc" data-event-opts="{{[ [ '^click',[ [ 'onClickIcon',['prefix'] ] ] ] ]}}" size="22" type="{{prefixIcon}}" vueId="d0425c22-1" wx:if="{{prefixIcon}}"></uni-icons>
+        </block>
+        <textarea autoHeight="{{autoHeight}}" bindblur="__e" bindconfirm="__e" bindfocus="__e" bindinput="__e" class="{{['uni-easyinput__content-textarea',inputBorder?'input-padding':'']}}" data-event-opts="{{[ [ 'input',[ [ 'onInput',['$event'] ] ] ],[ 'blur',[ [ '_Blur',['$event'] ] ] ],[ 'focus',[ [ '_Focus',['$event'] ] ] ],[ 'confirm',[ [ 'onConfirm',['$event'] ] ] ] ]}}" disabled="{{disabled}}" focus="{{focused}}" maxlength="{{inputMaxlength}}" name="{{name}}" placeholder="{{placeholder}}" placeholderClass="uni-easyinput__placeholder-class" placeholderStyle="{{placeholderStyle}}" value="{{val}}" wx:if="{{type==='textarea'}}"></textarea>
+        <input bindblur="__e" bindconfirm="__e" bindfocus="__e" bindinput="__e" class="uni-easyinput__content-input" confirmType="{{confirmType}}" data-event-opts="{{[ [ 'focus',[ [ '_Focus',['$event'] ] ] ],[ 'blur',[ [ '_Blur',['$event'] ] ] ],[ 'input',[ [ 'onInput',['$event'] ] ] ],[ 'confirm',[ [ 'onConfirm',['$event'] ] ] ] ]}}" disabled="{{disabled}}" focus="{{focused}}" maxlength="{{inputMaxlength}}" name="{{name}}" password="{{!showPassword&&type==='password'}}" placeholder="{{placeholder}}" placeholderClass="uni-easyinput__placeholder-class" placeholderStyle="{{placeholderStyle}}" style="{{inputStyle}}" type="{{type==='password'?'text':type}}" value="{{val}}" wx:else></input>
+        <block wx:if="{{type==='password'&&passwordIcon}}">
+            <uni-icons bind:__l="__l" bind:click="__e" class="{{['content-clear-icon',type==='textarea'?'is-textarea-icon':'']}}" color="{{focusShow?primaryColor:'#c0c4cc'}}" data-event-opts="{{[ [ '^click',[ ['onEyes'] ] ] ]}}" size="{{22}}" type="{{showPassword?'eye-slash-filled':'eye-filled'}}" vueId="d0425c22-2" wx:if="{{isVal}}"></uni-icons>
+        </block>
+        <block wx:else>
+            <block wx:if="{{suffixIcon||$slots.suffixIcon}}">
+                <slot name="suffixIcon" wx:if="{{$slots.suffixIcon}}"></slot>
+                <block wx:else>
+                    <uni-icons bind:__l="__l" bind:click="__e" class="content-clear-icon" color="#c0c4cc" data-event-opts="{{[ [ '^click',[ [ 'onClickIcon',['suffix'] ] ] ] ]}}" size="22" type="{{suffixIcon}}" vueId="d0425c22-3" wx:if="{{suffixIcon}}"></uni-icons>
+                </block>
+            </block>
+            <block wx:else>
+                <uni-icons bind:__l="__l" bind:click="__e" class="{{['content-clear-icon',type==='textarea'?'is-textarea-icon':'']}}" color="{{msg?'#dd524d':focusShow?primaryColor:'#c0c4cc'}}" data-event-opts="{{[ [ '^click',[ ['onClear'] ] ] ]}}" size="{{clearSize}}" type="clear" vueId="d0425c22-4" wx:if="{{clearable&&isVal&&!disabled&&type!=='textarea'}}"></uni-icons>
+            </block>
+        </block>
+        <slot name="right"></slot>
+    </view>
+</view>

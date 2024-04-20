@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-button":"../../../node_modules/@baidu/union-design-swan/union-design-wechat/button/index"
+    }
+}

@@ -1,0 +1,10 @@
+var format = (function(list) {
+    var res = [];
+    for (var i = 0; i < list.length; i += 3) {
+        res.push([list[((nt_0 = (i), null == nt_0 ? undefined : 'number' === typeof nt_0 ? nt_0 : "" + nt_0))], list[((nt_1 = (i + 1), null == nt_1 ? undefined : 'number' === typeof nt_1 ? nt_1 : "" + nt_1))] || ({}), list[((nt_2 = (i + 2), null == nt_2 ? undefined : 'number' === typeof nt_2 ? nt_2 : "" + nt_2))] || ({})])
+    };
+    return (res)
+});
+module.exports = ({
+    format: format,
+});

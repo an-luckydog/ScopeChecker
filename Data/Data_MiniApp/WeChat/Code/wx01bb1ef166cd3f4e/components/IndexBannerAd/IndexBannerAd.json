@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "BannerAd": "/components/BannerAd/BannerAd",
+        "WxAd": "/components/WxAd/WxAd"
+    }
+}

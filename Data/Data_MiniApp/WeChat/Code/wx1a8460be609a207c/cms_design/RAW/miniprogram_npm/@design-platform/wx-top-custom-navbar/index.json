@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "ti-icon": "/titian-mp/RAW/icon/index",
+        "base-customer-service": "../wx-base-customer-service/index",
+        "CMSSDKFontIcon": "/cms_sdk_extension_package/RAW/coms/font-icon/c",
+        "c_7ujmgnbrupm2fk": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "CMSSDKFontIcon": "c_7ujmgnbrupm2fk"
+    }
+}

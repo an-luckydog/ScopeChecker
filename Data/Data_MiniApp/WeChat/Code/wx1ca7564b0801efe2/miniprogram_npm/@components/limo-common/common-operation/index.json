@@ -1,0 +1,13 @@
+{
+    "component": true,
+    "usingComponents": {
+        "base-icon": "../../limo-ui/base-icon/index",
+        "ui-button": "../../limo-ui/ui-button/index",
+        "ui-redpoint": "../../limo-ui/ui-redpoint/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

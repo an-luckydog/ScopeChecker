@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "game-icon": "./Icon",
+        "book-modal": "./BookModal",
+        "pause-modal": "./PauseModal"
+    },
+    "component": true
+}

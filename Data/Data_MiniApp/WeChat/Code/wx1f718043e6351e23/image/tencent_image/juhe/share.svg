@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>分享</title>
+    <defs>
+        <linearGradient x1="-26.0024472%" y1="120.127869%" x2="43.9597348%" y2="55.6506827%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#2863FA" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="100%" x2="147.826903%" y2="-46.9756947%" id="linearGradient-2">
+            <stop stop-color="#2762FB" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.698016827" offset="99.9207823%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="返回顶部备份-11">
+            <rect id="矩形" x="0" y="0" width="36" height="36" rx="5"></rect>
+            <g id="分享" transform="translate(9.500000, 10.000000)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75">
+                <path d="M8.4556079,2.27373675e-13 L2,2.27373675e-13 C0.8954305,2.27576582e-13 -1.3527075e-16,0.8954305 0,2 L0,14.0339467 C1.11632554e-15,15.1385162 0.8954305,16.0339467 2,16.0339467 L14.5104099,16.0339467 C15.6149794,16.0339467 16.5104099,15.1385162 16.5104099,14.0339467 L16.5104099,8 L16.5104099,8" id="路径-12" stroke="url(#linearGradient-1)"></path>
+                <g id="编组-31" transform="translate(12.510410, 4.000000) rotate(-180.000000) translate(-12.510410, -4.000000) translate(8.010410, 0.000000)">
+                    <polyline id="路径-4" stroke="url(#linearGradient-2)" points="8.5 0 4.7319827 3.7680173 1.5 7"></polyline>
+                    <polyline id="路径-2" stroke="#2863FA" transform="translate(2.500000, 6.000000) scale(-1, -1) translate(-2.500000, -6.000000) " points="0.5 4 4.5 4 4.5 8"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

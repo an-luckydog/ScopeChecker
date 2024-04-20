@@ -1,0 +1,114 @@
+Object.defineProperty(exports, "__esModule", {
+    value: !0
+}), exports.TITLE_CONTENT = exports.TASTE_REPEAT_CHOICE = exports.SINGLE_CHOICE = exports.SHOP_PROMOTION_TYPE = exports.RECHARGE_SELECT_STATUS = exports.PROMOTION_SELECT_STATUS = exports.PAY_METHOD = exports.ORDER_REMARK_TYPE = exports.NO_LIMIT_CHOICE = exports.MAX_SHOW_STOCK_COUNT = exports.DISH_TYPE = exports.DISH_DETAIL = exports.COUPON_ITEM_STYLE = exports.ACTIVITY_SRC = void 0;
+
+exports.MAX_SHOW_STOCK_COUNT = 10;
+
+exports.NO_LIMIT_CHOICE = -1;
+
+exports.TASTE_REPEAT_CHOICE = {
+    MULTI: 1,
+    SINGLE: 2
+};
+
+exports.SINGLE_CHOICE = 1;
+
+exports.DISH_DETAIL = {
+    MAIN_DISH: 0,
+    RECOMMEND_DISH: 1
+};
+
+exports.TITLE_CONTENT = {
+    NET: "网友推荐",
+    NET_LIST: "网友推荐列表",
+    BOSS: "老板推荐",
+    PREMIUM_DISH: "菜品加价购",
+    FULL_PRICE_PREMIUM: "满额/每满额加价购",
+    FULL_PRICE_PREFERENTIAL: "满额/每满额优惠购",
+    MATCH_RECOMMEND: "搭配推荐",
+    CART: "购物车",
+    SEARCH_LIST: "搜索列表",
+    ORDER_LIST: "下单列表"
+};
+
+exports.SHOP_PROMOTION_TYPE = {
+    VIP_DISCOUNT_OFFSET: 1e4,
+    FULL_GIFT: 1,
+    BUY_GIFT: 2,
+    FULL_ADDPRICE: 3,
+    NTH_DISCOUNT: 4,
+    SPECIAL_PRICE: 5,
+    GOODS_BUY_ADD: 6,
+    GOODS_DISCOUNT: 7,
+    NTH_CUT: 8,
+    NTH_SPECIAL_PRICE: 9,
+    FULL_COUNT_DISCOUNT: 10,
+    FULL_COUNT_CUT: 11,
+    FULL_COUNT_FIXED_PRICE: 12,
+    FULL_COUNT_SPEC_PRICE: 13,
+    ORDER_FULL_GOODS_REDUCE: 14,
+    DISCOUNT: 21,
+    CATEGORY_DISCOUNT: 22,
+    FULL_CUT: 23,
+    POS_CUT: 60,
+    POS_GIFT: 24,
+    GOODS_CUSTOM: 25,
+    POS_FREE_ORDER: 26,
+    POS_DISCOUNT: 27,
+    MEMBER_POINT: 28,
+    MEMBER_ASSET: 29,
+    GROUPON_DISH_COUPON: 30,
+    GROUPON_ORDER_COUPON: 31,
+    MEMBER_PRICE: 32,
+    MEMBER_DISCOUNT: 33,
+    ODDMENT: 34,
+    AUTOODDMENT: 35,
+    MEMBER_DISCOUNT_COUPON: 36,
+    FULL_DISCOUNT: 37,
+    TIMES_CARD: 40,
+    MB_POINT: 51,
+    MB_ASSET: 52,
+    SALE_WITH_DISH: 15
+};
+
+exports.ORDER_REMARK_TYPE = {
+    USER: 1,
+    MERCHANT: 2
+};
+
+exports.PROMOTION_SELECT_STATUS = {
+    NOT_SELECTED: 0,
+    SELECTED: 1,
+    CAN_NOT_SELECT: 2,
+    DEFAULT_SELECTED: 3
+};
+
+exports.PAY_METHOD = {
+    PREPAY: 1,
+    POSTPAY: 2,
+    INVALID_PAY: 3
+};
+
+exports.RECHARGE_SELECT_STATUS = {
+    NOT_SELECTED: 0,
+    SELECTED: 1
+};
+
+exports.DISH_TYPE = {
+    NORMAL: 0,
+    PACKAGE: 1
+};
+
+exports.ACTIVITY_SRC = {
+    KOU_BEI_GROUP: 106,
+    GROUPON: 105,
+    MEMBER: 103
+};
+
+exports.COUPON_ITEM_STYLE = {
+    DIAN_CAN: 1,
+    PANEL_TYPE: 2,
+    CONFIRM_PAGE_LIST: 3,
+    SMALL_SHOW_CHECKED: 4,
+    SHOW_CHECKED: 7
+};

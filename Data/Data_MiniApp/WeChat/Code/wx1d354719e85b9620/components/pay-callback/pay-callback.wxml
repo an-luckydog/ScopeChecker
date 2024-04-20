@@ -1,0 +1,9 @@
+<view bindtap="__e" borderRadius="32" class="shadow data-v-24ed12eb" data-event-opts="{{[ [ 'tap',[ [ 'changeFlag',['$event'] ] ] ] ]}}" hidden="{{!value}}">
+    <view class="content data-v-24ed12eb" wx:if="{{money}}">
+        <view class="data-v-24ed12eb">
+            <label class="_span data-v-24ed12eb">微信支付</label>
+            <label class="_span data-v-24ed12eb">{{'￥'+money}}</label>
+        </view>
+        <peace-button bind:__l="__l" bind:click="__e" class="data-v-24ed12eb" customStyle="width:8em" data-event-opts="{{[ [ '^click',[ [ 'changeFlag',['click'] ] ] ] ]}}" loading="{{loading}}" type="primary" vueId="3e1493c2-1" vueSlots="{{['default']}}">查看订单</peace-button>
+    </view>
+</view>

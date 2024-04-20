@@ -1,0 +1,36 @@
+<u-popup bind:__l="__l" bind:close="__e" bind:input="__e" borderRadius="32" class="data-v-2d3d6cd8" data-event-opts="{{[ [ '^close',[ ['close'] ] ],[ '^input',[ [ '__set_model',[ '','visible','$event',[] ] ] ] ] ]}}" maskCloseAble="{{true}}" maskCustomStyle="{{backgroundColor:'rgba(0, 0, 0, 0.4)'}}" mode="bottom" safeAreaInsetBottom="{{true}}" value="{{visible}}" vueId="744e5ab0-1" vueSlots="{{['default']}}">
+    <view class="sb-dialog data-v-2d3d6cd8">
+        <view class="dialog-header data-v-2d3d6cd8">
+            <view class="dialog-header-content data-v-2d3d6cd8">
+                <view class="sb-tabs data-v-2d3d6cd8" wx:if="{{channelList.length}}">
+                    <view catchtap="__e" class="{{[ 'data-v-2d3d6cd8','sb-tab '+(active==item.key?'active':'') ]}}" data-event-opts="{{[ [ 'tap',[ [ 'changeTab',['$0'],[ [ ['channelList','',index] ] ] ] ] ] ]}}" wx:for="{{channelList}}" wx:key="index">{{item.value}}</view>
+                </view>
+                <view class="sb-tabs data-v-2d3d6cd8" wx:else>暂无商保渠道</view>
+                <image catchtap="__e" class="dialog-close data-v-2d3d6cd8" data-event-opts="{{[ [ 'tap',[ [ 'close',['$event'] ] ] ] ]}}" src="{{imgUrl+'common/component/selectCommercialInsurance/close.png'}}"></image>
+            </view>
+            <view class="checked-info data-v-2d3d6cd8">
+                <block wx:if="{{!insuranceId}}">本单暂未使用</block>
+            </view>
+        </view>
+        <view class="dialog-content data-v-2d3d6cd8">
+            <view class="insurance-list data-v-2d3d6cd8" wx:if="{{productList.length}}">
+                <u-radio-group bind:__l="__l" bind:change="__e" bind:input="__e" class="data-v-2d3d6cd8" customStyle="{{wdith:'100%'}}" data-event-opts="{{[ [ '^change',[ ['changeInsurance'] ] ],[ '^input',[ [ '__set_model',[ '','insuranceId','$event',[] ] ] ] ] ]}}" size="48" value="{{insuranceId}}" vueId="{{'744e5ab0-2'+','+'744e5ab0-1'}}" vueSlots="{{['default']}}">
+                    <view class="{{[ 'data-v-2d3d6cd8','insurance-item '+(insuranceId===item[$orig].cardno?'active':'') ]}}" wx:for="{{$root.l0}}" wx:key="index">
+                        <view class="insurance-content data-v-2d3d6cd8">
+                            <view class="insurance-info data-v-2d3d6cd8">
+                                <view class="insurance-name van-ellipsis data-v-2d3d6cd8">
+                                    <text class="data-v-2d3d6cd8" style="font-weight:600;">{{item[$orig].product}}</text>{{'('+item[$orig].cardno+')'}}</view>
+                                <view class="insurance-right van-ellipsis data-v-2d3d6cd8">{{'剩余'+item.f0+'权益'}}</view>
+                            </view>
+                            <u-radio activeColor="#00C6AE" bind:__l="__l" class="data-v-2d3d6cd8" iconSize="32" labelPosition="left" name="{{item[$orig].cardno}}" shape="circle" vueId="{{'744e5ab0-3-'+index+','+'744e5ab0-2'}}"></u-radio>
+                        </view>
+                    </view>
+                </u-radio-group>
+            </view>
+            <view class="sb-no-data data-v-2d3d6cd8" wx:else>未查询到可使用权益</view>
+        </view>
+        <view class="dialog-footer data-v-2d3d6cd8">
+            <peace-button bind:__l="__l" bind:click="__e" class="data-v-2d3d6cd8" customStyle="width: 686rpx" data-event-opts="{{[ [ '^click',[ ['confirmInsurance'] ] ] ]}}" popup="{{true}}" type="primary" vueId="{{'744e5ab0-4'+','+'744e5ab0-1'}}" vueSlots="{{['default']}}">确认</peace-button>
+        </view>
+    </view>
+</u-popup>

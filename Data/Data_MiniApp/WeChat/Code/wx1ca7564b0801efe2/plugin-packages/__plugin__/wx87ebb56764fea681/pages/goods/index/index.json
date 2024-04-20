@@ -1,0 +1,8 @@
+{
+    "usingComponents": {},
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "领到的奖励",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe",
+    "navigationStyle": "default"
+}

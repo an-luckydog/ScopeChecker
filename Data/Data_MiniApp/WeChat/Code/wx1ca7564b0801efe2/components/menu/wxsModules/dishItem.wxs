@@ -1,0 +1,20 @@
+var getCollocationContainerData = (function(collocationListDetailMap, item) {
+    if (item) {
+        var parentId = '' + (item.parentId || item.categoryId);
+        var categoryId = '' + item.categoryId;
+        var collocationContainerData = ({});
+        if (collocationListDetailMap && collocationListDetailMap[((nt_0 = (parentId), null == nt_0 ? undefined : 'number' === typeof nt_0 ? nt_0 : "" + nt_0))]) {
+            collocationContainerData = collocationListDetailMap[((nt_1 = (parentId), null == nt_1 ? undefined : 'number' === typeof nt_1 ? nt_1 : "" + nt_1))][((nt_1 = (categoryId), null == nt_1 ? undefined : 'number' === typeof nt_1 ? nt_1 : "" + nt_1))]
+        };
+        if (collocationContainerData.list.length >= 3) {
+            return (collocationContainerData)
+        } else {
+            return (null)
+        }
+    } else {
+        return (null)
+    }
+});
+module.exports = ({
+    getCollocationContainerData: getCollocationContainerData,
+});

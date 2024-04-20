@@ -1,0 +1,22 @@
+<view class="first-option-list data-v-3ea96fec">
+    <view class="first-option data-v-3ea96fec" wx:for="{{$root.l0}}" wx:for-index="date" wx:key="date">
+        <view class="date data-v-3ea96fec">
+            <view class="year data-v-3ea96fec">{{item.f0}}</view>
+            <view class="month data-v-3ea96fec">{{item.f1}}</view>
+        </view>
+        <view class="content data-v-3ea96fec">
+            <view bindtap="__e" class="card-box data-v-3ea96fec" data-event-opts="{{[ [ 'tap',[ [ 'toDetail',['$event'] ] ] ] ]}}" data-item="{{it}}" wx:for="{{item[$orig]}}" wx:for-item="it" wx:key="index">
+                <view class="card data-v-3ea96fec">
+                    <image class="card-icon data-v-3ea96fec" src="{{imgUrl+'common/component/firstOptionList/medical_record.png'}}"></image>
+                    <view class="card-info data-v-3ea96fec">
+                        <view class="card-title data-v-3ea96fec">
+                            <view class="card-title-text data-v-3ea96fec">{{it.title}}</view>
+                        </view>
+                        <view class="card-sub data-v-3ea96fec">{{(it.hospitalName||'--')+' | '+(it.deptName||'--')}}</view>
+                    </view>
+                </view>
+                <view class="diagnosis data-v-3ea96fec" wx:if="{{it.diagnosis}}">{{it.diagnosis}}</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,5 @@
+problem_file_path,problem_function_name,problem_api,occurrences_in_frontend
+app.js,{'$'},scanCode,0
+pages/tabBar/index/index.js,{'onShow'},scanCode,0
+pages/tabBar/index/index.js,{'catch'},scanCode,0
+pages/tabBar/index/index.js,{'navigateToNext'},scanCode,0

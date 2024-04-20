@@ -1,0 +1,13 @@
+{
+    "defaultTitle": "收集活动",
+    "navigationBarTitleText": "收集活动",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "disableScroll": false,
+    "transparentTitle": "auto",
+    "enablePullDownRefresh": true,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,86 @@
+<template name="coupon-rules-standard">
+    <c22 id="{{mid}}" requestHeader="{{d.requestHeader}}" rulesParams="{{d.rulesParams}}" safePadding="{{d.safePadding}}"></c22>
+</template>
+<template name="video-module">
+    <c21 autoplay="{{d.autoplay}}" circulate="{{d.circulate}}" componentStyle="{{d.componentStyle}}" fillShowSwitch="{{d.fillShowSwitch}}" id="{{mid}}" layout="{{d.layout}}" videoAuditInfo="{{d.videoAuditInfo}}"></c21>
+</template>
+<template name="member-canvas">
+    <c20 bind:decorationCompClick="et" businessData="{{d.businessData}}" feBasicResource="{{d.feBasicResource}}" id="{{mid}}" isLogin="{{d.isLogin}}" isMemberCanvas="{{d.isMemberCanvas}}" loginAction="{{d.loginAction}}" loginCanvasConfig="{{d.loginCanvasConfig}}" needSecondRequest="{{d.needSecondRequest}}"></c20>
+</template>
+<template name="double-limo-slide">
+    <c19 advId="{{d.advId}}" autoplay="{{d.autoplay}}" bannerInterval="{{d.bannerInterval}}" bind:decorationCompClick="et" componentStyle="{{d.componentStyle}}" heightImg="{{d.heightImg}}" id="{{mid}}" imgList="{{d.imgList}}" layout="{{d.layout}}" opacitySpu="{{d.opacitySpu}}"></c19>
+</template>
+<template name="limo-rules-modal-v2">
+    <c18 agreement="{{d.agreement}}" headers="{{d.headers}}" id="{{mid}}"></c18>
+</template>
+<template name="phone-number-no-quota-modal">
+    <c17 id="{{mid}}" modalName="{{d.modalName}}"></c17>
+</template>
+<template name="common-agreement-confirm-dialog">
+    <c16 agreementDesc="{{d.agreementDesc}}" agreements="{{d.agreements}}" authButtonClassName="{{d.authButtonClassName}}" authButtonStyle="{{d.authButtonStyle}}" bind:contractDenied="et" bind:contractSigned="et" confirmText="{{d.confirmText}}" failEventName="{{d.failEventName}}" headers="{{d.headers}}" id="{{mid}}" logo="{{d.logo}}" modalName="{{d.modalName}}" modalSubTitle="{{d.modalSubTitle}}" modalTitle="{{d.modalTitle}}" rejectText="{{d.rejectText}}" successEventName="{{d.successEventName}}" useRevoke="{{d.useRevoke}}"></c16>
+</template>
+<template name="login-modal">
+    <c15 agreementDesc="{{d.agreementDesc}}" agreementList="{{d.agreementList}}" bind:closeLoginModal="et" bind:loginFailed="et" bind:loginShowYoda="et" bind:loginSuccess="et" bind:loginToggleAgreement="et" bind:reUserBindCancel="et" bind:reUserBindFailed="et" bind:reUserBindSuccess="et" bind:switchLoginType="et" commonHeaders="{{d.commonHeaders}}" defaultLoginType="{{d.defaultLoginType}}" enableAutoFocus="{{d.enableAutoFocus}}" enabledLoginType="{{d.enabledLoginType}}" extraEventParams="{{d.extraEventParams}}" extraLoginParams="{{d.extraLoginParams}}" hasAgreed="{{d.hasAgreed}}" id="{{mid}}" modalName="{{d.modalName}}" revokeEventsName="{{d.revokeEventsName}}" useRevoke="{{d.useRevoke}}"></c15>
+</template>
+<template name="universal-login">
+    <c14 agreementDesc="{{d.agreementDesc}}" agreementHeaders="{{d.agreementHeaders}}" agreementList="{{d.agreementList}}" agreementParams="{{d.agreementParams}}" authButtonClassName="{{d.authButtonClassName}}" bind:uniLoginFailed="et" bind:uniLoginReUserBindCancel="et" bind:uniLoginReUserBindFailed="et" bind:uniLoginReUserBindSuccess="et" bind:uniLoginShowYoda="et" bind:uniLoginSlotTap="et" bind:uniLoginSuccess="et" bind:uniLoginSwitchLoginType="et" bind:uniLoginTap="et" bind:uniLoginToggleAgreement="et" commonHeaders="{{d.commonHeaders}}" defaultLoginType="{{d.defaultLoginType}}" enableAgreementDialog="{{d.enableAgreementDialog}}" enableAutoFocus="{{d.enableAutoFocus}}" enabledLoginType="{{d.enabledLoginType}}" extraEventParams="{{d.extraEventParams}}" extraLoginParams="{{d.extraLoginParams}}" hasAgreed="{{d.hasAgreed}}" id="{{mid}}" isDialog="{{d.isDialog}}" layout="{{d.layout}}" location="{{d.location}}" loginStatus="{{d.loginStatus}}" loginStyle="{{d.loginStyle}}" loginText="{{d.loginText}}" revokePrefix="{{d.revokePrefix}}" shopRegisterRedirectPath="{{d.shopRegisterRedirectPath}}" showOuterAgreement="{{d.showOuterAgreement}}" useNewAuthVersion="{{d.useNewAuthVersion}}" useRevoke="{{d.useRevoke}}" yodaOptions="{{d.yodaOptions}}"></c14>
+</template>
+<template name="shop-ui-confirm">
+    <c13 bind:shopDistanceConfirm="et" btns="{{d.btns}}" content="{{d.content}}" id="{{mid}}" title="{{d.title}}"></c13>
+</template>
+<template name="voucher-menu-select-modal">
+    <c12 closePosition="{{d.closePosition}}" hideClose="{{d.hideClose}}" id="{{mid}}" modalName="{{d.modalName}}" modalTitle="{{d.modalTitle}}" requestInfo="{{d.requestInfo}}"></c12>
+</template>
+<template name="notice-config">
+    <c11 bgColor="{{d.bgColor}}" componentStyle="{{d.componentStyle}}" id="{{mid}}" layout="{{d.layout}}" noticeContent="{{d.noticeContent}}" noticeIcon="{{d.noticeIcon}}" noticeImgUrl="{{d.noticeImgUrl}}" showStyle="{{d.showStyle}}" slideInterval="{{d.slideInterval}}" textColor="{{d.textColor}}"></c11>
+</template>
+<template name="member-info">
+    <c10 animationStyle="{{d.animationStyle}}" bind:collectCoupon="et" bind:handleTakeaway="et" businessData="{{d.businessData}}" cardId="{{d.cardId}}" componentStyle="{{d.componentStyle}}" defaultNickName="{{d.defaultNickName}}" id="{{mid}}" layout="{{d.layout}}" memberCardInfo="{{d.memberCardInfo}}" needSecondRequest="{{d.needSecondRequest}}" notLoginConfig="{{d.notLoginConfig}}" overallStyle="{{d.overallStyle}}" showCardTitle="{{d.showCardTitle}}" showMemberGrade="{{d.showMemberGrade}}" showNickName="{{d.showNickName}}" styleType="{{d.styleType}}" theme="{{d.theme}}"></c10>
+</template>
+<template name="agreement-confirm">
+    <c9 fromMenu="{{d.fromMenu}}" id="{{mid}}" shopId="{{d.shopId}}"></c9>
+</template>
+<template name="panel-container-menu">
+    <c8 bind:gotoMemberLogin="et" bind:gotoThirdLogin="et" id="{{mid}}"></c8>
+</template>
+<template name="register-panel">
+    <c7 actionUrl="{{d.actionUrl}}" id="{{mid}}"></c7>
+</template>
+<template name="advertising-carousel">
+    <c6 advId="{{d.advId}}" autoplay="{{d.autoplay}}" bannerInterval="{{d.bannerInterval}}" banners="{{d.banners}}" heightImg="{{d.heightImg}}" id="{{mid}}" layout="{{d.layout}}" shopId="{{d.shopId}}"></c6>
+</template>
+<template name="top-sticky-container">
+    <c5 announcementCarousel="{{d.announcementCarousel}}" fixed="{{d.fixed}}" id="{{mid}}" offsetTop="{{d.offsetTop}}" topTimeTip="{{d.topTimeTip}}"></c5>
+</template>
+<template name="menu-popup-windows">
+    <c4 adPopupDecoration="{{d.adPopupDecoration}}" bind:takeawayHandle="et" buffetLimitMealTips="{{d.buffetLimitMealTips}}" id="{{mid}}" shopId="{{d.shopId}}" takeCoupon="{{d.takeCoupon}}"></c4>
+</template>
+<template name="groupon-coupon-swiper">
+    <c3 bind:cancelGrouponCoupon="et" bind:checkMore="et" bind:loadMore="et" bind:useCoupon="et" bind:useGrouponCoupon="et" couponStyle="{{d.couponStyle}}" coupons="{{d.coupons}}" grouponCouponList="{{d.grouponCouponList}}" id="{{mid}}" mtUserName="{{d.mtUserName}}" shopId="{{d.shopId}}"></c3>
+</template>
+<template name="groupon-coupon-login">
+    <c2 bind:gotoMemberLogin="et" bind:gotoThirdLogin="et" customClass="{{d.customClass}}" id="{{mid}}" imageUrl="{{d.imageUrl}}" isPadding="{{d.isPadding}}" loginMode="{{d.loginMode}}"></c2>
+</template>
+<template name="recommendation-module">
+    <c1 bind:dealPanelData="et" bind:openDishDetailTop="et" bind:operateDish="et" bind:showDishTimeInfoModalFn="et" id="{{mid}}" menuUpdateTime="{{d.menuUpdateTime}}" mpUserInfo="{{d.mpUserInfo}}" recommendShowType="{{d.recommendShowType}}" recommendTabs="{{d.recommendTabs}}" spuInfos="{{d.spuInfos}}" urlParams="{{d.urlParams}}"></c1>
+</template>
+<template name="menu-shop-info">
+    <c0 backgroundColor="{{d.backgroundColor}}" backgroundImgUrl="{{d.backgroundImgUrl}}" bind:closeOrderProgress="et" bind:collectCoupon="et" bind:expandShopInfo="et" bind:getLocationInfo="et" bind:goToAddressPage="et" bind:switchBiz="et" expandInfo="{{d.expandInfo}}" grouponCouponData="{{d.grouponCouponData}}" headActionList="{{d.headActionList}}" hideSearch="{{d.hideSearch}}" id="{{mid}}" isVirtualTabbar="{{d.isVirtualTabbar}}" orderConfig="{{d.orderConfig}}" peopleCountText="{{d.peopleCountText}}" pickUpConfig="{{d.pickUpConfig}}" progressInfo="{{d.progressInfo}}" searchBannerOpacity="{{d.searchBannerOpacity}}" shopHeadInfo="{{d.shopHeadInfo}}" shopId="{{d.shopId}}" shopTagList="{{d.shopTagList}}" tableName="{{d.tableName}}" tableNum="{{d.tableNum}}" urlParams="{{d.urlParams}}" waiMaiConfig="{{d.waiMaiConfig}}"></c0>
+</template>
+<view class="container container-class" style="{{layoutStyle}}" wx:if="{{modules.length||dialogs.length}}">
+    <view class="container-slot" style="{{item.layoutStyle}}" wx:if="{{modules.length}}" wx:for="{{modules}}" wx:key="moduleId">
+        <view class="divider-container" style="{{item.dividerStyle}}" wx:if="{{item.dividerTop}}">
+            <view class="divider"></view>
+        </view>
+        <template is="{{item.moduleName}}" data="{{mid:item.moduleId,d:item.data}}"></template>
+        <view class="divider-container" style="{{item.dividerStyle}}" wx:if="{{item.dividerBottom}}">
+            <view class="divider"></view>
+        </view>
+    </view>
+    <block wx:if="{{dialogs.length}}" wx:for="{{dialogs}}" wx:key="moduleId">
+        <view catchtap="onMaskTap" catchtouchmove="onMaskTouchMove" class="container-mask {{dialogs.length&&dialogs[dialogs.length-1].options.closeMask?'hidden':''}}" style="z-index:{{item.options.zIndex+index}};background:{{item.options.maskColor}}"></view>
+        <view class="mask-item {{item.options.position}}" style="z-index:{{item.options.zIndex+index}};{{item.options.customStyle}}">
+            <template is="{{item.moduleName}}" data="{{mid:item.moduleId,d:item.data}}"></template>
+        </view>
+    </block>
+</view>

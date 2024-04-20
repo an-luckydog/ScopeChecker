@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"mini-program-view":"./comp/MiniProgramView/index","h-5-cover-view-with-show-box":"./comp/H5CoverViewWithShowBox/index","h-5-cover-view-no-show-box":"./comp/H5CoverViewNoShowBox/index"}}

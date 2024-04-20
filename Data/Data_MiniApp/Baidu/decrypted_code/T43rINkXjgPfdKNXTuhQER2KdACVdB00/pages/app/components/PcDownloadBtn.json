@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "comment-btn": "../../../components/CommentBtn"
+    },
+    "component": true
+}

@@ -1,0 +1,10 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "活动中心",
+    "usingComponents": {
+        "c-card": "/components/c-card/c-card",
+        "top-fixed-bar": "/components/top-fixed-bar/tpl",
+        "c-task-timer": "/components/c-task-timer/c-task-timer"
+    }
+}

@@ -1,0 +1,2 @@
+<view class="ui-modal-backdrop {{backdropClassName||''}}" wx:if="{{showBackdrop}}"></view>
+<view class="ui-toast {{className||''}}" wx:if="{{show}}"> {{message||'未知消息'}} </view>

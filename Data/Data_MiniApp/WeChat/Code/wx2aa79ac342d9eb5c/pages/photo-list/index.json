@@ -1,0 +1,11 @@
+{
+    "navigationBarTitleText": "photo-list",
+    "navigationStyle": "custom",
+    "backgroundColor": "#f7f7f7",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "van-popup": "../../wxcomponents/vant/popup/index",
+        "uv-waterfall": "../../node-modules/@climblee/uv-ui/components/uv-waterfall/uv-waterfall",
+        "operation-popup": "../../components/operation-popup/operation-popup"
+    }
+}

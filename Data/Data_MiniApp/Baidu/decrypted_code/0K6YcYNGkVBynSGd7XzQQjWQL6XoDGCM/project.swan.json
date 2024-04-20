@@ -1,0 +1,116 @@
+{
+    "compilation-args": {
+        "selected": 5,
+        "common": {
+            "quickPreview": true
+        },
+        "options": [
+            {
+                "text": "pages/wdshow/wdshow",
+                "id": 0,
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "scene": {},
+                    "ext": {},
+                    "single": false,
+                    "singleArgs": null,
+                    "index": "pages/wdshow/wdshow",
+                    "query": "id=1357825"
+                }
+            },
+            {
+                "text": "pages/show/show",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "scene": {},
+                    "ext": {},
+                    "single": false,
+                    "singleArgs": null,
+                    "index": "pages/show/show",
+                    "query": "id=1357825"
+                },
+                "id": 1
+            },
+            {
+                "text": "pages/edu/daxin/daxin",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "query": "",
+                    "scene": {},
+                    "ext": {},
+                    "single": false,
+                    "singleArgs": null,
+                    "index": "pages/edu/daxin/daxin",
+                    "selected": 2,
+                    "isPrefetch": false
+                },
+                "id": 2
+            },
+            {
+                "text": "pages/show/show",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "scene": {},
+                    "ext": {},
+                    "single": false,
+                    "singleArgs": null,
+                    "index": "pages/show/show",
+                    "query": "id=1332333",
+                    "selected": 3,
+                    "isPrefetch": false
+                },
+                "id": 3
+            },
+            {
+                "text": "pages/comm/webload/webload",
+                "id": 4,
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "scene": {},
+                    "ext": {},
+                    "single": false,
+                    "singleArgs": null,
+                    "index": "pages/comm/webload/webload",
+                    "query": "redirectid=2",
+                    "selected": 4,
+                    "isPrefetch": false
+                }
+            },
+            {
+                "text": "pages/wdshow/wdshow",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "scene": {},
+                    "ext": {},
+                    "single": false,
+                    "singleArgs": null,
+                    "query": "id=1357825",
+                    "index": "pages/vshow/vshow",
+                    "selected": 5,
+                    "isUpdate": false,
+                    "isPrefetch": false
+                },
+                "id": 5
+            }
+        ],
+        "forceChanged": {}
+    },
+    "setting": {
+        "urlCheck": true
+    },
+    "host": "baiduboxapp",
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.850.1",
+            "extensionJsVersion": "1.21.2"
+        }
+    },
+    "projectname": "csai_bd",
+    "appid": "15292030",
+    "preview": {
+        "packageId": 981933
+    },
+    "publish": {
+        "version": "1.2.64.7"
+    }
+}

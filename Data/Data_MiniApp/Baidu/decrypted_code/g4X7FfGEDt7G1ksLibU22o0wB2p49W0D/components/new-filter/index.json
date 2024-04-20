@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-cascader": "/components/c-cascader/c-cascader"
+    }
+}

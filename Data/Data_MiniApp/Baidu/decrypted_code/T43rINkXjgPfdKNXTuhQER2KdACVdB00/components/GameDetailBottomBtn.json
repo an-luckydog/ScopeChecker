@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "game-item-btn": "./GameBoxBtn",
+        "comment-btn": "./CommentBtn",
+        "game-icon": "./Icon"
+    },
+    "component": true
+}

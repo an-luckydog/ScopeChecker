@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "canvas-progress": "/components/canvas-progress/canvas-progress"
+    }
+}

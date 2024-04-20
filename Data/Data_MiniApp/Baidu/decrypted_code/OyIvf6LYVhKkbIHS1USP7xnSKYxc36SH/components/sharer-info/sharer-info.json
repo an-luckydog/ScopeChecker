@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "base-avator": "../base-avator/index",
+        "member-level-badge": "/components/member-level-badge/member-level-badge",
+        "add-friend": "/components/addFriend/index",
+        "subscribe-outside-link": "/components/subscribe-outside-link/subscribe-outside-link"
+    }
+}

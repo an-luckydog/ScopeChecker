@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "comment-item": "/components/download/comment/comment-item",
+    "comment-textarea": "/components/download/comment/comment-textarea"
+  }
+}

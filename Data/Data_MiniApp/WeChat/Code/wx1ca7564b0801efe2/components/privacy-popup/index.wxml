@@ -1,0 +1,17 @@
+<view catchtouchmove="prevent" class="agreement-pages" wx:if="{{showPrivacy&&needShowPrivacy}}">
+    <view class="confirm-container">
+        <view class="confirm-title">{{appName}}</view>
+        <view class="confirm-body">
+            <view class="agreement">
+                <view class="inline">在你使用【{{appName}}】服务之前，请仔细阅读</view>
+                <view bind:tap="onAgreementClick" class="inline" data-tempid="{{item.id}}" wx:for="{{agreements}}" wx:key="index">
+                    <view class="inline clickable">《{{item.title}}》</view>{{index!==agreements.length-1?'、':''}}</view>
+                <view class="inline">。如你同意</view>
+                <view class="inline" wx:for="{{agreements}}" wx:key="index">《{{item.title}}》{{index!==agreements.length-1?'、':''}}</view>, 请点击“同意”开始使用【{{appName}}】。</view>
+        </view>
+        <view class="confirm-btns">
+            <button bindtap="handleDisagree" id="disagree-btn" type="default">拒绝</button>
+            <button bindagreeprivacyauthorization="handleAgree" id="agree-btn" openType="agreePrivacyAuthorization" type="primary">同意</button>
+        </view>
+    </view>
+</view>

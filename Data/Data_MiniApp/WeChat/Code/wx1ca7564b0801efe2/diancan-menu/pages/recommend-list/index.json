@@ -1,0 +1,14 @@
+{
+    "navigationBarTitleText": "点评网友推荐",
+    "navigationBarBackgroundColor": "#f7f7f7",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f7f7f7",
+    "componentPlaceholder": {
+        "container-panel": "view",
+        "take-coupon-panel": "view",
+        "dish-time-info-modal": "view",
+        "register-panel": "view",
+        "must-dish-panel": "view",
+        "lottery": "view"
+    }
+}

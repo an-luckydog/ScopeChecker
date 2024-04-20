@@ -1,0 +1,9 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "我的优惠券",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-modal": "../../components/cy-modal/cy-modal",
+        "coupon-item": "../../components/coupon-item/index"
+    }
+}

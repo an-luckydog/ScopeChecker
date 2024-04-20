@@ -1,0 +1,16 @@
+<view class="tip-content-box" hidden="{{!showTipWindow}}">
+    <view>
+        <view class="tip-window">
+            <view bindtap="__e" class="close" data-event-opts="{{[ [ 'tap',[ [ '_closeTip',['$event'] ] ] ] ]}}" wx:if="{{isShowCloseTip}}">
+                <image mode="widthFix" src="{{qpImgUrl+'tanchuangguanbi.png'}}"></image>
+            </view>
+            <text class="tip-title">{{tipTitle}}</text>
+            <view class="tip-content flex-xc-ym">
+                <view bindtap="__e" class="{{['pri-item',item.curPro?'pri-item-on':'']}}" data-event-opts="{{[ [ 'tap',[ [ '_changePro',['$0',index],[ [ ['provinceList','province',item.province] ] ] ] ] ] ]}}" wx:if="{{item.province}}" wx:for="{{provinceList}}" wx:key="province">{{''+item.province+''}}</view>
+            </view>
+            <view class="btn-box">
+                <button bindtap="__e" data-event-opts="{{[ [ 'tap',[ [ '_comfrim',['$event'] ] ] ] ]}}">{{tipComfrim}}</button>
+            </view>
+        </view>
+    </view>
+</view>

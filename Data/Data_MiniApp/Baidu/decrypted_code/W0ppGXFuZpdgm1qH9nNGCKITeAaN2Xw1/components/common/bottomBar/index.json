@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+    	"formid": "/components/common/formId/index"
+    }
+  }

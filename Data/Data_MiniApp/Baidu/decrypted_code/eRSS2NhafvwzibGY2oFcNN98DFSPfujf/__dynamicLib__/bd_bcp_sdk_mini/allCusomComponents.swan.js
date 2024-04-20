@@ -1,0 +1,1 @@
+window.defineDynamicLib("dynamicLib://bd_bcp_sdk_mini",(function(i,n,d,b){}),{});

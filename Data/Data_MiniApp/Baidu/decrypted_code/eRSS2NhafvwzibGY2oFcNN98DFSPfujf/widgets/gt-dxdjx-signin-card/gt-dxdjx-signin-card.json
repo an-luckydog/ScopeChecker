@@ -1,0 +1,10 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "login-button": "/components/login-button/login-button",
+        "pop-up": "/components/popup/popup",
+        "format-price": "/components/format-price/format-price",
+        "optimize-image": "/components/optimize-image/optimize-image"
+    }
+}

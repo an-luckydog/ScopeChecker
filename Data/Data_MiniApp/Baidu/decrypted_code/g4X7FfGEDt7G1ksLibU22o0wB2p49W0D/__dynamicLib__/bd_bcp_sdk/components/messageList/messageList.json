@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "base-card": "../message/card/baseCard/baseCard",
+        "cip-card": "../message/card/cipCard/cipCard",
+        "link-card": "../message/card/linkCard/linkCard",
+        "notification-card": "../message/card/notificationCard/notificationCard",
+        "message": "../message/normal/message/message",
+        "standard-card": "../message/standard/standardCard/standardCard",
+        "combined-card": "../message/standard/combinedCard/combinedCard"
+    }
+}

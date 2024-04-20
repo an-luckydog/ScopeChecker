@@ -1,0 +1,29 @@
+{
+    "name": "swan-solutions-ug-template",
+    "publicComponents": {
+        "sudoku": "/node_modules/@baidu/smartprogram-solution-components/components/sudoku/swan/index",
+        "header-btn": "/node_modules/@baidu/smartprogram-solution-components/components/header-btn/swan/index",
+        "task-list": "/node_modules/@baidu/smartprogram-solution-components/components/task-list/swan/index",
+        "invite-node": "/node_modules/@baidu/smartprogram-solution-components/components/invite-node/swan/index",
+        "kong-site": "/node_modules/@baidu/smartprogram-solution-components/components/kong-site/swan/index",
+        "feedback": "/node_modules/@baidu/smartprogram-solution-components/components/feedback/swan/index",
+        "divider-view": "/node_modules/@baidu/smartprogram-solution-components/components/divider-view/swan/index",
+        "tabs-server": "/node_modules/@baidu/smartprogram-solution-components/components/tabs-server/swan/index",
+        "swiper-banner": "/node_modules/@baidu/smartprogram-solution-components/components/swiper-banner/swan/index",
+        "grid-chunk": "/node_modules/@baidu/smartprogram-solution-components/components/grid-chunk/swan/index",
+        "image-view": "/node_modules/@baidu/smartprogram-solution-components/components/image-view/swan/index",
+        "coupon": "/node_modules/@baidu/smartprogram-solution-components/components/coupon/swan/index",
+        "feed": "/node_modules/@baidu/smartprogram-solution-components/components/feed/swan/index",
+        "bonus-goods": "/node_modules/@baidu/smartprogram-solution-components/components/bonus-goods/swan/index",
+        "sku": "/node_modules/@baidu/smartprogram-solution-components/components/sku/swan/index",
+        "word-edit": "/node_modules/@baidu/smartprogram-solution-components/components/word-edit/swan/index",
+        "subscribe": "/node_modules/@baidu/smartprogram-solution-components/components/subscribe/swan/index",
+        "add-widget": "/node_modules/@baidu/smartprogram-solution-components/components/add-widget/swan/index",
+        "advert": "/node_modules/@baidu/smartprogram-solution-components/components/advert/swan/index"
+    },
+    "pages": [
+        "pages/index/index",
+        "pages/web-view/index"
+    ],
+    "main": "index.js"
+}

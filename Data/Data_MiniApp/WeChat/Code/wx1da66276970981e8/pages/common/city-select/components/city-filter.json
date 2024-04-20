@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-line": "../../../../node-modules/uview-plus/components/u-line/u-line"
+    }
+}

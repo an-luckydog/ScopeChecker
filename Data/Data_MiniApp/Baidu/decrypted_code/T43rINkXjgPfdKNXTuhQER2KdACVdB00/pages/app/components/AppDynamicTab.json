@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "dynamic-follow-bar": "./DynamicFollowBar",
+        "dynamic-footer": "../../../components/Footer",
+        "official-dynamic-time-axis-card": "./OfficialDynamicTimeAxisCard"
+    },
+    "component": true
+}

@@ -1,0 +1,14 @@
+<view class="function-navigation" style="{{compStyle}}" wx:if="{{functionList}}">
+    <view class="title" wx:if="{{customTitle}}">{{customTitle}}</view>
+    <view class="function-list {{displayMode}} {{customTitle?'with-title':''}} {{customTitle&&displayMode==='row-style'&&'row-title'}}">
+        <button catchtap="handleItemClick" class="item" data-ad-item="{{item.redirectUrl}}" data-index="{{index}}" hoverClass="none" openType="{{item.action?item.action.actionType===actionType.weChat?'contact':'':''}}" wx:for="{{functionList}}" wx:key="itemDisplayName">
+            <view class="icon-label col-label" style="{{tagStyle}}" wx:if="{{!!item.tagName&&displayStyle===2}}">{{item.tagName}}</view>
+            <image class="icon" mode="aspectFit" src="{{item.iconUrl}}"></image>
+            <view class="content">
+                <view class="item-title">{{item.itemDisplayName}}</view>
+                <view class="icon-label row-label" style="{{tagStyle}}" wx:if="{{!!item.tagName&&displayStyle===1}}">{{item.tagName}}</view>
+                <view catchtap="handleStatusClick" class="status {{item.statusValue?'status-color-value':'status-color-description'}}" data-index="{{index}}" wx:if="{{(item.statusValue||item.statusDescription)&&displayMode!=='row-style'}}">{{item.statusValue||item.statusDescription}}</view>
+            </view>
+        </button>
+    </view>
+</view>

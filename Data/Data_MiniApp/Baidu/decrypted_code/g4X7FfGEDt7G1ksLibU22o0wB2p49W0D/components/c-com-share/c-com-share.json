@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "generate-image": "dynamicLib://generateImageLib/generateImage"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "appid": "14391906",
+    "appInfo": {},
+    "appkey": "",
+    "condition": {},
+    "setting": {
+        "urlCheck": false
+    },
+    "libVersion": "",
+    "projectname": "当当",
+    "host": "baiduboxapp",
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.850.1",
+            "extensionJsVersion": "1.21.2"
+        }
+    },
+    "compilation-args": {
+        "common": {
+            "quickPreview": true
+        },
+        "forceChanged": {}
+    },
+    "preview": {
+        "packageId": 1406477
+    }
+}

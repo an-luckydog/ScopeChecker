@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "game-item": "./AppRankItem"
+    },
+    "component": true
+}

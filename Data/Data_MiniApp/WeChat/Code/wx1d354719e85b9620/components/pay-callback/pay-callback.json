@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "peace-button": "/components/peace-button/peace-button",
+        "verify-mpsdk": "/wxcomponents/verify_mpsdk/index/index"
+    }
+}

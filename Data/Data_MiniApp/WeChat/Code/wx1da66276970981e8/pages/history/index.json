@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "历史反馈",
+    "onReachBottomDistance": 100,
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

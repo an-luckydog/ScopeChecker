@@ -1,0 +1,10 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "订单支付",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "choose-coupon": "../../components/choose-coupon/index",
+        "cy-vip": "../../components/cy-vip/index",
+        "cy-authorize-login": "../../components/cy-authorize-login/index"
+    }
+}

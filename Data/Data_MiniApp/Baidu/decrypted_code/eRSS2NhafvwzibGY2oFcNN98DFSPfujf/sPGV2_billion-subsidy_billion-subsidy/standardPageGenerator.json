@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "gt-dxdjx-h5-image":"/widgets/gt-dxdjx-h5-image/gt-dxdjx-h5-image",
+        "gt-dxdjx-h5-top-goods-card":"/widgets/gt-dxdjx-h5-top-goods-card/gt-dxdjx-h5-top-goods-card",
+        "gt-dxdjx-h5-navigation":"/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "mip-dxdjx-marketing-feed":"/widgets/mip-dxdjx-marketing-feed/mip-dxdjx-marketing-feed",
+        "mip-dxdjx-marketing-floatball":"/widgets/mip-dxdjx-marketing-floatball/mip-dxdjx-marketing-floatball",
+        "gt-dxdjx-h5-marketing-anchor":"/widgets/gt-dxdjx-h5-marketing-anchor/gt-dxdjx-h5-marketing-anchor"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "one-px-line": "./OnePxLine"
+    },
+    "component": true
+}

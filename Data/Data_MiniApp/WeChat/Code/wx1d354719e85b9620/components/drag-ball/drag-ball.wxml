@@ -1,0 +1,7 @@
+<view>
+    <movable-area style="{{'position:'+'fixed'+';'+'z-index:'+'999998'+';'+'height:'+windowHeight+'px'+';'+'width:'+windowWidth+'px'+';'}}">
+        <movable-view animation="{{animation}}" bindchange="__e" bindtap="__e" class="{{['drag',loaded?'show':'']}}" data-event-opts="{{[ [ 'change',[ [ 'change',['$event'] ] ] ],[ 'tap',[ [ 'click',['$event'] ] ] ] ]}}" direction="all" inertia="{{true}}" x="{{startX}}" y="{{startY}}">
+            <image src="{{imageUrl}}"></image>
+        </movable-view>
+    </movable-area>
+</view>

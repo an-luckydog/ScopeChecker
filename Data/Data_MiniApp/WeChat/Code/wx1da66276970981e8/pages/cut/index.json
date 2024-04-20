@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "中通快递－图片裁剪",
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

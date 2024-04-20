@@ -1,0 +1,22 @@
+<view class="shop-info-pickup">
+    <view class="shop-name">
+        <view class="left">
+            <view class="name-box">
+                <view bind:tap="collectShop" class="base-icon {{collectStatus?'icon-shoucang-mian':'icon-shoucang-xian'}}" wx:if="{{collectStyle===1}}"></view>
+                <view bind:tap="selectShop" class="name">{{shopName}}</view>
+                <view bind:tap="selectShop" class="base-icon icon-jiantou-you"></view>
+            </view>
+            <view class="distance">
+                <view class="base-icon icon-dizhi-xian"></view>
+                <view wx:if="{{errTip}}">{{errTip}}</view>
+                <view wx:else>{{distance}}</view>
+            </view>
+        </view>
+        <view class="right">
+            <view bind:tap="collectShop" class="operation op-collect" wx:if="{{collectStyle===2}}">
+                <image class="op-img" src="{{collectStatus?collectIconActive:collectIcon}}" wx:if="{{collectIcon}}"></image>
+                <view class="op-title">{{collectTitle}}</view>
+            </view>
+        </view>
+    </view>
+</view>

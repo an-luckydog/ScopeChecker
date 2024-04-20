@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+      "base-input": "../base-input/index",
+      "bottom-confirm": "../bottom-confirm/bottom-confirm"
+  }
+}

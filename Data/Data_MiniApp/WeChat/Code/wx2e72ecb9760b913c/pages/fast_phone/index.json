@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "快捷电话",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-userinfo": "../../components/cy-userinfo/index"
+    }
+}

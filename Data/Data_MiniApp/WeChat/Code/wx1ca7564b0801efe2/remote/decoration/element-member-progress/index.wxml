@@ -1,0 +1,9 @@
+<view class="element-member-progress">
+    <view class="progress-wrapper">
+        <view class="progress" wx:if="{{elConfig.showProgress}}">
+            <ui-progress processStyle="{{processStyle}}" wrapperStyle="{{wrapperStyle}}"></ui-progress>
+        </view>
+        <view class="progress-label" style="{{pointStyle}}" wx:if="{{elConfig.showText&&!memberGradeRight.isCurrentMaxSort}}">{{memberGradeRight.currentNum}}/{{memberGradeRight.totalNum}}</view>
+    </view>
+    <view class="tips" style="{{tipsStyle}}" wx:if="{{elConfig.showTips}}">{{memberGradeRight.prompt}}</view>
+</view>

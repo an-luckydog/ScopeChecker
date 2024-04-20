@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ui-popup": "/pages/cart/_Components/UI/Popup/index",
+    "ui-slip": "./Slip/index",
+    "ui-if": "/polyfill/componets/IF/index",
+    "ui-filter": "/polyfill/componets/FILTER/index"
+  }
+}

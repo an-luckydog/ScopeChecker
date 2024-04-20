@@ -1,0 +1,753 @@
+{
+    "appid": "14873987",
+    "compilation-args": {
+        "common": {},
+        "options": [
+            {
+                "editable": true,
+                "extra": {
+                    "compilationArgs": "--module cmd",
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/art/art",
+                    "isPrefetch": false,
+                    "query": "articleId=14944564",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 0,
+                "name": "文章页",
+                "text": "文章页"
+            },
+            {
+                "editable": true,
+                "extra": {
+                    "compilationArgs": "--module cmd",
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/detail/detail",
+                    "isPrefetch": false,
+                    "query": "pid=1229553",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 1,
+                "name": "概览页",
+                "text": "概览页"
+            },
+            {
+                "editable": true,
+                "extra": {
+                    "compilationArgs": "--module cmd",
+                    "compileArgs": "--module cmd",
+                    "ext": {
+                        "wd": "1111111111"
+                    },
+                    "index": "pages/detail/detail",
+                    "query": "pid=1083110",
+                    "scene": {
+                        "channel_id": "1081000800000000",
+                        "first": "自然搜索",
+                        "fourth": "",
+                        "id": "34",
+                        "name": "自然结果",
+                        "parent_id": "23",
+                        "second": "自然结果",
+                        "smt": "",
+                        "third": ""
+                    }
+                },
+                "id": 2,
+                "name": "测试自然结果",
+                "text": "测试自然结果"
+            },
+            {
+                "editable": true,
+                "extra": {
+                    "compilationArgs": "--module cmd",
+                    "compileArgs": "--module cmd",
+                    "ext": {
+                        "wd": "abcdefg"
+                    },
+                    "index": "pages/art/art",
+                    "query": "articleId=12489896",
+                    "scene": {
+                        "channel_id": "1081000800000000",
+                        "first": "自然搜索",
+                        "fourth": "",
+                        "id": "34",
+                        "name": "自然结果",
+                        "parent_id": "23",
+                        "second": "自然结果",
+                        "smt": "",
+                        "third": ""
+                    }
+                },
+                "id": 3,
+                "name": "自然搜索文章页",
+                "text": "自然搜索文章页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/art_bk/art_bk",
+                    "isPrefetch": false,
+                    "query": "articleId=14881966",
+                    "scene": {
+                        "channel_id": "1081000800000000",
+                        "first": "自然搜索",
+                        "fourth": "",
+                        "id": "34",
+                        "name": "自然结果",
+                        "parent_id": "23",
+                        "second": "自然结果",
+                        "smt": "",
+                        "third": ""
+                    },
+                    "singleArgs": null
+                },
+                "id": 4,
+                "text": "自然搜索_百科文章"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/detail/detail",
+                    "query": "pid=1083110&smallTypeDir=mobile",
+                    "scene": {
+                        "channel_id": "1081000800000000",
+                        "first": "自然搜索",
+                        "fourth": "",
+                        "id": "34",
+                        "name": "自然结果",
+                        "parent_id": "23",
+                        "second": "自然结果",
+                        "smt": "",
+                        "third": ""
+                    }
+                },
+                "id": 5,
+                "text": "自然搜索-概览页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {
+                        "wd": 123
+                    },
+                    "index": "pages/art/art",
+                    "query": "articleId=12457916",
+                    "scene": {
+                        "channel_id": "1081000800000000",
+                        "first": "自然搜索",
+                        "fourth": "",
+                        "id": "34",
+                        "name": "自然结果",
+                        "parent_id": "23",
+                        "second": "自然结果",
+                        "smt": "",
+                        "third": ""
+                    }
+                },
+                "id": 6,
+                "text": "自然搜索-自然结果文章页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/video/video",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 7,
+                "text": "视频首页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/vlist/vlist",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 8,
+                "text": "视频列表"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/vdetail/vdetail",
+                    "query": "vid=28593",
+                    "scene": {}
+                },
+                "id": 9,
+                "text": "sp1/pages/vdetail/vdetail"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/search_video/search_video",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 10,
+                "text": "视频搜索结果"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/vlist/vlist",
+                    "query": "cid=1&lid=0",
+                    "scene": {}
+                },
+                "id": 11,
+                "text": "视频列表"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/vdetail/vdetail",
+                    "isPrefetch": false,
+                    "query": "vid=28712",
+                    "scene": {}
+                },
+                "id": 12,
+                "text": "视频终端"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/vdetail/vdetail",
+                    "query": "vid=26579",
+                    "scene": {}
+                },
+                "id": 13,
+                "text": "视频终端2"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/search_pros/search_pros",
+                    "query": "keyword=%E5%8D%8E%E4%B8%BA",
+                    "scene": {}
+                },
+                "id": 14,
+                "text": "搜索产品"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/search_art/search_art",
+                    "query": "keyword=%E9%A9%AC%E4%BA%91%E7%9A%84%E5%AA%92%E4%BD%93",
+                    "scene": {}
+                },
+                "id": 15,
+                "text": "搜索文章"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/search_bk/search_bk",
+                    "isPrefetch": false,
+                    "query": "keyword=%E8%8B%B9%E6%9E%9C",
+                    "scene": {}
+                },
+                "id": 16,
+                "text": "搜索百科"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/video/video",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 17,
+                "text": "视频首页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/piclist/piclist",
+                    "query": "pid=357809",
+                    "scene": {}
+                },
+                "id": 18,
+                "text": "产品图片列表"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/index/index",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 19,
+                "text": "产品库"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/channel/channel",
+                    "isPrefetch": false,
+                    "query": "cid=1",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 20,
+                "text": "手机栏目"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/list/list",
+                    "query": "cid=4&lid=8",
+                    "scene": {}
+                },
+                "id": 21,
+                "text": "sp1/pages/list/list"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/search_pros/search_pros",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 22,
+                "text": "产品搜索"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/search_video/search_video",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 23,
+                "text": "搜索视频"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/live/live",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 24,
+                "text": "直播首页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/ldetail/ldetail",
+                    "query": "vid=2165",
+                    "scene": {}
+                },
+                "id": 25,
+                "text": "直播终端页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/cmt/cmt",
+                    "query": "pageUrl=https%3A%2F%2Fdc.pconline.com.cn%2F1329%2F13292105.html&pageTit=EOS%20R6%E4%B9%9F%E8%A6%81%E6%9D%A5%E4%BA%86%EF%BC%9F%E4%BD%B3%E8%83%BD%E7%9A%84%E5%A4%A7%E6%8B%9B%E4%BD%A0%E6%8E%A5%E5%BE%97%E8%BF%87%E6%9D%A5%E5%90%97%EF%BC%9F",
+                    "scene": {}
+                },
+                "id": 26,
+                "text": "评论页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/login/login",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 27,
+                "text": "登录"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/my/my",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 28,
+                "text": "我的"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/terms/terms",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 29,
+                "text": "协议隐私"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/reg/reg",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 30,
+                "text": "注册"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/price/price",
+                    "isPrefetch": false,
+                    "query": "pid=1229532",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 31,
+                "text": "报价页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "land/pages/brandRank/brandRank",
+                    "isPrefetch": false,
+                    "query": "tid=140824&rank=6",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 32,
+                "text": "品牌排行"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/category/category",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 33,
+                "text": "分类页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "land/pages/productRank/productRank",
+                    "query": "tid=20807&cid=c10147&rank=2",
+                    "scene": {}
+                },
+                "id": 34,
+                "text": "产品排行"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/clist/clist",
+                    "query": "cid=4&lid=8",
+                    "scene": {}
+                },
+                "id": 35,
+                "text": "sp1/pages/clist/clist"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/ladder/ladder",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 36,
+                "text": "PC天梯图"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/mcpu_ladder/mcpu_ladder",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 37,
+                "text": "手机cpu天梯图"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/index/index",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 38,
+                "text": "pages/index/index"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/list/list",
+                    "query": "cid=3&lid=1",
+                    "scene": {}
+                },
+                "id": 39,
+                "text": "新闻列表"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/vga_ladder/vga_ladder",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 40,
+                "text": "显卡天梯图"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "land/pages/brandRank/brandRank",
+                    "isPrefetch": false,
+                    "query": "tid=20937&from=5881_1_-1_0&type=1",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 41,
+                "text": "land/pages/brandRank/brandRank"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "land/pages/productRank/productRank",
+                    "isPrefetch": false,
+                    "query": "tid=137544&cid=b147504&from=5882_1_0_0&type=1",
+                    "scene": {},
+                    "singleArgs": null,
+                    "isUpdate": false
+                },
+                "id": 42,
+                "text": "land/pages/productRank/productRank"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/collect/collect",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 43,
+                "text": "sp1/pages/collect/collect"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/notebook_ladder/notebook_ladder",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 44,
+                "text": "笔记本天梯图"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/category/category",
+                    "isPrefetch": false,
+                    "query": "sid=20937&name=%E6%89%8B%E6%9C%BA",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 45,
+                "text": "手机产品"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "land/pages/featuredBrand/featuredBrand",
+                    "isPrefetch": false,
+                    "query": "id=1&secondTag=3&brandId=146024",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 46,
+                "text": "land/pages/featuredBrand/featuredBrand"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "land/pages/featuredProduct/featuredProduct",
+                    "isPrefetch": false,
+                    "query": "id=1&from=5881_1_-1_0&type=1",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 47,
+                "text": "land/pages/featuredProduct/featuredProduct"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "land/pages/featuredBrand/featuredBrand",
+                    "isPrefetch": false,
+                    "query": "id=1&secondTag=3&brandId=141284&from=5881_1_-1_0&type=1",
+                    "scene": {
+                        "channel_id": "1081008300000000",
+                        "first": "自然搜索",
+                        "second": "小程序 Tab"
+                    },
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 48,
+                "text": "land/pages/featuredBrand/featuredBrand"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/best_pro/best_pro",
+                    "isPrefetch": false,
+                    "query": "tid=12697999",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 49,
+                "text": "pages/best_pro/best_pro"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/param/param",
+                    "isPrefetch": false,
+                    "query": "pid=1124166",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 50,
+                "text": "参数页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "sp1/pages/compare/compare",
+                    "isPrefetch": false,
+                    "query": "pkids=1124166_1124869",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 51,
+                "text": "对比页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "bestland/pages/brandRank/brandRank",
+                    "isPrefetch": false,
+                    "query": "rankId=20001&from=5881_1_-1_0&type=1",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 53,
+                "text": "bestland/pages/brandRank/brandRank"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "bestland/pages/productRank/productRank",
+                    "isPrefetch": false,
+                    "query": "rankId=10001&from=5881_1_-1_0&type=1",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 54,
+                "text": "bestland/pages/productRank/productRank"
+            }
+        ],
+        "selected": 42
+    },
+    "host": "baiduboxapp",
+    "preview": {
+        "packageId": 930984
+    },
+    "projectname": "pconline",
+    "publish": {
+        "tips": [
+            "小程序包内容将被百度解析和收录，用于内容的风险控制。",
+            "您已开通分享web化，请确保分享web化体验无问题后，再进行发布。"
+        ],
+        "version": "2.4.43"
+    },
+    "setting": {
+        "urlCheck": true
+    },
+    "swan": {
+        "baiduboxapp": {
+            "extensionJsVersion": "1.21.2",
+            "swanJsVersion": "3.450.11"
+        }
+    }
+}

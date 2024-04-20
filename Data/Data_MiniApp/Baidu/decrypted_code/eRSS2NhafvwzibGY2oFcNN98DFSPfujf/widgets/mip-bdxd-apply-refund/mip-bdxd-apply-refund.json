@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "gt-dxdjx-h5-navigation":"/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "mip-bdxd-image-list":"/widgets/mip-bdxd-image-list/mip-bdxd-image-list",
+        "gap":"/components/gap/gap",
+        "popup":"/components/popup/popup",
+        "mip-bdxd-order-goods-card":"/widgets/mip-bdxd-order-goods-card/mip-bdxd-order-goods-card",
+        "login": "/components/login/login"
+    }
+}

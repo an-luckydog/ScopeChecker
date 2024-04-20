@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "app": "/components/privacy/privacy"
+    },
+    "component": true
+}

@@ -1,0 +1,73 @@
+<view class="user-page data-v-b030337c">
+    <view class="user-card data-v-b030337c">
+        <view class="user-img data-v-b030337c">
+            <image bindtap="__e" class="img-avatar data-v-b030337c" data-event-opts="{{[ [ 'tap',[ [ 'clickFive',['$event'] ] ] ] ]}}" src="{{userInfo.avatar||imgUrl+'index/user/ic_avatar.png'}}"></image>
+        </view>
+        <view class="user-info data-v-b030337c">
+            <button bindtap="__e" class="login-btn data-v-b030337c" data-event-opts="{{[ [ 'tap',[ [ 'signIn',['$event'] ] ] ] ]}}" wx:if="{{!userInfo.tel}}">未登录/注册</button>
+            <view class="user-login data-v-b030337c" wx:else>
+                <view class="user-login-info data-v-b030337c">
+                    <view class="user-login-name data-v-b030337c">
+                        <view class="name data-v-b030337c">{{userInfo.nickName||userInfo.realName||''}}</view>
+                    </view>
+                    <view class="phone data-v-b030337c">{{mdTel}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="user-module order data-v-b030337c">
+        <view class="user-module-title data-v-b030337c">我的订单</view>
+        <view class="user-module-list data-v-b030337c">
+            <view catchtap="__e" class="user-module-item data-v-b030337c" data-event-opts="{{[ [ 'tap',[ [ 'goPage',['$0'],[ [ ['menu.order','',index] ] ] ] ] ] ]}}" wx:for="{{menu.order}}" wx:key="index">
+                <view class="user-module-icon data-v-b030337c">
+                    <image class="data-v-b030337c" src="{{imgUrl+item.iconPath}}"></image>
+                    <view class="wait-pay data-v-b030337c" wx:if="{{item.id=='pay'&&waitPayOrderNum>0}}">{{waitPayOrderNum}}</view>
+                </view>
+                <view class="data-v-b030337c">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="user-module u-p-28 service data-v-b030337c">
+        <view class="user-module-title data-v-b030337c">医疗服务</view>
+        <view class="user-module-list data-v-b030337c">
+            <view catchtap="__e" class="user-module-item data-v-b030337c" data-event-opts="{{[ [ 'tap',[ [ 'goPage',['$0'],[ [ ['menu.service','',index] ] ] ] ] ] ]}}" style="{{'margin-top:'+(index>=4&&'50rpx')+';'}}" wx:for="{{menu.service}}" wx:key="index">
+                <view class="user-module-icon data-v-b030337c">
+                    <image class="data-v-b030337c" src="{{imgUrl+item.iconPath}}"></image>
+                </view>
+                <view class="data-v-b030337c">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="user-module data-v-b030337c">
+        <view class="user-module-title data-v-b030337c">更多功能</view>
+        <view class="user-module-list data-v-b030337c">
+            <view catchtap="__e" class="user-module-item data-v-b030337c" data-event-opts="{{[ [ 'tap',[ [ 'goPage',['$0'],[ [ ['menu.more','',index] ] ] ] ] ] ]}}" wx:for="{{menu.more}}" wx:key="index">
+                <view class="user-module-icon data-v-b030337c">
+                    <image class="data-v-b030337c" src="{{imgUrl+item.iconPath}}"></image>
+                </view>
+                <view class="data-v-b030337c">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="user-business data-v-b030337c">
+        <block wx:if="{{openTest>10}}">
+            <view bindtap="__e" class="business-item data-v-b030337c" data-event-opts="{{[ [ 'tap',[ [ 'openSetting',['$event'] ] ] ] ]}}">
+                <view class="business-info data-v-b030337c">
+                    <image class="business-icon data-v-b030337c" src="{{imgUrl+'index/user/order_completed.png'}}"></image>
+                    <view class="data-v-b030337c">
+                        <button class="setting data-v-b030337c">授权配置</button>
+                    </view>
+                </view>
+                <u-icon bind:__l="__l" class="data-v-b030337c" color="#cecece" name="arrow-right" size="32rpx" vueId="162ab905-1"></u-icon>
+            </view>
+            <view bindtap="__e" class="business-item data-v-b030337c" data-event-opts="{{[ [ 'tap',[ [ 'logStro',['$event'] ] ] ] ]}}">
+                <view class="business-info data-v-b030337c">
+                    <image class="business-icon data-v-b030337c" src="{{imgUrl+'index/user/order_completed.png'}}"></image>
+                    <view class="data-v-b030337c">打印当前缓存</view>
+                </view>
+                <u-icon bind:__l="__l" class="data-v-b030337c" color="#cecece" name="arrow-right" size="32rpx" vueId="162ab905-2"></u-icon>
+            </view>
+            <textarea autoHeight="{{true}}" class="data-v-b030337c" maxlength="-1" value="{{textrea}}" wx:if="{{textrea}}"></textarea>
+        </block>
+    </view>
+</view>

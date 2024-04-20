@@ -1,0 +1,14 @@
+{
+    "component": true,
+    "usingComponents": {
+        "price": "../price/index",
+        "market-label": "../../async-diancan-minor/components/market-label/index",
+        "dish-status": "../dish-status/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "market-label": "view",
+        "lottery": "view"
+    }
+}

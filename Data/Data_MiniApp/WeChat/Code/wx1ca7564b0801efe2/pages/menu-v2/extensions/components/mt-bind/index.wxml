@@ -1,0 +1,3 @@
+<view bindtap="toLogin" class="mt-login-bar" wx:if="{{!isBind}}">
+    <image class="login-image" mode="widthFix" src="https://p0.meituan.net/travelcube/5e3c1e8f2b2d35745c1c0358700ac4b7207010.png"></image>
+</view>

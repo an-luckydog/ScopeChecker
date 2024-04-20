@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "activity-module-title": "./ActivityModuleTitle",
+        "one-px-line": "./OnePxLine",
+        "activity-coupon-item": "./ActivityCouponItem"
+    },
+    "component": true
+}

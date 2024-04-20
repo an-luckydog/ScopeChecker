@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mip-bdxd-address-common": "/widgets/mip-bdxd-address-common/mip-bdxd-address-common"
+    }
+}

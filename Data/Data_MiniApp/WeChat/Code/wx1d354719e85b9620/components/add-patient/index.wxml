@@ -1,0 +1,65 @@
+<view class="data-v-8007a2a2">
+    <view class="field-cell-group padding-x24 data-v-8007a2a2">
+        <view class="{{[ 'data-v-8007a2a2','field-cell '+(rules.name?'field-cell-error':'') ]}}">
+            <view class="field-title data-v-8007a2a2">患者姓名</view>
+            <view class="field-value data-v-8007a2a2">
+                <view class="field-content data-v-8007a2a2">
+                    <input adjustPosition="{{true}}" bindblur="__e" bindfocus="__e" bindinput="__e" class="field-input data-v-8007a2a2" data-event-opts="{{[ [ 'input',[ [ 'watchInput',['$event'] ] ] ],[ 'blur',[ [ 'watchBlur',['$event'] ] ] ],[ 'focus',[ [ 'watchInput',['$event'] ] ] ] ]}}" data-name="name" placeholder="请输入真实姓名" placeholderClass="field-placeholder" value="{{patient.name}}"></input>
+                </view>
+                <view class="field-error data-v-8007a2a2" wx:if="{{rules.name}}">{{rules.name}}</view>
+            </view>
+        </view>
+        <view class="{{[ 'data-v-8007a2a2','field-cell '+(rules.relation?'field-cell-error':'') ]}}">
+            <view class="field-title data-v-8007a2a2">与你的关系</view>
+            <view class="field-value data-v-8007a2a2">
+                <view class="field-content data-v-8007a2a2">
+                    <view bindtap="__e" class="{{[ 'data-v-8007a2a2','field-input '+(patient.relation?'':'field-placeholder') ]}}" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}">{{''+(patient.relation||'请选择')+''}}</view>
+                    <view bindtap="__e" class="field-arrow data-v-8007a2a2" data-event-opts="{{[ [ 'tap',[ [ 'e1',['$event'] ] ] ] ]}}">
+                        <u-icon bind:__l="__l" class="data-v-8007a2a2" color="rgba(51, 51, 51, 0.4)" name="arrow-right" size="32rpx" vueId="0cbd7096-1"></u-icon>
+                    </view>
+                </view>
+                <view class="field-error data-v-8007a2a2" wx:if="{{rules.relation}}">{{rules.relation}}</view>
+            </view>
+        </view>
+        <view class="{{[ 'data-v-8007a2a2','field-cell '+(rules.idCard?'field-cell-error':'') ]}}">
+            <view class="field-title data-v-8007a2a2">身份证号</view>
+            <view class="field-value data-v-8007a2a2">
+                <view class="field-content data-v-8007a2a2">
+                    <input adjustPosition="{{true}}" bindblur="__e" bindfocus="__e" bindinput="__e" class="field-input data-v-8007a2a2" data-event-opts="{{[ [ 'input',[ [ 'watchInput',['$event'] ] ] ],[ 'blur',[ [ 'watchBlur',['$event'] ] ] ],[ 'focus',[ [ 'watchInput',['$event'] ] ] ] ]}}" data-name="idCard" placeholder="请输入证件号" placeholderClass="field-placeholder" type="idcard" value="{{patient.idCard}}"></input>
+                </view>
+                <view class="field-error data-v-8007a2a2" wx:if="{{rules.idCard}}">{{rules.idCard}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="field-cell-group data-v-8007a2a2" wx:if="{{patient.age!==''&&patient.age<needGuardianAge}}">
+        <view class="guardian-tips data-v-8007a2a2">
+            <u-icon bind:__l="__l" class="data-v-8007a2a2" color="#FFA00C" name="error-circle" size="30" vueId="0cbd7096-2"></u-icon>
+            <text class="guardian-tips-text data-v-8007a2a2">就诊人未满6岁，请填写监护人信息</text>
+        </view>
+        <view class="guardian-title data-v-8007a2a2">{{(hasGuardian?'选择或':'')+'添加监护人'}}</view>
+        <view class="padding-x24 data-v-8007a2a2">
+            <view class="{{[ 'data-v-8007a2a2','field-cell '+(rules.guardianName?'field-cell-error':'') ]}}">
+                <view class="field-title data-v-8007a2a2">监护人姓名</view>
+                <view class="field-value data-v-8007a2a2">
+                    <view class="field-content data-v-8007a2a2">
+                        <input adjustPosition="{{true}}" bindblur="__e" bindfocus="__e" bindinput="__e" class="field-input data-v-8007a2a2" data-event-opts="{{[ [ 'input',[ [ 'watchInput',['$event'] ] ] ],[ 'blur',[ [ 'watchBlur',['$event'] ] ] ],[ 'focus',[ [ 'watchInput',['$event'] ] ] ] ]}}" data-name="guardianName" placeholder="请输入真实姓名" placeholderClass="field-placeholder" value="{{patient.guardianName}}"></input>
+                        <view bindtap="__e" class="has-guardian data-v-8007a2a2" data-event-opts="{{[ [ 'tap',[ [ 'goGuardianList',['$event'] ] ] ] ]}}" wx:if="{{hasGuardian}}">
+                            <image class="has-guardian-icon data-v-8007a2a2" src="{{imgUrl+'user/family/has_guradian.png'}}"></image>
+                        </view>
+                    </view>
+                    <view class="field-error data-v-8007a2a2" wx:if="{{rules.guardianName}}">{{rules.guardianName}}</view>
+                </view>
+            </view>
+            <view class="{{[ 'data-v-8007a2a2','field-cell '+(rules.guardianIdCard?'field-cell-error':'') ]}}">
+                <view class="field-title data-v-8007a2a2">身份证号</view>
+                <view class="field-value data-v-8007a2a2">
+                    <view class="field-content data-v-8007a2a2">
+                        <input adjustPosition="{{true}}" bindblur="__e" bindfocus="__e" bindinput="__e" class="field-input data-v-8007a2a2" data-event-opts="{{[ [ 'input',[ [ 'watchInput',['$event'] ] ] ],[ 'blur',[ [ 'watchBlur',['$event'] ] ] ],[ 'focus',[ [ 'watchInput',['$event'] ] ] ] ]}}" data-name="guardianIdCard" placeholder="请输入证件号" placeholderClass="field-placeholder" type="idcard" value="{{patient.guardianIdCard}}"></input>
+                    </view>
+                    <view class="field-error data-v-8007a2a2" wx:if="{{rules.guardianIdCard}}">{{rules.guardianIdCard}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <peace-select bind:__l="__l" bind:cancel="__e" bind:confirm="__e" bind:input="__e" class="data-v-8007a2a2" confirmColor="#00C6AE" data-event-opts="{{[ [ '^confirm',[ ['bindRelation'] ] ],[ '^cancel',[ ['e2'] ] ],[ '^input',[ [ '__set_model',[ '','showRelation','$event',[] ] ] ] ] ]}}" defaultValue="{{relationSelector}}" list="{{relationDic}}" value="{{showRelation}}" vueId="0cbd7096-3"></peace-select>
+</view>

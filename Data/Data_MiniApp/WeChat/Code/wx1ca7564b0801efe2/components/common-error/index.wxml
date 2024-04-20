@@ -1,0 +1,10 @@
+<view class="error-container {{fullPage?'page-error':''}} {{customClass}}">
+    <view class="error-content {{btnText?'has-button-content':'no-button-content'}}">
+        <view class="icon-container">
+            <image alt="错误页icon" class="icon-image" mode="widthFix" src="{{errorIcon}}"></image>
+        </view>
+        <view class="error-title">{{errorTitle}}</view>
+        <view class="error-text">{{errorSubTitle}}</view>
+        <view bindtap="handleUiBtnClick" class="error-btn" wx:if="{{btnText}}">{{btnText}}</view>
+    </view>
+</view>

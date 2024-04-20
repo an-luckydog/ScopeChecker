@@ -1,0 +1,21 @@
+{
+    "navigationBarTitleText": "外卖",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "u-icon": "../../../node-modules/uview-plus/components/u-icon/u-icon",
+        "c-drop-down": "../../../components/c-drop-down/c-drop-down",
+        "u-empty": "../../../node-modules/uview-plus/components/u-empty/u-empty",
+        "u-skeleton": "../../../node-modules/uview-plus/components/u-skeleton/u-skeleton",
+        "c-product-card": "../../../components/c-product-card/c-product-card",
+        "u-loadmore": "../../../node-modules/uview-plus/components/u-loadmore/u-loadmore",
+        "c-location-picker": "../../../components/c-location-picker/c-location-picker",
+        "c-privacy-dialog": "../../../components/c-privacy-dialog/c-privacy-dialog",
+        "c-page": "../../../components/c-page/c-page",
+        "red-banner": "../home/components/red-banner",
+        "takeout-select": "../../entry2/home/components/takeout-select",
+        "search-categories": "../../../components/c-products-search/search-categories",
+        "ka-tab": "./kaTab"
+    }
+}

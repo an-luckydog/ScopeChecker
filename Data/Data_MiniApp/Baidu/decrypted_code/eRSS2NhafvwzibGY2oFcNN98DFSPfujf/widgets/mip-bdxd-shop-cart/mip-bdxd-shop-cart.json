@@ -1,0 +1,17 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "feed": "/components/feed/feed",
+        "input-number": "/components/input-number/input-number",
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "scroll-card": "/components/scroll-card/index",
+        "price-detail-coupon": "/widgets/mip-bdxd-shop-cart/components/price-detail-coupon/index",
+        "coupon-take": "/widgets/mip-bdxd-product-coupon/components/coupon-take",
+        "mip-bdxd-product-spectifications-layer": "/widgets/mip-bdxd-product-spectifications-layer/mip-bdxd-product-spectifications-layer",
+        "login-button":"/components/login-button/login-button",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "format-price": "/components/format-price/format-price",
+        "log-wrapper": "/widgets/mip-bdxd-shop-cart/components/log-wrapper/index"
+    }
+}

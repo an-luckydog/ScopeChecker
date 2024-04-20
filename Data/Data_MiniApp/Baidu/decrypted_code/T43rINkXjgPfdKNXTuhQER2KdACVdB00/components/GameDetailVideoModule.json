@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-detail-video-card": "./GameDetailVideoCard",
+        "game-bar-header": "./GameBarHeader"
+    },
+    "component": true
+}

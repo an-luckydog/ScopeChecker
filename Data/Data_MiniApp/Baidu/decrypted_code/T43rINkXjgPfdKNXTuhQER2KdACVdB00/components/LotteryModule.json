@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "activity-module-title": "./ActivityModuleTitle",
+        "lottery-scroll-module": "./LotteryScrollModule"
+    },
+    "component": true
+}

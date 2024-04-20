@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-loading": "/components/loading/index",
+        "waterfall-item": "/components/c-waterfall-item/index"
+    }
+}

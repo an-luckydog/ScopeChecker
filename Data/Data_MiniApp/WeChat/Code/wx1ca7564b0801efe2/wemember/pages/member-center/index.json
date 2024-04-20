@@ -1,0 +1,9 @@
+{
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "会员权益",
+    "navigationBarTextStyle": "black",
+    "disableScroll": true,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

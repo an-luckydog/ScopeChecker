@@ -1,0 +1,11 @@
+{
+    "navigationBarTitleText": "礼品卡",
+    "navigationBarBackgroundColor": "#f7f7f7",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "backgroundColor": "#f7f7f7",
+    "disableScroll": true,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

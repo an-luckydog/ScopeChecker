@@ -1,0 +1,6 @@
+<view class="mask-template data-v-6a9f3f69" wx:if="{{isShow}}">
+    <view class="mt-mask data-v-6a9f3f69"></view>
+    <view class="mt-wrap data-v-6a9f3f69">
+        <slot></slot>
+    </view>
+</view>

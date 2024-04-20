@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "comment-item": "../../channels/shop/components/comment/index"
+    }
+}

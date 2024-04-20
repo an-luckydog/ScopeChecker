@@ -1,0 +1,87 @@
+{
+	"description": "项目配置文件",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.3",
+	"appid": "wx8e4b87edc6b411ae",
+	"projectname": "%E5%A4%AA%E5%B9%B3%E6%B4%8B%E7%94%B5%E8%84%91%E7%BD%91_v2",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 8,
+			"list": [
+				{
+					"id": 0,
+					"name": "列表",
+					"pathName": "pages/list/list",
+					"query": "cid=3&lid=4"
+				},
+				{
+					"id": 1,
+					"name": "频道",
+					"pathName": "pages/channel/channel",
+					"query": "cid=1"
+				},
+				{
+					"id": 2,
+					"name": "百科文章",
+					"pathName": "pages/art_bk/art_bk",
+					"query": "articleId=10308597"
+				},
+				{
+					"id": 3,
+					"name": "文章",
+					"pathName": "pages/art/art",
+					"query": "articleId=12083346"
+				},
+				{
+					"id": 4,
+					"name": "评测",
+					"pathName": "pages/review/review",
+					"query": "pid=1028275"
+				},
+				{
+					"id": -1,
+					"name": "搜索_产品",
+					"pathName": "pages/search_pros/search_pros",
+					"query": "keyword=小米"
+				},
+				{
+					"id": -1,
+					"name": "搜索_文章",
+					"pathName": "pages/search_art/search_art",
+					"query": "keyword=小米"
+				},
+				{
+					"id": -1,
+					"name": "概览页",
+					"pathName": "pages/detail/detail",
+					"query": "pid=357809"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+    "navigationBarTitleText": "我的快递",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 50,
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "mpweixin": "../../../components/kdcs/mpweixin/index",
+        "ad-banner": "../../../components/kdcs/adBanner/adBanner",
+        "custom-service-button": "../../../components/kdcs/customServiceButton/customServiceButton",
+        "subscribe-tip": "./subscribe-tip",
+        "zec-privacy": "../../../components/kdcs/zec-privacy/zec-privacy",
+        "c-page-tracer": "../../../components/c-page-tracer/c-page-tracer",
+        "c-page-pop": "../../../components/c-page-pop/c-page-pop"
+    }
+}

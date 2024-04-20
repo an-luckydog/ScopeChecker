@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-list-select": "../c-list-select/c-list-select",
+        "u-col": "../../node-modules/uview-plus/components/u-col/u-col",
+        "u-row": "../../node-modules/uview-plus/components/u-row/u-row"
+    }
+}

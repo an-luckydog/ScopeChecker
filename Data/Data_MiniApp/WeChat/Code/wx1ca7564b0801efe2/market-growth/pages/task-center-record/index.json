@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "任务记录",
+    "navigationBarTitleText": "任务记录",
+    "navigationBarBackgroundColor": "#F4F4F4",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": true,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

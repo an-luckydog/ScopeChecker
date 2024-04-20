@@ -1,0 +1,9 @@
+{
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 300,
+    "navigationBarTitleText": "订单中心",
+    "disableScroll": true,
+    "usingComponents": {
+        "scroll": "../../component/scroll/index"
+    }
+}

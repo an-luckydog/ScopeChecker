@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ne-captcha": "../swan-ne-captcha/index"
+  }
+}

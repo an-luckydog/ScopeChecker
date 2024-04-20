@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "strategy-news-card": "./StrategyNewsCard",
+        "strategy-role-card": "./StrategyRoleCard"
+    },
+    "component": true
+}

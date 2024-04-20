@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "switchs": "/component/switch",
+    "rcc": "/component/rotate_code_coupon",
+    "coupon-verify": "/component/couponVerify/couponVerify"
+  }
+}

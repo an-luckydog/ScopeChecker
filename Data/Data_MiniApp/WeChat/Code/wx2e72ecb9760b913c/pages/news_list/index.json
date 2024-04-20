@@ -1,0 +1,9 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "健康热点",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-navigator": "../../components/cy-navigator/index",
+        "cy-loading": "../../components/cy-loading/index"
+    }
+}

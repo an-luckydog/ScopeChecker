@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "login-button":"/components/login-button/login-button",
+        "optimize-image": "/components/optimize-image/optimize-image"
+    }
+}

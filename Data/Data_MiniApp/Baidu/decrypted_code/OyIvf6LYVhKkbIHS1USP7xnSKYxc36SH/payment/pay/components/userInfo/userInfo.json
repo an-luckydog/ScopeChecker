@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "blue-button": "/payment/UI/Components/Base/Buttons/Button/Button"
+    }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>标签icon</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-4">
+            <rect id="矩形备份-62" fill="#2762FB" x="0" y="0" width="10" height="10" rx="2.77777778"></rect>
+            <rect id="矩形" fill="#FFFFFF" x="2.77777778" y="2.03703704" width="1.48148148" height="6.2962963"></rect>
+            <rect id="矩形备份-64" fill="#FFFFFF" transform="translate(5.000000, 3.888889) rotate(-270.000000) translate(-5.000000, -3.888889) " x="4.44444444" y="0.555555556" width="1.11111111" height="6.66666667"></rect>
+            <rect id="矩形备份-63" fill="#FFFFFF" x="5.74074074" y="2.03703704" width="1.48148148" height="6.2962963"></rect>
+            <rect id="矩形备份-65" fill="#FFFFFF" transform="translate(5.000000, 6.481481) rotate(-270.000000) translate(-5.000000, -6.481481) " x="4.44444444" y="3.14814815" width="1.11111111" height="6.66666667"></rect>
+        </g>
+    </g>
+</svg>

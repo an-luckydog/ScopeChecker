@@ -1,0 +1,8 @@
+<view class="wrapper">
+    <view class="btm-slide">
+        <image class="btm-image {{item.index==current?'show-img':'hidden-img'}}" src="{{item.imgUrl}}" style="{{compStyle}}" wx:for="{{bottomImgList}}" wx:key="index"></image>
+    </view>
+    <view class="top-slide" style="{{compStyle}};opacity:{{opacitySpu}}">
+        <limo-slide advId="{{advId}}" autoplay="{{autoplay}}" bannerInterval="{{bannerInterval}}" bind:decorationCompClick="compClick" bind:swiperSwitchChangeEvent="swiperChange" heightImg="{{heightImg}}" imgList="{{topImgList}}"></limo-slide>
+    </view>
+</view>

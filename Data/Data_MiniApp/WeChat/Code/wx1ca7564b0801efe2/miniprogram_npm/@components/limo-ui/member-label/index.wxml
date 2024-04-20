@@ -1,0 +1,16 @@
+<view class="member-label member-label-1 {{customClass}}" wx:if="{{labelType===MEMBER_LABEL_TYPE.CORNER}}">
+    <image class="label-diamond" src="https://p0.meituan.net/travelcube/2b281cd1d36b8e993d49c1d0684621301630.png"></image>
+    <view class="label-text">新会员专享</view>
+</view>
+<view bind:tap="collectCouponAction" class="member-label member-label-2 {{customClass}}" wx:else>
+    <view class="left-container">
+        <view class="left-corner"></view>
+    </view>
+    <view class="right-container">
+        <image class="label-diamond" src="https://p0.meituan.net/travelcube/d15a352991328527cd2cff67a6d891e42279.png"></image>
+        <view class="label-text">
+            <view class="label-txt label-txt-{{item.type}}" wx:for="{{texts}}" wx:key="index">{{item.text}}</view>
+        </view>
+        <image class="label-action" src="https://p0.meituan.net/travelcube/aca47d4493aafbcbe1bc8c94e37ff195602.png"></image>
+    </view>
+</view>

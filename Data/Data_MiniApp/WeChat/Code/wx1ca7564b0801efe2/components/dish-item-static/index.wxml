@@ -1,0 +1,46 @@
+<template name="pic-warp">
+    <view class="pic-wrap">
+        <image lazyLoad class="pic" src="{{d.getPic(dish.pic,size)}}"></image>
+    </view>
+    <template is="market-label" data="{{dish:dish,size:labelSize}}" wx:if="{{dish.marketingLabel}}"></template>
+</template>
+<import src="../dish-item/index.wxml"></import>
+<block wx:if="{{type==='dishRecommend'}}">
+    <view class="img-box">
+        <image class="img" src="{{dish.pic||'https://p0.meituan.net/scarlett/ca45859124838c068622a75a818b064a1640.jpg'}}"></image>
+    </view>
+    <template is="market-label" data="{{dish:dish,size:'small'}}" wx:if="{{dish.marketingLabel}}"></template>
+    <view bindtap="openStaticDetail" class="container">
+        <view class="name">{{dish.name}}</view>
+        <view class="content-wrap" wx:if="{{dish.desc}}">
+            <view class="c-item desc">{{dish.desc}}</view>
+        </view>
+    </view>
+</block>
+<block wx:else>
+    <view bindtap="openStaticDetail" class="large dish-item" wx:if="{{dishShowType===2}}">
+        <view class="pic-field">
+            <template is="pic-warp" data="{{dish:dish,size:'large',labelSize:'medium'}}"></template>
+        </view>
+        <view class="content">
+            <view class="dish-title-box">
+                <rich-text class="dish-title" nodes="{{d.getName(dish.name,'large')}}"></rich-text>
+            </view>
+            <view class="content-wrap" wx:if="{{dish.desc}}">
+                <view class="c-item desc">{{dish.desc}}</view>
+            </view>
+        </view>
+    </view>
+    <view bindtap="openStaticDetail" class="dish-item {{dish.status!==1?'invalid':''}}" wx:else>
+        <view class="pic-field">
+            <template is="pic-warp" data="{{dish:dish,labelSize:'small'}}"></template>
+        </view>
+        <view class="content">
+            <view class="content-wrap">
+                <rich-text class="dish-title" nodes="{{d.getName(dish.name)}}"></rich-text>
+                <view class="c-item desc" wx:if="{{dish.desc}}">{{dish.desc}}</view>
+            </view>
+        </view>
+    </view>
+</block>
+<wxs module="d" src="index.wxs" />

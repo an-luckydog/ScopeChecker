@@ -1,0 +1,23 @@
+{
+  "appid": "26752850",
+  "appInfo": {},
+  "appkey": "",
+  "condition": {
+    "swan": {
+      "current": 0,
+      "list": [
+        {
+          "name": "",
+          "path": "",
+          "query": "",
+          "id": 0
+        }
+      ]
+    }
+  },
+  "setting": {
+    "urlCheck": true
+  },
+  "libVersion": "",
+  "projectname": "皮皮工具箱"
+}

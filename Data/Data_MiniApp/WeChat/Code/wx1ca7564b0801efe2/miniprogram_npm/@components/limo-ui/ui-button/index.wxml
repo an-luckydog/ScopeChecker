@@ -1,0 +1,5 @@
+<view class="rms-btn {{btnWrapperClassName}}">
+    <view class="{{btnClass}}" style="{{customStyle}}">{{text}}<view catch:tap="btnClick" class="large-btn-click-mask" wx:if="{{isBigSize}}"></view>
+    </view>
+    <view bindtap="btnClick" class="rms-btn-hot"></view>
+</view>

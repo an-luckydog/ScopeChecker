@@ -1,0 +1,13 @@
+function visible(cluster) {
+    if (!cluster) return (false);;
+    if (cluster.type === 0) {
+        var specs = cluster.groups && cluster.groups[(0)];
+        return (specs && specs.attrs.some((function(item) {
+            return (!!item.name)
+        })))
+    };
+    return (true)
+};
+module.exports = ({
+    visible: visible,
+});

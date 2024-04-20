@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "realWxPrivacy": "/cms_extension_package/RAW/wxPrivacy/index",
+        "c_vvns32v73nd0": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "realWxPrivacy": "c_vvns32v73nd0"
+    }
+}

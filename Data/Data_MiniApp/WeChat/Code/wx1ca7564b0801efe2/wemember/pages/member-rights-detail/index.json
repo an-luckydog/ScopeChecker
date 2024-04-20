@@ -1,0 +1,11 @@
+{
+    "navigationBarBackgroundColor": "#f4f4f4",
+    "navigationBarTitleText": "权益信息",
+    "backgroundColor": "#f4f4f4",
+    "disableScroll": true,
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

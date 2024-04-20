@@ -1,0 +1,33 @@
+<view bindtap="btnClickFn" class="rms-item-wrapper {{selected?'rms-item-selected ':''}} {{tastesStyle}} {{disabled?'rms-disabled':''}} {{customClassName}} {{mutex?'mutex':''}}" style="{{styleString}}">
+    <view class="rms-sold-out" wx:if="{{disabled&&!operationRight&&!operationBetween}}">
+        <ui-corner needFooter colorType="{{CORNER_TYPE.SOLDOUT}}" text="售罄"></ui-corner>
+    </view>
+    <tastes-number-count-minus isShowBigBtn bind:minusDish="minusTasteHandle" count="{{count}}" wx:if="{{operationBetween&&count&&!disabled}}"></tastes-number-count-minus>
+    <view class="choose-star" wx:if="{{defaultSelected&&!(count&&operationBetween)}}">
+        <ui-star type="{{selected?STAR_TYPE.DEFAULT:STAR_TYPE.UNSELECTED}}"></ui-star>
+    </view>
+    <view class="rms-item-text {{defaultSelected?'rms-item-text-default':''}} {{disabled&&showTextSoldOut?'rms-item-text-disable':''}}">
+        <view class="rms-text-left ellipsis">{{textLeft}}</view>
+        <view class="rms-text-right" wx:if="{{textRight&&textRight!=='0'}}">{{currency+textRight}}</view>
+    </view>
+    <view class="rms-sold-out-text" wx:if="{{disabled&&showTextSoldOut}}">今日售罄</view>
+    <view class="rms-item-operation" wx:if="{{operationBetween}}">
+        <view class="rms-sold-out-text" wx:if="{{disabled}}">今日售罄</view>
+        <view wx:elif="{{!mutex}}">
+            <tastes-number-count-plus isShowBigBtn bind:addToCart="addMultiTasteHandle" isTastesLimit="{{disablePlus}}"></tastes-number-count-plus>
+        </view>
+    </view>
+    <view class="rms-item-operation" wx:if="{{operationRight}}">
+        <view class="rms-sold-out-text" wx:if="{{disabled}}">今日售罄</view>
+        <view wx:else>
+            <tastes-number-count-refactor isShowBigBtn bind:addToCart="addMultiTasteHandle" bind:minusDish="minusTasteHandle" count="{{count}}" disablePlus="{{disablePlus}}"></tastes-number-count-refactor>
+        </view>
+    </view>
+    <view class="rms-item-count" wx:if="{{operationBetween&&count&&!disabled}}">
+        <ui-redpoint count="{{count}}" type="{{RED_POINT_TYPE_NUMBER}}"></ui-redpoint>
+    </view>
+    <view class="rms-left-corner" wx:if="{{stockCount>0&&stockCount<MAX_SHOW_STOCK_COUNT}}">
+        <ui-corner needFooter colorType="{{CORNER_TYPE.DEFAULT}}" text="{{'仅剩'+stockCount+'份'}}"></ui-corner>
+    </view>
+    <view bindtap="mutexClickHandle" class="prompt" wx:if="{{mutex}}"></view>
+</view>

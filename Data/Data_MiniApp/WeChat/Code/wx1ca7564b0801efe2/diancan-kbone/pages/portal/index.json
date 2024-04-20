@@ -1,0 +1,9 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

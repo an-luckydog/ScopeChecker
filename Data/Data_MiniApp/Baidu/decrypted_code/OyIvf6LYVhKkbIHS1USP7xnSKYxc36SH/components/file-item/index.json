@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "file-image": "./file-image/index",
+        "file-info": "./file-info/index",
+        "file-operate": "./file-operate/index"
+    }
+}

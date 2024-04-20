@@ -1,0 +1,11 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "医生列表",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-search": "../../components/cy-search/index",
+        "cy-navigator": "../../components/cy-navigator/index",
+        "cy-loading": "../../components/cy-loading/index",
+        "cy-up2top": "../../components/cy-up2top/index"
+    }
+}

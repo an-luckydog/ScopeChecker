@@ -1,0 +1,9 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "avatar-list":"/components/avatar-list/avatar-list",
+        "pop-up": "/components/popup/popup",
+        "count-down":"/components/count-down/count-down"
+    }
+}

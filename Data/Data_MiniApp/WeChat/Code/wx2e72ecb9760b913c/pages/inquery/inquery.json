@@ -1,0 +1,22 @@
+{
+    "usingComponents": {
+        "single-message": "./components/single_message/single_message",
+        "system-info": "./components/system_info/system_info",
+        "image-selection": "./components/image_selection/image_selection",
+        "archive-selection": "./components/archive_selection/archive_selection",
+        "basic-recommend-doctor": "./components/basic_recommend_doctor/basic_recommend_doctor",
+        "more-recommend-doctor": "./components/more_recommend_doctor/more_recommend_doctor",
+        "clinic-selector": "../../components/clinic-selector/clinic-selector",
+        "cy-userinfo": "../../components/cy-userinfo/index",
+        "phone-input": "./components/phone_input/phone_input",
+        "coupon-dialog": "./components/coupon_dialog/coupon_dialog",
+        "service-card": "./components/service_card/service_card",
+        "history-selector": "./components/history_selector/history_selector",
+        "doctor-card": "./components/doctor_card/doctor_card",
+        "header": "./components/header/header",
+        "bind-phone": "./components/bind_phone_number/bind_phone_number"
+    },
+    "backgroundColor": "#F2F5F7",
+    "disableScroll": true,
+    "navigationBarTitleText": "描述病情"
+}

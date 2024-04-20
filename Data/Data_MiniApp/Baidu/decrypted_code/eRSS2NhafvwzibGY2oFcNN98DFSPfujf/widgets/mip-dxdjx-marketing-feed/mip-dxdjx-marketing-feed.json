@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "basic-feed": "/widgets/mip-dxdjx-basic-feed/mip-dxdjx-basic-feed",
+        "marketing-goods-card":"/widgets/mip-dxdjx-marketing-goods-card/mip-dxdjx-marketing-goods-card",
+        "mip-dxdjx-custom-cards":"/widgets/mip-dxdjx-custom-cards/mip-dxdjx-custom-cards",
+        "swiper-feed": "/widgets/mip-dxdjx-marketing-feed/swiper-feed/swiper-feed",
+        "gt-dxdjx-h5-three-card":"/widgets/gt-dxdjx-h5-three-card/gt-dxdjx-h5-three-card"
+    }
+}

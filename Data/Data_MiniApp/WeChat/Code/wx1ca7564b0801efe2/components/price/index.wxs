@@ -1,0 +1,11 @@
+function validEst(est, cur) {
+    return (est && +est < +cur)
+};
+
+function oversizeZero(cur) {
+    return (+cur > 0)
+};
+module.exports = ({
+    validEst: validEst,
+    oversizeZero: oversizeZero,
+});

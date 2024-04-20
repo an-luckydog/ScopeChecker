@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "head-search": "./head-search",
+        "subscribe-alert": "../../../common/subscribe-alert/subscribe-alert"
+    }
+}

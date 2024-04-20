@@ -1,0 +1,11 @@
+var UI_SIZE = ({
+    LARGE: 'large',
+    MIDDLE: 'middle',
+    SMALL: 'small',
+    SMALLER: 'smaller',
+    MINI: 'mini',
+    EXTRALARGE: 'extra-large',
+});
+module.exports = ({
+    UI_SIZE: UI_SIZE,
+});

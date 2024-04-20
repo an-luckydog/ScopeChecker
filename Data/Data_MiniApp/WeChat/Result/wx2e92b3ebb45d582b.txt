@@ -1,0 +1,2 @@
+在后端文件{"D:\wxappUnpacker-master\dec\miniprogram_npm\@tmsfe\tms-ui\numberinput\numberinput.appservice.js}"中的方法{"{'Promise'}}"中找到匹配: {"getClipboardData}"
+在后端文件{"D:\wxappUnpacker-master\dec\modules\mmcover\pages\upload\upload.appservice.js}"中的方法{"{'Promise'}}"中找到匹配: {"chooseMedia}"

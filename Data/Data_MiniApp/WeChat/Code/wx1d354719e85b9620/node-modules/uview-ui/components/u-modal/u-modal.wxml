@@ -1,0 +1,23 @@
+<view class="data-v-35714a84">
+    <u-popup bind:__l="__l" bind:close="__e" bind:input="__e" borderRadius="{{borderRadius}}" class="data-v-35714a84" data-event-opts="{{[ [ '^close',[ ['popupClose'] ] ],[ '^input',[ [ '__set_model',[ '','value','$event',[] ] ] ] ] ]}}" length="{{width}}" maskCloseAble="{{maskCloseAble}}" mode="center" negativeTop="{{negativeTop}}" popup="{{false}}" value="{{value}}" vueId="64f5513e-1" vueSlots="{{['default']}}" zIndex="{{uZIndex}}" zoom="{{zoom}}">
+        <view class="u-model data-v-35714a84">
+            <view class="u-model__title u-line-1 data-v-35714a84" style="{{$root.s0}}" wx:if="{{showTitle}}">{{title}}</view>
+            <view class="u-model__content data-v-35714a84">
+                <view class="data-v-35714a84" style="{{$root.s1}}" wx:if="{{$slots.default||$slots[$default]}}">
+                    <slot></slot>
+                </view>
+                <view class="u-model__content__message data-v-35714a84" style="{{$root.s2}}" wx:else>{{content}}</view>
+            </view>
+            <view class="u-model__footer u-border-top data-v-35714a84" wx:if="{{showCancelButton||showConfirmButton}}">
+                <view bindtap="__e" class="u-model__footer__button data-v-35714a84" data-event-opts="{{[ [ 'tap',[ [ 'cancel',['$event'] ] ] ] ]}}" hoverClass="u-model__btn--hover" hoverStayTime="{{100}}" style="{{$root.s3}}" wx:if="{{showCancelButton}}">{{''+cancelText+''}}</view>
+                <view bindtap="__e" class="u-model__footer__button hairline-left data-v-35714a84" data-event-opts="{{[ [ 'tap',[ [ 'confirm',['$event'] ] ] ] ]}}" hoverClass="{{asyncClose?'none':'u-model__btn--hover'}}" hoverStayTime="{{100}}" style="{{$root.s4}}" wx:if="{{showConfirmButton||$slots['confirm-button']}}">
+                    <slot name="confirm-button" wx:if="{{$slots['confirm-button']}}"></slot>
+                    <block wx:else>
+                        <u-loading bind:__l="__l" class="data-v-35714a84" color="{{confirmColor}}" mode="circle" vueId="{{'64f5513e-2'+','+'64f5513e-1'}}" wx:if="{{loading}}"></u-loading>
+                        <block wx:else>{{''+confirmText+''}}</block>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </u-popup>
+</view>

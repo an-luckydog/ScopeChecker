@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "收货地址",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "default-page-config": "view",
+        "lottery": "view"
+    }
+}

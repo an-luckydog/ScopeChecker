@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-item": "./GameItem",
+        "game-item-for-rank": "./GameItemForRank"
+    },
+    "component": true
+}

@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "跳转中...",
+    "enablePullDownRefresh": false,
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff",
+    "usingComponents": {
+        "target-page": "./RAW/heatmap/index"
+    }
+}

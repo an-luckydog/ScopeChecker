@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-button-login": "/components/c-button-login/c-button-login",
+        "preload-image": "/components/preload-image/preload-image"
+    }
+}

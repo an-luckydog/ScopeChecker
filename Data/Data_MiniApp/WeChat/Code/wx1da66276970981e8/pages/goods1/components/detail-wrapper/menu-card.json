@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-parse": "../../../../node-modules/uview-plus/components/u-parse/u-parse",
+        "c-section": "../../../../components/c-section/c-section"
+    }
+}

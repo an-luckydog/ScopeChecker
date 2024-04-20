@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "ti-popup": "/titian-mp/RAW/popup/index"
+    }
+}

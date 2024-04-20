@@ -1,0 +1,13 @@
+<view bindtap="toggleCartPanel" class="cart-price">
+    <view class="text default" wx:if="{{!cartPriceInfo.cartCount}}">美味多多，快来选购～</view>
+    <block wx:else>
+        <view class="total-price" wx:if="{{showTotalPrice}}">
+            <text class="price-icon">{{currency}}</text>{{cartPriceInfo.actualTotalPriceTxt}}</view>
+        <view class="cart-promotion-text">
+            <view class="promotion" wx:if="{{showTotalPrice&&cartPriceInfo.showDiscountAmount}}">{{cartPriceInfo.promoDiscountAmountTxt}}</view>
+            <view class="symbol-text" wx:if="{{!showTotalPrice}}">{{cartPriceInfo.showCartCountDetail}}</view>
+            <view class="symbol-text" wx:if="{{(cartPriceInfo.showCartCountDetail||cartPriceInfo.promoDiscountAmountTxt)&&cartPriceInfo.pointTotalDiscountAmountText}}">，</view>
+            <view class="point-discount-text" wx:if="{{cartPriceInfo.pointTotalDiscountAmountText}}">{{cartPriceInfo.pointTotalDiscountAmountText}}</view>
+        </view>
+    </block>
+</view>

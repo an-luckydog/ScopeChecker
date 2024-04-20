@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "follow-doc-button": "../../../../components/follow-doc-button/index"
+    }
+}

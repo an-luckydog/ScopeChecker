@@ -1,0 +1,3 @@
+<view class="location_fail data-v-02dc55ee" wx:if="{{noLocation}}">
+    <image bindtap="__e" class="data-v-02dc55ee" data-event-opts="{{[ [ 'tap',[ [ 'closeTip',['$event'] ] ] ] ]}}" mode="widthFix" src="{{staticUrl+'/location_fail.png'}}"></image>
+</view>

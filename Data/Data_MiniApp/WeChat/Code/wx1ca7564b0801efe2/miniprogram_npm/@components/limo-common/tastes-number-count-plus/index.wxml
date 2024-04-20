@@ -1,0 +1,6 @@
+<view class="plus {{isShowBigBtn?'plus-large':''}}">
+    <view class="{{newTastesLimit?'plus-icon-disabled':'plus-icon'}}">
+        <base-icon customClass="operation-plus-img large" iconType="add"></base-icon>
+    </view>
+    <view catchtap="addMultiTasteNum" class="plus-trigger"></view>
+</view>

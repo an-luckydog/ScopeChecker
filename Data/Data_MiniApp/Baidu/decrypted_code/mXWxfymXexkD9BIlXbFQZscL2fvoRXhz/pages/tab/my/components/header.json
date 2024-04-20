@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "high-dialog": "./high-dialog",
+    "comm-header": "../../../../components/comm-header"
+  }
+}

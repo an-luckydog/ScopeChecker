@@ -1,0 +1,3 @@
+<view class="toggle-more-cotainer" style="{{customStyle}}">
+    <image class="bottom-arrow" mode="aspectFill" src="https://p0.meituan.net/travelcube/2c46a9f059b1b870040b1bf1f0c2ea17308.png"></image>
+</view>

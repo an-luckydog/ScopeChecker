@@ -1,0 +1,691 @@
+<template name="coupon-template">
+    <view class="alert-box">
+        <view class="alert-background">
+            <view class="alert-background-placeholder" style="bottom: 890rpx;"></view>
+            <view class="alert-conntent-box alert-service-guarantee" style="height: 890rpx;bottom: 0;">
+                <view class="alert-content-title" style="border-bottom:1rpx solid #DCDCDC;">
+                    <view catchtap="onhidePopup" class="alert-close sprites-icon1"></view>
+                    <text class="color-333 font32 tc">使用优惠券</text>
+                </view>
+                <view class="selected-box">
+                    <view class="coupon-title font26 color-666">
+                        <view catchtap="switchShowType" class="{{couponData.showType===1?'select':''}}" data-showType="1">可用优惠券({{couponData.availableNum>99?'99+':couponData.availableNum}})</view>
+                        <view catchtap="switchShowType" class="{{couponData.showType===2?'select':''}}" data-showType="2">不可用优惠券({{couponData.unAvailableNum>99?'99+':couponData.unAvailableNum}})</view>
+                    </view>
+                    <view class="coupon-status background-f6f6f6 font24 color-666" wx:if="{{couponData.coupon1&&couponData.showType===1}}">
+                        <text>{{couponData.selectIndex===null?'请选择优惠券':'已选中优惠券，共可抵扣'}}</text>
+                        <text wx:if="{{couponData.selectIndex!==null}}">{{'￥'+filter.float1(couponData.coupon1[couponData.selectIndex].price)}}</text>
+                    </view>
+                    <block wx:if="{{couponData.showType===1}}">
+                        <view class="selected-content background-f6f6f6">
+                            <scroll-view scrollY bindscrolltolower="couponReachBottom" class="coupon-list1" wx:if="{{couponData.coupon1}}">
+                                <view catchtap="selectCoupon" class="list" data-index="{{index}}" wx:for="{{couponData.coupon1}}">
+                                    <view class="list_box">
+                                        <view class="list_ce">
+                                            <image class="list_img" src="../../../img/j_zhi.png" wx:if="{{index!==couponData.selectIndex&&couponData.selectIndex!==null}}"></image>
+                                            <image class="list_img" src="http://tu.duia.com/mp/p_tong.png" wx:else></image>
+                                            <view class="list_cess">
+                                                <view class="list_cess_box">
+                                                    <view>￥ <text class="list_cess_size">{{item.price}}</text>
+                                                    </view>
+                                                    <view class="list_cess_b">无使用门槛</view>
+                                                </view>
+                                            </view>
+                                        </view>
+                                        <view class="list_right">
+                                            <view class="list_right_top">
+                                                <text class="list_label gray" wx:if="{{index!==couponData.selectIndex&&couponData.selectIndex!==null}}">普通券</text>
+                                                <text class="list_label green" wx:else>普通券</text>
+                                                <text class="list_title">限购"{{item.skuName}}"学科下{{item.comName?'"'+item.comName+'"':item.courseType?'专题课':item.courseType===-1?'全部':'系统班'}}课程</text>
+                                            </view>
+                                            <view class="list_right_bottom">
+                                                <view class="list_right_bottom_time">{{item.startDate}} - {{item.endDate}}</view>
+                                                <view class="list_right_bottom_btn1">
+                                                    <image class="list_right_bottom_bimg" src="../../../img/xuan.png" wx:if="{{index===couponData.selectIndex}}"></image>
+                                                    <image class="list_right_bottom_bimg" src="../../../img/wei.png" wx:else></image>
+                                                </view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                </view>
+                            </scroll-view>
+                            <view class="wu_data" wx:else>
+                                <image class="wu_data_img" src="http://tu.duia.com/mp/noSeat.png"></image>
+                                <view class="wu_data_text">您暂时没有可用的优惠券哦~</view>
+                            </view>
+                        </view>
+                        <view catchtap="onSelectCoupon" class="selected-foot font34 color-fff"> 确定 </view>
+                    </block>
+                    <view class="selected-content background-f6f6f6" wx:if="{{couponData.showType===2}}">
+                        <scroll-view scrollY bindscrolltolower="couponReachBottom" class="coupon-list2" wx:if="{{couponData.coupon2}}">
+                            <view catchtap="onclick" class="list" data-index="{{index}}" wx:for="{{couponData.coupon2}}">
+                                <view class="list_box">
+                                    <view class="list_ce">
+                                        <image class="list_img" src="http://tu.duia.com/mp/p_tong.png" wx:if="{{item.type=='pt'}}"></image>
+                                        <image class="list_img" src="http://tu.duia.com/mp/t_quan.png" wx:if="{{item.type=='yhtq'}}"></image>
+                                        <view class="list_cess">
+                                            <view class="list_cess_box">
+                                                <view>￥ <text class="list_cess_size">{{item.price}}</text>
+                                                </view>
+                                                <view class="list_cess_b">无使用门槛</view>
+                                            </view>
+                                        </view>
+                                    </view>
+                                    <view class="list_right">
+                                        <view class="list_right_top">
+                                            <text class="list_label green" wx:if="{{item.type=='pt'}}">普通券</text>
+                                            <text class="list_label orange" wx:if="{{item.type=='yhtq'}}">特权券</text>
+                                            <text class="list_title">限购"{{item.skuName}}"学科下{{item.comName?'"'+item.comName+'"':item.courseType?'专题课':item.courseType===-1?'全部':'系统班'}}课程</text>
+                                        </view>
+                                        <view class="list_right_bottom">
+                                            <view class="list_right_bottom_time">{{item.startDate}} - {{item.endDate}}</view>
+                                            <view class="list_right_bottom_btn" wx:if="{{item.type=='pt'}}">立即使用</view>
+                                            <view class="list_right_bottom_btns" wx:if="{{item.type=='yhtq'}}">使用说明</view>
+                                        </view>
+                                    </view>
+                                </view>
+                                <view class="condition">
+                                    <text class="condition_text" wx:if="{{item.type=='pt'}}">当前结算订单中没有符合条件的课程</text>
+                                    <text wx:else>特权券不支持直接使用</text>
+                                </view>
+                            </view>
+                        </scroll-view>
+                        <view class="wu_data" wx:else>
+                            <image class="wu_data_img" src="http://tu.duia.com/mp/noSeat.png"></image>
+                            <view class="wu_data_text" wx:if="{{item.type=='yhtq'}}">您暂时没有不可用的优惠券哦~</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="promo-code-template">
+    <view class="alert-box">
+        <view class="alert-background">
+            <view class="alert-background-placeholder" style="bottom: 890rpx;"></view>
+            <view class="alert-conntent-box alert-service-guarantee" style="height: 890rpx;bottom: 0;">
+                <view class="alert-content-title" style="border-bottom:1rpx solid #DCDCDC;">
+                    <view catchtap="onhidePopup" class="alert-close sprites-icon1"></view>
+                    <text>使用优惠码</text>
+                </view>
+                <view class="selected-box">
+                    <view class="selected-content">
+                        <input bindblur="checkCoupons" bindinput="checkCoupons" class="couponsCode font32" placeholder="请填写优惠码" placeholderClass="font32 color-999" type="text" value="{{couponsCode}}"></input>
+                    </view>
+                    <view catchtap="useCoupons" class="selected-foot font34 color-fff">使用</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="reminder-discount-template">
+    <view class="content_list">
+        <view class="list" wx:for="{{list}}">
+            <view class="list_box">
+                <view bindtap="employ" class="list_box_cen" data-index="{{index}}" wx:if="{{item.discountType=='pt'&&nav_type==2}}"></view>
+                <view bindtap="state" class="list_box_cen" data-index="{{index}}" wx:if="{{item.discountType=='yhtq'&&nav_type==2}}"></view>
+                <view bindtap="select" class="list_box_cen" wx:if="{{item.wode==2&&!item.guoqi}}"></view>
+                <view class="list_ce">
+                    <image class="list_img" src="http://tu.duia.com/mp/p_tong.png" wx:if="{{item.discountType=='pt'&&nav_type==2}}"></image>
+                    <image class="list_img" src="http://tu.duia.com/mp/t_quan.png" wx:if="{{item.discountType=='yhtq'&&nav_type==2}}"></image>
+                    <image class="list_img" src="../../img/j_zhi.png" wx:if="{{nav_type==3}}"></image>
+                    <view class="list_cess">
+                        <view class="list_cess_box">
+                            <view>￥ <text class="list_cess_size">{{item.discount}}</text>
+                            </view>
+                            <view class="list_cess_b">无使用门槛</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="list_right">
+                    <view class="list_right_top">
+                        <text class="list_label green" wx:if="{{item.discountType=='pt'&&nav_type==2}}">普通券</text>
+                        <text class="list_label orange" wx:if="{{item.discountType=='yhtq'&&nav_type==2}}">特权券</text>
+                        <text class="list_label gray" wx:if="{{nav_type==1||nav_type==3}}">{{item.discountType=='yhtq'?'特权券':'普通券'}}</text>
+                        <text class="list_title">限购"{{item.skuName}}"学科下{{item.commodName?'"'+item.commodName+'"':item.courseType===1?'专题课':item.courseType===-1?'全部':'系统班'}}课程</text>
+                    </view>
+                    <view class="list_right_bottom">
+                        <view class="list_right_bottom_time">{{item.startDateStr}} - {{item.endDateStr}}</view>
+                        <view class="list_right_bottom_btn" wx:if="{{item.discountType=='pt'&&nav_type==2}}">立即使用</view>
+                        <view class="list_right_bottom_btns" wx:if="{{item.discountType=='yhtq'&&nav_type==2}}">使用说明</view>
+                        <view class="list_right_bottom_btn1" wx:if="{{item.wode==2&&!item.guoqi}}">
+                            <image class="list_right_bottom_bimg" src="../../img/{{item.xuanze?'xuan.png':'wei.png'}}"></image>
+                        </view>
+                    </view>
+                    <image class="list_right_past" src="http://tu.duia.com/mp/yishiyong.png" wx:if="{{nav_type==1}}"></image>
+                    <image class="list_right_past" src="http://tu.duia.com/mp/y_guoqi.png" wx:if="{{nav_type==3}}"></image>
+                </view>
+            </view>
+            <view class="condition" wx:if="{{queren}}">
+                <text class="condition_text" wx:if="{{item.type==1}}">当前结算订单中没有符合条件的课程</text>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="reminder-agreement-template">
+    <block wx:for="{{list}}" wx:key="key">
+        <view class="reminder-item">
+            <view class="reminder-box title">
+                <view class="reminder-icon">
+                    <view class="alert-serviceGuarantee-icon sprites-icon1"></view>
+                </view>
+                <view class="reminder-content text-overflow-dotted-1line color-333 font28">{{text}}</view>
+            </view>
+            <view class="reminder-box class-name" wx:if="{{item.comName.length>0}}">
+                <view class="reminder-icon"></view>
+                <view class="reminder-content color-999 font24">包含此协议课程：<text wx:for="{{item.comName}}" wx:for-index="classindex" wx:for-item="classitem" wx:key="classkey">{{'“'+classitem+'”'}}</text>
+                </view>
+            </view>
+            <view class="reminder-box">
+                <viem class="reminder-icon"></viem>
+                <viem class="reminder-content">
+                    <view class="color-666 font28">
+                        <template is="wxParse" data="{{wxParseData:item.content.nodes}}"></template>
+                    </view>
+                </viem>
+            </view>
+        </view>
+        <view class="px-half"></view>
+    </block>
+</template>
+<template name="reminder-template">
+    <view class="alert-box">
+        <view class="alert-background">
+            <view class="alert-background-placeholder" style="bottom: 890rpx;"></view>
+            <view class="alert-conntent-box alert-service-guarantee" style="height: 890rpx;bottom: 0;">
+                <view class="alert-content-title" style="border-bottom:1rpx solid #DCDCDC;">
+                    <view catchtap="onhidePopup" class="alert-close sprites-icon1"></view>
+                    <text>购课温馨提示</text>
+                </view>
+                <view class="selected-box">
+                    <view class="selected-content {{reminderData&&reminderData.length===1?'hidden':''}}">
+                        <block wx:if="{{reminderData['0'].tips.length>0}}">
+                            <view class="reminder-item">
+                                <view class="reminder-box title">
+                                    <view class="reminder-icon">
+                                        <view class="alert-specialService-icon" style="background-position:-97rpx -136rpx"></view>
+                                    </view>
+                                    <view class="reminder-content color-333 font28 text-overflow-dotted-1line">班级信息</view>
+                                </view>
+                                <block wx:for="{{reminderData['0'].tips}}" wx:key="key">
+                                    <view class="reminder-box name">
+                                        <view class="reminder-icon">
+                                            <image class="reminder-icom2" src="../../img/termList2.png"></image>
+                                        </view>
+                                        <view class="reminder-content text-overflow-dotted-1line color-666 font28">{{item.name}}</view>
+                                    </view>
+                                    <view class="reminder-box time">
+                                        <view class="reminder-icon">
+                                            <view class="reminder-icon1"></view>
+                                        </view>
+                                        <view class="reminder-content color-999 font24" wx:if="{{item.guaType===1||item.guaType===0||item.guaType===2&&filter.getJSONItem(item.secondData,'gua')==0}}"> {{item.classEnd?'本期课程'+tools.timeFormat(item.classEnd)+'结课':''}} {{item.deadline?tools.timeFormat(item.deadline)?'/质保期至'+tools.timeFormat(item.deadline):'':''}} </view>
+                                        <view class="reminder-content color-999 font24" wx:if="{{item.guaType===2&&filter.getJSONItem(item.secondData,'gua')==1}}"> {{item.classEnd?'本期课程'+tools.timeFormat(item.classEnd)+'结课/':''}}/质保期至{{item.stopTime?tools.timeFormat(item.stopTime):''}}，到期符合条件可延期至{{item.deadline?tools.timeFormat(item.deadline):''}} </view>
+                                    </view>
+                                </block>
+                            </view>
+                            <view class="px-half"></view>
+                        </block>
+                        <block wx:if="{{reminderData['99'].tips.length>0}}">
+                            <view class="reminder-item">
+                                <view class="reminder-box title">
+                                    <view class="reminder-icon">
+                                        <view class="alert-specialService-icon alert-specialService-icon1" style="background:none;">
+                                            <image src="../../../img/baohu.png" style="width:100%;height:100%;"></image>
+                                        </view>
+                                    </view>
+                                    <view class="reminder-content text-overflow-dotted-1line color-333 font28">账号保护</view>
+                                </view>
+                                <view class="reminder-box class-name" wx:if="{{reminderData['99'].tips.length>0}}">
+                                    <view class="reminder-icon"></view>
+                                    <view class="reminder-content color-999 font24"> 包含账号保护课程：<text wx:for="{{reminderData['99'].tips}}" wx:for-index="classindex" wx:for-item="classitem" wx:key="classkey"> {{'“'+classitem.comName[0]+'”'}}</text>
+                                    </view>
+                                </view>
+                                <view class="reminder-box">
+                                    <viem class="reminder-icon"></viem>
+                                    <viem class="reminder-content">
+                                        <view class="color-666 font28">质保期内免费开启账号保护，异常登录时将启用人脸识别功能保护账号安全，账号保护期间仅供本人使用</view>
+                                    </viem>
+                                </view>
+                            </view>
+                            <view class="px-half"></view>
+                        </block>
+                        <template is="reminder-agreement-template" data="{{list:reminderData['3'].tips,text:'质保期协议'}}" wx:if="{{reminderData['3'].tips.length>0}}"></template>
+                        <template is="reminder-agreement-template" data="{{list:reminderData['4'].tips,text:'退款协议'}}" wx:if="{{reminderData['4'].tips.length>0}}"></template>
+                        <template is="reminder-agreement-template" data="{{list:reminderData['6'].tips,text:'七天价保'}}" wx:if="{{reminderData['6'].tips.length>0}}"></template>
+                        <template is="reminder-agreement-template" data="{{list:reminderData['2'].tips,text:'课程协议'}}" wx:if="{{reminderData['2'].tips.length>0}}"></template>
+                    </view>
+                    <view catchtap="onConfirmPopup" class="selected-foot font34 color-fff">我同意</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="confirm-selected-template">
+    <view class="alert-box">
+        <view class="alert-background">
+            <view class="alert-background-placeholder" style="bottom: 890rpx;"></view>
+            <view class="alert-conntent-box alert-service-guarantee" style="height: 890rpx;bottom: 0;">
+                <view class="alert-content-title">
+                    <view catchtap="onhidePopup" class="alert-close sprites-icon1"></view>
+                </view>
+                <view class="selected-box">
+                    <view class="selected-comshow">
+                        <view class="selected-comshow-comimg">
+                            <image src="{{additional.coverUrl}}"></image>
+                            <view class="selected-icon">
+                                <block wx:if="{{additional.courseType===1}}">
+                                    <image src="../../img/033.png"></image>
+                                    <text class="color-fff font18">专题课</text>
+                                </block>
+                                <block wx:if="{{additional.courseType===0}}">
+                                    <image src="../../img/032.png"></image>
+                                    <text class="color-fff font18">系统班</text>
+                                </block>
+                            </view>
+                        </view>
+                        <view class="selected-comshow-text">
+                            <text class="color-333 font28 text-overflow-dotted-1line">{{additional.name}}</text>
+                            <text class="color-333 font28 text-overflow-dotted-1line">{{'￥'+additional.price}}</text>
+                            <text class="color-666 font22 text-overflow-dotted-1line">{{'已选：'+(additional.bookType===1?'初中教材':'')+(additional.bookType===2?'高中教材':'')}}</text>
+                        </view>
+                    </view>
+                    <view class="selected-content">
+                        <view class="selected-item">
+                            <view class="selected-item-title">
+                                <image class="icon1" src="../../../img/bao.png"></image>
+                                <text class="font28 color-333">学习包</text>
+                            </view>
+                            <view class="selected-select-box">
+                                <view catchtap="selectBookType" class="selected-select-buttom font28 color-666 text-overflow-dotted-1line {{additional.bookType===1?'selected':''}}" data-bookType="1">初中教材</view>
+                                <view catchtap="selectBookType" class="selected-select-buttom font28 color-666 text-overflow-dotted-1line {{additional.bookType===2?'selected':''}}" data-bookType="2">高中教材</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view catchtap="onSignUp" class="selected-foot font34 color-fff"> 确定 </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="group-selected-template">
+    <view class="alert-box">
+        <view class="alert-background">
+            <view class="alert-background-placeholder" style="bottom: 890rpx;"></view>
+            <view class="alert-conntent-box alert-service-guarantee" style="height: 890rpx;bottom: 0;">
+                <view class="alert-content-title">
+                    <view catchtap="onhidePopup" class="alert-close sprites-icon1"></view>
+                </view>
+                <view class="selected-box">
+                    <view class="selected-comshow">
+                        <view class="selected-comshow-comimg">
+                            <image src="{{url+'/'+(commodityData.appImg?commodityData.appImg:commodityData.webImg)}}"></image>
+                            <view class="selected-icon">
+                                <block wx:if="{{commodityData.courseType===1}}">
+                                    <image src="../../img/033.png"></image>
+                                    <text class="color-fff font18">专题课</text>
+                                </block>
+                                <block wx:if="{{commodityData.courseType===0}}">
+                                    <image src="../../img/032.png"></image>
+                                    <text class="color-fff font18">系统班</text>
+                                </block>
+                            </view>
+                        </view>
+                        <view class="selected-comshow-text">
+                            <text class="color-333 font28 text-overflow-dotted-1line">{{commodityData.name}}</text>
+                            <text class="color-333 font28 text-overflow-dotted-1line">{{'￥'+commodityData?filter.comItemPrice(commodityData):0}}</text>
+                            <text class="color-666 font22 text-overflow-dotted-1line">{{filter.selectedGroupText(commodityData)}}</text>
+                        </view>
+                    </view>
+                    <view class="selected-content">
+                        <view class="selected-item" wx:if="{{commodityData.hasStudyPack===2&&commodityData.bookType>0}}">
+                            <view class="selected-item-title">
+                                <image class="icon1" src="../../../img/bao.png"></image>
+                                <text class="font28 color-333">学习包</text>
+                            </view>
+                            <view class="selected-select-box">
+                                <view catchtap="selectBookType" class="selected-select-buttom font28 color-666 text-overflow-dotted-1line {{commodityData.bookType===1?'selected':''}}" data-bookType="1">初中教材</view>
+                                <view catchtap="selectBookType" class="selected-select-buttom font28 color-666 text-overflow-dotted-1line {{commodityData.bookType===2?'selected':''}}" data-bookType="2">高中教材</view>
+                            </view>
+                        </view>
+                        <view class="selected-item" wx:if="{{commodityData.insurance}}">
+                            <view class="selected-item-title">
+                                <image class="icon2" src="../../../img/select2.png"></image>
+                                <text class="font28 color-333">协议</text>
+                            </view>
+                            <view catchtap="openInsurance" class="safe-box {{commodityData.insurance.checked==1?'selected':''}}" data-checked="1" wx:if="{{commodityData.guaMul===1}}">
+                                <view class="safe-box-show">
+                                    <text class="color-333 font30 text-overflow-dotted-1line">{{'延保协议'}}</text>
+                                </view>
+                                <view class="safe-box-price font28 color-666" wx:if="{{commodityData.insuranceInfo.expense>0}}">{{'￥'+filter.float1(commodityData.increaseContentPrice)}}</view>
+                            </view>
+                            <view catchtap="openInsurance" class="safe-box {{commodityData.insurance.checked==2?'selected':''}}" data-checked="2">
+                                <view class="safe-box-show">
+                                    <text class="color-333 font30 text-overflow-dotted-1line">{{'服务保障'}}</text>
+                                    <text class="color-999 font22 text-overflow-dotted-1line">{{'由'+commodityData.insurance.company+'提供的服务保障'}}</text>
+                                </view>
+                                <view class="safe-box-price font28 color-666" wx:if="{{commodityData.insurance.price>0}}">{{'￥'+filter.float1(commodityData.insurance.price)}}</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view catchtap="onConfirm" class="selected-foot font34 color-fff"> 确定 </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="selected-template">
+    <view class="alert-box">
+        <view class="alert-background">
+            <view class="alert-background-placeholder" style="bottom: 890rpx;"></view>
+            <view class="alert-conntent-box alert-service-guarantee" style="height: 890rpx;bottom: 0;">
+                <view class="alert-content-title">
+                    <view catchtap="onhidePopup" class="alert-close sprites-icon1"></view>
+                </view>
+                <view class="selected-box">
+                    <view class="selected-comshow">
+                        <view class="selected-comshow-comimg">
+                            <image src="{{url+'/'+commodityData.coverUrlThree}}"></image>
+                            <view class="selected-icon">
+                                <block wx:if="{{commodityData.courseType===1}}">
+                                    <image src="../../img/033.png"></image>
+                                    <text class="color-fff font18">专题课</text>
+                                </block>
+                                <block wx:if="{{commodityData.courseType===0}}">
+                                    <image src="../../img/032.png"></image>
+                                    <text class="color-fff font18">系统班</text>
+                                </block>
+                            </view>
+                        </view>
+                        <view class="selected-comshow-text">
+                            <text class="color-333 font28 text-overflow-dotted-1line">{{commodityData.comName}}</text>
+                            <text class="color-333 font28 text-overflow-dotted-1line">￥{{filter.comPrice(commodityData,goNextPageData,servicePrice)}}</text>
+                            <text class="color-666 font22 text-overflow-dotted-1line">{{filter.selectedText(commodityData,goNextPageData,servicePrice)}}</text>
+                        </view>
+                    </view>
+                    <view class="selected-content">
+                        <view class="selected-item">
+                            <view class="selected-item-title">
+                                <image class="icon1" src="../../img/selectClass.png"></image>
+                                <text class="font28 color-333">选择班级</text>
+                            </view>
+                            <view class="selected-select-buttom1 selected" wx:if="{{commodityData.guaMul===0}}">
+                                <text class="color-999 font24">{{'【第'+commodityData.issue+'期】'}}{{commodityData.classEnd?'本期课程'+commodityData.classEnd+'结课/':''}}质保期至{{commodityData.mode===1?commodityData.deadline[0].deadline?commodityData.deadline[0].deadline:'':commodityData.validate?commodityData.validate:''}}</text>
+                            </view>
+                            <block wx:if="{{commodityData.guaMul===1}}">
+                                <view catchtap="selectGuaType" class="selected-select-buttom1 {{goNextPageData.comList[0].guaType===1?'selected':''}}" data-guaType="1">
+                                    <text class="color-999 font24">{{'【'+commodityData.guaTitle[0].title+'】'}}{{commodityData.classEnd?'本期课程'+commodityData.classEnd+'结课/':''}}质保期至{{commodityData.deadlineFirst?commodityData.deadlineFirst:''}}</text>
+                                </view>
+                                <view catchtap="selectGuaType" class="selected-select-buttom1 {{goNextPageData.comList[0].guaType===2?'selected':''}}" data-guaType="2">
+                                    <text class="color-999 font24">{{'【'+commodityData.guaTitle[1].title+'】'}}{{commodityData.classEnd?'本期课程'+commodityData.classEnd+'结课/':''}}质保期至{{commodityData.deadlineSecond?commodityData.deadlineSecond:''}}</text>
+                                </view>
+                            </block>
+                        </view>
+                        <view class="selected-item" wx:if="{{commodityData.addressMark===2&&commodityData.bookType===1}}">
+                            <view class="selected-item-title">
+                                <image class="icon1" src="../../../img/bao.png"></image>
+                                <text class="font28 color-333">学习包</text>
+                            </view>
+                            <view class="selected-select-box">
+                                <view catchtap="selectBookType" class="selected-select-buttom font28 color-666 text-overflow-dotted-1line {{goNextPageData.comList[0].bookType===1?'selected':''}}" data-bookType="1">初中教材</view>
+                                <view catchtap="selectBookType" class="selected-select-buttom font28 color-666 text-overflow-dotted-1line {{goNextPageData.comList[0].bookType===2?'selected':''}}" data-bookType="2">高中教材</view>
+                            </view>
+                        </view>
+                        <view class="selected-item" wx:if="{{commodityData.insurancePro||commodityData.increaseContentPro}}">
+                            <view class="selected-item-title">
+                                <image class="icon2" src="../../../img/select2.png"></image>
+                                <text class="font28 color-333">协议</text>
+                            </view>
+                            <view catchtap="openInsurance" class="safe-box {{servicePrice.comList[0].checked==1?'selected':''}}" data-checked="1" wx:if="{{commodityData.guaMul===1&&commodityData.increaseContentPro}}">
+                                <view class="safe-box-show">
+                                    <text class="color-333 font30 text-overflow-dotted-1line">{{'增值服务'}}</text>
+                                </view>
+                                <view class="safe-box-price font28 color-666" wx:if="{{commodityData.protocolInfo.price>0}}">{{'￥'+filter.float1(commodityData.protocolInfo.price)}}</view>
+                            </view>
+                            <view catchtap="openInsurance" class="safe-box {{servicePrice.comList[1].checked==1?'selected':''}}" data-checked="2" wx:if="{{commodityData.insurancePro}}">
+                                <view class="safe-box-show">
+                                    <text class="color-333 font30 text-overflow-dotted-1line">{{'服务保障'}}</text>
+                                    <text class="color-999 font22 text-overflow-dotted-1line">{{'由'+commodityData.insuranceInfo.company+'提供的服务保障'}}</text>
+                                </view>
+                                <view class="safe-box-price font28 color-666" wx:if="{{commodityData.insuranceInfo.price>0}}">{{'￥'+filter.float1(commodityData.insuranceInfo.price)}}</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view catchtap="onSignUp" class="selected-foot font34 color-fff" data-type="1"> 确定 </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="protocol-template">
+    <view class="alert-box">
+        <view class="alert-background">
+            <view class="alert-background-placeholder" style="bottom: 890rpx;"></view>
+            <view class="alert-conntent-box alert-service-guarantee" style="height: 890rpx;bottom: 0; transition: all 0.5s; {{transition?'left: 100%; right: -100%;':''}}">
+                <view class="alert-content-title" style="border-bottom:1rpx solid #DCDCDC;">
+                    <view catchtap="hidePopup" class="alert-close sprites-icon1"></view>
+                    <text class="color-333 font34 tc">{{filter.subStr('增值服务内容',9)}} </text>
+                    <text wx:if="{{protocolInfo.expense>0||protocolInfo.price>0}}">(</text>
+                    <text class="tc_text" wx:if="{{protocolInfo.expense>0||protocolInfo.price>0}}">￥{{protocolInfo.expense?filter.float1(protocolInfo.expense):protocolInfo.price?filter.float1(protocolInfo.price):'0'}}</text>
+                    <text wx:if="{{protocolInfo.expense>0||protocolInfo.price>0}}">)</text>
+                </view>
+                <view class="alert-content-list alert-serviceGuarantee-list">
+                    <view>
+                        <view class="alert-serviceGuarantee-title" style="margin-bottom:110rpx;padding-top:39rpx">
+                            <view class="color-333 font30">
+                                <template is="wxParse" data="{{wxParseData:protocolInfo.content.nodes}}"></template>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view catchtap="confirmInsurance" style="width:750rpx;height:100rpx;text-align:center;font-size:34rpx;color:#fff;background:#47c88a;line-height:100rpx;position:fixed;bottom:0rpx;"> 同意条款 </view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="guarantee-template">
+    <view class="alert-box">
+        <view class="alert-background">
+            <view class="alert-background-placeholder" style="bottom: 890rpx;"></view>
+            <view class="alert-conntent-box alert-service-guarantee" style="height: 890rpx;bottom: 0; transition: all 0.5s; {{transition?'left: 100%; right: -100%;':''}}">
+                <view class="alert-content-title" style="border-bottom:1rpx solid #DCDCDC;">
+                    <view catchtap="hidePopup" class="alert-close sprites-icon1"></view>
+                    <text class="color-333 font34 tc">{{filter.subStr('服务保障内容',9)}} </text>
+                    <text wx:if="{{insuranceInfo.expense>0||insuranceInfo.price>0}}">(</text>
+                    <text class="tc_text" wx:if="{{insuranceInfo.expense>0||insuranceInfo.price>0}}">￥{{insuranceInfo.expense?filter.float1(insuranceInfo.expense):insuranceInfo.price?filter.float1(insuranceInfo.price):'0'}}</text>
+                    <text wx:if="{{insuranceInfo.expense>0||insuranceInfo.price>0}}">)</text>
+                </view>
+                <view class="alert-content-list alert-serviceGuarantee-list">
+                    <view>
+                        <view class="alert-serviceGuarantee-title" style="margin-bottom:110rpx;padding-top:39rpx">
+                            <view class="color-333 font30">
+                                <template is="wxParse" data="{{wxParseData:insuranceInfo.content.nodes}}"></template>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view catchtap="confirmInsurance" style="width:750rpx;height:100rpx;text-align:center;font-size:34rpx;color:#fff;background:#47c88a;line-height:100rpx;position:fixed;bottom:0rpx;"> 同意条款 </view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="service-guarantee-template">
+    <view class="alert-box">
+        <view class="alert-background">
+            <view class="alert-background-placeholder" style="bottom: 788rpx;"></view>
+            <view class="alert-conntent-box alert-service-guarantee" style="height: 860rpx;bottom: 0;">
+                <view class="alert-content-title">
+                    <view catchtap="onhidePopup" class="alert-close sprites-icon1"></view>
+                    <text class="color-333 font34 tc">服务保障</text>
+                </view>
+                <view class="alert-content-list alert-serviceGuarantee-list">
+                    <view wx:if="{{commodityData.bzqContentPro||commodityData.guaMul}}">
+                        <view class="alert-serviceGuarantee-title" style="margin-bottom:0rpx;min-height:0rpx;">
+                            <view class="alert-serviceGuarantee-icon sprites-icon1"></view>
+                            <view class="color-333 font30">质保期协议</view>
+                        </view>
+                        <view class="alert-serviceGuarantee-content" style="padding-bottom:24rpx">
+                            <template is="wxParse" data="{{wxParseData:serviceGuaranteeHTML[0].nodes}}"></template>
+                        </view>
+                        <view class="px-half" wx:if="{{serviceGuaranteeHTML.length>0}}"></view>
+                    </view>
+                    <view wx:if="{{commodityData.refundContentPro!=null&&commodityData.refundContentPro!=''}}">
+                        <view class="alert-serviceGuarantee-title" style="margin-bottom:0rpx;min-height:0rpx;">
+                            <view class="alert-serviceGuarantee-icon sprites-icon1"></view>
+                            <view class="color-333 font30">退款协议</view>
+                        </view>
+                        <view class="alert-serviceGuarantee-content" style="padding-bottom:24rpx">
+                            <template is="wxParse" data="{{wxParseData:serviceGuaranteeHTML[1].nodes}}"></template>
+                        </view>
+                        <view class="px-half" wx:if="{{serviceGuaranteeHTML.length>0}}"></view>
+                    </view>
+                    <view wx:if="{{commodityData.priceProtectContentPro!=null&&commodityData.priceProtectContentPro!=''}}">
+                        <view class="alert-serviceGuarantee-title" style="margin-bottom:0rpx;min-height:0rpx;">
+                            <view class="alert-serviceGuarantee-icon sprites-icon1"></view>
+                            <view class="color-333 font30">七天价保</view>
+                        </view>
+                        <view class="alert-serviceGuarantee-content" style="padding-bottom:24rpx">
+                            <template is="wxParse" data="{{wxParseData:serviceGuaranteeHTML[3].nodes}}"></template>
+                        </view>
+                        <view class="px-half" wx:if="{{serviceGuaranteeHTML.length>0}}"></view>
+                    </view>
+                    <view wx:if="{{commodityData.bgContentPro!=null&&commodityData.bgContentPro!=''}}">
+                        <view class="alert-serviceGuarantee-title" style="margin-bottom:0rpx;min-height:0rpx;">
+                            <view class="alert-serviceGuarantee-icon sprites-icon1"></view>
+                            <view class="color-333 font30">课程协议</view>
+                        </view>
+                        <view class="alert-serviceGuarantee-content" style="padding-bottom:24rpx">
+                            <template is="wxParse" data="{{wxParseData:serviceGuaranteeHTML[4].nodes}}"></template>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="special-service-template">
+    <view class="alert-box">
+        <view class="alert-background">
+            <view class="alert-background-placeholder" style="bottom: 788rpx;"></view>
+            <view class="alert-conntent-box alert-discount-activity" style="height: 860rpx;bottom: 0;">
+                <view class="alert-content-title">
+                    <view catchtap="onhidePopup" class="alert-close sprites-icon1"></view>
+                    <text class="color-333 font34 tc">特色服务</text>
+                </view>
+                <view class="alert-content-list alert-specialService-list">
+                    <block wx:if="{{commodityData.hasClassBBS!=null&&commodityData.hasClassBBS==true}}">
+                        <view class="alert-specialService-item">
+                            <view class="alert-specialService-icon alert-specialService-icon1"></view>
+                            <view style="">
+                                <view class="color-333 font30">答疑</view>
+                                <view class="color-666 font26" style="margin-top: 14rpx;line-height: 39rpx;">专属学员的课程交流专区无障碍答疑解惑</view>
+                            </view>
+                        </view>
+                        <view class="px-half"></view>
+                    </block>
+                    <block wx:if="{{commodityData.faceRecognition}}">
+                        <view class="alert-specialService-item">
+                            <view class="alert-specialService-icon alert-specialService-icon1" style="background:none;">
+                                <image src="../../../img/baohu.png" style="width:100%;height:100%;"></image>
+                            </view>
+                            <view>
+                                <view class="color-333 font30">账号保护</view>
+                                <view class="color-666 font26" style="margin-top: 14rpx;line-height: 39rpx;">质保期内免费开启账号保护，异常登录时将启用人脸识别功能保护账号安全，账号保护期间仅供本人使用</view>
+                            </view>
+                        </view>
+                        <view class="px-half"></view>
+                    </block>
+                    <block wx:if="{{commodityData.vipMark!=null&&commodityData.vipMark!=''&&commodityData.vipMark==1&&commodityData.vipCourseName}}">
+                        <view class="alert-specialService-item">
+                            <view class="alert-specialService-icon alert-specialService-icon1" style="background-position:-147rpx -86rpx;"></view>
+                            <view style="">
+                                <view class="color-333 font30">VIP课程</view>
+                                <view class="color-666 font26" style="margin-top: 14rpx;line-height: 39rpx;">质保期内免费观看{{commodityData.vipCourseName}}下的所有VIP课程</view>
+                            </view>
+                        </view>
+                        <view class="px-half"></view>
+                    </block>
+                    <block wx:if="{{commodityData.vipMark!=null&&commodityData.vipMark!=''&&commodityData.vipMark==1&&commodityData.vipCourseName}}">
+                        <view class="alert-specialService-item">
+                            <view class="alert-specialService-icon alert-specialService-icon1" style="background-position:-147rpx -136rpx;"></view>
+                            <view style="">
+                                <view class="color-333 font30">VIP题库</view>
+                                <view class="color-666 font26" style="margin-top: 14rpx;line-height: 39rpx;">质保期内免费使用{{commodityData.vipCourseName}}下的所有VIP题库</view>
+                            </view>
+                        </view>
+                        <view class="px-half"></view>
+                    </block>
+                    <block wx:if="{{commodityData.addressMark==2}}">
+                        <view class="alert-specialService-item">
+                            <view class="alert-specialService-icon alert-specialService-icon1" style="background:none;">
+                                <image src="../../../img/libao.png" style="width:100%;height:100%;"></image>
+                            </view>
+                            <view>
+                                <view class="color-333 font30">学习包</view>
+                                <view class="color-666 font26" style="margin-top: 14rpx;line-height: 39rpx;">本课程包含学习教材，教材免邮费寄送</view>
+                            </view>
+                        </view>
+                        <view class="px-half"></view>
+                    </block>
+                    <block wx:if="{{commodityData.hasVipService}}">
+                        <view class="alert-specialService-item">
+                            <view class="alert-specialService-icon alert-specialService-icon1" style="background-position:-147rpx -136rpx"></view>
+                            <view>
+                                <view class="color-333 font30">管家服务</view>
+                                <view class="color-666 vgs font26" style="margin-top: 14rpx;line-height: 39rpx;">专业管家一对一提供产品服务，解决使用课程上的问题</view>
+                            </view>
+                        </view>
+                        <view class="px-half"></view>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="givepresent-course-template">
+    <view class="alert-box">
+        <view class="alert-background">
+            <view class="alert-background-placeholder" style="bottom: 788rpx;"></view>
+            <view class="alert-conntent-box alert-discount-activity" style="height: 592rpx;bottom: 0;">
+                <view class="alert-content-title">
+                    <view catchtap="onhidePopup" class="alert-close sprites-icon1"></view>
+                    <text class="color-333 font34 tc">赠送课程</text>
+                </view>
+                <view class="alert-content-list alert-discountActivity-list">
+                    <block wx:for="{{commodityData.giveClassType}}" wx:for-item="saleNameItem">
+                        <view class="alert-discountActivity-item">
+                            <view class="icon-zeng sprites-icon1"></view>
+                            <view class="color-333 font30" style="margin-left: 50rpx;">{{saleNameItem.title}}</view>
+                        </view>
+                        <view class="px-half" wx:if="{{commodityData.giveClassType.length!=index+1}}"></view>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="discount-activity-template">
+    <view class="alert-box">
+        <view class="alert-background">
+            <view class="alert-background-placeholder" style="bottom: 788rpx;"></view>
+            <view class="alert-conntent-box alert-discount-activity" style="height: 592rpx;bottom: 0;">
+                <view class="alert-content-title">
+                    <view catchtap="onhidePopup" class="alert-close sprites-icon1"></view>
+                    <text class="color-333 font34 tc">优惠活动</text>
+                </view>
+                <view class="alert-content-list alert-discountActivity-list">
+                    <block wx:for="{{commodityData.saleNameList}}" wx:for-item="saleNameItem">
+                        <view class="alert-discountActivity-item">
+                            <view class="icon-zeng sprites-icon1"></view>
+                            <view class="color-333 font30" style="margin-left: 50rpx;">{{saleNameItem}}</view>
+                        </view>
+                        <view class="px-half" wx:if="{{commodityData.saleNameList.length!=index+1}}"></view>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<import src="../../wxParse/wxParse.wxml"></import>
+<wxs module="filter" src="../../filter/filter.wxs" />
+<wxs module="tools" src="tools.wxs" />

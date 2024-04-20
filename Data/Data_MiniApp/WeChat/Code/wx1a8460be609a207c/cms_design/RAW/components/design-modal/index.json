@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "design-onecrm-wx-member-code-modal": "/cms_design_components/RAW/miniprogram_npm/@design-onecrm/wx-member-code-modal/index",
+        "c_rk2rxkivgqe2fq": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "design-onecrm-wx-member-code-modal": "c_rk2rxkivgqe2fq"
+    }
+}

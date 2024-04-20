@@ -1,0 +1,7 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "m-item": "/components/form-item/form-item"
+    }
+}

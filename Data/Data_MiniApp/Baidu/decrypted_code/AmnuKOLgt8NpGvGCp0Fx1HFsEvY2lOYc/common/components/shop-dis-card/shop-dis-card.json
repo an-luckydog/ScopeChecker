@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+      "shop-dis-card-panel": "./shop-dis-card-panel/index"
+    }
+  }

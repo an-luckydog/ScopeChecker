@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "mina-image": "../../../common/components/lazyload-image/lazyload-image",
+    "star": "../../../common/components/star/star"
+  }
+}

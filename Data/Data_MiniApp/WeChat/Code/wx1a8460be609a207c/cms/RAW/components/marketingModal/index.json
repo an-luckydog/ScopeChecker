@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "realUserAgreement": "/cms_extension_package/RAW/marketingModal/index",
+        "c_tgkbkon15k7cu": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "realUserAgreement": "c_tgkbkon15k7cu"
+    }
+}

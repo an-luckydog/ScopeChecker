@@ -1,0 +1,9 @@
+problem_file_path,problem_function_name,problem_api,occurrences_in_frontend
+app.js,{'then'},chooseImage,0
+app.js,{'then'},chooseVideo,0
+app.js,{'then'},chooseLocation,0
+app.js,{'then'},scanCode,0
+app.js,{'then'},getClipboardData,0
+app.js,{'then'},addPhoneContact,0
+app.js,{'onChatEvent'},chooseImage,0
+app.js,{'onChatEvent'},chooseImage,0

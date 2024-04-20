@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "对啊 · 背单词",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#eeeeee",
+    "usingComponents": {
+        "privacy-popup": "../../components/privacyPopup/privacyPopup"
+    }
+}

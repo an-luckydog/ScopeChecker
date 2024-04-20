@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-dialog": "../user-rule-dialog/index"
+    }
+}

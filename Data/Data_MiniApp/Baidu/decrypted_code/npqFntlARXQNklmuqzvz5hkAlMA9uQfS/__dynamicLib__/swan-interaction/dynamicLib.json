@@ -1,0 +1,14 @@
+{
+    "name": "swan-interaction",
+    "publicComponents": {
+        "comment-list": {
+            "path": "src/comment-list/index",
+            "isSwanComponent": true
+        },
+        "comment-detail": {
+            "path": "src/comment-detail/index",
+            "isSwanComponent": true
+        }
+    },
+    "main": "index.js"
+}

@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"drug-item":"./im-card-drugstore-item","c-icon":"../../mars_modules/@baidu/med-ui/dist/swan/components/Icon/Icon","scroll-tag":"../common/scroll-tag","c-navigate":"../common/navigate"}}

@@ -1,0 +1,12 @@
+{
+    "defaultTitle": "扫码领券",
+    "navigationBarTitleText": "扫码领券",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "transparentTitle": "auto",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

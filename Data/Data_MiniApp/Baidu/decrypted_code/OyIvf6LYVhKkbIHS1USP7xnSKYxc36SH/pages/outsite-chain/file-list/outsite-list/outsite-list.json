@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "outsite-list-item": "../outsite-list-item/outsite-list-item"
+    }
+}

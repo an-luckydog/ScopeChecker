@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "red-banner": "../../../pages/entry/home/components/red-banner",
+        "zec-privacy": "../zec-privacy/zec-privacy"
+    }
+}

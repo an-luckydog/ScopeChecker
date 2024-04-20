@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"category-drawer":"./CategoryDrawer/index","flow-loader":"../../FlowLoader/index","bangumi-card-item":"../../FlowItem/BangumiCardItem/index"}}

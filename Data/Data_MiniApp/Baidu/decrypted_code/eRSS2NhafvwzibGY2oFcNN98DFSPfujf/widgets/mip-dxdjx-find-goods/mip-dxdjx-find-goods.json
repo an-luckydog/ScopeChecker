@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "feed": "/widgets/mip-dxdjx-find-goods/components/feed/feed",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "head-image": "/widgets/mip-dxdjx-find-goods/components/head-image/head-image",
+        "big-name": "/widgets/mip-dxdjx-find-goods/components/big-name/big-name",
+        "hot-buy":"/widgets/mip-dxdjx-find-goods/components/hot-buy/hot-buy",
+        "coupon":"/widgets/mip-dxdjx-find-goods/components/coupon/coupon"
+    }
+}

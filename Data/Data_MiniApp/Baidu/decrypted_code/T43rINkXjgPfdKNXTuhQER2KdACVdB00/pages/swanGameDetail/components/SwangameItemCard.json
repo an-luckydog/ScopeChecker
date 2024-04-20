@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "game-ranting-badge": "../../../components/GameRantingBadge"
+    },
+    "component": true
+}

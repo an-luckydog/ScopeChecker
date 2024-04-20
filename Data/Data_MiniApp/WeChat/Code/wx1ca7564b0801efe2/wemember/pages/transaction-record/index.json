@@ -1,0 +1,8 @@
+{
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "交易记录",
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

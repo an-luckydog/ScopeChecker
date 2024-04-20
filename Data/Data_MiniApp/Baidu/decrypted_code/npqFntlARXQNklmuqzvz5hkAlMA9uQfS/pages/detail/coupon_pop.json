@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "rcc": "/component/rotate_code_coupon",
+    "coupon-verify": "/component/couponVerify/couponVerify"
+  }
+}

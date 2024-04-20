@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "realOnecrmPublishRegister": "/onecrm_extension_package/RAW/components/onecrmPublishRegister/index",
+        "c_xa8ing4v3icr": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "realOnecrmPublishRegister": "c_xa8ing4v3icr"
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "comm-swiper-dot": "../../../../components/comm-swiper-dot"
+  }
+}

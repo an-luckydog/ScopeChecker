@@ -1,0 +1,8 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "mip-bdxd-refund-button": "/widgets/mip-bdxd-refund-button/mip-bdxd-refund-button"
+    }
+}

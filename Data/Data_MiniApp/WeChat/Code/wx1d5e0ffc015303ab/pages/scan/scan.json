@@ -1,0 +1,9 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "privacy": "/components/privacy/privacy",
+        "about-location": "/components/aboustLocation",
+        "come-again-pup": "/components/comeAgain/index",
+        "app": "/components/privacy/privacy"
+    }
+}

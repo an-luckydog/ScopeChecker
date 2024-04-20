@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "mod-line": "./ModLine",
+        "game-detail-tab": "./GameDetailTabAladdin",
+        "game-detail-bottom-btn": "./GameDetailBottomBtn"
+    },
+    "component": true
+}

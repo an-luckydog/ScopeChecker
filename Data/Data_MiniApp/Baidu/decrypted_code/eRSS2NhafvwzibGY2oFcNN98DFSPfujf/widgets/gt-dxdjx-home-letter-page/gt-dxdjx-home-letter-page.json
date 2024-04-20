@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "optimize-image": "/components/optimize-image/optimize-image",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "home-letter-card": "/widgets/gt-dxdjx-home-letter-page/components/home-letter-card/home-letter-card",
+        "address-card": "/widgets/gt-dxdjx-home-letter-page/components/address-card/address-card",
+        "gift-card": "/widgets/gt-dxdjx-home-letter-page/components/gift-card/gift-card",
+        "gt-dxdjx-home-letter-gift-popup": "/widgets/gt-dxdjx-home-letter-gift-popup/gt-dxdjx-home-letter-gift-popup"
+    }
+}

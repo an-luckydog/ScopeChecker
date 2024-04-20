@@ -1,0 +1,10 @@
+<view class="nav" style="height:{{navBarHeight}}px;">
+    <view class="nav-main" style="height:{{navBarHeight}}px;{{titleStyle}}">
+        <view class="capsule-box" style="height:{{menuHeight}}px;margin-top:{{menuMargin}}px">
+            <view bind:tap="backToHome" class="home-btn" wx:if="{{showHomeBtn}}"></view>
+            <view>
+                <slot></slot>
+            </view>
+        </view>
+    </view>
+</view>

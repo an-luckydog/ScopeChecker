@@ -1,0 +1,7 @@
+function transDishType(dish) {
+    dish.dishType = dish.dishType === 2 ? 0 : dish.dishType;
+    return (dish)
+};
+module.exports = ({
+    transDishType: transDishType,
+});

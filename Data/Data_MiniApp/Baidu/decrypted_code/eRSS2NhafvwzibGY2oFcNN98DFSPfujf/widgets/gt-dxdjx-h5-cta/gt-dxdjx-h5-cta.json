@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "cta-item": "/widgets/gt-dxdjx-h5-cta/components/cta-item/cta-item",
+        "mip-bdxd-gap": "/components/gap/gap"
+    }
+}

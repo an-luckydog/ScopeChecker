@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "custom-picker": "/components/custom-picker/index",
+        "image-resize": "/components/image-resize/image-resize"
+    }
+}

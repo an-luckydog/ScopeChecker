@@ -1,0 +1,13 @@
+{
+    "defaultTitle": "卡片中心",
+    "navigationBarTitleText": "卡片中心",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "disableScroll": false,
+    "onReachBottomDistance": 50,
+    "transparentTitle": "auto",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,8 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "mip-bdxd-order-goods-card": "/widgets/mip-bdxd-order-goods-card/mip-bdxd-order-goods-card"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "disableScroll": true,
+    "componentPlaceholder": {
+        "manual-slide": "view",
+        "coupon-rules-standard": "view",
+        "limo-rules-modal-v2": "empty-panel",
+        "desc-operate-panel": "empty-panel",
+        "universal-login": "view",
+        "login-modal": "view",
+        "phone-number-no-quota-modal": "view",
+        "shop-info-panel": "empty-panel",
+        "voucher-list-panel": "empty-panel",
+        "open-card-panel": "empty-panel",
+        "cart-bar-top": "view",
+        "coupon-package": "view",
+        "dish-time-info": "view",
+        "package-details-panel": "empty-panel",
+        "dish-remark-panel": "empty-panel",
+        "coupon-dishes-panel": "empty-panel",
+        "coupon-assistant-top": "view",
+        "coupon-assistant-fly": "view",
+        "coupon-panel": "empty-panel",
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "fourth",
+  "version": "2.0.0",
+  "description": "",
+  "main": "fourth.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node util/build-css",
+    "gulp": "./node_modules/.bin/gulp",
+    "format": "./node_modules/.bin/eslint --fix"
+  },
+  "author": "JianJin Wu",
+  "license": "ISC",
+  "dependencies": {
+    "css": "^2.2.1",
+    "lodash.defaultsdeep": "^4.6.0",
+    "lodash.get": "^4.4.2"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-standard": "^12.0.0-alpha.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^4.0.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}

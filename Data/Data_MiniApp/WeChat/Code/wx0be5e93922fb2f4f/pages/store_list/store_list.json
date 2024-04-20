@@ -1,0 +1,7 @@
+{
+    "usingComponents": {},
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 300,
+    "navigationBarTitleText": "门店列表",
+    "backgroundTextStyle": "dark"
+}

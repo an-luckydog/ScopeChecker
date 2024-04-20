@@ -1,0 +1,24 @@
+{
+    "name": "swan-news-tool",
+    "publicComponents": {
+        "swan-news-articles": {
+            "path": "components/article-list-page/index",
+            "isSwanComponent": true
+        },
+        "swan-news": {
+            "path": "components/operate-news/index",
+            "isSwanComponent": true
+        },
+        "comment-detail": {
+            "path": "interaction/comment-detail/index",
+            "isSwanComponent": true
+        },
+        "swan-news-showcase": {
+            "path": "components/showcase-page/index",
+            "isSwanComponent": true
+        }
+    },
+    "pages": [
+        "pages/comment-detail/comment-detail"
+    ]
+}

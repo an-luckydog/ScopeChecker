@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "wxworkShare": "/ec_extension_package/RAW/wxworkShare/wxworkShare",
+        "c_8rtbszt42rtdl": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "wxworkShare": "c_8rtbszt42rtdl"
+    }
+}

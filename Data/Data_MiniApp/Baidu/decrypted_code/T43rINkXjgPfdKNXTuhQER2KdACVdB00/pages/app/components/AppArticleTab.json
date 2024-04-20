@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "strategy-news-card": "../../../components/StrategyNewsCard",
+        "card-footer": "../../../components/Footer"
+    },
+    "component": true
+}

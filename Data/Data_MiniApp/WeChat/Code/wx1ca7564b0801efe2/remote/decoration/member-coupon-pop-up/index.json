@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "coupon-item-standard": "../../../async-coupon/components/coupon-item-standard/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "coupon-item-standard": "view",
+        "lottery": "view"
+    }
+}

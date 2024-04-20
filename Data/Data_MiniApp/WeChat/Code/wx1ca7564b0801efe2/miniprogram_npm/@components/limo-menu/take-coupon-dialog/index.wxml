@@ -1,0 +1,55 @@
+<block wx:if="{{showDialog&&(showFailConfig||showNormalConfig)}}">
+    <view bindtap="closeDialog" class="mask"></view>
+    <view class="{{containerStyle}}">
+        <view class="{{contentStyle}}" wx:if="{{showNormalConfig}}">
+            <view class="rmb-icon-right"></view>
+            <view class="coupon-title">{{title}}</view>
+            <view class="{{takeCouponData.couponDisplayInfos?'':'header'}}"></view>
+            <scroll-view class="coupons" scrollY="{{true}}">
+                <view class="couponItem" wx:for="{{takeCouponData.couponDisplayInfos}}" wx:key="index">
+                    <coupon-item-standard couponData="{{item.couponDisplay.data}}" displayStyle="{{item.couponDisplay.displayStyle}}" type="{{1}}"></coupon-item-standard>
+                </view>
+                <view class="point-item" wx:if="{{givePointInfo&&givePointInfo.point}}">
+                    <view class="point-left">
+                        <view class="point-name">{{givePointInfo.pointDesc||''}}</view>
+                        <view class="point-rule">{{givePointInfo.pointRule||''}}</view>
+                    </view>
+                    <view class="point-right">
+                        <view class="point-count">{{givePointInfo.point}}</view>
+                        <view class="point-unit">个</view>
+                    </view>
+                </view>
+                <view class="partFailCause" wx:if="{{!!partFailCause}}">{{partFailCause}}</view>
+            </scroll-view>
+            <view class="footer">
+                <view class="rmb-icon-left"></view>
+                <view class="headerTxt">
+                    <view class="tipTxt" wx:if="{{resultCode===TAKE_COUPON_RESULT.NO_LOGIN}}">
+                        <view>恭喜您获得红包，赶快领取吧</view>
+                    </view>
+                    <view class="tipTxt" wx:elif="{{resultCode===TAKE_COUPON_RESULT.SUCCESS&&!isNoLogin&&couponListURL}}">奖励已领取，可前往<view bindtap="viewCouponList" class="highlight">优惠券<view class="arrow-right-red"></view>
+                        </view>查看</view>
+                </view>
+                <view bindtap="clickSubmitBtn" class="submit-btn">
+                    <view class="btn-txt" wx:if="{{resultCode===TAKE_COUPON_RESULT.NO_LOGIN}}">
+                        <view>{{buttonText}}</view>
+                        <view class="arrow-right-white"></view>
+                    </view>
+                    <view class="btn-txt" wx:if="{{resultCode===TAKE_COUPON_RESULT.SUCCESS}}">{{buttonText}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="fail-content" wx:elif="{{showFailConfig}}">
+            <view class="main-cause">{{failMainCause}}</view>
+            <view class="fail-tip">
+                <view class="fail-tip-text" wx:for="{{failSubCauseList}}" wx:key="index">{{item}}</view>
+            </view>
+            <view class="footer">
+                <view bindtap="closeDialog" class="submit-btn-small">
+                    <view class="btn-txt">我知道了</view>
+                </view>
+            </view>
+        </view>
+        <view bindtap="closeDialog" class="{{showFailConfig?'closeBtn fail-btn':'closeBtn'}}"></view>
+    </view>
+</block>

@@ -1,0 +1,3 @@
+<view class="{{defaultClass}}" wx:if="{{banners&&banners.length>0}}">
+    <limo-slide advId="{{advId}}" autoplay="{{autoplay}}" bannerInterval="{{bannerInterval||DEFAULT_INTERVAL}}" bind:swiperRedirectEvent="swiperRedirectEvent" bind:swiperSwitchChangeEvent="swiperSwitchChangeEvent" heightImg="{{heightImg}}" imgList="{{banners}}" layout="{{layout}}"></limo-slide>
+</view>

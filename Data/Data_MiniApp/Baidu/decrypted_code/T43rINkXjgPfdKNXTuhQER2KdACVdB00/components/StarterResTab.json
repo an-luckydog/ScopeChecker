@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "timeline-gamelist": "./TimelineGamelist",
+        "week-game-tab-module": "./WeekGameTabModule"
+    },
+    "component": true
+}

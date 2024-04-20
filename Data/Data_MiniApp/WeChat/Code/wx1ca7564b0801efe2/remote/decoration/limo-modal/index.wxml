@@ -1,0 +1,20 @@
+<view class="limo-confirm-layout {{preview?'limo-renovation':'limo-normal'}} {{newShow?'show':''}} " wx:if="{{newShow&&imgShowList}}">
+    <view class="confirm-content">
+        <midas-report bind:moduleEvent="moduleEvent" moduleId="{{advId}}">
+            <swiper autoplay="{{false}}" bindchange="swiperSwitchChange" nextMargin="84rpx" previousMargin="104rpx" style="width:100%;height: 720rpx;" wx:if="{{imgShowList&&imgShowList.length>1}}">
+                <swiper-item class="limo-footer-swiper-item" wx:for="{{imgShowList}}" wx:key="imgUrl">
+                    <image binderror="onImageError" bindload="onImageLoad" bindtap="onClick" class="img" data-ad-type="{{item.adType}}" data-index="{{index}}" data-url="{{item.redirectUrl}}" showMenuByLongpress="true" src="{{item.imgUrl}}" style="{{compStyle}}"></image>
+                </swiper-item>
+            </swiper>
+            <view class="singleImg" wx:if="{{imgShowList&&imgShowList.length===1}}">
+                <image bindtap="onClick" class="img" data-ad-type="{{imgShowList[0].adType}}" data-index="{{0}}" data-url="{{imgShowList[0].redirectUrl}}" showMenuByLongpress="true" src="{{imgShowList[0].imgUrl}}" style="{{compStyle}}"></image>
+            </view>
+            <view class="limo-dot-layout" wx:if="{{imgShowList.length>1}}">
+                <view class="limo-dot {{index===currentIndex?'limo-active':''}}" wx:for="{{imgShowList}}" wx:key="imgUrl"></view>
+            </view>
+            <view class="confirm-close-view">
+                <view bindtap="closeConfirm" class="confirm-close"></view>
+            </view>
+        </midas-report>
+    </view>
+</view>

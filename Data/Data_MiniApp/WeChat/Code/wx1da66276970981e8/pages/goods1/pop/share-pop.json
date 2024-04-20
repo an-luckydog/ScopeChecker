@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-image": "../../../node-modules/uview-plus/components/u-image/u-image",
+        "c-canvas-painting": "../../../components/c-canvas-painting/c-canvas-painting",
+        "u-loading-icon": "../../../node-modules/uview-plus/components/u-loading-icon/u-loading-icon",
+        "u-popup": "../../../node-modules/uview-plus/components/u-popup/u-popup"
+    }
+}

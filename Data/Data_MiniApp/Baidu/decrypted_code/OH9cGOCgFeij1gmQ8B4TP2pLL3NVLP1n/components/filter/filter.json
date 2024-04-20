@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "smt-filter-header": "@smt-ui/component/src/filter-header",
+        "smt-filter-body": "@smt-ui/component/src/filter-body",
+        "filter-panel": "./filter-panel/filter-panel"
+    }
+}

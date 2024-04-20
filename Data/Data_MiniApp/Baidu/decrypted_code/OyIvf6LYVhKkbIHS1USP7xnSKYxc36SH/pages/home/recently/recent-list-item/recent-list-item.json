@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "file-view-imgs": "../../../../components/file-view/file-view-imgs/file-view-imgs",
+        "file-view-video": "../../../../components/file-view/file-view-video/file-view-video",
+        "file-view-other": "../../../../components/file-view/file-view-other/file-view-other",
+        "file-view-share": "../../../../components/file-view/file-view-share/file-view-share"
+    }
+}

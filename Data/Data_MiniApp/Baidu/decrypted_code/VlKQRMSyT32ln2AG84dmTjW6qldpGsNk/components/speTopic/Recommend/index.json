@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"advert":"../../../components/common/advert","list-loading":"../../../components/common/list-loading","banner-image":"./BannerImage","video-big-pic":"../live/VideoBigPic","recommend-item":"./RecommendItem","recommend-big-pic-item":"./RecommendBigPicItem"}}

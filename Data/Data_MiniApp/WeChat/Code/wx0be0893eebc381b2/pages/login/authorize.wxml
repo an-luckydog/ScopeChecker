@@ -1,0 +1,11 @@
+<view class="page" wx:if="{{pagesShow}}">
+    <image class="logo" src="../../img/tu@2x.png"></image>
+    <view class="title font36">对啊 · 背单词</view>
+    <button bindtap="callBack" class="authorize font32 color-000">微信授权</button>
+    <view class="tips color-666 font26">同意微信授权，可观看更多内容。</view>
+</view>
+<view class="public" wx:if="{{public}}">
+    <view class="public_bottom">
+        <official-account></official-account>
+    </view>
+</view>

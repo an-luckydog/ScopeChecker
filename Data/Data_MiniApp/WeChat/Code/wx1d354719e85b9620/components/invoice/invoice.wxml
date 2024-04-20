@@ -1,0 +1,9 @@
+<u-popup bind:__l="__l" bind:close="__e" bind:input="__e" class="data-v-262cf60f" data-event-opts="{{[ [ '^close',[ ['close'] ] ],[ '^input',[ [ '__set_model',[ '','show','$event',[] ] ] ] ] ]}}" mode="center" value="{{show}}" vueId="0bc300a6-1" vueSlots="{{['default']}}">
+    <view class="invoice-dialog data-v-262cf60f">
+        <view class="invoice-text data-v-262cf60f">请持就诊卡赴医院发票补打窗口</view>
+        <view class="invoice-text data-v-262cf60f">{{'报本单发票号（'+invoice+'）'}}</view>
+        <view class="invoice-text data-v-262cf60f" style="margin-bottom:32rpx;">打印发票</view>
+        <view bindtap="__e" class="invoice-call data-v-262cf60f" data-event-opts="{{[ [ 'tap',[ [ 'call',['$event'] ] ] ] ]}}">如有疑问请拨打<text class="invoice-phone data-v-262cf60f">{{serviceTel}}</text>
+        </view>
+    </view>
+</u-popup>

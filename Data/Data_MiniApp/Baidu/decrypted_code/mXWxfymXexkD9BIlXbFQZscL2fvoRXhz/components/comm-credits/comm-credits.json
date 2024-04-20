@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "zmn-fall-down": "../../node-modules/@zmn/uni-ui/components/zmn-fall-down/zmn-fall-down",
+    "zmn-button": "../../node-modules/@zmn/uni-ui/components/zmn-button/zmn-button",
+    "zmn-activity-dialog": "../../node-modules/@zmn/uni-ui/components/zmn-activity-dialog/zmn-activity-dialog"
+  }
+}

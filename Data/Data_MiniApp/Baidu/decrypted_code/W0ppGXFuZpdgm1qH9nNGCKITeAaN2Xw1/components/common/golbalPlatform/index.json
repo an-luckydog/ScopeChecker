@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents":  {
+        "guide-add-favor": "./guide-add-favor/index"
+    }
+}

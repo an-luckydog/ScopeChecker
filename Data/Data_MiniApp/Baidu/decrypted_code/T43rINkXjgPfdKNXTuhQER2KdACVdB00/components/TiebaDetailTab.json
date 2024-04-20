@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "footer": "./Footer",
+        "simple-loading": "./SimpleLoading",
+        "empty-and-error": "./EmptyAndError",
+        "tieba-card": "./TiebaCard"
+    },
+    "component": true
+}

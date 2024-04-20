@@ -1,0 +1,6 @@
+function getStock(d) {
+    return (+d.stockCount > 0 && +d.stockCount < 10 ? +d.stockCount : undefined)
+};
+module.exports = ({
+    getStock: getStock,
+});

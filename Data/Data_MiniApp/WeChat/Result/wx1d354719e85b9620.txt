@@ -1,0 +1,5 @@
+在后端文件{"D:\wxappUnpacker-master\dec\wxcomponents\verify_mpsdk\index\index.js}"中的方法{"{'chooseImg'}}"中找到匹配: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\wxcomponents\verify_mpsdk\index\index.wxml}"中的方法{"                            <view bindtap="chooseImg" class="{{cmsConfig.Common.IsWxNative?'vot-album color-green':'vot-album'}}" wx:if="{{cmsConfig.page.ocr.sourceType>0}}"> 相册 </view>
+}"中找到对应: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\wxcomponents\verify_mpsdk\index\index.wxml}"中的方法{"                            <view bindtap="chooseImg" class="{{cmsConfig.Common.IsWxNative?'vot-album color-green':'vot-album'}}" wx:if="{{cmsConfig.page.ocr.sourceType>0}}"> 相册 </view>
+}"中找到对应: {"chooseImage}"

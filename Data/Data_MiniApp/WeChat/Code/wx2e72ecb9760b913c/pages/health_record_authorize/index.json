@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "授权健康档案",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-authorize": "../../components/cy-authorize/index"
+    }
+}

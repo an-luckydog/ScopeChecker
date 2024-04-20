@@ -1,0 +1,93 @@
+<import src="../template/template/template.wxml"></import>
+<view class="min_content">
+    <view class="top">
+        <view bindtap="tixing" class="top_list">
+            <view class="list_left">
+                <image class="list_left_img" src="../../img/gr_tx@2x.png" style="width:38rpx;height:38rpx;"></image>
+                <view class="list_left_text"> 提醒设置 <view class="dian" wx:if="{{is_dian}}"></view>
+                </view>
+            </view>
+            <image class="list_right" src="../../img/jian.png"></image>
+        </view>
+        <view bindtap="voice" class="top_list">
+            <view class="list_left">
+                <image class="list_left_img" src="../../img/tz@2x.png" style="width:38rpx;height:38rpx;"></image>
+                <view class="list_left_text">声音设置</view>
+            </view>
+            <image class="list_right" src="../../img/jian.png"></image>
+        </view>
+        <view bindtap="mylist" class="top_list">
+            <view class="list_left">
+                <image class="list_left_img" src="../../img/list@2x.png" style="width:37rpx;height:37rpx;"></image>
+                <view class="list_left_text"> 我的订单 </view>
+            </view>
+            <image class="list_right" src="../../img/jian.png"></image>
+        </view>
+        <view bindtap="go_answer_report" class="top_list">
+            <view class="list_left">
+                <image class="list_left_img" src="../../img/class@2x.png" style="width:37rpx;height:37rpx;"></image>
+                <view class="list_left_text"> 我的班级 <view class="dian" wx:if="{{classRedDot}}"></view>
+                </view>
+            </view>
+            <image class="list_right" src="../../img/jian.png"></image>
+        </view>
+        <view bindtap="fanxiang" class="top_list" wx:if="{{siji_miss}}">
+            <button class="top_list_btn" openType="share"></button>
+            <view class="list_left">
+                <image class="list_left_img" src="../../img/gr_hy@2x.png" style="width:37rpx;height:37rpx;"></image>
+                <view class="list_left_text">邀请好友</view>
+            </view>
+            <image class="list_right" src="../../img/jian.png"></image>
+        </view>
+        <view class="top_list" wx:if="{{siji_miss}}">
+            <view class="list_left">
+                <image class="list_left_img" src="../../img/gr_zz@2x.png" style="width:34rpx;height:37rpx;"></image>
+                <view class="list_left_text">找组织一起学习</view>
+            </view>
+            <view class="list_right_d">
+                <view class="">{{state?'限时加入':'需完成一次打卡'}}</view>
+            </view>
+        </view>
+        <view bindtap="subMessage" class="top_list">
+            <view class="list_left">
+                <image class="list_left_img" src="../../img/icon_mine_message.png" style="width:37rpx;height:37rpx;"></image>
+                <view class="list_left_text">订阅消息</view>
+            </view>
+            <image class="list_right" src="../../img/jian.png"></image>
+        </view>
+        <view bindtap="agreement" class="top_list">
+            <view class="list_left">
+                <image class="list_left_img" src="../../img/icon_mine_agreement.png" style="width:37rpx;height:37rpx;"></image>
+                <view class="list_left_text">协议与说明</view>
+            </view>
+            <image class="list_right" src="../../img/jian.png"></image>
+        </view>
+        <view bindtap="untieUnionId" class="untie {{isLogin}}">退出英语四级君账号</view>
+    </view>
+</view>
+<view bindtap="fuzhi" class="min_add" wx:if="{{state&&siji_miss}}">
+    <image class="min_add_img1" src="../../img/bei.png"></image>
+    <view class="min_add_img2">
+        <image class="min_add_img_img" src="../../img/xian.png"></image>
+        <view class="min_add_img_text">限时</view>
+    </view>
+    <view class="texts">
+        <view class="texts_top"> 欢迎加入 <text class="sswa">//</text> 对啊·背单词 <text class="sswa">//</text> 组织 </view>
+        <view class="texts_bottom">
+            <view>请添加客服微信号：</view>
+            <view class="ees">{{weixin}}</view>
+            <view>再申请入群学习</view>
+        </view>
+    </view>
+    <view class="texts_btn">点击可复制微信号</view>
+</view>
+<view class="no_network" wx:if="{{networkType=='none'||!isConnected}}">
+    <template is="no_network-template" data="{{n:n}}"></template>
+</view>
+<view class="cover" wx:if="{{is_download}}">
+    <view bindtap="cancel_download" class="black"></view>
+    <view class="share">
+        <image class="share_imgs" src="../../img/down@2x.png"></image>
+        <view bindtap="cancel_download" class="share_button"></view>
+    </view>
+</view>

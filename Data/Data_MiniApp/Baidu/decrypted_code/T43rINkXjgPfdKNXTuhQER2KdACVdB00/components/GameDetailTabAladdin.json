@@ -1,0 +1,16 @@
+{
+    "usingComponents": {
+        "game-detail-desc": "./GameDetailDesc",
+        "game-detail-games-grid": "./GameDetailGamesGrid",
+        "mod-line": "./ModLine",
+        "gift-card": "./GiftCard",
+        "game-detail-basic-card": "./GameDetailBasicCard",
+        "game-detail-update-module": "./GameDetailUpdateModule",
+        "game-detail-marking": "./GameDetailMarking",
+        "game-detail-dynamic-module": "./GameDetailDynamicModule",
+        "game-detail-game-aladdin": "./GameDetailGameAladdin",
+        "comment-card": "./CommentCard",
+        "game-bar-header": "./GameBarHeader"
+    },
+    "component": true
+}

@@ -1,0 +1,32 @@
+<view wx:if="{{loaded}}">
+    <none-page bind:__l="__l" vueId="567f7cd9-1" wx:if="{{noData}}"></none-page>
+    <view class="content" wx:else>
+        <view class="time-tree" wx:if="{{item[$orig]&&item[$orig].length>0}}" wx:for="{{$root.l0}}" wx:for-index="date" wx:key="date">
+            <view class="tit">{{''+item.f0+''}}<view class="small">{{item.f1}}</view>
+            </view>
+            <view class="body">
+                <block wx:for="{{item[$orig]}}" wx:for-item="it" wx:key="index">
+                    <view bindtap="__e" class="card-source" data-datano="{{it.dataNo}}" data-event-opts="{{[ [ 'tap',[ [ 'goCasePage',['$event'] ] ] ] ]}}" data-type="case" wx:if="{{it.healthType==='case'}}">
+                        <view class="icon" style="width:70rpx;height:70rpx;">
+                            <image src="{{imgUrl+'pages/health/medical_record.png'}}"></image>
+                        </view>
+                        <view class="info">
+                            <view class="h4">门诊病历</view>
+                            <view class="small" style="width:380rpx;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">{{''+(it.netHospitalName||'--')+' | '+(it.netDeptName||'--')}}</view>
+                        </view>
+                    </view>
+                    <view bindtap="__e" class="card-source" data-event-opts="{{[ [ 'tap',[ [ 'goReportPage',['$event'] ] ] ] ]}}" data-info="{{it}}" wx:if="{{it.healthType==='check'}}">
+                        <view class="icon" style="width:70rpx;height:70rpx;">
+                            <image src="{{imgUrl+'pages/health/ic_jianyan.png'}}" wx:if="{{it.checkType==='inspection'}}"></image>
+                            <image src="{{imgUrl+'pages/health/ic_yinxiang.png'}}" wx:if="{{it.checkType==='pacs'}}"></image>
+                        </view>
+                        <view class="info">
+                            <view class="h4">{{it.itemName}}</view>
+                            <view class="small" style="width:380rpx;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">{{''+(it.netHospitalName||'--')+' | '+(it.netDeptName||'--')}}</view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>

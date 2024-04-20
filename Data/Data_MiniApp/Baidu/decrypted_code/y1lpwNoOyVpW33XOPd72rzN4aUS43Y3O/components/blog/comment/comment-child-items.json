@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "mp-html": "/components/common/mp-html/mp-html",
+    "parser": "/components/common/jyf-parser/jyf-parser"
+  }
+}

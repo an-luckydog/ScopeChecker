@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "info-list": "/components/info-list/index",
+        "use-guid": "/components/use-guid/index",
+        "c-shop-info-list": "/components/c-shop-info-list/index"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "下单页",
+    "navigationBarBackgroundColor": "#F7F7F7",
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

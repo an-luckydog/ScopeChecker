@@ -1,0 +1,11 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#ffffff",
+    "usingComponents": {
+        "van-calendar": "../../../../miniprogram_npm/@vant/weapp/calendar/index",
+        "navbar": "../../../../miniprogram_npm/@vant/weapp/nav-bar/index",
+        "vant-icon": "../../../../miniprogram_npm/@vant/weapp/icon/index",
+        "share-mask": "../../components/share-mask/share-mask",
+        "banner": "../../../../miniprogram_npm/@tmsfe/tms-ui/banner/banner"
+    }
+}

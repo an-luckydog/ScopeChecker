@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "PopupBox": "/components/PopupBox/PopupBox",
+        "ClickButton": "/components/ClickButton/ClickButton"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "component": true,
+    "usingComponents": {
+        "add-common": "../../../../extensions/components/add-common/index",
+        "price": "../../../../components/price/index",
+        "dish-status": "../../../../components/dish-status/index",
+        "market-label": "../../../../async-diancan-minor/components/market-label/index",
+        "dish-item-static": "../../../../components/dish-item-static/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "market-label": "view",
+        "lottery": "view"
+    }
+}

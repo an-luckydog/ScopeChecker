@@ -1,0 +1,18 @@
+{
+    "component": true,
+    "usingComponents": {
+        "element-text": "../element-text/index",
+        "element-picture": "../element-picture/index",
+        "element-line": "../element-line/index",
+        "element-hot-zone": "../element-hot-zone/index",
+        "element-member-identity": "../element-member-identity/index",
+        "element-member-progress": "../element-member-progress/index",
+        "element-member-property": "../element-member-property/index",
+        "element-member-card": "../element-member-card/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

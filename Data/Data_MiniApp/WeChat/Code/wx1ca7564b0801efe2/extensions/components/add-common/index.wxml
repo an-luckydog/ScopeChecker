@@ -1,0 +1,23 @@
+<template name="add-one">
+    <view>选套餐</view>
+</template>
+<import src="../../../components/badge/index.wxml"></import>
+<view class="op-container {{size}}">
+    <view catch:tap="onOperation" class="op-title {{disablePlus?'disabled':''}}" wx:if="{{opTitle}}">
+        <view class="title">{{opTitle}}<view class="op-count-corner" wx:if="{{count>0}}">
+                <template is="badge" data="{{count:count}}"></template>
+            </view>
+        </view>
+    </view>
+    <view class="op-icon-list" wx:else>
+        <view catch:tap="onReduce" class="th" wx:if="{{count>0}}">
+            <view class="base-icon icon-jian"></view>
+        </view>
+        <view catch:tap="onCount" class="th-c">
+            <view class="op-count-content" wx:if="{{count>0}}">{{count}}</view>
+        </view>
+        <view catch:tap="onAdd" class="th {{disablePlus?'disabled':''}}">
+            <view class="base-icon icon-jia"></view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,16 @@
+<view wx:for="{{activitylist}}">
+    <label for="{{item.id}}">
+        <view class="activityRow">
+            <view class="activityName">{{item.name}}</view>
+            <view class="activityIntroduce">{{item.content}}</view>
+            <view class="endLine">
+                <view class="place">{{item.where}}</view>
+                <view class="startTime">{{item.startTime}}</view>
+            </view>
+        </view>
+    </label>
+    <button bindtap="inActivity" id="{{item.id}}" style="display:none">{{item.id}}</button>
+</view>
+<view style="{{noList}}">暂时未有活动公告...</view>
+<view class="noMsg" style="{{noMsgDisplay}}">到 底 了 ~</view>
+<view class="noMsg" style="{{loadingDisplay}}">加 载 中...</view>

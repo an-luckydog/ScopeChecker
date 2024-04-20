@@ -1,0 +1,7 @@
+{
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "target-page": "./RAW/pages/index/index"
+    }
+}

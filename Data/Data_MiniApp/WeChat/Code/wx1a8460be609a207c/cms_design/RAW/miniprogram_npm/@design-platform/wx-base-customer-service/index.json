@@ -1,0 +1,11 @@
+{
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "CMSSDKImEntry": "/cms_sdk_extension_package/RAW/mats/im-entry/c",
+        "c_qt7ywwalbgr2ey": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "CMSSDKImEntry": "c_qt7ywwalbgr2ey"
+    }
+}

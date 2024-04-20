@@ -1,0 +1,153 @@
+<view class="page_box" style="padding-bottom:120rpx;">
+    <view style="{{'padding-top:'+safeAreaTop+';'+'z-index:'+'100'+';'+'width:'+'100%'+';'+'line-height:'+safeAreaTop+';'+'background:'+'#02984B'+';'}}">
+        <app-title bind:__l="__l" safeHeight="{{safeAreaTop}}" showLogo="{{true}}" showTitle="{{false}}" vueId="d71edf80-1"></app-title>
+    </view>
+    <view class="top-title"></view>
+    <view class="mypoint flex-xsb-yc">
+        <view class="mypoint-font flex-xn-yc">
+            <image mode="widthFix" src="{{qpImgUrl+'point3.png'}}"></image>{{'我的啤酒花：'+surplusVpoints+''}}</view>
+        <view bindtap="__e" class="mypoint-jilu" data-event-opts="{{[ [ 'tap',[ ['toScoreList'] ] ] ]}}">啤酒花记录</view>
+    </view>
+    <view class="top">
+        <view class="banner-swiper">
+            <swiper autoplay="{{true}}" bindchange="__e" circular="true" data-event-opts="{{[ [ 'change',[ [ 'swChange',['$event'] ] ] ] ]}}" duration="{{1000}}" indicatorActiveColor="{{dotCurColor}}" indicatorColor="{{dotColor}}" indicatorDots="{{false}}" interval="{{3000}}">
+                <swiper-item class="{{[cardCur==index?'cur':'']}}" wx:for="{{swiperList}}" wx:key="index">
+                    <view class="swiper-item">
+                        <image bindtap="__e" class="{{[item.className]}}" data-event-opts="{{[ [ 'tap',[ [ 'handleJumpEventNew',['$0'],[ [ ['swiperList','',index] ] ] ] ] ] ]}}" mode="widthFix" src="{{item.url}}" style="border-radius:10rpx;"></image>
+                    </view>
+                </swiper-item>
+            </swiper>
+        </view>
+    </view>
+    <act-com actLists="{{actLists}}" bind:__l="__l" vueId="d71edf80-2"></act-com>
+    <view class="tbas">
+        <view class="flex-xn-yn tabs-title">
+            <view bindtap="__e" class="type-list x-c" data-event-opts="{{[ [ 'tap',[ [ 'categoryDataTabsChange',[index,'$0'],[ [ ['categoryDataTabs','',index,'categoryType'] ] ] ] ] ] ]}}" wx:for="{{$root.l0}}" wx:key="index">
+                <view class="menuBox">
+                    <view class="{{[ 'menuName','flex-xc-yc',[categoryTypeTab==index?'type-list-on':''] ]}}">
+                        <image class="type-list-icon" hidden="{{!(categoryTypeTab==index)}}" mode="widthFix" src="{{qpImgUrl+'jiantouyou.png'}}"></image>{{''+item.g0+''}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="searchTypes-box">
+        <view class="searchTypes-right flex-xsb-yc" wx:if="{{isShowSearchType}}">
+            <view class="searchTypes-input flex-xn-yc">
+                <image bindtap="__e" data-event-opts="{{[ [ 'tap',[ ['searchName'] ] ] ]}}" mode="widthFix" src="{{qpImgUrl+'chaxun.png'}}"></image>
+                <input bindinput="__e" data-event-opts="{{[ [ 'input',[ [ '__set_model',[ '','goodsName','$event',[] ] ] ] ] ]}}" type="text" value="{{goodsName}}"></input>
+            </view>
+            <view class="flex-xsb-yc">
+                <view bindtap="__e" class="tab" data-event-opts="{{[ [ 'tap',[ [ 'upSortXL',['$event'] ] ] ] ]}}">
+                    <text class="txt">销量</text>
+                    <view class="sort">
+                        <image class="{{[ 'arrow','upper',[curTopXL?'curUp':''] ]}}" mode="widthFix" src="{{arrowUpXL}}"></image>
+                        <image class="{{[ 'arrow','down',[curBottomXL?'curDown':''] ]}}" mode="widthFix" src="{{arrowDownXL}}"></image>
+                    </view>
+                </view>
+                <view bindtap="__e" class="tab" data-event-opts="{{[ [ 'tap',[ [ 'upSort',['$event'] ] ] ] ]}}">
+                    <text class="txt">价格</text>
+                    <view class="sort">
+                        <image class="{{[ 'arrow','upper',[curTop?'curUp':''] ]}}" mode="widthFix" src="{{arrowUp}}"></image>
+                        <image class="{{[ 'arrow','down',[curBottom?'curDown':''] ]}}" mode="widthFix" src="{{arrowDown}}"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="flex-xn-yc searchTypes-tabs">
+            <view bindtap="__e" class="{{[index==curSearchTab?'searchTypes-tabs-on':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'searchTabsChange',[index] ] ] ] ]}}" wx:for="{{searchTabs}}" wx:key="index">{{item}}</view>
+        </view>
+    </view>
+    <view class="tbas-fitCategore" style="position:relative;" wx:if="{{curSearchTab==0}}">
+        <scroll-view class="leftNew" scrollLeft="{{scrollLeft}}" scrollX="{{true}}">
+            <view class="flex-xn-yn">
+                <view bindtap="__e" class="type-list x-c" data-event-opts="{{[ [ 'tap',[ [ 'onType',[index,'$0'],[ [ ['categoryData','',index,'categoryType'] ] ] ] ] ] ]}}" wx:for="{{$root.l1}}" wx:key="index">
+                    <view class="menuBox">
+                        <image mode="widthFix" src="{{item[$orig].categoryImg}}"></image>
+                        <view class="{{[ 'menuName',[categoryType==index?'list-active':''] ]}}">{{''+item.g1+''}}</view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="content_box right">
+        <scroll-view class="scroll-box" scrollY="{{true}}">
+            <view class="items" wx:if="{{$root.g2}}">
+                <shop-comui bind:__l="__l" bind:addSku="__e" data-event-opts="{{[ [ '^addSku',[ ['addSku'] ] ] ]}}" shopLists="{{children}}" source="mall" vueId="d71edf80-3"></shop-comui>
+                <view bindtap="__e" class="more" data-event-opts="{{[ [ 'tap',[ [ 'getMore',['$event'] ] ] ] ]}}" wx:if="{{hasMore}}">加载更多</view>
+                <view class="more" wx:else>没有更多商品了哦</view>
+            </view>
+            <block wx:else>
+                <view class="items" wx:if="{{$root.g3}}">
+                    <giftcard-comui bind:__l="__l" categoryTypeTab="{{categoryTypeTab}}" lipinkaList="{{lipinkaList}}" vueId="d71edf80-4"></giftcard-comui>
+                </view>
+                <block wx:else>
+                    <view class="items" wx:if="{{$root.g4}}">
+                        <magic-list bind:__l="__l" magicList="{{magicList}}" vueId="d71edf80-5"></magic-list>
+                    </view>
+                    <view class="none" wx:else>
+                        <view class="text">商品即将上线，请耐心等待~</view>
+                        <view class="noneImg">
+                            <image mode="widthFix" src="{{qpImgUrl+'chooseNone.png'}}"></image>
+                        </view>
+                    </view>
+                </block>
+            </block>
+        </scroll-view>
+        <view bindtap="__e" class="settle flex-xsb-yc" data-event-opts="{{[ [ 'tap',[ ['toCart'] ] ] ]}}">
+            <view class="flex-xn-yc">
+                <view class="box flex-xc-yc">
+                    <image mode="widthFix" src="{{qpImgUrl+'cart.png'}}"></image>
+                    <view class="numOfCart" wx:if="{{cartNumShow}}">{{cartNum}}</view>
+                </view>
+                <view class="free">
+                    <view hidden="{{!cartNumShow}}">
+                        <view class="money">
+                            <text>{{'¥'+$root.f0}}</text>
+                        </view>
+                        <view class="score" wx:if="{{totalVpoint>0}}">
+                            <text>{{$root.f1+'啤酒花'}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="buy">去结算</view>
+        </view>
+    </view>
+    <view bindtap="__e" class="cart" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}" wx:if="{{cartShow}}">
+        <image bindtap="__e" class="close" data-event-opts="{{[ [ 'tap',[ [ 'e1',['$event'] ] ] ] ]}}" mode="widthFix" src="{{qpImgUrl+'close.png'}}"></image>
+        <view catchtap="__e" class="list_box" data-event-opts="{{[ [ 'tap',[ [ 'e2',['$event'] ] ] ] ]}}">
+            <view class="title">
+                <text>购物车</text>
+                <view catchtap="__e" class="delete" data-event-opts="{{[ [ 'tap',[ [ 'emptyCart',['$event'] ] ] ] ]}}">清空</view>
+            </view>
+            <view class="cartGoods">
+                <view class="item-list" wx:for="{{$root.l2}}" wx:for-item="cartItem" wx:key="index">
+                    <view class="proImg">
+                        <image class="proImgImage" mode="widthFix" src="{{goodsImgRoot+cartItem.g5[0]}}"></image>
+                    </view>
+                    <view class="proInfo">
+                        <view class="proName">{{cartItem[$orig].goodsName}}</view>
+                        <view class="unit">
+                            <view wx:if="{{cartItem[$orig].goodsSpecification}}">{{''+cartItem[$orig].goodsSpecification+cartItem[$orig].goodsUnitName+''}}</view>
+                        </view>
+                        <view class="price">
+                            <text wx:if="{{cartItem[$orig].realPay!=0}}">
+                                <text class="danwei">¥</text>{{cartItem.f2}}</text>
+                            <text wx:if="{{cartItem[$orig].realPay!=0&&cartItem[$orig].realVpoints!=0}}">+</text>
+                            <text wx:if="{{cartItem[$orig].realVpoints!=0}}">{{cartItem.f3}}<text class="danwei">啤酒花</text>
+                            </text>
+                        </view>
+                    </view>
+                    <view class="goods_num">
+                        <text catchtap="__e" class="reduce" data-event-opts="{{[ [ 'tap',[ [ 'reduceFuc',[index] ] ] ] ]}}"></text>
+                        <text class="num">{{cartItem[$orig].specialChooseNum}}</text>
+                        <text catchtap="__e" class="add" data-event-opts="{{[ [ 'tap',[ [ 'increaseFuc',[index] ] ] ] ]}}"></text>
+                    </view>
+                </view>
+            </view>
+            <view class="zongji">总计：<text>{{'¥'+$root.f4}}</text>元<text class="jf" wx:if="{{totalVpoint>0}}">{{$root.f5}}</text>啤酒花</view>
+        </view>
+    </view>
+    <privacy bind:__l="__l" bind:unLoadPrivacy="__e" data-event-opts="{{[ [ '^unLoadPrivacy',[ ['e3'] ] ] ]}}" vueId="d71edf80-6" wx:if="{{isShowPrivacy}}"></privacy>
+    <weixin-open-setting bind:WxOpenSettingColse="__e" bind:__l="__l" bind:openSetting="__e" data-event-opts="{{[ [ '^WxOpenSettingColse',[ ['WxOpenSettingColse'] ] ],[ '^openSetting',[ ['wosOpenSetting'] ] ] ]}}" isStartAnimation="{{wxOpenSettingIsStartAnimation}}" vueId="d71edf80-7" wxOpenSettingIsShow="{{wxOpenSettingIsShow}}"></weixin-open-setting>
+</view>

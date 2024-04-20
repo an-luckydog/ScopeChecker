@@ -1,0 +1,13 @@
+function touchMove(event, ownerComponent) {
+    ownerComponent.callMethod('touchMove', event);
+    return (false)
+};
+
+function touchEnd(event, ownerComponent) {
+    ownerComponent.callMethod('touchEnd');
+    return (false)
+};
+module.exports = ({
+    touchMove: touchMove,
+    touchEnd: touchEnd,
+});

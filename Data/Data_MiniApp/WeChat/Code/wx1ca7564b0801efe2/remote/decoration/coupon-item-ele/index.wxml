@@ -1,0 +1,10 @@
+<view catchtap="handleTap" class="{{customClass}} wrapperClassName" style="{{wrapperStyle}}" wx:if="{{hasWrapper&&config&&config.value}}">
+    <image src="{{config.value}}" style="{{displayStyle}}" wx:if="{{elementVisible.image}}"></image>
+    <view style="{{displayStyle}}" wx:elif="{{elementVisible.btn}}">{{config.value}}</view>
+    <view style="{{displayStyle}}" wx:elif="{{elementVisible.link}}">{{config.value}}</view>
+    <view style="{{displayStyle}}" wx:elif="{{elementVisible.text}}">{{config.value}}</view>
+</view>
+<image class="{{customClass}}" src="{{config.value}}" style="{{displayStyle}}" wx:elif="{{elementVisible.image}}"></image>
+<view catchtap="handleTap" class="{{customClass}} btn" style="{{displayStyle}}" wx:elif="{{elementVisible.btn}}">{{config.value}}</view>
+<view bindtap="handleTap" class="{{customClass}}" style="{{displayStyle}}" wx:elif="{{elementVisible.link}}">{{config.value}}</view>
+<view class="{{customClass}}" style="{{displayStyle}}" wx:elif="{{elementVisible.text}}">{{config.value}}</view>

@@ -1,0 +1,8 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "世界杯",
+    "usingComponents": {
+        "privacy": "/components/privacy/privacy",
+        "app": "/components/privacy/privacy"
+    }
+}

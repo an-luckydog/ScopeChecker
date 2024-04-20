@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "取件",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "swiper-tab": "./swiperTab/index",
+        "popup": "./popup/index",
+        "inner-cab-item": "./innerCabItem/index"
+    }
+}

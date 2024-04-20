@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "item-content": "/widgets/mip-doujin-diamond/components/item-content/index"
+    }
+}

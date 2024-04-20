@@ -1,0 +1,3 @@
+<template name="badge">
+    <view class="cont" wx:if="{{count>0}}">{{count>99?'99+':count}}</view>
+</template>

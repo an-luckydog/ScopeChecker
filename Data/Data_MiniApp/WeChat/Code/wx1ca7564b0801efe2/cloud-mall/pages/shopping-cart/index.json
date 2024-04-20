@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "购物车",
+    "navigationBarBackgroundColor": "#f4f4f4",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 0,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

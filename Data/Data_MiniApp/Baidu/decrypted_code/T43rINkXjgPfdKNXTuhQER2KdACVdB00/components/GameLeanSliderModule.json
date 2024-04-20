@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-bar-header": "./GameBarHeader",
+        "infinite-scroller": "./InfiniteScroller"
+    },
+    "component": true
+}

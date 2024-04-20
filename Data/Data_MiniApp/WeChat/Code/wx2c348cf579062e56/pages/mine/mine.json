@@ -1,0 +1,30 @@
+{
+    "navigationBarTitleText": "我的",
+    "navigationStyle": "custom",
+    "disableScroll": true,
+    "backgroundColor": "#F4F4F4",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#FFD161",
+    "usingComponents": {
+        "navBar": "../../components/navBar/index",
+        "add-to-favorite-tip": "../../components/add-to-favorite-tip/index",
+        "exposure": "../../components/exposure/exposure",
+        "ad-swiper": "../../components/ad-swiper/index",
+        "home-banner": "../../components/home-banner/home-banner",
+        "wallet-wx": "../../wallet-entrance/wallet-wx/index",
+        "logout-button": "../../account/account-ext/components/logout-button/index",
+        "mp-mine": "../../packages/mine/pages/mine/index",
+        "tm": "/touchmatrix_bundles/index",
+        "mprn-component": "../../components/mprn-component/index",
+        "custom-mach-container": "../index/components/custom-mach-container/index",
+        "custom-native-container": "../index/components/custom-native-container/index",
+        "common-container": "../../npm/r2x/module-container1_1_4/lib/container/index",
+        "weapp-comp-privacy": "../../privacy/components/index"
+    },
+    "componentPlaceholder": {
+        "wallet-wx": "view",
+        "logout-button": "view",
+        "mp-mine": "view",
+        "tm": "view"
+    }
+}

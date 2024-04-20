@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ad-slider": "./components/adSlider/adSlider",
+    "ad-chaping":"./components/adChaping/adChaping",
+    "ad-background":"./components/adBackground/adBackground"
+  }
+}

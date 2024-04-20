@@ -1,0 +1,7 @@
+{
+    "publicComponents": {
+        "session": "components/session/session",
+        "chat": "components/chat/chat"
+    },
+    "main": "index.js"
+}

@@ -1,0 +1,12 @@
+{
+    "navigationBarTitleText": "详情",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "van-popup": "../../wxcomponents/vant/popup/index",
+        "navbar": "../../components/navbar/navbar",
+        "l-painter-image": "../../components/l-painter-image/l-painter-image",
+        "l-painter-text": "../../components/l-painter-text/l-painter-text",
+        "l-painter-view": "../../components/l-painter-view/l-painter-view",
+        "l-painter": "../../components/l-painter/l-painter"
+    }
+}

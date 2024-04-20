@@ -1,0 +1,16 @@
+{
+    "component": true,
+    "usingComponents": {
+        "ui-corner": "../../limo-ui/ui-corner/index",
+        "ui-star": "../../limo-ui/ui-star/index",
+        "ui-redpoint": "../../limo-ui/ui-redpoint/index",
+        "tastes-number-count-refactor": "../tastes-number-count-refactor/index",
+        "tastes-number-count-minus": "../tastes-number-count-minus/index",
+        "tastes-number-count-plus": "../tastes-number-count-plus/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "drawer": "../drawer/drawer",
+        "luckydraw-modal": "./modal",
+        "banner": "/./miniprogram_npm/@tmsfe/tms-ui/banner/banner",
+        "navbar": "/./miniprogram_npm/@tmsfe/tms-ui/navbar/navbar"
+    }
+}

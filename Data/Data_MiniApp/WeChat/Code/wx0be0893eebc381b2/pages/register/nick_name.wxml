@@ -1,0 +1,17 @@
+<block wx:if="{{pagesShow}}">
+    <import src="../../template/showToast.wxml"></import>
+    <view>
+        <template is="showToast" data="{{showToast:showToast}}"></template>
+        <view class="content">
+            <view class="font36 password">手机注册</view>
+            <view class="height font32">
+                <text class="left con"></text>
+                <input bindinput="set_nick_name" class="left input1" maxlength="10" minlength="2" type="text" value="{{nickName}}">
+                    <view class="input3" wx:if="{{nickName.length<=0}}">设置昵称，2-10个字符</view>
+                </input>
+                <image bindtap="clear_nick_name" class="right clear {{clearNickFlag}}" src="../../img/clear.png"></image>
+            </view>
+            <button catchtap="register_complete" class="{{btnActive?'login-hl':''}} login font32">完成</button>
+        </view>
+    </view>
+</block>

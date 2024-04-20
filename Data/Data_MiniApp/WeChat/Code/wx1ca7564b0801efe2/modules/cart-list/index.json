@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "cart-dish-extend": "../../async-custom-plugins/components/cart-dish-extend/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "cart-dish-extend": "view",
+        "lottery": "view"
+    }
+}

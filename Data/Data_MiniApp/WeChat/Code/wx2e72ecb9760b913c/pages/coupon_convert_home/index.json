@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-userinfo": "../../components/cy-userinfo/index"
+    }
+}

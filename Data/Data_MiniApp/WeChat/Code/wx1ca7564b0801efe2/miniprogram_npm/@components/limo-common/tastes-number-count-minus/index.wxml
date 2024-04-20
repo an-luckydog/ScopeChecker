@@ -1,0 +1,4 @@
+<view class="count-minus {{newCount>0?'minus':'minus hidden'}} {{isShowBigBtn?'minus-large':''}}">
+    <view class="minus-icon"></view>
+    <view catchtap="minusTasteToCart" class="minus-trigger"></view>
+</view>

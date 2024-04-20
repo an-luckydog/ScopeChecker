@@ -1,0 +1,12 @@
+{
+  "component": true,
+  "usingComponents": {
+    "common-dialog": "../common-dialog",
+    "product": "../product",
+    "selected-brand": "./selected-brand",
+    "selected-cate": "./selected-cate",
+    "selected-item": "./selected-item",
+    "selected-warp": "./selected-warp",
+    "high-bar": "../high-bar/high-bar"
+  }
+}

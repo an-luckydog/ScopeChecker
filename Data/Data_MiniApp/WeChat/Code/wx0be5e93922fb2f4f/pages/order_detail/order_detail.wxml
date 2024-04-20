@@ -1,0 +1,65 @@
+<view class="content">
+    <view class="bg-position">
+        <view class="bg-img">
+            <view class="order-status orderIng" wx:if="{{data.activeIndex==0&&data.status==1}}">{{data.statusName}}</view>
+            <view class="order-status pay" wx:if="{{data.activeIndex==0&&data.status==0||data.activeIndex==0&&data.status==2}}">{{data.statusName}}</view>
+            <view class="order-status expire" wx:if="{{data.activeIndex==1}}">{{data.statusName}}</view>
+            <view class="top-bg">
+                <view class="order-top">
+                    <view class="num-left">
+                        <view class="numLeft">
+                            <view class="num">{{data.cellNo}}号柜</view>
+                        </view>
+                        <view class="addr">
+                            <view style="display:flex; padding-top:1rpx">
+                                <image src="../../img/info/order_detail01.png"></image>
+                            </view>
+                            <view class="addr-text">{{data.address}}</view>
+                        </view>
+                    </view>
+                </view>
+                <view class="order-tel">
+                    <view class="order-name">{{data.memberNickname}}</view>
+                    <view>{{data.memberPhone}}</view>
+                </view>
+            </view>
+        </view>
+        <image class="img-bottom" src="https://wanhuui.oss-cn-beijing.aliyuncs.com/wxapp/info/order_detail03.png"></image>
+    </view>
+    <view class="content-order">
+        <view class="title">
+            <image src="{{imgUrl}}/info/order_detail02.png"></image>
+            <text>详细信息</text>
+        </view>
+        <view>
+            <view class="order-content-list">
+                <view class="title-list">起租时间</view>
+                <view class="value">{{data.startTime}} </view>
+            </view>
+            <view class="order-content-list">
+                <view class="title-list">租用时长</view>
+                <view class="value">{{data.rentalTime}} 小时 </view>
+            </view>
+            <view class="order-content-list" wx:if="{{data.exalterAmount&&data.exalterAmount!==0}}">
+                <view class="title-list">会员兑换</view>
+                <view class="value">{{data.exalterAmount}} 元 </view>
+            </view>
+            <view class="order-content-list" wx:if="{{data.exalterTime&&data.exalterTime!==0}}">
+                <view class="title-list">会员兑换</view>
+                <view class="value">{{data.exalterTime}} 小时 </view>
+            </view>
+            <view class="order-content-list">
+                <view class="title-list">支付金额</view>
+                <view class="value">{{data.amount}}元</view>
+            </view>
+            <view class="order-content-list">
+                <view class="title-list">订单编号</view>
+                <view class="value">{{data.id}}</view>
+            </view>
+            <view class="order-content-list">
+                <view class="title-list">微信ID</view>
+                <view class="value">{{data.memberId}}</view>
+            </view>
+        </view>
+    </view>
+</view>

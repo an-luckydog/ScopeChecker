@@ -1,0 +1,19 @@
+Object.defineProperty(exports, "__esModule", {
+    value: !0
+}), exports.FAIL_REASON = void 0;
+
+exports.FAIL_REASON = {
+    OLD_PERCEPTION: 5001,
+    DESTROY: 5002,
+    EMPTY_PARAMS: 5003,
+    NETWORK_ERROR: 5004,
+    REQUEST_HANDLE: 5005,
+    EMPTY_MENU_DATA: 5006,
+    MENU_TRANSFORM: 5007,
+    EMPTY_HEAD: 5008,
+    ALL_DISH_FAIL: 5009,
+    REDIRECT: 5010,
+    MALFORMED_OPTIONS: 5011,
+    CAN_NOT_ORDER_DISH: 610,
+    NEED_DOWNGRADE_CODE: 900
+};

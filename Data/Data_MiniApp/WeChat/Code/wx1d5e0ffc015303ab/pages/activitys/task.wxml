@@ -1,0 +1,20 @@
+<view>
+    <view class="{{['loading',bgday==2?'night-box':'']}}" wx:if="{{!pageLoading}}">
+        <view class="cloud">
+            <image class="{{[active?'left sel':'left']}}" src="https://xcxsite.vjifen.com/v/static/qp120/index/KV/cloud_left_2.png"></image>
+            <image class="{{[active?'logos sel_heidden':'logos']}}" src="https://xcxsite.vjifen.com/v/static/qp120/index/KV/KV_logo2.png"></image>
+            <image class="{{[active?'logo sel_heidden':'logo']}}" src="https://xcxsite.vjifen.com/v/static/qp120/Islander/island/log_1903_03.png"></image>
+            <image class="{{[active?'right sel_right':'right']}}" src="https://xcxsite.vjifen.com/v/static/qp120/index/KV/cloud_right_2.png"></image>
+        </view>
+        <view class="{{[active?'main sel_heidden':'main']}}">
+            <view class="progress_box">
+                <view class="box" style="{{'width:'+percent+'%'}}">
+                    <image src="https://xcxsite.vjifen.com/v/static/qp120/index/KV/cup.png"></image>
+                </view>
+            </view>
+            <view class="poss_text">
+                <image src="https://xcxsite.vjifen.com/v/static/qp120/index/KV/loading_text.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

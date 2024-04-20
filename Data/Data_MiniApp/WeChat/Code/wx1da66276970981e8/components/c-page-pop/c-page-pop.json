@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-popup": "../../node-modules/uview-plus/components/u-popup/u-popup",
+        "subscribe-alert": "../../pages/common/subscribe-alert/subscribe-alert"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "寄快递",
+    "navigationBarBackgroundColor": "#ffd8d9",
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

@@ -1,0 +1,6 @@
+<button appParameter="{{appParameter}}" bindgetphonenumber="__e" bindgetuserinfo="__e" bindlaunchapp="__e" bindopensetting="__e" catchtap="__e" class="{{['data-v-6a420865',getClass]}}" data-event-opts="{{[ [ 'tap',[ [ 'onClick',['$event'] ] ] ],[ 'getphonenumber',[ [ 'onGetPhoneNumber',['$event'] ] ] ],[ 'getuserinfo',[ [ 'onGetUserInfo',['$event'] ] ] ],[ 'opensetting',[ [ 'onOpenSetting',['$event'] ] ] ],[ 'launchapp',[ [ 'onLaunchApp',['$event'] ] ] ] ]}}" disabled="{{disabled}}" fromType="{{fromType}}" hoverClass="peace-button--active" hoverStopPropagation="{{hoverStopPropagation}}" loading="{{loading}}" openType="{{openType}}" plain="{{plain}}" sendMessageImg="{{sendMessageImg}}" sendMessagePath="{{sendMessagePath}}" sendMessageTitle="{{sendMessageTitle}}" sessionFrom="{{sessionFrom}}" showMessageCard="{{showMessageCard}}" size="{{size}}" style="{{customStyle}}" throttleTime="{{throttleTime}}" type="{{type}}">
+    <u-loading bind:__l="__l" class="peace-button__loading data-v-6a420865" mode="circle" size="{{loadingSize}}" vueId="71414862-1" wx:if="{{loading}}"></u-loading>
+    <view class="peace-button__text data-v-6a420865">
+        <slot></slot>
+    </view>
+</button>

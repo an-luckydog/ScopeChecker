@@ -1,0 +1,56 @@
+[
+    {
+        "type": "transform context",
+        "file": "C:/Users/84235/Desktop/百度五险一金/app.js",
+        "row": 5,
+        "column": 15,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "C:/Users/84235/Desktop/百度五险一金/app.js",
+        "row": 7,
+        "column": 4,
+        "before": "wx.setStorageSync",
+        "after": "swan.setStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "C:/Users/84235/Desktop/百度五险一金/app.js",
+        "row": 17,
+        "column": 10,
+        "before": "wx.getUserInfo",
+        "after": "swan.getUserInfo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "C:/Users/84235/Desktop/百度五险一金/pages/index/index.js",
+        "row": 48,
+        "column": 4,
+        "before": "wx.navigateTo",
+        "after": "swan.navigateTo",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "C:/Users/84235/Desktop/百度五险一金/pages/index/index.js",
+        "row": 90,
+        "column": 4,
+        "before": "wx.showModal",
+        "after": "swan.showModal",
+        "message": "只转换了上下文, wx ==> swan"
+    },
+    {
+        "type": "transform context",
+        "file": "C:/Users/84235/Desktop/百度五险一金/pages/logs/logs.js",
+        "row": 9,
+        "column": 13,
+        "before": "wx.getStorageSync",
+        "after": "swan.getStorageSync",
+        "message": "只转换了上下文, wx ==> swan"
+    }
+]

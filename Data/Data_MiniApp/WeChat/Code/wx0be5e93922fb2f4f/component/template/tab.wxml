@@ -1,0 +1,30 @@
+<template name="tabBar">
+    <view class="tab_list_box">
+        <view class="navigation_bar" style="padding-bottom:{{tabBar[0].isFullSucreen}}rpx">
+            <view class="navbar">
+                <block wx:for="{{tabBar}}" wx:key="*this">
+                    <view class="navbar__item {{item.current==1?'bar_item_on':''}}" id="{{index}}" style="width:82rpx;" wx:if="{{index!=1}}">
+                        <navigator openType="redirect" url="{{item.pagePath}}">
+                            <view class="navbar__imgs">
+                                <image class="navbar__img" src="{{item.iconPath}}"></image>
+                            </view>
+                            <view class="navbar__title">{{item.text}}</view>
+                        </navigator>
+                    </view>
+                    <block wx:if="{{index==1}}">
+                        <view class="scal" wx:if="{{!item.isGetUserInfoFlag}}">
+                            <button bindtap="onGotUserInfo" class="scanBtn" plain="true">
+                                <image class="" src="{{item.iconPath}}"></image>
+                                <text>扫码存取</text>
+                            </button>
+                        </view>
+                        <view bindtap="goScanCodeFunc" class="scal" wx:if="{{item.isGetUserInfoFlag}}">
+                            <image class="" src="{{item.iconPath}}"></image>
+                            <text>扫码存取</text>
+                        </view>
+                    </block>
+                </block>
+            </view>
+        </view>
+    </view>
+</template>

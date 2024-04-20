@@ -1,0 +1,10 @@
+<view class="page-body">
+    <view class="page-section page-section-gap">
+        <map showCompass showLocation id="myMap" includePoints="{{includePoints}}" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" scale="{{scaleNum}}" style="width: 100%; height: 100vh;">
+            <cover-view bindtap="includePoints" class="map-locatin-box">
+                <cover-image class="map-locatin-img" src="{{app.globalData.imgUrl}}/choice/home-map.png"></cover-image>
+            </cover-view>
+        </map>
+    </view>
+    <view class="btn-area"></view>
+</view>

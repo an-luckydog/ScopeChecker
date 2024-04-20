@@ -1,0 +1,13 @@
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "cy-authorize-login": "../../components/cy-authorize-login/index",
+        "cy-account-combine": "../../components/cy-account-combine/index",
+        "cy-audio": "../../components/cy-audio/index",
+        "mp-html": "../../miniprogram_npm/mp-html/index",
+        "feedback-detail": "../qa_im/components/feedback_detail/feedback_detail"
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "golbal-platform": "../../common/golbalPlatform/index",
+    "house-card": "../house-card/house-card"
+  }
+}

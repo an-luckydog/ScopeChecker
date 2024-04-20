@@ -1,0 +1,141 @@
+<view class="data-v-352ed1c2">
+    <peace-cell-group bind:__l="__l" class="group data-v-352ed1c2" vueId="0268bd2d-1" vueSlots="{{['default']}}" wx:if="{{!loading}}">
+        <block wx:if="{{orderType==='drug'}}">
+            <block wx:if="{{drugOrder.source===1||drugOrder.source===4}}">
+                <block wx:if="{{drugOrder.CustomerType==ORG_TYPE['院内']}}">
+                    <block wx:if="{{drugOrder.medicalTreatmentType}}">
+                        <peace-cell bind:__l="__l" center="{{true}}" class="data-v-352ed1c2" label="医保/权益抵扣" vueId="{{'0268bd2d-2'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{showDrugDeduction}}">
+                            <view class="check-status data-v-352ed1c2">
+                                <image class="check-status-icon data-v-352ed1c2" src="{{images.check}}"></image>
+                            </view>
+                        </peace-cell>
+                    </block>
+                </block>
+                <block wx:else>
+                    <peace-cell bind:__l="__l" center="{{true}}" class="data-v-352ed1c2" label="医保/权益抵扣" vueId="{{'0268bd2d-3'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{showDrugDeduction}}">
+                        <view bindtap="__e" class="check-status data-v-352ed1c2" data-event-opts="{{[ [ 'tap',[ [ 'selectPayType',['$event'] ] ] ] ]}}">
+                            <image class="check-status-icon data-v-352ed1c2" src="{{!!innerPayInfo.deductionType?images.check:images.uncheck}}"></image>
+                        </view>
+                    </peace-cell>
+                </block>
+            </block>
+            <block wx:else>
+                <block wx:if="{{drugOrder.source===3}}">
+                    <peace-cell bind:__l="__l" center="{{true}}" class="data-v-352ed1c2" label="医保/权益抵扣" vueId="{{'0268bd2d-4'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{showDrugDeduction}}">
+                        <view bindtap="__e" class="check-status data-v-352ed1c2" data-event-opts="{{[ [ 'tap',[ [ 'selectPayType',['$event'] ] ] ] ]}}">
+                            <image class="check-status-icon data-v-352ed1c2" src="{{!!innerPayInfo.deductionType?images.check:images.uncheck}}"></image>
+                        </view>
+                    </peace-cell>
+                </block>
+            </block>
+        </block>
+        <block wx:else>
+            <block wx:if="{{orderType==='inspect'}}">
+                <peace-cell bind:__l="__l" center="{{true}}" class="data-v-352ed1c2" label="医保/权益抵扣" vueId="{{'0268bd2d-5'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{inspectOrder.medicalTreatmentType}}">
+                    <view class="check-status data-v-352ed1c2">
+                        <image class="check-status-icon data-v-352ed1c2" src="{{images.check}}"></image>
+                    </view>
+                </peace-cell>
+            </block>
+            <block wx:else>
+                <peace-cell bind:__l="__l" center="{{true}}" class="data-v-352ed1c2" label="医保/权益抵扣" vueId="{{'0268bd2d-6'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{deductionList.length>0}}">
+                    <view bindtap="__e" class="check-status data-v-352ed1c2" data-event-opts="{{[ [ 'tap',[ [ 'selectPayType',['$event'] ] ] ] ]}}">
+                        <image class="check-status-icon data-v-352ed1c2" src="{{!!innerPayInfo.deductionType?images.check:images.uncheck}}"></image>
+                    </view>
+                </peace-cell>
+            </block>
+        </block>
+        <block wx:if="{{!innerPayInfo.deductionType}}">
+            <peace-cell bind:__l="__l" class="data-v-352ed1c2" label="支付类型" vueId="{{'0268bd2d-7'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{!(shippingMethod==0&&payMode==2)}}">
+                <image class="icon-wxpay data-v-352ed1c2" src="{{imgUrl+'doctor/advance/ic_pay_wx.png'}}"></image>
+                <text class="data-v-352ed1c2">微信支付</text>
+            </peace-cell>
+        </block>
+        <block wx:if="{{!!innerPayInfo.deductionType}}">
+            <block wx:if="{{orderType==='drug'}}">
+                <peace-cell arrow="{{true}}" bind:__l="__l" bind:click="__e" class="data-v-352ed1c2" data-event-opts="{{[ [ '^click',[ ['showDeductionDialog'] ] ] ]}}" label="抵扣类型" vueId="{{'0268bd2d-8'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{drugOrder.source===3||drugOrder.CustomerType!=ORG_TYPE['院内']}}">
+                    <text class="data-v-352ed1c2">{{getDeductionName}}</text>
+                </peace-cell>
+                <peace-cell bind:__l="__l" class="data-v-352ed1c2" label="抵扣类型" vueId="{{'0268bd2d-9'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:else>
+                    <text class="data-v-352ed1c2">{{getDeductionName}}</text>
+                </peace-cell>
+            </block>
+            <block wx:else>
+                <peace-cell bind:__l="__l" class="data-v-352ed1c2" label="抵扣类型" vueId="{{'0268bd2d-10'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{orderType==='inspect'}}">
+                    <text class="data-v-352ed1c2">{{getDeductionName}}</text>
+                </peace-cell>
+                <peace-cell arrow="{{true}}" bind:__l="__l" bind:click="__e" class="data-v-352ed1c2" data-event-opts="{{[ [ '^click',[ ['showDeductionDialog'] ] ] ]}}" label="抵扣类型" vueId="{{'0268bd2d-11'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:else>
+                    <text class="data-v-352ed1c2">{{getDeductionName}}</text>
+                </peace-cell>
+            </block>
+            <block wx:if="{{innerPayInfo.deductionType==='yibaopay'}}">
+                <block wx:if="{{orderType==='drug'}}">
+                    <block wx:if="{{drugOrder.source===1&&drugOrder.medicalTreatmentType||drugOrder.source===4&&drugOrder.medicalTreatmentType||drugOrder.CustomerType!=ORG_TYPE['院内']||drugOrder.source===3}}">
+                        <peace-cell bind:__l="__l" class="data-v-352ed1c2" label="门特" vueId="{{'0268bd2d-12'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{drugOrder.source===3||drugOrder.CustomerType!=ORG_TYPE['院内']}}">
+                            <view bindtap="__e" class="check-status data-v-352ed1c2" data-event-opts="{{[ [ 'tap',[ [ 'selectMedicalTreatmentType',['$event'] ] ] ] ]}}">
+                                <image class="check-status-icon data-v-352ed1c2" src="{{innerPayInfo.medicalTreatmentType===2?images.check:images.uncheck}}"></image>
+                            </view>
+                        </peace-cell>
+                        <block wx:else>
+                            <peace-cell bind:__l="__l" class="data-v-352ed1c2" label="门特" vueId="{{'0268bd2d-13'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{innerPayInfo.medicalTreatmentType===2}}">
+                                <view bindtap="__e" class="check-status data-v-352ed1c2" data-event-opts="{{[ [ 'tap',[ [ 'selectMedicalTreatmentType',['$event'] ] ] ] ]}}">
+                                    <image class="check-status-icon data-v-352ed1c2" src="{{innerPayInfo.medicalTreatmentType===2?images.check:images.uncheck}}"></image>
+                                </view>
+                            </peace-cell>
+                        </block>
+                        <peace-cell arrow="{{!drugOrder.diseasesCode?true:false}}" bind:__l="__l" bind:click="__e" class="data-v-352ed1c2" data-event-opts="{{[ [ '^click',[ ['openDiseasesDialog'] ] ] ]}}" label="病种" vueId="{{'0268bd2d-14'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{innerPayInfo.medicalTreatmentType===2}}">
+                            <text class="{{['data-v-352ed1c2',!innerPayInfo.diseasesCode?'disabled-text':'']}}">{{innerPayInfo.diseasesCode?innerPayInfo.diseasesName:'请选择'}}</text>
+                        </peace-cell>
+                    </block>
+                </block>
+                <block wx:else>
+                    <block wx:if="{{orderType==='inspect'}}">
+                        <block wx:if="{{inspectOrder.medicalTreatmentType}}">
+                            <peace-cell bind:__l="__l" class="data-v-352ed1c2" label="门特" vueId="{{'0268bd2d-15'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{innerPayInfo.medicalTreatmentType===2}}">
+                                <view bindtap="__e" class="check-status data-v-352ed1c2" data-event-opts="{{[ [ 'tap',[ [ 'selectMedicalTreatmentType',['$event'] ] ] ] ]}}">
+                                    <image class="check-status-icon data-v-352ed1c2" src="{{innerPayInfo.medicalTreatmentType===2?images.check:images.uncheck}}"></image>
+                                </view>
+                            </peace-cell>
+                            <peace-cell arrow="{{!inspectOrder.diseasesCode?true:false}}" bind:__l="__l" bind:click="__e" class="data-v-352ed1c2" data-event-opts="{{[ [ '^click',[ ['openDiseasesDialog'] ] ] ]}}" label="病种" vueId="{{'0268bd2d-16'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{innerPayInfo.medicalTreatmentType===2}}">
+                                <text class="{{['data-v-352ed1c2',!innerPayInfo.diseasesCode?'disabled-text':'']}}">{{innerPayInfo.diseasesCode?innerPayInfo.diseasesName:'请选择'}}</text>
+                            </peace-cell>
+                        </block>
+                    </block>
+                    <block wx:else>
+                        <peace-cell bind:__l="__l" class="data-v-352ed1c2" label="门特" vueId="{{'0268bd2d-17'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}">
+                            <view bindtap="__e" class="check-status data-v-352ed1c2" data-event-opts="{{[ [ 'tap',[ [ 'selectMedicalTreatmentType',['$event'] ] ] ] ]}}">
+                                <image class="check-status-icon data-v-352ed1c2" src="{{innerPayInfo.medicalTreatmentType===2?images.check:images.uncheck}}"></image>
+                            </view>
+                        </peace-cell>
+                        <peace-cell arrow="{{false}}" bind:__l="__l" class="data-v-352ed1c2" label="参保类型" vueId="{{'0268bd2d-18'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{innerPayInfo.medicalTreatmentType===2}}">
+                            <view class="u-flex data-v-352ed1c2">
+                                <view bindtap="__e" class="check-status u-m-l-32 data-v-352ed1c2" data-event-opts="{{[ [ 'tap',[ [ 'selectDisType',['$0'],[ [ ['disTypeList','value',diseType.value] ] ] ] ] ] ]}}" style="width:auto;" wx:for="{{disTypeList}}" wx:for-index="__i0__" wx:for-item="diseType" wx:key="value">
+                                    <image class="check-status-icon u-m-r-8 data-v-352ed1c2" src="{{innerPayInfo.diseType===diseType.value?images.check:images.uncheck}}"></image>
+                                    <text class="data-v-352ed1c2">{{diseType.label}}</text>
+                                </view>
+                            </view>
+                        </peace-cell>
+                        <peace-cell arrow="{{true}}" bind:__l="__l" bind:click="__e" class="data-v-352ed1c2" data-event-opts="{{[ [ '^click',[ ['openDiseasesDialog'] ] ] ]}}" label="病种" vueId="{{'0268bd2d-19'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{innerPayInfo.medicalTreatmentType===2}}">
+                            <text class="{{['data-v-352ed1c2',!innerPayInfo.diseasesCode?'disabled-text':'']}}">{{innerPayInfo.diseasesCode?innerPayInfo.diseasesName:'请选择'}}</text>
+                        </peace-cell>
+                    </block>
+                </block>
+            </block>
+            <block wx:if="{{innerPayInfo.deductionType==='servicePackage'}}">
+                <peace-cell arrow="{{true}}" bind:__l="__l" bind:click="__e" class="data-v-352ed1c2" data-event-opts="{{[ [ '^click',[ ['openServicePackageDialog'] ] ] ]}}" label="服务包名称" vueId="{{'0268bd2d-20'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}">
+                    <text class="{{['ellipsis','data-v-352ed1c2',!innerPayInfo.servicePackageId?'disabled-text':'']}}">{{innerPayInfo.servicePackageId?innerPayInfo.servicePackageName:'请选择'}}</text>
+                </peace-cell>
+                <peace-cell bind:__l="__l" class="data-v-352ed1c2" label="权益名称" labelStyle="{{fontSize:'28rpx',color:'#858585'}}" valueStyle="{{fontSize:'28rpx',color:'#858585'}}" vueId="{{'0268bd2d-21'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{innerPayInfo.servicePackageId&&innerPayInfo.patientEquitiesId}}">
+                    <text class="ellipsis data-v-352ed1c2">{{innerPayInfo.equityName+'（剩余'+innerPayInfo.residueNum+'次）'}}</text>
+                </peace-cell>
+            </block>
+            <peace-cell arrow="{{true}}" bind:__l="__l" bind:click="__e" class="data-v-352ed1c2" data-event-opts="{{[ [ '^click',[ ['openSbDialog'] ] ] ]}}" label="保险产品" vueId="{{'0268bd2d-22'+','+'0268bd2d-1'}}" vueSlots="{{['default']}}" wx:if="{{innerPayInfo.deductionType==='shangbaopay'}}">
+                <text class="{{['data-v-352ed1c2',!innerPayInfo.sbInsuranceId?'disabled-text':'']}}">{{innerPayInfo.sbInsuranceId?innerPayInfo.sbInsuranceName:'请填写'}}</text>
+            </peace-cell>
+        </block>
+    </peace-cell-group>
+    <select-deduction bind:__l="__l" bind:confirm="__e" bind:input="__e" class="data-v-352ed1c2" data-event-opts="{{[ [ '^confirm',[ ['selectDeductionType'] ] ],[ '^input',[ [ '__set_model',[ '','deductionDialogShow','$event',[] ] ] ] ] ]}}" deduction="{{deductionList}}" type="{{innerPayInfo.deductionType}}" value="{{deductionDialogShow}}" vueId="0268bd2d-23"></select-deduction>
+    <peace-select bind:__l="__l" bind:cancel="__e" bind:confirm="__e" bind:input="__e" class="data-v-352ed1c2" confirmText="完成" data-event-opts="{{[ [ '^confirm',[ ['confirmDiseases'] ] ],[ '^cancel',[ ['e0'] ] ],[ '^input',[ [ '__set_model',[ '','diseasesVisible','$event',[] ] ] ] ] ]}}" defaultValue="{{defaultDiseasesIndex}}" labelName="name" list="{{diseasesList}}" title="门特病种" value="{{diseasesVisible}}" valueName="label" vueId="0268bd2d-24"></peace-select>
+    <select-service-package bind:__l="__l" bind:input="__e" bind:success="__e" class="data-v-352ed1c2" data-event-opts="{{[ [ '^success',[ ['confirmServicePackage'] ] ],[ '^input',[ [ '__set_model',[ '','spVisible','$event',[] ] ] ] ] ]}}" defaultEquityId="{{innerPayInfo.patientEquitiesId}}" defaultServicePackageId="{{innerPayInfo.servicePackageId}}" list="{{servicePackageList}}" value="{{spVisible}}" vueId="0268bd2d-25"></select-service-package>
+    <select-sb bind:__l="__l" bind:input="__e" bind:success="__e" class="data-v-352ed1c2" config="{{sbConfig}}" data-event-opts="{{[ [ '^success',[ ['confirmSbInsurance'] ] ],[ '^input',[ [ '__set_model',[ '','sbVisible','$event',[] ] ] ] ] ]}}" defaultId="{{innerPayInfo.sbInsuranceId}}" defaultName="{{innerPayInfo.sbInsuranceName}}" insuranceList="{{sbInsuranceList}}" value="{{sbVisible}}" vueId="0268bd2d-26"></select-sb>
+</view>

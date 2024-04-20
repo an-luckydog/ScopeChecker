@@ -1,0 +1,16 @@
+{
+    "component": true,
+    "usingComponents": {
+        "navbar": "../../../navbar/navbar",
+        "loading": "../../../loading/loading",
+        "common-title": "../title/title",
+        "guide": "../guide/guide",
+        "popup": "../popup/popup",
+        "selectcar": "../selectcar/selectcar",
+        "living": "../living/living",
+        "comp-rules": "../rules/rules",
+        "drawer": "../drawer/index",
+        "c-btn": "../button/index",
+        "banner": "/./miniprogram_npm/@tmsfe/tms-ui/banner/banner"
+    }
+}

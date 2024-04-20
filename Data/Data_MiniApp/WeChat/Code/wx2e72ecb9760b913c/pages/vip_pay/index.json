@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "cy-authorize-login": "../../components/cy-authorize-login/index"
+    }
+}

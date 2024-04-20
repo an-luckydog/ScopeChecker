@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-sku-landing-tabs": "/components/c-sku-landing-tabs-week/c-sku-landing-tabs"
+    }
+}

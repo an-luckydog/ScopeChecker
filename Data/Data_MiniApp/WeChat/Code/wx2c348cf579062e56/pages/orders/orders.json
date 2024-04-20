@@ -1,0 +1,21 @@
+{
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "usingComponents": {
+        "orders": "../../static_bundles/orders/orders",
+        "newOrders": "../../packages/transaction/pages/order-list/index",
+        "tm": "/touchmatrix_bundles/index",
+        "mprn-component": "../../components/mprn-component/index",
+        "custom-mach-container": "../index/components/custom-mach-container/index",
+        "custom-native-container": "../index/components/custom-native-container/index",
+        "common-container": "../../npm/r2x/module-container1_1_4/lib/container/index",
+        "weapp-comp-privacy": "../../privacy/components/index"
+    },
+    "componentPlaceholder": {
+        "orders": "view",
+        "newOrders": "view",
+        "tm": "view"
+    }
+}

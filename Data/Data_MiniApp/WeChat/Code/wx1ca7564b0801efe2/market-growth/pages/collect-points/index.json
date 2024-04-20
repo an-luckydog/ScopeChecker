@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "集点营销",
+    "navigationBarTitleText": "集点营销",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

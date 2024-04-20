@@ -1,0 +1,41 @@
+{
+  "appid": "25809692",
+  "compilation-args": {
+    "common": {
+      "babelSetting": {
+        "ignore": []
+      },
+      "enhance": true
+    }
+  },
+  "developType": "normal",
+  "host": "baiduboxapp",
+  "preview": {
+    "packageId": 1536594
+  },
+  "projectname": "SmartAss",
+  "publish": {
+    "tips": [
+      "小程序包内容将被百度解析和收录，用于内容的风险控制。",
+      "您已开通分享web化，请确保分享web化体验无问题后，再进行发布。"
+    ],
+    "version": "0.1.3"
+  },
+  "scripts": {
+    "beforeCompile": "npm run build:swan",
+    "beforeUpload": "npm run build:swan"
+  },
+  "setting": {
+    "asyncBeforeCompile": true,
+    "enableScripts": false,
+    "urlCheck": true
+  },
+  "smartProgramRoot": "dist",
+  "swan": {
+    "baiduboxapp": {
+      "extensionJsVersion": "1.21.2",
+      "swanJsVersion": "3.420.6"
+    }
+  },
+  "miniprogramRoot": "./"
+}

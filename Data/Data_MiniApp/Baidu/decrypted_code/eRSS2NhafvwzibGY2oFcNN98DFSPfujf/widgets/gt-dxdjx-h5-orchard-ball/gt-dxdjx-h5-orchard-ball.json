@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "ug-ui": "@baidu/ug-task-supplier/dist/swan/ui"
+    }
+}

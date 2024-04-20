@@ -1,0 +1,3 @@
+<view class="{{['uni-transition','data-v-af099df6','vue-ref',ani]}}" data-ref="ani" style="{{stylesObject}}" wx:if="{{isShow}}">
+    <slot></slot>
+</view>

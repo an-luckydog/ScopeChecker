@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "text-box": "../textBox/textBox",
+        "rank": "../rank/rank",
+        "consult": "../consult/consult"
+    }
+}

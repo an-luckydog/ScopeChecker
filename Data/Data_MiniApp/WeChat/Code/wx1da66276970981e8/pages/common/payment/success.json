@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "支付成功",
+    "usingComponents": {
+        "u-icon": "../../../node-modules/uview-plus/components/u-icon/u-icon",
+        "u-button": "../../../node-modules/uview-plus/components/u-button/u-button",
+        "c-page": "../../../components/c-page/c-page"
+    }
+}

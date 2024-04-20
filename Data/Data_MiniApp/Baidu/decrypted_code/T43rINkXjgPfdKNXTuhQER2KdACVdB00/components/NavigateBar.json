@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "navbar-icon": "./NavbarIcon"
+    },
+    "component": true
+}

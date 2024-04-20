@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "gt-dxdjx-h5-navigation":"/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "gt-dxdjx-h5-image":"/widgets/gt-dxdjx-h5-image/gt-dxdjx-h5-image",
+        "gt-dxdjx-h5-shop-card-feed-triple":"/widgets/gt-dxdjx-h5-shop-card-feed-triple/gt-dxdjx-h5-shop-card-feed-triple",
+        "gt-dxdjx-h5-shop-card-feed-double":"/widgets/gt-dxdjx-h5-shop-card-feed-double/gt-dxdjx-h5-shop-card-feed-double",
+        "gt-dxdjx-h5-orchard-ball":"/widgets/gt-dxdjx-h5-orchard-ball/gt-dxdjx-h5-orchard-ball"
+    }
+}

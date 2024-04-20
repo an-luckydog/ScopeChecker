@@ -1,0 +1,42 @@
+<view>
+    <view class="message">
+        <view class="message-list" wx:if="{{sysInfo.list&&sysInfo.list.length}}">
+            <view bindtap="__e" class="message-item" data-event-opts="{{[ [ 'tap',[ [ 'goServiceRemindList',['$event'] ] ] ] ]}}">
+                <image class="doctor-avatar" src="{{imgUrl+'pages/message/ic_service_message.png'}}"></image>
+                <view class="message-content">
+                    <view class="doctor-info">
+                        <view class="doctor-name">服务提醒</view>
+                        <view class="message-time">{{$root.f0}}</view>
+                    </view>
+                    <view class="message-info">
+                        <view class="message-text">
+                            <rich-text class="message-rich-text" nodes="{{sysInfo.list.length&&sysInfo.list[0].title}}"></rich-text>
+                        </view>
+                        <view class="message-unread" wx:if="{{sysInfo.unreadNum}}">{{sysInfo.unreadNum}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="message-list">
+            <view bindtap="__e" class="message-item" data-event-opts="{{[ [ 'tap',[ [ 'selectSession',['$0'],[ [ ['sessions','',index] ] ] ] ] ] ]}}" wx:for="{{$root.l0}}" wx:for-item="session" wx:key="index">
+                <image class="doctor-avatar" src="{{session[$orig].content.partner.avatar}}"></image>
+                <view class="message-content">
+                    <view class="doctor-info">
+                        <view class="doctor-name">{{session[$orig].content.partner.name+' | '+session[$orig].content.partner.title}}</view>
+                        <view class="message-time">{{session.f1}}</view>
+                    </view>
+                    <view class="message-info">
+                        <view class="message-text">
+                            <rich-text class="message-rich-text u-line-1" nodes="{{session.f2}}"></rich-text>
+                        </view>
+                        <view class="message-unread" wx:if="{{session[$orig].unread}}">{{session[$orig].unread}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="none-page" wx:if="{{noData}}">
+            <image class="none-img" src="{{imgUrl+'common/none/ic_no_msg.png'}}"></image>
+            <view class="none-text">暂无新消息</view>
+        </view>
+    </view>
+</view>

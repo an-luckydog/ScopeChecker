@@ -1,0 +1,18 @@
+<view class="content data-v-1202843c">
+    <image class="logo data-v-1202843c" mode="widthFix" src="{{imgUrl+'logo.png'}}"></image>
+    <image class="slogan data-v-1202843c" mode="widthFix" src="{{imgUrl+'slogan.png'}}"></image>
+    <view class="total data-v-1202843c">{{'饮酒支数：'+(total||0)+''}}</view>
+    <image bindtap="__e" class="gifts data-v-1202843c" data-event-opts="{{[ [ 'tap',[ [ 'toLadder',['$event'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'index-btn-gifts.png'}}"></image>
+    <image bindtap="__e" class="share data-v-1202843c" data-event-opts="{{[ [ 'tap',[ [ 'toShare',['$event'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'index-btn-share.png'}}"></image>
+    <image bindtap="__e" class="game data-v-1202843c" data-event-opts="{{[ [ 'tap',[ [ 'toGame',['$event'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'index-btn-game.png'}}"></image>
+    <image bindtap="__e" class="buy data-v-1202843c" data-event-opts="{{[ [ 'tap',[ [ 'tomall',['$event'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'index-btn-buy.png'}}"></image>
+    <image class="tab-shadow data-v-1202843c" mode="widthFix" src="{{imgUrl+'tab-shadow.png'}}"></image>
+    <view class="tip-window mask data-v-1202843c" wx:if="{{showToast}}">
+        <view class="tip-content data-v-1202843c">
+            <text class="tip-title green-shadow data-v-1202843c">提示</text>
+            <text class="tip-msg data-v-1202843c">敬请期待~</text>
+            <button bindtap="__e" class="data-v-1202843c" data-event-opts="{{[ [ 'tap',[ [ 'e0',['$event'] ] ] ] ]}}"></button>
+        </view>
+    </view>
+    <privacy bind:__l="__l" bind:unLoadPrivacy="__e" class="data-v-1202843c" data-event-opts="{{[ [ '^unLoadPrivacy',[ ['e1'] ] ] ]}}" vueId="6ea683f4-1" wx:if="{{isShowPrivacy}}"></privacy>
+</view>

@@ -1,0 +1,13 @@
+<block wx:if="{{pagesShow}}">
+    <import src="../../template/showToast.wxml"></import>
+    <template is="showToast" data="{{showToast:showToast}}"></template>
+    <view class="content">
+        <view class="font36 password">设置昵称</view>
+        <view class="height font32">
+            <text class="left con"></text>
+            <input bindinput="set_nick_name" class="left" maxlength="10" minlength="2" placeholder="设置昵称，2-10个字符" placeholderClass="placeholder" type="text" value="{{nickName}}"></input>
+            <image bindtap="clear_nick_name" class="right clear {{nickFlag}}" src="../../img/clear.png"></image>
+        </view>
+        <button bindtap="modify_nick_name" class="{{btnActive?'login-hl':''}} login font32">完成</button>
+    </view>
+</block>

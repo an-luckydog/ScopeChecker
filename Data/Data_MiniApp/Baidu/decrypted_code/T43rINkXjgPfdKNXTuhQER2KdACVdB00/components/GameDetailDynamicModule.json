@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-bar-header": "./GameBarHeader",
+        "one-px-line": "./OnePxLine"
+    },
+    "component": true
+}

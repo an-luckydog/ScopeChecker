@@ -1,0 +1,11 @@
+<view class="c-m {{hasTabBar?'c-m-tab-bar':''}}" style="{{hasOffset?'':'transform: translateX(0);'}}">
+    <view class="c-m-main" style="background-image: url({{backgroundImage}}); background-size: 100% 100%; {{modalStyle}}">
+        <view class="c-m-header c-m-header-{{size}}" style="{{backgroundImage?'background-color: unset':''}}">
+            <view bindtap="closeThisModal" class="c-m-header-close c-m-header-close-{{closePosition}}" wx:if="{{!hideClose}}"></view>
+            <view class="c-m-header-title c-m-header-title-{{size}}">{{title||''}}</view>
+        </view>
+        <view class="c-m-content">
+            <slot></slot>
+        </view>
+    </view>
+</view>

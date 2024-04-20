@@ -1,0 +1,1 @@
+<view class="element-text">{{elConfig.text}}</view>

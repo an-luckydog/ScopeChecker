@@ -1,0 +1,14 @@
+{
+  "name": "suningcjt",
+  "version": "1.0.0",
+  "description": "抽奖团相关项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "顾小欣&王玉",
+  "license": "ISC",
+  "dependencies": {
+    "regenerator": "^0.13.3"
+  }
+}

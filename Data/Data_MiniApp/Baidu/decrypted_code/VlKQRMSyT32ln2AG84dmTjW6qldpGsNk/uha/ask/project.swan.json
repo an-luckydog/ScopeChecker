@@ -1,0 +1,15 @@
+{
+  "host": "baiduboxapp",
+  "projectname": "spore-im",
+  "appid": "11806953",
+  "setting": {
+    "urlCheck": false
+  },
+  "swan": {
+    "baiduboxapp": {
+      "extensionJsVersion": "1.21.2",
+      "swanJsVersion": "3.410.7"
+    }
+  },
+  "miniprogramRoot": "./"
+}

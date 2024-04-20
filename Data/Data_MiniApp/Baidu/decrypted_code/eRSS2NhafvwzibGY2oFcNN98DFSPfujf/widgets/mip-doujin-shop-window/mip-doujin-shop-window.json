@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "title-content": "/widgets/mip-doujin-shop-window/components/title-content/index",
+        "img-content": "/widgets/mip-doujin-shop-window/components/img-content/index"
+    }
+}

@@ -1,0 +1,58 @@
+<view class="pay-success-container">
+    <view class="tips-wrapper">
+        <image src="./../../img/paySuccess.png"></image>
+        <view class="text-box">
+            <view class="text0">开门成功</view>
+            <view class="text1">请在闭园前，取走您的物品。</view>
+        </view>
+    </view>
+    <view class="opt-btn-wrapper">
+        <button bindtap="qrcodeShowFunc" class="qrcode-btn">出示二维码</button>
+        <button bindtap="orderFunc" class="order-btn">订单中心</button>
+    </view>
+    <view class="cabineNOBigNum">{{cabinetNo}} <text class="cabineNOBig">号柜</text>
+    </view>
+    <view class="bot-success-wrapper" style="padding-bottom:{{isFullSucreen}}rpx">
+        <view class="bot-success-box"> 如柜门没有打开，请 <text bindtap="qrcodeShowFunc" class="show-qrcode">出示二维码</text>
+            <text class="line-text">|</text>
+            <text bindtap="telFunc" class="show-tel">联系客服</text>
+        </view>
+    </view>
+</view>
+<view class="wh-cabinet-dialog-mask" style="background:#fff;" wx:if="{{loading}}">
+    <view class="pay-success-container" style="height:100%">
+        <view class="tips-wrapper">
+            <image src="./../../img/paySuccessLoading.gif" style="margin-left:0px"></image>
+            <view class="text-box">
+                <view class="text0">开门中...</view>
+                <view class="text1"> 请在闭园前，取走您的物品。</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="wh-cabinet-dialog-mask" hidden="{{!qrCodeDialog}}">
+    <view class="calc-code">
+        <view class="calc-box">
+            <view class="qr-code-dialog">
+                <view class="fs24 c2a pb20">请将二维码对准柜体扫码器</view>
+                <view class="qrcode-img">
+                    <canvas bindlongtap="save" canvasId="canvas" class="canvas" style="width:{{code_w}}px; height:{{code_w}}px;"></canvas>
+                </view>
+                <view class="fs24 c2a pt20 gui-num">{{cabinetInfo.lockName||'-'}}</view>
+            </view>
+        </view>
+        <view bindtap="cloneOpenLock" class="btn-alert">
+            <view class="fs34 c999" style="width: 100%;border-right:0px solid #000">取消</view>
+        </view>
+    </view>
+</view>
+<view class="wh-cabinet-dialog-mask" wx:if="{{telPhoneDig}}">
+    <view class="openQrcode">
+        <view class="fs34 c333 pb39">客服电话</view>
+        <view class="fs28 c666 pb39">400-0027-287</view>
+        <view class="btn-open">
+            <view bindtap="telPhoneClear" class="clean-open">取消</view>
+            <view bindtap="phoneCall" class="sure-open" data-reply-phone="400-0027-287">拨打</view>
+        </view>
+    </view>
+</view>

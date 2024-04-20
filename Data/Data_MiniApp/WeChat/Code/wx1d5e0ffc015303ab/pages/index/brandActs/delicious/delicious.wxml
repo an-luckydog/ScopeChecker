@@ -1,0 +1,13 @@
+<view class="content">
+    <text class="title">美食日冀 品味河北</text>
+    <view class="list">
+        <view bindtap="__e" class="item" data-event-opts="{{[ [ 'tap',[ [ 'toDetails',[index+1] ] ] ] ]}}" wx:for="{{list}}" wx:key="*this">
+            <image mode="widthFix" src="{{imgUrl+'/hb2020/delicious_0'+index+1+'.png'}}"></image>
+            <text>{{item}}</text>
+        </view>
+        <view bindtap="__e" class="item" data-event-opts="{{[ [ 'tap',[ [ 'toDetails',[10] ] ] ] ]}}">
+            <image mode="widthFix" src="{{imgUrl+'/hb2020/delicious_10.png'}}"></image>
+            <text>邂逅石门 | 贩卖回忆的网红老店， “N”味炖鱼每一口都走心！</text>
+        </view>
+    </view>
+</view>

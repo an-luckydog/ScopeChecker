@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "c-shop-info-box": "/components/c-shop-info-box/index",
+        "c-shop-coupon-template": "/components/c-shop-coupon-template/index",
+        "security-bottom": "/components/security-bottom/index",
+        "line": "/components/line/index",
+        "popup-box": "@baidu/smart-kit/dist/components/popup-box",
+        "c-shop-info-list": "/components/c-shop-info-list/index"
+    }
+}

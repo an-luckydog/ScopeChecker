@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "医院介绍",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-authorize": "../../components/cy-authorize/index"
+    }
+}

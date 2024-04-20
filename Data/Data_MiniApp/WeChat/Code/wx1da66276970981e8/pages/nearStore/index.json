@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "附近的寄件点",
+    "onReachBottomDistance": 50,
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff",
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

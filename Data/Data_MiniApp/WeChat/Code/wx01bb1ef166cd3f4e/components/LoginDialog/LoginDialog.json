@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "CommonBottomDialog": "/components/CommonBottomDialog/CommonBottomDialog",
+        "LoginPopup": "../LoginPopup/LoginPopup"
+    }
+}

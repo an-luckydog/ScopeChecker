@@ -1,0 +1,26 @@
+<view catchtouchmove="__e" class="simple-address data-v-21f71929" data-event-opts="{{[ [ 'touchmove',[ [ 'clear',['$event'] ] ] ] ]}}" wx:if="{{showPopup}}">
+    <view bindtap="__e" catchtouchmove="__e" class="{{['simple-address-mask','data-v-21f71929',ani+'-mask',animation?'mask-ani':'']}}" data-event-opts="{{[ [ 'touchmove',[ [ 'clear',['$event'] ] ] ],[ 'tap',[ [ 'hideMask',[true] ] ] ] ]}}" style="{{'background-color:'+maskBgColor+';'}}" wx:if="{{maskClick}}"></view>
+    <view class="{{['simple-address-content','simple-address--fixed','data-v-21f71929',type,ani+'-content',animation?'content-ani':'']}}">
+        <view class="simple-address__header data-v-21f71929">
+            <view bindtap="__e" class="simple-address__header-btn-box data-v-21f71929" data-event-opts="{{[ [ 'tap',[ [ 'pickerCancel',['$event'] ] ] ] ]}}">
+                <text class="simple-address__header-text data-v-21f71929">取消</text>
+            </view>
+            <view bindtap="__e" class="simple-address__header-btn-box data-v-21f71929" data-event-opts="{{[ [ 'tap',[ [ 'pickerConfirm',['$event'] ] ] ] ]}}">
+                <text class="simple-address__header-text data-v-21f71929" style="{{'color:'+themeColor+';'}}">确定</text>
+            </view>
+        </view>
+        <view class="simple-address__box data-v-21f71929">
+            <picker-view bindchange="__e" class="simple-address-view data-v-21f71929" data-event-opts="{{[ [ 'change',[ [ 'pickerChange',['$event'] ] ] ] ]}}" indicatorStyle="height: 70rpx;" value="{{pickerValue}}">
+                <picker-view-column class="data-v-21f71929">
+                    <view class="picker-item data-v-21f71929" wx:for="{{provinceDataList}}" wx:key="index">{{item.label}}</view>
+                </picker-view-column>
+                <picker-view-column class="data-v-21f71929">
+                    <view class="picker-item data-v-21f71929" wx:for="{{cityDataList}}" wx:key="index">{{item.label}}</view>
+                </picker-view-column>
+                <picker-view-column class="data-v-21f71929">
+                    <view class="picker-item data-v-21f71929" wx:for="{{areaDataList}}" wx:key="index">{{item.label}}</view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+    </view>
+</view>

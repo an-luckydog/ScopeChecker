@@ -1,0 +1,39 @@
+<u-popup bind:__l="__l" bind:close="__e" bind:input="__e" borderRadius="32" class="data-v-4279b50d" data-event-opts="{{[ [ '^close',[ ['close'] ] ],[ '^input',[ [ '__set_model',[ '','value','$event',[] ] ] ] ] ]}}" maskCloseAble="{{false}}" mode="bottom" round="{{true}}" safeAreaInsetBottom="{{true}}" value="{{value}}" vueId="4d1c96fd-1" vueSlots="{{['default']}}">
+    <view class="pay-dialog data-v-4279b50d">
+        <view class="pay-header data-v-4279b50d">
+            <view class="data-v-4279b50d"></view>
+        </view>
+        <view class="pay-content data-v-4279b50d">
+            <view class="pay-info data-v-4279b50d" wx:if="{{param.feeList}}">
+                <view class="pay-item data-v-4279b50d" wx:for="{{param.feeList}}" wx:key="index">
+                    <view class="pay-label data-v-4279b50d">{{item.name}}</view>
+                    <view class="{{['pay-value','data-v-4279b50d',item.isRed?'pay-red':'']}}">{{item.value}}</view>
+                </view>
+            </view>
+            <block wx:else>
+                <view class="pay-info data-v-4279b50d" wx:if="{{param.moneyRecord}}">
+                    <block wx:if="{{param.moneyRecord.length>1}}">
+                        <view class="pay-item data-v-4279b50d" wx:for="{{param.moneyRecord}}" wx:key="index">
+                            <view class="pay-label data-v-4279b50d">{{item.name}}</view>
+                            <view class="pay-value data-v-4279b50d">{{item.value}}</view>
+                        </view>
+                    </block>
+                    <view class="pay-item data-v-4279b50d">
+                        <view class="pay-label pay-black data-v-4279b50d">自费支付</view>
+                        <view class="pay-value pay-red data-v-4279b50d">{{'￥'+$root.f0}}</view>
+                    </view>
+                </view>
+                <view class="pay-info data-v-4279b50d" wx:else>
+                    <view class="pay-item data-v-4279b50d">
+                        <view class="pay-label pay-black data-v-4279b50d">自费支付</view>
+                        <view class="pay-value pay-red data-v-4279b50d">{{'￥'+$root.f1}}</view>
+                    </view>
+                </view>
+            </block>
+            <view class="pay-foot data-v-4279b50d">
+                <peace-button bind:__l="__l" bind:click="__e" class="data-v-4279b50d" customStyle="width:310rpx;" data-event-opts="{{[ [ '^click',[ ['cancel'] ] ] ]}}" popup="{{true}}" vueId="{{'4d1c96fd-2'+','+'4d1c96fd-1'}}" vueSlots="{{['default']}}">取消</peace-button>
+                <peace-button bind:__l="__l" bind:click="__e" class="data-v-4279b50d" customStyle="width:310rpx;" data-event-opts="{{[ [ '^click',[ ['save'] ] ] ]}}" popup="{{true}}" type="primary" vueId="{{'4d1c96fd-3'+','+'4d1c96fd-1'}}" vueSlots="{{['default']}}">确认</peace-button>
+            </view>
+        </view>
+    </view>
+</u-popup>

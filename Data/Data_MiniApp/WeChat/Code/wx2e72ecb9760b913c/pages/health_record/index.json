@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "选择档案",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "bottom-button": "../../components/bottom-next-step-button/index"
+    }
+}

@@ -1,0 +1,30 @@
+<template name="price">
+    <view>
+        <view class="tag-price p-{{size||''}}">
+            <template is="tag" data="{{...memberTag}}" wx:if="{{memberTag&&memberTag.type}}"></template>
+            <view class="p-text">
+                <template is="price-point" data="{{costPointCount:costPointCount,currentPrice:currentPrice}}" wx:if="{{costPointCount}}"></template>
+                <view class="p-sell p-money" style="{{color?'color:'+color+';':''}}" wx:else>{{currentPrice}}</view>
+                <view class="p-unit" wx:if="{{unit||priceType===2}}">{{unit?'/'+unit:''}}{{priceType===2?'起':''}}</view>
+                <view class="p-org" wx:if="{{originalPrice&&currentPrice!==originalPrice}}">{{originalPrice}}</view>
+            </view>
+        </view>
+        <view catchtap="showEstTip" class="est-price {{customClass}}" hidden="{{!showEst}}" wx:if="{{p.validEst(estimatedPrice,currentPrice)}}">
+            <view class="p-tag">
+                <view class="p-est">到手预估</view>
+                <view class="p-sell est-sell">
+                    <image class="p-divide" src="https://p0.meituan.net/travelcube/e01dd0fad7400199c13b282b815ae1da458.png"></image>{{estimatedPrice}}<view class="base-icon icon-xinxi" wx:if="{{needTip}}"></view>
+                </view>
+            </view>
+        </view>
+    </view>
+</template>
+<template name="price-point">
+    <view class="p-line">
+        <view class="p-sell p-money" wx:if="{{p.oversizeZero(currentPrice)}}">{{currentPrice}}</view>
+        <view class="p-sell p-point {{p.oversizeZero(currentPrice)?'has-price':''}}" wx:if="{{costPointCount}}">{{costPointCount}}</view>
+    </view>
+</template>
+<import src="../tag/index.wxml"></import>
+<template is="price" data="{{...price,memberTag:memberTag,size:size,customClass:customClass,showEst:showEst,needTip:needTip}}"></template>
+<wxs module="p" src="index.wxs" />

@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "充值消费记录",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 0,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

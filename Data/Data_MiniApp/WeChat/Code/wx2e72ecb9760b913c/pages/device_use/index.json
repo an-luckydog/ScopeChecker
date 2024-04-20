@@ -1,0 +1,9 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "设备使用",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "step": "./components/step/index",
+        "cy_modal": "../../components/cy-modal/cy-modal"
+    }
+}

@@ -1,0 +1,10 @@
+<view class="privacy-popup" wx:if="{{visible}}">
+    <view class="privacy-popup__inner">
+        <view class="privacy-popup__title">{{appName}}温馨提示</view>
+        <view class="privacy-popup__content"> 尊敬的用户，欢迎使用{{appName}}小程序，请您在使用前点击 <view bindtap="handleDetail" class="privacy-popup__link">《隐私协议》</view> 请仔细阅读，如您同意全部内容，请点击同意开始使用我们的服务。 </view>
+        <view class="privacy-popup__footer">
+            <button bindagreeprivacyauthorization="handleAgree" class="privacy-popup-btn main" openType="agreePrivacyAuthorization"> 同意 </button>
+            <button bindtap="handleDisagree" class="privacy-popup-btn">不同意</button>
+        </view>
+    </view>
+</view>

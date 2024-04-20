@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ktv-rich-text": "./rich-text/index",
+    "lx-module": "./lx-module/index"
+  }
+}

@@ -1,0 +1,21 @@
+<view class="order-process-wrapper" wx:if="{{progressInfo&&(progressInfo.orderProductionProcessTextVO||progressInfo.orderProductionProcessProgressVO)}}">
+    <view class="inline-text-progress" wx:if="{{templateType===0}}">
+        <view class="ui-progress" wx:if="{{progressInfo.orderProductionProcessProgressVO}}">
+            <ui-progress inlineText="{{orderProcessText}}" processStyle="{{processStyle}}"></ui-progress>
+        </view>
+        <view bind:tap="handleClose" class="close" wx:if="{{!hideClose}}"></view>
+    </view>
+    <view class="single-progress-module" wx:if="{{templateType===1}}">
+        <view class="progress-title">{{progressTitle}}</view>
+        <ui-progress processStyle="{{processStyle}}" wx:if="{{progressInfo.orderProductionProcessProgressVO}}"></ui-progress>
+        <view class="progress-text-wrapper">
+            <rich-text class="progress-text" nodes="{{orderProcessText}}"></rich-text>
+        </view>
+    </view>
+    <view class="single-progress" wx:if="{{templateType===2}}">
+        <ui-progress processStyle="{{processStyle}}" wx:if="{{progressInfo.orderProductionProcessProgressVO}}"></ui-progress>
+        <view class="progress-text-wrapper">
+            <rich-text class="progress-text" nodes="{{orderProcessText}}"></rich-text>
+        </view>
+    </view>
+</view>

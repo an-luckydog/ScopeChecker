@@ -1,0 +1,37 @@
+<view class="main">
+    <view class="m-t-3">
+        <view class="lineBox">
+            <view class="lineTab">活动公告</view>
+        </view>
+        <view class="activityContent">活动公告页面可以查看活动状态，以及活动的大致信息
+      <view class="m-t-2 c-r">注：活动修改后学生需要重新报名活动！</view>
+        </view>
+    </view>
+    <view class="m-t-3">
+        <view class="lineBox">
+            <view class="lineTab">活动报名</view>
+        </view>
+        <view class="activityContent">首页下方列表即为活动列表，点击即可查看对应活动详情：开始时间、结束时间、活动地点、举办单位及活动内容。点击界面最下端的报名按钮就可以报名该活动。</view>
+    </view>
+    <view class="m-t-3">
+        <view class="lineBox">
+            <view class="lineTab">活动参与</view>
+        </view>
+        <view class="activityContent">在成功报名一个活动之后，点击活动参与按钮即可查看报名的活动。</view>
+    </view>
+    <view class="m-t-3">
+        <view class="lineBox">
+            <view class="lineTab">活动签到</view>
+        </view>
+        <view class="activityContent">在成功报名一个活动之后，需进行两次签到。
+      <view class="m-t-2">第一次签到：在活动开始时由工作人员安排进行扫码签到（需要开启小程序的定位功能）</view>
+            <view class="m-t-2">第二次签到：在活动结束后两小时内，进入活动参与进入活动详情页面，进行评分以及签到。</view>
+        </view>
+    </view>
+    <view class="m-t-3">
+        <view class="lineBox">
+            <view class="lineTab">学分查询</view>
+        </view>
+        <view class="activityContent">首页学分查询模块，可以查询各学期学分以及全学期总分</view>
+    </view>
+</view>

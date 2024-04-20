@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"ulog-view":"../../Common/UlogView/index","login":"../../Common/Login/index","house-card":"../../Common/HouseCard/index","tag-list":"../TagList/index","comment":"../Comment/index","live-card":"../LiveCard/index"}}

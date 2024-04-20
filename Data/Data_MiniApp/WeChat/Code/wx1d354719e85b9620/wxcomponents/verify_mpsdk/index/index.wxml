@@ -1,0 +1,460 @@
+<view id="fix-full-page">
+    <view class="index-container" wx:if="{{curPage===1&&!cmsConfig.IsHideIndexAlways}}">
+        <view id="{{cmsConfig.Common.IsWxNative?'index-topNative':'index-top'}}">
+            <view class="{{cmsConfig.Common.IsWxNative?'index-hint color-grey':'index-hint'}}" id="index-top-1st"> 您即将进行 </view>
+            <view class="{{cmsConfig.Common.IsWxNative?'index-title color-black':'index-title'}}" id="index-top-2nd"> {{cmsConfig.page.index.clientName}} </view>
+            <view class="{{cmsConfig.Common.IsWxNative?'index-title color-black':'index-title'}}"> {{cmsConfig.page.index.businessName}} </view>
+            <view class="{{cmsConfig.Common.IsWxNative?'index-hint color-grey':'index-hint'}}" style="margin-top:13rpx"> {{cmsConfig.page.index.certificationCenter}} </view>
+        </view>
+        <view class="index-auth-protocol">
+            <rich-text nodes="{{cmsConfig.page.index.authorizedProtocol}}"></rich-text>
+        </view>
+        <view class="protocol-container">
+            <view class="index-protocol">
+                <view bindtap="checkboxChange" class="check-protocol">
+                    <view class="{{indexDisableBtn?'check-protocol-box checked':'check-protocol-box'}}">
+                        <image src="{{cmsConfig.Common.IsWxNative?'/static/mp-weixin/images/face/ico-sucNative.png':'/static/mp-weixin/images/face/ico-suc.png'}}"></image>
+                    </view>
+                    <label class="index-protocol-left">我已认真阅读并同意</label>
+                </view>
+                <label bindtap="switchIndexRule" class="{{cmsConfig.Common.IsWxNative?'color-green':''}}" id="index-protocol-right"> {{cmsConfig.page.index.protocolTitle}} </label>
+            </view>
+            <view class="{{cmsConfig.Common.IsWxNative?'index-btnNative':'index-btn'}}">
+                <button bindtap="indexToNext" disabled="{{indexDisableBtn}}" hoverClass="{{cmsConfig.Common.IsWxNative?'btn-hoverNative':'btn-hover'}}" style="border-radius: 0px" type="primary"> {{cmsConfig.page.index.nextBtnName}} </button>
+            </view>
+            <view class="index-risk-tip">
+                <view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </view>
+            </view>
+        </view>
+        <view class="js_dialog" id="iosDialog1" style="opacity: 1;" wx:if="{{index_rule}}">
+            <view class="weui-mask"></view>
+            <view class="weui-dialog protocol" style="width:80%">
+                <view class="weui-dialog__hd" style="padding:0;margin:0;padding:1.3em 1.6em 0.5em;">
+                    <strong class="weui-dialog__title">{{cmsConfig.protocol.title}}</strong>
+                </view>
+                <view class="weui-dialog__bd" style="padding:0 0.8em 0.8em;min-height:40px;font-size:15px;line-height:1.3;word-wrap:break-word;word-break:break-all;color:#999999;">
+                    <rich-text nodes="{{cmsConfig.protocol.clientContent}}" style="text-indent: 25px;"></rich-text>
+                    <view class="line" wx:if="{{cmsConfig.protocol.clientContent}}"></view>
+                    <view wx:if="{{cmsConfig.protocol.content}}">
+                        <rich-text nodes="{{cmsConfig.protocol.content}}" style="text-indent: 25px;"></rich-text>
+                    </view>
+                </view>
+                <view class="weui-dialog__ft">
+                    <view bindtap="switchIndexRule" class="{{cmsConfig.Common.IsWxNative?'weui-dialog__btn weui-dialog__btn_primary color-green':'weui-dialog__btn weui-dialog__btn_primary'}}"> 我知道了 </view>
+                </view>
+            </view>
+        </view>
+        <view class="js_dialog" id="iosDialog1" style="opacity: 1;" wx:if="{{show_about_dlg}}">
+            <view class="weui-mask"></view>
+            <view class="weui-dialog about" style="width:80%">
+                <view class="weui-dialog__hd" style="padding:0;margin:0;padding:1.3em 1.6em 0.5em;">
+                    <strong class="weui-dialog__title">{{cmsConfig.about.title}}</strong>
+                </view>
+                <view class="weui-dialog__bd" style="padding:0 0.8em 0.8em;min-height:40px;font-size:15px;line-height:1.3;word-wrap:break-word;word-break:break-all;color:#999999;text-align:left;">
+                    <text>{{cmsConfig.about.content}}</text>
+                </view>
+                <view class="weui-dialog__ft">
+                    <view bindtap="switchAboutDlg" class="{{cmsConfig.Common.IsWxNative?'weui-dialog__btn weui-dialog__btn_primary color-green':'weui-dialog__btn weui-dialog__btn_primary'}}"> 我知道了 </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view wx:else>
+        <block wx:if="{{isNotCamera}}">
+            <view id="{{cmsConfig.Common.IsWxNative?'navTipNative':'navTip'}}" wx:if="{{cmsConfig.skipConfig.isJustOcr||cmsConfig.skipConfig.isJustSms}}">
+                <view class="navText navActive" wx:if="{{curPage===2&&cmsConfig.skipConfig.isJustSms}}"> {{cmsConfig.skipConfig.navTitle.smsTitle}} </view>
+                <view class="navText navActive" wx:if="{{curPage===3&&cmsConfig.skipConfig.isJustOcr}}"> {{cmsConfig.skipConfig.navTitle.ocrTitle}} </view>
+            </view>
+            <view id="{{cmsConfig.Common.IsWxNative?'navTipNative':'navTip'}}" wx:elif="{{curPage===2}}">
+                <view class="navText navActive">{{cmsConfig.skipConfig.navTitle.smsTitle}}</view>
+                <view class="navLine"></view>
+                <view class="navText" wx:if="{{!cmsConfig.skipConfig.isHideOcrPage}}"> {{cmsConfig.skipConfig.navTitle.ocrTitle}} </view>
+                <view class="navLine" wx:if="{{!cmsConfig.skipConfig.isHideOcrPage}}"></view>
+                <view class="navText">{{cmsConfig.skipConfig.navTitle.livingbodyTitle}}</view>
+                <view class="navLine"></view>
+                <view class="navText">{{cmsConfig.skipConfig.navTitle.resultTitle}}</view>
+            </view>
+            <view id="{{cmsConfig.Common.IsWxNative?'navTipNative':'navTip'}}" wx:elif="{{curPage===3}}">
+                <view class="navText navActive" wx:if="{{!cmsConfig.skipConfig.isHideSmsPage}}"> {{cmsConfig.skipConfig.navTitle.smsTitle}} </view>
+                <view class="navLine" wx:if="{{!cmsConfig.skipConfig.isHideSmsPage}}"></view>
+                <view class="navText navActive">{{cmsConfig.skipConfig.navTitle.ocrTitle}}</view>
+                <view class="navLine"></view>
+                <view class="navText">{{cmsConfig.skipConfig.navTitle.livingbodyTitle}}</view>
+                <view class="navLine"></view>
+                <view class="navText">{{cmsConfig.skipConfig.navTitle.resultTitle}}</view>
+            </view>
+            <view id="{{cmsConfig.Common.IsWxNative?'navTipNative':'navTip'}}" style="padding:38rpx 70px;" wx:elif="{{curPage===4&&cmsConfig.skipConfig.isHideSmsPage&&cmsConfig.skipConfig.isHideOcrPage}}">
+                <view class="navText navActive">{{cmsConfig.skipConfig.navTitle.livingbodyTitle}}</view>
+                <view class="navLine"></view>
+                <view class="navText">{{cmsConfig.skipConfig.navTitle.resultTitle}}</view>
+            </view>
+            <view id="{{cmsConfig.Common.IsWxNative?'navTipNative':'navTip'}}" wx:elif="{{curPage===4}}">
+                <view class="navText navActive" wx:if="{{!cmsConfig.skipConfig.isHideSmsPage}}"> {{cmsConfig.skipConfig.navTitle.smsTitle}} </view>
+                <view class="navLine" wx:if="{{!cmsConfig.skipConfig.isHideSmsPage}}"></view>
+                <view class="navText navActive" wx:if="{{!cmsConfig.skipConfig.isHideOcrPage}}"> {{cmsConfig.skipConfig.navTitle.ocrTitle}} </view>
+                <view class="navLine" wx:if="{{!cmsConfig.skipConfig.isHideOcrPage}}"></view>
+                <view class="navText navActive">{{cmsConfig.skipConfig.navTitle.livingbodyTitle}}</view>
+                <view class="navLine"></view>
+                <view class="navText">{{cmsConfig.skipConfig.navTitle.resultTitle}}</view>
+            </view>
+            <view id="{{cmsConfig.Common.IsWxNative?'navTipNative':'navTip'}}" style="padding:38rpx 70px;" wx:elif="{{(curPage===5||curPage===6)&&cmsConfig.skipConfig.isHideSmsPage&&cmsConfig.skipConfig.isHideOcrPage}}">
+                <view class="navText navActive">{{cmsConfig.skipConfig.navTitle.livingbodyTitle}}</view>
+                <view class="navLine"></view>
+                <view class="navText navActive">{{cmsConfig.skipConfig.navTitle.resultTitle}}</view>
+            </view>
+            <view id="{{cmsConfig.Common.IsWxNative?'navTipNative':'navTip'}}" wx:elif="{{curPage===5||curPage===6}}">
+                <view class="navText navActive" wx:if="{{!cmsConfig.skipConfig.isHideSmsPage}}"> {{cmsConfig.skipConfig.navTitle.smsTitle}} </view>
+                <view class="navLine" wx:if="{{!cmsConfig.skipConfig.isHideSmsPage}}"></view>
+                <view class="navText navActive" wx:if="{{!cmsConfig.skipConfig.isHideOcrPage}}"> {{cmsConfig.skipConfig.navTitle.ocrTitle}} </view>
+                <view class="navLine" wx:if="{{!cmsConfig.skipConfig.isHideOcrPage}}"></view>
+                <view class="navText navActive">{{cmsConfig.skipConfig.navTitle.livingbodyTitle}}</view>
+                <view class="navLine"></view>
+                <view class="navText navActive">{{cmsConfig.skipConfig.navTitle.resultTitle}}</view>
+            </view>
+        </block>
+        <view class="verify-gray-container" wx:if="{{curPage===2}}">
+            <view id="sms-top">
+                <view class="sms-top-sec" id="sms-top-phone">
+                    <view class="sms-ts-img">
+                        <image src="http://beta.gtimg.com/GodIdent/huiyan/img/icon-phonenum.png"></image>
+                    </view>
+                    <view class="sms-ts-input">
+                        <input autoFocus="true" bindinput="phoneNumChanged" maxlength="11" name="phoneNum" placeholder="请输入手机号码" type="number"></input>
+                    </view>
+                    <view wx:if="{{sms.is60sGap}}">
+                        <view class="sms-ts-btn">重新发送 ({{sms.gapSec}}s)</view>
+                    </view>
+                    <view wx:else>
+                        <view bindtap="sendVerifyCodeReq" class="sms-ts-btn sms-ts-btn-enable" wx:if="{{sms.isEnableSendSms}}"> {{sms.sendSmsTtitle}} </view>
+                        <view class="sms-ts-btn" wx:else>{{sms.sendSmsTtitle}}</view>
+                    </view>
+                </view>
+                <view class="sms-top-sec">
+                    <view class="sms-ts-img">
+                        <image src="http://beta.gtimg.com/GodIdent/huiyan/img/icon-yzm.png"></image>
+                    </view>
+                    <view class="sms-ts-input">
+                        <input bindinput="verifyCodeChanged" maxlength="4" name="verifyCode" placeholder="请输入验证码" type="number"></input>
+                    </view>
+                </view>
+            </view>
+            <view class="hint-error">{{sms.hintError}}</view>
+            <view class="index-btn">
+                <button bindtap="smsToNext" disabled="{{sms.isForbiddenSmsBtn}}" hoverClass="btn-hover" type="primary"> 下一步 </button>
+            </view>
+            <view class="index-risk-tip">
+                <view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </view>
+            </view>
+        </view>
+        <view class="verify-gray-container" wx:if="{{curPage===3}}">
+            <view class="verify-white-bg" wx:if="{{!cmsConfig.page.ocr.isManualInput&&!ocr.isShowTakePhoto&&!ocr.isShowResult}}">
+                <view id="ocr-top">
+                    <view id="ocr-title">身份证识别</view>
+                    <image src="https://s.beta.gtimg.com/GodIdent/huiyan-ui-new/images-wx/hint-shibie-green.png"></image>
+                    <view id="ocr-text">
+                        <text class="text" wx:if="{{cmsConfig.page.ocr.backend}}">1. 拍摄身份证原件正反面</text>
+                        <text class="text" wx:else>1. 拍摄身份证原件正面</text>
+                        <text class="text">2. 保证照片清晰文字可辨</text>
+                        <text class="text">3. 避免照片不全、遮挡、反光</text>
+                    </view>
+                    <view class="{{cmsConfig.Common.IsWxNative?'index-btnNative':'index-btn'}}" id="ocr-startbtn">
+                        <button bindtap="ocrStartTakePhoto" hoverClass="{{cmsConfig.Common.IsWxNative?'btn-hoverNative':'btn-hover'}}" type="primary"> 开始识别 </button>
+                    </view>
+                </view>
+                <view class="ocr-risk-tip">
+                    <view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </view>
+                </view>
+            </view>
+            <view class="verify-absolute-bg" wx:if="{{ocr.isShowTakePhoto&&!ocr.isShowResult}}">
+                <view class="verify-absolute-bg" wx:if="{{!ocr.isShowPhotoPreView}}">
+                    <view class="verify-ocr-title {{ocr.isInfinityDisplayOcrTitle}}">
+                        <view class="{{cmsConfig.Common.IsWxNative?'color-green':''}}"> {{ocr.ocrTitle}} </view>
+                        <view class="ocr-risk-tip">
+                            <cover-view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </cover-view>
+                        </view>
+                    </view>
+                    <camera binderror="ocrCameraError" class="verify-ocr-frameArea {{ocr.isInfinityDisplayOcrMiddle}}" devicePosition="back" flash="off">
+                        <cover-view class="vof-bg" wx:if="{{!ocr.isShowPhotoPreView}}">
+                            <cover-image class="full-weight-height" src="{{cmsConfig.Common.IsWxNative?'/static/mp-weixin/images/face/shibiebgNative.png':'http://beta.gtimg.com/GodIdent/huiyan/img/shibiebg.png'}}"></cover-image>
+                        </cover-view>
+                        <cover-view style="margin-top:80rpx;margin-left:350rpx;" wx:if="{{!ocr.isShowPhotoPreView&&ocr.isFrontIdCard}}">
+                            <cover-image src="http://beta.gtimg.com/GodIdent/huiyan/img/ico-head.png" style="width:254rpx;height:285rpx;"></cover-image>
+                        </cover-view>
+                        <cover-view style="margin-top:80rpx;margin-left:90rpx;" wx:if="{{!ocr.isShowPhotoPreView&&!ocr.isFrontIdCard}}">
+                            <cover-image src="http://beta.gtimg.com/GodIdent/huiyan/img/ico-guohui.png" style="width:139rpx;height:144rpx:;"></cover-image>
+                        </cover-view>
+                    </camera>
+                    <view class="verify-ocr-pre {{ocr.isInfinityDisplayOcrBottom}}">
+                        <view class="verify-ocr-tools" wx:if="{{ocr.isToolsShow}}">
+                            <view bindtap="chooseImg" class="{{cmsConfig.Common.IsWxNative?'vot-album color-green':'vot-album'}}" wx:if="{{cmsConfig.page.ocr.sourceType>0}}"> 相册 </view>
+                            <view class="vot-middle">
+                                <image bindtap="takePhotoWithCamera" src="{{cmsConfig.Common.IsWxNative?'/static/mp-weixin/images/face/ico-cameNative.png':'/static/mp-weixin/images/face/ico-came.png'}}" wx:if="{{!ocr.isShowPhotoPreView}}"></image>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view wx:if="{{ocr.isShowPhotoPreView}}">
+                    <view class="verify-ocr-title" style="background:none">
+                        <view class="{{cmsConfig.Common.IsWxNative?'color-green':''}}"> {{ocr.ocrTitle}} </view>
+                        <view class="ocr-risk-tip">
+                            <view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </view>
+                        </view>
+                    </view>
+                    <image id="vof-preview" mode="aspectFit" src="{{ocr.tempImagePath}}"></image>
+                    <view class="verify-ocr-pre">
+                        <view class="verify-ocr-tools" wx:if="{{ocr.isToolsShow}}">
+                            <view bindtap="chooseImg" class="{{cmsConfig.Common.IsWxNative?'vot-album color-green':'vot-album'}}" wx:if="{{cmsConfig.page.ocr.sourceType>0}}"> 相册 </view>
+                            <view class="vot-middle">
+                                <image bindtap="startUploadAndOcr" src="{{cmsConfig.Common.IsWxNative?'/static/mp-weixin/images/face/ico-sucNative.png':'/static/mp-weixin/images/face/ico-suc.png'}}" wx:if="{{ocr.isShowPhotoPreView}}"></image>
+                            </view>
+                            <view bindtap="reTakePhoto" class="{{cmsConfig.Common.IsWxNative?'vot-right color-green':'vot-right'}}" wx:if="{{ocr.isShowPhotoPreView}}"> 重拍 </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view wx:if="{{ocr.isShowResult}}">
+                <view class="ocr-result-title" wx:if="{{!cmsConfig.page.ocr.isIdnameAllowEdit&&!cmsConfig.page.ocr.isIdnumberAllowEdit&&!cmsConfig.page.ocr.isIdaddressAllowEdit}}"> 请确认您的身份信息 </view>
+                <view class="ocr-result-title" wx:else>请确认您的身份信息，若有误请手动修改</view>
+                <view id="sms-top">
+                    <view class="sms-top-sec ocr-result-sec">
+                        <view class="sms-input-title">
+                            <label>姓名</label>
+                        </view>
+                        <view class="sms-ts-input">
+                            <input bindinput="idnameInputChanged" disabled="{{!cmsConfig.page.ocr.isIdnameAllowEdit}}" placeholder="请输入姓名" type="text" value="{{ocr.idname}}"></input>
+                        </view>
+                    </view>
+                    <view class="sms-top-sec ocr-result-sec">
+                        <view class="sms-input-title">
+                            <label>身份证</label>
+                        </view>
+                        <view class="sms-ts-input">
+                            <input bindinput="idcartInputChanged" disabled="{{!cmsConfig.page.ocr.isIdnumberAllowEdit}}" maxlength="18" placeholder="请输入身份证号" type="idcard" value="{{ocr.idcard}}"></input>
+                        </view>
+                    </view>
+                    <view class="sms-top-sec ocr-result-sec" wx:if="{{cmsConfig.page.ocr.isAddress}}">
+                        <view class="sms-input-title">
+                            <label>住址</label>
+                        </view>
+                        <view class="sms-ts-input" style="padding:16rpx 0">
+                            <textarea autoHeight="true" bindinput="idaddressInputChanged" disabled="{{!cmsConfig.page.ocr.isIdaddressAllowEdit}}" fixed="true" placeholder="请输入住址" style="line-height:1.5em;min-height:1.5em;max-height:4.5em;width:100%;" type="text" value="{{ocr.idaddress}}"></textarea>
+                        </view>
+                    </view>
+                </view>
+                <view class="hint-error">{{ocr.hintErrorResult}}</view>
+                <view class="{{cmsConfig.Common.IsWxNative?'index-btnNative':'index-btn'}}">
+                    <button bindtap="ocrInputGoNext" disabled="{{ocr.isForbiddenResultBtn}}" hoverClass="{{cmsConfig.Common.IsWxNative?'btn-hoverNative':'btn-hover'}}" type="primary"> 下一步 </button>
+                </view>
+                <view class="ocr-risk-tip">
+                    <view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </view>
+                </view>
+            </view>
+            <view wx:if="{{cmsConfig.page.ocr.isManualInput}}">
+                <view id="sms-top">
+                    <view class="sms-top-sec" id="sms-top-phone">
+                        <view class="sms-ts-input">
+                            <input autoFocus="true" bindinput="idcartManualInputChanged" maxlength="18" placeholder="请输入身份证号" type="idcard"></input>
+                        </view>
+                        <view bindtap="manualInputTakePhone" class="{{cmsConfig.Common.IsWxNative?'sms-ts-btn sms-ts-btn-enable color-green':'sms-ts-btn sms-ts-btn-enable'}}" style="font-size:17px;margin-right:5px;" wx:if="{{!cmsConfig.page.ocr.isHideTakePhoto}}"> 拍照 </view>
+                    </view>
+                    <view class="sms-top-sec">
+                        <view class="sms-ts-input">
+                            <input bindinput="idnameManualInputChanged" placeholder="请输入姓名" type="text"></input>
+                        </view>
+                    </view>
+                </view>
+                <view class="hint-error">{{ocr.hintError}}</view>
+                <view class="{{cmsConfig.Common.IsWxNative?'index-btnNative':'index-btn'}}">
+                    <button bindtap="manualInputGoNext" disabled="{{ocr.isForbiddenManualBtn}}" hoverClass="{{cmsConfig.Common.IsWxNative?'btn-hoverNative':'btn-hover'}}" type="primary"> 下一步 </button>
+                </view>
+                <view class="ocr-risk-tip">
+                    <view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </view>
+                </view>
+            </view>
+        </view>
+        <block wx:if="{{curPage===4}}">
+            <view wx:if="{{livingbody.isShowGuide&&!livingbody.isShowCamera}}">
+                <view id="livingbody-guide-title">实名核身验证流程</view>
+                <view class="livingbody-guide-imgview" wx:if="{{cmsConfig.livingbodyType===0}}">
+                    <image src="https://s.beta.gtimg.com/GodIdent/huiyan-ui-new/images-wx/hint-heshen-number.png"></image>
+                </view>
+                <view class="livingbody-guide-imgview" wx:elif="{{cmsConfig.livingbodyType===1}}">
+                    <image src="https://s.beta.gtimg.com/GodIdent/huiyan-ui-new/images-wx/hint-heshen-action.png"></image>
+                </view>
+                <view class="livingbody-guide-imgview" wx:else>
+                    <image src="https://s.beta.gtimg.com/GodIdent/huiyan-ui-new/images/hint-heshen-silent.png"></image>
+                </view>
+                <view class="index-btn" id="livingbody-guide-btnview">
+                    <button bindtap="livingbodyStartToRecord" disabled="{{livingbody.isNotPrepareOk}}" hoverClass="btn-hover" type="primary"> 开始识别 </button>
+                </view>
+                <view id="livingbody-guide-showdialog">
+                    <text bindtap="switchLivingbodyDialog" style="padding:5px 10px">查看规范</text>
+                </view>
+                <view class="livingbody-risk-tip">
+                    <view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </view>
+                </view>
+            </view>
+            <view style="position:absolute;top:0;bottom:0;width:100%;" wx:if="{{livingbody.isShowCamera}}">
+                <camera binderror="ocrCameraError" bindstop="bindstop" devicePosition="front" flash="off" id="livingbody-camera" style="position:absolute;top:0;bottom:0;width:100%;" wx:if="{{cmsConfig.livingbodyType===0}}">
+                    <cover-view class="livingbody-title {{livingbody.isInfinityDisplayHTTitle}}">
+                        <cover-view class="livingbody-risk-tip">
+                            <cover-view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </cover-view>
+                        </cover-view>
+                        <cover-view>{{livingbody.livingbodyTitle}}</cover-view>
+                    </cover-view>
+                    <cover-image class="livingbody-bg {{livingbody.isInfinityDisplayHTBottom}}" src="http://beta.gtimg.com/GodIdent/huiyan/img/faceyzbg.png"></cover-image>
+                    <cover-view class="livingbody-number-pre {{livingbody.isInfinityDisplayHTNumberPre}}" wx:if="{{livingbody.isPrepare}}"> 准备读数... </cover-view>
+                    <cover-view class="livingbody-number-hint {{livingbody.isInfinityDisplayHTNumberHint}}" wx:else>
+                        <cover-view class="lvingbody-number-text {{livingbody.curNumberStatus[0]}}"> {{livingbody.curNumber[0]}} </cover-view>
+                        <cover-view class="lvingbody-number-text {{livingbody.curNumberStatus[1]}}"> {{livingbody.curNumber[1]}} </cover-view>
+                        <cover-view class="lvingbody-number-text {{livingbody.curNumberStatus[2]}}"> {{livingbody.curNumber[2]}} </cover-view>
+                        <cover-view class="lvingbody-number-text {{livingbody.curNumberStatus[3]}}"> {{livingbody.curNumber[3]}} </cover-view>
+                    </cover-view>
+                </camera>
+                <camera binderror="ocrCameraError" bindstop="bindstop" devicePosition="front" flash="off" id="livingbody-camera" wx:elif="{{cmsConfig.livingbodyType===1}}">
+                    <cover-view class="livingbody-title {{livingbody.isInfinityDisplayHTTitle}}">
+                        <cover-view class="livingbody-risk-tip">
+                            <cover-view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </cover-view>
+                        </cover-view>
+                        <cover-view>{{livingbody.livingbodyTitle}}</cover-view>
+                    </cover-view>
+                    <cover-image class="livingbody-bg {{livingbody.isInfinityDisplayHTBottom}}" src="http://beta.gtimg.com/GodIdent/huiyan/img/faceyzbg.png"></cover-image>
+                    <cover-view class="livingbody-action-pre {{livingbody.isInfinityDisplayHTActionPre}}" wx:if="{{livingbody.isPrepare}}"> 准备做动作... </cover-view>
+                    <cover-view class="livingbody-action-hint {{livingbody.isInfinityDisplayHTActionHint}}" wx:else> {{livingbody.livingbodyActionText}} </cover-view>
+                </camera>
+                <camera binderror="ocrCameraError" bindstop="bindstop" devicePosition="front" flash="off" id="livingbody-camera" wx:else>
+                    <cover-view class="livingbody-title {{livingbody.isInfinityDisplayHTTitle}}">
+                        <cover-view class="livingbody-risk-tip">
+                            <cover-view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </cover-view>
+                        </cover-view>
+                        <cover-view>{{livingbody.livingbodyTitle}}</cover-view>
+                    </cover-view>
+                    <cover-image class="livingbody-bg {{livingbody.isInfinityDisplayHTBottom}}" src="http://beta.gtimg.com/GodIdent/huiyan/img/faceyzbg.png"></cover-image>
+                    <cover-view class="livingbody-silent">
+                        <cover-view class="livingbody-silent-view">
+                            <cover-view class="livingbody-silent-prepare" wx:if="{{livingbody.isPrepare}}"> 准备录制 </cover-view>
+                            <cover-view class="livingbody-silent-hintone" wx:if="{{!livingbody.isPrepare}}"> 录制中 </cover-view>
+                            <cover-view class="livingbody-silent-hinttwo" wx:if="{{!livingbody.isPrepare}}"> {{livingbody.livingbodySilentText}} </cover-view>
+                        </cover-view>
+                    </cover-view>
+                </camera>
+            </view>
+            <view id="livingbody-process" wx:if="{{livingbody.isShowProcess&&!livingbody.isShowGuide&&!livingbody.isShowCamera}}">
+                <view class="scan">
+                    <image src="http://beta.gtimg.com/GodIdent/huiyan/img/loadding-white.gif"></image>
+                </view>
+                <view id="livingbody-process-m">
+                    <progress backgroundcolor="#cbcbcb" color="#2473e9" percent="{{livingbody.uploadProcess}}" strokeWidth="6"></progress>
+                </view>
+                <view id="livingbody-process-title">系统识别中...</view>
+                <view class="livingbody-risk-tip">
+                    <view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </view>
+                </view>
+            </view>
+            <view class="js_dialog" id="iosDialog1" style="opacity: 1;" wx:if="{{livingbody.isShowDialog}}">
+                <view class="weui-mask"></view>
+                <view class="weui-dialog style3" id="livingbody-dialog-main">
+                    <view class="weui-dialog__hd" id="livingbody-dialog-title">
+                        <strong class="weui-dialog__title">视频录制规范</strong>
+                    </view>
+                    <view class="weui-dialog__bd" id="livingbody-dialog-bg">
+                        <image src="https://s.beta.gtimg.com/GodIdent/huiyan-ui-new/images/v1videohint.png"></image>
+                        <view class="weui-btn_area">
+                            <button bindtap="switchLivingbodyDialog" plain="true" size="mini" type="default"> 我知道了 </button>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view wx:if="{{livingbody.showTestVideo}}">
+                <video controls id="myVideo" poster="{{livingbody.video_preview}}" src="{{livingbody.video_src}}" style="width:300px;height:300px;"></video>
+            </view>
+        </block>
+        <block wx:if="{{curPage===5}}">
+            <view wx:if="{{!failInfo.img}}">
+                <view class="verifyResultTop">
+                    <icon size="75" type="warn"></icon>
+                </view>
+                <view class="verifyResultSuccess" style="width:auto;padding:0 20px;"> 验证失败: {{failInfo.msg}} </view>
+                <view class="verifyResultHint" style="margin-bottom:1px;color:rgb(37,117,234)" wx:if="{{failInfo.isTips1Color}}"> {{failInfo.tips1}} </view>
+                <view class="verifyResultHint" style="margin-bottom:1px;" wx:else>{{failInfo.tips1}}</view>
+                <view class="verifyResultHint">{{failInfo.tips2}}</view>
+            </view>
+            <view wx:else>
+                <view class="verifyFailTop">
+                    <image src="{{failInfo.img}}" style="width: 180px;height: 113px;"></image>
+                </view>
+                <view class="verifyFailWarn">
+                    <icon class="icon-box-img" size="20" type="warn"></icon>
+                    <view style="margin-left:8px;">验证失败: {{failInfo.msg}}</view>
+                </view>
+                <view class="verifyResultHint" style="margin-bottom:1px;">{{failInfo.tips1}}</view>
+                <view class="verifyResultHint">{{failInfo.tips2}}</view>
+            </view>
+            <view class="index-btn" style="margin-top:135rpx" wx:if="{{!failInfo.Data.isHideRetry}}">
+                <button bindtap="failReVerify" hoverClass="btn-hover" style="width:674rpx" type="primary"> {{cmsConfig.page.failpage.RetryBtnText}} </button>
+            </view>
+            <view bindtap="switchfailModal" class="page-body-link" opentype="switchTab" style="margin-top:10px;" wx:if="{{cmsConfig.livingbodyType===0}}"> 查看规范视频 </view>
+            <view bindtap="verifyBackToIndex" class="page-body-link" style="margin-top:3px">回到首页</view>
+            <view class="index-risk-tip">
+                <view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </view>
+            </view>
+            <view class="js_dialog" id="iosDialog1" style="opacity: 1;" wx:if="{{failInfo.is_modal_showing}}">
+                <view class="weui-mask"></view>
+                <view class="weui-dialog" style="width:80%;">
+                    <view class="weui-dialog__hd" style="padding:0;margin:0;padding:1em 1.6em .8em;">
+                        <strong class="weui-dialog__title">规范视频</strong>
+                    </view>
+                    <video autoplay="true" showFullscreenBtn="{{false}}" src="https://faceid-h5-1254418846.file.myqcloud.com/video/number.mp4" style="width:100%;margin-top:4px;"></video>
+                    <view class="weui-dialog__ft">
+                        <view bindtap="switchfailModal" class="weui-dialog__btn weui-dialog__btn_primary"> 知道了 </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <block wx:if="{{curPage===6}}">
+            <view class="verifyResultTop">
+                <icon size="75" type="success"></icon>
+            </view>
+            <view class="verifyResultSuccess">{{cmsConfig.page.success.successTitle}}</view>
+            <view class="verifyResultHint">{{cmsConfig.page.success.successTips}}</view>
+            <view class="verifyResultHint">{{cmsConfig.page.success.successTips2}}</view>
+            <view class="index-btn" style="margin-top:135rpx">
+                <button bindtap="successGoToNext" hoverClass="btn-hover" style="width:674rpx" type="primary"> 下一步 </button>
+            </view>
+            <view class="index-risk-tip">
+                <view class="risk-tip" wx:if="{{cmsConfig.Common.RiskTip}}"> {{cmsConfig.Common.RiskTip}} </view>
+            </view>
+        </block>
+    </view>
+</view>
+<view class="js_dialog" id="iosDialog1" wx:if="{{showErrorMsg}}">
+    <view class="weui-mask"></view>
+    <view class="weui-dialog style2 rule">
+        <view class="weui-icon_area">
+            <view class="iconbg"></view>
+            <icon class="icon-box-img" size="75" type="warn"></icon>
+        </view>
+        <view class="weui-dialog__hd" wx:if="{{err.error_msg!=='OCR识别失败'&&err.error_msg!=='证件日期识别失败'}}">
+            <strong class="weui-dialog__title">{{err.ErrorMsg}}</strong>
+        </view>
+        <view class="weui-dialog__hd" style="margin-bottom:0" wx:else>
+            <strong class="weui-dialog__title">{{err.ErrorMsg}}</strong>
+            <view>
+                <label style="color:#989898;" wx:if="{{err.error_msg=='OCR识别失败'}}">请根据规范重新拍摄</label>
+                <label style="color:#989898;" wx:if="{{err.error_msg=='证件日期识别失败'}}">请按规范重新拍摄</label>
+                <image src="https://s.beta.gtimg.com/GodIdent/huiyan-ui-new/images-wx/ocr-fail.png" style="width:100%;height:150px;margin:50rpx 0;"></image>
+            </view>
+        </view>
+        <view class="weui-dialog__ft">
+            <view bindtap="switchDialog" class="{{cmsConfig.Common.IsWxNative?'weui-dialog__btn weui-dialog__btn_primary color-green':'weui-dialog__btn weui-dialog__btn_primary'}}" hoverClass="bg-gray"> 我知道了 </view>
+        </view>
+    </view>
+</view>
+<block wx:if="{{show_auth_panel}}">
+    <view class="auth-bg"></view>
+    <view class="auth-main">
+        <view class="auth-info">{{authInfo}}</view>
+        <button class="auth-btn-set" openType="openSetting">
+            <image src="http://beta.gtimg.com/GodIdent/huiyan/img/icon42_appwx_logo.png"></image> 打开授权设置 </button>
+    </view>
+</block>

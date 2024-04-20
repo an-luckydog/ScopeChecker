@@ -1,0 +1,3 @@
+<view class="mms">
+    <canvas canvasId="myCanvas" class="canvas"></canvas>
+</view>

@@ -1,0 +1,9 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "专家科普",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-navigator": "../../components/cy-navigator/index",
+        "cy-loading": "../../components/cy-loading/index"
+    }
+}

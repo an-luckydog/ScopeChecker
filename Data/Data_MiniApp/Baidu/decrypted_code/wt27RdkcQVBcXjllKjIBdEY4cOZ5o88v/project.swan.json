@@ -1,0 +1,43 @@
+{
+    "appid": "17659322",
+    "compilation-args": {
+        "common": {},
+        "options": [
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/connect/connect",
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 0,
+                "text": "pages/connect/connect"
+            }
+        ],
+        "selected": -3
+    },
+    "host": "baiduboxapp",
+    "preview": {
+        "packageId": 809767
+    },
+    "projectname": "docin_baidu_small_program",
+    "publish": {
+        "tips": [
+            "小程序包内容将被百度解析和收录，用于内容的风险控制。",
+            "您已开通分享web化，请确保分享web化体验无问题后，再进行发布。"
+        ],
+        "version": "1.4.11"
+    },
+    "setting": {
+        "urlCheck": true
+    },
+    "swan": {
+        "baiduboxapp": {
+            "extensionJsVersion": "1.21.2",
+            "swanJsVersion": "3.400.5"
+        }
+    }
+}

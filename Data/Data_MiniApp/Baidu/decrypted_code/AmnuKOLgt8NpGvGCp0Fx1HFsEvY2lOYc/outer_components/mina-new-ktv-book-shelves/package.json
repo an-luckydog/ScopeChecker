@@ -1,0 +1,11 @@
+{
+  "name": "@gfe/mina-new-ktv-book-shelves",
+  "version": "1.0.2",
+  "description": "点评小程序 poi 页 KTV 预定货架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

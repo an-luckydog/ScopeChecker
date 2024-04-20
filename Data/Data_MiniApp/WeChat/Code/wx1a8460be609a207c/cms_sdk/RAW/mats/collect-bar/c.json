@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "CMSSDKCollectBar": "/cms_sdk_extension_package/RAW/mats/collect-bar/c",
+        "c_s9cqwep5zl70": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "CMSSDKCollectBar": "c_s9cqwep5zl70"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "guarantee-bar": "@baidu/guarantee-popper-xcx/dist/components/guarantee-bar",
+        "guarantee-bar-popup": "@baidu/guarantee-popper-xcx/dist/components/guarantee-bar-popup"
+    }
+}

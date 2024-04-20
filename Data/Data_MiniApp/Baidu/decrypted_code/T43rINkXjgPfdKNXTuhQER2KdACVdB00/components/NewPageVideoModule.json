@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-video-card": "./GameVideoCard",
+        "mod-line": "./ModLine"
+    },
+    "component": true
+}

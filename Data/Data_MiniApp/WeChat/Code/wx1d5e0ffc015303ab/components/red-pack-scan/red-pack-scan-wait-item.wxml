@@ -1,0 +1,15 @@
+<view class="{{['avtive-red-wait-item',isBigScreen?'':'smallScreen']}}">
+    <view class="avtive-red-wait-item-title">恭喜！您获得待激活红包</view>
+    <view class="avtive-red-wait-item-center">
+        <view class="avtive-red-wait-item-center-money">
+            <text class="avtive-red-wait-item-center-money-cunt">{{$root.m0}}</text>
+            <text class="avtive-red-wait-item-center-money-unit">元<text class="avtive-red-wait-item-center-money-unit-tip">待激活</text>
+            </text>
+        </view>
+        <view class="avtive-red-wait-item-center-time">{{sweepReply.sqwaExpireTime+'秒前有效'}}</view>
+        <view class="avtive-red-wait-item-center-msg1">购买指定活动产品</view>
+        <view bindtap="__e" class="avtive-red-wait-item-center-msg4 text-overflow-ellipsis" data-event-opts="{{[ [ 'tap',[ [ 'toWaitWinningRecordRule',['$event'] ] ] ] ]}}">{{sweepReply.sqwaActivationSkuNames}}</view>
+        <view class="avtive-red-wait-item-center-msg2">扫描瓶盖码/拉环码激活</view>
+        <view class="avtive-red-wait-item-center-msg3">可到“<text>我的-待激活红包</text>”查看</view>
+    </view>
+</view>

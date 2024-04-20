@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "half-px-line": "./HalfPxLine"
+    },
+    "component": true
+}

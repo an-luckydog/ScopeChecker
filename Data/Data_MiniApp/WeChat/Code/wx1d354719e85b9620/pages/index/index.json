@@ -1,0 +1,12 @@
+{
+    "navigationBarTitleText": "",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "u-notice-bar": "/node-modules/uview-ui/components/u-notice-bar/u-notice-bar",
+        "u-modal": "/node-modules/uview-ui/components/u-modal/u-modal",
+        "guide-add": "/pages/index/components/guide-add/index",
+        "doctor-card": "/components/doctor-card/DoctorCard",
+        "drag-ball": "/components/drag-ball/drag-ball",
+        "verify-mpsdk": "/wxcomponents/verify_mpsdk/index/index"
+    }
+}

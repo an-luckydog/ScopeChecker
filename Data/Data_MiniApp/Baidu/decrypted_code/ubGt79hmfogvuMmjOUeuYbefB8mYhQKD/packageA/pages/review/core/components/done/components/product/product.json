@@ -1,0 +1,13 @@
+{
+    "component": true,
+    "usingComponents": {
+        "user-cmp": "../components/user/user",
+        "star-cmp": "../components/star/star",
+        "label-cmp": "../components/label/label",
+        "word-cmp": "../components/word/word",
+        "image-cmp": "../components/image/image",
+        "video-cmp": "../components/video/video",
+        "product-cmp": "../components/product/product",
+        "reward-cmp": "../components/reward/reward"
+    }
+}

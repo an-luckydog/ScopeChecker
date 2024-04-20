@@ -1,0 +1,20 @@
+<view class="shop-status-panel{{loading?' skeleton':''}}{{hasTabBar?'':' no-tab'}}">
+    <view bindtap="closeDialog" class="base-icon icon-jiantou-xia"></view>
+    <common-error bind:errorButtonClick="fetchRecommend" btnText="重新加载" customClass="shop-status" errorTitle="网络异常，请重试" fullPage="{{false}}" wx:if="{{requestError}}"></common-error>
+    <block wx:else>
+        <view class="header">
+            <view class="title" wx:if="{{title}}">
+                <image class="head-icon" src="https://p0.meituan.net/ingee/91fbd667bb22ad8d51ed5f1c9eeee8296066.png" wx:if="{{status!==0}}"></image>{{title}}</view>
+            <view class="sub-title" wx:if="{{subTitle}}">{{subTitle}}</view>
+        </view>
+        <block wx:if="{{shopList&&shopList.length}}">
+            <view class="list-title" wx:if="{{status!==0}}">为你推荐其他门店</view>
+            <scroll-view enhanced scrollY class="shop-container" showScrollbar="{{false}}">
+                <view class="shop-item" wx:for="{{shopList}}" wx:key="index">
+                    <shop-item bind:selectShop="toShopMenu" shop="{{item}}"></shop-item>
+                </view>
+            </scroll-view>
+        </block>
+        <view class="shine" wx:if="{{loading}}"></view>
+    </block>
+</view>

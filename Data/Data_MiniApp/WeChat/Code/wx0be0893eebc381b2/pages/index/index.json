@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "对啊 · 背单词",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#eeeeee",
+    "usingComponents": {
+        "dialog": "../../components/dialog/index"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-bar-header": "./GameBarHeader",
+        "game-item": "./GameItem"
+    },
+    "component": true
+}

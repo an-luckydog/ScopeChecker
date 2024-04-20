@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "download-toast": "/components/download/toast/download-toast"
+  }
+}

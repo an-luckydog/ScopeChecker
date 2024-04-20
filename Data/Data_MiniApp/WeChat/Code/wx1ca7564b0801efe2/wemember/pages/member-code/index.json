@@ -1,0 +1,10 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "会员码",
+    "componentPlaceholder": {
+        "lottery": "view"
+    },
+    "styleIsolation": "apply-shared",
+    "transparentTitle": "always",
+    "defaultTitle": "会员码"
+}

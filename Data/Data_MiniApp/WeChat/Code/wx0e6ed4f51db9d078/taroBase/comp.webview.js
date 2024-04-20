@@ -1,0 +1,3 @@
+__wxCodeSpace__.batchAddCompiledTemplate(function(G,R,D,Q,gdc,X,Y,Z,RG={}){var P=RG.P||function(a){return typeof a==='function'?a:()=>{}};return {'taroBase/comp':(()=>{var H={};var S;var I=(P)=>{if(!S)S=Object.assign({},G["taroBase/base"]._,H);return S[P]};H[""]=(R,C,D,U)=>{var L=R.c;var M=R.m;var O=R.r;var A={};var K=U===true;return {C:(C,T,E,B)=>{var a="tmpl_0_container";B(a,(C,T,E,B,F,S,J)=>{var b=I(a);if(a&&b)b(R,C,{i:D.i,l:D.l},K||(U?{i:U.i,l:U.l}:undefined)).C(C,T,E,B,F,S,J)})},B:A}};return Object.assign(function(R){return H[R]},{_:H})})(),}});
+var noCss=typeof __vd_version_info__!=='undefined'&&__vd_version_info__.noCss===true;if(!noCss){__wxAppCode__['taroBase/comp.wxss'] = setCssToHead([],undefined,{path:"./taroBase/comp.wxss"});
+}

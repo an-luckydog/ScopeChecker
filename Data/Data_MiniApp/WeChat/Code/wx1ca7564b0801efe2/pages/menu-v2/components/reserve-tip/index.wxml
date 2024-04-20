@@ -1,0 +1,5 @@
+<view class="tips-global">
+    <view class="content">
+        <view class="{{item.type==='NORMAL'?'':'time-tips'}}" wx:for="{{tipTextList}}" wx:key="index">{{item.text}}</view>
+    </view>
+</view>

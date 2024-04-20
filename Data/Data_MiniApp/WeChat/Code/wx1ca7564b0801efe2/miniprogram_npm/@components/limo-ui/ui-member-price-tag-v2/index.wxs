@@ -1,0 +1,6 @@
+function isShowPrice(price) {
+    return ((price + '').length)
+};
+module.exports = ({
+    isShowPrice: isShowPrice,
+});

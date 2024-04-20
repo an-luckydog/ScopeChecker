@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "recommend-doctor": "../recommend_doctor/recommend_doctor"
+    }
+}

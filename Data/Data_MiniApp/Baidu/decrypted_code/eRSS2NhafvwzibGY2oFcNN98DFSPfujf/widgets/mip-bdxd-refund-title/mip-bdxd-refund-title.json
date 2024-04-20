@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mip-bdxd-consult-sdk": "/widgets/mip-bdxd-consult-sdk/mip-bdxd-consult-sdk"
+    }
+}

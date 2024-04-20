@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mip-bdxd-order-result": "/widgets/mip-bdxd-order-result/mip-bdxd-order-result",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "mip-bdxd-task-card": "/widgets/mip-bdxd-task-card/mip-bdxd-task-card",
+        "login": "/components/login/login",
+        "new-customer-dialog": "/widgets/mip-bdxd-order-result-page/components/new-customer-dialog/new-customer-dialog",
+        "ug-ui": "@baidu/ug-task-supplier/dist/swan/ui"
+    }
+}

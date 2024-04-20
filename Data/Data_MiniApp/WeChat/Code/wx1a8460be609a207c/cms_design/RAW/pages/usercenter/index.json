@@ -1,0 +1,10 @@
+{
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "design-page": "../../components/design/index",
+        "titan-one-component": "/@titan/cs/oc/i"
+    },
+    "componentPlaceholder": {},
+    "component": true
+}

@@ -1,0 +1,49 @@
+var cateMap = ({
+    "-60": "plugin-list",
+    "-70": "deal-coupons",
+    "-90": "coupon-assistant",
+});
+
+function ArrayMerge(list) {
+    return (list.reduce((function(prev, curr) {
+        return (prev.concat(curr))
+    }), []))
+};
+
+function getTemplate(id) {
+    return (cateMap[((nt_0 = (id + ""), null == nt_0 ? undefined : 'number' === typeof nt_0 ? nt_0 : "" + nt_0))] || "dish-list")
+};
+
+function getData(str) {
+    if (!str) {
+        return (({}))
+    };
+    return (JSON.parse(str))
+};
+
+function getCatClassName(id, url, activeUrl, selectCategory) {
+    var className = "";
+    if (selectCategory === "c" + id) {
+        className = "active";
+        if ((activeUrl || url) && id[(0)] !== "-") {
+            className += " cat-pic"
+        }
+    } else if (id[(0)] !== "-" && url) {
+        className = "cat-pic"
+    };
+    return (className)
+};
+
+function getExtras(showRecommendPairing, categoriesId) {
+    return ({
+        showRecommendPairing,
+        categoriesId
+    })
+};
+module.exports = ({
+    ArrayMerge: ArrayMerge,
+    getTemplate: getTemplate,
+    getData: getData,
+    getCatClassName: getCatClassName,
+    getExtras: getExtras,
+});

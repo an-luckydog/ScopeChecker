@@ -1,0 +1,3 @@
+<view class="midas-wrap" id="{{midasId}}">
+    <slot></slot>
+</view>

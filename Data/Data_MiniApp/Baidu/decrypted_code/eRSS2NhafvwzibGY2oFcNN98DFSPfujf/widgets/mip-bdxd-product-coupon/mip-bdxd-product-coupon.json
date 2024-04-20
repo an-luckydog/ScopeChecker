@@ -1,0 +1,8 @@
+{
+    "components": true,
+    "usingComponents": {
+        "coupon-take": "/widgets/mip-bdxd-product-coupon/components/coupon-take",
+        "login-button":"/components/login-button/login-button",
+        "optimize-image":"/components/optimize-image/optimize-image"
+    }
+}

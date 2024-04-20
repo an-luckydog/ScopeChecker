@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "head-image": "/widgets/mip-dxdjx-daily-shop/components/head-image/head-image",
+        "daily-tabs": "/widgets/mip-dxdjx-daily-shop/components/daily-tabs/daily-tabs",
+        "shop-card": "/widgets/mip-dxdjx-daily-shop/components/shop-card/shop-card",
+        "empty": "/widgets/mip-dxdjx-daily-shop/components/empty/empty",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "optimize-image": "/components/optimize-image/optimize-image"
+    }
+}

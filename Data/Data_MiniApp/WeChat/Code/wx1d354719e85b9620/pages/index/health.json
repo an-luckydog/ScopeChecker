@@ -1,0 +1,15 @@
+{
+    "navigationBarTitleText": "健康档案",
+    "usingComponents": {
+        "u-image": "/node-modules/uview-ui/components/u-image/u-image",
+        "u-tag": "/node-modules/uview-ui/components/u-tag/u-tag",
+        "u-line-progress": "/node-modules/uview-ui/components/u-line-progress/u-line-progress",
+        "health-all": "/components/health/HealthAll",
+        "health-case": "/components/health/HealthCase",
+        "none-page": "/components/health/NonePage",
+        "health-inspection": "/components/health/HealthInspection",
+        "health-other": "/components/health/HealthOther",
+        "none-family": "/components/health/NoneFamily",
+        "verify-mpsdk": "/wxcomponents/verify_mpsdk/index/index"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "format-price": "/components/format-price/format-price",
+        "cell": "/components/cell/cell",
+        "popup": "/components/popup/popup",
+        "coupon-three": "/components/coupon-card/coupon-three/index",
+        "optimize-image":"/components/optimize-image/optimize-image"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "转盘",
+    "usingComponents": {
+        "screen-text-scroll": "/components/screenTextScroll",
+        "app-title": "/components/app-title",
+        "about-location": "/components/aboustLocation",
+        "app": "/components/privacy/privacy"
+    }
+}

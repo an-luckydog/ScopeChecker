@@ -1,0 +1,43 @@
+page {
+    background: #f2f2f2;
+    padding-bottom: 30rpx;
+    font-family: 'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;
+}
+
+.main {
+    width: 750rpx;
+}
+
+.lineBox {
+    padding: 30rpx;
+    background: #fff;
+    border-bottom: 2rpx solid #f2f2f2;
+}
+
+.m-t-3 {
+    margin-top: 30rpx;
+}
+
+.lineTab {
+    width: 280rpx;
+    font-size: 35rpx;
+    color: #6CB7F4;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.activityContent {
+    width: 690rpx;
+    font-size: 28rpx;
+    padding: 30rpx;
+    background: #fff;
+    border-bottom: 2rpx solid #f2f2f2;
+}
+
+.m-t-2 {
+    margin-top: 20rpx;
+}
+
+.c-r {
+    color: red;
+}

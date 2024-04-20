@@ -1,0 +1,15 @@
+{
+    "navigationBarTitleText": "personal-center",
+    "navigationStyle": "custom",
+    "onReachBottomDistance": 150,
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "van-popup": "../../wxcomponents/vant/popup/index",
+        "van-image": "../../wxcomponents/vant/image/index",
+        "van-loading": "../../wxcomponents/vant/loading/index",
+        "van-icon": "../../wxcomponents/vant/icon/index",
+        "ksp-cropper": "../../components/ksp-cropper/ksp-cropper",
+        "operation-popup": "../../components/operation-popup/operation-popup",
+        "error-comp": "../../components/ErrorComp/ErrorComp"
+    }
+}

@@ -1,0 +1,27 @@
+{   "component": true,
+    "usingComponents": {
+        "format-price": "/components/format-price/format-price",
+        "cell": "/components/cell/cell",
+        "gap": "/components/gap/gap",
+        "disclaimer": "/widgets/mip-bdxd-disclaimer/mip-bdxd-disclaimer",
+        "custom-check": "/components/custom-check/custom-check",
+        "input-number": "/components/input-number/input-number",
+        "contact-card": "/widgets/mip-bdxd-contact-card/mip-bdxd-contact-card",
+        "m-item": "/components/form-item/form-item",
+        "shop-card": "/widgets/mip-bdxd-order-shop-card/mip-bdxd-order-shop-card",
+        "goods-card": "/widgets/mip-bdxd-order-goods-card/mip-bdxd-order-goods-card",
+        "submit-bar": "/widgets/mip-bdxd-order-submit-bar/mip-bdxd-order-submit-bar",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "take-coupon": "/widgets/mip-bdxd-take-coupon/mip-bdxd-take-coupon",
+        "take-coupon-multi": "/widgets/mip-bdxd-take-coupon-multi/mip-bdxd-take-coupon-multi",
+        "card-user-info": "/widgets/mip-bdxd-card-user-info/mip-bdxd-card-user-info",
+        "order-overseas": "/widgets/mip-bdxd-order-overseas/mip-bdxd-order-overseas",
+        "switch-paytype": "/widgets/mip-bdxd-switch-paytype/mip-bdxd-switch-paytype",
+        "custom-input": "/components/input/input",
+        "login": "/components/login/login",
+        "activity-layer": "/widgets/mip-dxdjx-activity-layer/mip-dxdjx-activity-layer",
+        "gt-dxdjx-h5-red-packet":"/widgets/gt-dxdjx-h5-red-packet/gt-dxdjx-h5-red-packet",
+        "gt-dxdjx-h5-certification": "/widgets/gt-dxdjx-h5-certification/gt-dxdjx-h5-certification",
+        "guarantee-sdk": "/widgets/mip-dxdjx-guarantee-sdk/mip-dxdjx-guarantee-sdk"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "门店取件提醒成功",
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "appInfo": {
+        "app_key": "6xMB30fQjB3edqs8GUGPbCx7RR5kcg8d",
+        "app_name": "中国国航",
+        "app_photo": "https://b.bdstatic.com/searchbox/mappconsole/image/20180821/1534844649995002.png",
+        "domains": {
+            "downloadFile": [
+                "https://m.airchina.com.cn",
+                "https://m.airchina.com"
+            ],
+            "request": [
+                "https://m.airchina.com.cn",
+                "https://m.airchina.com"
+            ],
+            "socket": [
+                "wss://m.airchina.com.cn"
+            ],
+            "uploadFile": [
+                "https://m.airchina.com.cn",
+                "https://m.airchina.com"
+            ]
+        },
+        "isExistsPackage": false,
+        "isTp": false,
+        "needWeb": false,
+        "webAction": [
+            "swan/navigateTo",
+            "swan/navigateBack",
+            "swan/switchTab",
+            "swan/reLaunch",
+            "swan/redirectTo",
+            "swan/postMessage",
+            "swan/previewImage",
+            "swan/getLocation"
+        ],
+        "webview_domains": [
+            "https://m.airchina.com.cn",
+            "https://m.airchina.com"
+        ]
+    },
+    "appid": "11708164",
+    "appkey": "6xMB30fQjB3edqs8GUGPbCx7RR5kcg8d",
+    "cloudTesting": {
+        "forcePreview": false
+    },
+    "compilation-args": {
+        "selected": -2,
+        "common": {
+            "quickPreview": true
+        },
+        "options": [
+            {
+                "text": "pages/flightStatus/showFlightDynDetail/showFlightDynDetail",
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/flightStatus/showFlightDynDetail/showFlightDynDetail",
+                    "query": "code=M1WANG/WENYI          ENZFKEG SINHGHCA 0768 239Y049F0003 15C>3180OO1237BCA              29999243506586702CA                     2PC*30600000K0911",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 0
+            }
+        ],
+        "forceChanged": {},
+        "useOldCompiler": true
+    },
+    "compileType": "smartprogram",
+    "condition": {
+        "swan": {
+            "current": -2,
+            "list": []
+        }
+    },
+    "developType": "normal",
+    "host": "baiduboxapp",
+    "libVersion": "2.10.34",
+    "minSwanVersion": "1.10.37",
+    "name": "",
+    "preview": {
+        "packageId": 1088671
+    },
+    "project-info": {
+        "urlCheck": false
+    },
+    "projectname": "baiduApplet",
+    "publish": {
+        "tips": [
+            "小程序包内容将被百度解析和收录，用于内容的风险控制。",
+            "您已开通分享web化，请确保分享web化体验无问题后，再进行发布。"
+        ],
+        "version": "1.6.4.0"
+    },
+    "setting": {
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.690.3",
+            "extensionJsVersion": "1.21.2"
+        }
+    },
+    "swanJs": {
+        "baidu": "1.13.8",
+        "baiduboxapp": "3.30.20"
+    },
+    "swanList": ""
+}

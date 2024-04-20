@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "shop-review-tag": "../shop-review-tag/shop-review-tag",
+        "shop-review": "../shop-review/shop-review",
+        "app-launch-bd": "../app-launch-bd/index"
+    }
+}

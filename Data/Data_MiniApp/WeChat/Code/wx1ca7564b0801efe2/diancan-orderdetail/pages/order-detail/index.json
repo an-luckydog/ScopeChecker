@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "订单详情",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,4 @@
+<view class="none-page data-v-33aeccf4">
+    <image class="icon data-v-33aeccf4" src="{{imgSrc}}"></image>
+    <view class="none-text data-v-33aeccf4">{{text}}</view>
+</view>

@@ -1,0 +1,14 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "活动",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "u-image": "../../node-modules/uview-plus/components/u-image/u-image",
+        "u-sticky": "../../node-modules/uview-plus/components/u-sticky/u-sticky",
+        "c-goods-card": "../../components/c-goods-card/c-goods-card",
+        "c-location-picker": "../../components/c-location-picker/c-location-picker",
+        "c-page": "../../components/c-page/c-page",
+        "timeline-tip": "./timeline-tip"
+    }
+}

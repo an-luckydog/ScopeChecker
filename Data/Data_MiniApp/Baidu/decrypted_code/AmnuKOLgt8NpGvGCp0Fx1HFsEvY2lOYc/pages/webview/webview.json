@@ -1,0 +1,1 @@
+{"usingComponents":{"yodaSlider":"/common/components/slider/slider"},"isUsingComponents":true,"skeleton":"","usingDynamicLibs":[],"usingPlugins":[],"usingDependencies":[],"isUsingSJS":false,"_hasVideo":false,"compileOption":{"dependencies":["otherComponents.swan.js"],"preloadTpl":["sharedComponents.swan.js"],"resourceStrategyVersion":"0.0.0"}}

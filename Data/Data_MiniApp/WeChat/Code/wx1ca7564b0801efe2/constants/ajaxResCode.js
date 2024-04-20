@@ -1,0 +1,45 @@
+Object.defineProperty(exports, "__esModule", {
+    value: !0
+}), exports.RES_CODE = void 0;
+
+var E = require("../b/helpers/objectSpread2"), _ = {
+    SUCCESS: 200,
+    ERROR: 500,
+    REDIRECT_CODE: 302,
+    NEED_SILENCE_LOGIN: 10401,
+    PORSCHE_FAIL: -1e3,
+    LIMIT_ORDER_DISH: 10208,
+    SKIP_DISTANCE_CHECK: 100500,
+    POINT_FAIL: 1001
+};
+
+exports.RES_CODE = _;
+
+E(E({
+    BACK_MENU: 110,
+    RELOAD: 111,
+    TOAST: 113,
+    POST_ORDER_SUCCESS: 201,
+    DEAL_DISH_NEED_CONFIRM: 220,
+    MUST_ORDER_FAIL: 401,
+    CLOUD_CART_FAIL: 402,
+    ABNORMAL: 112,
+    BEING_LOCKED: 403,
+    BIZ_ERROR: 400,
+    FULL_PAY_FAIL: 405,
+    PAY_CONFIRM: 404,
+    ONLY_PAY_ERROR: 406,
+    ADJUST_MUST_DISH: 407,
+    POINT_OVERFLOW_FAIL: 408,
+    NEED_CALL_BUSINESS: 409,
+    CALL_SERVICE: 700,
+    REPEAT_PAY: 701,
+    CHECK_FAILURE: 702,
+    LOST_OPENID: 800
+}, _), {}, {
+    INVALID_TABLE_STATUS: 900,
+    RE_SCAN: 417,
+    MEMBER_ERROR: -1e4,
+    NEW_RECHARGE_STEP: 901,
+    NEED_BALANCE_PAY: 902
+});

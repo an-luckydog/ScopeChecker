@@ -1,0 +1,15 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "商城",
+    "usingComponents": {
+        "act-com": "/components/act-com/act-com",
+        "privacy": "/components/privacy/privacy",
+        "wx-open-setting": "/components/wx-open-setting/wx-open-setting",
+        "weixin-open-setting": "/components/wx-open-setting/wx-open-setting",
+        "shop-comui": "/components/shop-comui",
+        "app-title": "/components/app-title",
+        "giftcard-comui": "/components/giftcard-comui",
+        "magic-list": "/components/magic-list",
+        "app": "/components/privacy/privacy"
+    }
+}

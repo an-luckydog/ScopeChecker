@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "brick-middle-goods-item": "./brick-middle-goods-item"
+    }
+}

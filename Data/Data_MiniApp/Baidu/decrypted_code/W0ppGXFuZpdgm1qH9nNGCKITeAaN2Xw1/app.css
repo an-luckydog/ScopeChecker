@@ -1,0 +1,294 @@
+/* 颜色目录变量start */
+
+/* 颜色目录变量end */
+
+/* 尺寸变量目录start */
+
+/* 尺寸变量目录end */
+
+/* 字体大小目录start */
+
+/* 字体大小目录end */
+
+/* 字体目录start */
+
+/* 字体目录end */
+
+/**
+ * 0.5像素边框
+ */
+
+/*0.5像素上边框*/
+
+/*0.5像素下边框*/
+
+/*0.5像素左边框*/
+
+/*0.5像素右边框*/
+
+/*0.5像素四边边框*/
+
+/*1像素的四边边框，给after设置border-radius可以有圆角效果*/
+
+/*1像素上边框*/
+
+/*1像素下边框*/
+
+/*1像素左边框*/
+
+/*1像素右边框*/.ditto-ui-modal{justify-content:center;display:flex;align-items:center;display:-webkit-flex;position:fixed;z-index:1000;top:0;right:0;left:0;bottom:0}.ditto-ui-modal .ditto-ui-modal-mask{position:fixed;z-index:1000;top:0;right:0;left:0;bottom:0;background:rgba(0,0,0,0.2);justify-content:center;display:flex;align-items:center;display:-webkit-flex}.ditto-ui-modal .ditto-ui-modal-container{width:100%;display:flex;flex-direction:column;width:78.66666667vw;min-height:33.86666667vw;border-radius:1.33333333vw;overflow:hidden;z-index:1001}.ditto-ui-modal .ditto-ui-modal-container.raise-animation{animation:bubbleAnimation 0.2s linear forwards}.ditto-ui-modal .ditto-ui-modal-container.fade-animation{animation:fadeAnimation 0.3s linear forwards}@keyframes bubbleAnimation{0%{transform:translateY(8vw)}100%{transform:translateY(0)}}@keyframes fadeAnimation{0%{opacity:0}100%{opacity:1}}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-content{display:flex;flex-direction:column;align-items:center;padding:8.53333333vw 6.4vw 7.73333333vw 6.4vw;background:#fff}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-icon{margin-bottom:4.26666667vw;width:9.6vw;height:9.6vw}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-icon .ditto-ui-icon{width:9.6vw;height:9.6vw}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-title{font-size:4.8vw;line-height:4.8vw;font-weight:700;color:#222222}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-message{font-size:3.73333333vw;color:#999999;margin-top:2.4vw;-webkit-overflow-scrolling:touch;overflow:auto;max-height:80vw}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-content{display:flex;margin-top:4.26666667vw;justify-content:center;align-items:center}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-action-container{display:flex;background:#fff;flex-direction:column;width:100%}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-action-line{height:12vw;display:flex;flex:1;border-top:0.26666667vw solid #f0f0f0}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-action-line-touch{background-color:rgba(0,0,0,0.05)}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-action-item{display:flex;flex:1;height:11.73333333vw;font-size:4.26666667vw;font-weight:700;justify-content:center;align-items:center;color:#3072f6}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-action-item-confirm-agree{border-left:0.26666667vw solid #f0f0f0}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-action-item-confirm-cancel{color:#222222}.ditto-ui-modal .ditto-ui-modal-container .ditto-ui-modal-action-list-placeholder{height:4.8vw}.zyx{}.ditto-ui-filter-quick-bar{background:#fff;font-size:0;margin:0;padding:0.53vw 0}.ditto-ui-filter-quick-bar .ditto-ui-tab-list{margin:0 3.2vw;list-style:none}.ditto-ui-filter-quick-bar .ditto-ui-tab-item{display:inline-block;width:18.67vw;height:9.07vw;line-height:9.07vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center;color:#101d37;background:#f8f8f9;font-size:3.2vw;margin:1.07vw 2.13vw;letter-spacing:0;border-radius:0.53vw}.ditto-ui-filter-quick-bar .ditto-ui-tab-item:active,
+.ditto-ui-filter-quick-bar .ditto-ui-tab-item.ditto-ui-active{font-weight:bold;background:#f0f5ff}.ditto-ui-filter-quick-bar .ditto-ui-tab-item:last-child{margin-right:0}.ditto-ui-filter-quick-bar.ditto-ui-ke .ditto-ui-tab-item.ditto-ui-active{color:#3072f6;background:#f0f5ff}.ditto-ui-filter-quick-bar.ditto-ui-lianjia .ditto-ui-tab-item.ditto-ui-active{color:#00ae66;background:#f0f8f5}.ditto-ui-filter-quick-bar.ditto-ui-type-inline{display:flex;overflow:auto}.ditto-ui-filter-quick-bar.ditto-ui-type-inline .ditto-ui-tab-list{display:flex}.ditto-ui-filter-quick-bar.ditto-ui-type-inline .ditto-ui-tab-item{margin:1.07vw 2.13vw}.zyx{}.ditto-ui-filter-panel{display:flex;flex-direction:column;max-height:60vh;min-height:40vh;background:#fff}.ditto-ui-filter-panel .ditto-ui-main-container{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;min-height:26.67vw;padding:3.2vw 0 4.27vw}.ditto-ui-filter-panel .ditto-ui-ctrl-bar{display:flex;justify-content:center;align-items:center;height:21.33vw;min-height:21.33vw;padding:0 6.4vw 0 2.13vw;border-top:0.5px solid #ccc;background:#fff}.ditto-ui-filter-panel .ditto-ui-ctrl-bar .ditto-ui-reset-button{width:12.8vw;height:16vw}.ditto-ui-filter-panel .ditto-ui-ctrl-bar .ditto-ui-reset-button .ditto-ui-icon{display:block;width:8.53vw;height:8.53vw;margin:1.33vw auto 0;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAS1BMVEX///8AAAAxMTH39/ceHh5xcXHf39/b29tLS0t1dXVZWVnn5+ecnJwYGBizs7P7+/vDw8NqampCQkLr6+u5ubmmpqYsLCxlZWWGhoZmegqeAAAA/UlEQVRo3u3V246DIBSFYTbikWFgsNp5/ycdGdJaai/cFhPbrv9qJfvii4kJAiGEEDpYur6mRf56STfJPjvQUlKZHWhSoHlRoJ0qyx2BOAEAAAAAwOcArr1LpYC6vzvBaqBFKbBsYAGeD3gWIOlRYzyO9Cj5PGBcPDqTBzB1WmUvV1vVaWYToMTqFAAA7wqYanVmA8ALwE5AuTo65m8KYBNwkuOwJ6Bpqs4OFPMHBOBLzIccQNGQciL2fQucDHU2A/Ab5xIwYWcAOpoqloAO+wfAawPU/afm2fmwZdxN2Cruoz44ewJnPnBmAdoTM98LXrZgZQVCCCGUpY1vyh9yRhD13mB/UwAAAABJRU5ErkJggg==) no-repeat center center/8.53vw}.ditto-ui-filter-panel .ditto-ui-ctrl-bar .ditto-ui-reset-button .ditto-ui-text{display:block;line-height:4.27vw;font-size:2.93vw;font-weight:bold;text-align:center;color:#222222}.ditto-ui-filter-panel .ditto-ui-ctrl-bar .ditto-ui-search-button{flex:1;width:53.33vw;height:12.8vw;line-height:12.8vw;font-size:4.27vw;font-weight:bold;color:#fff;letter-spacing:0;text-align:center}.ditto-ui-filter-panel.ditto-ui-ke .ditto-ui-search-button{background:#3072f6}.ditto-ui-filter-panel.ditto-ui-lianjia .ditto-ui-search-button{background:#00ae66}.zyx{}.ditto-ui-filter-panel{display:flex;flex-direction:column;max-height:60vh;min-height:40vh;background:#fff}.ditto-ui-filter-panel .ditto-ui-main-container{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;min-height:26.67vw;padding:3.2vw 0 4.27vw}.ditto-ui-filter-panel .ditto-ui-ctrl-bar{display:flex;justify-content:center;align-items:center;height:21.33vw;min-height:21.33vw;padding:0 6.4vw 0 2.13vw;border-top:0.5px solid #ccc;background:#fff}.ditto-ui-filter-panel .ditto-ui-ctrl-bar .ditto-ui-reset-button{width:12.8vw;height:16vw}.ditto-ui-filter-panel .ditto-ui-ctrl-bar .ditto-ui-reset-button .ditto-ui-icon{display:block;width:8.53vw;height:8.53vw;margin:1.33vw auto 0;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAMAAADVRocKAAAAS1BMVEX///8AAAAxMTH39/ceHh5xcXHf39/b29tLS0t1dXVZWVnn5+ecnJwYGBizs7P7+/vDw8NqampCQkLr6+u5ubmmpqYsLCxlZWWGhoZmegqeAAAA/UlEQVRo3u3V246DIBSFYTbikWFgsNp5/ycdGdJaai/cFhPbrv9qJfvii4kJAiGEEDpYur6mRf56STfJPjvQUlKZHWhSoHlRoJ0qyx2BOAEAAAAAwOcArr1LpYC6vzvBaqBFKbBsYAGeD3gWIOlRYzyO9Cj5PGBcPDqTBzB1WmUvV1vVaWYToMTqFAAA7wqYanVmA8ALwE5AuTo65m8KYBNwkuOwJ6Bpqs4OFPMHBOBLzIccQNGQciL2fQucDHU2A/Ab5xIwYWcAOpoqloAO+wfAawPU/afm2fmwZdxN2Cruoz44ewJnPnBmAdoTM98LXrZgZQVCCCGUpY1vyh9yRhD13mB/UwAAAABJRU5ErkJggg==) no-repeat center center/8.53vw}.ditto-ui-filter-panel .ditto-ui-ctrl-bar .ditto-ui-reset-button .ditto-ui-text{display:block;line-height:4.27vw;font-size:2.93vw;font-weight:bold;text-align:center;color:#222222}.ditto-ui-filter-panel .ditto-ui-ctrl-bar .ditto-ui-search-button{flex:1;width:53.33vw;height:12.8vw;line-height:12.8vw;font-size:4.27vw;font-weight:bold;color:#fff;letter-spacing:0;text-align:center}.ditto-ui-filter-panel.ditto-ui-ke .ditto-ui-search-button{background:#3072f6}.ditto-ui-filter-panel.ditto-ui-lianjia .ditto-ui-search-button{background:#00ae66}.ditto-ui-filter-multiple-check{height:100%}.ditto-ui-filter-multiple-check .ditto-ui-multiple-item{padding:0 6.4vw;clear:both}.ditto-ui-filter-multiple-check .ditto-ui-multiple-item .ditto-ui-check-title{font-weight:bold;font-size:5.07vw;color:#222222;letter-spacing:0;line-height:5.33vw;margin:4.27vw 0}.ditto-ui-filter-multiple-check .ditto-ui-multiple-item .ditto-ui-check-items{overflow:hidden}.ditto-ui-filter-multiple-check .ditto-ui-multiple-item .ditto-ui-check-items .ditto-ui-check-item{text-decoration:none;float:left;display:block;width:19.2vw;height:9.07vw;line-height:9.07vw;background:#f8f8f8;border-radius:0.53vw;font-size:3.2vw;color:#222222;letter-spacing:0.018666666666666668vw;text-align:center;margin:0 3.2vw 3.2vw 0}.ditto-ui-filter-multiple-check .ditto-ui-multiple-item .ditto-ui-check-items .ditto-ui-check-item:nth-child(4n){margin-right:0}.ditto-ui-filter-multiple-check .ditto-ui-multiple-item .ditto-ui-check-items .ditto-ui-check-item.ditto-ui-active,
+.ditto-ui-filter-multiple-check .ditto-ui-multiple-item .ditto-ui-check-items .ditto-ui-check-item:active{font-weight:bold;background:#f0f5ff;color:#3072f6}.ditto-ui-filter-multiple-check.ditto-ui-ke .ditto-ui-multiple-item .ditto-ui-check-items .ditto-ui-check-item.ditto-ui-active,
+.ditto-ui-filter-multiple-check.ditto-ui-ke .ditto-ui-multiple-item .ditto-ui-check-items .ditto-ui-check-item:active{color:#3072f6}.ditto-ui-filter-multiple-check.ditto-ui-lianjia .ditto-ui-multiple-item .ditto-ui-check-items .ditto-ui-check-item.ditto-ui-active,
+.ditto-ui-filter-multiple-check.ditto-ui-lianjia .ditto-ui-multiple-item .ditto-ui-check-items .ditto-ui-check-item:active{color:#00ae66}.zyx{}.ditto-ui-filter-sort-check{padding:3.73vw 0;background:#ffffff;max-height:60vh;overflow:auto;-webkit-overflow-scrolling:touch}.ditto-ui-filter-sort-check .ditto-ui-check-item{text-decoration:none;padding:0 6.4vw;display:block;height:11.2vw;line-height:11.2vw;font-size:3.73vw;letter-spacing:0;color:#222222}.ditto-ui-filter-sort-check .ditto-ui-check-item.ditto-ui-active{position:relative;font-weight:bold}.ditto-ui-filter-sort-check .ditto-ui-check-item.ditto-ui-active:after{content:"";position:absolute;transform:translateY(-50%);right:6.4vw;top:50%;width:2.67vw;height:2.67vw}.ditto-ui-filter-sort-check.ditto-ui-ke .ditto-ui-check-item.ditto-ui-active{color:#3072f6}.ditto-ui-filter-sort-check.ditto-ui-ke .ditto-ui-check-item.ditto-ui-active:after{background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBzdHJva2U9IiMzMDcyZjYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik0xLjEyNSA2LjI4OEw0LjQ3NyA5Ljc1bDYuMzk4LTcuNSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+) no-repeat center center/2.67vw}.ditto-ui-filter-sort-check.ditto-ui-lianjia .ditto-ui-check-item.ditto-ui-active{color:#00ae66}.ditto-ui-filter-sort-check.ditto-ui-lianjia .ditto-ui-check-item.ditto-ui-active:after{width:3.2vw;height:3.2vw;right:5.87vw;background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBzdHJva2U9IiMwMGFlNjYiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGQ9Ik0xLjEyNSA2LjI4OEw0LjQ3NyA5Ljc1bDYuMzk4LTcuNSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+) no-repeat center center/2.67vw}.zyx{}
+
+/* 颜色目录变量start */
+
+/* 颜色目录变量end */
+
+/* 尺寸变量目录start */
+
+/* 尺寸变量目录end */
+
+/* 字体大小目录start */
+
+/* 字体大小目录end */
+
+/* 字体目录start */
+
+/* 字体目录end */.ditto-ui-tabs-wrap{height:12.8vw;width:100%;font-size:4.27vw;font-family:PingFangSC-Regular;color:#222222;background-color:#ffffff;display:flex;box-sizing:border-box;text-align:center;align-items:center;overflow-x:auto;overflow-y:auto;white-space:nowrap
+  /* .@{prefix}-tabs-wrap 同级样式start */
+  /* .@{prefix}-tabs-wrap 同级样式end */}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-vertical{flex-direction:column;width:auto;height:auto}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-vertical.ditto-ui-tabs-wrap-normal .ditto-ui-tabs-cell{margin-bottom:2.67vw}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-vertical .ditto-ui-tabs-cell:first-child{margin-left:0}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-vertical .ditto-ui-tabs-cell:last-child{margin-right:0}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-normal .ditto-ui-tabs-cell-active{color:#3072f6}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-normal .ditto-ui-tabs-cell{flex:1}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-normal-1 .ditto-ui-tabs-cell{padding:0 3.47vw}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-normal-1 .ditto-ui-tabs-cell:first-child.ditto-ui-tabs-cell-active::before{margin-left:1.6vw}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-font{font-weight:bold}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-font .ditto-ui-tabs-cell{padding:0 4vw}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-font .ditto-ui-tabs-cell:first-child.ditto-ui-tabs-cell-active::before{margin-left:1.07vw}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-font .ditto-ui-tabs-cell-active{font-size:5.87vw;font-weight:700}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-font .ditto-ui-tabs-cell-active .ditto-ui-tabs-no-visited::after{width:2.4vw;height:2.4vw;right:-2.93vw}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-card{position:relative;padding-left:3.2vw}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-card .ditto-ui-tabs-cell{padding:0 3.2vw}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-card .ditto-ui-tabs-cell:first-child{padding-left:3.2vw}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-card .ditto-ui-tabs-cell-active{background-color:rgba(48,114,246,0.1);color:#3072f6}.ditto-ui-tabs-wrap.ditto-ui-tabs-wrap-card .ditto-ui-tabs-cell-active::before{display:none}.ditto-ui-tabs-wrap .ditto-ui-tabs-cell{white-space:nowrap;height:12.8vw;line-height:12.8vw}.ditto-ui-tabs-wrap .ditto-ui-tabs-cell:first-child{padding-left:6.4vw}.ditto-ui-tabs-wrap .ditto-ui-tabs-cell:first-child.ditto-ui-tabs-cell-active::before{margin-left:3.2vw}.ditto-ui-tabs-wrap .ditto-ui-tabs-cell:last-child{margin-right:6.4vw}.ditto-ui-tabs-wrap .ditto-ui-tabs-cell .ditto-ui-tabs-cell-inner{position:relative;display:inline}.ditto-ui-tabs-wrap .ditto-ui-tabs-cell-active{position:relative}.ditto-ui-tabs-wrap .ditto-ui-tabs-cell-active::before{display:block;position:absolute;background-color:#3072f6;left:50%;transform:translateX(-50%);height:0.8vw;width:4.27vw;border-radius:0.53vw;bottom:0;content:' '}.ditto-ui-tabs-wrap .ditto-ui-tabs-no-visited::after{display:block;position:absolute;background-color:#fa5741;border-radius:50%;right:-1.6vw;top:-0.8vw;width:1.6vw;height:1.6vw;content:' '}.zyx{}
+
+/* 颜色目录变量start */
+
+/* 颜色目录变量end */
+
+/* 尺寸变量目录start */
+
+/* 尺寸变量目录end */
+
+/* 字体大小目录start */
+
+/* 字体大小目录end */
+
+/* 字体目录start */
+
+/* 字体目录end */.ditto-ui-action-bar{text-align:center;color:#222;font-size:4.8vw}.ditto-ui-action-bar .ditto-ui-action-bar-mask{position:fixed;z-index:1000;top:0;right:0;left:0;bottom:0;background:rgba(0,0,0,0)}.ditto-ui-action-bar .ditto-ui-action-bar-container{position:fixed;left:0;right:0;bottom:0;max-height:75%;z-index:5000;line-height:1.4;background-color:#fff;border-top-left-radius:1.07vw;border-top-right-radius:1.07vw;overflow:hidden;box-shadow:inset 0 4vw 2.67vw -4vw #eee;transform:translateY(-17.07vw)}.ditto-ui-action-bar .ditto-ui-action-bar-container.raise-animation{animation:bubbleAnimation 0.2s linear forwards}.ditto-ui-action-bar .ditto-ui-action-bar-container.fade-animation{animation:fadeAnimation 0.2s linear forwards}.ditto-ui-action-bar .ditto-ui-action-bar-container .ditto-ui-tips{padding:4.27vw 10.67vw;color:#999;font-size:3.73vw}.ditto-ui-action-bar .ditto-ui-action-bar-container .ditto-ui-option-btn{padding:3.73vw 0;border-top:0.02666666666666667vw solid #f8f8f8;font-size:4.27vw;line-height:4.27vw}.ditto-ui-action-bar .ditto-ui-action-bar-container .ditto-ui-option-btn.ditto-ui-warning{color:red}.ditto-ui-action-bar .ditto-ui-action-bar-container .ditto-ui-cancel-btn{border-top:2.13vw solid #f8f8f8;padding:4.8vw 0}@keyframes bubbleAnimation{0%{transform:translateY(8vw)}100%{transform:translateY(0)}}@keyframes fadeAnimation{0%{transform:translateY(8vw)}100%{transform:translateY(0)}}.zyx{}
+
+/* 颜色目录变量start */
+
+/* 颜色目录变量end */
+
+/* 尺寸变量目录start */
+
+/* 尺寸变量目录end */
+
+/* 字体大小目录start */
+
+/* 字体大小目录end */
+
+/* 字体目录start */
+
+/* 字体目录end */
+
+/**
+ * 0.5像素边框
+ */
+
+/*0.5像素上边框*/
+
+/*0.5像素下边框*/
+
+/*0.5像素左边框*/
+
+/*0.5像素右边框*/
+
+/*0.5像素四边边框*/
+
+/*1像素的四边边框，给after设置border-radius可以有圆角效果*/
+
+/*1像素上边框*/
+
+/*1像素下边框*/
+
+/*1像素左边框*/
+
+/*1像素右边框*/.ditto-ui-item-layout{flex:1;color:#222;position:relative;display:flex;align-items:center;justify-content:flex-start;height:16vw;padding:3.73vw 6.4vw;font-size:4.27vw;line-height:4.27vw;box-sizing:border-box}.ditto-ui-item-layout-auto-height{height:auto}.ditto-ui-item-layout-error{border-style:solid;border-width:0.5px;border-color:#fa5741;box-sizing:border-box;height:16vw;padding:3.47vw 6.13vw}.ditto-ui-item-layout-title{color:#222;font-size:4.27vw;line-height:5.33vw;font-weight:600;display:flex;justify-content:flex-start;align-items:flex-end;white-space:nowrap;width:21.33vw;margin-top:-0.53vw;align-self:center}.ditto-ui-item-layout-title.start-line{align-self:flex-start}.ditto-ui-item-layout-content{flex:1}.ditto-ui-item-layout-unit{display:flex;align-items:center;justify-content:flex-start;height:100%;line-height:3.73vw;color:#999;font-size:3.73vw;margin-left:3.2vw;white-space:nowrap}.ditto-ui-item-layout:after{display:block;content:'';position:absolute;left:6.4vw;right:6.4vw;height:0.5px;background:#f0f0f0;bottom:0}.ditto-ui-item-layout-error:after{display:none}.zyx{}
+
+/* 颜色目录变量start */
+
+/* 颜色目录变量end */
+
+/* 尺寸变量目录start */
+
+/* 尺寸变量目录end */
+
+/* 字体大小目录start */
+
+/* 字体大小目录end */
+
+/* 字体目录start */
+
+/* 字体目录end */
+
+/**
+ * 0.5像素边框
+ */
+
+/*0.5像素上边框*/
+
+/*0.5像素下边框*/
+
+/*0.5像素左边框*/
+
+/*0.5像素右边框*/
+
+/*0.5像素四边边框*/
+
+/*1像素的四边边框，给after设置border-radius可以有圆角效果*/
+
+/*1像素上边框*/
+
+/*1像素下边框*/
+
+/*1像素左边框*/
+
+/*1像素右边框*/.ditto-ui-input-container{display:flex;width:100%}.ditto-ui-input-container .ditto-ui-input{display:flex;align-items:center;position:relative;top:-0.06666666666666667vw}.ditto-ui-input-container .ditto-ui-input-size-large{width:100%}.ditto-ui-input-container .ditto-ui-input-size-small{width:16vw}.ditto-ui-input-container .ditto-ui-input-text-align-left .ditto-ui-input-body{text-align:left}.ditto-ui-input-container .ditto-ui-input-text-align-center .ditto-ui-input-body{text-align:center}.ditto-ui-input-container .ditto-ui-input-text-align-right .ditto-ui-input-body{text-align:right}.ditto-ui-input-container .ditto-ui-input .ditto-ui-input-body{color:#222;font-size:4.27vw;appearance:none;width:100%;border:0;background-color:transparent;line-height:5.33vw;box-sizing:border-box;padding:0;overflow:hidden;text-overflow:ellipsis}.ditto-ui-input-container .ditto-ui-input .ditto-ui-input-body .holder-style{font-family:PingFangSC-Regular;font-size:4.27vw;color:#cccccc;letter-spacing:0;line-height:4.27vw}.ditto-ui-input-container .ditto-ui-input .ditto-ui-input-body::placeholder{color:#ccc;font-size:4.27vw;line-height:5.33vw}.ditto-ui-input-container .ditto-ui-input .ditto-ui-input-body:disabled{color:#bbb;background-color:#fff}.ditto-ui-input-container .ditto-ui-input .ditto-ui-input-body.ditto-ui-input-input-text-align-left{text-align:left}.ditto-ui-input-container .ditto-ui-input .ditto-ui-input-body.ditto-ui-input-input-text-align-center{text-align:center}.ditto-ui-input-container .ditto-ui-input .ditto-ui-input-body.ditto-ui-input-input-text-align-right{text-align:right}.ditto-ui-input-container .ditto-ui-input-error .ditto-ui-input-body{color:#fa5741}.ditto-ui-input-container .ditto-ui-input-clear{display:block;color:#ccc;font-size:4.27vw;margin-left:1.33vw;line-height:5.33vw;background-image:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgOCA4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNC43NjggNGwzLjA3MyAzLjA3M2EuNTQzLjU0MyAwIDEgMS0uNzY4Ljc2OEw0IDQuNzY4LjkyNyA3Ljg0MWEuNTQzLjU0MyAwIDEgMS0uNzY4LS43NjhMMy4yMzIgNCAuMTU5LjkyN0EuNTQzLjU0MyAwIDAgMSAuOTI3LjE2TDQgMy4yMzIgNy4wNzMuMTU5YS41NDMuNTQzIDAgMCAxIC43NjguNzY4TDQuNzY4IDR6IiBmaWxsPSIjQ0NDIi8+PC9zdmc+');width:4.27vw;height:4.27vw;background-repeat:no-repeat;background-position:50%}.ditto-ui-input-container .ditto-ui-input-focus .ditto-ui-input-clear{visibility:visible}.zyx{}
+
+/* 颜色目录变量start */
+
+/* 颜色目录变量end */
+
+/* 尺寸变量目录start */
+
+/* 尺寸变量目录end */
+
+/* 字体大小目录start */
+
+/* 字体大小目录end */
+
+/* 字体目录start */
+
+/* 字体目录end */.ditto-ui-button-wrap{font-family:PingFangSC-Regular;color:#ffffff;height:12.8vw;border-radius:1.33vw;font-size:4.27vw;font-weight:bold;border:none;display:flex;align-items:center;justify-content:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0;margin:0;box-sizing:border-box
+  /* .@{prefix}-button-wrap 同级样式start */
+  /* .@{prefix}-button-wrap 同级样式end */}.ditto-ui-button-wrap:active{outline:none}.ditto-ui-button-wrap:active::after{position:absolute;display:block;top:0;left:0;content:'';right:0;bottom:0;background-color:rgba(0,0,0,0.1)}.ditto-ui-button-wrap:focus{outline:none}.ditto-ui-button-wrap.ditto-ui-button-wrap-hover{position:relative;outline:none}.ditto-ui-button-wrap.ditto-ui-button-wrap-hover:active::after{background-color:rgba(0,0,0,0.1)}.ditto-ui-button-wrap.ditto-ui-button-wrap-hover::after{position:absolute;display:block;top:0;left:0;content:'';right:0;bottom:0;background-color:rgba(0,0,0,0.1)}.ditto-ui-button-wrap.ditto-ui-button-wrap-loading{position:relative}.ditto-ui-button-wrap.ditto-ui-button-wrap-loading::after{position:absolute;display:block;top:0;left:0;content:'';right:0;bottom:0;background-color:rgba(0,0,0,0.1)}.ditto-ui-button-wrap.ditto-ui-button-wrap-default{background-color:#3072f6}.ditto-ui-button-wrap.ditto-ui-button-wrap-notify{background-color:#3bc48b}.ditto-ui-button-wrap.ditto-ui-button-wrap-haofang{background-color:#d53c3c}.ditto-ui-button-wrap.ditto-ui-button-wrap-primary-haofang{background-color:#ffffff;border:0.5px solid #d53c3c;color:#d53c3c}.ditto-ui-button-wrap.ditto-ui-button-wrap-primary-haofang:active::after{background-color:rgba(213,60,60,0.1)}.ditto-ui-button-wrap.ditto-ui-button-wrap-primary-haofang-hover::after,
+.ditto-ui-button-wrap.ditto-ui-button-wrap-primary-haofang-loading::after{background-color:rgba(213,60,60,0.1)}.ditto-ui-button-wrap.ditto-ui-button-wrap-primary-haofang-hover:active::after,
+.ditto-ui-button-wrap.ditto-ui-button-wrap-primary-haofang-loading:active::after{background-color:rgba(213,60,60,0.1)}.ditto-ui-button-wrap.ditto-ui-button-wrap-primary{background-color:#ffffff;border:0.5px solid #3072f6;color:#3072f6}.ditto-ui-button-wrap.ditto-ui-button-wrap-primary .ditto-ui-loading-icon{background-image:url(https://img.ljcdn.com/beike/arsenal/1600239759356.png)}.ditto-ui-button-wrap.ditto-ui-button-wrap-primary:active::after{background-color:rgba(255,255,255,0.1)}.ditto-ui-button-wrap.ditto-ui-button-wrap-ghost{background-color:#f4f8fe;border:none;color:#3072f6}.ditto-ui-button-wrap.ditto-ui-button-wrap-ghost .ditto-ui-loading-icon{background-image:url(https://img.ljcdn.com/beike/arsenal/1600239759356.png)}.ditto-ui-button-wrap.ditto-ui-button-wrap-ghost:active{outline:none}.ditto-ui-button-wrap.ditto-ui-button-wrap-ghost:active::after{background-color:rgba(48,114,246,0.1)}.ditto-ui-button-wrap.ditto-ui-button-wrap-primary-loading::after,
+.ditto-ui-button-wrap.ditto-ui-button-wrap-primary-hover::after,
+.ditto-ui-button-wrap.ditto-ui-button-wrap-ghost-loading::after,
+.ditto-ui-button-wrap.ditto-ui-button-wrap-ghost-hover::after{background-color:rgba(48,114,246,0.1)}.ditto-ui-button-wrap.ditto-ui-button-wrap-primary-loading:active::after,
+.ditto-ui-button-wrap.ditto-ui-button-wrap-primary-hover:active::after,
+.ditto-ui-button-wrap.ditto-ui-button-wrap-ghost-loading:active::after,
+.ditto-ui-button-wrap.ditto-ui-button-wrap-ghost-hover:active::after{background-color:rgba(48,114,246,0.1)}.ditto-ui-button-wrap.ditto-ui-button-wrap-disabled{position:relative;outline:none}.ditto-ui-button-wrap.ditto-ui-button-wrap-disabled::after{position:absolute;display:block;top:0;left:0;content:'';right:0;bottom:0;background-color:rgba(255,255,255,0.6)}.ditto-ui-button-wrap.ditto-ui-button-wrap-disabled:active::after{background-color:rgba(255,255,255,0.6)}.ditto-ui-button-wrap.ditto-ui-button-wrap-small{width:17.07vw;height:7.47vw;border-radius:0.53vw;font-size:3.2vw}.ditto-ui-button-wrap.ditto-ui-button-wrap-small .ditto-ui-loading-icon{width:4.27vw;height:4.27vw}.ditto-ui-button-wrap .ditto-ui-loading-icon{display:block;width:6.4vw;height:6.4vw;animation:circleAnimate 1s linear infinite;margin-right:1.6vw;background-image:url(https://img.ljcdn.com/beike/arsenal/1600237432491.png);background-size:contain;background-position:center;z-index:1}@keyframes circleAnimate{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+
+/*  #ifdef  bk  */
+
+/*  #endif  */.zyx{}.water-mark{position:fixed;top:0;left:0;right:0;bottom:0;z-index:20;display:flex;flex-direction:row;justify-content:space-between;pointer-events:none}.water-mark .row{display:flex;flex-direction:column;align-items:center}.water-mark .col{transform:rotate(-30deg) translateX(5%) translateY(30%);color:rgba(180,180,180,0.1)}.zyx{}
+
+/* 颜色目录变量start */
+
+/* 颜色目录变量end */
+
+/* 尺寸变量目录start */
+
+/* 尺寸变量目录end */
+
+/* 字体大小目录start */
+
+/* 字体大小目录end */
+
+/* 字体目录start */
+
+/* 字体目录end */.ditto-ui-image-gallery{width:100%;height:100%;overflow:hidden}.ditto-ui-image-gallery .ditto-ui-swiper-container{width:100%;height:100%}.ditto-ui-image-gallery .ditto-ui-swiper-container .swiper-wrapper{width:100%;height:100%}.ditto-ui-image-gallery .ditto-ui-swiper-container .swiper-wrapper .swiper-slide{width:100%;height:100%;overflow:hidden}.ditto-ui-image-gallery .ditto-ui-swiper-container .swiper-wrapper .swiper-slide .image-container{width:100%;height:100%;display:flex;align-items:center;justify-content:center}.ditto-ui-image-gallery .ditto-ui-swiper-container .swiper-wrapper .swiper-slide .image-container.ditto-img{overflow:unset;position:unset}.ditto-ui-image-gallery .ditto-ui-swiper-container .swiper-wrapper .swiper-slide .image-container .image{width:100%;height:100%}.ditto-ui-image-gallery .ditto-ui-swiper-container .swiper-wrapper .swiper-slide .image-container swan-img{width:100%;height:auto}.ditto-ui-image-gallery .ditto-ui-swiper-container .swiper-pagination-bullet{opacity:0.3}.ditto-ui-image-gallery .ditto-ui-swiper-container .swiper-pagination-bullet-active{opacity:1;background:#3072f6}.zyx{}
+
+/* 颜色目录变量start */
+
+/* 颜色目录变量end */
+
+/* 尺寸变量目录start */
+
+/* 尺寸变量目录end */
+
+/* 字体大小目录start */
+
+/* 字体大小目录end */
+
+/* 字体目录start */
+
+/* 字体目录end */.ditto-ui-house-card{color:#222;display:block;padding:4.27vw 0;text-decoration:none}.ditto-ui-house-card .ditto-ui{
+  /**活动区域**/
+  /**图像区域**/
+  /**亮点区域:
+      priceUp：价格上涨
+      priceDown：价格下降
+      houseTop：榜单相关
+      recommendReason：推荐理由
+      hotTop：热度相关
+      priceSale：推荐相关
+    **/}.ditto-ui-house-card .ditto-ui-house-activity{display:flex;align-items:center;justify-content:space-between;color:#222;font-size:3.2vw;margin:0 0 3.2vw}.ditto-ui-house-card .ditto-ui-house-activity .ditto-ui-activity-icon{width:3.2vw;height:3.2vw;vertical-align:-0.53vw;border-radius:0.53vw;margin-right:0.53vw}.ditto-ui-house-card .ditto-ui-house-activity .ditto-ui-activity-time{padding-left:1.07vw}.ditto-ui-house-card .ditto-ui-house-activity .ditto-ui-activity-txt{text-align:right}.ditto-ui-house-card .ditto-ui-house-block{display:flex}.ditto-ui-house-card .ditto-ui-house-photo{position:relative;width:32vw;height:32vw;border-radius:0.53vw;overflow:hidden
+  /**两种状态样式：默认和gray灰色 */}.ditto-ui-house-card .ditto-ui-house-photo .ditto-ui-default-img{background:url("//img.ljcdn.com/beike/conch/1576154795246.png") center/100% no-repeat}.ditto-ui-house-card .ditto-ui-house-photo .ditto-ui-photo{display:block;width:32vw!important;height:32vw;flex-shrink:0;border-radius:1.33vw;object-fit:cover}.ditto-ui-house-card .ditto-ui-house-photo .ditto-ui-status{font-size:12PX;transform:scale(0.91666667);line-height:12PX;transform-origin:bottom left;position:absolute;top:-0.53vw;left:0;color:white;text-align:center;padding:1.73vw;background-color:#fe615a;border-radius:0.53vw 0 1.07vw;letter-spacing:-0.016vw}.ditto-ui-house-card .ditto-ui-house-photo .ditto-ui-status-gray{background-color:#9399A5}.ditto-ui-house-card .ditto-ui-house-photo .ditto-ui-status-blue{background-color:#3072F6}.ditto-ui-house-card .ditto-ui-house-photo .ditto-ui-house-logos{position:absolute;left:2.4vw;bottom:1.6vw;display:flex}.ditto-ui-house-card .ditto-ui-house-photo .ditto-ui-house-logos .ditto-ui-logo{border:0.5px solid rgba(255,255,255,0.8);border-radius:50%;width:5.33vw;height:5.33vw;margin-right:2.13vw}.ditto-ui-house-card .ditto-ui-house-photo .ditto-ui-house-logos .ditto-ui-vr-logo:after{content:"";background:url(https://img.ljcdn.com/beike/conch/1576154795260.png);background-repeat:no-repeat;background-size:5.33vw auto;width:5.33vw;height:5.33vw;animation:vrIcon 3.5s steps(53) infinite;display:block}.ditto-ui-house-card .ditto-ui-house-photo .ditto-ui-house-logos .ditto-ui-other-logo{background-repeat:no-repeat;background-size:100%;background-image:url(https://img.ljcdn.com/beike/beike/1591343958130.png)}.ditto-ui-house-card .ditto-ui-house-text{flex:1;margin-left:3.2vw;position:relative;min-height:32vw;font-family:PingFangSC-Regular
+  /**标题**/
+  /**标签区域**/
+  /**基础信息区域1和2**/
+  /**价格区域**/}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-house-title{margin-top:0.5px;display:flex;flex-wrap:wrap;justify-content:space-between;position:relative;font-family:PingFangSC-Medium}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-noHouseTags{margin-bottom:2.67vw}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-title-h3{color:#222;font-size:4.27vw;font-weight:bold;max-height:10.13vw;line-height:1.2;margin:0;padding:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-title-brand{display:inline-block;height:4vw;margin-right:1.33vw;vertical-align:-0.53vw;min-width:13.07vw;width:min-content}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-title-tag{font-family:PingFangSC-Regular;font-size:12PX;transform:scale(0.83333333);line-height:12PX;transform-origin:bottom left;color:#374257;letter-spacing:0;border:0.5px solid #374257;border-radius:0.53vw;padding:0.8vw 0.8vw 0.53vw;position:absolute;right:-1.6vw;top:-0.53vw}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-house-tags{overflow:hidden;margin-bottom:1.07vw;line-height:4.27vw;height:5.33vw}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-house-tags .ditto-ui-tag{font-family:PingFangSC-Regular;font-size:12PX;transform:scale(0.83333333);line-height:12PX;transform-origin:bottom left;display:inline-block;background:#EDF0F3;color:#849AAE;border-radius:0.53vw;white-space:nowrap;margin:0 -1.6vw 0 0;padding:0.8vw 0.8vw 0.8vw;letter-spacing:0.013333333333333334vw}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-house-desc{margin:1.07vw 0 1.07vw;font-size:12PX;transform:scale(0.91666667);line-height:12PX;transform-origin:bottom left;height:3.73vw;line-height:1;color:#666;display:flex;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden;width:110%}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-house-price{margin:0;position:absolute;bottom:-1.07vw;line-height:8.53vw
+  /**总价**/
+  /**均价**/}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-house-price .ditto-ui-price-money{color:#fa5741;margin-right:1.07vw}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-house-price .ditto-ui-price-money .ditto-ui-money-txt{font-weight:bold;font-size:4.8vw;letter-spacing:0;line-height:4.27vw;height:4vw;margin-right:0.5px}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-house-price .ditto-ui-price-money .ditto-ui-money-unit,
+.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-house-price .ditto-ui-price-money .ditto-ui-money-about{font-size:12PX;transform:scale(0.91666667);line-height:12PX;transform-origin:bottom left;vertical-align:0.5px}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-house-price .ditto-ui-price-otherMoney{color:#9399A5;letter-spacing:0;vertical-align:0}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-house-price .ditto-ui-price-otherMoney .ditto-ui-otherMoney-txt{font-size:3.2vw;margin-right:0.5px}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-house-price .ditto-ui-price-otherMoney .ditto-ui-otherMoney-unit{font-size:12PX;transform:scale(0.91666667);line-height:12PX;transform-origin:bottom left;vertical-align:0;letter-spacing:-0.5px}.ditto-ui-house-card .ditto-ui-house-text .ditto-ui-price-nobright{bottom:-1.07vw}.ditto-ui-house-card .ditto-ui-line-clamp1 .ditto-ui-house-title{margin-bottom:1.07vw}.ditto-ui-house-card .ditto-ui-line-clamp1 .ditto-ui-house-tags{margin-bottom:2.13vw}.ditto-ui-house-card .ditto-ui-line-clamp1 .ditto-ui-house-title-hasTag{width:calc(100% - 10vw);overflow:hidden;-webkit-line-clamp:1;height:4.8vw;line-height:4.8vw}.ditto-ui-house-card .ditto-ui-line-clamp1 .ditto-ui-house-desc{margin-bottom:1.6vw}.ditto-ui-house-card .ditto-ui-line-clamp1 .ditto-ui-house-price{bottom:0}.ditto-ui-house-card .ditto-ui-house-bottom{display:flex;flex-wrap:wrap;justify-content:space-between
+  /**
+        * 提示信息
+        **/}.ditto-ui-house-card .ditto-ui-house-bottom .ditto-ui-house-tips{font-family:PingFangSC-Regular;font-size:12PX;transform:scale(0.91666667);line-height:12PX;transform-origin:bottom left;color:#999;margin-top:2.67vw}.ditto-ui-house-card .ditto-ui-house-bright{line-height:5.33vw;height:5.6vw;width:calc(100% - 35.47vw);padding-top:2.13vw;border-top:0.5px solid #F0F0F0;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden;color:#222}.ditto-ui-house-card .ditto-ui-house-bright .ditto-ui-icon{width:3.73vw;vertical-align:-0.8vw;margin-right:1.07vw;height:auto}.ditto-ui-house-card .ditto-ui-house-bright .ditto-ui-bright-txt{font-size:12PX;transform:scale(0.91666667);line-height:12PX;transform-origin:bottom left;vertical-align:2.67vw;letter-spacing:-0.5px}.ditto-ui-house-card .ditto-ui-bright-priceUp{color:#CA4A39}.ditto-ui-house-card .ditto-ui-bright-priceDown{color:#1A6043}.ditto-ui-house-card .ditto-ui-bright-houseTop{color:#CC9533}.ditto-ui-house-card .ditto-ui-bright-recommendReason{color:#222}.ditto-ui-house-card .ditto-ui-bright-hotTop{color:#C48921}.ditto-ui-house-card .ditto-ui-bright-priceSale{color:#222}@keyframes vrIcon{0%{background-position:0 0}20%{background-position:0 0}100%{background-position:0 100%}}.ditto-ui-house-hasActivity{background-repeat:no-repeat;background-position:0 0;background-size:100%}.ditto-ui-house-hasActivityBg{background-image:url('https://img.ljcdn.com/beike/beike/1591343955097.png')}.ditto-ui-house-card-isNotH5 .ditto-ui-house-text .ditto-ui-house-price{bottom:0.5px}.ditto-ui-house-card-isNotH5 .ditto-ui-house-text .ditto-ui-price-nobright{bottom:-0.53vw}.ditto-ui-house-card-isNotH5 .ditto-ui-house-bright .ditto-ui-icon{vertical-align:1.87vw;margin-right:1.07vw;height:3.73vw}.ditto-ui-house-card-isNotH5 .ditto-ui-house-bright .ditto-ui-bright-txt{vertical-align:2.13vw}.zyx{}
+
+/* 颜色目录变量start */
+
+/* 颜色目录变量end */
+
+/* 尺寸变量目录start */
+
+/* 尺寸变量目录end */
+
+/* 字体大小目录start */
+
+/* 字体大小目录end */
+
+/* 字体目录start */
+
+/* 字体目录end */.zyx{}
+
+/* 颜色目录变量start */
+
+/* 颜色目录变量end */
+
+/* 尺寸变量目录start */
+
+/* 尺寸变量目录end */
+
+/* 字体大小目录start */
+
+/* 字体大小目录end */
+
+/* 字体目录start */
+
+/* 字体目录end */.ditto-ui-form-item-container{border-bottom:0.5px solid #ebebeb}.ditto-ui-form-item-container .ditto-ui-field-container{display:flex;min-height:13.33vw;padding:0 5.33vw;align-items:center}.ditto-ui-form-item-container .ditto-ui-field-container .ditto-ui-label{width:32vw;font-family:PingFangSC-Regular,sans-serif;font-size:4.27vw;color:#222;font-weight:400}.ditto-ui-form-item-container .ditto-ui-field-container .ditto-ui-label.required::before{content:'*';color:#EC3737;font-weight:400;font-size:3.73vw}.ditto-ui-form-item-container .ditto-ui-field-container .ditto-ui-field{flex:1}.ditto-ui-form-item-container .ditto-ui-error-field{color:red;font-size:3.2vw;padding-left:5.33vw;margin-top:-3.2vw}.ditto-ui-form-item-container.column .ditto-ui-field-container{flex-direction:column;align-items:normal}.ditto-ui-form-item-container.column .ditto-ui-field-container .ditto-ui-label{display:flex;align-items:center;height:10.67vw}.ditto-ui-form-item-container.column .ditto-ui-field-container .ditto-ui-field{display:flex;align-items:center;height:21.33vw}.ditto-ui-form-item-container.column .ditto-ui-error-field{margin-top:-1.07vw}.zyx{}
+
+/**app.wxss**/
+
+/**空页面标准样式，满屏三等分，图中心正好在第一份的底边上，默认图片是正方形，如果不是的话得改改**/.common-empty-box{width:100%;height:100%;text-align:center;position:relative}.common-empty-box .common-empty-top{width:100%;height:33.3%}.common-empty-box .common-empty-icon{background-image:url(https://img.ljcdn.com/beike/arsenal/1544444220162.png);background-size:100%;width:44.53333333333333vw;height:44.53333333333333vw;margin:-22.266666666666666vw auto 0}.common-empty-box .common-empty-text{margin-top:4.266666666666667vw;font-size:4.266666666666667vw;color:#9399A5}
+
+/* 页面通用样式 */
+
+/* 字体color */body{color:#222222;font-size:4.266666666666667vw;font-family:'PingFang'}
+
+/* 主色 */.main-color{color:#3072f6}
+
+/* 辅助信息字体color */.sub-info-color{color:#999999}
+
+/* 暗文提示字体color */.tip-color{color:#cccccc}
+
+/* 深色背景字体color */.light-color{color:#ffffff}
+
+/* 价格&错误提示color */.red-color{color:#fa5741}
+
+/*  */
+
+/* 通用按钮样式 */.common-btn{margin:0 6.4vw;height:13.333333333333334vw;line-height:13.333333333333334vw;text-align:center;border-radius:1.3333333333333333vw;font-size:4.8vw}.common-btn::after{border:none}.common-btn-normal{background:#3072F7;color:#fff}.common-btn-normal.common-btn-disable{background:#ACC5FB}.common-btn-white{background:#fff;color:#2F73F6;border:0.5px solid #3072F6}.common-btn-light{background:rgba(48,114,247,0.05);color:#3072F7}.common-btn-light-press{background:rgba(48,114,247,0.1)}.zyx{}

@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "领取奖品",
+    "navigationBarTitleText": "领取奖品",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

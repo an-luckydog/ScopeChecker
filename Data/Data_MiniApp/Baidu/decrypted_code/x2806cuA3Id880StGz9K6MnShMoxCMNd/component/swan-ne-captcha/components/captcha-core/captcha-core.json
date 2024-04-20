@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "captcha-jigsaw": "../captcha-jigsaw/captcha-jigsaw",
+    "captcha-point": "../captcha-point/captcha-point",
+    "captcha-load": "../captcha-load/captcha-load"
+  }
+}

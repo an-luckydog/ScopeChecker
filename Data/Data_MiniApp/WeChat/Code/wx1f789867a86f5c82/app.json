@@ -1,0 +1,323 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/allProduct/index",
+        "pages/order/index",
+        "pages/profile/index",
+        "pages/webview/index",
+        "pages/webview/jump",
+        "pages/webview/subscribe",
+        "pages/webview/activity"
+    ],
+    "subPackages": [
+        {
+            "root": "pagesA/",
+            "pages": [
+                "appSupporter/Payment/index",
+                "appSupporter/Result/index",
+                "liveStream/index",
+                "liveStream/reserve/reserveTime/index",
+                "liveStream/reserve/storeReserveTime/index",
+                "liveStream/detail/index",
+                "lookPhoto/newAppointment/index",
+                "lookPhoto/appointment/index",
+                "lookPhoto/reserveTime/index",
+                "lookPhoto/result/index",
+                "storeInfo/index",
+                "checkStore/index",
+                "businessService/index/index",
+                "businessService/step1/index",
+                "reservation/index",
+                "reserveTime/index",
+                "multiReserveTime/index",
+                "payment/index",
+                "payment/repayment",
+                "payment/paySuccess/index",
+                "payment/paymentHelp/index",
+                "payment/couponSelector/index",
+                "businessService/step2/index",
+                "businessService/step3/index",
+                "product/prodSearch/index",
+                "product/prodDetail/index",
+                "product/displayDetail/index",
+                "product/packageDetail/index",
+                "homeOthers/informationList/index",
+                "homeOthers/giveGifts/index",
+                "homeOthers/retailPage/index",
+                "homeOthers/showPic/index",
+                "multiStoreScheme/index",
+                "unreachableProduct/index",
+                "store/storeList/index",
+                "store/storeProd/index",
+                "store/reserveTime/index"
+            ]
+        },
+        {
+            "root": "pagesB/",
+            "pages": [
+                "user/loginByPhone/index",
+                "community/index/index",
+                "community/detail/index",
+                "community/my/index",
+                "community/publish/index",
+                "community/photo/index",
+                "community/search/index",
+                "user/welcome/index",
+                "user/smsCodeLogin/index",
+                "user/login/index",
+                "user/setPassword/index",
+                "user/forget/index",
+                "giftCard/index/index",
+                "giftCard/buy/list/index",
+                "giftCard/buy/detail/index",
+                "giftCard/buy/success/index",
+                "giftCard/buy/fail/index",
+                "giftCard/rule/index",
+                "giftCard/given/index",
+                "giftCard/receive/index/index",
+                "giftCard/receive/success/index",
+                "giftCard/receive/fail/index",
+                "profile/member/level/index",
+                "profile/member/milestone/index",
+                "profile/member/welfareInfo/index",
+                "profile/member/welfare/index",
+                "profile/member/exchanged/index",
+                "profile/medal/list/index",
+                "profile/medal/rule/index",
+                "profile/medal/detail/ladder/index",
+                "profile/medal/detail/composite/index",
+                "profile/coupon/validCoupon/index",
+                "profile/coupon/invalidCoupon/index",
+                "profile/album/index",
+                "profile/album/saveToAlbum/index",
+                "profile/album/sharePhoto/index",
+                "profile/album/saveSuccess/index",
+                "order/retailTakeList/index",
+                "order/birthGift/index",
+                "order/convertBirthGift/index",
+                "order/refund/index",
+                "order/refundSupplementInfo/index",
+                "order/retailRefundList/index",
+                "order/retailRefund/index",
+                "order/photoForDownload/index",
+                "order/photo/preview/index",
+                "invoice/invoicePreview/index",
+                "city/index",
+                "order/orderLookWatingShoot/index",
+                "order/shootingRemind/index",
+                "order/photoDealing/index",
+                "profile/modifyPass/index",
+                "profile/accountSecurity/index",
+                "profile/reservationData/crop/index",
+                "profile/reservationData/main/index",
+                "profile/reservationData/profession/index",
+                "profile/reservationData/info/index",
+                "profile/reservationData/accountCancel/phone",
+                "profile/reservationData/accountCancel/code",
+                "profile/reservationData/accountCancel/step1",
+                "profile/reservationData/accountCancel/step2",
+                "profile/address/index",
+                "profile/setting/index",
+                "profile/reservationData/accountCancel/agreement",
+                "studentActivity/preposePage/index"
+            ],
+            "plugins": {
+                "captcha4": {
+                    "version": "2.6.0",
+                    "provider": "wx1629d117cf9be937"
+                }
+            }
+        },
+        {
+            "root": "pagesC/",
+            "pages": [
+                "customerService/index/index",
+                "customerService/detail/index",
+                "customerService/memberBenefits/index",
+                "customerService/feedbackTransit/index",
+                "customerService/feedbackForm/index",
+                "customerService/orderList/index",
+                "messageSubscribe/index"
+            ]
+        },
+        {
+            "root": "pagesPreload/",
+            "pages": [
+                "loginByPhone/index",
+                "city/index",
+                "photoForDownload/index"
+            ]
+        },
+        {
+            "root": "crmActivityMiniAppUnit/",
+            "pages": [
+                "pages/familyMember/rule",
+                "pages/familyMember/index",
+                "pages/familyIntroduceActivity/home",
+                "pages/familyIntroduceActivity/award",
+                "pages/sweetCp/home",
+                "pages/common/rule",
+                "pages/common/liveJump",
+                "pages/studentMember/qrcode",
+                "pages/studentMember/home",
+                "pages/birthdayCare/guide",
+                "pages/birthdayCare/home",
+                "pages/common/customRule",
+                "pages/newYear/luck"
+            ]
+        },
+        {
+            "root": "familyReserveMiniAppUnit/",
+            "pages": [
+                "pages/index/index",
+                "pages/product/productDetail",
+                "pages/product/packageDetail",
+                "pages/reviewShoot/index",
+                "pages/reviewShoot/singleStore",
+                "pages/submitOrder/index",
+                "pages/submitOrder/reviewSuccess",
+                "pages/familyInfo/index",
+                "pages/newGift/index",
+                "pages/submitOrder/repay"
+            ]
+        },
+        {
+            "root": "familyReserve/",
+            "pages": [
+                "pages/review/submitOrder/index",
+                "pages/review/reviewSuccess/index",
+                "pages/review/payAgain/index",
+                "pages/review/reviewShoot/index",
+                "pages/newProductDetail/index",
+                "pages/review/singleStoreSelect/index"
+            ]
+        },
+        {
+            "root": "liveReserve/",
+            "pages": [
+                "pages/timeLimitedDetails/index"
+            ]
+        }
+    ],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "海马体照相馆",
+        "navigationBarBackgroundColor": "#ffffff",
+        "backgroundColor": "#ffffff"
+    },
+    "tabBar": {
+        "custom": true,
+        "color": "#BFBFBF",
+        "selectedColor": "#000000",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "static/image/home.png",
+                "selectedIconPath": "static/image/home_cur.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/allProduct/index",
+                "iconPath": "static/image/product.png",
+                "selectedIconPath": "static/image/product_cur.png",
+                "text": "全部产品"
+            },
+            {
+                "pagePath": "pages/order/index",
+                "iconPath": "static/image/order.png",
+                "selectedIconPath": "static/image/order_cur.png",
+                "text": "订单"
+            },
+            {
+                "pagePath": "pages/profile/index",
+                "iconPath": "static/image/mine.png",
+                "selectedIconPath": "static/image/mine_cur.png",
+                "text": "我的"
+            }
+        ]
+    },
+    "preloadRule": {
+        "pages/index/index": {
+            "network": "all",
+            "packages": [
+                "pagesPreload",
+                "pagesA"
+            ]
+        },
+        "pages/allProduct/index": {
+            "network": "all",
+            "packages": [
+                "pagesPreload",
+                "pagesA"
+            ]
+        },
+        "pages/order/index": {
+            "network": "all",
+            "packages": [
+                "pagesPreload",
+                "pagesC"
+            ]
+        },
+        "pages/profile/index": {
+            "network": "all",
+            "packages": [
+                "pagesPreload",
+                "pagesC"
+            ]
+        },
+        "pagesPreload/loginByPhone/index": {
+            "network": "all",
+            "packages": [
+                "pagesB"
+            ]
+        }
+    },
+    "lazyCodeLoading": "requiredComponents",
+    "requiredPrivateInfos": [
+        "getLocation"
+    ],
+    "navigateToMiniProgramAppIdList": [
+        "wx5a3a7366fd07e119",
+        "wxe048f52a1cdb822e",
+        "wx39d7d63059a8c580",
+        "wx4d5390668ec2d41a",
+        "wx7187da6dfcd619c9",
+        "wx9fe2a6e64bfa9dd6"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    },
+    "networkTimeout": {
+        "downloadFile": 600000
+    },
+    "plugins": {
+        "studentVerify": {
+            "version": "latest",
+            "provider": "wxa16657d57059e0f0"
+        }
+    },
+    "__usePrivacyCheck__": true,
+    "usingComponents": {
+        "h-checkbox": "/Components/Common/HCheckbox/index",
+        "h-confirm": "/Components/Common/HConfirm/index",
+        "h-flexible-box": "/Components/Common/HFlexibleBox/index",
+        "h-popup": "/Components/Common/HPopup/index",
+        "h-search": "/Components/Common/HSearch/index",
+        "h-tabs": "/Components/Common/HTabs/index",
+        "h-icon": "/Components/Common/HIcon/index",
+        "h-button": "/Components/Common/HButton/index",
+        "h-nav-bar": "/Components/Common/HNavBar/index",
+        "h-load-more": "/Components/Common/HLoadMore/index",
+        "h-image": "/Components/Common/HImage/index",
+        "h-empty": "/Components/Common/HEmpty/index",
+        "h-gallery": "/Components/Common/HGallery/index",
+        "h-process": "/Components/Common/HProcess/index",
+        "h-lazy-load": "/Components/Common/HLazyLoad/index",
+        "shop-cart-cascader": "/Components/business/ShopCartCascader/index",
+        "touch-popup": "/Components/business/TouchPoup/index"
+    }
+}

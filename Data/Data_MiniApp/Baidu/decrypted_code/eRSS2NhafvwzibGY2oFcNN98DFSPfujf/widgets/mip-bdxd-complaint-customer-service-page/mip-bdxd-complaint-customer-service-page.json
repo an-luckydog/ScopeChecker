@@ -1,0 +1,18 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "mip-bdxd-refund-title": "/widgets/mip-bdxd-refund-title/mip-bdxd-refund-title",
+        "mip-bdxd-order-goods-card": "/widgets/mip-bdxd-order-goods-card/mip-bdxd-order-goods-card",
+        "mip-bdxd-complaint-shop-detail": "/widgets/mip-bdxd-complaint-shop-detail/mip-bdxd-complaint-shop-detail",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "mip-bdxd-complaint-customer-service-state": "/widgets/mip-bdxd-complaint-customer-service-state/mip-bdxd-complaint-customer-service-state",
+        "mip-bdxd-complaint-step-detail": "/widgets/mip-bdxd-complaint-step-detail/mip-bdxd-complaint-step-detail",
+        "mip-bdxd-refund-progress-tip": "/widgets/mip-bdxd-refund-progress-tip/mip-bdxd-refund-progress-tip",
+        "gap": "/components/gap/gap",
+        "bottom-action-sheet": "/components/bottom-action-sheet/bottom-action-sheet",
+        "login": "/components/login/login",
+        "mip-bdxd-return-express": "/widgets/mip-bdxd-return-express/mip-bdxd-return-express",
+        "mip-bdxd-bd-guarantee": "/widgets/mip-bdxd-bd-guarantee/mip-bdxd-bd-guarantee"
+    }
+}

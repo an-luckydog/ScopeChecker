@@ -1,0 +1,11 @@
+<movable-area class="coupon-assistant-floating coupon-af">
+    <movable-view animation="{{false}}" catch:tap="onTap" class="coupon-af__main {{ready?'ready':''}} {{hide?'hide':''}}" direction="vertical" disabled="{{!ready||hide}}" style="background: {{couponStyle.backgroundColor?couponStyle.backgroundColor:couponStyle.backgroundImage?'url('+couponStyle.backgroundImage+');background-size: 100% 100%;':'#fff;'}}" x="{{x}}" y="{{y}}">
+        <image class="coupon-af-icon" src="{{couponStyle.categoryIcon||'https://p0.meituan.net/travelcube/fff9e760b0df11b18efcc264dc30b1e32046.png'}}"></image>
+        <view class="coupon-af-label">
+            <view class="coupon-af-label__title" style="color: {{couponStyle.textColor||'#333'}}">{{couponStyle.couponTitle||'优惠助手'}}</view>
+            <view class="coupon-af-label__desc" style="color: {{couponStyle.secondaryColor||'#999'}}" wx:if="{{loginMode}}">暂未登录</view>
+            <view class="coupon-af-label__desc" style="color: {{couponStyle.secondaryColor||'#999'}}" wx:else>
+                <text class="coupon-af-label__desc--important" style="color: {{couponStyle.numberColor||'#ff4b10'}}">{{count||'-'}}</text>张可用</view>
+        </view>
+    </movable-view>
+</movable-area>

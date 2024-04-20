@@ -1,0 +1,92 @@
+<view>
+    <view class="section">
+        <picker bindchange="bindPickerChange" id="select1" range="{{objectArray}}" rangeKey="text" value="{{index}}">
+            <view class="picker aRow">
+        当前选择：{{objectArray[index].text}}
+      </view>
+            <image class="down" src="../images/pullDown.png"></image>
+        </picker>
+    </view>
+    <view class="aRow">
+        <view class="sixCategory">总分值：<text>{{scoreSum}}</text>
+        </view>
+    </view>
+    <view class="aRow">
+        <view class="sixCategory">理想信念：<text>{{score0}}</text>
+        </view>
+        <view class="joinActivityBox">
+            <view class="emptyShow" style="{{display[0]}}">您还未有该方面加分!</view>
+            <view class="activityRow" wx:for="{{list0}}">
+                <view class="activityName">
+                    <view class="activityLevel">{{item.level}}</view>{{item.name}}</view>
+                <view class="activityIdentity">
+                    <view class="activityScore">{{item.score}}</view>{{item.identity}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="aRow">
+        <view class="sixCategory">实践服务：<text>{{score1}}</text>
+        </view>
+        <view class="joinActivityBox">
+            <view class="emptyShow" style="{{display[1]}}">您还未有该方面加分!</view>
+            <view class="activityRow" wx:for="{{list1}}">
+                <view class="activityName">
+                    <view class="activityLevel">{{item.level}}</view>{{item.name}}</view>
+                <view class="activityIdentity">
+                    <view class="activityScore">{{item.score}}</view>{{item.identity}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="aRow">
+        <view class="sixCategory">文化艺术：<text>{{score2}}</text>
+        </view>
+        <view class="joinActivityBox">
+            <view class="emptyShow" style="{{display[2]}}">您还未有该方面加分!</view>
+            <view class="activityRow" wx:for="{{list2}}">
+                <view class="activityName">
+                    <view class="activityLevel">{{item.level}}</view>{{item.name}}</view>
+                <view class="activityIdentity">
+                    <view class="activityScore">{{item.score}}</view>{{item.identity}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="aRow">
+        <view class="sixCategory">学术科技：<text>{{score3}}</text>
+        </view>
+        <view class="joinActivityBox">
+            <view class="emptyShow" style="{{display[3]}}">您还未有该方面加分!</view>
+            <view class="activityRow" wx:for="{{list3}}">
+                <view class="activityName">
+                    <view class="activityLevel">{{item.level}}</view>{{item.name}}</view>
+                <view class="activityIdentity">
+                    <view class="activityScore">{{item.score}}</view>{{item.identity}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="aRow">
+        <view class="sixCategory">社会工作：<text>{{score4}}</text>
+        </view>
+        <view class="joinActivityBox">
+            <view class="emptyShow" style="{{display[4]}}">您还未有该方面加分!</view>
+            <view class="activityRow" wx:for="{{list4}}">
+                <view class="activityName">
+                    <view class="activityLevel">{{item.level}}</view>{{item.name}}</view>
+                <view class="activityIdentity">
+                    <view class="activityScore">{{item.score}}</view>{{item.identity}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="aRow">
+        <view class="sixCategory">体育素质：<text>{{score5}}</text>
+        </view>
+        <view class="joinActivityBox">
+            <view class="emptyShow" style="{{display[5]}}">您还未有该方面加分!</view>
+            <view class="activityRow" wx:for="{{list5}}">
+                <view class="activityName">
+                    <view class="activityLevel">{{item.level}}</view>{{item.name}}</view>
+                <view class="activityIdentity">
+                    <view class="activityScore">{{item.score}}</view>{{item.identity}}</view>
+            </view>
+        </view>
+    </view>
+</view>

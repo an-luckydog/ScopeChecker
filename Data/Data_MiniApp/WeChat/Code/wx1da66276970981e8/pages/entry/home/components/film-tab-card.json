@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-image": "../../../../node-modules/uview-plus/components/u-image/u-image",
+        "u-skeleton": "../../../../node-modules/uview-plus/components/u-skeleton/u-skeleton"
+    }
+}

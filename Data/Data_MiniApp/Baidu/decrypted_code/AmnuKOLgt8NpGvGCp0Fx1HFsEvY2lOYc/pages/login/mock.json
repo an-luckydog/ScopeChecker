@@ -1,0 +1,608 @@
+{
+	"info": {
+		"_postman_id": "58d9ccad-b477-4817-bfbb-c9d60e6dcb7f",
+		"name": "风控模拟",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "点评APP",
+			"item": [
+				{
+					"name": "风控查看login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dpUserid\": \"9000000000018989996\"\n}"
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/2.0/login/risklevel",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"2.0",
+								"login",
+								"risklevel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "风控查看loginverification",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dpUserid\": \"9000000000024850996\"\n}"
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/2.0/loginverification/risklevel",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"2.0",
+								"loginverification",
+								"risklevel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "风控查看checkSecondaryMobile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"dpUserid\": \"9000000000024425014\"\n}"
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/2.0/checkSecondaryMobile/risklevel",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"2.0",
+								"checkSecondaryMobile",
+								"risklevel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "二次放号拦截",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"params\": {\n        \"dpUserid\": \"9000000000027159478\"\n    },\n    \"event\": \"checkSecondaryMobile\",\n    \"method\": \"risklevel\",\n    \"risklevel\": \"5\"\n}"
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/qa/set",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"qa",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "二次验证拦截",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"params\": {\n        \"dpUserid\": \"9000000000027159478\"\n    },\n    \"event\": \"loginverification\",\n    \"method\": \"risklevel\",\n    \"risklevel\": \"4\"\n}"
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/qa/set",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"qa",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "一次验证拦截",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"params\": {\n        \"dpUserid\": \"9000000000026803261\"\n    },\n    \"event\": \"login\",\n    \"method\": \"risklevel\",\n    \"risklevel\": \"5\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/qa/set",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"qa",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "换绑手机二次验证",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"params\": {\n        \"dpUserid\": \"9000000000018277821\"\n    },\n    \"event\": \"rebindmobile\",\n    \"method\": \"risklevel\",\n    \"risklevel\": \"122\"\n}"
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/qa/set",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"qa",
+								"set"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "美团APP",
+			"item": [
+				{
+					"name": "美团风控查看login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userid\": \"5034376701\"\n}"
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/2.0/rebindmobile/risklevel",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"2.0",
+								"rebindmobile",
+								"risklevel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "美团侧二次验证拦截",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"params\": {\n        \"userid\": \"5043343405\"\n    },\n    \"event\": \"loginverification\",\n    \"method\": \"risklevel\",\n    \"risklevel\": \"4\"\n}"
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/qa/set",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"qa",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "美团换绑手机二次验证",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"params\": {\n        \"userid\": \"5034376701\"\n    },\n    \"event\": \"rebindmobile\",\n    \"method\": \"risklevel\",\n    \"risklevel\": \"6\"\n}"
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/qa/set",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"qa",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "美团换绑三方二次验证",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"params\": {\n        \"userid\": \"5035103830\"\n    },\n    \"event\": \"bindThirdAccount\",\n    \"method\": \"risklevel\",\n    \"risklevel\": \"18\"\n}"
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/qa/set",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"qa",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "美团侧二次放号",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"params\": {\n        \"userid\": \"5043343405\"\n    },\n    \"event\": \"checkSecondaryMobile\",\n    \"method\": \"risklevel\",\n    \"risklevel\": \"4\"\n}"
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/qa/set",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"qa",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "美团侧一次验证",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"params\": {\n        \"userid\": \"5043343405\"\n    },\n    \"event\": \"login\",\n    \"method\": \"risklevel\",\n    \"risklevel\": \"71\"\n}"
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/qa/set",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"qa",
+								"set"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "点评PC",
+			"item": [
+				{
+					"name": "一次验证拦截",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"params\": {\n        \"user\": \"18335040010\"\n    },\n    \"event\": \"login\",\n    \"method\": \"risklevel\",\n    \"risklevel\": \"71\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/qa/set",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"qa",
+								"set"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "密码登录一次验证拦截",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"params\": {\n        \"user\": \"9000000000024425014\"\n    },\n    \"event\": \"login\",\n    \"method\": \"risklevel\",\n    \"risklevel\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://tatooine.rc.test.sankuai.com/risk-container/qa/set",
+							"protocol": "http",
+							"host": [
+								"tatooine",
+								"rc",
+								"test",
+								"sankuai",
+								"com"
+							],
+							"path": [
+								"risk-container",
+								"qa",
+								"set"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

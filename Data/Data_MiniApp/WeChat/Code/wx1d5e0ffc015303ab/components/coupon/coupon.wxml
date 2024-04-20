@@ -1,0 +1,58 @@
+<view class="coupon-content data-v-35f2011b">
+    <view class="coupont-card data-v-35f2011b">
+        <view class="coupon-main data-v-35f2011b">
+            <view class="sales data-v-35f2011b" wx:if="{{vpointsCoupon.couponType==2}}">
+                <text class="data-v-35f2011b">{{vpointsCoupon.couponDiscount}}</text>
+                <text class="unit data-v-35f2011b">折</text>
+            </view>
+            <block wx:else>
+                <view class="money data-v-35f2011b" wx:if="{{vpointsCoupon.couponType==1}}">
+                    <block wx:if="{{vpointsCoupon.couponPayType==1}}">
+                        <text class="icon data-v-35f2011b">￥</text>
+                        <text class="denomination data-v-35f2011b">{{vpointsCoupon.moneyDirectReduction}}</text>
+                    </block>
+                    <block wx:else>
+                        <text class="denomination data-v-35f2011b">{{vpointsCoupon.vpointsDirectReduction}}</text>
+                        <text class="unit data-v-35f2011b" wx:if="{{vpointsCoupon.couponPayType==0}}">啤酒花</text>
+                    </block>
+                </view>
+                <view class="money data-v-35f2011b" wx:else>
+                    <block wx:if="{{vpointsCoupon.couponPayType==1}}">
+                        <text class="icon data-v-35f2011b">￥</text>
+                        <text class="denomination data-v-35f2011b">{{vpointsCoupon.moneyFullReduction}}</text>
+                    </block>
+                    <block wx:else>
+                        <text class="denomination data-v-35f2011b">{{vpointsCoupon.vpointsFullReduction}}</text>
+                        <text class="unit data-v-35f2011b" wx:if="{{vpointsCoupon.couponPayType==0}}">啤酒花</text>
+                    </block>
+                </view>
+            </block>
+            <view class="type-limit data-v-35f2011b">
+                <text class="type data-v-35f2011b" wx:if="{{vpointsCoupon.couponType==0}}">— 满减券 —</text>
+                <block wx:else>
+                    <text class="type data-v-35f2011b" wx:if="{{vpointsCoupon.couponType==1}}">— 直减券 —</text>
+                    <block wx:else>
+                        <text class="type data-v-35f2011b" wx:if="{{vpointsCoupon.couponType==2}}">— 折扣券 —</text>
+                    </block>
+                </block>
+                <text class="coupon-limit data-v-35f2011b" wx:if="{{vpointsCoupon.couponPayType==1}}">{{'满'+vpointsCoupon.moneyFullLimit+'元可用'}}</text>
+                <text class="coupon-limit data-v-35f2011b" wx:else>{{'满'+vpointsCoupon.vpointsFullLimit+'啤酒花可用'}}</text>
+            </view>
+        </view>
+        <text class="product-limit data-v-35f2011b" wx:if="{{vpointsCoupon.couponGoodsType==0}}">全品券</text>
+        <block wx:else>
+            <text class="product-limit data-v-35f2011b" wx:if="{{vpointsCoupon.couponGoodsType==1}}">单品券</text>
+            <block wx:else>
+                <text class="product-limit data-v-35f2011b" wx:if="{{vpointsCoupon.couponGoodsType==2}}">指定商品可用券</text>
+                <block wx:else>
+                    <text class="product-limit data-v-35f2011b" wx:if="{{vpointsCoupon.couponGoodsType==3}}">指定商品不可用券</text>
+                </block>
+            </block>
+        </block>
+    </view>
+    <view class="coupon-mall-tips data-v-35f2011b">有效日期：即日起至<text class="data-v-35f2011b" wx:if="{{vpointsCoupon.expireDateType==0}}">{{vpointsCoupon.expireDateLimit+'\n'}}</text>
+        <block wx:else>
+            <text class="data-v-35f2011b" wx:if="{{vpointsCoupon.expireDateType==1}}">{{$root.g0+'\n'}}</text>
+        </block>可在“青啤畅享汇”小程序购买时抵扣
+可在“我的-优惠券”查看</view>
+</view>

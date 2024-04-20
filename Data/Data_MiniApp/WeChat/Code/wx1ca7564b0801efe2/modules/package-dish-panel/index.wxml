@@ -1,0 +1,20 @@
+<import src="../../components/panel-title/index.wxml"></import>
+<dish-panel addDishInfo="{{packageDishInfo}}" autoScroll="{{autoScroll}}" bind:handleButtonClick="confirmDish" bind:openDetail="triggerPkgDetail" bind:reload="initData" cartDishInfo="{{cartDishInfo}}" dishInfo="{{dishInfo}}" hasRecommendMatch="{{extraParams.hasRecommendMatch}}" id="dish-panel" isLoading="{{isLoading}}" packageModalData="{{packageModalData}}" showRemark="{{dishInfo.remarkSwitch}}">
+    <view slot="package">
+        <view class="panel-content">
+            <view class="package-group" wx:for="{{packageModalData}}" wx:for-index="Index" wx:for-item="operationGroup" wx:key="groupId">
+                <view class="group-name">
+                    <template is="big-title" data="{{title:operationGroup.groupName,subTitle:operationGroup.subTitle}}"></template>
+                </view>
+                <view class="{{sudokuType===1?'group-content':'sudoku-group-content'}}">
+                    <view class="package-dish-item" wx:for="{{operationGroup.groupSkus}}" wx:for-index="pIndex" wx:for-item="operationGroupItem" wx:key="pIndex">
+                        <package-dish-item bind:addToPackage="addDishPackage" bind:minusFromPackage="minusDishPackage" comboRuleMap="{{dishInfo.comboRuleMap}}" dish="{{operationGroupItem}}" groupData="{{operationGroup}}" includeMethodPrice="{{dishInfo.includeMethodPrice}}" includeTastePrice="{{dishInfo.includeTastePrice}}" stockCount="{{operationGroupItem.stockCount||-1}}" sudokuType="{{sudokuType}}"></package-dish-item>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="extend-box mt24" slot="dish-detail-extend" wx:if="{{plugins&&plugins['dish-detail-extend']}}">
+        <dish-detail-extend data="{{plugins['dish-detail-extend']}}" dishInfo="{{dishInfo}}" pluginId="dish-detail-extend" skuId="{{skuId}}" updatedData="{{updatedPlugins['dish-detail-extend']}}"></dish-detail-extend>
+    </view>
+</dish-panel>

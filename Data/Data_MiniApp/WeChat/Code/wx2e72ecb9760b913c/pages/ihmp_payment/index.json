@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "确认订单",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-authorize-login": "../../components/cy-authorize-login/index"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "component": true,
+    "usingComponents": {
+        "dish-item": "../dish/dish-item/index",
+        "operation": "../../../miniprogram_npm/@components/limo-common/common-operation/index",
+        "dish-category-title": "../dish/dish-category-title/index",
+        "nav-vertical": "./components/nav-vertical/index",
+        "nav-horizontal": "./components/nav-horizontal/index",
+        "midas-simple": "../../midas-simple/index",
+        "collocation-dish-list": "../../../async-meal/components/collocation-dish-list/index",
+        "toggle-strip": "./components/toggle-strip/index",
+        "coupon-item": "../../../async-meal/components/coupon-item/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "collocation-dish-list": "view",
+        "coupon-item": "view",
+        "lottery": "view"
+    }
+}

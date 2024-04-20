@@ -1,0 +1,13 @@
+{
+    "component": true,
+    "usingComponents": {
+        "header-top-info": "../header-top-info/index",
+        "header-middle-info": "../header-middle-info/index",
+        "header-full-shop-info": "../header-full-shop-info/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

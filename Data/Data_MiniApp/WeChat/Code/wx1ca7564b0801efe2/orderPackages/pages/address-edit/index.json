@@ -1,0 +1,12 @@
+{
+    "navigationBarTitleText": "新增收货地址",
+    "navigationBarBackgroundColor": "#F4F4F4",
+    "backgroundColor": "#f4f4f4",
+    "backgroundColorContent": "#f4f4f4",
+    "backgroundColorTop": "#f4f4f4",
+    "backgroundColorBottom": "#f4f4f4",
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

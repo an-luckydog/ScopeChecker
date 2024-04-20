@@ -1,0 +1,13 @@
+{
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "design-page": "../../components/design/index",
+        "f_ec_couponPopup": "/cms_design/RAW/EXTS/ec/components/couponPopup/index",
+        "titan-one-component": "/@titan/cs/oc/i"
+    },
+    "componentPlaceholder": {
+        "f_ec_couponPopup": "view"
+    },
+    "component": true
+}

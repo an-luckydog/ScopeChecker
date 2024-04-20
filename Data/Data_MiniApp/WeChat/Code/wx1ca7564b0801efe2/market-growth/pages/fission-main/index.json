@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "裂变拉新",
+    "navigationBarTitleText": "裂变拉新",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

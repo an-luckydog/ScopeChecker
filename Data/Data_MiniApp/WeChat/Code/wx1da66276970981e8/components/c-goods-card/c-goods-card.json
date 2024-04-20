@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "goods-item": "../c-product-card/goods-item"
+    }
+}

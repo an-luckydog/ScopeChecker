@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "product-list": "/components/product-list/product-list",
+        "product-card":"/components/product-card/product-card",
+        "optimize-image":"/components/optimize-image/optimize-image"
+    }
+}

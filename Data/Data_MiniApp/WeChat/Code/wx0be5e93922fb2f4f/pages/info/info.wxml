@@ -1,0 +1,46 @@
+<view class="pt24">
+    <view class="info-top">
+        <view class="info-left" style="display: flex;align-items: center;">
+            <text class="title">{{userInfo.nickname}}</text>
+        </view>
+        <view class="info-right">
+            <image src="{{userInfo.headImg}}"></image>
+        </view>
+    </view>
+    <view class="toOrder pb39">
+        <view>
+            <view class="order">
+                <view class="shu"></view>
+                <view class="fs34 c222">订单中心</view>
+            </view>
+            <view class="order-icon-list">
+                <view bindtap="toOrder" class="order-box" id="0">
+                    <image src="{{imgUrl}}/info/icon3.png"></image>
+                    <view class="fs30 c999 pt20">进行订单</view>
+                </view>
+                <view class="order-shu"></view>
+                <view bindtap="toOrder" class="order-box" id="1">
+                    <image src="{{imgUrl}}/info/icon4.png"></image>
+                    <view class="fs30 c999 pt20">历史订单</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="customer">
+    <view class="customer-service">
+        <view bindtap="telPhone" class="tel-service fs34">
+            <view>电话客服</view>
+        </view>
+    </view>
+</view>
+<view class="wh-cabinet-dialog-mask" wx:if="{{telPhoneDig}}">
+    <view class="openQrcode">
+        <view class="fs36 c333 pb39">客服电话</view>
+        <view class="fs28 c666 pb39">400-0027-287</view>
+        <view class="btn-open">
+            <view bindtap="telPhoneClear" class="clean-open">取消</view>
+            <view bindtap="phoneCall" class="sure-open" data-reply-phone="400-0027-287">拨打</view>
+        </view>
+    </view>
+</view>

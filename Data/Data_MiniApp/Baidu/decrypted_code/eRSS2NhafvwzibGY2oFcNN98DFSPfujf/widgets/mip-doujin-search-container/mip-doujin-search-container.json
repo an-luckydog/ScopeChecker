@@ -1,0 +1,10 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "mip-doujin-search-product": "/widgets/mip-doujin-search-product/mip-doujin-search-product",
+        "search-card": "/components/search-card/search-card",
+        "mip-doujin-product-tab": "/widgets/mip-doujin-product-tab/mip-doujin-product-tab",
+        "mip-doujin-product-list": "/widgets/mip-doujin-product-list/mip-doujin-product-list"
+    }
+}

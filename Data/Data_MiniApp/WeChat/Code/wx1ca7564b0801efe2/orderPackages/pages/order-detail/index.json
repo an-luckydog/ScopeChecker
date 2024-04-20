@@ -1,0 +1,17 @@
+{
+    "navigationStyle": "custom",
+    "disableScroll": false,
+    "backgroundColor": "#f4f4f4",
+    "backgroundColorContent": "#f4f4f4",
+    "backgroundColorTop": "#f4f4f4",
+    "backgroundColorBottom": "#f4f4f4",
+    "componentPlaceholder": {
+        "manual-slide": "view",
+        "custom-official-account": "view",
+        "order-reward": "view",
+        "order-reward-popup": "view",
+        "coupon-rules-standard": "view",
+        "manual-subscription": "view",
+        "lottery": "view"
+    }
+}

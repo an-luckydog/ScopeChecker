@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "扫码开门",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

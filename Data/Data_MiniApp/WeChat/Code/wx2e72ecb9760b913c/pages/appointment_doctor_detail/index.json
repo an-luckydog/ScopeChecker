@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "appointment-doctor-header": "../../components/appointment-doctor-header/index",
+        "cancel-reason": "./components/cancel-reason/index"
+    }
+}

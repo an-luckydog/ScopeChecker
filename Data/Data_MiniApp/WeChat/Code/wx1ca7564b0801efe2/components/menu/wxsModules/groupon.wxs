@@ -1,0 +1,11 @@
+var getCount = (function(coupon) {
+    if (!coupon) return;;
+    var couponList = coupon.couponStatusList.filter((function(item) {
+        return (item.selectStatus === 1)
+    }));
+    var count = couponList.length;
+    return (count)
+});
+module.exports = ({
+    getCount: getCount,
+});

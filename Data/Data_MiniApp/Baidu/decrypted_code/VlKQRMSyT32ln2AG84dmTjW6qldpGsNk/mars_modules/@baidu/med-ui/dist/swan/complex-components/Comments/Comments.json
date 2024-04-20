@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"c-popup":"../../components/Popup/Popup","c-dialog":"../../components/Dialog/Dialog","c-loading":"../../components/Loading/Loading","c-comment":"./Comment","c-comment-bar":"./CommentBar","c-comment-reply":"./CommentReply"}}

@@ -1,0 +1,7 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "mip-dxdjx-shop-good-product": "/widgets/mip-dxdjx-shop-good-product/mip-dxdjx-shop-good-product"
+    }
+}

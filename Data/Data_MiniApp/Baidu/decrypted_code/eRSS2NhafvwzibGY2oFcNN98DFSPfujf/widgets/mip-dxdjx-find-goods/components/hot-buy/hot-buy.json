@@ -1,0 +1,7 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "hot-buy-card":"/widgets/mip-dxdjx-find-goods/components/hot-buy-card/hot-buy-card"
+    }
+}

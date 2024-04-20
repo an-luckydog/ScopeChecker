@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mip-bdxd-product-coupon": "/widgets/mip-bdxd-product-coupon/mip-bdxd-product-coupon",
+        "mip-bdxd-activity-seckill": "/widgets/mip-bdxd-activity-seckill/mip-bdxd-activity-seckill",
+        "mip-bdxd-activity-groupbook": "/widgets/mip-bdxd-activity-groupbook/mip-bdxd-activity-groupbook",
+        "mip-bdxd-product-collection":"/widgets/mip-bdxd-product-collection/mip-bdxd-product-collection",
+        "mip-bdxd-sale-activity-bar": "/widgets/mip-bdxd-sale-activity-bar/mip-bdxd-sale-activity-bar",
+        "optimize-image":"/components/optimize-image/optimize-image"
+    }
+}

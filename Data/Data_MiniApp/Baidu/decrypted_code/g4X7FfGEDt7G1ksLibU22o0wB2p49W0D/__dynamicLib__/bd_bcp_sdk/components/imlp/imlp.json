@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "navigation": "../navigation/navigation",
+        "message-list": "../messageList/messageList",
+        "phoneicon": "../phoneicon/phoneicon",
+        "standard-popup": "../message/standard/popup/pupup",
+        "sug-slider": "../sugSlider/sugSlider",
+		"imlp-button": "../button/button",
+        "baozhang": "../baozhang/baozhang"
+    }
+}

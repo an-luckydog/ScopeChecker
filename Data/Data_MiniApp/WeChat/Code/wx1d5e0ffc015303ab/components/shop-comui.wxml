@@ -1,0 +1,81 @@
+<view class="shops flex-xsb-ym data-v-e7d03128">
+    <view bindtap="__e" class="item-list data-v-e7d03128" data-event-opts="{{[ [ 'tap',[ [ 'toGoodsDetail',['$0','$1'],[ [ ['shopLists','goodsId',list[$orig].goodsId,'goodsId'] ],[ ['shopLists','goodsId',list[$orig].goodsId,'youPinFlag'] ] ] ] ] ] ]}}" style="{{'margin-bottom:'+(source=='index'?'22rpx':'60rpx')+';'}}" wx:for="{{$root.l0}}" wx:for-index="idx" wx:for-item="list" wx:key="goodsId">
+        <view class="proImg data-v-e7d03128">
+            <image class="proImgImage data-v-e7d03128" mode="widthFix" src="{{goodsImgRoot+list.g0[0]}}"></image>
+            <view class="skuStatus data-v-e7d03128" hidden="{{!(list[$orig].goodsStatus==1)}}">
+                <view class="circle data-v-e7d03128">补货中</view>
+            </view>
+            <view class="ptIcon data-v-e7d03128" wx:if="{{list[$orig].isGroupBuying=='1'}}">
+                <view class="flex-xn-yc data-v-e7d03128">
+                    <image class="data-v-e7d03128" mode="widthFix" src="{{qpImgUrl+'index/pintuanIcon.png'}}"></image>{{''+list[$orig].reachNum+'人成团'}}</view>
+                <image class="data-v-e7d03128" mode="widthFix" src="{{qpImgUrl+'index/pintuanLogoNew.png'}}"></image>
+            </view>
+            <block wx:else>
+                <view class="msIcon data-v-e7d03128" wx:if="{{list[$orig].secKill=='0'}}">
+                    <view class="flex-xn-yc data-v-e7d03128">
+                        <image class="data-v-e7d03128" mode="widthFix" src="{{qpImgUrl+'index/miaozhong.png'}}" style="margin-right:4rpx;"></image>
+                        <time-count bind:__l="__l" class="data-v-e7d03128" end_time="{{list[$orig].activityCurrEndTime}}" start_time="{{list[$orig].activityBeginTime}}" vueId="{{'32190526-1-'+idx}}"></time-count>
+                    </view>
+                    <image class="data-v-e7d03128" mode="widthFix" src="{{qpImgUrl+'index/miaoLogoNew.png'}}"></image>
+                </view>
+                <block wx:else>
+                    <image class="giftCardIcon data-v-e7d03128" mode="widthFix" src="{{qpImgUrl+'index/lipinkaLogo.png'}}" wx:if="{{list[$orig].isGiftCard=='1'&&list[$orig].halfPriceType==0}}"></image>
+                </block>
+            </block>
+            <view class="activity_half data-v-e7d03128" wx:if="{{list[$orig].halfPriceType==1}}">{{list.m0+'折'}}</view>
+            <view class="activePrice data-v-e7d03128" wx:if="{{list[$orig].goodsStatus!=1&&list[$orig].realPay<list[$orig].goodsPay&&list[$orig].secKill==1&&list[$orig].isGroupBuying==0}}">
+                <view class="txt1 data-v-e7d03128">活动价：</view>
+                <view class="txt2 data-v-e7d03128">¥<text class="data-v-e7d03128">{{list[$orig].realPay/100}}</text>
+                </view>
+            </view>
+            <block wx:else>
+                <view class="activePrice data-v-e7d03128" wx:if="{{list[$orig].secKill==0||list[$orig].isGroupBuying==1}}">
+                    <view class="txt1 data-v-e7d03128">
+                        <block wx:if="{{list[$orig].secKill==0}}">秒杀价：</block>
+                        <block wx:else>拼团价：</block>
+                    </view>
+                    <view class="txt2 data-v-e7d03128">¥<text class="data-v-e7d03128">{{list[$orig].activityRealPay/100}}</text>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <view class="proInfo data-v-e7d03128">
+            <view class="proName data-v-e7d03128">
+                <text class="text-overflow-ellipsis data-v-e7d03128">{{list[$orig].goodsName}}</text>
+            </view>
+            <view class="data-v-e7d03128">
+                <view class="unit data-v-e7d03128">
+                    <view class="data-v-e7d03128" wx:if="{{list[$orig].goodsSpecification}}">{{''+list[$orig].goodsSpecification+'/'+list[$orig].goodsUnitName+''}}</view>
+                </view>
+                <view class="{{[ 'flex-xc-yc','data-v-e7d03128','price',[list[$orig].goodsStatus==1?'overPrice':''] ]}}">
+                    <text class="data-v-e7d03128" wx:if="{{list[$orig].realPay!=0}}">
+                        <text class="danwei data-v-e7d03128">¥</text>{{list.f0+''}}<text class="data-v-e7d03128" style="margin-left:6rpx;" wx:if="{{list[$orig].realPay!=0&&list[$orig].realVpoints!=0}}">+</text>
+                    </text>
+                    <block wx:if="{{list[$orig].realVpoints!=0}}">
+                        <image class="pijiuhuaIcon data-v-e7d03128" mode="widthFix" src="{{qpImgUrl+'index/point2.png'}}"></image>
+                        <text class="data-v-e7d03128" style="color:#0A794E;">{{''+list.f1+''}}</text>
+                    </block>
+                </view>
+                <view class="normalPrice data-v-e7d03128" wx:if="{{list[$orig].goodsMoney&&list[$orig].goodsMoney!=0}}">{{'市场价：'+list[$orig].goodsMoney+'元'}}</view>
+            </view>
+        </view>
+        <view class="car data-v-e7d03128">
+            <view class="btn data-v-e7d03128" wx:if="{{list[$orig].youPinFlag==0}}">
+                <block wx:if="{{list[$orig].goodsStatus==0}}">
+                    <text catchtap="__e" class="btn-mes data-v-e7d03128" data-event-opts="{{[ [ 'tap',[ [ 'toGoodsDetail',['$0','$1'],[ [ ['shopLists','goodsId',list[$orig].goodsId,'goodsId'] ],[ ['shopLists','goodsId',list[$orig].goodsId,'youPinFlag'] ] ] ] ] ] ]}}">立即兑换</text>
+                    <image catchtap="__e" class="data-v-e7d03128" data-event-opts="{{[ [ 'tap',[ [ 'toGoodsDetail',['$0','$1'],[ [ ['shopLists','goodsId',list[$orig].goodsId,'goodsId'] ],[ ['shopLists','goodsId',list[$orig].goodsId,'youPinFlag'] ] ] ] ] ] ]}}" src="{{imgUrl+'indexbutbg.png'}}"></image>
+                </block>
+                <block wx:else>
+                    <text catchtap="__e" class="btn-mes data-v-e7d03128" data-event-opts="{{[ [ 'tap',[ [ 'toGoodsDetail',['$0','$1'],[ [ ['shopLists','goodsId',list[$orig].goodsId,'goodsId'] ],[ ['shopLists','goodsId',list[$orig].goodsId,'youPinFlag'] ] ] ] ] ] ]}}" style="color:#000000;">暂停兑换</text>
+                    <image class="data-v-e7d03128" src="{{imgUrl+'wukucunbeijingNew.png'}}"></image>
+                </block>
+            </view>
+            <block wx:else>
+                <view catchtap="__e" class="addArea data-v-e7d03128" data-event-opts="{{[ [ 'tap',[ [ 'addSku',[idx,'$0','$1'],[ [ ['shopLists','goodsId',list[$orig].goodsId,'goodsStatus'] ],[ ['shopLists','goodsId',list[$orig].goodsId] ] ] ] ] ] ]}}" wx:if="{{list[$orig].secKill!=0&&list[$orig].isGroupBuying!=1&&source!='index'&&source!='lipinka'}}">
+                    <image class="data-v-e7d03128" mode="widthFix" src="{{qpImgUrl+'mall/smallCart.png'}}"></image>
+                    <view class="{{[ 'data-v-e7d03128','numOfCart',[list[$orig].specialChooseNum<=0?'notShow':''] ]}}">{{''+list[$orig].specialChooseNum+''}}</view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

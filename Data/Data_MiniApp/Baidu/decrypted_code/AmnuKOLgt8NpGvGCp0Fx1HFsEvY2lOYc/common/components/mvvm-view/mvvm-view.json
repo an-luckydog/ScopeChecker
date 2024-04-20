@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "mvvm-view": "/common/components/mvvm-view/mvvm-view"
+  }
+}
+  

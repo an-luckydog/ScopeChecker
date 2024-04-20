@@ -1,0 +1,3 @@
+<view class="content">
+    <image bindload="__e" data-event-opts="{{[ [ 'load',[ [ 'imgLoad',['$event'] ] ] ] ]}}" hidden="{{!loadEnd}}" mode="widthFix" src="{{imgUrl+storyPic}}"></image>
+</view>

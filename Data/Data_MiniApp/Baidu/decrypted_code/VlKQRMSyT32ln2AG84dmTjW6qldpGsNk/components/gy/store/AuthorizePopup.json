@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"c-popup":"../../../mars_modules/@baidu/med-ui/dist/swan/components/Popup/Popup","store-member-fuli":"./StoreMemberFuli","c-checkbox":"../../common/checkbox","c-dialog":"../../../mars_modules/@baidu/med-ui/dist/swan/components/Dialog/Dialog","c-icon":"../../../mars_modules/@baidu/med-ui/dist/swan/components/Icon/Icon"}}

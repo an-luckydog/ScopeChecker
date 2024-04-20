@@ -1,0 +1,11 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "gt-dxdjx-h5-expand-coupon": "/widgets/gt-dxdjx-h5-expand-coupon/gt-dxdjx-h5-expand-coupon",
+        "coupon-one": "/components/coupon-card/coupon-one/index",
+        "coupon-two": "/components/coupon-card/coupon-two/index",
+        "login": "/components/login/login"
+    }
+}

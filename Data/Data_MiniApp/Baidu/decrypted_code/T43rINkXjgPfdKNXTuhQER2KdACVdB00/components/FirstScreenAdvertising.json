@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "game-item-btn": "./GameItemBtn"
+    },
+    "component": true
+}

@@ -1,0 +1,13 @@
+<view class="magici-box data-v-237b4825">
+    <view bindtap="__e" class="goods_details magicBox data-v-237b4825" data-event-opts="{{[ [ 'tap',[ [ 'toMagicGoods',['$0'],[ [ ['magicList','',index,'goodsId'] ] ] ] ] ] ]}}" wx:for="{{$root.l0}}" wx:key="index">
+        <view class="goods_msg data-v-237b4825">
+            <text class="goods_name data-v-237b4825">{{item[$orig].goodsShortName}}</text>
+            <text class="goods_price data-v-237b4825">{{'价值：'+item.f0+'元'}}</text>
+            <text class="btn data-v-237b4825">立即参与</text>
+            <text class="tips data-v-237b4825">尊享卡立享1元参与</text>
+        </view>
+        <view class="goods_pic_box data-v-237b4825">
+            <image class="goods_pic data-v-237b4825" mode="widthFix" src="{{goodsImgRoot+item.g1[0]}}" wx:if="{{$root.g0>0}}"></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,17 @@
+{
+  "name": "suning_swan",
+  "version": "2.6.3",
+  "description": "苏宁易购百度小程序",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+  },
+  "keywords": [
+    "suning","swan","baidu"
+  ],
+  "author": "",
+  "devDependencies": {
+  },
+  "license": "ISC"
+}

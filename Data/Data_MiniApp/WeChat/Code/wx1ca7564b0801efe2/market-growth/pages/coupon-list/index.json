@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "优惠券",
+    "navigationBarTitleText": "优惠券",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "navigationBarTitleText": "美团外卖",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#fff",
+    "usingComponents": {
+        "wm-webview": "../../npm/wmfe/wxapp-component-webview0_9_11/src/components/webview",
+        "custom-tab-bar": "../../custom-tab-bar/index",
+        "tm": "/touchmatrix_bundles/index",
+        "mprn-component": "../../components/mprn-component/index",
+        "custom-mach-container": "../index/components/custom-mach-container/index",
+        "custom-native-container": "../index/components/custom-native-container/index",
+        "common-container": "../../npm/r2x/module-container1_1_4/lib/container/index",
+        "weapp-comp-privacy": "../../privacy/components/index"
+    },
+    "componentPlaceholder": {
+        "tm": "view"
+    }
+}

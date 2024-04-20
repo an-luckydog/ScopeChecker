@@ -1,0 +1,10 @@
+{
+    "name": "swan-eshop",
+    "publicComponents": {
+        "search-page": "components/search-components/search-page/page",
+        "sales-leads": "components/leads-components/sales-leads/index"
+    },
+    "pages": [
+    ],
+    "main": "index.js"
+}

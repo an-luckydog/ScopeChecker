@@ -1,0 +1,97 @@
+function timeFormat(stmp) {
+    if (!stmp) {
+        return ('')
+    };
+    var date = getDate(stmp);
+
+    function setZero(num) {
+        return (num >= 10 ? num : '0' + num)
+    };
+    return (date.getFullYear() + '.' + setZero(date.getMonth() + 1) + '.' + setZero(date.getDate()))
+};
+
+function selectedGroupText(commodityData) {
+    var hasStudyPack = commodityData.hasStudyPack;
+    var bookType = commodityData.bookType;
+    var agreementsData = commodityData.agreementsData;
+    var text = '';
+    text = bookType === 1 ? '初中教材' : (bookType === 2 ? '高中教材' : '');
+    if ((hasStudyPack === 1 || hasStudyPack === 2) && agreementsData.length > 0) {
+        agreementsData.forEach((function(agreementItem) {
+            if (agreementItem.checked == 1) {
+                text += ',' + agreementItem.name;
+                if (agreementItem.type == 12) {
+                    text += '考试保障'
+                }
+            }
+        }))
+    };
+    if (text === '') {
+        return ('请选择服务')
+    };
+    return ("已选：" + (text.indexOf(',') === 0 ? text.substring(1) : text))
+};
+
+function comItemPrice(comItem) {
+    var price = comItem.costPrice;
+    if (comItem.agreementsData.length > 0) {
+        comItem.agreementsData.forEach((function(item) {
+            price += item.checked ? item.price : 0
+        }))
+    };
+    return ((price))
+};
+
+function comListPrice(comListItem, showType) {
+    var comList = comListItem.commoditySpecial.comList;
+    var realpayPrice = 0;
+    var costPrice = 0;
+    switch (showType) {
+        case 2:
+            realpayPrice = comListItem.commoditySpecial.realpayPrice;
+            costPrice = comListItem.commoditySpecial.costPrice;
+            for (var i = 0; i < comList.length; i++) {
+                if (comList[((nt_0 = (i), null == nt_0 ? undefined : 'number' === typeof nt_0 ? nt_0 : "" + nt_0))].agreementsData.length > 0) {
+                    comList[((nt_1 = (i), null == nt_1 ? undefined : 'number' === typeof nt_1 ? nt_1 : "" + nt_1))].agreementsData.forEach((function(item) {
+                        realpayPrice += item.checked ? item.price : 0;
+                        costPrice += item.checked ? item.price : 0
+                    }))
+                }
+            };
+            break;
+        case 3:
+            for (var i = 0; i < comList.length; i++) {
+                var comListItem = comList[((nt_2 = (i), null == nt_2 ? undefined : 'number' === typeof nt_2 ? nt_2 : "" + nt_2))];
+                realpayPrice += comListItem.checked ? comListItem.realpayPrice : 0;
+                costPrice += comListItem.checked ? comListItem.costPrice : 0;
+                if (comList[((nt_3 = (i), null == nt_3 ? undefined : 'number' === typeof nt_3 ? nt_3 : "" + nt_3))].agreementsData.length > 0 && comListItem.checked) {
+                    comList[((nt_4 = (i), null == nt_4 ? undefined : 'number' === typeof nt_4 ? nt_4 : "" + nt_4))].agreementsData.forEach((function(item) {
+                        realpayPrice += item.checked ? item.price : 0;
+                        costPrice += item.checked ? item.price : 0
+                    }))
+                }
+            };
+            break;
+    };
+    realpayPrice = realpayPrice;
+    costPrice = (costPrice <= 0 ? 1 : costPrice);
+    return ([realpayPrice, costPrice])
+};
+
+function isChecked(agreementsData) {
+    return (agreementsData.some((function(item) {
+        return (item.checked == true)
+    })))
+};
+
+function title(info, title) {
+    return (info.type === 12 ? title + '考试保障' : title)
+};
+module.exports = ({
+    timeFormat: timeFormat,
+    selectedGroupText: selectedGroupText,
+    isChecked: isChecked,
+    comListPrice: comListPrice,
+    comItemPrice: comItemPrice,
+    title: title,
+});

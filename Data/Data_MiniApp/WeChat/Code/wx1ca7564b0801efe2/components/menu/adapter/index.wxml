@@ -1,0 +1,3 @@
+<view class="adapter-loading" wx:if="{{showFullLoading}}">
+    <view class="exception-pic"></view>
+</view>

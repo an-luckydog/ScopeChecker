@@ -1,0 +1,48 @@
+{
+  "_from": "@lianjia/agent-sj-sdk@^0.3.3",
+  "_id": "@lianjia/agent-sj-sdk@0.3.4",
+  "_inBundle": false,
+  "_integrity": "sha1-f/p0oWjRMC/337DNkHKw8s/+L8s=",
+  "_location": "/@lianjia/agent-sj-sdk",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@lianjia/agent-sj-sdk@^0.3.3",
+    "name": "@lianjia/agent-sj-sdk",
+    "escapedName": "@lianjia%2fagent-sj-sdk",
+    "scope": "@lianjia",
+    "rawSpec": "^0.3.3",
+    "saveSpec": null,
+    "fetchSpec": "^0.3.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://registry.npmjs.lianjia.com:7001/@lianjia/agent-sj-sdk/download/@lianjia/agent-sj-sdk-0.3.4.tgz",
+  "_shasum": "7ffa74a168d1302ff7dfb0cd9072b0f2cffe2fcb",
+  "_spec": "@lianjia/agent-sj-sdk@^0.3.3",
+  "_where": "/Users/guliming/Documents/work/transformers",
+  "author": {
+    "name": "platfe"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "anget business opportunity form ad sdk",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@lianjia/agent-sj-sdk",
+  "repository": {
+    "type": "git",
+    "url": "git@git.lianjia.com:plat-fe/fe-agent-shangji-sdk.git"
+  },
+  "scripts": {
+    "prod": "rm -rf dist && npx babel src --out-dir dist"
+  },
+  "version": "0.3.4"
+}

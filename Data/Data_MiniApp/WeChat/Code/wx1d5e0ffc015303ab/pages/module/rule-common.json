@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "活动规则",
+    "navigationStyle": "default",
+    "usingComponents": {
+        "app": "/components/privacy/privacy"
+    }
+}

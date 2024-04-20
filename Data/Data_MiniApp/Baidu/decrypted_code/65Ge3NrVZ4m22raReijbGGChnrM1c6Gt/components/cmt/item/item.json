@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "cmt-item": "/components/cmt/item/item"
+    }
+}

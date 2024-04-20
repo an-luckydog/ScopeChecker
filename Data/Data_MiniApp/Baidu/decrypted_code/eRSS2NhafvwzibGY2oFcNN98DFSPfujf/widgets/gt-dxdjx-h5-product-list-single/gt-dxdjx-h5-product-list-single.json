@@ -1,0 +1,7 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "gt-dxdjx-h5-basic-feed":"/widgets/gt-dxdjx-h5-basic-feed/gt-dxdjx-h5-basic-feed"
+    }
+}

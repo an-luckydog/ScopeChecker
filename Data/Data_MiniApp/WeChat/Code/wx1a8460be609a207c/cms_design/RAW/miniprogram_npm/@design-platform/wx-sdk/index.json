@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "design-components": "../../../components/design-components/index"
+    }
+}

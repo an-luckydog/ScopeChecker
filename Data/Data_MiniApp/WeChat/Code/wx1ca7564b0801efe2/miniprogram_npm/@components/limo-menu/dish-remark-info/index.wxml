@@ -1,0 +1,7 @@
+<view class="remarks-wrapper">
+    <view class="remarks-name">备注</view>
+    <view bind:tap="editRemarkFn" class="remarks-content">
+        <view class="edit-icon"></view>
+        <view class="{{newRemarkText?'remarks-intro highlight':'remarks-intro'}}">{{newRemarkText||tips}}</view>
+    </view>
+</view>

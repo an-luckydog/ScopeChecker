@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "地址簿",
+    "backgroundTextStyle": "dark",
+    "onReachBottomDistance": 50,
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

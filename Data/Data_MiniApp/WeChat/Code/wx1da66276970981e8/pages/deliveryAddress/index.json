@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "编辑收件地址",
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

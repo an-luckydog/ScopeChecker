@@ -1,0 +1,152 @@
+{
+    "appid": "16117027",
+    "compilation-args": {
+        "options": [
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "subpackages/ershoufang/pages/houseEstDetail/houseEstDetail",
+                    "query": "resblock_code=1111027379220",
+                    "scene": {}
+                },
+                "id": 0,
+                "text": "houseDetail"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/agentMainPage/agentMainPage",
+                    "query": "ucid=1000000020004524",
+                    "scene": {}
+                },
+                "id": 1,
+                "text": "agentMainPage"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "subpackages/xinfang/pages/resblockInfo/index",
+                    "query": "project_name=zshqggbjusq",
+                    "scene": {}
+                },
+                "id": 2,
+                "text": "loupan"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "subpackages/xinfang/pages/frame/index",
+                    "query": "projectName=zshqggbjusq&frameId=5020040507480307&ulog_action=&source_type=recommend_homeindex&recommend_log_info=%7B%22projectName%22%3A%22zshqggbjusq%22%2C%22frameId%22%3Anull%2C%22abTestFlag%22%3Anull%2C%22expoId%22%3A%221562666058197%22%2C%22strategyName%22%3A%22%7B%5C%22RecallStrategyHot%5C%22%3A0.995%7D%22%2C%22currentPageProjectName%22%3Anull%2C%22reasonDetails%22%3A%22%E4%B8%8A%E6%B5%B7%E5%B8%82%E4%BA%BA%E6%B0%94%E6%A6%9C%E7%AC%AC2%E5%90%8D%22%2C%22reasonType%22%3A%222%22%7D&strategy_info=",
+                    "scene": {}
+                },
+                "id": 3,
+                "text": "huxing"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "subpackages/xinfang/pages/agentProfile/index",
+                    "query": "agentId=1000000026062960",
+                    "scene": {}
+                },
+                "id": 4,
+                "text": "agentProfile"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "subpackages/xinfang/pages/resblockNews/index",
+                    "query": "project_name=zshqggbjusq&type=undefined",
+                    "scene": {}
+                },
+                "id": 5,
+                "text": "agentNews"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "subpackages/rent/dist/pages/detail/index",
+                    "query": "house_code=BJ2288194097296982016&position=0&paramMode=noParam",
+                    "scene": {}
+                },
+                "id": 6,
+                "text": "rentDetail"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "subpackages/rent/dist/pages/apartment/list/index",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 7,
+                "text": "rentList"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "subpackages/rent/dist/pages/apartment/store/index",
+                    "query": "shop_id=963&paramMode=noParam",
+                    "scene": {}
+                },
+                "id": 8,
+                "text": "store"
+            }
+        ],
+        "selected": -2,
+        "common": {
+            "quickPreview": true,
+            "ignoreSourceMap": true
+        },
+        "forceChanged": {}
+    },
+    "developType": "normal",
+    "editor": {
+        "curPath": "/Users/souoxs/Desktop/bdxcx/tdk/smartprogram/app.json",
+        "expands": [
+            "/Users/souoxs/Desktop/bdxcx/tdk/smartprogram/pages",
+            "/Users/souoxs/Desktop/bdxcx/tdk/smartprogram/subpackages",
+            "/Users/souoxs/Desktop/bdxcx/tdk/smartprogram/subpackages/ershoufang",
+            "/Users/souoxs/Desktop/bdxcx/tdk/smartprogram/subpackages/ershoufang/pages"
+        ],
+        "markdownUploadTimeMap": {},
+        "paths": [
+            "/Users/souoxs/Desktop/bdxcx/tdk/smartprogram/app.json"
+        ],
+        "recentlyFiles": [
+            "/Users/souoxs/Desktop/bdxcx/tdk/smartprogram/app.json",
+            "/Users/souoxs/Desktop/bdxcx/tdk/smartprogram/app.js",
+            "/Users/souoxs/Desktop/bdxcx/tdk/smartprogram/app.json",
+            "/Users/souoxs/Desktop/bdxcx/tdk/smartprogram/app.js",
+            "/Users/souoxs/Desktop/bdxcx/tdk/smartprogram/env.js"
+        ]
+    },
+    "host": "baiduboxapp",
+    "preview": {
+        "packageId": 998434
+    },
+    "publish": {
+        "version": "9.31.2"
+    },
+    "setting": {
+        "minified": true,
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.640.4",
+            "extensionJsVersion": "1.21.2"
+        }
+    },
+    "miniprogramRoot": "./",
+    "projectname": "swan_dist"
+}

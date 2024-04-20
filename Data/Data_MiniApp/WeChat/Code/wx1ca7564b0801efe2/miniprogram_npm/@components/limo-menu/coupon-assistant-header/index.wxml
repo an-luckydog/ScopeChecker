@@ -1,0 +1,7 @@
+<view class="coupon-assistant-header">
+    <view class="coupon-assistant-header__title">{{couponStyle.couponTitle||'优惠助手'}}（{{couponCount||'-'}}张可用）</view>
+    <view catch:tap="onCheckMore" class="coupon-assistant-header__more" wx:if="{{!hideMore}}">
+        <view class="coupon-assistant-header__more__text">更多</view>
+        <image class="coupon-assistant-header__more__icon" src="https://p0.meituan.net/travelcube/eeccf4605fdceae24f57015d0dfd2aaa220.png"></image>
+    </view>
+</view>

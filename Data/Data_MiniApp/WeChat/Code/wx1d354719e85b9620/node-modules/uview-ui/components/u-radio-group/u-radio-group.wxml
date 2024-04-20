@@ -1,0 +1,3 @@
+<view class="u-radio-group u-clearfix data-v-158c7efb">
+    <slot></slot>
+</view>

@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mip-bdxd-order-card-item": "/widgets/mip-bdxd-order-card-item/mip-bdxd-order-card-item"
+    }
+}

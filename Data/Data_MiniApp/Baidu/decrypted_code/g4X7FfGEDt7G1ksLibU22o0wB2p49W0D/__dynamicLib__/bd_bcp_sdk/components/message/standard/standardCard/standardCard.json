@@ -1,0 +1,13 @@
+{
+    "component": true,
+    "usingComponents": {
+        "video-base": "../widget/videoBase/videoBase",
+		"detail-base": "../widget/detailBase/detailBase",
+        "consult": "../../widgets/consult/consult",
+        "button-group": "../../widgets/buttonGroup/buttonGroup",
+        "description": "../widget/description/description",
+        "brand": "../widget/brand/brand",
+        "ui-image": "../widget/image/image",
+        "tabs-card": "../../card/tabsCard/tabsCard"
+    }
+}

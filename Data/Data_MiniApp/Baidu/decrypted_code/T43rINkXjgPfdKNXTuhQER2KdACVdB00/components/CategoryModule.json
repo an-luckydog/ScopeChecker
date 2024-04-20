@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "half-px-line": "./HalfPxLine",
+        "game-item": "./GameItem",
+        "footer-label": "./Footer",
+        "find-game-item": "./FindGameItem"
+    },
+    "component": true
+}

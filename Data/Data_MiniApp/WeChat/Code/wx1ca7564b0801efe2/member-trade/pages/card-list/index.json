@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "会员卡列表",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "empty-and-error": "../../../components/EmptyAndError",
+        "delete-item-box": "../../../components/DeleteItemBox",
+        "game-item": "../../../components/GameItem"
+    },
+    "component": true
+}

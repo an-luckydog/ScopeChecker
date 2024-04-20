@@ -1,0 +1,95 @@
+/* 颜色目录变量start */
+
+/* 颜色目录变量end */
+
+/* 用 ::before 为元素增加更大的可点击区域*/
+
+/* 阴影变量start */.shadow{box-shadow:0 0.5333333333333333vw 1.3333333333333333vw 0 rgba(0,0,0,0.05);-moz-box-shadow:0 0.5333333333333333vw 1.3333333333333333vw 0 rgba(0,0,0,0.05);
+  /*firefox*/-webkit-box-shadow:0 0.5333333333333333vw 1.3333333333333333vw 0 rgba(0,0,0,0.05)
+  /*webkit*/}
+
+/* 阴影变量end */
+
+/* 主色 */.main-color{color:#3072f6}
+
+/* 辅助信息字体color */.sub-info-color{color:#999999}
+
+/* 暗文提示字体color */.tip-color{color:#cccccc}
+
+/* 深色背景字体color */.light-color{color:#ffffff}
+
+/* 价格&错误提示color */.red-color{color:#fa5741}
+
+/* 通用按钮样式 */.common-btn{margin:0 6.4vw;height:13.333333333333334vw;line-height:13.333333333333334vw;text-align:center;border-radius:1.3333333333333333vw;font-size:4.8vw}.common-btn::after{border:none}.common-btn-normal{background:#3072F7;color:#fff}.common-btn-normal.common-btn-disable{background:#ACC5FB}.common-btn-white{background:#fff;color:#2F73F6;border:0.5px solid #3072F6}.common-btn-light{background:rgba(48,114,247,0.05);color:#3072F7}.common-btn-light-press{background:rgba(48,114,247,0.1)}
+
+/*字体变量start*/.font-D{font-family:"DIN Condensed"}@font-face{font-family:"DIN Condensed";src:url('https://s1.ljcdn.com/link-static/resource/wxapp/DIN_Condensed_Bold.ttf') format('truetype')}.font-B{font-family:"DIN Bold"}@font-face{font-family:"DIN Bold";src:url('https://s1.ljcdn.com/siris/DIN-Bold.otf') format('truetype')}.font-P{font-family:"Ping Fang"}.font-Sb{font-family:PingFangSC-Semibold}
+
+/*字体变量end*/
+
+/*常用整体padding*/.pd-all{padding:0 6.4vw}
+
+/*常用整体padding*/
+
+/* 阴影变量start */.shadow{box-shadow:0 0.5333333333333333vw 1.3333333333333333vw 0 rgba(0,0,0,0.05);-moz-box-shadow:0 0.5333333333333333vw 1.3333333333333333vw 0 rgba(0,0,0,0.05);
+  /*firefox*/-webkit-box-shadow:0 0.5333333333333333vw 1.3333333333333333vw 0 rgba(0,0,0,0.05)
+  /*webkit*/}
+
+/* 阴影变量end */
+
+/*按钮start*/.base-btn::after{border:none}swan-button::after{border:none}.btn-large{font-size:4.8vw;font-family:PingFangSC-Semibold;font-weight:bold;border-radius:1.3333333333333333vw;line-height:12.8vw;height:12.8vw;text-align:center}.btn-small{font-size:3.2vw;font-family:PingFangSC-Semibold;font-weight:bold;border-radius:0.5333333333333333vw;line-height:7.466666666666667vw;height:7.466666666666667vw;min-width:17.066666666666666vw;padding:0 2.1333333333333333vw;text-align:center}.btn-blue{background:#3072F6;color:#FFFFFF}.btn-green{background:#3BC48B;color:#FFFFFF}.btn-grey{background:#F8F8F8;color:#222222}.btn-blue-button-hover{background-color:#2B66DC}.btn-green-button-hover{background-color:#34B07C}.btn-grey-button-hover{background-color:#EAF0FE}.btn-blue-button-disabled{background-color:#ACC6FB}.btn-green-button-disabled{background-color:#B0E7D0}.btn-grey-button-disabled{background-color:#EAF0FE}.btn-blue-button-choose{background-color:#FFFFFF;color:#3072F6;border:0.4vw solid #3072F6}.btn-green-button-choose{background-color:#FFFFFF;color:#3BC48B;border:0.4vw solid #3BC48B}
+
+/*按钮end*/
+
+/* 数字红点start*/.reddot{font-size:2.6666666666666665vw;background:#FA5741;display:inline-block;color:#FFFFFF;min-width:2.4vw;font-family:PingFangSC-Semibold;padding:1.0666666666666667vw 1.3333333333333333vw;border:0.26666666666666666vw solid #FFFFFF;border-radius:6.666666666666667vw;box-sizing:border-box;vertical-align:middle;text-align:center;line-height:1.8666666666666667vw}
+
+/* 红点/角标end*/
+
+/* 分割线start */.hr{height:0.26666666666666666vw;border:none;background:#F0F0F0}.split-line-top{border-top:0.5px solid #F0F0F0}.split-line-bottom{border-bottom:0.5px solid #F0F0F0}
+
+/* 分割线end */.big-number{font-size:10.133333333333333vw;font-family:"DIN Condensed"}@font-face{font-family:"DIN Condensed";src:url('https://s1.ljcdn.com/link-static/resource/wxapp/DIN_Condensed_Bold.ttf') format('truetype')}.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.ellipsis{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.zyx{}
+
+/* 颜色目录变量start */
+
+/* 颜色目录变量end */
+
+/* 用 ::before 为元素增加更大的可点击区域*/
+
+/* 阴影变量start */
+
+/* 阴影变量end */
+
+/* 主色 */
+
+/* 辅助信息字体color */
+
+/* 暗文提示字体color */
+
+/* 深色背景字体color */
+
+/* 价格&错误提示color */
+
+/* 通用按钮样式 */
+
+/*字体变量start*/
+
+/*字体变量end*/
+
+/*常用整体padding*/
+
+/*常用整体padding*/
+
+/* 阴影变量start */
+
+/* 阴影变量end */
+
+/*按钮start*/
+
+/*按钮end*/
+
+/* 数字红点start*/
+
+/* 红点/角标end*/
+
+/* 分割线start */
+
+/* 分割线end */.test-view{width:26.666666666666668vw;position:fixed;height:13.333333333333334vw;background:#3072f6;font-size:1.7333333333333334vw;line-height:13.333333333333334vw;text-align:center;top:50%;left:50%;margin-left:-13.333333333333334vw;margin-top:-6.666666666666667vw;z-index:999999}.footer-btn{position:fixed;bottom:0;left:0;right:0;display:flex;background-color:#FFFFFF;padding:4.266666666666667vw 6.4vw;z-index:999998}.footer-btn .share-btn{background:#3BC48B;color:#FFFFFF;margin-right:2.1333333333333333vw;flex:1}.footer-btn .share-btn .btn-icon-card{width:4.8vw;height:4.266666666666667vw;display:inline-block;margin-right:1.0666666666666667vw;vertical-align:middle}.footer-btn .share-btn .btn-icon-pic{width:3.7333333333333334vw;height:4.266666666666667vw;margin-right:1.0666666666666667vw;display:inline-block;vertical-align:middle}.footer-btn .share-btn .btn-text{display:inline-block;vertical-align:middle}.footer-btn .share-btn:nth-child(2){margin-right:0;background:#3072F6;color:#FFFFFF}.footer-btn.ipx{padding-bottom:14.933333333333334vw}.footer-btn .tail-button{background:#3072F6;margin:2.6666666666666665vw;width:100%;text-align:center;height:13.333333333333334vw;line-height:13.333333333333334vw;color:#FFFFFF;border-radius:1.0666666666666667vw}.mask{top:0;bottom:0;left:0;right:0;position:fixed;background:rgba(0,0,0,0.7);z-index:999998}.share-layer{position:fixed;bottom:0;width:100%;background:#FFFFFF;z-index:999999;border-top-left-radius:2.6666666666666665vw;border-top-right-radius:2.6666666666666665vw}.share-layer .close-btn{position:relative;left:85.33333333333333vw;padding:2.1333333333333333vw}.share-layer .close-btn .close-btn-icon{height:6.4vw;width:6.4vw}.share-layer .share-layer-title{font-family:PingFangSC-Semibold;font-size:5.866666666666666vw;color:#333333;line-height:5.866666666666666vw;text-align:center}.share-layer .share-layer-main{margin:10.666666666666666vw 8.533333333333333vw 14.933333333333334vw;height:62.93333333333333vw;position:relative;text-align:center}.share-layer .share-layer-main .share-layer-img-loading{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:100}.share-layer .share-layer-main .share-layer-img-loading .loading-icon{width:6.4vw;height:6.4vw;margin:0 auto;display:block;animation:runCircle 1s infinite}@keyframes runCircle{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.share-layer .share-layer-main .share-layer-img-loading .loading-error{width:26.666666666666668vw;height:26.666666666666668vw;margin:0 auto;display:block}.share-layer .share-layer-main .share-layer-img-loading .loading-text{font-size:4.266666666666667vw;color:#000000;display:inline-block;margin:5.333333333333333vw auto 0}.share-layer .share-layer-main .share-layer-img-loading .loading-text-link{text-align:center;font-size:3.7333333333333334vw;margin-top:5.333333333333333vw;color:#3072F6;display:block}.share-layer .share-layer-btn{padding-bottom:4.266666666666667vw}.share-layer .share-layer-btn.ipx{padding-bottom:13.333333333333334vw}.share-layer .share-layer-btn .btn-text{font-family:PingFangSC-Semibold;font-size:4.266666666666667vw;height:12.8vw;color:#FFFFFF}.share-layer .share-layer-btn .disable-btn{background:#83abfa}.zyx{}

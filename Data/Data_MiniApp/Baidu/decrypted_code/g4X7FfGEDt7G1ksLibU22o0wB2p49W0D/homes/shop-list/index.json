@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "适用门店",
+    "backgroundColor": "#fff",
+    "usingComponents": {
+        "c-image": "/components/c-image/index",
+        "c-loading": "/components/loading/index"
+    }
+}

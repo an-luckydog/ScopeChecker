@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "适用门店",
+    "usingComponents": {
+        "u-image": "../../../node-modules/uview-plus/components/u-image/u-image",
+        "u-loadmore": "../../../node-modules/uview-plus/components/u-loadmore/u-loadmore",
+        "c-page": "../../../components/c-page/c-page"
+    }
+}

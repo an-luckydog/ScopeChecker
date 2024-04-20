@@ -1,0 +1,6 @@
+<view class="{{tabBarStyle==='2'?'rms-tab-bar larger-middle':'rms-tab-bar normal'}}" wx:if="{{showNativeTabBar&&tabbarList&&tabbarList.length>0}}">
+    <view bindtap="switchTab" class="{{index===middleIndex&&tabBarStyle==='2'?'tab-bar-item large-middle-item':'tab-bar-item'}}" data-index="{{index}}" data-selected-bar="{{item}}" wx:for="{{tabbarList}}" wx:key="index">
+        <image class="icon" lazyLoad="true" src="{{index===selectedIndex?item.selectedIconPath:item.iconPath}}" wx:if="{{item.iconPath&&item.selectedIconPath}}"></image>
+        <view class="title" style="color: {{index===selectedIndex?selectedColor:color}} " wx:if="{{tabBarStyle==='1'||tabBarStyle==='2'&&index!==middleIndex}}">{{item.text}}</view>
+    </view>
+</view>

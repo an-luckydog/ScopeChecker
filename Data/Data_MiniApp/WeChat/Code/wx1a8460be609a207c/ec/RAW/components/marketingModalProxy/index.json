@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "marketing-modal": "/ec_extension_package/RAW/marketingModal/distribution/index",
+        "c_n5odrfooc7fdm": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "marketing-modal": "c_n5odrfooc7fdm"
+    }
+}

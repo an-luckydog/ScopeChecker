@@ -1,0 +1,55 @@
+<view class="entry-wrapper divider-{{dividerConfig.dividerType}} {{wrapperConfig.backgroundClass}}" style="{{compStyle}} {{wrapperConfig.compStyle}}">
+    <scroll-view enhanced="{{true}}" scrollX="{{true}}" showScrollbar="{{false}}">
+        <view class="template template-{{templateStyle}}" style="{{wrapperConfig.style}}" wx:if="{{templateStyle===1||templateStyle===2||templateStyle===3||templateStyle===7||templateStyle===8||templateStyle===9}}">
+            <view class="content" style="{{compStyle}} {{item.moduleStyle}}" wx:for="{{entryList}}" wx:key="index">
+                <view class="divider">
+                    <business-entry-item infoList="{{infoList}}" item="{{item}}" themeStyle="{{themeStyle}}"></business-entry-item>
+                </view>
+                <view class="element-line" style="{{lineStyle.columnStyle}}" wx:if="{{index<entryList.length-1&&templateStyle!==7}}">
+                    <element-line elConfig="{{dividerConfig}}"></element-line>
+                </view>
+            </view>
+            <view class="element-line" style="{{lineStyle.columnStyle}}" wx:if="{{templateStyle===7}}">
+                <element-line elConfig="{{dividerConfig}}"></element-line>
+            </view>
+            <view class="element-line" style="{{lineStyle.rowStyle}}" wx:if="{{templateStyle===7}}">
+                <element-line elConfig="{{rowDividerConfig}}"></element-line>
+            </view>
+        </view>
+    </scroll-view>
+    <view class="template template-{{templateStyle}}" style="{{wrapperConfig.style}}" wx:if="{{templateStyle===4||templateStyle===5||templateStyle===6}}">
+        <view class="slide">
+            <view class="content" style="{{compStyle}} {{entryList[0].moduleStyle}}">
+                <view class="divider">
+                    <business-entry-item infoList="{{infoList}}" item="{{entryList[0]}}" themeStyle="{{templateStyle===5?extraStyle:themeStyle}}"></business-entry-item>
+                </view>
+            </view>
+            <view class="element-line" style="{{lineStyle.rowStyle}}" wx:if="{{templateStyle===5}}">
+                <element-line elConfig="{{rowDividerConfig}}"></element-line>
+            </view>
+            <view class="content" style="{{compStyle}} {{entryList[1]?entryList[1].moduleStyle:''}}" wx:if="{{templateStyle===5}}">
+                <view class="divider">
+                    <business-entry-item infoList="{{infoList}}" item="{{entryList[1]}}" themeStyle="{{extraStyle}}"></business-entry-item>
+                </view>
+            </view>
+        </view>
+        <view class="element-line" style="{{templateStyle===6?lineStyle.rowStyle:lineStyle.columnStyle}}">
+            <element-line elConfig="{{templateStyle===6?rowDividerConfig:dividerConfig}}"></element-line>
+        </view>
+        <view class="slide">
+            <view class="content" style="{{compStyle}} {{entryList[1]?entryList[1].moduleStyle:''}}" wx:if="{{templateStyle===4||templateStyle===6}}">
+                <view class="divider">
+                    <business-entry-item infoList="{{infoList}}" item="{{entryList[1]}}" themeStyle="{{extraStyle}}"></business-entry-item>
+                </view>
+            </view>
+            <view class="element-line" style="{{templateStyle===4?lineStyle.rowStyle:lineStyle.columnStyle}}" wx:if="{{templateStyle===4||templateStyle===6}}">
+                <element-line elConfig="{{templateStyle===4?rowDividerConfig:dividerConfig}}"></element-line>
+            </view>
+            <view class="content" style="{{compStyle}} {{entryList[2]?entryList[2].moduleStyle:''}}">
+                <view class="divider">
+                    <business-entry-item infoList="{{infoList}}" item="{{entryList[2]}}" themeStyle="{{templateStyle===5?themeStyle:extraStyle}}"></business-entry-item>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,3 @@
+<view class="wrap data-v-5d01d306">
+    <image bindtap="__e" class="active data-v-5d01d306" data-event-opts="{{[ [ 'tap',[ [ 'toRule',['$0'],[ [ ['activeList','',index,'flag'] ] ] ] ] ] ]}}" mode="widthFix" src="{{item.url}}" wx:for="{{activeList}}" wx:key="index"></image>
+</view>

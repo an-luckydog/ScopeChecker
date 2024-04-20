@@ -1,0 +1,13 @@
+{
+    "component": true,
+    "usingComponents": {
+        "coupon-assistant-header": "../coupon-assistant-header/index",
+        "coupon-item": "../../../../async-meal/components/coupon-item/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "coupon-item": "view",
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,20 @@
+<view class="container-mask" style="z-index: 10001"></view>
+<view class="mask-item center" style="z-index: 100001">
+    <view class="rms-modal">
+        <view class="title">温馨提示</view>
+        <view class="privacy">
+            <view class="body">
+                <view class="paragraph agreement-text">感谢您使用点餐服务，我们深知个人信息对您的重要性，为此我们将按照法律法规要求和业界成熟的安全标准来保护您的个人信息。</view>
+                <view class="agreement-text">
+                    <view class="inline-text">在使用点餐服务前，请您务必仔细阅读</view>
+                    <view bind:tap="onAgreementClick" class="inline-text bold" data-index="{{index}}" data-tempid="{{item.id}}" wx:for="{{agreements}}" wx:key="index">《{{item.title}}》{{index<agreements.length-1?'、':''}}</view>
+                    <view class="inline-text">并充分理解相关条款以便做出适当的选择，我们将严格按照条款内容使用、保护您的个人信息。</view>
+                </view>
+            </view>
+        </view>
+        <view class="btn-content">
+            <view catch:tap="onLimoCancel" class="btn cancel">取消</view>
+            <view catch:tap="onLimoConfirm" class="btn confirm">确认</view>
+        </view>
+    </view>
+</view>

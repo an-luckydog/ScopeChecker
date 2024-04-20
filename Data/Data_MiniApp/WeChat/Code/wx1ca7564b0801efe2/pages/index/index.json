@@ -1,0 +1,18 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "privacy-popup": "../../components/privacy-popup/index",
+        "customer-header": "../../components/customer-header/index",
+        "limo-container": "./components/limo-container/index",
+        "tab-bar": "../../async-main/components/tab-bar/index",
+        "theme-container": "../../components/theme-container/index",
+        "common-error-page": "../../async-main/limo-common/common-error-page/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "tab-bar": "view",
+        "common-error-page": "view",
+        "lottery": "view"
+    }
+}

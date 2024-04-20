@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "navigationBarTitleText": "百度网盘分享",
+    "usingComponents": {
+        "bottom-popper": "/components/bottom-popper/index",
+        "nav-bar": "/components/nav-bar/nav-bar",
+        "toasts": "/components/toasts/index",
+        "appeal-dialog": "/payment/Components/Dialogs/AppealDialog/AppealDialog"
+    }
+}

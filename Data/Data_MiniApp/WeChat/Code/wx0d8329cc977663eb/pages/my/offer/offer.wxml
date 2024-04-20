@@ -1,0 +1,17 @@
+<view wx:for="{{goinActivityList}}">
+    <label for="{{item.id}}">
+        <view class="activityRow">
+            <view class="activityName">{{item.title}}<div class="{{item.color}}">{{item.type}}</div>
+            </view>
+            <view class="activityIntroduce">{{item.content}}</view>
+            <view class="endLine">
+                <view class="place">{{item.place}}</view>
+                <view class="startTime">{{item.startTimeShow}}</view>
+            </view>
+        </view>
+    </label>
+    <button bindtap="inActivity" data-type="{{item.type}}" id="{{item.id}}" style="display:none">{{item.id}}</button>
+</view>
+<view style="{{noList}}">您暂时未收到招聘信息...</view>
+<view class="noMsg" style="{{noMsgDisplay}}">到 底 了 ~</view>
+<view class="noMsg" style="{{loadingDisplay}}">加 载 中...</view>

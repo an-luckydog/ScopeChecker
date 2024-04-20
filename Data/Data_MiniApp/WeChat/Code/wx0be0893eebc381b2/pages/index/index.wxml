@@ -1,0 +1,432 @@
+<import src="../template/template/template.wxml"></import>
+<view class="content" style="{{ddfda1||ddfda2||ddfda3?'height:100vh;overflow: hidden;':''}}">
+    <view class="content_top">
+        <view class="top">
+            <view bindtap="usercentnr" class="top_left">
+                <view class="top_left_mk">
+                    <image class="top_left_imgs" src="{{userInfo.avatarUrl?userInfo.avatarUrl:'../../img/tx@2x.png'}}"></image>
+                </view>
+                <view class="top_left_name">{{userInfo.nickName}}</view>
+                <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+                    <button class="cm_form_btn" formType="submit"></button>
+                </form>
+            </view>
+        </view>
+        <view bindtap="select" class="top_right">
+            <image class="top_right_imgs" src="../../img/cihui.png"></image>
+            <view class="title">{{title}}</view>
+        </view>
+        <view catchtap="{{siji_miss?'tan_fu':''}}" class="content_top_con">
+            <image class="content_top_con_img" src="../../img/sy_ksc@3x.png"></image>
+            <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+                <button class="cm_form_btn" formType="submit"></button>
+            </form>
+        </view>
+        <view class="content_top_bottom">
+            <view class="fange"></view>
+            <view class="content_top_bottom_left">
+                <view class="content_top_bottom_title">已学单词</view>
+                <view class="content_top_bottom_num">{{user.totalLearnedNum}}</view>
+            </view>
+            <view catchtap="card" class="content_top_bottom_left">
+                <view class="content_top_bottom_title">打卡天数</view>
+                <view class="content_top_bottom_num">{{user.signDays}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="wai">
+        <view class="content_content">
+            <view class="content_content_top">
+                <view class="content_content_top_left">
+                    <view class="jindu">剩余单词：</view>
+                    <view>{{user.restNum}}</view>
+                </view>
+            </view>
+            <view class="zongjindu">
+                <view class="jindutiao" style="width:{{user.progressStatus*100}}%"></view>
+            </view>
+            <view bindtap="plan" class="content_content_top_right">
+                <image class="danci_imgs" src="../../img/xuex.png"></image>
+                <view class="danci">学习计划</view>
+                <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+                    <button class="cm_form_btn" formType="submit"></button>
+                </form>
+            </view>
+            <view class="content_content_num">
+                <view class="content_content_num_text">
+                    <view class="content_content_num_s">{{user.todayNum}}</view>
+                    <view class="">今日剩余</view>
+                </view>
+                <view class="content_content_num_text">
+                    <view class="content_content_num_s">{{user.learnedNum}}</view>
+                    <view class="">本书已学</view>
+                </view>
+                <view class="content_content_num_text">
+                    <view class="content_content_num_s">{{user.restDays}}</view>
+                    <view class="">剩余天数</view>
+                </view>
+            </view>
+            <view bindtap="stydy" class="content_content_btn"> 开始学习 <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+                    <button class="cm_form_btn" formType="submit"></button>
+                </form>
+            </view>
+        </view>
+    </view>
+    <block wx:if="{{!onAd&&advertisement.length==1&&siji_miss&&!activity||activity&&onAd&&siji_miss}}">
+        <view autoplay="true" bindanimationfinish="swiperChange" circular="true" class="activity" current="{{isIndex}}" easingFunction="linear" wx:if="{{activity&&siji_miss||!onAd&&hasAd&&siji_miss}}">
+            <view bindtap="goActivityDetail" class="main-activity" data-id="{{activity.id}}" url="/activity/index?aid={{activity.id}}" wx:if="{{activity}}">
+                <image mode="aspectFill" src="{{activity.cover}}"></image>
+                <view animation="{{activityUserAnimateData}}">
+                    <view class="main-activity-box" wx:if="{{activityUsers}}">
+                        <view class="main-activity-avatar">
+                            <image mode="aspectFill" src="{{activityUsers.avatarUrl}}"></image>
+                        </view>
+                        <view class="main-activity-name">{{activityUsers.nickName}}</view>
+                        <view class="main-activity-extra">兑换成功</view>
+                    </view>
+                </view>
+            </view>
+            <view bindtap="goAdvertisement" class="activity-ad" data-index="{{index}}" data-type="{{item.type}}" wx:if="{{!onAd}}" wx:for="{{advertisement}}" wx:key="index">
+                <image mode="aspectFill" src="{{item.image}}"></image>
+            </view>
+        </view>
+    </block>
+    <block wx:else>
+        <swiper autoplay="true" bindanimationfinish="swiperChange" circular="true" class="activity" current="{{isIndex}}" easingFunction="linear" wx:if="{{activity&&siji_miss||!onAd&&hasAd&&siji_miss}}">
+            <swiper-item bindtap="goActivityDetail" class="main-activity" data-id="{{activity.id}}" url="/activity/index?aid={{activity.id}}" wx:if="{{activity}}">
+                <image mode="aspectFill" src="{{activity.cover}}"></image>
+                <view animation="{{activityUserAnimateData}}">
+                    <view class="main-activity-box" wx:if="{{activityUsers}}">
+                        <view class="main-activity-avatar">
+                            <image mode="aspectFill" src="{{activityUsers.avatarUrl}}"></image>
+                        </view>
+                        <view class="main-activity-name">{{activityUsers.nickName}}</view>
+                        <view class="main-activity-extra">兑换成功</view>
+                    </view>
+                </view>
+            </swiper-item>
+            <swiper-item bindtap="goAdvertisement" class="activity-ad" data-index="{{index}}" data-type="{{item.type}}" wx:if="{{!onAd}}" wx:for="{{advertisement}}" wx:key="index">
+                <image mode="aspectFill" src="{{item.image}}"></image>
+            </swiper-item>
+        </swiper>
+        <view class="main-point">
+            <view class="point-style {{isIndex==0?'':'isIndex'}}" wx:if="{{activity&&!onAd}}"></view>
+            <block wx:if="{{!onAd&&(activity||advertisement.length>1)}}" wx:for="{{advertisement}}" wx:key="index">
+                <view class="point-style {{isIndex==index+1?'':'isIndex'}}" wx:if="{{activity}}"></view>
+                <view class="point-style {{isIndex==index?'':'isIndex'}}" wx:else></view>
+            </block>
+        </view>
+    </block>
+    <view class="k_ms">
+        <view class="mdem"></view>
+        <view class="mkaa">NO.{{user.rank<100000?user.rank:'10W+'}}</view>
+        <view class="mdef"></view>
+    </view>
+    <view class="foot-wrap {{platform?'platform':''}}">
+        <view class="content_bottom" wx:if="{{siji_miss}}">
+            <view bindtap="society" class="content_bottom_left">
+                <view class="content_bottom_left_kuang">
+                    <image class="kuang_imgs1" src="../../img/zhenti.png"></image>
+                </view>
+                <view>真题资料</view>
+                <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+                    <button class="cm_form_btn" formType="submit"></button>
+                </form>
+            </view>
+            <view bindtap="ranking" class="content_bottom_left">
+                <view class="content_bottom_left_kuang">
+                    <image class="kuang_imgs2" src="../../img/paihang.png"></image>
+                </view>
+                <view>今日排名</view>
+                <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+                    <button class="cm_form_btn" formType="submit"></button>
+                </form>
+            </view>
+            <view bindtap="" class="content_bottom_left">
+                <navigator appId="wx273e7f8a66243ded" catchtap="clickEvent" class="mme" data-id="2" openType="navigate" path="pages/index/index?classify_id=86&classify_name=英语四级" target="miniProgram">
+                    <view class="content_bottom_left_kuang">
+                        <image class="kuang_imgs3" src="../../img/nengli.png"></image>
+                    </view>
+                    <view>能力进阶</view>
+                    <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+                        <button class="cm_form_btn" formType="submit"></button>
+                    </form>
+                </navigator>
+            </view>
+        </view>
+        <view class="config-course" wx:if="{{course}}">
+            <view bindtap="goCourse" class="wrap" data-enrollNum="{{course.issue}}" data-id="{{course.id}}">
+                <view class="pic">
+                    <image mode="widthFix" src="{{course.comCover}}"></image>
+                    <text class="text">{{course.issue}}期</text>
+                </view>
+                <view class="info">
+                    <view class="info-title">{{course.ComName}}</view>
+                    <view class="des">
+                        <view class="price">
+                            <text>RMB</text>
+                            <text class="num">{{course.CostPrice}}</text>
+                        </view>
+                        <view class="sub">{{course.saleCount}}人购买</view>
+                    </view>
+                </view>
+                <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+                    <button class="cm_form_btn" formType="submit"></button>
+                </form>
+            </view>
+        </view>
+    </view>
+    <view class="bottom-btn {{platform?'platform':''}}">
+        <view class="eed">
+            <view class="bottom-btn_c">
+                <view class="los">
+                    <image class="bottom-btn1" src="../../img/shouye.png"></image>
+                    <view class="act">首页</view>
+                    <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+                        <button class="cm_form_btn" formType="submit"></button>
+                    </form>
+                </view>
+            </view>
+            <view bindtap="wordlist" class="bottom-btn_c">
+                <view class="los">
+                    <image class="bottom-btn1" src="../../img/sy-danci@2x.png"></image>
+                    <view class="">单词本</view>
+                    <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+                        <button class="cm_form_btn" formType="submit"></button>
+                    </form>
+                </view>
+            </view>
+            <view bindtap="clickEvent_cd" class="bottom-btn_c" wx:if="{{siji_miss}}">
+                <view class="los">
+                    <image class="bottom-btn2 {{!isShow?'':'btn-ad'}}" src="../../img/kecheng_h.png" wx:if="{{!isShow}}"></image>
+                    <image class="bottom-btn2 {{isShow?'':'btn-ad'}}" src="../../img/tab_challenge.gif" wx:else></image>
+                    <view>课程</view>
+                    <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+                        <button class="cm_form_btn" formType="submit"></button>
+                    </form>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view bindtap="qu_xiao" catchtouchmove="true" class="tanchuang" wx:if="{{!fds||!attenyion||!tissue||!card||!unlock}}"></view>
+<view catchtouchmove="true" class="mmsa" wx:if="{{!attenyion||!tissue||!card||!unlock}}">
+    <view class="ti">
+        <view class="ti_s" wx:if="{{!attenyion}}">福利到</view>
+        <view class="ti_s" wx:if="{{!tissue}}">组织来了</view>
+        <view class="ti_s" wx:if="{{!card}}">打卡规则</view>
+        <view class="ti_s" wx:if="{{!unlock}}">提示</view>
+        <image class="ti_s_m" src="../../img/beij.png"></image>
+    </view>
+    <view class="cont" wx:if="{{!attenyion}}"> 关注 <text class="ees">//</text>
+        <text>{{ccfr.message}}</text>
+        <text class="ees">//</text>
+    </view>
+    <view class="cont2" wx:if="{{!tissue}}">
+        <text>{{organization}}</text>
+    </view>
+    <view class="cont" wx:if="{{!card}}">每日完成一组单词后</view>
+    <view class="cont" wx:if="{{!unlock}}">今日计划已完成</view>
+    <view class="cont" wx:if="{{!attenyion}}">免费领取真题资料</view>
+    <view class="cont" wx:if="{{!card}}">即可完成当日打卡</view>
+    <view class="cont" wx:if="{{!unlock}}">继续学习将开启下一组计划</view>
+    <view class="btns">
+        <button catchtap="daka_l" class="btns_right" wx:if="{{!attenyion}}">我知道了</button>
+        <button catchtap="fuzhi" class="btns_right" wx:if="{{!tissue}}">我知道了</button>
+        <button catchtap="daka" class="btns_right" wx:if="{{!card}}">我知道了</button>
+        <button catchtap="unlock_d" class="btns_right" wx:if="{{!unlock}}">我知道了</button>
+    </view>
+</view>
+<view class="mmsas" wx:if="{{!fds}}">
+    <view class="mmsas_top">
+        <image class="mmsas_top_img" src="../../img/xuewan.png"></image>
+    </view>
+    <view class="mmsas_text">本书单词已全部学习完</view>
+    <view class="mmsas_bottom">
+        <view catchtap="zaisubmit" class="mmsas_bottom_btn">再学一遍</view>
+        <view catchtap="qiehuan" class="mmsas_bottom_btn2">切换单词书</view>
+    </view>
+    <image bindtap="qu_xiao" class="mmsas_fds" src="../../img/fds.png"></image>
+</view>
+<view class="no_network" wx:if="{{networkType=='none'||!isConnected}}">
+    <template is="no_network-template" data="{{n:n}}"></template>
+</view>
+<view bindtap="zedangs" class="zedang" wx:if="{{!deblocking}}"></view>
+<image class="mmosa" src="../../img/jiesuo.png" wx:if="{{!deblocking}}"></image>
+<view class="failed" wx:if="{{failed}}">
+    <view class="failed_dd">
+        <image class="failed_dd_img" src="../../img/jiazai.png"></image>
+        <view class="failed_dd_text">加载失败</view>
+        <view catchtap="failed" class="failed_dd_btn">点击重试</view>
+    </view>
+</view>
+<view class="ddfda" wx:if="{{ddfda1&&!(showImportantMessage&&importantMessageToggle)&&!alertShow}}">
+    <view catchtouchstart="test" class="ddsh"></view>
+    <view class="ddfda_box">
+        <view catchtouchstart="test" class="ddfda_box_con">
+            <image class="ww_img" src="/img/sz_bj.png"></image>
+            <view class="ww_text">提醒设置</view>
+        </view>
+        <view bindtap="gaunbi" class="img_guan">
+            <image class="img_guan1" src="/img/sz_gb@2x.png"></image>
+        </view>
+        <view catchtouchstart="test" class="ff_text">提醒时间</view>
+        <view catchtouchstart="test" class="content_time">
+            <view class="mess"></view>
+            <view class="mess2"></view>
+            <view class="lese_hus">
+                <swiper bindchange="current" circular="true" class="lese_hus_box" current="{{current}}" displayMultipleItems="3" vertical="true">
+                    <swiper-item class="lese_hus_box_list {{current+1==index||current+1==time_shi.length&&index==0?'active':''}}" data-index="{{index}}" wx:for="{{time_shi}}"> {{item.h}} </swiper-item>
+                </swiper>
+            </view>
+            <view catchtouchstart="test" class="lese_shi">时</view>
+            <view class="lese_hum">
+                <swiper bindchange="current2" circular="true" class="lese_hus_box" current="{{current1}}" displayMultipleItems="3" vertical="true">
+                    <swiper-item class="lese_hus_box_list {{current1+1==index||current1+1==time_fen.length&&index==0?'active':''}}" data-index="{{index}}" wx:for="{{time_fen}}"> {{item.m}} </swiper-item>
+                </swiper>
+            </view>
+            <view catchtouchstart="test" class="lese_fen">分</view>
+        </view>
+        <view class="dd_xian"></view>
+        <view catchtouchstart="test" class="week_sd">周几提醒</view>
+        <view class="week_box">
+            <view class="week_box_list {{item.sdd?'acm':''}}" style="{{index==3?'margin-right:0':''}}" wx:for="{{week}}"> {{item.nums}} <form bindsubmit="week_xuan" class="week_form" data-index="{{index}}" reportSubmit="true">
+                    <button class="week_xuan_list_btn" data-index="{{index}}" formType="submit"></button>
+                </form>
+                <image class="week_xuan_list_img" src="/img/xuanzhong.png" wx:if="{{item.sdd}}"></image>
+            </view>
+        </view>
+        <view class="week_btns">
+            <form bindsubmit="formSubmit_c" class="bottom_btn_form" reportSubmit="true">
+                <button class="botn" formType="submit">保存</button>
+            </form>
+        </view>
+    </view>
+</view>
+<view class="ddfda" wx:if="{{ddfda2&&siji_miss&&!(showImportantMessage&&importantMessageToggle)}}">
+    <view catchtouchstart="test" class="ddsh"></view>
+    <image class="ddfda_img2_dd" src="/img/sy_ksc@2x.png"></image>
+    <image class="ddfda_img2_dm" src="/img/sy_xmm@2x.png"></image>
+    <view bindtap="ddfda2" class="ddfda_img2_dt">我知道了</view>
+</view>
+<view class="important-message-modal" wx:if="{{showImportantMessage&&importantMessageToggle&&siji_miss&&!updata}}">
+    <view bindtap="handleClose" catchtouchmove="test" class="important-message-cover"></view>
+    <view class="important-message-content">
+        <image bindtap="handleGoMessageDetail" class="important-message-pic" mode="widthFix" src="{{importantMessage.image}}"></image>
+        <view bindtap="handleClose" class="important-message-close">
+            <image mode="widthFix" src="/img/close.png"></image>
+        </view>
+    </view>
+</view>
+<view class="jihua" wx:if="{{schedule&&!(showImportantMessage&&importantMessageToggle)}}">
+    <view catchtouchstart="test" class="jihua_kk"></view>
+    <view class="jihua_box">
+        <image class="mms_img" src="../../img/sz_bj.png"></image>
+        <view class="jihua_rre">学习计划</view>
+        <view bindtap="jihua_cl" class="jihua_cl">
+            <image class="jihua_cl_mm" src="../../img/sz_gb@2x.png"></image>
+        </view>
+        <view class="jihua_shu">
+            <view class="jihua_shu_left"> 《 <view class="dd_jihua">{{title}}</view> 》 </view>
+            <view class="jihua_shu_right">
+                <view class="lolc">{{user.restNum}}</view>
+                <view style="font-size: 26rpx;">词</view>
+            </view>
+        </view>
+        <view class="vocabulary">
+            <view class="vocabulary_xian1"></view>
+            <view class="vocabulary_xian2"></view>
+            <view class="ffd">每日词汇量</view>
+            <view class="vocabulary_rig">
+                <swiper skipHiddenItemLayout vertical bindchange="current33" circular="{{circular}}" class="vocabulary_nums" current="{{current33}}" displayMultipleItems="3">
+                    <swiper-item class="vocabulary_num_list {{user.restNum/10>30?current33==29&&index==0?'heise':current33==index-1?'heise':'':current33==user.restNum/10-1&&index==0?'heise':current33==index-1?'heise':''}}" wx:for="{{vocabulary}}"> {{item}} </swiper-item>
+                </swiper>
+                <view class="vocabulary_m" style="font-size: 26rpx;color: #333;">词</view>
+            </view>
+        </view>
+        <view class="detailed">
+            <view class="ff3">
+                <view class="kkt">
+                    <view class="detailed_num" wx:if="{{hous}}"> {{study_time}} <text style="font-size:26rpx;margin-left:10rpx;color:#333">h</text>
+                    </view>
+                    <view class="detailed_num" wx:else> {{study_time}} <text style="font-size:26rpx;margin-left:10rpx;color:#333">m</text>
+                    </view>
+                </view>
+                <view class="ds_co">每天学习</view>
+            </view>
+            <view class="ff3">
+                <view class="kkt">
+                    <view class="detailed_num"> {{days_time}} <text style="font-size:26rpx;margin-left:10rpx;color:#333">d</text>
+                    </view>
+                </view>
+                <view class="ds_co">完成天数</view>
+            </view>
+            <view class="ff3">
+                <view class="kkt">
+                    <view class="detailed_num">{{tiem_data.mmc}}.{{tiem_data.mmd}}</view>
+                </view>
+                <view class="ds_co">完成日期</view>
+            </view>
+        </view>
+        <view bindtap="jihua_button" class="jihua_button"> 保存 <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+                <button class="cm_form_btn" formType="submit"></button>
+            </form>
+        </view>
+    </view>
+</view>
+<view class="updata" wx:if="{{updata}}">
+    <view catchtouchstart="test" class="updata_ze"></view>
+    <view class="updata_content">
+        <view catchtap="cl_up" class="cl_up">
+            <image class="cl_up_img" src="../../img/sz_gb@2x.png"></image>
+        </view>
+        <view class="text1">Dear 小伙伴：</view>
+        <view class="text2"></view>
+        <view class="text3">我们计划将在 {{up_num}} 停服更新，停服更新期间背单词小程序将不能正常使用，造成不便请谅解！</view>
+        <view class="text4">
+            <view class="text4_ti">
+                <image class="text4_ti_img" src="../../img/cos@2x.png"></image>
+                <view class="text4_ti_mp">更新内容：</view>
+            </view>
+            <view class="text4_con">
+                <view class="text4_con_list" wx:for="{{content_lsit}}">{{item}}</view>
+            </view>
+        </view>
+        <view class="text4 text5">
+            <view class="text4_ti">
+                <image class="text4_ti_img" src="../../img/cos@2x.png"></image>
+                <view class="text4_ti_mp">更新时间：</view>
+            </view>
+            <view class="text4_con">
+                <view class="text4_con_list">{{times}}</view>
+            </view>
+        </view>
+        <view class="text6"></view>
+        <view class="text7"></view>
+    </view>
+</view>
+<view bindtap="pickBtn" class="pick" wx:if="{{thumbsUp&&siji_miss}}">
+    <view class="{{showMsg?'pick-amimate':''}}">
+        <image class="pick-img" src="../../img/activity_pop_entrance.png"></image>
+    </view>
+    <form bindsubmit="formSubmit" class="cm_form" reportSubmit="true">
+        <button class="cm_form_btn" formType="submit"></button>
+    </form>
+</view>
+<view catchtouchmove="true" wx:if="{{alertShow&&popShow&&!(showImportantMessage&&importantMessageToggle)}}">
+    <view class="content-alert"></view>
+    <view bindtap="handleInto" class="alert-mmsa">
+        <image class="dialog-bg" src="../../img/sign_off.png"></image>
+    </view>
+    <image bindtap="handleCloseLast" class="dialog-close" src="../../img/Close_icon.png"></image>
+</view>
+<view class="tips" wx:if="{{showTips}}">
+    <view bindtap="handleTips" class="tips-left">
+        <image class="tips-img" mode="widthFix" src="/img/close-icon.png"></image>
+    </view>
+    <view class="tips-text">添加到我的小程序，以便快速进入</view>
+</view>
+<dialog defaultBtn="{{false}}" wx:if="{{showLoginBox}}">
+    <view class="login-tips">已选定单词书《{{title}}》，请微信登录开始学习吧~</view>
+    <button bindtap="handleGetUserInfo" class="login-btn" slot="btn">登录</button>
+</dialog>

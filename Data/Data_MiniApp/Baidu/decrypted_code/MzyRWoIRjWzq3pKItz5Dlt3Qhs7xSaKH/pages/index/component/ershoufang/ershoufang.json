@@ -1,0 +1,9 @@
+{
+	"component": true,
+	"usingComponents": {
+		"house-icon": "./../houseBroad/houseIcon/houseIcon",
+		"house-operation": "./../houseBroad/houseOperation/houseOperation",
+		"house-anxuan": "./../houseBroad/houseAnxuan/houseAnxuan",
+		"info-setting": "./../infosetting/infosetting"
+	}
+}

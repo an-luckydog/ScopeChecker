@@ -1,0 +1,4 @@
+<view class="ui-progress-wrapper" style="{{wrapperStyle}}">
+    <rich-text class="progress-text" nodes="{{inlineText}}" wx:if="{{inlineText}}"></rich-text>
+    <view class="progress-bar" style="{{inlineStyle}}"></view>
+</view>

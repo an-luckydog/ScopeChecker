@@ -1,0 +1,9 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "登录",
+    "usingComponents": {
+        "c-action": "../../../components/c-action/c-action",
+        "c-section": "../../../components/c-section/c-section",
+        "c-page": "../../../components/c-page/c-page"
+    }
+}

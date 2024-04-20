@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-loadmore": "../../../../node-modules/uview-plus/components/u-loadmore/u-loadmore",
+        "feed-item": "./feed-item"
+    }
+}

@@ -1,0 +1,20 @@
+/* packageA/pages/test/test/middleware.css */body{background:#F2F2F2;box-sizing:border-box}
+
+/* 页面公用css 开始*/.inline-block{display:inline-block;text-align:center;vertical-align:middle}.font-size-0{font-size:0}.font-size-42{font-size:5.6vw}.font-size-36{font-size:4.8vw}.font-size-28{font-size:3.7333333333333334vw}.font-size-24{font-size:3.2vw}.white{color:#fff}.orange{color:#FF6600}.gray{color:#666666}.flex{display:flex;align-items:center}.flex-item-between{justify-content:space-between}
+
+/* 右侧开始排列 */.flex-item-row-rewerse{flex-direction:row-reverse}.border-1px{border:0.5px solid #FFFFFF;border-right:none;border-radius:2.53px 0 0 2.53px}
+
+/* 页面公用css结束 */.wrapper{padding:9.6vw 4.8vw 0vw}.middleware-share-wrapper{position:fixed;top:9.6vw;bottom:9.866666666666667vw;left:4.8vw;right:4.8vw;padding-top:8.8vw;border-radius:3.2vw;
+  /* width: 678rpx;
+  height: 1055rpx; */background:#fff url('https://oss.suning.com/vss/activity/wximg/testShareBg.png') no-repeat;background-size:contain}.goods-thumbnail{margin:0vw auto 3.2vw;width:42.4vw;height:42.4vw;border-radius:50%;background:#fff}.goods-thumbnail-pic{margin-top:50%;margin-left:50%;transform:translate(-50%,-50%);vertical-align:middle;text-align:center;width:42.53333333333333vw;height:42.53333333333333vw;border-radius:50%}.goods-title{padding:0 5.866666666666666vw;font-size:3.7333333333333334vw;color:#FFFFFF;line-height:5.333333333333333vw}.tips-box{margin-top:8.133333333333333vw;padding:0 5.866666666666666vw}.text-overflow{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+
+/* tag样式 */.tag{padding:0.26666666666666666vw 1.3333333333333333vw;min-width:13.6vw;height:6.666666666666667vw;line-height:6.666666666666667vw;background:#fff}.price{padding:0.26666666666666666vw 2vw 0.4vw 0.5333333333333333vw;min-width:8vw;height:6.266666666666667vw;line-height:6.266666666666667vw
+  /* text-decoration:line-through; */}
+
+/* 分享到朋友圈和微信的样式 */.share-wrapper{margin-top:26.266666666666666vw}.share-title{text-align:center}.btn-group{margin-top:6.533333333333333vw;padding:0 26.666666666666668vw;text-align:center}.weChart swan-button{width:12.8vw;height:12.8vw;background:url('https://oss.suning.com/tps/share_bucket/wechart_logo.png') no-repeat;background-size:100%}.friend swan-button{width:12.8vw;height:12.8vw}.friend .button_1{background:url('https://oss.suning.com/vss/activity/wximg/circleOfFriends.png') no-repeat;background-size:100%}.friend .button_2{background:url('https://oss.suning.com/tps/share_bucket/exclusive_poster.png') no-repeat;background-size:100%}.btn-text-v-b{margin-top:1.6vw}swan-button:after{border:none}
+
+/* 分享到朋友圈弹框 */.share-alert-box{position:fixed;top:0;left:0;right:0;bottom:0;opacity:0;z-index:1000}.mask{background:rgba(0,0,0,.5)}
+
+/* 弹出层主体内容 */.alert-content{padding:6.933333333333334vw 14.133333333333333vw 8vw}
+
+/* 关闭按钮 */.close-wrapper{margin-right:-5.333333333333333vw;padding-top:1.6vw;width:13.333333333333334vw;height:9.6vw;text-align:center}.close{width:6.4vw;height:6.4vw}.content-detail{width:71.73333333333333vw;height:111.6vw}.shareImg{width:71.73333333333333vw;height:111.6vw}.downLoadImg{display:block;margin:0 auto;width:29.6vw;height:8.8vw}.tips{margin-top:4.4vw;font-size:3.2vw;color:#FFFFFF;text-align:center}

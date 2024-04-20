@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "midas": "../../../common/components/midas/index",
+    "lazy-img": "../../../common/components/lazyload-image/lazyload-image"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "wiki-section": "./WikiSection"
+    },
+    "component": true
+}

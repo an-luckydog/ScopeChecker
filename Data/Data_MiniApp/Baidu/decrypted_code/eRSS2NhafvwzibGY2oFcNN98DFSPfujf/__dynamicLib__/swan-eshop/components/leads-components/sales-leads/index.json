@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "modal": "../modal/index",
+        "inner": "../form/index",
+        "verify": "../components/verify/index"
+    }
+}

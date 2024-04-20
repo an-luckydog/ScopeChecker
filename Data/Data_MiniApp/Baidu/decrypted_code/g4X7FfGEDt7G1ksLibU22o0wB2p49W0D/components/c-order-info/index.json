@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-shop-info-box": "/components/c-shop-info-box/index"
+    }
+}

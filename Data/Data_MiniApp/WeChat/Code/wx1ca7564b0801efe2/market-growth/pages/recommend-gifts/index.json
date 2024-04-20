@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "推荐有礼",
+    "navigationBarTitleText": "推荐有礼",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

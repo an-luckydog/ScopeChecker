@@ -1,0 +1,13 @@
+{
+    "component": true,
+    "usingComponents": {
+        "order-item": "../../components/order-item/index",
+        "default-page-config": "../../../../async-decoration/components/default-page-config/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "default-page-config": "view",
+        "lottery": "view"
+    }
+}

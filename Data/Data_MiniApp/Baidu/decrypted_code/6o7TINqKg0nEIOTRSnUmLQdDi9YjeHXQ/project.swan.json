@@ -1,0 +1,127 @@
+{
+    "appid": "11958390",
+    "compilation-args": {
+        "common": {
+            "quickPreview": true
+        },
+        "options": [
+            {
+                "extra": {
+                    "compileArgs": "--is-opti-amd --module amd",
+                    "ext": {},
+                    "index": "pages/booking/bookIndex/bookIndex",
+                    "query": "citycode=9",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 0,
+                "text": "传入城市Id"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--is-opti-amd --module amd",
+                    "ext": {},
+                    "index": "pages/booking/orderResult/orderResult",
+                    "query": "orderId=1172205731&totalPrice=839",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 1,
+                "text": "pages/booking/orderResult/orderResult"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--is-opti-amd --module amd",
+                    "ext": {},
+                    "index": "pages/booking/orderResult/orderResult",
+                    "isPrefetch": false,
+                    "query": "orderId=1172205731&totalPrice=839",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 2,
+                "text": "pages/booking/orderResult/orderResult"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/my/promotion/promotion",
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 5,
+                "text": "pages/my/promotion/promotion"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--is-opti-amd --module amd",
+                    "ext": {},
+                    "index": "pages/my/promotion/promotion",
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 6,
+                "text": "pages/my/promotion/promotion"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/booking/carDetail/carDetail",
+                    "isPrefetch": false,
+                    "query": "ChannelId=200584&cartypeId=1434&cityId=71&storeId=5472&pTime=1636618577000&dTime=1636646400000",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 8,
+                "text": "pages/booking/carDetail/carDetail"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/activity/newUserPackage/newUserPackage",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 9,
+                "text": "pages/activity/newUserPackage/newUserPackage"
+            }
+        ],
+        "selected": -2,
+        "forceChanged": {}
+    },
+    "developType": "normal",
+    "editor": {},
+    "host": "baiduboxapp",
+    "minSwanVersion": "2.0.53",
+    "preview": {
+        "packageId": 1578730
+    },
+    "projectname": "eHiBaiduMP",
+    "publish": {
+        "version": "1.0.4.5"
+    },
+    "setting": {
+        "autoAudits": false,
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.630.2",
+            "extensionJsVersion": "1.21.2"
+        }
+    },
+    "swanList": ""
+}

@@ -1,0 +1,45 @@
+<import src="../../component/template/tab.wxml"></import>
+<view class="store-list-contianer pt24">
+    <view class="search-container">
+        <view class="search-box">
+            <view class="icon-box">
+                <image src="./../../img/search.png"></image>
+            </view>
+            <view class="ipt-box">
+                <input bindconfirm="doSearch" bindinput="searchKeysInput" confirmType="search" placeholder="搜索门店、位置" value="{{params.searchKeys}}"></input>
+            </view>
+            <view bindtap="searchClick" class="search-btn">搜索</view>
+        </view>
+    </view>
+    <view class="store-list-warpper">
+        <view class="nearby-content-warpper" wx:for="{{storeList}}" wx:key="index">
+            <view bindtap="listClick" class="store-list-box" data-item="{{item}}">
+                <view class="img-box">
+                    <image src="{{item.storeLogo}}"></image>
+                </view>
+                <view class="list-content-box">
+                    <view class="store-title">{{item.storeName||'-'}}</view>
+                    <view class="store-address">{{item.detailAdd||'-'}}</view>
+                    <view class="store-distance">距您{{item.showDistance||'-'}}</view>
+                </view>
+            </view>
+            <view class="nearby-bottom">
+                <view class="left-bot">
+                    <text class="unit">¥</text>
+                    <text class="price">{{item.lowPrice||''}}元</text>
+                    <text class="text0">起</text>
+                </view>
+                <view class="bot-btn-box">
+                    <view bindtap="goMapFunc" class="bot-btn" data-item="{{item}}">
+                        <image class="icon" src="{{imgUrl}}/choice/where.png"></image> 到这去? </view>
+                </view>
+            </view>
+        </view>
+        <view class="load_more" wx:if="{{loading}}">
+            <view class="load_loading"></view>
+            <view class="load-tips">正在加载…</view>
+        </view>
+        <view class="load_end" wx:if="{{loaded}}">已全部加载</view>
+    </view>
+</view>
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}"></template>

@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "styleIsolation": "shared",
+    "usingComponents": {
+        "ti-button": "/titian-mp/RAW/button/index",
+        "ti-icon": "/titian-mp/RAW/icon/index"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "navigationStyle": "default",
+    "navigationBarTitleText": "账号与服务",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColorTop": "#fff",
+    "backgroundColorBottom": "#000",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "disableScroll": true
+}

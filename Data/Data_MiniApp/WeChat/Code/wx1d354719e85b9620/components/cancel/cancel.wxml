@@ -1,0 +1,6 @@
+<u-popup bind:__l="__l" bind:close="__e" bind:input="__e" class="data-v-ca0ac168" data-event-opts="{{[ [ '^close',[ ['close'] ] ],[ '^input',[ [ '__set_model',[ '','show','$event',[] ] ] ] ] ]}}" mode="center" value="{{show}}" vueId="aeca62fc-1" vueSlots="{{['default']}}">
+    <view class="cancel-dialog data-v-ca0ac168">
+        <rich-text class="cancel-text data-v-ca0ac168" decode="true" nodes="{{message}}"></rich-text>
+        <view catchtap="__e" class="cancel-confirm data-v-ca0ac168" data-event-opts="{{[ [ 'tap',[ [ 'close',['$event'] ] ] ] ]}}">知道了</view>
+    </view>
+</u-popup>

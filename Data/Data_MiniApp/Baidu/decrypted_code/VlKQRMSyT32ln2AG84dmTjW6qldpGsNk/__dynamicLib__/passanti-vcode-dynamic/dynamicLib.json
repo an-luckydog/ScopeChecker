@@ -1,0 +1,7 @@
+{
+    "name": "passanti-vcode-dynamic",
+    "publicComponents": {
+        "vcode": "components/vcode/vcode"
+    },
+    "main": "index.js"
+}

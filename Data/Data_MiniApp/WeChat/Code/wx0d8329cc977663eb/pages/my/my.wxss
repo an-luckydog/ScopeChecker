@@ -1,0 +1,51 @@
+page {
+    background-color: #f6f6f6;
+}
+
+.wrap {
+    background-color: #f3f3f3;
+}
+
+.show {
+    border-top: 1px solid #fff;
+    height: 420rpx;
+    text-align: center;
+    margin-bottom: 50rpx;
+    background: linear-gradient(#1a91f1,rgb(232,236,240));
+}
+
+.head_portrait image {
+    width: 209rpx;
+    height: 209rpx;
+    margin-top: 50rpx;
+    margin-bottom: 20rpx;
+}
+
+.student_name,.student_id {
+    color: #fff;
+    font-size: 30rpx;
+    margin-top: 20rpx;
+}
+
+.list {
+    font-size: 16px;
+    height: 80rpx;
+    line-height: 80rpx;
+    background-color: #fff;
+    margin-bottom: 50rpx;
+    box-shadow: 0 0 20rpx #e7e7e7;
+}
+
+.list image {
+    padding-left: 40rpx;
+    padding-right: 20rpx;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: middle;
+}
+
+.imageUser {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 5rpx;
+}

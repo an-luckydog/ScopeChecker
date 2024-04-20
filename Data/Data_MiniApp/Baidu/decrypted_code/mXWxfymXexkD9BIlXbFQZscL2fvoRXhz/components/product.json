@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "icon-svg": "./icon-svg/icon-svg",
+    "product-price": "./product-price/product-price"
+  }
+}

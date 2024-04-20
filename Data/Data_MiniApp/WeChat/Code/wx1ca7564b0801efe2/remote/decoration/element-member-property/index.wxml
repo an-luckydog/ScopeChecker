@@ -1,0 +1,8 @@
+<view class="element-member-property" style="{{textStyle}}">
+    <view style="{{numStyle}}">
+        <view wx:if="{{balance}}">{{balance}}</view>
+        <view wx:elif="{{point}}">{{point}}</view>
+        <view wx:elif="{{coupon}}">{{coupon}}</view>
+    </view>
+    <view style="{{unitStyle}}" wx:if="{{elConfig.showUnit}}">{{elConfig.unit}}</view>
+</view>

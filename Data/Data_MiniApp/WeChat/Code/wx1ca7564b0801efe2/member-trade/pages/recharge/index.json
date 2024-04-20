@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "会员充值",
+    "componentPlaceholder": {
+        "lottery": "view"
+    },
+    "navigationStyle": "custom"
+}

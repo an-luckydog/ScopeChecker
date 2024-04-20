@@ -1,0 +1,14 @@
+<view class="integralBox">
+    <view catchtouchmove="true" class="integralBox_bg"></view>
+    <view class="integralBox_content">
+        <view class="title">{{contact.kefu_type=='app'?'前往下载对啊课堂APP':'进入聊天页点击右下角卡片'}}</view>
+        <view class="title2" wx:if="{{contact.kefu_type=='app'}}">进入聊天页点击右下角卡片</view>
+        <image class="integralBox_content_img" src="http://tu.duia.com/mp/kefu_img_dianji.png"></image>
+        <view class="integralBox_content_button">
+            <view bindtap="cl_btn" class="integralBox_content_button_right">下一步 <customerService contact="{{contact}}"></customerService>
+            </view>
+        </view>
+        <view class="cl_btn_li"></view>
+        <image bindtap="cl_btn" class="cl_btn" src="/img/kefu/kefu_ioc_guanbi.png"></image>
+    </view>
+</view>

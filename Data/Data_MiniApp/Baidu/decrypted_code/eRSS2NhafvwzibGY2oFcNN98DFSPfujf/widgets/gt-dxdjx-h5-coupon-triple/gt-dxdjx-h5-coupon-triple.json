@@ -1,0 +1,7 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "coupon":"/widgets/mip-dxdjx-marketing-coupon/mip-dxdjx-marketing-coupon"
+    }
+}

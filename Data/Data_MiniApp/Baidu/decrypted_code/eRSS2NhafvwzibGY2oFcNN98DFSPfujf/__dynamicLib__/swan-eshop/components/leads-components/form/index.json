@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "auto-get-phone-number": "../components/phone/index",
+        "area": "../components/area/index",
+        "multi-select": "../components/multi-select/index"
+    }
+}

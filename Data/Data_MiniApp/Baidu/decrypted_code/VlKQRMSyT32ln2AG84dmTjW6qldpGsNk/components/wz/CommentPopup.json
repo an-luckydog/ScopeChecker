@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"c-popup":"../../mars_modules/@baidu/med-ui/dist/swan/components/Popup/Popup","c-stars":"../../mars_modules/@baidu/med-ui/dist/swan/components/Stars/Stars","comment-emoji":"./comment-emoji","new-comment-popup":"./new-comment-popup"}}

@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "none-page": "/components/health/NonePage",
+        "verify-mpsdk": "/wxcomponents/verify_mpsdk/index/index"
+    }
+}

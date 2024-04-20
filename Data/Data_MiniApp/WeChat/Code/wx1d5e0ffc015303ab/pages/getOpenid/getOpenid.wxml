@@ -1,0 +1,3 @@
+<view>
+    <web-view bindmessage="__e" data-event-opts="{{[ [ 'message',[ [ 'getOpenid',['$event'] ] ] ] ]}}" src="{{src}}"></web-view>
+</view>

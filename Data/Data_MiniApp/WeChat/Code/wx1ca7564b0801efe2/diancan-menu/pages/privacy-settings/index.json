@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "隐私设置",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#F7F7F7",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

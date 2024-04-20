@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "click": "./components/click/index",
+    "geometric": "./components/geometric/index",
+    "noise": "./components/noise/index",
+    "jigsaw": "./components/jigsaw/index"
+  }
+}

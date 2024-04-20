@@ -1,0 +1,12 @@
+{
+    "navigationBarTitleText": "选择位置",
+    "navigationBarBackgroundColor": "#ffffff",
+    "usingComponents": {
+        "u-index-anchor": "../../../node-modules/uview-plus/components/u-index-anchor/u-index-anchor",
+        "u-index-item": "../../../node-modules/uview-plus/components/u-index-item/u-index-item",
+        "u-index-list": "../../../node-modules/uview-plus/components/u-index-list/u-index-list",
+        "head-search": "./components/head-search",
+        "hot-cities": "./components/hot-cities",
+        "open-location": "./components/open-location"
+    }
+}

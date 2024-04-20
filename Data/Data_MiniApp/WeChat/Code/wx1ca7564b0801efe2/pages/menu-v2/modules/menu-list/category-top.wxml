@@ -1,0 +1,48 @@
+<import src="../../../../components/badge/index.wxml"></import>
+<import src="./index.wxml"></import>
+<block wx:if="{{categories.length}}">
+    <view class="first-cat-row {{menuSettings.showSpuCategoryIcon?'img-container':''}}">
+        <scroll-view enablePassive enhanced scrollWithAnimation scrollX catchtouchmove="prevent" class="cat-list-row" scrollIntoView="c{{categories[selectCategoryIndex-2].id}}" showScrollbar="{{false}}">
+            <view class="cat-scroll-row column-{{categories.length}}">
+                <view catchtap="onTopCatTap" class="cat-item-row-box" data-category="c{{item.id}}" data-id="{{item.id}}" data-index="{{index}}" data-section="s{{item.id}}" data-title="{{item.name}}" id="c{{item.id}}" wx:for="{{categories}}" wx:key="id">
+                    <view class="label-row" wx:if="{{item.label&&menuSettings.showSpuCategoryIcon}}">{{item.label}}</view>
+                    <view class="cat-item-row {{selectCategory==='c'+item.id?'active':''}}">
+                        <view class="label-row" wx:if="{{item.label&&!menuSettings.showSpuCategoryIcon}}">{{item.label}}</view>
+                        <image lazyLoad class="img" src="{{selectCategory==='c'+item.id?item.icon.activeUrl||item.icon.url:item.icon.url}}" wx:if="{{menuSettings.showSpuCategoryIcon}}"></image>
+                        <view class="title-row">{{item.name}}</view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="menu-body category-top">
+        <scroll-view enablePassive enhanced scrollY catchtouchmove="prevent" class="cat-list" scrollIntoView="{{selectSecCategory['c'+categories[selectCategoryIndex].id]}}" showScrollbar="{{false}}" style="height: calc(100vh - {{secTop}})">
+            <view class="cat-scroll" style="{{categoryStyle}}">
+                <view catch:tap="onTopSecCatTap" class="cat-item {{!selectSecCategory['c'+categories[selectCategoryIndex].id]&&catSecIdx===0||selectSecCategory['c'+categories[selectCategoryIndex].id]==='c'+catSec.id?'active':''}}" data-category="{{'c'+categories[selectCategoryIndex].id}}" data-id="{{catSec.id}}" data-sec-category="{{catSec.id}}" data-section="{{catSec.id}}" data-title="{{catSec.name}}" id="c{{catSec.id}}" wx:for="{{act.ArrayMerge( [ dealCouponCates,categories[selectCategoryIndex].children||[] ] )}}" wx:for-index="catSecIdx" wx:for-item="catSec" wx:key="catSecIdx">
+                    <view class="label" wx:if="{{catSec.label}}">{{catSec.label}}</view>
+                    <image lazyLoad class="{{catSec.id[0]==='-'?'icon':'pic'}}" src="{{!selectSecCategory['c'+categories[selectCategoryIndex].id]&&catSecIdx===0||selectSecCategory['c'+categories[selectCategoryIndex].id]==='c'+catSec.id?catSec.icon.activeUrl||catSec.icon.url:catSec.icon.url}}" wx:if="{{catSec.icon}}"></image>
+                    <view class="title">{{catSec.name}}</view>
+                    <view class="cat-count" wx:if="{{cateCount[catSec.id]||catSec.count}}">
+                        <template is="badge" data="{{count:cateCount[catSec.id]||catSec.count}}"></template>
+                    </view>
+                </view>
+                <view class="cat-empty-slot"></view>
+            </view>
+        </scroll-view>
+        <view class="dish-list" style="min-height: calc(100vh - {{secTop}} + 24rpx)">
+            <view class="dish-list-container">
+                <view class="coupon-package-slot">
+                    <slot name="coupon-package"></slot>
+                </view>
+                <view class="section-item" id="s{{item.id}}" wx:for="{{act.ArrayMerge( [ dealCouponCates,categories[selectCategoryIndex].children||[] ] )}}" wx:for-index="catIdx" wx:key="catIdx">
+                    <view class="section-header section-anchor" data-category="{{selectCategory}}" data-sec-category="c{{item.id}}">
+                        <view class="cat-title">{{item.name}}</view>
+                    </view>
+                    <template is="{{act.getTemplate(item.id)}}" data="{{...item,catParId:item.id,dishCountMap:dishCountMap,spuExtra:spuExtra,showEstPrice:showEstPrice,...menuSettings}}"></template>
+                </view>
+                <view class="section-item-empty-slot"></view>
+            </view>
+        </view>
+    </view>
+</block>
+<wxs module="act" src="index.wxs" />

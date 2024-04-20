@@ -1,0 +1,3 @@
+<view class="element-line">
+    <view class="line" style="{{borderStyle}}"></view>
+</view>

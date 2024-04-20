@@ -1,0 +1,38 @@
+<import src="../template/template/template.wxml"></import>
+<view class="content">
+    <view class="">提醒时间</view>
+    <view class="content_time">
+        <view class="mess"></view>
+        <view class="mess2"></view>
+        <view class="lese_hus">
+            <swiper bindchange="current" circular="true" class="lese_hus_box" current="{{current}}" displayMultipleItems="3" vertical="true">
+                <swiper-item class="lese_hus_box_list {{current+1==index||current+1==time_shi.length&&index==0?'active':''}}" data-index="{{index}}" wx:for="{{time_shi}}">{{item.h}}</swiper-item>
+            </swiper>
+        </view>
+        <view class="lese_shi">时</view>
+        <view class="lese_hum">
+            <swiper bindchange="current2" circular="true" class="lese_hus_box" current="{{current1}}" displayMultipleItems="3" vertical="true">
+                <swiper-item class="lese_hus_box_list {{current1+1==index||current1+1==time_fen.length&&index==0?'active':''}}" data-index="{{index}}" wx:for="{{time_fen}}">{{item.m}}</swiper-item>
+            </swiper>
+        </view>
+        <view class="lese_fen">分</view>
+    </view>
+</view>
+<view class="week">
+    <view class="">周几提醒</view>
+    <view class="week_xuan">
+        <view class="week_xuan_list {{item.sdd?'acm':''}}" wx:for="{{week}}">{{item.nums}} <form bindsubmit="week_xuan" class="week_form" data-index="{{index}}" reportSubmit="true">
+                <button class="week_xuan_list_btn" data-index="{{index}}" formType="submit"></button>
+            </form>
+            <image class="week_xuan_list_img" src="../../img/xuanzhong.png" wx:if="{{item.sdd}}"></image>
+        </view>
+    </view>
+</view>
+<view class="bottom_btn">
+    <form bindsubmit="formSubmit" class="bottom_btn_form" reportSubmit="true">
+        <button class="botn" formType="submit">保存</button>
+    </form>
+</view>
+<view class="no_network" wx:if="{{networkType=='none'||!isConnected}}">
+    <template is="no_network-template" data="{{n:n}}"></template>
+</view>

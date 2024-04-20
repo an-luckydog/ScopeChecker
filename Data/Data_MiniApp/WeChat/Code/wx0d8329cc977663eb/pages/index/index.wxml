@@ -1,0 +1,72 @@
+<view class="container">
+    <swiper autoplay="true" class="swiper" duration="1000" indicatorDots="true" interval="5000">
+        <swiper-item wx:for="{{movies}}">
+            <image class="slide-image" mode="aspectFill" src="{{item.url}}"></image>
+        </swiper-item>
+    </swiper>
+    <view class="mid">
+        <view bindtap="goactjoin" class="mid01">
+            <image class="myact" src="../images/activitysearch.png"></image>
+            <view class="activity">
+                <text>活动参与</text>
+            </view>
+        </view>
+        <view bindtap="goactsearch" class="mid02">
+            <image class="myact" src="../images/27.png"></image>
+            <view class="activity">
+                <text>活动公告</text>
+            </view>
+        </view>
+        <view bindtap="goaward" class="mid03">
+            <image class="myact" src="../images/pingjiang.png"></image>
+            <view class="activity">
+                <text>扫码签到</text>
+            </view>
+        </view>
+        <view bindtap="goactscore" class="mid04">
+            <image class="myact" src="../images/chaxun.png"></image>
+            <view class="activity">
+                <text>成绩查询</text>
+            </view>
+        </view>
+    </view>
+    <view class="userinfo">
+        <view class="user_title">
+            <text bindtap="chooseCatalog" class=" {{item.select==catalogSelect?'active':''}} catalog_item" data-select="{{item.select}}" wx:for="{{catalogs}}">{{item.catalogName}}</text>
+        </view>
+        <view wx:if="{{catalogSelect==0}}">
+            <view style="{{noList}}">暂无活动</view>
+            <view wx:for="{{activitylist}}">
+                <label for="{{item.id}}">
+                    <view class="activityRow">
+                        <view class="activityName">{{item.name}}</view>
+                        <view class="activityIntroduce">{{item.content}}</view>
+                        <view class="endLine">
+                            <view class="place">{{item.where}}</view>
+                            <view class="startTime">{{item.startTime}}</view>
+                        </view>
+                    </view>
+                </label>
+                <button bindtap="inActivity" id="{{item.id}}" style="display:none">{{item.id}}</button>
+            </view>
+            <view class="noMsg" style="{{noMsgDisplay}}">到 底 了 ~</view>
+            <view class="noMsg" style="{{loadingDisplay}}">加 载 中...</view>
+        </view>
+        <view wx:else>
+            <view wx:for="{{newsList}}">
+                <label for="{{item.id}}">
+                    <view class="activityRow">
+                        <view class="activityName">{{item.name}}</view>
+                        <view class="activityIntroduce">{{item.content}}</view>
+                        <view class="endLine">
+                            <view class="place"></view>
+                            <view class="startTime">{{item.startTime}}</view>
+                        </view>
+                    </view>
+                </label>
+                <button bindtap="inNews" id="{{item.id}}" style="display:none">{{item.id}}</button>
+            </view>
+        </view>
+    </view>
+    <mp-tabbar bindchange="tabChange" list="{{list}}" style="position:fixed;bottom:0;width:100%;left:0;right:0;"></mp-tabbar>
+</view>

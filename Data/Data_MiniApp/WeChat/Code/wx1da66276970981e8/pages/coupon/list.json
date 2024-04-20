@@ -1,0 +1,12 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "我的优惠券",
+    "usingComponents": {
+        "c-header-space": "../../components/c-header-space/c-header-space",
+        "u-loading-icon": "../../node-modules/uview-plus/components/u-loading-icon/u-loading-icon",
+        "u-empty": "../../node-modules/uview-plus/components/u-empty/u-empty",
+        "c-page": "../../components/c-page/c-page",
+        "list-item": "./component/list-item",
+        "exchange-code-input-pop": "./component/exchange-code-input-pop"
+    }
+}

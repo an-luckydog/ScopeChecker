@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-task-timer": "/components/c-task-timer/c-task-timer"
+    }
+}

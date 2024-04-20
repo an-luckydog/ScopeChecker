@@ -1,0 +1,12 @@
+<view class="pege-submsg">
+    <view class="hint">说明：订阅次数表示你还能收到多少消息。</view>
+    <view class="list-box">
+        <view class="list-item flexBox" wx:for="{{subMsgs}}" wx:key="index">
+            <view class="item-name">{{item.templateName}}</view>
+            <view class="item-right flexBox">
+                <view class="item-num">已订阅{{item.subNum}}次</view>
+                <view bindtap="onSubscribe" class="item-btn" data-index="{{index}}" data-tmplId="{{item.templateId}}"> 订阅 </view>
+            </view>
+        </view>
+    </view>
+</view>

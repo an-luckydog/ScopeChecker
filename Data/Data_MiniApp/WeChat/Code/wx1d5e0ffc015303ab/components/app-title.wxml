@@ -1,0 +1,8 @@
+<view class="pagetitle flex-xn-yc data-v-7569e207" navStyle="{{navStyle}}" style="{{'padding-top:'+safeHeight+'px'+';'+'background:'+bgColor+';'+'text-align:'+textAlign+';'}}">
+    <image bindtap="__e" class="goback data-v-7569e207" data-event-opts="{{[ [ 'tap',[ [ 'back',['$event'] ] ] ] ]}}" mode="widthFix" src="{{backImg}}" wx:if="{{showBack}}"></image>
+    <image bindtap="__e" class="goback data-v-7569e207" data-event-opts="{{[ [ 'tap',[ [ 'toIndex',['$event'] ] ] ] ]}}" mode="widthFix" src="{{backImg}}" wx:if="{{backIndex}}"></image>
+    <image bindtap="__e" class="goback data-v-7569e207" data-event-opts="{{[ [ 'tap',[ [ 'toCenter',['$event'] ] ] ] ]}}" mode="widthFix" src="{{backImg}}" wx:if="{{backCenter}}"></image>
+    <image class="logo data-v-7569e207" mode="widthFix" src="{{logo}}" wx:if="{{showLogo}}"></image>
+    <view bindtap="__e" class="txt data-v-7569e207" data-event-opts="{{[ [ 'tap',[ [ 'back',['$event'] ] ] ] ]}}" style="{{'color:'+txtColor+';'}}" wx:if="{{iconFont}}">{{iconTxt}}</view>
+    <view class="titlefont data-v-7569e207" style="{{'color:'+color+';'}}" wx:if="{{showTitle}}">{{title}}</view>
+</view>

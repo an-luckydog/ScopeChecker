@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "express-package-info": "./express-package-info",
+        "express-send": "./express-send"
+    }
+}

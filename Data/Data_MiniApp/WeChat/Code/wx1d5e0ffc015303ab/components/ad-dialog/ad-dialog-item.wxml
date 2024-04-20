@@ -1,0 +1,26 @@
+<view class="dialog-item data-v-5646602c">
+    <view class="{{['dialog-contbox','data-v-5646602c',!isBigScreen?'short-dialog-contbox':'']}}">
+        <view class="data-v-5646602c" style="{{isBigScreen?'width: 80%;':'width: 74%;'}}">
+            <block wx:if="{{showScanLadder&&itemData.scanLadderFlag==1&&isImgLoad}}">
+                <view class="scanLadder white data-v-5646602c">
+                    <text class="data-v-5646602c">{{currentMoney}}</text>
+                    <text class="unit data-v-5646602c">元</text>
+                </view>
+                <view class="scanLadder red data-v-5646602c">
+                    <text class="data-v-5646602c">{{currentMoney}}</text>
+                    <text class="unit data-v-5646602c">元</text>
+                </view>
+            </block>
+            <block wx:if="{{itemData.jumpTyp=='0'}}">
+                <text class="auto-tips data-v-5646602c" wx:if="{{isAutoClose}}">{{timeout+'s'}}</text>
+                <image bindload="__e" class="dialog-img data-v-5646602c" data-event-opts="{{[ [ 'load',[ [ 'imgLoad',['$event'] ] ] ] ]}}" mode="widthFix" showMenuByLongpress="{{true}}" src="{{itemData.picUrl}}"></image>
+                <view bindtap="__e" class="{{['dialog-close','data-v-5646602c','dialog-close-'+itemData.className]}}" data-event-opts="{{[ [ 'tap',[ [ 'closeCurDialog',['$0'],['itemData'] ] ] ] ]}}" hidden="{{!isImgLoad}}"></view>
+            </block>
+            <block wx:else>
+                <text class="auto-tips data-v-5646602c" wx:if="{{isAutoClose}}">{{timeout+'s'}}</text>
+                <image bindload="__e" bindtap="__e" class="{{['dialog-img','data-v-5646602c','dialog-img-'+itemData.className]}}" data-event-opts="{{[ [ 'load',[ [ 'imgLoad',['$event'] ] ] ],[ 'tap',[ [ 'tapDialog',['$event'] ] ] ] ]}}" mode="widthFix" showMenuByLongpress="{{true}}" src="{{itemData.picUrl}}"></image>
+                <view bindtap="__e" class="{{['dialog-close','data-v-5646602c','dialog-close-'+itemData.className]}}" data-event-opts="{{[ [ 'tap',[ [ 'closeCurDialog',['$0'],['itemData'] ] ] ] ]}}" hidden="{{!isImgLoad}}"></view>
+            </block>
+        </view>
+    </view>
+</view>

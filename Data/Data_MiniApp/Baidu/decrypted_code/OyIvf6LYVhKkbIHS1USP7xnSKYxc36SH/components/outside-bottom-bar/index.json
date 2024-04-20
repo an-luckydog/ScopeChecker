@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "bottom-confirm": "../bottom-confirm/bottom-confirm"
+    }
+}

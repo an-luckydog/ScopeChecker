@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "亲友包裹取件提醒",
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

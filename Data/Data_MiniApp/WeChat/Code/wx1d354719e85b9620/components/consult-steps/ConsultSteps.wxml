@@ -1,0 +1,6 @@
+<view class="consult-steps data-v-025f0f42">
+    <block wx:for="{{steps}}" wx:key="index">
+        <view class="{{['data-v-025f0f42',item===step?'active':'']}}">{{item}}</view>
+        <u-icon bind:__l="__l" class="data-v-025f0f42" name="arrow-right" vueId="{{'0c330572-1-'+index}}" wx:if="{{!(steps.length-1===index)}}"></u-icon>
+    </block>
+</view>

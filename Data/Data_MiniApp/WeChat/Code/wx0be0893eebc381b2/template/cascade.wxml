@@ -1,0 +1,22 @@
+<template name="cascade">
+    <view animation="{{animationData}}" class="cascade_box {{isShow}}">
+        <view class="cascade_hei"></view>
+        <view class="cascade_find">
+            <view class="cascade_header">
+                <image catchtap="quxiao" class="quxiao left" src="/img/order/address-close.png" style="width:40rpx;height:40rpx;"></image>
+                <image catchtap="queren" class="queren right" src="/img/order/address-choose.png" style="width:40rpx;height:40rpx;"></image>
+            </view>
+            <picker-view bindchange="bindchange" indicatorStyle="height: 80rpx;" style="width: 100%; height: 400rpx;">
+                <picker-view-column>
+                    <view style="line-height: 80rpx;text-align:center;" wx:for="{{sheng}}" wx:key="this">{{item}}</view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view class="text-overflow-dotted-1line" style="line-height: 80rpx;text-align:center;height:40rpx" wx:for="{{shi}}" wx:key="this">{{item}}</view>
+                </picker-view-column>
+                <picker-view-column>
+                    <view class="text-overflow-dotted-1line" style="line-height: 80rpx;text-align:center;" wx:for="{{qu}}" wx:key="this">{{item}}</view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+    </view>
+</template>

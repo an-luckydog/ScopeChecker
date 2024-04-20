@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "popup": "/UI/Components/Base/Popups/Popup/Popup"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "",
+    "usingComponents": {
+        "privacy": "/components/privacy/privacy",
+        "screen-text-scroll": "/components/screenTextScroll",
+        "app-title": "/components/app-title",
+        "about-location": "/components/aboustLocation",
+        "red-pack-money-scan": "/components/red-pack-scan/red-pack-scan",
+        "app": "/components/privacy/privacy"
+    }
+}

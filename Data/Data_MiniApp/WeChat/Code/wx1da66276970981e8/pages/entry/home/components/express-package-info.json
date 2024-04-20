@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "subscribe-tip": "../../express/subscribe-tip"
+    }
+}

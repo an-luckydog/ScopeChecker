@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "video-card": "./VideoCard"
+    },
+    "component": true
+}

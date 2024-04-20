@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "task-status": "../task-status/index",
+        "file-item": "/components/file-item/index"
+    }
+}

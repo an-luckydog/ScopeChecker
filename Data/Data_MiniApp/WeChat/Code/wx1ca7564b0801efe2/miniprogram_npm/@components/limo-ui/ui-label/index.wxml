@@ -1,0 +1,5 @@
+<view class="{{labelClass}}" style="{{styleString}}">
+    <image class="label-img-{{colorType}}" src="https://p0.meituan.net/scarlett/99a9de38520ba055f119724bc4935a3b703.png" wx:if="{{colorType===LABEL_TYPE.BKG_DP_IMG||colorType===LABEL_TYPE.LEFT_DP_IMG}}"></image>
+    <text class="label-text label-text-{{colorType}} label-text-{{text?'memberBkg':'member'}}" wx:if="{{colorType===LABEL_TYPE.BKG_PRICE_2}}">{{label&&label.length>0?label:'会员特价菜'}}</text>
+    <text class="label-text label-price-{{colorType}} ellipsis" wx:if="{{text}}">{{text}}</text>
+</view>

@@ -1,0 +1,16 @@
+<view class="data-v-f5e2cc4e">
+    <uni-popup bind:__l="__l" class="data-v-f5e2cc4e vue-ref" data-ref="no_chance_pup" maskClick="{{false}}" type="top" vueId="c2bf4ae4-1" vueSlots="{{['default']}}">
+        <view class="main_choose data-v-f5e2cc4e">
+            <view class="choose_text data-v-f5e2cc4e"></view>
+            <view class="choose_info data-v-f5e2cc4e">
+                <image bindtap="__e" class="close data-v-f5e2cc4e" data-event-opts="{{[ [ 'tap',[ [ 'handleClosePop',['$event'] ] ] ] ]}}" src="{{img120Th+'welfareCenter/ferrisWheel/close.png'}}"></image>
+                <view class="choose_img data-v-f5e2cc4e">
+                    <image class="data-v-f5e2cc4e" src="{{img120Th+'welfareCenter/ferrisWheel/pop/weizhongjiang.png'}}"></image>
+                    <view class="text data-v-f5e2cc4e" wx:if="{{chanceType==1}}">别错过获得大奖的机会！<view class="_br data-v-f5e2cc4e"></view>赶紧扫码赚取抽奖次数吧！</view>
+                    <view class="text data-v-f5e2cc4e" wx:else>{{upperLimitText}}</view>
+                </view>
+                <view bindtap="__e" class="my_choose data-v-f5e2cc4e" data-event-opts="{{[ [ 'tap',[ [ 'handleBtn',['$event'] ] ] ] ]}}">{{btnText}}</view>
+            </view>
+        </view>
+    </uni-popup>
+</view>

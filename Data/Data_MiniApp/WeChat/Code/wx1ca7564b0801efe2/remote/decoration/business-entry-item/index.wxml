@@ -1,0 +1,8 @@
+<view bindtap="tapToJump" class="entry-item style-{{iconConfig.position}}">
+    <image class="icon" src="{{item.imgUrl}}" style="{{iconConfig.style}}" wx:if="{{item.imgUrl&&showMap.img}}"></image>
+    <view class="info">
+        <view class="title" style="{{themeStyle.titleConfig}}" wx:if="{{item.name&&showMap.title}}">{{item.name}}</view>
+        <view class="sub-title" style="{{themeStyle.subTitleConfig}}" wx:if="{{item.subTitle&&showMap.subTitle}}">{{item.subTitle}}</view>
+        <view class="desc" style="{{themeStyle.descConfig}}" wx:if="{{item.desc&&showMap.desc}}">{{item.desc}}</view>
+    </view>
+</view>

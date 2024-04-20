@@ -1,0 +1,16 @@
+<theme-container options="{{options}}">
+    <view class="portal-user-container" style="{{backStyle}}">
+        <view class="portal-user {{hasTabBar?'has-tab-bar':''}} {{isNativeTabbarPage?'has-native-tabbar':''}}">
+            <image bindtap="goBackEvent" class="portal-user-top-back-btn" src="https://p0.meituan.net/travelcube/5674b0fcf014e5c86a3b7a3228ef0db2410.png" wx:if="{{!hasTabBar&&!isNativeTabbarPage}}"></image>
+            <limo-container class="limo-content" data="{{previewData}}" id="limo-container" wx:if="{{!errorTitle}}"></limo-container>
+            <common-error-page errorTitle="{{errorTitle}}" wx:if="{{errorTitle}}"></common-error-page>
+            <tab-bar bind:tabBarRenderEvent="tabBarRenderFn" customOptions="{{customOptions}}" requestParams="{{requestParams}}" selectedPageType="{{tabBarIndex}}" tabBarList="{{catchTabBarList}}"></tab-bar>
+        </view>
+    </view>
+</theme-container>
+<movable-area class="m-a" wx:if="{{showDebug}}">
+    <movable-view inertia direction="all" y="600">
+        <button bindtap="goToDebug" size="mini" type="primary">debug</button>
+    </movable-view>
+</movable-area>
+<privacy-popup></privacy-popup>

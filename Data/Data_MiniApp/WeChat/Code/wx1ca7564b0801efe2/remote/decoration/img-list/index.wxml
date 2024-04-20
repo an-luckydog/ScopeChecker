@@ -1,0 +1,20 @@
+<view style="{{columnType===4?leftHeight:heightStyle}}" wx:if="{{newimgList}}">
+    <view class="multi-wrap" style="{{leftHeight}} {{compStyle}}" wx:if="{{columnType===4}}">
+        <view class="only {{newimgList[0]&&newimgList[0].imgUrl||defaultImgUrl?'':'default-bg'}}">
+            <image bindtap="onImgClick" class="{{newimgList[0]&&newimgList[0].imgUrl||defaultImgUrl?'origin-style':'inner-default-img'}}" data-index="{{0}}" showMenuByLongpress="true" src="{{newimgList[0]&&newimgList[0].imgUrl||defaultImgUrl}}" style="{{newimgList[0]&&newimgList[0].imgUrl||defaultImgUrl?leftHeight:''}}{{compStyle}}"></image>
+        </view>
+        <view class="vertical-wrap">
+            <view class="vertical-item {{newimgList[1]&&newimgList[1].imgUrl||defaultImgUrl?'':'vertical-item-first default-bg'}}" style="{{compStyle}}">
+                <image bindtap="onImgClick" class="{{newimgList[1]&&newimgList[1].imgUrl||defaultImgUrl?'vertical-item-first origin-style':'inner-default-img'}}" data-index="{{1}}" showMenuByLongpress="true" src="{{newimgList[1]&&newimgList[1].imgUrl||defaultImgUrl}}" style="{{newimgList[1]&&newimgList[1].imgUrl||defaultImgUrl?heightStyle:''}}{{compStyle}}"></image>
+            </view>
+            <view class="vertical-item {{newimgList[2]&&newimgList[2].imgUrl||defaultImgUrl?'':'default-bg'}}" style="{{compStyle}}">
+                <image bindtap="onImgClick" class="{{newimgList[2]&&newimgList[2].imgUrl||defaultImgUrl?'origin-style':'inner-default-img'}}" data-index="{{2}}" showMenuByLongpress="true" src="{{newimgList[2]&&newimgList[2].imgUrl||defaultImgUrl}}" style="{{newimgList[2]&&newimgList[2].imgUrl||defaultImgUrl?heightStyle:''}}{{compStyle}}"></image>
+            </view>
+        </view>
+    </view>
+    <view class="list-layout" wx:else>
+        <view class="item-{{columnType}} {{imgItem&&imgItem.imgUrl||defaultImgUrl?'':'default-bg'}} {{index!=newimgList.length-1?'margin-right':''}}" style="{{imgItem&&imgItem.imgUrl||defaultImgUrl?heightStyle:''}} {{compStyle}}" wx:for="{{newimgList}}" wx:for-item="imgItem">
+            <image bindtap="onImgClick" class="{{imgItem&&imgItem.imgUrl||defaultImgUrl?'origin-style':'inner-default-img'}}" data-index="{{index}}" showMenuByLongpress="true" src="{{imgItem&&imgItem.imgUrl||defaultImgUrl}}" style="{{imgItem&&imgItem.imgUrl||defaultImgUrl?heightStyle:''}}{{compStyle}}"></image>
+        </view>
+    </view>
+</view>

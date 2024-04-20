@@ -1,0 +1,15 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "coupon-seven": "/components/coupon-card/coupon-seven/index",
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "mip-dxdjx-marketing-lottie": "/widgets/mip-dxdjx-marketing-lottie/mip-dxdjx-marketing-lottie",
+        "gt-dxdjx-h5-rank-top-card": "/widgets/gt-dxdjx-h5-rank-top-card/gt-dxdjx-h5-rank-top-card",
+        "login-button":"/components/login-button/login-button",
+        "gt-dxdjx-h5-marketing-anchor": "/widgets/gt-dxdjx-h5-marketing-anchor/gt-dxdjx-h5-marketing-anchor",
+        "mip-dxdjx-marketing-feed": "/widgets/mip-dxdjx-marketing-feed/mip-dxdjx-marketing-feed",
+        "marketing-floatball":"/widgets/mip-dxdjx-marketing-floatball/mip-dxdjx-marketing-floatball"
+    }
+}

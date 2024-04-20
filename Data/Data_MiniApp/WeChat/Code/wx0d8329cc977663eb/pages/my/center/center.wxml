@@ -1,0 +1,48 @@
+<view class="main">
+    <view class="m-t-3">
+        <view class="lineBox">
+            <view class="lineTab" style="color:#333;font-weight: bold;">基础信息</view>
+        </view>
+    </view>
+    <view class="activityBody">
+        <view class="lineBox">
+            <view class="lineTab">姓名</view>
+            <view class="activityIntroduce">{{userName}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">学号</view>
+            <view class="activityIntroduce">{{userId}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">学院</view>
+            <view class="activityIntroduce">{{userSchool}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">专业</view>
+            <view class="activityIntroduce">{{userMajor}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">班级</view>
+            <view class="activityIntroduce">{{userClass}}</view>
+        </view>
+    </view>
+    <view class="m-t-3">
+        <view class="lineBox">
+            <view class="lineTab" style="color:#333;font-weight: bold;">二课信息</view>
+        </view>
+    </view>
+    <view class="activityBody">
+        <view class="lineBox">
+            <view class="lineTab">总分数</view>
+            <view class="activityIntroduce">{{userAllScore}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">班级排名</view>
+            <view class="activityIntroduce">{{userClassRanking}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">专业排名</view>
+            <view class="activityIntroduce">{{userMajorRanking}}</view>
+        </view>
+    </view>
+</view>

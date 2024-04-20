@@ -1,0 +1,42 @@
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'success'}}"中找到匹配: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"    <view class="sign-up__success data-v-6524ad7c" wx:if="{{account}}">
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"        <view class="sign-up__success-icon data-v-6524ad7c"></view>
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"        <view class="sign-up__success-title data-v-6524ad7c">注册成功</view>
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"        <view class="sign-up__success-account data-v-6524ad7c">
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"            <view class="sign-up__success-account-text data-v-6524ad7c">{{account}}</view>
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"            <view bindtap="__e" class="sign-up__success-account-copy data-v-6524ad7c" data-event-opts="{{[ [ 'tap',[ [ 'copyText',['$event'] ] ] ] ]}}"></view>
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"        <view class="sign-up__success-tips data-v-6524ad7c">请截图保存本次新注册的QQ号</view>
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"        <view bindtap="__e" class="sign-up__success-button data-v-6524ad7c" data-event-opts="{{[ [ 'tap',[ [ 'backApp',['$event'] ] ] ] ]}}">
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\pages\index\index.wxml}"中的方法{"                    <image class="xui-scroll__notice-icon" src="../../static/img/icon-success@2x.png"></image>
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\pages\message\message.wxml}"中的方法{"                    <image class="xui-scroll__notice-icon" src="../../static/img/icon-success@2x.png"></image>
+}"中找到对应: {"getClipboardData}"
+在后端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.js}"中的方法{"{'success'}}"中找到匹配: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"    <view class="sign-up__success data-v-6524ad7c" wx:if="{{account}}">
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"        <view class="sign-up__success-icon data-v-6524ad7c"></view>
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"        <view class="sign-up__success-title data-v-6524ad7c">注册成功</view>
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"        <view class="sign-up__success-account data-v-6524ad7c">
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"            <view class="sign-up__success-account-text data-v-6524ad7c">{{account}}</view>
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"            <view bindtap="__e" class="sign-up__success-account-copy data-v-6524ad7c" data-event-opts="{{[ [ 'tap',[ [ 'copyText',['$event'] ] ] ] ]}}"></view>
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"        <view class="sign-up__success-tips data-v-6524ad7c">请截图保存本次新注册的QQ号</view>
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\signUp\signUp.wxml}"中的方法{"        <view bindtap="__e" class="sign-up__success-button data-v-6524ad7c" data-event-opts="{{[ [ 'tap',[ [ 'backApp',['$event'] ] ] ] ]}}">
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\pages\index\index.wxml}"中的方法{"                    <image class="xui-scroll__notice-icon" src="../../static/img/icon-success@2x.png"></image>
+}"中找到对应: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\pages\message\message.wxml}"中的方法{"                    <image class="xui-scroll__notice-icon" src="../../static/img/icon-success@2x.png"></image>
+}"中找到对应: {"getClipboardData}"

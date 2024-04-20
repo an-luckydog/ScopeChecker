@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "rank-card": "./RankCard"
+    },
+    "component": true
+}

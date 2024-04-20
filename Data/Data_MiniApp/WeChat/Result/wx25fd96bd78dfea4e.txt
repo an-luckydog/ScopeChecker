@@ -1,0 +1,6 @@
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'paste'}}"中找到匹配: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\pages\index\index.wxml}"中的方法{"            <view bindtap="paste" class="btn link">
+}"中找到对应: {"getClipboardData}"
+在后端文件{"D:\wxappUnpacker-master\dec\pages\index\index.js}"中的方法{"{'paste'}}"中找到匹配: {"getClipboardData}"
+在前端文件{"D:\wxappUnpacker-master\dec\pages\index\index.wxml}"中的方法{"            <view bindtap="paste" class="btn link">
+}"中找到对应: {"getClipboardData}"

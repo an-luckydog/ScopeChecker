@@ -1,0 +1,7 @@
+<view bind:tap="openCouponPackagePanel" class="coupon-package-icon-wrapper" style="width:{{couponPageSize}}rpx;height:{{couponPageSize/sizeScale}}rpx" wx:if="{{couponPageSize&&sizeScale}}">
+    <view class="scale-icon" style="width:{{couponPageSize||60}}rpx;height:{{couponPageSize?couponPageSize/sizeScale:60}}rpx; background:url({{imgUrl||defaultImg}}) 100%  100% / 100% 100% no-repeat;"></view>
+</view>
+<view bind:tap="openCouponPackagePanel" class="coupon-package-icon-wrapper default-wrap" wx:else>
+    <image class="icon" src="{{defaultImg}}"></image>
+    <view class="text">超值券包</view>
+</view>

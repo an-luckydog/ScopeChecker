@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "basic": "../basic/basic",
+    "clickword": "../clickword/clickword",
+    "scratch": "../scratch/scratch"
+  }
+}

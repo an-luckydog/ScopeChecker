@@ -1,0 +1,15 @@
+<view class="open-box data-v-13d7e567" wx:if="{{openShow}}">
+    <view class="opensetting data-v-13d7e567">
+        <view class="head data-v-13d7e567">
+            <image class="headimg data-v-13d7e567" src="{{imgUrl+'/qp2021/xcxhead.png?v=1'}}"></image>
+            <text class="data-v-13d7e567">欢聚青啤</text>
+            <text class="data-v-13d7e567">申请</text>
+            <image bindtap="__e" class="close closeStrcodeDili data-v-13d7e567" data-event-opts="{{[ [ 'tap',[ [ 'cancel',['$event'] ] ] ] ]}}" src="{{imgUrl+'/qp2021/icon_close_1.png'}}"></image>
+        </view>
+        <view class="loc_content data-v-13d7e567">
+            <text class="data-v-13d7e567">获取您的地理位置信息</text>
+            <text class="data-v-13d7e567">获取地理位置可以给你提供更好的服务</text>
+        </view>
+        <button bindtap="__e" class="set strcodeSet data-v-13d7e567" data-event-opts="{{[ [ 'tap',[ [ 'openset',['$event'] ] ] ] ]}}">进行授权</button>
+    </view>
+</view>

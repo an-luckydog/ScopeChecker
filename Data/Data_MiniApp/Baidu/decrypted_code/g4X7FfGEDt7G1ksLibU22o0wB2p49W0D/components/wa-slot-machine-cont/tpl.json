@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "slotmachine": "/components/c-slot-machine/c-slot-machine",
+        "c-button-login": "/components/c-button-login/c-button-login"
+    }
+}

@@ -1,0 +1,1 @@
+window._swanWebGlobal.vhStylePolyfill={"pages/jiaxiao/jiaxiao.css":[".page_content {height:calc(var(--vh,vh) * 100 - 53.333333333333336vw);}"]};

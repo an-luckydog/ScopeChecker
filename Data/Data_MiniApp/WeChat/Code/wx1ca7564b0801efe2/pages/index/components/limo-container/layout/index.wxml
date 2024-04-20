@@ -1,0 +1,122 @@
+<template name="order-status">
+    <c34 feBasicResource="{{d.feBasicResource}}" id="{{mid}}" mockStatusData="{{d.mockStatusData}}"></c34>
+</template>
+<template name="universal-card-list-closable">
+    <c33 callbacks="{{d.callbacks}}" cardStyle="{{d.cardStyle}}" closePosition="{{d.closePosition}}" curCardId="{{d.curCardId}}" customParams="{{d.customParams}}" customProps="{{d.customProps}}" hideClose="{{d.hideClose}}" id="{{mid}}" size="{{d.size}}" title="{{d.title}}"></c33>
+</template>
+<template name="subscription-prompt">
+    <c32 id="{{mid}}" platform="{{d.platform}}" promptSrc="{{d.promptSrc}}" top="{{d.top}}"></c32>
+</template>
+<template name="head-bg">
+    <c31 bannerInterval="{{d.bannerInterval}}" componentStyle="{{d.componentStyle}}" defaultImgUrl="{{d.defaultImgUrl}}" heightImg="{{d.heightImg}}" id="{{mid}}" imgList="{{d.imgList}}" imgUrl="{{d.imgUrl}}" layout="{{d.layout}}" layoutStyle="{{d.layoutStyle}}" picConfigCode="{{d.picConfigCode}}" showDefaultImg="{{d.showDefaultImg}}" showShadow="{{d.showShadow}}" styleType="{{d.styleType}}"></c31>
+</template>
+<template name="user-banner">
+    <c30 businessData="{{d.businessData}}" componentStyle="{{d.componentStyle}}" couponHighlight="{{d.couponHighlight}}" id="{{mid}}" layout="{{d.layout}}" loginMemberConfig="{{d.loginMemberConfig}}" memberInfo="{{d.memberInfo}}" needSecondRequest="{{d.needSecondRequest}}" notLoginMemberConfig="{{d.notLoginMemberConfig}}" styleType="{{d.styleType}}" tenementInfo="{{d.tenementInfo}}" userBannerData="{{d.userBannerData}}" userInfoConfig="{{d.userInfoConfig}}"></c30>
+</template>
+<template name="member-coupon-pop-up">
+    <c29 businessData="{{d.businessData}}" componentConfigJSON="{{d.componentConfigJSON}}" couponList="{{d.couponList}}" couponRedirection="{{d.couponRedirection}}" id="{{mid}}" redirection="{{d.redirection}}" showModal="{{d.showModal}}" showViewAll="{{d.showViewAll}}"></c29>
+</template>
+<template name="custom-business-entry">
+    <c28 businessList="{{d.businessList}}" componentStyle="{{d.componentStyle}}" id="{{mid}}" infoList="{{d.infoList}}" layout="{{d.layout}}" templateStyle="{{d.templateStyle}}" theme="{{d.theme}}"></c28>
+</template>
+<template name="universal-login">
+    <c27 agreementDesc="{{d.agreementDesc}}" agreementHeaders="{{d.agreementHeaders}}" agreementList="{{d.agreementList}}" agreementParams="{{d.agreementParams}}" authButtonClassName="{{d.authButtonClassName}}" bind:uniLoginFailed="et" bind:uniLoginReUserBindCancel="et" bind:uniLoginReUserBindFailed="et" bind:uniLoginReUserBindSuccess="et" bind:uniLoginShowYoda="et" bind:uniLoginSlotTap="et" bind:uniLoginSuccess="et" bind:uniLoginSwitchLoginType="et" bind:uniLoginTap="et" bind:uniLoginToggleAgreement="et" commonHeaders="{{d.commonHeaders}}" defaultLoginType="{{d.defaultLoginType}}" enableAgreementDialog="{{d.enableAgreementDialog}}" enableAutoFocus="{{d.enableAutoFocus}}" enabledLoginType="{{d.enabledLoginType}}" extraEventParams="{{d.extraEventParams}}" extraLoginParams="{{d.extraLoginParams}}" hasAgreed="{{d.hasAgreed}}" id="{{mid}}" isDialog="{{d.isDialog}}" layout="{{d.layout}}" location="{{d.location}}" loginStatus="{{d.loginStatus}}" loginStyle="{{d.loginStyle}}" loginText="{{d.loginText}}" revokePrefix="{{d.revokePrefix}}" shopRegisterRedirectPath="{{d.shopRegisterRedirectPath}}" showOuterAgreement="{{d.showOuterAgreement}}" useNewAuthVersion="{{d.useNewAuthVersion}}" useRevoke="{{d.useRevoke}}" yodaOptions="{{d.yodaOptions}}"></c27>
+</template>
+<template name="function-navigation">
+    <c26 bind:bindStatusClickEvent="et" componentStyle="{{d.componentStyle}}" customTitle="{{d.customTitle}}" displayStyle="{{d.displayStyle}}" functionList="{{d.functionList}}" id="{{mid}}" layout="{{d.layout}}" tagBgColor="{{d.tagBgColor}}" tagTextColor="{{d.tagTextColor}}"></c26>
+</template>
+<template name="collect-and-redeem">
+    <c25 actionVO="{{d.actionVO}}" activityDesc="{{d.activityDesc}}" backgroundImgUrl="{{d.backgroundImgUrl}}" bind:jumpToPage="et" businessData="{{d.businessData}}" cardSize="{{d.cardSize}}" collectAndRedeemList="{{d.collectAndRedeemList}}" componentStyle="{{d.componentStyle}}" feBasicResource="{{d.feBasicResource}}" horizontal="{{d.horizontal}}" id="{{mid}}" isH5Preview="{{d.isH5Preview}}" layout="{{d.layout}}" needSecondRequest="{{d.needSecondRequest}}" requestParams="{{d.requestParams}}" showActivityDesc="{{d.showActivityDesc}}" textColor="{{d.textColor}}" title="{{d.title}}" titleColor="{{d.titleColor}}"></c25>
+</template>
+<template name="limo-rules-modal-v2">
+    <c24 agreement="{{d.agreement}}" headers="{{d.headers}}" id="{{mid}}"></c24>
+</template>
+<template name="coupon-rules-standard">
+    <c23 id="{{mid}}" requestHeader="{{d.requestHeader}}" rulesParams="{{d.rulesParams}}" safePadding="{{d.safePadding}}"></c23>
+</template>
+<template name="common-theme-loading">
+    <c22 id="{{mid}}"></c22>
+</template>
+<template name="dish-production-progress">
+    <c21 componentStyle="{{d.componentStyle}}" dishProgressInfo="{{d.dishProgressInfo}}" id="{{mid}}" layout="{{d.layout}}" mockShopList="{{d.mockShopList}}" shop="{{d.shop}}"></c21>
+</template>
+<template name="wx-official-account">
+    <c20 hasNativeTabBar="{{d.hasNativeTabBar}}" hasTabBar="{{d.hasTabBar}}" id="{{mid}}" position="{{d.position}}"></c20>
+</template>
+<template name="dish-recommend">
+    <c19 componentStyle="{{d.componentStyle}}" dishList="{{d.dishList}}" id="{{mid}}" layout="{{d.layout}}" previewLayout="{{d.previewLayout}}" title="{{d.title}}"></c19>
+</template>
+<template name="shop-list-entry">
+    <c18 componentStyle="{{d.componentStyle}}" iconUrl="{{d.iconUrl}}" id="{{mid}}" isPreview="{{d.isPreview}}" layout="{{d.layout}}" suitableShopRedirections="{{d.suitableShopRedirections}}" title="{{d.title}}"></c18>
+</template>
+<template name="member-info">
+    <c17 animationStyle="{{d.animationStyle}}" bind:collectCoupon="et" bind:handleTakeaway="et" businessData="{{d.businessData}}" cardId="{{d.cardId}}" componentStyle="{{d.componentStyle}}" defaultNickName="{{d.defaultNickName}}" id="{{mid}}" layout="{{d.layout}}" memberCardInfo="{{d.memberCardInfo}}" needSecondRequest="{{d.needSecondRequest}}" notLoginConfig="{{d.notLoginConfig}}" overallStyle="{{d.overallStyle}}" showCardTitle="{{d.showCardTitle}}" showMemberGrade="{{d.showMemberGrade}}" showNickName="{{d.showNickName}}" styleType="{{d.styleType}}" theme="{{d.theme}}"></c17>
+</template>
+<template name="business-entry">
+    <c16 businessList="{{d.businessList}}" componentStyle="{{d.componentStyle}}" id="{{mid}}" layout="{{d.layout}}"></c16>
+</template>
+<template name="open-screen">
+    <c15 advId="{{d.advId}}" bind:closeAd="et" bind:setOpenScreenStorage="et" id="{{mid}}" imgInfo="{{d.imgInfo}}" openInterval="{{d.openInterval}}" show="{{d.show}}"></c15>
+</template>
+<template name="double-limo-slide">
+    <c14 advId="{{d.advId}}" autoplay="{{d.autoplay}}" bannerInterval="{{d.bannerInterval}}" bind:decorationCompClick="et" componentStyle="{{d.componentStyle}}" heightImg="{{d.heightImg}}" id="{{mid}}" imgList="{{d.imgList}}" layout="{{d.layout}}" opacitySpu="{{d.opacitySpu}}"></c14>
+</template>
+<template name="member-canvas">
+    <c13 bind:decorationCompClick="et" businessData="{{d.businessData}}" feBasicResource="{{d.feBasicResource}}" id="{{mid}}" isLogin="{{d.isLogin}}" isMemberCanvas="{{d.isMemberCanvas}}" loginAction="{{d.loginAction}}" loginCanvasConfig="{{d.loginCanvasConfig}}" needSecondRequest="{{d.needSecondRequest}}"></c13>
+</template>
+<template name="notice-config">
+    <c12 bgColor="{{d.bgColor}}" componentStyle="{{d.componentStyle}}" id="{{mid}}" layout="{{d.layout}}" noticeContent="{{d.noticeContent}}" noticeIcon="{{d.noticeIcon}}" noticeImgUrl="{{d.noticeImgUrl}}" showStyle="{{d.showStyle}}" slideInterval="{{d.slideInterval}}" textColor="{{d.textColor}}"></c12>
+</template>
+<template name="rights-interests-widget">
+    <c11 businessData="{{d.businessData}}" componentStyle="{{d.componentStyle}}" id="{{mid}}" isH5Preview="{{d.isH5Preview}}" layout="{{d.layout}}" previewLayout="{{d.previewLayout}}" redirSaveBo="{{d.redirSaveBo}}" rightsList="{{d.rightsList}}" title="{{d.title}}"></c11>
+</template>
+<template name="get-coupons-widget">
+    <c10 businessData="{{d.businessData}}" componentStyle="{{d.componentStyle}}" couponUniteList="{{d.couponUniteList}}" feBasicResource="{{d.feBasicResource}}" id="{{mid}}" isH5Preview="{{d.isH5Preview}}" layout="{{d.layout}}" redirSaveBo="{{d.redirSaveBo}}" title="{{d.title}}"></c10>
+</template>
+<template name="point-reward-good">
+    <c9 businessData="{{d.businessData}}" componentStyle="{{d.componentStyle}}" datas="{{d.datas}}" id="{{mid}}" isH5Preview="{{d.isH5Preview}}" layout="{{d.layout}}" redirectUrl="{{d.redirectUrl}}" title="{{d.title}}"></c9>
+</template>
+<template name="recommend-list">
+    <c8 bind:jumpToPage="et" bind:showCoupon="et" bind:showCouponRule="et" bizIdType="{{d.bizIdType}}" businessData="{{d.businessData}}" componentStyle="{{d.componentStyle}}" horizontal="{{d.horizontal}}" id="{{mid}}" isH5Preview="{{d.isH5Preview}}" layout="{{d.layout}}" recommendList="{{d.recommendList}}" selfMargin="{{d.selfMargin}}"></c8>
+</template>
+<template name="accumulate-list">
+    <c7 accumulateList="{{d.accumulateList}}" activityDesc="{{d.activityDesc}}" appliedStyle="{{d.appliedStyle}}" backgroundImgUrl="{{d.backgroundImgUrl}}" bind:jumpToPage="et" businessData="{{d.businessData}}" componentStyle="{{d.componentStyle}}" horizontal="{{d.horizontal}}" id="{{mid}}" isH5Preview="{{d.isH5Preview}}" isRms="{{d.isRms}}" layout="{{d.layout}}" pollTimes="{{d.pollTimes}}" requestParams="{{d.requestParams}}" selfMargin="{{d.selfMargin}}" showActivityDesc="{{d.showActivityDesc}}" showWarning="{{d.showWarning}}" textColor="{{d.textColor}}" title="{{d.title}}" titleColor="{{d.titleColor}}"></c7>
+</template>
+<template name="limo-modal">
+    <c6 advId="{{d.advId}}" bind:clickModalEvent="et" bind:closeModalEvent="et" bind:modalModuleEvent="et" bind:setLimoShowStorage="et" componentStyle="{{d.componentStyle}}" id="{{mid}}" layout="{{d.layout}}" limoModalStorage="{{d.limoModalStorage}}" modalConfigResource="{{d.modalConfigResource}}" preview="{{d.preview}}" show="{{d.show}}"></c6>
+</template>
+<template name="video-module">
+    <c5 autoplay="{{d.autoplay}}" circulate="{{d.circulate}}" componentStyle="{{d.componentStyle}}" fillShowSwitch="{{d.fillShowSwitch}}" id="{{mid}}" layout="{{d.layout}}" videoAuditInfo="{{d.videoAuditInfo}}"></c5>
+</template>
+<template name="float-window">
+    <c4 floatLayout="{{d.floatLayout}}" id="{{mid}}" imgInfo="{{d.imgInfo}}" position="{{d.position}}"></c4>
+</template>
+<template name="hot-zones">
+    <c3 componentStyle="{{d.componentStyle}}" hotZonesList="{{d.hotZonesList}}" id="{{mid}}" imgUrl="{{d.imgUrl}}" layout="{{d.layout}}"></c3>
+</template>
+<template name="manual-slide">
+    <c2 advId="{{d.advId}}" autoplay="{{d.autoplay}}" backgroundImgUrl="{{d.backgroundImgUrl}}" bannerInterval="{{d.bannerInterval}}" bgColor="{{d.bgColor}}" bind:swiperModuleEvent="et" componentLayout="{{d.componentLayout}}" componentStyle="{{d.componentStyle}}" defaultImgUrl="{{d.defaultImgUrl}}" heightImg="{{d.heightImg}}" id="{{mid}}" imgList="{{d.imgList}}" layout="{{d.layout}}" templateStyle="{{d.templateStyle}}"></c2>
+</template>
+<template name="limo-slide">
+    <c1 advId="{{d.advId}}" autoplay="{{d.autoplay}}" bannerInterval="{{d.bannerInterval}}" bind:swiperModuleEvent="et" bind:swiperRedirectEvent="et" bind:swiperSwitchChangeEvent="et" circular="{{d.circular}}" componentId="{{d.componentId}}" componentStyle="{{d.componentStyle}}" current="{{d.current}}" currentIndex="{{d.currentIndex}}" defaultImgUrl="{{d.defaultImgUrl}}" duration="{{d.duration}}" heightImg="{{d.heightImg}}" id="{{mid}}" imgList="{{d.imgList}}" imgMode="{{d.imgMode}}" layout="{{d.layout}}" slideType="{{d.slideType}}"></c1>
+</template>
+<template name="img-list">
+    <c0 columnType="{{d.columnType}}" componentStyle="{{d.componentStyle}}" defaultImgUrl="{{d.defaultImgUrl}}" heightImg="{{d.heightImg}}" id="{{mid}}" imgList="{{d.imgList}}" layout="{{d.layout}}"></c0>
+</template>
+<view class="container container-class" style="{{layoutStyle}}" wx:if="{{modules.length||dialogs.length}}">
+    <view class="container-slot" style="{{item.layoutStyle}}" wx:if="{{modules.length}}" wx:for="{{modules}}" wx:key="moduleId">
+        <view class="divider-container" style="{{item.dividerStyle}}" wx:if="{{item.dividerTop}}">
+            <view class="divider"></view>
+        </view>
+        <template is="{{item.moduleName}}" data="{{mid:item.moduleId,d:item.data}}"></template>
+        <view class="divider-container" style="{{item.dividerStyle}}" wx:if="{{item.dividerBottom}}">
+            <view class="divider"></view>
+        </view>
+    </view>
+    <block wx:if="{{dialogs.length}}" wx:for="{{dialogs}}" wx:key="moduleId">
+        <view catchtap="onMaskTap" catchtouchmove="onMaskTouchMove" class="container-mask {{dialogs.length&&dialogs[dialogs.length-1].options.closeMask?'hidden':''}}" style="z-index:{{item.options.zIndex+index}};background:{{item.options.maskColor}}"></view>
+        <view class="mask-item {{item.options.position}}" style="z-index:{{item.options.zIndex+index}};{{item.options.customStyle}}">
+            <template is="{{item.moduleName}}" data="{{mid:item.moduleId,d:item.data}}"></template>
+        </view>
+    </block>
+</view>

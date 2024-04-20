@@ -1,0 +1,26 @@
+<uni-popup bind:__l="__l" class="data-v-34614732 vue-ref" data-ref="waitActivation_pup" maskClick="{{false}}" type="top" vueId="0d09153c-1" vueSlots="{{['default']}}">
+    <view class="wait-box data-v-34614732">
+        <view class="wait-title data-v-34614732">恭喜！您获得待激活红包</view>
+        <view class="wait-main data-v-34614732">
+            <view class="main-prize data-v-34614732">
+                <view class="prize data-v-34614732">{{''+$root.f0+''}}</view>
+                <view class="unit data-v-34614732">元<image class="icon data-v-34614732" mode="widthFix" src="https://xcxsite.vjifen.com/v/static/qp120/welfareCenter/ferrisWheel/pop/activated-icon.png"></image>
+                </view>
+            </view>
+            <view class="wait-sku data-v-34614732">
+                <view class="sku-text data-v-34614732">购买</view>
+                <view class="sku-name data-v-34614732">{{''+(prizeInfo.skuName||'')+''}}</view>
+            </view>
+            <view class="tips sku-text data-v-34614732">扫描活动奖码激活红包</view>
+            <view class="sku-img-box data-v-34614732">
+                <image mode class="data-v-34614732" src="{{goodsImgRoot+prizeInfo.skuLogo}}" wx:if="{{prizeInfo.skuLogo}}"></image>
+            </view>
+            <view class="date-box sku-text data-v-34614732" wx:if="{{prizeInfo.expireTime}}">{{''+(prizeInfo.expireTime||'')+'前有效'}}</view>
+        </view>
+        <view bindtap="__e" class="wait-btn data-v-34614732" data-event-opts="{{[ [ 'tap',[ [ 'handleNotice',['1'] ] ] ] ]}}">扫码激活</view>
+        <view bindtap="__e" class="wait-rule data-v-34614732" data-event-opts="{{[ [ 'tap',[ [ 'openRules',['$event'] ] ] ] ]}}">查看活动规则 ></view>
+        <view bindtap="__e" class="close data-v-34614732" data-event-opts="{{[ [ 'tap',[ [ 'handleNotice',['2'] ] ] ] ]}}">
+            <image class="data-v-34614732" src="{{img120Th+'welfareCenter/ferrisWheel/close.png'}}"></image>
+        </view>
+    </view>
+</uni-popup>

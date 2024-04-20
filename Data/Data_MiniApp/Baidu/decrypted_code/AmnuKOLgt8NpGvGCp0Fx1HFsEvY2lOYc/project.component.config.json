@@ -1,0 +1,5226 @@
+{
+  "mvvm-view": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/main/main.json",
+        "pages/index/index.json",
+        "pages/mvvm/mvvm.json",
+        "pages/home/home.json",
+        "pages/login/login.json",
+        "common/components/mvvm-view/mvvm-view.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/mvvm-view/mvvm-view.vue"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/mvvm-view/mvvm-view.js"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/mvvm-view/mvvm-view.vue"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/mvvm-view/mvvm-view.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/mvvm-view/mvvm-view.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/mvvm-view/mvvm-view.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/mvvm-view/mvvm-view.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/mvvm-view/mvvm-view.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/mvvm-view/mvvm-view.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/mvvm-view/mvvm-view.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/mvvm-view/mvvm-view.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/mvvm-view/mvvm-view.js"
+    }
+  },
+  "feed-card": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/main/main.json",
+        "pages/home/home.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/feed-card/feed-card.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/feed-card/feed-card.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/feed-card/feed-card.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/feed-card/feed-card.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/feed-card/feed-card.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/feed-card/feed-card.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/feed-card/feed-card.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/feed-card/feed-card.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/feed-card/feed-card.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/feed-card/feed-card.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/feed-card/feed-card.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/feed-card/feed-card.js"
+    }
+  },
+  "lazyload-image": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/home/home.json",
+        "pages/poi/poi.json",
+        "common/components/shop-review/shop-review.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/lazyload-image/lazyload-image-nolazy.vue"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/lazyload-image/lazyload-image-nolazy.vue"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    }
+  },
+  "exception": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json",
+        "pages/group/group.json",
+        "pages/my/my.json",
+        "pages/poi/poi.json",
+        "pages/detail/components/shop-head/shop-head.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "dpmapp/utils/noresult.vue"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/wx-exception/wx-exception.js"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "dpmapp/utils/noresult.vue"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/wx-exception/wx-exception.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/wx-exception/wx-exception.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/wx-exception/wx-exception.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/wx-exception/wx-exception.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/wx-exception/wx-exception.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/wx-exception/wx-exception.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/wx-exception/wx-exception.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/wx-exception/wx-exception.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/wx-exception/wx-exception.js"
+    }
+  },
+  "shop-follow": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/share-follow/share-follow.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/share-follow/share-follow.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/share-follow/share-follow.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/share-follow/share-follow.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/share-follow/share-follow.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/share-follow/share-follow.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/share-follow/share-follow.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/share-follow/share-follow.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/share-follow/share-follow.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/share-follow/share-follow.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/share-follow/share-follow.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/share-follow/share-follow.js"
+    }
+  },
+  "waterfall-view": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/group/group.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "compatible/components/waterfall-view/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "compatible/components/waterfall-view/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "compatible/components/waterfall-view/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "compatible/components/waterfall-view/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "compatible/components/waterfall-view/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/waterfall-view/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "compatible/components/waterfall-view/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/waterfall-view/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/waterfall-view/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "compatible/components/waterfall-view/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "compatible/components/waterfall-view/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/waterfall-view/index.js"
+    }
+  },
+  "pop-up": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/group/group.json",
+        "pages/my/my.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "compatible/components/pop-up/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "compatible/components/pop-up/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "compatible/components/pop-up/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "compatible/components/pop-up/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "compatible/components/pop-up/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/pop-up/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "compatible/components/pop-up/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/pop-up/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/pop-up/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "compatible/components/pop-up/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "compatible/components/pop-up/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/pop-up/index.js"
+    }
+  },
+  "choosenList": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/ranklist/ranklist.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/choosenList/choosenList.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/choosenList/choosenList.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/choosenList/choosenList.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/choosenList/choosenList.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/choosenList/choosenList.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/choosenList/choosenList.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/choosenList/choosenList.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/choosenList/choosenList.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/choosenList/choosenList.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/choosenList/choosenList.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/choosenList/choosenList.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/choosenList/choosenList.js"
+    }
+  },
+  "foodList": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/ranklist/ranklist.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/foodList/foodList.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/foodList/foodList.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/foodList/foodList.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/foodList/foodList.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/foodList/foodList.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/foodList/foodList.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/foodList/foodList.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/foodList/foodList.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/foodList/foodList.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/foodList/foodList.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/foodList/foodList.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/foodList/foodList.js"
+    }
+  },
+  "shopCard": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/ranklist/ranklist.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopCard/shopCard.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopCard/shopCard.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopCard/shopCard.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopCard/shopCard.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopCard/shopCard.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopCard/shopCard.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopCard/shopCard.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopCard/shopCard.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopCard/shopCard.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopCard/shopCard.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopCard/shopCard.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopCard/shopCard.js"
+    }
+  },
+  "shop-head": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-head/shop-head.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-head/shop-head.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-head/shop-head.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-head/shop-head.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-head/shop-head.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-head/shop-head.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-head/shop-head.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-head/shop-head.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-head/shop-head.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-head/shop-head.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-head/shop-head.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-head/shop-head.js"
+    }
+  },
+  "common-reserve": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-widely-order/shop-widely-order.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-widely-order/shop-widely-order.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-widely-order/shop-widely-order.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-widely-order/shop-widely-order.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-widely-order/shop-widely-order.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-widely-order/shop-widely-order.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-widely-order/shop-widely-order.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-widely-order/shop-widely-order.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-widely-order/shop-widely-order.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-widely-order/shop-widely-order.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-widely-order/shop-widely-order.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-widely-order/shop-widely-order.js"
+    }
+  },
+  "shop-tuan": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-tuan/shop-tuan.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-tuan/shop-tuan.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-tuan/shop-tuan.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-tuan/shop-tuan.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-tuan/shop-tuan.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-tuan/shop-tuan.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-tuan/shop-tuan.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-tuan/shop-tuan.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-tuan/shop-tuan.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-tuan/shop-tuan.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-tuan/shop-tuan.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-tuan/shop-tuan.js"
+    }
+  },
+  "shop-dish": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-dish/shop-dish.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-dish/shop-dish.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-dish/shop-dish.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-dish/shop-dish.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-dish/shop-dish.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-dish/shop-dish.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-dish/shop-dish.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-dish/shop-dish.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-dish/shop-dish.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-dish/shop-dish.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-dish/shop-dish.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-dish/shop-dish.js"
+    }
+  },
+  "shop-dis-card": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json",
+        "pages/poi/poi.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/shop-dis-card/shop-dis-card.vue"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card.js"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/shop-dis-card/shop-dis-card.vue"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card.js"
+    }
+  },
+  "shop-ktv-book": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json",
+        "pages/detail/detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "dpmapp/utils/noresult.vue"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-ktv-book/shop-ktv-book.js"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "dpmapp/utils/noresult.vue"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-ktv-book/shop-ktv-book.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-ktv-book/shop-ktv-book.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-ktv-book/shop-ktv-book.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-ktv-book/shop-ktv-book.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-ktv-book/shop-ktv-book.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-ktv-book/shop-ktv-book.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-ktv-book/shop-ktv-book.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-ktv-book/shop-ktv-book.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-ktv-book/shop-ktv-book.js"
+    }
+  },
+  "shop-beauty-shelf": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json",
+        "pages/detail/detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "dpmapp/utils/noresult.vue"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/beauty-product-shelf/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "dpmapp/utils/noresult.vue"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/beauty-product-shelf/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/beauty-product-shelf/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/beauty-product-shelf/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/beauty-product-shelf/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/beauty-product-shelf/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/beauty-product-shelf/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/beauty-product-shelf/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/beauty-product-shelf/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/beauty-product-shelf/index.js"
+    }
+  },
+  "shop-craftsman": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json",
+        "pages/detail/detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "dpmapp/utils/noresult.vue"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-craftsman/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "dpmapp/utils/noresult.vue"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-craftsman/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-craftsman/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-craftsman/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-craftsman/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-craftsman/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-craftsman/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-craftsman/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-craftsman/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-craftsman/index.js"
+    }
+  },
+  "friends-come": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/friends-come/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/friends-come/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/friends-come/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/friends-come/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/friends-come/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/friends-come/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/friends-come/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/friends-come/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/friends-come/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/friends-come/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/friends-come/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/friends-come/index.js"
+    }
+  },
+  "shop-friendlike": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-friendlike/shop-friendlike.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-friendlike/shop-friendlike.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-friendlike/shop-friendlike.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-friendlike/shop-friendlike.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-friendlike/shop-friendlike.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-friendlike/shop-friendlike.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-friendlike/shop-friendlike.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-friendlike/shop-friendlike.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-friendlike/shop-friendlike.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-friendlike/shop-friendlike.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-friendlike/shop-friendlike.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-friendlike/shop-friendlike.js"
+    }
+  },
+  "review-list": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json",
+        "packages/msdeal/pages/deal-detail/deal-detail.json",
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/review-list/review-list.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/review-list/review-list.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/review-list/review-list.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/review-list/review-list.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/review-list/review-list.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/review-list/review-list.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/review-list/review-list.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/review-list/review-list.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/review-list/review-list.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/review-list/review-list.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/review-list/review-list.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/review-list/review-list.js"
+    }
+  },
+  "shop-comment": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json",
+        "pages/poi/poi.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-comment/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-comment/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-comment/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-comment/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-comment/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-comment/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-comment/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-comment/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-comment/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/shop-comment/index.js"
+    }
+  },
+  "shop-canvas": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/mina-canvas/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/mina-canvas/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/mina-canvas/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/mina-canvas/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/mina-canvas/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/mina-canvas/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/mina-canvas/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/mina-canvas/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/mina-canvas/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/mina-canvas/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/mina-canvas/index.js"
+    }
+  },
+  "shop-couponpackage": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json",
+        "pages/detail/detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "outer_components/shop-couponpackage/index.vue"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-couponpackage/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "outer_components/shop-couponpackage/index.vue"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-couponpackage/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-couponpackage/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-couponpackage/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-couponpackage/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-couponpackage/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-couponpackage/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-couponpackage/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-couponpackage/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-couponpackage/index.js"
+    }
+  },
+  "city": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/city/city.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/city/npm/@dp/sparrow-component-city/city.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/city/npm/@dp/sparrow-component-city/city.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/city/npm/@dp/sparrow-component-city/city.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/city/npm/@dp/sparrow-component-city/city.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/city/npm/@dp/sparrow-component-city/city.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/city/npm/@dp/sparrow-component-city/city.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/city/npm/@dp/sparrow-component-city/city.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/city/npm/@dp/sparrow-component-city/city.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/city/npm/@dp/sparrow-component-city/city.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/city/npm/@dp/sparrow-component-city/city.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/city/npm/@dp/sparrow-component-city/city.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/city/npm/@dp/sparrow-component-city/city.js"
+    }
+  },
+  "group-waterfall-card": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/group/group.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/group-waterfall-card/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/group-waterfall-card/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/group-waterfall-card/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/group-waterfall-card/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/group-waterfall-card/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/group-waterfall-card/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/group-waterfall-card/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/group-waterfall-card/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/group-waterfall-card/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/group-waterfall-card/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/group-waterfall-card/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/group-waterfall-card/index.js"
+    }
+  },
+  "virtualphonenumber": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json",
+        "pages/poi/poi.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/miniprogram-virtual-number/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/miniprogram-virtual-number/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/miniprogram-virtual-number/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/miniprogram-virtual-number/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/miniprogram-virtual-number/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/miniprogram-virtual-number/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/miniprogram-virtual-number/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/miniprogram-virtual-number/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/miniprogram-virtual-number/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/miniprogram-virtual-number/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/miniprogram-virtual-number/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/miniprogram-virtual-number/index.js"
+    }
+  },
+  "yodaSlider": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/home/home.json",
+        "pages/webview/webview.json",
+        "pages/login/login.json",
+        "pages/detail/components/shop-comment/index.json",
+        "pages/poi/components/shop-comment/index.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "H5_REACT": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "NODE_REACT": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "TTMA": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "WXMP": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "SWAN": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "ALIMP": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "HAP": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "PICASSO": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "CANVAS": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    },
+    "MMP": {
+      "mode": "MAPPING",
+      "path": "common/components/slider/slider_mapping.vue"
+    }
+  },
+  "midas": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/home/home.json",
+        "pages/poi/poi.json",
+        "pages/detail/components/shop-friendlike/shop-friendlike.json",
+        "compatible/components/midas-dp-deal-list/midas-dp-deal-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/midas/index_mapping.vue"
+    },
+    "H5_REACT": {
+      "mode": "MAPPING",
+      "path": "common/components/midas/index_mapping.vue"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/midas/index_mapping.vue"
+    },
+    "NODE_REACT": {
+      "mode": "MAPPING",
+      "path": "common/components/midas/index_mapping.vue"
+    },
+    "TTMA": {
+      "mode": "MAPPING",
+      "path": "common/components/midas/index_mapping.vue"
+    },
+    "WXMP": {
+      "mode": "MAPPING",
+      "path": "common/components/midas/index_mapping.vue"
+    },
+    "SWAN": {
+      "mode": "MAPPING",
+      "path": "common/components/midas/index_mapping.vue"
+    },
+    "ALIMP": {
+      "mode": "MAPPING",
+      "path": "common/components/midas/index_mapping.vue"
+    },
+    "HAP": {
+      "mode": "MAPPING",
+      "path": "common/components/midas/index_mapping.vue"
+    },
+    "PICASSO": {
+      "mode": "MAPPING",
+      "path": "common/components/midas/index_mapping.vue"
+    },
+    "CANVAS": {
+      "mode": "MAPPING",
+      "path": "common/components/midas/index_mapping.vue"
+    },
+    "MMP": {
+      "mode": "MAPPING",
+      "path": "common/components/midas/index_mapping.vue"
+    }
+  },
+  "new-ktv-book": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json",
+        "pages/poi/poi.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "outer_components/new-ktv-book/index.vue"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/new-ktv-book/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "outer_components/new-ktv-book/index.vue"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/new-ktv-book/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/new-ktv-book/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/new-ktv-book/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/new-ktv-book/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/new-ktv-book/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/new-ktv-book/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/new-ktv-book/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/new-ktv-book/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/detail/components/new-ktv-book/index.js"
+    }
+  },
+  "shop-review-tag": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json",
+        "common/components/review-list/review-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review-tag/shop-review-tag.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review-tag/shop-review-tag.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review-tag/shop-review-tag.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review-tag/shop-review-tag.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review-tag/shop-review-tag.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review-tag/shop-review-tag.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review-tag/shop-review-tag.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review-tag/shop-review-tag.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review-tag/shop-review-tag.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review-tag/shop-review-tag.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review-tag/shop-review-tag.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review-tag/shop-review-tag.js"
+    }
+  },
+  "shop-review": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json",
+        "pages/detail/components/friends-come/index.json",
+        "common/components/review-list/review-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review/shop-review.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review/shop-review.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review/shop-review.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review/shop-review.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review/shop-review.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review/shop-review.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review/shop-review.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review/shop-review.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review/shop-review.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review/shop-review.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review/shop-review.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-review/shop-review.js"
+    }
+  },
+  "star": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json",
+        "pages/detail/components/shop-head/shop-head.json",
+        "common/components/shop-review/shop-review.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    }
+  },
+  "rainbow": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json",
+        "pages/detail/components/shop-tuan/shop-tuan.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/rainbow/index.vue"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/rainbow/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "MAPPING",
+      "path": "common/components/rainbow/index.vue"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/rainbow/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/rainbow/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/rainbow/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/rainbow/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/rainbow/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/rainbow/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/rainbow/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/rainbow/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/rainbow/index.js"
+    }
+  },
+  "review-dish": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json",
+        "common/components/shop-review/shop-review.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/review-dish/review-dish.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/review-dish/review-dish.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/review-dish/review-dish.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/review-dish/review-dish.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/review-dish/review-dish.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/review-dish/review-dish.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/review-dish/review-dish.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/review-dish/review-dish.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/review-dish/review-dish.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/review-dish/review-dish.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/review-dish/review-dish.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/review-dish/review-dish.js"
+    }
+  },
+  "lazy-img": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/components/shop-head/shop-head.json",
+        "pages/detail/components/shop-dish/shop-dish.json",
+        "pages/detail/components/shop-craftsman/index.json",
+        "pages/detail/components/shop-friendlike/shop-friendlike.json",
+        "pages/poi/components/shop-craftsman/index.json",
+        "pages/ranklist/components/shopItem/shopItem.json",
+        "compatible/components/midas-dp-deal-list/midas-dp-deal-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    }
+  },
+  "shop-dis-card-panel": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "common/components/shop-dis-card/shop-dis-card.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card-panel/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card-panel/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card-panel/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card-panel/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card-panel/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card-panel/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card-panel/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card-panel/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card-panel/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card-panel/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card-panel/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/shop-dis-card/shop-dis-card-panel/index.js"
+    }
+  },
+  "lazyload_img": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "common/components/group-waterfall-card/index.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/lazyload-image/lazyload-image.js"
+    }
+  },
+  "shopItem": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/ranklist/components/shopCard/shopCard.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopItem/shopItem.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopItem/shopItem.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopItem/shopItem.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopItem/shopItem.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopItem/shopItem.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopItem/shopItem.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopItem/shopItem.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopItem/shopItem.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopItem/shopItem.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopItem/shopItem.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopItem/shopItem.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/ranklist/components/shopItem/shopItem.js"
+    }
+  },
+  "show-poi-guide": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/detail/detail.json",
+        "pages/poi/poi.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "outer_components/show-poi-guide/show-poi-guide.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "outer_components/show-poi-guide/show-poi-guide.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "outer_components/show-poi-guide/show-poi-guide.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "outer_components/show-poi-guide/show-poi-guide.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "outer_components/show-poi-guide/show-poi-guide.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/show-poi-guide/show-poi-guide.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "outer_components/show-poi-guide/show-poi-guide.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/show-poi-guide/show-poi-guide.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "outer_components/show-poi-guide/show-poi-guide.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "outer_components/show-poi-guide/show-poi-guide.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "outer_components/show-poi-guide/show-poi-guide.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/show-poi-guide/show-poi-guide.js"
+    }
+  },
+  "midas-dp-deal-list": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-detail/deal-detail.json",
+        "packages/msdeal/pages/sec-kill-list/sec-kill-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "compatible/components/midas-dp-deal-list/midas-dp-deal-list.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "compatible/components/midas-dp-deal-list/midas-dp-deal-list.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "compatible/components/midas-dp-deal-list/midas-dp-deal-list.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "compatible/components/midas-dp-deal-list/midas-dp-deal-list.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "compatible/components/midas-dp-deal-list/midas-dp-deal-list.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/midas-dp-deal-list/midas-dp-deal-list.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "compatible/components/midas-dp-deal-list/midas-dp-deal-list.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/midas-dp-deal-list/midas-dp-deal-list.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/midas-dp-deal-list/midas-dp-deal-list.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "compatible/components/midas-dp-deal-list/midas-dp-deal-list.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "compatible/components/midas-dp-deal-list/midas-dp-deal-list.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/midas-dp-deal-list/midas-dp-deal-list.js"
+    }
+  },
+  "error": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-detail/deal-detail.json",
+        "packages/msdeal/pages/deal-order/deal-order.json",
+        "packages/msdeal/pages/deal-order-detail/deal-order-detail.json",
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json",
+        "packages/msdeal/pages/sec-kill-list/sec-kill-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/error/error.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/error/error.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/error/error.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/error/error.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/error/error.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/error/error.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/error/error.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/error/error.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/error/error.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/error/error.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/error/error.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/error/error.js"
+    }
+  },
+  "deal-main": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-detail/deal-detail.json",
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-main/deal-main.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-main/deal-main.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-main/deal-main.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-main/deal-main.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-main/deal-main.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-main/deal-main.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-main/deal-main.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-main/deal-main.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-main/deal-main.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-main/deal-main.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-main/deal-main.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-main/deal-main.js"
+    }
+  },
+  "deal-food": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-detail/deal-detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-food/deal-food.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-food/deal-food.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-food/deal-food.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-food/deal-food.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-food/deal-food.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-food/deal-food.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-food/deal-food.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-food/deal-food.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-food/deal-food.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-food/deal-food.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-food/deal-food.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-food/deal-food.js"
+    }
+  },
+  "deal-hint": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-detail/deal-detail.json",
+        "packages/msdeal/pages/components/deal-voucher/deal-voucher.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-hint/deal-hint.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-hint/deal-hint.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-hint/deal-hint.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-hint/deal-hint.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-hint/deal-hint.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-hint/deal-hint.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-hint/deal-hint.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-hint/deal-hint.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-hint/deal-hint.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-hint/deal-hint.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-hint/deal-hint.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-hint/deal-hint.js"
+    }
+  },
+  "deal-voucher": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-detail/deal-detail.json",
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-voucher/deal-voucher.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-voucher/deal-voucher.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-voucher/deal-voucher.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-voucher/deal-voucher.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-voucher/deal-voucher.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-voucher/deal-voucher.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-voucher/deal-voucher.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-voucher/deal-voucher.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-voucher/deal-voucher.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-voucher/deal-voucher.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-voucher/deal-voucher.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-voucher/deal-voucher.js"
+    }
+  },
+  "deal-poi": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-detail/deal-detail.json",
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-poi/deal-poi.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-poi/deal-poi.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-poi/deal-poi.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-poi/deal-poi.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-poi/deal-poi.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-poi/deal-poi.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-poi/deal-poi.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-poi/deal-poi.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-poi/deal-poi.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-poi/deal-poi.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-poi/deal-poi.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-poi/deal-poi.js"
+    }
+  },
+  "deal-btn": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-detail/deal-detail.json",
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-btn/deal-btn.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-btn/deal-btn.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-btn/deal-btn.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-btn/deal-btn.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-btn/deal-btn.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-btn/deal-btn.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-btn/deal-btn.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-btn/deal-btn.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-btn/deal-btn.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-btn/deal-btn.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-btn/deal-btn.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-btn/deal-btn.js"
+    }
+  },
+  "top-parent": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-detail/deal-detail.json",
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "compatible/components/top-parent/top-parent.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "compatible/components/top-parent/top-parent.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "compatible/components/top-parent/top-parent.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "compatible/components/top-parent/top-parent.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "compatible/components/top-parent/top-parent.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/top-parent/top-parent.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "compatible/components/top-parent/top-parent.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/top-parent/top-parent.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/top-parent/top-parent.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "compatible/components/top-parent/top-parent.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "compatible/components/top-parent/top-parent.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/top-parent/top-parent.js"
+    }
+  },
+  "contact-card": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-detail/deal-detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "compatible/components/contact-card/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "compatible/components/contact-card/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "compatible/components/contact-card/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "compatible/components/contact-card/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "compatible/components/contact-card/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/contact-card/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "compatible/components/contact-card/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/contact-card/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/contact-card/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "compatible/components/contact-card/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "compatible/components/contact-card/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "compatible/components/contact-card/index.js"
+    }
+  },
+  "allopatric-tip": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-detail/deal-detail.json",
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/allopatric-tip/allopatric-tip.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/allopatric-tip/allopatric-tip.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/allopatric-tip/allopatric-tip.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/allopatric-tip/allopatric-tip.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/allopatric-tip/allopatric-tip.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/allopatric-tip/allopatric-tip.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/allopatric-tip/allopatric-tip.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/allopatric-tip/allopatric-tip.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/allopatric-tip/allopatric-tip.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/allopatric-tip/allopatric-tip.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/allopatric-tip/allopatric-tip.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/allopatric-tip/allopatric-tip.js"
+    }
+  },
+  "ms-canvas": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-detail/deal-detail.json",
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/wx-share/m-canvas.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/wx-share/m-canvas.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/wx-share/m-canvas.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/wx-share/m-canvas.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/wx-share/m-canvas.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/wx-share/m-canvas.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/wx-share/m-canvas.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/wx-share/m-canvas.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/wx-share/m-canvas.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/wx-share/m-canvas.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/wx-share/m-canvas.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/wx-share/m-canvas.js"
+    }
+  },
+  "collage": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/collage-detail/collage-detail.json",
+        "packages/msdeal/pages/deal-order-detail/deal-order-detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-new/collage-new.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-new/collage-new.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-new/collage-new.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-new/collage-new.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-new/collage-new.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-new/collage-new.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-new/collage-new.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-new/collage-new.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-new/collage-new.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-new/collage-new.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-new/collage-new.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-new/collage-new.js"
+    }
+  },
+  "collage-card": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/collage-detail/collage-detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-card/collage-card.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-card/collage-card.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-card/collage-card.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-card/collage-card.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-card/collage-card.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-card/collage-card.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-card/collage-card.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-card/collage-card.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-card/collage-card.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-card/collage-card.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-card/collage-card.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-collage-card/collage-card.js"
+    }
+  },
+  "order-global-tip": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-order/deal-order.json",
+        "packages/msdeal/pages/deal-order-detail/deal-order-detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-global-tip/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-global-tip/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-global-tip/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-global-tip/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-global-tip/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-global-tip/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-global-tip/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-global-tip/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-global-tip/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-global-tip/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-global-tip/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-global-tip/index.js"
+    }
+  },
+  "order-btn": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-order-detail/deal-order-detail.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-btn/order-btn.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-btn/order-btn.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-btn/order-btn.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-btn/order-btn.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-btn/order-btn.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-btn/order-btn.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-btn/order-btn.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-btn/order-btn.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-btn/order-btn.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-btn/order-btn.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-btn/order-btn.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/order-btn/order-btn.js"
+    }
+  },
+  "custom": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/deal-order-detail/deal-order-detail.json",
+        "packages/msdeal/pages/maiton-order-detail/maiton-order-detail.json",
+        "packages/msdeal/pages/maiton-order-succ/maiton-order-succ.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/custom/custom.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/custom/custom.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/custom/custom.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/custom/custom.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/custom/custom.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/custom/custom.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/custom/custom.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/custom/custom.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/custom/custom.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/custom/custom.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/custom/custom.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/custom/custom.js"
+    }
+  },
+  "dialog": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/maiton-order/maiton-order.json",
+        "packages/msdeal/pages/maiton-order-detail/maiton-order-detail.json",
+        "packages/msdeal/pages/maiton-order-succ/maiton-order-succ.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/dialog/dialog.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/dialog/dialog.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/dialog/dialog.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/dialog/dialog.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/dialog/dialog.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/dialog/dialog.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/dialog/dialog.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/dialog/dialog.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/dialog/dialog.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/dialog/dialog.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/dialog/dialog.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/dialog/dialog.js"
+    }
+  },
+  "loading": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/maiton-order/maiton-order.json",
+        "packages/msdeal/pages/maiton-order-detail/maiton-order-detail.json",
+        "packages/msdeal/pages/maiton-order-succ/maiton-order-succ.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/loading/loading.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/loading/loading.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/loading/loading.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/loading/loading.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/loading/loading.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/loading/loading.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/loading/loading.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/loading/loading.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/loading/loading.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/loading/loading.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/loading/loading.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/loading/loading.js"
+    }
+  },
+  "maiton-hui": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/maiton-order/maiton-order.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-hui/maiton-hui.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-hui/maiton-hui.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-hui/maiton-hui.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-hui/maiton-hui.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-hui/maiton-hui.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-hui/maiton-hui.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-hui/maiton-hui.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-hui/maiton-hui.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-hui/maiton-hui.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-hui/maiton-hui.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-hui/maiton-hui.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-hui/maiton-hui.js"
+    }
+  },
+  "maiton-bcoupon": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/maiton-order/maiton-order.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.js"
+    }
+  },
+  "advert": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/maiton-order-succ/maiton-order-succ.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/pay-result-advert/pay-result-advert.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/pay-result-advert/pay-result-advert.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/pay-result-advert/pay-result-advert.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/pay-result-advert/pay-result-advert.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/pay-result-advert/pay-result-advert.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/pay-result-advert/pay-result-advert.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/pay-result-advert/pay-result-advert.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/pay-result-advert/pay-result-advert.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/pay-result-advert/pay-result-advert.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/pay-result-advert/pay-result-advert.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/pay-result-advert/pay-result-advert.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/pay-result-advert/pay-result-advert.js"
+    }
+  },
+  "waterfall-flow-ad-poi": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/maiton-order-succ/maiton-order-succ.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/waterfall-flow-ad-poi/waterfall-flow-ad-poi.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/waterfall-flow-ad-poi/waterfall-flow-ad-poi.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/waterfall-flow-ad-poi/waterfall-flow-ad-poi.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/waterfall-flow-ad-poi/waterfall-flow-ad-poi.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/waterfall-flow-ad-poi/waterfall-flow-ad-poi.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/waterfall-flow-ad-poi/waterfall-flow-ad-poi.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/waterfall-flow-ad-poi/waterfall-flow-ad-poi.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/waterfall-flow-ad-poi/waterfall-flow-ad-poi.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/waterfall-flow-ad-poi/waterfall-flow-ad-poi.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/waterfall-flow-ad-poi/waterfall-flow-ad-poi.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/waterfall-flow-ad-poi/waterfall-flow-ad-poi.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/waterfall-flow-ad-poi/waterfall-flow-ad-poi.js"
+    }
+  },
+  "deal-menu": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-menu/deal-menu.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-menu/deal-menu.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-menu/deal-menu.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-menu/deal-menu.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-menu/deal-menu.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-menu/deal-menu.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-menu/deal-menu.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-menu/deal-menu.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-menu/deal-menu.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-menu/deal-menu.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-menu/deal-menu.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-menu/deal-menu.js"
+    }
+  },
+  "deal-terms": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-terms/deal-terms.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-terms/deal-terms.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-terms/deal-terms.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-terms/deal-terms.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-terms/deal-terms.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-terms/deal-terms.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-terms/deal-terms.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-terms/deal-terms.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-terms/deal-terms.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-terms/deal-terms.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-terms/deal-terms.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-terms/deal-terms.js"
+    }
+  },
+  "deal-imgs": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-imgs/deal-imgs.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-imgs/deal-imgs.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-imgs/deal-imgs.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-imgs/deal-imgs.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-imgs/deal-imgs.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-imgs/deal-imgs.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-imgs/deal-imgs.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-imgs/deal-imgs.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-imgs/deal-imgs.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-imgs/deal-imgs.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-imgs/deal-imgs.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-imgs/deal-imgs.js"
+    }
+  },
+  "deal-tips": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.js"
+    }
+  },
+  "deal-vouchertag": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-vouchertag/deal-vouchertag.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-vouchertag/deal-vouchertag.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-vouchertag/deal-vouchertag.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-vouchertag/deal-vouchertag.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-vouchertag/deal-vouchertag.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-vouchertag/deal-vouchertag.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-vouchertag/deal-vouchertag.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-vouchertag/deal-vouchertag.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-vouchertag/deal-vouchertag.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-vouchertag/deal-vouchertag.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-vouchertag/deal-vouchertag.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-vouchertag/deal-vouchertag.js"
+    }
+  },
+  "brand-title": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-brandtitle/deal-brandtitle.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-brandtitle/deal-brandtitle.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-brandtitle/deal-brandtitle.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-brandtitle/deal-brandtitle.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-brandtitle/deal-brandtitle.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-brandtitle/deal-brandtitle.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-brandtitle/deal-brandtitle.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-brandtitle/deal-brandtitle.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-brandtitle/deal-brandtitle.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-brandtitle/deal-brandtitle.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-brandtitle/deal-brandtitle.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-brandtitle/deal-brandtitle.js"
+    }
+  },
+  "sec-kill-guide-modal": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json",
+        "packages/msdeal/pages/sec-kill-list/sec-kill-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-guide-modal/guide-modal.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-guide-modal/guide-modal.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-guide-modal/guide-modal.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-guide-modal/guide-modal.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-guide-modal/guide-modal.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-guide-modal/guide-modal.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-guide-modal/guide-modal.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-guide-modal/guide-modal.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-guide-modal/guide-modal.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-guide-modal/guide-modal.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-guide-modal/guide-modal.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-guide-modal/guide-modal.js"
+    }
+  },
+  "service-telephone": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/seckill-deal/seckill-deal.json",
+        "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/service-telephone/service-telephone.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/service-telephone/service-telephone.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/service-telephone/service-telephone.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/service-telephone/service-telephone.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/service-telephone/service-telephone.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/service-telephone/service-telephone.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/service-telephone/service-telephone.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/service-telephone/service-telephone.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/service-telephone/service-telephone.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/service-telephone/service-telephone.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/service-telephone/service-telephone.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/service-telephone/service-telephone.js"
+    }
+  },
+  "sec-kill-filter": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/sec-kill-list/sec-kill-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-filter/sec-kill-filter.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-filter/sec-kill-filter.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-filter/sec-kill-filter.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-filter/sec-kill-filter.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-filter/sec-kill-filter.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-filter/sec-kill-filter.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-filter/sec-kill-filter.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-filter/sec-kill-filter.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-filter/sec-kill-filter.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-filter/sec-kill-filter.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-filter/sec-kill-filter.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-filter/sec-kill-filter.js"
+    }
+  },
+  "sec-kill-ka": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/sec-kill-list/sec-kill-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-ka/sec-kill-ka.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-ka/sec-kill-ka.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-ka/sec-kill-ka.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-ka/sec-kill-ka.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-ka/sec-kill-ka.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-ka/sec-kill-ka.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-ka/sec-kill-ka.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-ka/sec-kill-ka.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-ka/sec-kill-ka.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-ka/sec-kill-ka.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-ka/sec-kill-ka.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-ka/sec-kill-ka.js"
+    }
+  },
+  "sec-kill-poi": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/sec-kill-list/sec-kill-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.js"
+    }
+  },
+  "sec-kill-showtime": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/sec-kill-list/sec-kill-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-showtime/sec-kill-showtime.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-showtime/sec-kill-showtime.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-showtime/sec-kill-showtime.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-showtime/sec-kill-showtime.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-showtime/sec-kill-showtime.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-showtime/sec-kill-showtime.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-showtime/sec-kill-showtime.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-showtime/sec-kill-showtime.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-showtime/sec-kill-showtime.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-showtime/sec-kill-showtime.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-showtime/sec-kill-showtime.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-showtime/sec-kill-showtime.js"
+    }
+  },
+  "sec-kill-timedown": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/sec-kill-list/sec-kill-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-timedown/sec-kill-timedown.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-timedown/sec-kill-timedown.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-timedown/sec-kill-timedown.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-timedown/sec-kill-timedown.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-timedown/sec-kill-timedown.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-timedown/sec-kill-timedown.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-timedown/sec-kill-timedown.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-timedown/sec-kill-timedown.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-timedown/sec-kill-timedown.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-timedown/sec-kill-timedown.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-timedown/sec-kill-timedown.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-timedown/sec-kill-timedown.js"
+    }
+  },
+  "sec-kill-list-footer": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/sec-kill-list/sec-kill-list.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/sec-kill-list-footer/sec-kill-list-footer.js"
+    }
+  },
+  "deal-campaign": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/components/deal-main/deal-main.json",
+        "packages/msdeal/pages/components/deal-voucher/deal-voucher.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-campaign/deal-campaign.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-campaign/deal-campaign.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-campaign/deal-campaign.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-campaign/deal-campaign.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-campaign/deal-campaign.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-campaign/deal-campaign.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-campaign/deal-campaign.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-campaign/deal-campaign.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-campaign/deal-campaign.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-campaign/deal-campaign.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-campaign/deal-campaign.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/deal-campaign/deal-campaign.js"
+    }
+  },
+  "seed-star": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/components/deal-poi/deal-poi.json",
+        "packages/msdeal/pages/components/deal-collage-card/collage-card.json",
+        "packages/msdeal/pages/components/seckill-deal/seckill-deal-poi/deal-poi.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/star/star.js"
+    }
+  },
+  "maiton-bcoupon-item": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/components/maiton-bcoupon/maiton-bcoupon.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon-item/maiton-bcoupon-item.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon-item/maiton-bcoupon-item.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon-item/maiton-bcoupon-item.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon-item/maiton-bcoupon-item.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon-item/maiton-bcoupon-item.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon-item/maiton-bcoupon-item.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon-item/maiton-bcoupon-item.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon-item/maiton-bcoupon-item.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon-item/maiton-bcoupon-item.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon-item/maiton-bcoupon-item.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon-item/maiton-bcoupon-item.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/maiton-bcoupon-item/maiton-bcoupon-item.js"
+    }
+  },
+  "count-down": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/components/seckill-deal/seckill-deal-voucher/deal-voucher.json",
+        "packages/msdeal/pages/components/seckill-deal/seckill-deal-tips/deal-tips.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-countdown/count-down.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-countdown/count-down.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-countdown/count-down.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-countdown/count-down.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-countdown/count-down.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-countdown/count-down.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-countdown/count-down.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-countdown/count-down.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-countdown/count-down.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-countdown/count-down.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-countdown/count-down.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/seckill-deal/seckill-deal-countdown/count-down.js"
+    }
+  },
+  "stars": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "packages/msdeal/pages/components/sec-kill-poi/sec-kill-poi.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/stars/stars.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/stars/stars.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/stars/stars.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/stars/stars.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/stars/stars.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/stars/stars.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/stars/stars.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/stars/stars.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/stars/stars.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/stars/stars.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/stars/stars.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "packages/msdeal/pages/components/stars/stars.js"
+    }
+  },
+  "open-app": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json",
+        "pages/home/home.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app/index.js"
+    }
+  },
+  "app-launch-bd": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json",
+        "pages/downloadapp/downloadapp.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/app-launch-bd/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/app-launch-bd/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/app-launch-bd/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/app-launch-bd/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/app-launch-bd/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/app-launch-bd/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/app-launch-bd/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/app-launch-bd/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/app-launch-bd/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/app-launch-bd/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/app-launch-bd/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/app-launch-bd/index.js"
+    }
+  },
+  "shop-offline": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-offline/shop-offline.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-offline/shop-offline.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-offline/shop-offline.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-offline/shop-offline.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-offline/shop-offline.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-offline/shop-offline.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-offline/shop-offline.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-offline/shop-offline.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-offline/shop-offline.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-offline/shop-offline.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-offline/shop-offline.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "pages/poi/components/shop-offline/shop-offline.js"
+    }
+  },
+  "open-app-bar": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json",
+        "pages/home/home.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bar/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bar/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bar/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bar/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bar/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bar/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bar/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bar/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bar/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bar/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bar/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bar/index.js"
+    }
+  },
+  "open-app-bd": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "common/components/open-app-bar/index.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bd/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bd/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bd/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bd/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bd/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bd/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bd/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bd/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bd/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bd/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bd/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "common/components/open-app-bd/index.js"
+    }
+  },
+  "mina-new-ktv-book-shelves": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/index.js"
+    }
+  },
+  "mina-book-shelf": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-book-shelf/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-book-shelf/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-book-shelf/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-book-shelf/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-book-shelf/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-book-shelf/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-book-shelf/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-book-shelf/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-book-shelf/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-book-shelf/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-book-shelf/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-book-shelf/index.js"
+    }
+  },
+  "ktv-rich-text": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "outer_components/mina-new-ktv-book-shelves/index.json",
+        "outer_components/mina-ktv-book-shelf/index.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/rich-text/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/rich-text/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/rich-text/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/rich-text/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/rich-text/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/rich-text/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/rich-text/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/rich-text/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/rich-text/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/rich-text/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/rich-text/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/rich-text/index.js"
+    }
+  },
+  "lx-module": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "outer_components/mina-new-ktv-book-shelves/index.json",
+        "outer_components/mina-ktv-book-shelf/index.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/lx-module/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/lx-module/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/lx-module/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/lx-module/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/lx-module/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/lx-module/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/lx-module/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/lx-module/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/lx-module/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/lx-module/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/lx-module/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-new-ktv-book-shelves/lx-module/index.js"
+    }
+  },
+  "mina-ktv-book-shelf": {
+    "$info": {
+      "readme": "mode can be CONVERT, MAPPING or DECONSTRUCT",
+      "refers": [
+        "pages/poi/poi.json"
+      ]
+    },
+    "H5_VUE": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-ktv-book-shelf/index.js"
+    },
+    "H5_REACT": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-ktv-book-shelf/index.js"
+    },
+    "NODE_VUE": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-ktv-book-shelf/index.js"
+    },
+    "NODE_REACT": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-ktv-book-shelf/index.js"
+    },
+    "TTMA": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-ktv-book-shelf/index.js"
+    },
+    "WXMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-ktv-book-shelf/index.js"
+    },
+    "SWAN": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-ktv-book-shelf/index.js"
+    },
+    "ALIMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-ktv-book-shelf/index.js"
+    },
+    "HAP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-ktv-book-shelf/index.js"
+    },
+    "PICASSO": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-ktv-book-shelf/index.js"
+    },
+    "CANVAS": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-ktv-book-shelf/index.js"
+    },
+    "MMP": {
+      "mode": "CONVERT",
+      "path": "outer_components/mina-ktv-book-shelf/index.js"
+    }
+  }
+}

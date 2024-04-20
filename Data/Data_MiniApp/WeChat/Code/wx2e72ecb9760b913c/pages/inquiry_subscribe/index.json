@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "消息订阅",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-authorize-login": "../../components/cy-authorize-login/index"
+    }
+}

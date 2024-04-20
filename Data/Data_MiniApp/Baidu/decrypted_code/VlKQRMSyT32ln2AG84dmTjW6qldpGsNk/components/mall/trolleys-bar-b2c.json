@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"pack-sell-popup":"./pack-sell-popup","c-navigate":"../../mars_modules/@baidu/med-ui/dist/swan/components/Navigate/Navigate","b-trolleys":"../gy/trolleys","login-btn":"../common/login-btn","coupon-count-down":"../gy/CouponCountDown","bottom-bar-tips":"./BottomBarTips"}}

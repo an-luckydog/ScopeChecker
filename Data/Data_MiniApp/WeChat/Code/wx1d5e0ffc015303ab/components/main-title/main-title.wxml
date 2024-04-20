@@ -1,0 +1,3 @@
+<view class="main-title data-v-7d7a536e">
+    <view class="data-v-7d7a536e">{{titleName}}</view>
+</view>

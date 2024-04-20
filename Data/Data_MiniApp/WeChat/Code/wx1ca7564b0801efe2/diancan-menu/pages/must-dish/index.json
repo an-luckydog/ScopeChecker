@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "手机点餐",
+    "navigationStyle": "custom",
+    "componentPlaceholder": {
+        "container-panel": "view",
+        "lottery": "view"
+    }
+}

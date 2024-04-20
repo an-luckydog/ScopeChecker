@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "detail-base": "../../widgets/detailBase/detailBase",
+        "consult": "../../widgets/consult/consult",
+        "button-group": "../../widgets/buttonGroup/buttonGroup",
+		"video-base": "../../widgets/videoBase/videoBase"
+    }
+}

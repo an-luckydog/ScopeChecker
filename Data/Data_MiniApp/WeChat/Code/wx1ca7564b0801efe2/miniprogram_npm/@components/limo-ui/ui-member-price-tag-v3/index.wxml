@@ -1,0 +1,10 @@
+<view class="rms-vip-price-tag {{'rms-'+size}} {{customClassName}} {{bigPrice?'big-price-wrap':''}}" style="{{styleString}} {{background?'background:'+background+';':''}} {{color?'color:'+color+';':''}}" wx:if="{{price!==undefined}}">
+    <view class="rms-vip-left">
+        <view class="rms-vip-text">{{priceLabel||'会员价'}}</view>
+    </view>
+    <view class="rms-vip-right" wx:if="{{util.isShowPrice(price)&&!noPrice}}">
+        <view class="currency {{currency==='MOP'?'small-size':''}}">{{currency}}</view>
+        <view class="rms-vip-price {{priceClass}}">{{price}}</view>
+    </view>
+</view>
+<wxs module="util" src="index.wxs" />

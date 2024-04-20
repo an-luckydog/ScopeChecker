@@ -1,0 +1,12 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "product-list": "/components/product-list/product-list",
+        "product-card-like":"/components/product-card-like/product-card-like",
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "live-card": "/widgets/mip-dxdjx-live-list/components/live-card/live-card",
+        "basic-feed": "/widgets/mip-dxdjx-basic-feed/mip-dxdjx-basic-feed",
+        "product-card": "/components/product-card/product-card"
+    }
+}

@@ -1,0 +1,14 @@
+<u-popup bind:__l="__l" bind:close="__e" bind:input="__e" class="data-v-7eb088c6" data-event-opts="{{[ [ '^close',[ ['close'] ] ],[ '^input',[ [ '__set_model',[ '','show','$event',[] ] ] ] ] ]}}" mode="center" value="{{show}}" vueId="87903be8-1" vueSlots="{{['default']}}">
+    <view class="refund-dialog data-v-7eb088c6">
+        <view class="refund-title data-v-7eb088c6">退费说明</view>
+        <view class="refund-content data-v-7eb088c6">
+            <view class="refund-id data-v-7eb088c6" wx:if="{{divisionId}}">
+                <text class="data-v-7eb088c6">本单发票号</text>
+                <text class="data-v-7eb088c6" style="margin-left:20rpx;">{{divisionId}}</text>
+            </view>
+            <view class="refund-text data-v-7eb088c6">1. 线上支付金额将在1-3个工作日内原路退回</view>
+            <view class="refund-text data-v-7eb088c6">2. 医保卡支付金额需凭发票号到医院发票窗口补打发票，医院为您退回至医保卡</view>
+        </view>
+        <view catchtap="__e" class="refund-btn data-v-7eb088c6" data-event-opts="{{[ [ 'tap',[ [ 'close',['$event'] ] ] ] ]}}">我知道了</view>
+    </view>
+</u-popup>

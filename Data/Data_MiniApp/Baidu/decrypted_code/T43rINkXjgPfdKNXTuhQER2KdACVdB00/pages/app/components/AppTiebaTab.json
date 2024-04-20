@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "tieba-card": "../../../components/TiebaCard",
+        "loading-footer": "../../../components/Footer"
+    },
+    "component": true
+}

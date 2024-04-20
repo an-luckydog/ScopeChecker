@@ -1,0 +1,5 @@
+<view class="limo-float-window">
+    <view catch:touchcancel="touchEnd" catch:touchend="touchEnd" catch:touchmove="touchMove" catchtap="floatClick" class="float-window" style="position:{{position}};bottom:{{setHeight}}%;right:{{setRight}}px;transition:{{setTransition}};opacity:{{setOpacity}}">
+        <image class="float-img" mode="aspectFill" src="{{imgInfo.imgUrl}}" style="{{radiusStyle}}"></image>
+    </view>
+</view>

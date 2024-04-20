@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"video-poster-item":"../FlowItem/VideoPosterItem/index","drawer":"../Drawer/index","tab-header":"../TabHeader/index","video-section-list":"../FlowList/VideoSectionList/index"}}

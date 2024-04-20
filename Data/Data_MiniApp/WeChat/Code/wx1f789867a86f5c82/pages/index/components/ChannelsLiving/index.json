@@ -1,0 +1,22 @@
+{
+    "usingComponents": {
+        "h-checkbox": "/Components/Common/HCheckbox/index",
+        "h-confirm": "/Components/Common/HConfirm/index",
+        "h-flexible-box": "/Components/Common/HFlexibleBox/index",
+        "h-popup": "/Components/Common/HPopup/index",
+        "h-search": "/Components/Common/HSearch/index",
+        "h-tabs": "/Components/Common/HTabs/index",
+        "h-icon": "/Components/Common/HIcon/index",
+        "h-button": "/Components/Common/HButton/index",
+        "h-nav-bar": "/Components/Common/HNavBar/index",
+        "h-load-more": "/Components/Common/HLoadMore/index",
+        "h-image": "/Components/Common/HImage/index",
+        "h-empty": "/Components/Common/HEmpty/index",
+        "h-gallery": "/Components/Common/HGallery/index",
+        "h-process": "/Components/Common/HProcess/index",
+        "h-lazy-load": "/Components/Common/HLazyLoad/index",
+        "shop-cart-cascader": "/Components/business/ShopCartCascader/index",
+        "touch-popup": "/Components/business/TouchPoup/index"
+    },
+    "component": true
+}

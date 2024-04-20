@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "picker-column": "../picker-column/index",
+        "loading": "../loading/index",
+        "banner": "/./miniprogram_npm/@tmsfe/tms-ui/banner/banner",
+        "navbar": "/./miniprogram_npm/@tmsfe/tms-ui/navbar/navbar"
+    }
+}

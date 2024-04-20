@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "single-topic": "../single-topic/index",
+        "cy-loading": "../cy-loading/index"
+    }
+}

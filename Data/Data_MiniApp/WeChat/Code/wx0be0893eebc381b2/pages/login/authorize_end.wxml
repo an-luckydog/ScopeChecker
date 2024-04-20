@@ -1,0 +1,14 @@
+<view class="page" wx:if="{{pagesShow}}">
+    <view class="icon-box">
+        <image src="../../img/wxicon.png"></image>
+        <image src="../../img/bd.png"></image>
+        <image src="../../img/sicon.png"></image>
+        <image src="../../img/six_icon.png"></image>
+    </view>
+    <view class="title font36">
+        <view>{{userInfo?userInfo.nickName:''}}的微信账号</view>
+        <view>已与您的英语四·六级账号绑定成功！</view>
+        <view>你可使用微信号登陆英语四·六级君</view>
+    </view>
+    <button bindtap="callBack" class="authorize font32 color-000">确定</button>
+</view>

@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "product-list": "../../../../components/product-list"
+  }
+}

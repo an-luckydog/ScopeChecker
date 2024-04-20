@@ -1,0 +1,20 @@
+<block wx:if="{{pagesShow}}">
+    <import src="../../template/showToast.wxml"></import>
+    <view>
+        <template is="showToast" data="{{showToast:showToast}}"></template>
+        <view class="content">
+            <view class="font36 password">手机注册</view>
+            <view class="font28 character">验证码已发送至{{mobileStr}}</view>
+            <view class="height font32">
+                <text class="left con"></text>
+                <input bindinput="set_veri_code" class="left input1" maxlength="6" type="number" value="{{veriCode}}">
+                    <view class="input3" wx:if="{{veriCode.length<=0}}">请输入验证码</view>
+                </input>
+                <image bindtap="clear_code" class="left clear2 {{codeFlag}}" src="../../img/clear.png"></image>
+                <view bindtap="get_code" class="right acquire {{sendCode}}">发送验证码</view>
+                <view class="right acquire acquire-hl {{waitCode}}">重新获取 {{codeSecond}}</view>
+            </view>
+            <button bindtap="next_step" class="{{btnActive?'login-hl':''}} login font32">下一步</button>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,1 @@
+window.define("pages/swan-news-showcase/index",(function(n,s,e,w,i,o,a,d,c,g,t,u,p,h,m,r,x,f,l,C,P,_,b){"use strict";Page({})})),window.__swanRoute="pages/swan-news-showcase/index",window.usingComponents=["dynamicLib://swan-news-tool/swan-news-showcase"],window.usingPluginComponents=[],require("pages/swan-news-showcase/index");

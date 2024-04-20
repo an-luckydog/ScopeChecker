@@ -1,0 +1,9 @@
+<view class="star-container star-container-{{type}}">
+    <view class="star star-{{type}}">
+        <view class="north beam"></view>
+        <view class="northwest beam"></view>
+        <view class="northeast beam"></view>
+        <view class="west beam"></view>
+        <view class="east beam"></view>
+    </view>
+</view>

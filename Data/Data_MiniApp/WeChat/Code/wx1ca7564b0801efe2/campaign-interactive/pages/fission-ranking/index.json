@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "充值助力人气榜单",
+    "navigationBarTitleText": "充值助力人气榜单",
+    "navigationBarBackgroundColor": "#F4F4F4",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

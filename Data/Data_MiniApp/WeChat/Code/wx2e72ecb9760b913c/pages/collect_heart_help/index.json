@@ -1,0 +1,10 @@
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "送爱心 帮我免单",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "cy-modal": "../../components/cy-modal/cy-modal",
+        "cy-userinfo": "../../components/cy-userinfo/index"
+    }
+}

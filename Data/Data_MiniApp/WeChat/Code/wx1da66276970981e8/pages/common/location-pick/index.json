@@ -1,0 +1,11 @@
+{
+    "navigationBarTitleText": "位置选择",
+    "usingComponents": {
+        "u-loading-icon": "../../../node-modules/uview-plus/components/u-loading-icon/u-loading-icon",
+        "u-image": "../../../node-modules/uview-plus/components/u-image/u-image",
+        "u--text": "../../../node-modules/uview-plus/components/u--text/u--text",
+        "u-col": "../../../node-modules/uview-plus/components/u-col/u-col",
+        "u-row": "../../../node-modules/uview-plus/components/u-row/u-row",
+        "u-empty": "../../../node-modules/uview-plus/components/u-empty/u-empty"
+    }
+}

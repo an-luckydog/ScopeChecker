@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "zone-video-card": "./ZoneVideoCard"
+    },
+    "component": true
+}

@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "service": "../../common/pub1/pub1"
+    }
+}

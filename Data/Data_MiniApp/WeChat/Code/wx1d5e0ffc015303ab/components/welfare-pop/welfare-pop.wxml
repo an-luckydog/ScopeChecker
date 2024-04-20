@@ -1,0 +1,11 @@
+<view class="{{['welfare-pop','data-v-4b5363e6',isBg?'isbg':'',isBigScreen?'':'short']}}">
+    <view bindtap="__e" class="welfare-pop-main data-v-4b5363e6" data-event-opts="{{[ [ 'tap',[ [ 'handleRoute',['$event'] ] ] ] ]}}">
+        <image class="welfare-pop-main data-v-4b5363e6" mode="widthFix" src="https://xcxsite.vjifen.com/v/static/qp120/index/gif/welfare-120-pop-03-bg.png"></image>
+        <view class="welfare-pop-btn welfare-pop-btn-ani data-v-4b5363e6">
+            <image class="data-v-4b5363e6" mode="widthFix" src="https://xcxsite.vjifen.com/v/static/qp120/index/gif/welfare-120-pop-03-but.png"></image>
+        </view>
+    </view>
+    <view class="welfare-close-icon data-v-4b5363e6">
+        <image bindtap="__e" class="data-v-4b5363e6" data-event-opts="{{[ [ 'tap',[ [ 'handleWelfareClose',['$event'] ] ] ] ]}}" mode="widthFix" src="https://xcxsite.vjifen.com/v/static/qp120/welfareCenter/ferrisWheel/close.png"></image>
+    </view>
+</view>

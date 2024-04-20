@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "app-tags-header": "./AppTagsHeader",
+        "game-ranting-badge": "./GameRantingBadge",
+        "privacy-line": "./PrivacyLine",
+        "app-rank-bar": "./AppRankBar",
+        "game-detail-bottom-btn": "./GameDetailBottomBtn"
+    },
+    "component": true
+}

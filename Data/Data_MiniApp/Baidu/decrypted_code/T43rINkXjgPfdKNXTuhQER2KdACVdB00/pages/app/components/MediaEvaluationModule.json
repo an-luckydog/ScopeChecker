@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-bar-header": "../../../components/GameBarHeader",
+        "modia-evaluation-card": "./MediaEvaluationCard"
+    },
+    "component": true
+}

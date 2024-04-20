@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "van-icon": "../icon/index",
+        "van-popup": "../popup/index",
+        "van-loading": "../loading/index",
+        "banner": "/./miniprogram_npm/@tmsfe/tms-ui/banner/banner",
+        "navbar": "/./miniprogram_npm/@tmsfe/tms-ui/navbar/navbar"
+    }
+}

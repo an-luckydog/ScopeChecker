@@ -1,0 +1,8 @@
+<view class="input-wrapper">
+    <input bindconfirm="confirmHandler" bindinput="inputHandler" placeholder="输入需要转换为二维码的字符串" value="{{text}}"></input>
+</view>
+<view class="button-wrapper">
+    <button bindtap="tapHandler">转为二维码</button>
+</view>
+<canvas bindlongtap="save" canvasId="canvas" class="canvas" style="width:{{code_w}}px; height:{{code_w}}px;"></canvas>
+<view class="tip">长按保存</view>

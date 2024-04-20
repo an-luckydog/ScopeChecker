@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-loading-icon": "../../node-modules/uview-plus/components/u-loading-icon/u-loading-icon"
+    }
+}

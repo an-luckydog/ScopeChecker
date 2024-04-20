@@ -1,0 +1,6 @@
+{
+	"component": true,
+	"usingComponents": {
+		"info-setting": "../infosetting/infosetting"
+	}
+}

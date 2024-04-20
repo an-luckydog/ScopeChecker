@@ -1,0 +1,1 @@
+{"navigationBarTitleText":"购物车","component":true,"usingComponents":{"switchs":"/component/switchcheckbox","goods":"/pages/cart/goods","select-promo-pop":"/pages/cart/select_promo_pop","coupon":"/component/coupon"},"isUsingComponents":true,"skeleton":"","usingDynamicLibs":[],"usingPlugins":[],"usingDependencies":[],"isUsingSJS":false,"_hasVideo":false}

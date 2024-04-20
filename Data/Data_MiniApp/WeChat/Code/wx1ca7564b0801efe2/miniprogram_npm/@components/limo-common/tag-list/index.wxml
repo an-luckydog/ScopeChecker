@@ -1,0 +1,15 @@
+<view class="dish-tag-container {{tagClass}}" wx:if="{{tagList&&tagList.length}}">
+    <block wx:if="{{tagList&&tagList.length}}" wx:for="{{tagList}}" wx:for-index="idx" wx:for-item="tag" wx:key="idx">
+        <block wx:if="{{tag}}">
+            <view class="tags member-box" wx:if="{{tag.colorType===BKG_PRICE_3}}">
+                <ui-member-price-tag-v2 bigPrice="{{bigPrice}}" price="{{tag.tagDesc}}" priceLabel="{{tag.tagLabel}}" size="{{size}}"></ui-member-price-tag-v2>
+            </view>
+            <view class="tags member-box" wx:if="{{tag.colorType===LABEL_TYPE.BKG_PRICE_1}}">
+                <ui-member-price-tag-v3 background="{{tag.background}}" color="{{tag.color}}" price="{{tag.tagDesc}}" priceLabel="{{tag.tagLabel}}" size="{{size}}"></ui-member-price-tag-v3>
+            </view>
+            <view class="tags label-box" wx:else>
+                <ui-label colorType="{{tag.colorType}}" customClass="{{customClass}}" label="{{tag.tagLabel}}" size="{{size}}" text="{{tag.tagDesc}}"></ui-label>
+            </view>
+        </block>
+    </block>
+</view>

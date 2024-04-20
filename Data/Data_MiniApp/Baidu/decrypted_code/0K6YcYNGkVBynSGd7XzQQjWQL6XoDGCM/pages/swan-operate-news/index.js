@@ -1,0 +1,1 @@
+window.define("pages/swan-operate-news/index",(function(n,e,s,w,i,o,a,t,d,p,g,u,r,c,m,x,f,l,C,P,_,b,q){"use strict";Page({})})),window.__swanRoute="pages/swan-operate-news/index",window.usingComponents=["dynamicLib://swan-news-tool/swan-news"],window.usingPluginComponents=[],require("pages/swan-operate-news/index");

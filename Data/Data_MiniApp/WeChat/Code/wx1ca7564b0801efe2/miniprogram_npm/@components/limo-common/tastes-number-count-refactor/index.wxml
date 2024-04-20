@@ -1,0 +1,13 @@
+<view class="tastes-number-count {{isShowBigBtn?'tastes-number-count-large':''}}">
+    <view class="{{newCount>0?'minus':'minus hidden'}}">
+        <view class="minus-icon"></view>
+        <view catchtap="minusTasteToCart" class="minus-trigger"></view>
+    </view>
+    <view class="{{newCount>0?'num':'num hidden'}}">{{newCount}}</view>
+    <view class="plus">
+        <view class="{{newTastesLimit?'plus-icon-disabled':'plus-icon'}}">
+            <base-icon customClass="operation-plus-img {{isShowBigBtn?'large':''}}" iconType="add"></base-icon>
+        </view>
+        <view catchtap="addMultiTasteNum" class="plus-trigger"></view>
+    </view>
+</view>

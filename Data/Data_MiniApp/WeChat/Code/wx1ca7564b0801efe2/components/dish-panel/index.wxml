@@ -1,0 +1,85 @@
+<import src="../tag/index.wxml"></import>
+<import src="../price/index.wxml"></import>
+<view class="dish-panel {{isLoading?'skeleton':''}} {{hasTabBar?'':'no-tab'}}">
+    <common-error bind:errorButtonClick="reloadDish" btnText="重新加载" customClass="shop-status" errorTitle="未查询到菜品信息，请重试" fullPage="{{false}}" wx:if="{{!isLoading&&!dishInfo.spuId}}"></common-error>
+    <button bindtap="shareDish" class="share" data-spuId="{{dishInfo.spuId}}" openType="share" wx:else>
+        <view class="{{isTitleSticky?'sticky':''}} base-icon icon-fenxiang"></view>
+    </button>
+    <view bindtap="closePanel" class="{{isTitleSticky?'sticky':''}} base-icon icon-guanbi-xi"></view>
+    <scroll-view enhanced scrollWithAnimation scrollY bindscroll="onScroll" bounces="{{false}}" scrollTop="{{scrollTop}}" showScrollbar="{{false}}" style="height: 100%; position: relative">
+        <view class="content">
+            <image class="commodity-img" src="{{dishInfo.pic}}"></image>
+            <view class="market-label">
+                <market-label label="{{dishInfo.marketingLabel}}" price="{{dishInfo.currentPrice}}"></market-label>
+            </view>
+            <view class="detail">
+                <view class="dish-panel-head">
+                    <view class="name">
+                        <view class="corner" wx:if="{{corner}}">
+                            <template is="tag" data="{{...corner,size:'large'}}"></template>
+                        </view>{{dishInfo.name}}</view>
+                    <view class="sale" wx:if="{{dishInfo.saleQuantity>=0}}">月售{{dishInfo.saleQuantity>9999?'9999+':dishInfo.saleQuantity}}</view>
+                </view>
+                <view class="sticky-title" hidden="{{!isTitleSticky}}">
+                    <view class="name ellipsis">{{dishInfo.name}}</view>
+                </view>
+                <view class="dish-info">
+                    <view class="tags" wx:for="{{tagList}}" wx:for-index="tIndex" wx:for-item="tags" wx:key="tIndex">
+                        <template is="tag" data="{{...item,size:'middle'}}" wx:for="{{tags}}" wx:key="index"></template>
+                    </view>
+                    <view class="desc">
+                        <block wx:if="{{dishInfo.desc}}">{{dishInfo.desc}}</block>
+                    </view>
+                    <text class="desc">
+                        <block wx:if="{{dishInfo.detailDesc}}">{{dishInfo.detailDesc}}</block>
+                    </text>
+                </view>
+                <view class="nav-bar" style="top: {{titleHeight}}px" wx:if="{{navItems&&navItems.length>1}}">
+                    <view bind:tap="scrollToNav" class="bar-item {{navBarId===item.id?'active':''}}" data-id="{{item.id}}" wx:for="{{navItems}}" wx:key="index">{{item.title}}</view>
+                </view>
+                <view class="nav-content {{lgc.isValid(dishInfo)?'':'disable'}}" id="spec">
+                    <slot name="spec"></slot>
+                </view>
+                <view class="nav-content {{lgc.isValid(dishInfo)?'':'disable'}}" id="package">
+                    <slot name="package"></slot>
+                </view>
+                <view class="nav-content {{lgc.isValid(dishInfo)?'':'disable'}}" id="recommend-match" wx:if="{{showRecommendMatch}}">
+                    <dish-detail-recommend dish="{{dishInfo}}"></dish-detail-recommend>
+                </view>
+                <view bindtap="addRemark" class="remark-area" wx:if="{{showRemark}}">
+                    <view class="remark-title">备注</view>
+                    <view class="remark {{remarkText?'has-remark':'no-remark'}}">
+                        <view class="base-icon icon-beizhu"></view>{{remarkText||dishInfo.defaultRemark||'添加口味偏好等要求'}}</view>
+                </view>
+                <slot name="dish-detail-extend"></slot>
+                <view class="nav-content comment" id="comment" wx:if="{{reviewData.totalCount&&reviewData.totalCount>0}}">
+                    <dish-review-info reviewContentDTOList="{{reviewData.reviewContentDTOList}}" showDivider="{{false}}" spuReviewListPageUrl="{{reviewData.spuReviewListPageUrl}}" totalCount="{{reviewData.totalCount}}"></dish-review-info>
+                </view>
+                <view class="nav-content recommend" id="recommend"></view>
+            </view>
+            <view class="shine" wx:if="{{isLoading}}"></view>
+        </view>
+    </scroll-view>
+    <view class="bottom {{hasTabBar?'':'no-tab'}}" wx:if="{{dishInfo.spuId}}">
+        <dish-status dish="{{dishInfo}}" size="large"></dish-status>
+        <view class="bottom-container">
+            <view class="order-info">
+                <view class="money">
+                    <price memberTag="{{memberTag}}" price="{{addDishInfo.priceInfo}}" showEst="{{showEst}}" size="large" tooltip="top-left"></price>
+                </view>
+                <view class="statement" wx:if="{{addDishInfo.desc}}">
+                    <view class="dish-info-text">{{addDishInfo.desc}}</view>
+                    <view bindtap="triggerPkgDetail" class="statement-btn" wx:if="{{addDishInfo.needDetail}}">明细<view class="arrow"></view>
+                    </view>
+                </view>
+            </view>
+            <view class="number-count-container {{lgc.isValid(dishInfo)?'':'disable'}}" wx:if="{{!dishInfo.hideOperation&&lgc.showOperation(dishInfo)}}">
+                <add-common bind:operationBtnClick="dishHandleFn" count="{{showCount}}" preventDefault="{{true}}"></add-common>
+            </view>
+        </view>
+        <view bindtap="clickButton" class="btn {{addDishInfo.addable?'':'disable'}} {{lgc.isValid(dishInfo)?'':'forbidden'}}">{{dishInfo.addType||'加入购物车'}}</view>
+        <view bindtap="scrollToFirstTab" class="scroll-tab" wx:if="{{showScrollTab&&lgc.isValid(dishInfo)}}">向下划动 选择{{panelType}}<view class="scroll-icon"></view>
+        </view>
+    </view>
+</view>
+<wxs module="lgc" src="index.wxs" />

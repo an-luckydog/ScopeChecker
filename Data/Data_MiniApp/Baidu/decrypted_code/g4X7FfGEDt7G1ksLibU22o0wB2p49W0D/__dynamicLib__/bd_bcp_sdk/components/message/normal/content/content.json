@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "link-card": "../../../message/card/linkCard/linkCard",
+        "leave-word": "../../../message/card/leaveWord/leaveWord",
+        "standard-card": "../../standard/standardCard/standardCard",
+        "combined-card": "../../standard/combinedCard/combinedCard"
+    }
+}

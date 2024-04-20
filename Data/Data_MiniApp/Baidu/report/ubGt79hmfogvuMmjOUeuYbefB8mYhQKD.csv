@@ -1,0 +1,7 @@
+problem_file_path,problem_function_name,problem_api,occurrences_in_frontend
+packageA/app.js,{'success'},getClipboardData,0
+packageA/app.js,{'uploadPic'},chooseImage,0
+packageA/app.js,{'success'},chooseImage,0
+packageA/app.js,{'success'},getClipboardData,0
+packageA/app.js,{'success'},getClipboardData,0
+packageA/app.js,{'success'},getClipboardData,0

@@ -1,0 +1,29 @@
+{
+    "component": true,
+    "usingComponents": {
+        "extension": "../../extension/cs/container/index",
+        "p1": "/cms/RAW/pages/transform/index",
+        "p2": "/cms/RAW/pages/new/index",
+        "p3": "/ec/RAW/pages/goods/detail",
+        "p4": "/ec/RAW/pages/order/detail/detail",
+        "p2a": "/ec_cart/RAW/index",
+        "p35": "/ec_shop/RAW/goods/list",
+        "p36": "/ec_shop/RAW/classify/classify",
+        "p88": "/cms_design/RAW/pages/usercenter/index",
+        "p89": "/cms_design/RAW/pages/design/index",
+        "p8a": "/cms_design/RAW/pages/index/index"
+    },
+    "componentPlaceholder": {
+        "extension": "view",
+        "p1": "view",
+        "p2": "view",
+        "p3": "view",
+        "p4": "view",
+        "p2a": "view",
+        "p35": "view",
+        "p36": "view",
+        "p88": "view",
+        "p89": "view",
+        "p8a": "view"
+    }
+}

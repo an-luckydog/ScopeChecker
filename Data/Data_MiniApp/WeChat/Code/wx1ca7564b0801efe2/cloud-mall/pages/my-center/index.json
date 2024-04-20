@@ -1,0 +1,8 @@
+{
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTitleText": "我的",
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

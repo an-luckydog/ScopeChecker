@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "service-recommend": "./service-recommend"
+  }
+}

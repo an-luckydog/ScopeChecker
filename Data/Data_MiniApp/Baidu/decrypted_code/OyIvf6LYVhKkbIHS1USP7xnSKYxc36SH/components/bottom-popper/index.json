@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "download-btn": "/components/download-btn/index"
+    }
+}

@@ -1,0 +1,5 @@
+<view class="coupon-items" style="{{customStyle}}" wx:if="{{voucherList.length>0}}">
+    <view class="coupon-item" data-index="{{index}}" wx:for="{{voucherList}}" wx:key="index">
+        <voucher-menu-select-item bind:voucherMenuModalClose="onCloseModal" buyCouponProductUrl="{{item.buyCouponProductUrl}}" endTime="{{item.endTime}}" name="{{item.name}}" perCardBuyLimit="{{item.perCardBuyLimit}}" productImages="{{item.productImages}}" productLabels="{{item.productLabels}}" rewardCouponTotalNum="{{item.rewardCouponTotalNum}}" salePrice="{{item.salePrice}}"></voucher-menu-select-item>
+    </view>
+</view>

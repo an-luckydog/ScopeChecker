@@ -1,0 +1,9 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "popup": "/components/popup/popup",
+        "format-price": "/components/format-price/format-price",
+        "activity-detail": "/widgets/mip-bdxd-shop-cart/components/activity-detail/index"
+    }
+}

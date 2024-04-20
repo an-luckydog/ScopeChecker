@@ -1,0 +1,14 @@
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "ad-bar": "../../components/ad-bar/index",
+        "doctor-recommend-list": "../../components/detail-recommend-list/index",
+        "new-user-welfare-bar": "../../components/new_user_welfare_bar/index",
+        "page-footer": "../../components/detail-page-footer/index",
+        "follow-doc-button-detail-page": "../../components/follow-doc-button-detail-page/index",
+        "doctor-header-detail-page": "../../components/doctor-header-detail-page/index",
+        "mp-html": "../../miniprogram_npm/mp-html/index"
+    }
+}

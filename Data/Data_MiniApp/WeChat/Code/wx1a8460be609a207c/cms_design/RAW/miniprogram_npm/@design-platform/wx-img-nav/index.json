@@ -1,0 +1,17 @@
+{
+    "component": true,
+    "usingComponents": {
+        "base-customer-service": "../wx-base-customer-service/index",
+        "CMSSDKFontIcon": "/cms_sdk_extension_package/RAW/coms/font-icon/c",
+        "c_9oo2l2kq4ri2eh": "/@titan/cs/ph/i"
+    },
+    "h5Components": {
+        "CMSSDKFontIcon": {
+            "tag": "CMSSDKFontIcon",
+            "src": "./CMSSDKFontIcon.tsx"
+        }
+    },
+    "componentPlaceholder": {
+        "CMSSDKFontIcon": "c_9oo2l2kq4ri2eh"
+    }
+}

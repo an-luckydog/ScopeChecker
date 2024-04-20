@@ -1,0 +1,4 @@
+<view class="base-content {{disabled?'rms-disabled':''}} {{iconType}}" style="{{customStyle}}">
+    <view class="base-icon base-icon-{{iconType}} {{customClass}}" style="{{customIconStyle}}"></view>
+    <view bindtap="onIconClick" class="hot-spot"></view>
+</view>

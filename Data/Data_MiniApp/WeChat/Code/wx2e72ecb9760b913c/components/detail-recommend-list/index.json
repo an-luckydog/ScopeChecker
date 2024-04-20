@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "single-topic": "../single-topic/index"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "component": true,
+	"usingComponents": {
+		"video-base": "../../standard/widget/videoBase/videoBase"
+    }
+}

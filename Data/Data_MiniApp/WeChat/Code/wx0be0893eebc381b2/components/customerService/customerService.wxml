@@ -1,0 +1,1 @@
+<button showMessageCard bindcontact="bindcontact" class="buttonBox" openType="contact" sendMessageImg="http://tu.duia.com/mp/kefu_ioc_dianji.png" sendMessagePath="{{contact.pathUrl}}" sendMessageTitle="{{contact.title}}" sessionFrom="xcx">点击</button>

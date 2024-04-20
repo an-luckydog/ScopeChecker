@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "pop-up": "/components/popup/popup",
+        "mip-doujin-carousel": "/widgets/mip-doujin-carousel/mip-doujin-carousel"
+    }
+}

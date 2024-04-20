@@ -1,0 +1,147 @@
+{
+    "appInfo": {
+        "app_key": "OH9cGOCgFeij1gmQ8B4TP2pLL3NVLP1n",
+        "app_name": "美团外卖",
+        "app_photo": "https://b.bdstatic.com/searchbox/mappconsole/image/20190108/d1fa952c-ebef-4c2d-908a-635c0d64c966.jpg",
+        "domains": {
+            "downloadFile": [
+                "https://"
+            ],
+            "request": [
+                "https://i.waimai.meituan.com",
+                "https://openapi.waimai.meituan.com",
+                "https://i.waimai.st.meituan.com",
+                "https://activity.waimai.meituan.com"
+            ],
+            "socket": [
+                "wss://"
+            ],
+            "uploadFile": [
+                "https://"
+            ]
+        },
+        "isExistsPackage": false,
+        "isTp": false,
+        "needWeb": true,
+        "tpAppId": null,
+        "webAction": [
+            "swan/navigateTo",
+            "swan/navigateBack",
+            "swan/switchTab",
+            "swan/reLaunch",
+            "swan/redirectTo",
+            "swan/postMessage",
+            "swan/previewImage",
+            "swan/getLocation"
+        ],
+        "webview_domains": [
+            "https://h5.waimai.meituan.com",
+            "http://h5.waimai.meituan.com",
+            "https://mpay.meituan.com",
+            "http://mpay.meituan.com",
+            "https://h5.waimai.st.meituan.com",
+            "http://h5.waimai.st.meituan.com",
+            "https://openapi.waimai.meituan.com",
+            "http://openapi.waimai.meituan.com",
+            "https://activity.waimai.meituan.com",
+            "http://activity.waimai.meituan.com"
+        ]
+    },
+    "appid": "15221320",
+    "appkey": "OH9cGOCgFeij1gmQ8B4TP2pLL3NVLP1n",
+    "compilation-args": {
+        "common": {
+            "quickPreview": true
+        },
+        "options": [
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/login/index",
+                    "query": "",
+                    "scene": {
+                        "channel_id": "1081000800000000",
+                        "first": "自然搜索",
+                        "second": "自然结果"
+                    }
+                },
+                "id": 0,
+                "text": "pages/login/index"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/index/index",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 1,
+                "text": "pages/index/index"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "login/subpages/yoda/modules/index/index",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 2,
+                "text": "login/subpages/yoda/modules/index/index"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/webview/webview",
+                    "isPrefetch": false,
+                    "query": "redirectUrl=https%3A%2F%2Fh5.waimai.meituan.com%2Fwaimai%2Fmindex%2Fsearch%3Fchannel%3Dbdxcx%26from%3Dbaidu_app_native%26mode%3Dsearch%26swanid%3DSEvZskhzUDyt7xuQApQ9V8usjRpb6qJMwpkG2SnzcgH6yQKjwLPt8w1FeVfd98Ho8k3cYkcZf1C9uXzCHgCKgYsSN%26utm_source%3D60040%26wm_actual_latitude%3D39897866%26wm_actual_longitude%3D116398819%26wm_actual_poi%3D%25E5%2589%258D%25E9%2597%25A8%25E5%25A4%25A7%25E8%25A1%2597%26wm_latitude%3D39897866%26wm_longitude%3D116398819%26wm_poi%3D%25E5%2589%258D%25E9%2597%25A8%25E5%25A4%25A7%25E8%25A1%2597%26vconsole%3Dtrue",
+                    "scene": {},
+                    "selected": 3,
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 3,
+                "text": "直接跳转搜索页"
+            }
+        ],
+        "selected": -2,
+        "forceChanged": {}
+    },
+    "compileType": "smartprogram",
+    "condition": {
+        "swan": {
+            "current": -2,
+            "list": []
+        }
+    },
+    "host": "baiduboxapp",
+    "libVersion": "2.10.34",
+    "name": "",
+    "preview": {
+        "packageId": 1667416
+    },
+    "projectname": "waimai_baidu_applet",
+    "publish": {
+        "tips": [
+            "小程序包内容将被百度解析和收录，用于内容的风险控制。",
+            "您已开通分享web化，请确保分享web化体验无问题后，再进行发布。"
+        ],
+        "version": "2.0.41"
+    },
+    "setting": {
+        "urlCheck": true
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.320.32",
+            "extensionJsVersion": "1.21.2"
+        }
+    }
+}

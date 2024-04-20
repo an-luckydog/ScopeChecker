@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "goods-card": "/widgets/gt-dxdjx-new-customer-page/components/goods-card/goods-card"
+    }
+}

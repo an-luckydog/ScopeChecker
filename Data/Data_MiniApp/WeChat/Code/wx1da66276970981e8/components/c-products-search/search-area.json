@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u-grid-item": "../../node-modules/uview-plus/components/u-grid-item/u-grid-item",
+        "u-grid": "../../node-modules/uview-plus/components/u-grid/u-grid",
+        "u-gap": "../../node-modules/uview-plus/components/u-gap/u-gap",
+        "c-district-select": "../c-district-select/c-district-select"
+    }
+}

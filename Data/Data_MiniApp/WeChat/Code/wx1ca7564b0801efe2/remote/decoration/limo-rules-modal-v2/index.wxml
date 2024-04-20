@@ -1,0 +1,10 @@
+<view class="rules-wrapper {{hasTabBar?'tab-bar-bottom':''}}">
+    <view class="rules">
+        <view class="header">
+            <view bind:tap="clickCloseRulesModal" class="close"></view>
+        </view>
+        <view class="rules-content">
+            <rich-text nodes="{{rulesData}}"></rich-text>
+        </view>
+    </view>
+</view>

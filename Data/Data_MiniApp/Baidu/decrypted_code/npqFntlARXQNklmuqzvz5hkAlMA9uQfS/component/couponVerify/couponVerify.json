@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "rotate-code-coupon": "/component/rotate_code_coupon",
+    "drag-verify": "/component/dragVerify/dragVerify"
+  }
+}

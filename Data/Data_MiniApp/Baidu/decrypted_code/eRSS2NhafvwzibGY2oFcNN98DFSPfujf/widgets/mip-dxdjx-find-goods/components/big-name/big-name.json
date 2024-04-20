@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "shop-card": "/widgets/mip-dxdjx-find-goods/components/shop-card/shop-card"
+    }
+}

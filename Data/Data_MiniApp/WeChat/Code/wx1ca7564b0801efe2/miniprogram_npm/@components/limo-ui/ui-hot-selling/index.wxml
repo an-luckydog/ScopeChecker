@@ -1,0 +1,8 @@
+<view class="{{hotSellingClass}}">
+    <view class="st-container txt-container-{{textCount>4?'more':textCount}}">
+        <view class="selling-title">{{text}}</view>
+        <view class="sp-container" wx:if="{{prices&&prices.length}}">
+            <text class="st {{hotSellingTextClass}} {{index===0?'sc':'sp'}}" wx:for="{{prices}}" wx:for-item="price" wx:key="index">{{price}}</text>
+        </view>
+    </view>
+</view>

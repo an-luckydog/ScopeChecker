@@ -1,0 +1,10 @@
+{
+    "navigationBarBackgroundColor": "#f4f4f4",
+    "navigationBarTitleText": "特权说明",
+    "backgroundColor": "#f4f4f4",
+    "disableScroll": true,
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

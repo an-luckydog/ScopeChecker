@@ -1,0 +1,29 @@
+{
+    "appid": "14624768",
+    "compilation-args": {
+        "common": {
+            "babelSetting": {
+                "ignore": []
+            },
+            "enhance": true,
+            "imgCompress": true
+        },
+        "options": [],
+        "selected": -2
+    },
+    "host": "baiduboxapp",
+    "miniprogramRoot": "./",
+    "preview": {
+        "packageId": 1015970
+    },
+    "projectname": "tencent-car",
+    "setting": {
+        "urlCheck": true
+    },
+    "swan": {
+        "baiduboxapp": {
+            "extensionJsVersion": "1.21.2",
+            "swanJsVersion": "3.430.10"
+        }
+    }
+}

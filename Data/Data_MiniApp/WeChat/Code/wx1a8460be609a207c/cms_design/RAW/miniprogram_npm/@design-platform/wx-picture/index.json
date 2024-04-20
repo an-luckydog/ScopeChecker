@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "picture-base": "../wx-picture-base/index"
+    }
+}

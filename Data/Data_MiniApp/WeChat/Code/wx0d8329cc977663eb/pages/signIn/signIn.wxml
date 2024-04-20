@@ -1,0 +1,43 @@
+<view class="main">
+    <view class="activityName">
+        <view class="lineTab">活动名称</view>
+        <view class="activityIntroduce">{{activityName}}</view>
+    </view>
+    <view class="activityBody">
+        <view class="lineBox">
+            <view class="lineTab">举办单位</view>
+            <view class="activityIntroduce">{{unit}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">活动评价</view>
+            <view class="activityIntroduce">
+                <view bindtap="setEvaluate" class="evaluateImg" id="evaluate1">
+                    <image src="{{starSrc[0]}}"></image>
+                </view>
+                <view bindtap="setEvaluate" class="evaluateImg" id="evaluate2">
+                    <image src="{{starSrc[1]}}"></image>
+                </view>
+                <view bindtap="setEvaluate" class="evaluateImg" id="evaluate3">
+                    <image src="{{starSrc[2]}}"></image>
+                </view>
+                <view bindtap="setEvaluate" class="evaluateImg" id="evaluate4">
+                    <image src="{{starSrc[3]}}"></image>
+                </view>
+                <view bindtap="setEvaluate" class="evaluateImg" id="evaluate5">
+                    <image src="{{starSrc[4]}}"></image>
+                </view>
+            </view>
+        </view>
+        <view class="m-t-3">
+            <view class="lineBox">
+                <view class="lineTab">活动反馈</view>
+            </view>
+            <view class="activityContent">
+                <textarea bindinput="addText" maxlength="500" placeholder="请输入您的活动意见或建议"></textarea>
+            </view>
+        </view>
+    </view>
+    <view class="joinActivity" style="{{joinBox}}">
+        <button bindtap="joinActivity">提交</button>
+    </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ui-if": "/polyfill/componets/IF/index",
+    "ui-filter": "/polyfill/componets/FILTER/index"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "good-list": "../wx-good-list/index",
+        "goods-classify": "./components/goods-classify/index",
+        "ti-sticky": "/titian-mp/RAW/sticky/index",
+        "ti-loading": "/titian-mp/RAW/loading/index"
+    }
+}

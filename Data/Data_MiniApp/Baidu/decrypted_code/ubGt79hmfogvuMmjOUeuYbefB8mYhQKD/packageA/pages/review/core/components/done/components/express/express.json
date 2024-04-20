@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "user-cmp": "../components/user/user",
+        "star-cmp": "../components/star/star",
+        "label-cmp": "../components/label/label",
+        "word-cmp": "../components/word/word",
+        "person-cmp": "../components/person/person",
+        "reward-cmp": "../components/reward/reward"
+    }
+}

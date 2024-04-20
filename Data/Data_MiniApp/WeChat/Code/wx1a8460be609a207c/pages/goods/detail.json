@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "商品详情页",
+    "usingComponents": {
+        "target-page": "../../ec/RAW/pages/goods/detail"
+    },
+    "componentPlaceholder": {
+        "target-page": "view"
+    }
+}

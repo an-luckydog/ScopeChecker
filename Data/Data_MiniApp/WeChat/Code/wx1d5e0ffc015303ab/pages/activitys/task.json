@@ -1,0 +1,8 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "青岛啤酒欢聚空间",
+    "disableScroll": true,
+    "usingComponents": {
+        "app": "/components/privacy/privacy"
+    }
+}

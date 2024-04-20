@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "phone-dialog": "../../../components/phone-dialog/index",
+        "select-role": "../../../components/role-change-dialog/index"
+    },
+    "navigationStyle": "default"
+}

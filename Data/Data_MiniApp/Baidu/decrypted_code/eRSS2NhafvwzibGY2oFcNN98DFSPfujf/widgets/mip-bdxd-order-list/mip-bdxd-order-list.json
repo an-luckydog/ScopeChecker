@@ -1,0 +1,19 @@
+{
+    "component": true,
+    "usingComponents": {
+        "feed": "/components/feed/feed",
+        "mip-bdxd-order-shop-card":"/widgets/mip-bdxd-order-shop-card/mip-bdxd-order-shop-card",
+        "mip-bdxd-order-goods-card":"/widgets/mip-bdxd-order-goods-card/mip-bdxd-order-goods-card",
+        "mip-bdxd-order-action":"/widgets/mip-bdxd-order-action/mip-bdxd-order-action",
+        "mip-dxdjx-like-list": "/widgets/mip-dxdjx-like-list/mip-dxdjx-like-list",
+        "gt-dxdjx-h5-marketing-anchor": "/widgets/gt-dxdjx-h5-marketing-anchor/gt-dxdjx-h5-marketing-anchor",
+        "mip-dxdjx-cancel-order-popup": "/widgets/mip-dxdjx-cancel-order-popup/mip-dxdjx-cancel-order-popup",
+        "format-price": "/components/format-price/format-price",
+        "gap":"/components/gap/gap",
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "drop-down": "/components/drop-down/drop-down",
+        "login":"/components/login/login",
+        "gt-dxdjx-h5-atmosphere-banner": "/widgets/gt-dxdjx-h5-atmosphere-banner/gt-dxdjx-h5-atmosphere-banner",
+        "gt-dxdjx-h5-merge-order-popup": "/widgets/gt-dxdjx-h5-merge-order-popup/gt-dxdjx-h5-merge-order-popup"
+    }
+}

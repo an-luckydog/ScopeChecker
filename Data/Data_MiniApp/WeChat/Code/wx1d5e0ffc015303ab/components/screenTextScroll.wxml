@@ -1,0 +1,8 @@
+<view class="_notice data-v-cb38ab1e" style="{{'color:'+color+';'}}">
+    <view animation="{{animationData}}" bindtransitionend="__e" class="_scroll_box data-v-cb38ab1e" data-event-opts="{{[ [ 'transitionend',[ [ '_aniEnd',['$event'] ] ] ] ]}}">
+        <view class="_item data-v-cb38ab1e" style="width:100%;"></view>
+        <view class="_item data-v-cb38ab1e" wx:for="{{list}}" wx:key="index">
+            <text class="data-v-cb38ab1e">{{item}}</text>
+        </view>
+    </view>
+</view>

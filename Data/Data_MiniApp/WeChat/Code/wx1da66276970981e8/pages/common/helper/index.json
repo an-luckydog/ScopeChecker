@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "新手教程",
+    "usingComponents": {
+        "c-card": "../../../components/c-card/c-card",
+        "c-page": "../../../components/c-page/c-page"
+    }
+}

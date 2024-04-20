@@ -1,0 +1,7 @@
+{
+    "navigationStyle": "default",
+    "navigationBarTitleText": "美食日冀 品味河北",
+    "usingComponents": {
+        "app": "/components/privacy/privacy"
+    }
+}

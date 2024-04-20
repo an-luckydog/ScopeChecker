@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "feed-ele": "./feed-ele",
+        "feed-coupon": "./feed-coupon",
+        "feed-dp": "./feed-dp"
+    }
+}

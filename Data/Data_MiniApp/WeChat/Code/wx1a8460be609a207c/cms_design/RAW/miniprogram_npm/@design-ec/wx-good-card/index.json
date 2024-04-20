@@ -1,0 +1,18 @@
+{
+    "component": true,
+    "usingComponents": {
+        "ti-button": "/titian-mp/RAW/button/index",
+        "ti-icon": "/titian-mp/RAW/icon/index",
+        "ti-tag": "/titian-mp/RAW/tag/index",
+        "ti-progress": "/titian-mp_expg/RAW/progress/index",
+        "shop-cart-index": "./components/shop-cart/index",
+        "shop-takeawaycart-index": "./components/shop-takeawaycart/index",
+        "seckill-progress": "./components/seckill-progress/index",
+        "shop-name": "./components/shop-name/index",
+        "goods-image": "./components/goods-image/index",
+        "c_fmnt20onvh2fh": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "ti-progress": "c_fmnt20onvh2fh"
+    }
+}

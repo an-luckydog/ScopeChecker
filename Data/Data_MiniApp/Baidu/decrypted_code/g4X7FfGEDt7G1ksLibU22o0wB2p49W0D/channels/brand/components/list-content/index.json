@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-loading": "/components/loading/index",
+        "discount-items": "../../../../components/discount-items/index"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "comment-card": "../../../components/CommentCard",
+        "comment-filter": "./CommentFilter",
+        "game-detail-marking": "./GameDetailMarking",
+        "comment-float-btn": "../../../components/CommentFloatBtn"
+    },
+    "component": true
+}

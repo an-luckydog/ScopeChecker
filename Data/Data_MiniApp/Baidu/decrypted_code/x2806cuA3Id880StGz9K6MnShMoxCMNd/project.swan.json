@@ -1,0 +1,140 @@
+{
+    "appInfo": {
+        "app_key": "x2806cuA3Id880StGz9K6MnShMoxCMNd",
+        "app_name": "驾考宝典",
+        "app_photo": "https://b.bdstatic.com/searchbox/mappconsole/image/20181218/8be9ea82-f3e4-40b1-ab59-db273d681a81.png",
+        "domains": {
+            "downloadFile": null,
+            "request": [
+                "https://api2.jiakaobaodian.com",
+                "https://jiaxiao.jiakaobaodian.com",
+                "https://www.jiakaobaodian.com",
+                "https://api.map.baidu.com",
+                "https://ke1.jiakaobaodian.com",
+                "https://ke4.jiakaobaodian.com",
+                "https://zige.jiakaobaodian.com",
+                "https://cheyouquan.kakamobi.com",
+                "https://oort-shipper.kakamobi.cn",
+                "https://sirius.kakamobi.cn",
+                "https://dianping-jiaxiao.kakamobi.com",
+                "https://jiakao-web.image.mucang.cn",
+                "https://config.kakamobi.com",
+                "https://auth.kakamobi.com",
+                "https://api-share-m.kakamobi.com",
+                "https://plan-task.kakamobi.cn",
+                "https://jiaxiao.kakamobi.cn"
+            ],
+            "socket": [],
+            "uploadFile": null
+        },
+        "isExistsPackage": true,
+        "isTp": false,
+        "needWeb": true,
+        "tpAppId": null,
+        "webAction": [
+            "swan/navigateTo",
+            "swan/navigateBack",
+            "swan/switchTab",
+            "swan/reLaunch",
+            "swan/redirectTo",
+            "swan/postMessage",
+            "swan/previewImage",
+            "swan/getLocation"
+        ],
+        "webview_domains": [
+            "https://m.mucang.cn",
+            "https://share-m.kakamobi.com",
+            "https://laofuzi.kakamobi.com"
+        ]
+    },
+    "appid": "14317614",
+    "appkey": "x2806cuA3Id880StGz9K6MnShMoxCMNd",
+    "compilation-args": {
+        "common": {
+            "ignoreSourceMap": true,
+            "ignoreTransJs": false,
+            "useStrict": true
+        },
+        "options": [
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/slider/slider",
+                    "query": "default=3",
+                    "scene": {}
+                },
+                "id": 0,
+                "text": "pages/slider/slider"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/home/index",
+                    "query": "default=1&kemu=kemu1&tiku=摩托&carType=moto&oauthType=search",
+                    "scene": {}
+                },
+                "id": 1,
+                "text": "pages/home/index"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/dejiaxiao/dejiaxiao",
+                    "query": "hide=true&jiaxiaoId=8480",
+                    "scene": {}
+                },
+                "id": 2,
+                "text": "驾校详情"
+            }
+        ],
+        "selected": -1
+    },
+    "compileType": "smartprogram",
+    "condition": {
+        "swan": {
+            "current": -1,
+            "list": []
+        }
+    },
+    "editor": {
+        "curPath": "D:\\xampp\\htdocs\\index\\mucang\\bd\\mp-baidu-jiakaobaodian\\src\\app.css",
+        "expands": [
+            "D:\\xampp\\htdocs\\index\\mucang\\bd\\mp-baidu-jiakaobaodian\\src\\pages",
+            "D:\\xampp\\htdocs\\index\\mucang\\bd\\mp-baidu-jiakaobaodian\\src\\pages\\activity",
+            "D:\\xampp\\htdocs\\index\\mucang\\bd\\mp-baidu-jiakaobaodian\\src\\pages\\cartype",
+            "D:\\xampp\\htdocs\\index\\mucang\\bd\\mp-baidu-jiakaobaodian\\src\\pages\\finally\\exam",
+            "D:\\xampp\\htdocs\\index\\mucang\\bd\\mp-baidu-jiakaobaodian\\src\\pages\\finally",
+            "D:\\xampp\\htdocs\\index\\mucang\\bd\\mp-baidu-jiakaobaodian\\src\\pages\\home"
+        ],
+        "paths": [
+            "D:\\xampp\\htdocs\\index\\mucang\\bd\\mp-baidu-jiakaobaodian\\src\\pages\\finally\\exam\\exam.css",
+            "D:\\xampp\\htdocs\\index\\mucang\\bd\\mp-baidu-jiakaobaodian\\src\\app.css",
+            "D:\\xampp\\htdocs\\index\\mucang\\bd\\mp-baidu-jiakaobaodian\\src\\app.js"
+        ]
+    },
+    "host": "baiduboxapp",
+    "libVersion": "2.0.13",
+    "name": "驾考宝典",
+    "preview": {
+        "packageId": 895338
+    },
+    "project-info": {
+        "urlCheck": true
+    },
+    "projectname": "src",
+    "publish": {
+        "version": "1.0.29.5"
+    },
+    "setting": {
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.320.32",
+            "extensionJsVersion": "1.21.2"
+        }
+    }
+}

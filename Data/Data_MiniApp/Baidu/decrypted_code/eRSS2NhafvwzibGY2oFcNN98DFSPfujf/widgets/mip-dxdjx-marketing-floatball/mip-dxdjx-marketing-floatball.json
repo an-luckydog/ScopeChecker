@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "float-ball":"/components/float-ball/float-ball"
+    }
+}

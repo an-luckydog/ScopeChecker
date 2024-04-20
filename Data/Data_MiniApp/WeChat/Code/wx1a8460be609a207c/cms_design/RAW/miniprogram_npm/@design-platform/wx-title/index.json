@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "ti-icon": "/titian-mp/RAW/icon/index",
+        "base-customer-service": "../wx-base-customer-service/index"
+    }
+}

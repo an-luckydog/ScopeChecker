@@ -1,0 +1,67 @@
+{
+    "appid": "16120888",
+    "compilation-args": {
+        "common": {
+            "quickPreview": true
+        },
+        "options": [
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/common/transfer-entrance/transfer-entrance",
+                    "query": "channel=BDAPP1&orderId=123456",
+                    "scene": {}
+                },
+                "id": 0,
+                "text": "比价"
+            }
+        ],
+        "selected": -2,
+        "forceChanged": {}
+    },
+    "editor": {
+        "curPath": "",
+        "expands": [
+            "E:\\inc-ices-core\\bdapp\\pages\\order\\sending",
+            "E:\\inc-ices-core\\bdapp\\pages\\order\\sending\\components",
+            "E:\\inc-ices-core\\bdapp\\pages\\order\\sending\\components\\contact-info",
+            "E:\\inc-ices-core\\bdapp\\static\\images"
+        ],
+        "paths": [],
+        "recentlyFiles": [
+            "E:\\inc-ices-core\\bdapp\\utils\\hosts.js",
+            "E:\\inc-ices-core\\bdapp\\pages\\tabBar\\my\\img\\aging-search.png",
+            "E:\\inc-ices-core\\bdapp\\pages\\tabBar\\my\\img\\service-dot.png",
+            "E:\\inc-ices-core\\bdapp\\pages\\common\\service-site-list\\service-site-list.js",
+            "E:\\inc-ices-core\\bdapp\\pages\\common\\service-site-list\\service-site-list.json",
+            "E:\\inc-ices-core\\bdapp\\pages\\common\\service-site-list\\service-site-list.less",
+            "E:\\inc-ices-core\\bdapp\\pages\\common\\service-site-list\\service-site-list.css",
+            "E:\\inc-ices-core\\bdapp\\pages\\common\\service-site-list\\service-site-list.swan"
+        ]
+    },
+    "host": "baiduboxapp",
+    "minSwanVersion": "2.0.25",
+    "preview": {
+        "packageId": 1691049
+    },
+    "projectname": "bdapp",
+    "publish": {
+        "tips": [
+            "小程序包内容将被百度解析和收录，用于内容的风险控制。",
+            "您已开通分享web化，请确保分享web化体验无问题后，再进行发布。"
+        ],
+        "version": "1.5.20"
+    },
+    "setting": {
+        "enableScripts": true,
+        "urlCheck": true
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.320.32",
+            "extensionJsVersion": "1.21.2"
+        }
+    },
+    "swanList": ""
+}

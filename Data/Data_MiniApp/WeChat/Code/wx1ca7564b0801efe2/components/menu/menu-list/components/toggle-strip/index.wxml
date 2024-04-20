@@ -1,0 +1,4 @@
+<view bind:tap="changeSpread" class="toggle-line-wrapper">
+    <view class="toggle-line-text">{{newIsSpread?'收起':notValidityDishText}}</view>
+    <image class="arrow-style" src="{{newIsSpread?'https://p0.meituan.net/travelcube/2a760a9a0c0a7fc081bcde44e5316ba7967.png':'https://p0.meituan.net/scarlett/1292a553faa59f6d5fecc6a802df1ac6486.png'}}"></image>
+</view>

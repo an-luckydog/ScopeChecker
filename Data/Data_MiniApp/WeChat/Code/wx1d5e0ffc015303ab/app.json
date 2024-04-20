@@ -1,0 +1,284 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/activitys/flowdisc",
+        "pages/activitys/disc",
+        "pages/personal/personal",
+        "pages/activitys/task",
+        "pages/activitys/worldcupIndex",
+        "pages/mall/mall",
+        "pages/scan/openScan",
+        "pages/scan/scan",
+        "pages/getOpenid/getOpenid",
+        "pages/module/imgWrap",
+        "pages/module/webview",
+        "pages/module/rule-common",
+        "pages/module/userinfo",
+        "pages/index/brandActs/activelist/activelist",
+        "pages/index/brandActs/delicious/delicious",
+        "pages/index/brandActs/delicious/details",
+        "pages/index/brandActs/story/story",
+        "pages/index/brandActs/story/storyDetails/storyDetails",
+        "pages/index/brandActs/rule/rule",
+        "pages/module/videoWebView",
+        "pages/webView/webView"
+    ],
+    "subPackages": [
+        {
+            "root": "pagesActivitys/",
+            "pages": [
+                "sign/sign",
+                "disc/lotteryList",
+                "disc/flowDiscLotteryList"
+            ]
+        },
+        {
+            "root": "pagesScan/",
+            "pages": [
+                "winningRecord/winningRecord",
+                "prizeList/prizeList",
+                "webView/webViewPrivacy",
+                "webView/webviewHexiao",
+                "webView/webView",
+                "scan",
+                "strcode",
+                "resultCommon/openCash",
+                "resultCommon/scanFail",
+                "resultCommon/blackList",
+                "resultCommon/getPrize",
+                "result/prize/prize",
+                "result/getMsg/getMsg",
+                "result/getcash/getcash",
+                "result/rule/rule",
+                "result/fail/fail",
+                "result/verification/verification",
+                "result/fail/testAttention",
+                "result/hongbaoRain",
+                "result/tool/webview/webview",
+                "components/kefu/kefuWebView",
+                "resultBaipi/index",
+                "resultBaipi/getMsg",
+                "module/rule-common",
+                "resultLaoshan/getCash",
+                "resultLaoshan/subInfo",
+                "resultLaoshan/getMsg",
+                "resultLaoshan/tixianSuc",
+                "resultLaoshan/getFail",
+                "result120th/result",
+                "result120th/fail",
+                "result120th/tomall",
+                "result120th/game",
+                "result120th/webview",
+                "result120th/ladder",
+                "result120th/sharecash",
+                "result120th/sharelist",
+                "result120th/textrule",
+                "myhexiao/myhexiao",
+                "winningRecord/waitWinningRecord",
+                "winningRecord/waitWinningRecordRule"
+            ]
+        },
+        {
+            "root": "pagesPersonal/",
+            "pages": [
+                "scoreList/scoreList",
+                "userInfo/infoTask",
+                "userInfo/giveTel",
+                "userInfo/writeInfo",
+                "attention/attention",
+                "rule/rule",
+                "member/gradeDescription",
+                "member/descriptionEquity"
+            ]
+        },
+        {
+            "root": "pagesMall/",
+            "pages": [
+                "pintuan/list",
+                "pintuan/groupOrder",
+                "pintuan/ptDetail",
+                "miaosha/list",
+                "service/list",
+                "service/logoff",
+                "mall/cart",
+                "mall/order/afterSale",
+                "mall/order/logistics",
+                "mall/goodsDetail",
+                "mall/goodsDetailZunXiang",
+                "mall/buyOrder",
+                "mall/paySuccess",
+                "mall/address/addressAdd",
+                "mall/address/addressList",
+                "mall/order/order",
+                "mall/order/orderDetail",
+                "mall/canUseGoods",
+                "mall/comment/commentList",
+                "mall/comment/myCommentList",
+                "mall/comment/writeComment",
+                "getCoupon/getCoupon",
+                "getCoupon/myCoupon",
+                "getCoupon/useCoupon",
+                "mall/zunxiangCardList",
+                "pointMall/home/home",
+                "pointMall/goodsDetail/goodsDetail",
+                "pointMall/changeList/changeList",
+                "pointMall/changeDetail/changeDetail",
+                "pointMall/pointsList/pointsList"
+            ]
+        },
+        {
+            "root": "pagesBidd/",
+            "pages": [
+                "biddList",
+                "biddDetail",
+                "bidd",
+                "sendInfo",
+                "releaseShare",
+                "wineList",
+                "shareBill"
+            ]
+        },
+        {
+            "root": "pagesLipinka/",
+            "pages": [
+                "lipinkaGoods",
+                "lipinkaList",
+                "lipinkaListUsed"
+            ]
+        },
+        {
+            "root": "pages_other/",
+            "pages": [
+                "index"
+            ]
+        },
+        {
+            "root": "pagesGiftCard/",
+            "pages": [
+                "giftList",
+                "giftPayOrGive",
+                "giftGetInfo",
+                "getGiftState",
+                "getGiftInfo",
+                "giftOrderInfo"
+            ]
+        },
+        {
+            "root": "pages_worldcup/",
+            "pages": [
+                "result",
+                "fail",
+                "tomall",
+                "game",
+                "webview",
+                "ladder",
+                "sharecash",
+                "sharelist",
+                "textrule"
+            ]
+        },
+        {
+            "root": "pages_120th/",
+            "pages": [
+                "index/index",
+                "Islander/Islander",
+                "Islander/medalWall",
+                "Islander/answer",
+                "Islander/picIslanders",
+                "welfareCenter/ferrisWheel",
+                "welfareCenter/winningList",
+                "welfareCenter/rules",
+                "welfareCenter/invite",
+                "friendCircle/friendCircle",
+                "friendCircle/drinkCapacity",
+                "redpack/redintrod",
+                "redpack/redlist",
+                "redpack/redrules",
+                "oktoberfest/oktoberfest",
+                "oktoberfest/memento",
+                "oktoberfest/photograph",
+                "tsingBar/bar",
+                "tsingBar/truth",
+                "museum/museum",
+                "tsingBar/mendian",
+                "tsingBar/StoreAddress",
+                "liner/active",
+                "liner/actpage",
+                "liner/index",
+                "liner/pinjian"
+            ]
+        }
+    ],
+    "window": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "青岛啤酒",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "custom": true,
+        "color": "#BEEF80",
+        "selectedColor": "#FFFFFF",
+        "borderStyle": "black",
+        "backgroundColor": "#2C9B55",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/static/tabIconOff1.png",
+                "selectedIconPath": "/static/tabIconOn1.png"
+            },
+            {
+                "pagePath": "pages/mall/mall",
+                "text": "商城",
+                "iconPath": "/static/tabIconOff2.png",
+                "selectedIconPath": "/static/tabIconOn2.png"
+            },
+            {
+                "pagePath": "pages/scan/openScan",
+                "text": "",
+                "iconPath": "/static/tabIconOn35.png",
+                "selectedIconPath": "/static/tabIconOn35.png"
+            },
+            {
+                "pagePath": "pages/activitys/task",
+                "text": "120周年",
+                "iconPath": "/static/tabIconOff4.png",
+                "selectedIconPath": "/static/tabIconOn4.png"
+            },
+            {
+                "pagePath": "pages/personal/personal",
+                "text": "我的",
+                "iconPath": "/static/tabIconOff5.png",
+                "selectedIconPath": "/static/tabIconOn5.png"
+            }
+        ]
+    },
+    "preloadRule": {
+        "pages/mall/mall": {
+            "network": "all",
+            "packages": [
+                "pagesMall"
+            ]
+        },
+        "pages/activitys/task": {
+            "network": "all",
+            "packages": [
+                "pagesActivitys"
+            ]
+        }
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于红包活动"
+        }
+    },
+    "requiredPrivateInfos": [
+        "getLocation",
+        "chooseAddress"
+    ],
+    "__usePrivacyCheck__": true,
+    "usingComponents": {
+        "app": "/components/privacy/privacy"
+    }
+}

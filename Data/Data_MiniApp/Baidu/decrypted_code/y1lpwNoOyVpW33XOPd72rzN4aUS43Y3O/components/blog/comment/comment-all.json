@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "comment-item": "/components/blog/comment/comment-item",
+    "comment-child-items": "/components/blog/comment/comment-child-items",
+    "comment-textarea": "/components/blog/comment/comment-textarea"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-userinfo": "../../components/cy-userinfo/index",
+        "appointment-doctor-header": "../../components/appointment-doctor-header/index",
+        "make-notice": "./components/make-notice/index"
+    }
+}

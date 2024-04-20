@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "realOnecrmPublishCouponing": "/onecrm_extension_package/RAW/components/onecrmPublishCouponing/index",
+        "c_kp3i0phqaddj": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "realOnecrmPublishCouponing": "c_kp3i0phqaddj"
+    }
+}

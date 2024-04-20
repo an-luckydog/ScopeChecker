@@ -1,0 +1,5 @@
+<view class="peace-paice">
+    <view class="price-unit" style="{{'font-size: '+(unitSize||unitFontSize)+'rpx;font-weight: '+(bold?'bold':'400')+';color: '+color+';line-height: normal;'}}" wx:if="{{showUnit}}">¥</view>
+    <view class="price-integer" style="{{'font-size: '+(integerSize||integerFontSize)+'rpx;font-weight: '+(bold?'bold':'400')+';color: '+color+';line-height:normal;'}}">{{''+$root.m0+''}}</view>
+    <view class="price-decimal" style="{{'font-size: '+(decimalSize||decimalFontSize)+'rpx;font-weight: '+(bold?'bold':'400')+';color: '+color+';line-height: normal;padding-bottom: '+(decimalSize&&decimalSize<=24?2:decimalSize?0:decimalFontSize<=24?2:0)+'rpx'}}">{{''+$root.m1+''}}</view>
+</view>

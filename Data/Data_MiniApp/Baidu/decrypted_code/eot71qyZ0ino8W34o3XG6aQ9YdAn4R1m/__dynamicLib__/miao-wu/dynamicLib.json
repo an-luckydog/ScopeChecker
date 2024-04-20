@@ -1,0 +1,7 @@
+{
+    "name": "miao-wu",
+    "main": "build/main.js",
+    "publicComponents": {
+        "miao-data-collection": "components/miao-data-collection/miao-data-collection"
+    }
+}

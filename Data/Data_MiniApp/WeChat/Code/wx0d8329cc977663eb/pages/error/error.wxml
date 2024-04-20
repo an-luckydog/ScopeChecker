@@ -1,0 +1,52 @@
+<view class="main">
+    <view class="activityName">
+        <view class="lineTab">问题类别</view>
+        <view bindtap="selectType" class="activityIntroduce">{{errorType}}</view>
+    </view>
+    <view class="activityBody">
+        <view bindtap="showModel" class="lineBox">
+            <view class="lineTab">活动名称</view>
+            <view class="activityIntroduce">{{eActivityName}}</view>
+        </view>
+        <view class="activityRow-r" style="{{eActivityDisplay}}">
+            <view class="activityName-r">{{eActivityName}}</view>
+            <view class="activityIntroduce-r">{{eActivityContent}}</view>
+            <view class="endLine-r">
+                <view class="place-r">{{eActivityWhere}}</view>
+                <view class="startTime-r">{{eActivityStartTime}}</view>
+            </view>
+        </view>
+        <view class="m-t-3" style="{{problemShow}}">
+            <view class="lineBox">
+                <view class="lineTab">问题描述</view>
+            </view>
+            <view class="activityContent">
+                <textarea maxlength="500" placeholder="请输入你的问题描述" placeholderStyle="z-index: 1" style="z-index:1"></textarea>
+            </view>
+        </view>
+    </view>
+    <view class="joinActivity" style="{{joinBox}}">
+        <button bindtap="joinActivity">反馈</button>
+    </view>
+</view>
+<view class="model" style="{{modelDisplay}}">
+    <view class="modelBody">
+        <view class="searchView">
+            <input bindconfirm="searchActivity" bindinput="saveContent" class="searchInput" confirmType="search" focus="{{focus}}" placeholder="搜索活动" placeholderStyle="color:#d2d2d2"></input>
+            <image bindtap="forSearchActivity" class="searchImg" src="../images/search2.png"></image>
+        </view>
+        <view wx:for="{{activitylist}}">
+            <label for="{{item.id}}">
+                <view class="activityRow-r">
+                    <view class="activityName-r">{{item.name}}</view>
+                    <view class="activityIntroduce-r">{{item.content}}</view>
+                    <view class="endLine-r">
+                        <view class="place-r">{{item.where}}</view>
+                        <view class="startTime-r">{{item.startTime}}</view>
+                    </view>
+                </view>
+            </label>
+            <button bindtap="chooseActivity" id="{{item.id}}" style="display:none">{{item.id}}</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "weixin-box": "../../wxGift/giftBox/giftBox",
+    "ui-if": "/polyfill/componets/IF/index",
+    "ui-filter": "/polyfill/componets/FILTER/index","pop-component": "../../../../../../pages/ui/popup/popUp"
+  }
+}

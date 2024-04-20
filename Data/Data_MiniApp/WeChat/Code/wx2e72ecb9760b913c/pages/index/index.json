@@ -1,0 +1,16 @@
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "春雨医生",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#ffffff",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "news-list": "./components/home_page_topic_list/home_page_topic_list",
+        "toast-bubble": "./components/toast_bubble/toast_bubble",
+        "image-mask": "./components/image_mask/image_mask",
+        "tabbar-bubble": "../../components/cy-tabbar-card/index",
+        "cy-user-phone": "../../components/cy_user_phone/cy_user_phone",
+        "doctor-avatar": "../../components/doctor-avatar/index"
+    }
+}

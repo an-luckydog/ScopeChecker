@@ -1,0 +1,8 @@
+{
+    "components": true,
+    "usingComponents": {
+        "mip-bdxd-shop-card": "/widgets/mip-bdxd-shop-card/mip-bdxd-shop-card",
+        "mip-bdxd-shop-announcement": "/widgets/mip-bdxd-shop-announcement/mip-bdxd-shop-announcement",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation"
+    }
+}

@@ -1,0 +1,8 @@
+<view class="shop-info-ph">
+    <text wx:if="{{tableName}}">桌号：{{tableName}}</text>
+    <view bind:tap="openSelectPeoplePanel" class="people-count" wx:if="{{showPeopleCount}}">
+        <view class="divide" wx:if="{{tableName}}"></view>
+        <text>{{showPeopleCount}}人就餐</text>
+        <view class="base-icon icon-jiantou-you"></view>
+    </view>
+</view>

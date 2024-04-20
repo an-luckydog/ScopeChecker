@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "midas-report": "../midas-report/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

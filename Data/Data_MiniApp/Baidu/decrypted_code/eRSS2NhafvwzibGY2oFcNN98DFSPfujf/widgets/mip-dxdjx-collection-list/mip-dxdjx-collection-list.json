@@ -1,0 +1,14 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "scroll-card": "/components/scroll-card/index",
+        "mip-bdxd-collection-list-item": "/widgets/mip-bdxd-collection-list-item/mip-bdxd-collection-list-item",
+        "mip-dxdjx-like-list": "/widgets/mip-dxdjx-like-list/mip-dxdjx-like-list",
+        "scroll-container": "/components/scroll-container/scroll-container",
+        "login": "/components/login/login",
+        "basic-feed": "/widgets/mip-dxdjx-basic-feed/mip-dxdjx-basic-feed"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "搜索",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-search": "../../components/cy-search/index",
+        "cy-loading": "../../components/cy-loading/index",
+        "doctor-search": "./doctor_search/index"
+    }
+}

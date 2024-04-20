@@ -1,0 +1,20 @@
+{
+    "component": true,
+    "usingComponents": {
+        "deal-coupons": "../../../../async-diancan-minor/components/deal-coupons/index",
+        "coupon-assistant-cate": "../../../../async-diancan-minor/components/coupon-assistant-cate/index",
+        "dish-item": "../../../../components/dish-item/index",
+        "large-dish-item": "../../../../components/large-dish-item/index",
+        "add-common": "../../../../extensions/components/add-common/index",
+        "dish-item-static": "../../../../components/dish-item-static/index",
+        "single-recommend-dish": "../../../../async-diancan-minor/components/single-recommend-dish/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "deal-coupons": "view",
+        "coupon-assistant-cate": "view",
+        "single-recommend-dish": "view",
+        "lottery": "view"
+    }
+}

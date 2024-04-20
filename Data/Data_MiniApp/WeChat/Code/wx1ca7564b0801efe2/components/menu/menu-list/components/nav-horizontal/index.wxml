@@ -1,0 +1,50 @@
+<view class="dish-categories">
+    <scroll-view scrollX class="category-list" enableFlex="true" enhanced="true" id="category-list" scrollAnchoring="false" scrollLeft="{{categoryScrollOffset}}" scrollWithAnimation="false" showScrollbar="false">
+        <view class="cate-item" id="cate-{{item.categoryId}}" wx:for="{{categoriesList}}" wx:for-index="idx" wx:key="categoryId">
+            <midas-simple bind:impressionend="exposeCategory" data-expose-category="{{item}}" data-index="{{idx}}">
+                <view bindtap="switchCategoryTab" class="child-list-item {{curCategoryId==item.categoryId?'active':''}} {{item.type==2?' cate-child-items':''}}  {{item.categoryId===DISH_CATEGORY_ID.MEMBER?'child-special-item':''}}" data-category-id="{{item.categoryId}}" data-index="{{idx}}" data-type="{{item.type}}">
+                    <view class="icon" style="background:url({{item.icon.selectedUrl}}) no-repeat; background-size: 100%;" wx:if="{{item.iconType&&item.icon.selectedUrl}}"></view>
+                    <view class="icon {{DISH_CATEGORY_CLASS_MAP[item.iconType]?'icon-'+DISH_CATEGORY_CLASS_MAP[item.iconType]:'icon-none'}}" wx:else></view>
+                    <text class="text-ellipsis ">{{item.categoryName}}</text>
+                    <red-point count="{{item.count}}" customClass="horizontal-red-point"></red-point>
+                </view>
+            </midas-simple>
+        </view>
+    </scroll-view>
+    <view catchtap="showMoreCategory" class="left-mask">
+        <image class="mask-img" src="https://p0.meituan.net/scarlett/1292a553faa59f6d5fecc6a802df1ac6486.png"></image>
+    </view>
+    <nav-header bind:onCouponAssistantCheckMore="onCouponAssistantCheckMore" bind:onMoreOrderedTab="onMoreOrderedTab" bind:onNavTab="switchSecondCategoryTab" categoryHeader="{{categoryHeader}}" containerStyle="top-category-container" couponAssistantStyle="{{couponAssistantStyle}}" curSecondCategoryId="{{curSecondCategoryId}}" customClass="top-category-container-horizontal" hasMtLogin="{{hasMtLogin}}" payCouponDecoInfo="{{payCouponDecoInfo}}" secondCategoryList="{{secondCategoryList}}" showCouponPackage="{{showCouponPackage}}" winWidth="{{winWidth}}"></nav-header>
+</view>
+<view catchtouchmove="catchTouchMove" class="more-category" wx:if="{{showMoreCategory}}">
+    <view catchtap="hideMoreCategory" class="bg-mask"></view>
+    <view class="more-category-content">
+        <view class="more-category-title">
+            <text class="title-txt">选择分类</text>
+        </view>
+        <scroll-view scrollY class="more-category-container" wx:if="{{showMoreCategory}}">
+            <view class="item-content">
+                <view class="item-line-container" wx:for="{{categoryLines}}" wx:for-index="lineIndex" wx:for-item="lineItems" wx:key="lineIndex">
+                    <view class="category-container" wx:if="{{lineItems.length}}" wx:for="{{lineItems}}" wx:key="index">
+                        <view catchtap="switchCategoryTab" class="category-item {{item.categoryId==curCategoryId?'active':''}} {{item.categoryId?'':'border-none'}}" data-category-id="{{item.categoryId}}">
+                            <text class="item-txt ellipsis">{{item.categoryName}}</text>
+                        </view>
+                        <view catchtap="expendSecondCategory" class="item-extra {{item.categoryId==currentExpendCategory?'expend':''}}" data-category-id="{{item.categoryId}}" data-index="{{lineIndex}}" wx:if="{{item.childDishCategories&&item.childDishCategories.length}}">
+                            <image class="item-extra-img" src="https://p0.meituan.net/scarlett/1292a553faa59f6d5fecc6a802df1ac6486.png"></image>
+                        </view>
+                    </view>
+                    <view class="second-category-container {{lineItems.secondCategory.length<=3?'single-line':''}} {{lineItems.secondCategory&&lineItems.secondCategory.length?'':'hidden'}}" wx:if="{{!lineItems.length}}">
+                        <view class="second-category" wx:if="{{lineItems.secondCategory&&lineItems.secondCategory.length}}" wx:for="{{lineItems.secondCategory}}" wx:for-item="child" wx:key="index">
+                            <view catchtap="switchSecondCategoryTab" class="category-item {{child.categoryId==curSecondCategoryId?'active':''}}" data-category-id="{{child.categoryId}}" data-father-category-id="{{currentExpendCategory}}">
+                                <text class="item-txt ellipsis">{{child.categoryName}}</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <view catchtap="hideMoreCategory" class="more-category-bottom">
+            <image class="bottom-img" src="https://p0.meituan.net/scarlett/ebcf87717d5ec985e62ea5d7b5745516804.png"></image>
+        </view>
+    </view>
+</view>

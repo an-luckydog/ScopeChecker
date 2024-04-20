@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "van-tag": "../tag/index",
+        "banner": "/./miniprogram_npm/@tmsfe/tms-ui/banner/banner",
+        "navbar": "/./miniprogram_npm/@tmsfe/tms-ui/navbar/navbar"
+    }
+}

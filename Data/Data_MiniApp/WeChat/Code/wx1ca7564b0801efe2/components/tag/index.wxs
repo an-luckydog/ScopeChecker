@@ -1,0 +1,11 @@
+function isUrl(m) {
+    return (m.indexOf("http") > -1)
+};
+
+function getPrice(m) {
+    return (m.indexOf("¥") === 0 ? m.slice(1) : "")
+};
+module.exports = ({
+    isUrl: isUrl,
+    getPrice: getPrice,
+});

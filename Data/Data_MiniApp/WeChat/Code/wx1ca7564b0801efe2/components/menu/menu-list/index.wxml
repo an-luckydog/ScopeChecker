@@ -1,0 +1,45 @@
+<view class="menu-body" id="menu-body" style="flex-direction: {{horizontal?'column':'row'}};">
+    <view class="{{horizontal?'menu-category-sticky':'menu-cateory-container'}}" style="{{horizontal?'top: '+categoryStickyTop+'px':''}}">
+        <view class="menu-category {{horizontal?'':'menu-category-sticky'}}" style="{{horizontal?'':'top: '+categoryStickyTop+'px'}}">
+            <nav-horizontal bind:moreOrderedTap="dishPanelOrderd" bind:onCouponAssistantCheckMore="onCouponAssistantCheckMore" bind:showMoreCategory="showMoreCategory" bind:switchTab="switchCategoryTab" categoriesList="{{categoriesList}}" couponAssistantStyle="{{couponAssistantStyle}}" couponCount="{{couponCount}}" hasMtLogin="{{userInfo.hasMtLogin}}" horizontal="{{horizontal}}" menuType="{{menuType}}" payCouponDecoInfo="{{payCouponDecoInfo}}" selectCategoryIds="{{curCategoryIds}}" showCouponPackage="{{showCouponPackage}}" winWidth="{{winWidth}}" wx:if="{{horizontal}}"></nav-horizontal>
+            <nav-vertical bind:moreOrderedTap="dishPanelOrderd" bind:onCouponAssistantCheckMore="onCouponAssistantCheckMore" bind:switchTab="switchCategoryTab" categoriesList="{{categoriesList}}" categoryHasIcon="{{categoryHasIcon}}" couponAssistantStyle="{{couponAssistantStyle}}" couponCount="{{couponCount}}" hasMtLogin="{{userInfo.hasMtLogin}}" menuType="{{menuType}}" payCouponDecoInfo="{{payCouponDecoInfo}}" selectCategoryIds="{{curCategoryIds}}" showCouponPackage="{{showCouponPackage}}" winWidth="{{winWidth}}" wx:else></nav-vertical>
+        </view>
+    </view>
+    <view class="menu-detail {{categorySticky&&!horizontal?'menu-detail-sticky':''}}">
+        <view class="menu-right {{horizontal?'horizontal':''}}">
+            <block wx:for="{{allDishList}}" wx:for-item="categoryInfo" wx:key="key">
+                <view class="menu-category-title" data-categoryid="{{categoryInfo.categoryId}}" data-parentid="{{categoryInfo.parentId}}" id="item-{{categoryInfo.categoryId}}" wx:if="{{categoryInfo.categoryName}}">
+                    <dish-category-title bind:onCouponAssistantCheckMore="onCouponAssistantCheckMore" category="{{categoryInfo}}" couponAssistantStyle="{{couponAssistantStyle}}" couponCount="{{couponCount}}" customClass="menu-section menu-section-{{dishShowType}}" hasMtLogin="{{userInfo.hasMtLogin}}"></dish-category-title>
+                </view>
+                <toggle-strip bind:changeSpread="changeSpreadFn" categoryId="{{categoryInfo.categoryId}}" isSpread="{{categoryInfo.isSpread}}" notValidityDishCount="{{categoryInfo.notValidityDishCount}}" wx:elif="{{categoryInfo.isNotValidity&&supportSpreadType}}"></toggle-strip>
+                <view class="dish-section menu-list-item" data-categoryid="{{categoryInfo.categoryId}}" data-index="{{index}}" data-parentid="{{categoryInfo.parentId}}">
+                    <view class="dish-section-container dish-slice" data-categoryIndex="{{index}}" data-vIndex="{{vIndex}}" style="min-height: {{items.minHeight}}rpx;{{showSection[index][vIndex]?'':dishBackground}};" wx:for="{{categoryInfo.dishInfo}}" wx:for-index="vIndex" wx:for-item="items" wx:key="key">
+                        <coupon-item bind:onCheck="onUseCoupon" bizId="eco_24k4w0z8" coupon="{{couponList[vIndex]}}" style="width: 100%; margin-bottom: 18rpx;" wx:if="{{categoryInfo.categoryId===DISH_CATEGORY_ID.COUPON&&couponList[vIndex]}}"></coupon-item>
+                        <block wx:if="{{showSection[index][vIndex]}}">
+                            <block wx:for="{{items&&items.content}}" wx:for-index="tIndex" wx:key="key">
+                                <view class="lottery-class-{{dishShowType}}" wx:if="{{categoryInfo.categoryId===PLUGIN_CATEGORY}}">
+                                    <lottery brandid="{{shopMarketings[tIndex].brandId}}" lotterySideSpacing="0"></lottery>
+                                </view>
+                                <block wx:else>
+                                    <view class="dish-row-container dish-row-container-{{dishShowType}} {{item.showRelationDishes&&dishItem.getCollocationContainerData(collocationListDishMap,item)?'dish-collocation-'+dishShowType:''}}">
+                                        <midas-simple bind:impressionend="exposeDish" bottom="{{-100}}" class="dish-item dish-item-{{dishShowType}}" data-id="{{item.id}}" data-key="{{item.key}}" id="item-{{item.key}}" top="{{-200}}">
+                                            <dish-item catch:openDishDetail="openDetail" categoryId="{{categoryInfo.categoryId}}" dish="{{item}}" emptyCartTag="{{emptyCartTag}}" fromComponent="menu-list" ifPropertyRender="{{true}}" isLogin="{{memberInfo&&!!memberInfo.cardId}}" itemIndex="{{tIndex}}" menuUpdateTime="{{menuUpdateTime}}" shopId="{{pageOptions.shopId}}" spuId="{{item.id}}" type="{{categoryInfo.categoryId===DISH_CATEGORY_ID.ORDERED?DISH_ITEM_TYPE_VAL.ORDERED+'_'+dishShowType:dishShowType}}" wx:if="{{item.isSpread}}">
+                                                <view slot="operationArea">
+                                                    <operation canClickCountNum="{{true}}" catch:operationCount="operateDish" catch:operationPanel="dealPanelData" catch:showDishTimeInfoModalFn="showDishTimeInfoModalFn" data-categoryIndex="{{index}}" data-dishData="{{item}}" data-tIndex="{{tIndex}}" data-vIndex="{{vIndex}}" isBigSize="{{dishShowType===DISH_ITEM_TYPE_VAL.DEFAULT}}" moduleFrom="DISH" operationData="{{item.operationData}}" pageFrom="MENU" reportParams="{{reportParams}}" size="{{dishShowType===DISH_ITEM_TYPE_VAL.SUPER_LARGE?'middle':''}}"></operation>
+                                                </view>
+                                            </dish-item>
+                                        </midas-simple>
+                                    </view>
+                                    <collocation-dish-list catch:dealCollocationPanelData="dealPanelData" catch:openDetailFunc="openDetail" catch:operationCollocationCount="operateDish" collocationContainerData="{{dishItem.getCollocationContainerData(collocationListDishMap,item)}}" dishShowType="{{dishShowType}}" options="{{pageOptions}}" wx:if="{{item.showRelationDishes&&dishItem.getCollocationContainerData(collocationListDishMap,item)}}"></collocation-dish-list>
+                                </block>
+                            </block>
+                        </block>
+                    </view>
+                    <view catch:tap="onCouponAssistantCheckMore" class="coupon-assistant-more" wx:if="{{categoryInfo.categoryId===DISH_CATEGORY_ID.COUPON}}">查看更多<image class="coupon-assistant-more__icon" src="https://p0.meituan.net/travelcube/eeccf4605fdceae24f57015d0dfd2aaa220.png"></image>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>
+<wxs module="dishItem" src="../wxsModules/dishItem.wxs" />

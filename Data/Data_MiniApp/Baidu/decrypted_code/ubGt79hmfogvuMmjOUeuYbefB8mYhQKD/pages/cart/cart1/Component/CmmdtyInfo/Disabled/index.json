@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "ui-swipecell":"/pages/cart/_Components/UI/SwipeCell/index",
+    "ui-checkbox": "/pages/cart/_Components/UI/Checkbox/index"
+  }
+}

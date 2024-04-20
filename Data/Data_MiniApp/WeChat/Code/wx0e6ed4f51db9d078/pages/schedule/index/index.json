@@ -1,0 +1,14 @@
+{
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "行程",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#ffffff",
+    "componentPlaceholder": {
+        "card-item": "view",
+        "formid-button": "view",
+        "Icon": "view",
+        "travel-plan-view": "view"
+    }
+}

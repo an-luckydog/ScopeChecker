@@ -1,0 +1,8 @@
+<view class="nav">
+    <view class="demo" style="{{'height:'+demo.height+'px;'+'padding-top:'+demo.top+'px;padding-bottom:10rpx;background:'+backcolor}}">
+        <view bindtap="__e" class="left" data-event-opts="{{[ [ 'tap',[ [ 'goback',['$event'] ] ] ] ]}}" style="{{'top:'+demo.top+'px'}}">
+            <image src="{{isBlock?'https://xcxsite.vjifen.com/v/static/qp120/Islander/new-night-back.png':'https://xcxsite.vjifen.com/v/static/qp120/Islander/back.png'}}"></image>
+        </view>
+        <image class="header-img" src="https://xcxsite.vjifen.com/v/static/qp120/index/logo.png" wx:if="{{!isHideLogo}}"></image>
+    </view>
+</view>

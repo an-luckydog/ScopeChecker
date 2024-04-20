@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "spore-material",
+  "appid": "11806953",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}

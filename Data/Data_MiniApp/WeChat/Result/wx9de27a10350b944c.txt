@@ -1,0 +1,6 @@
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'onUpload'}}"中找到匹配: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\uploadImage.wxml}"中的方法{"    <view bindtap="__e" class="upload_image_add" data-event-opts="{{[ [ 'tap',[ [ 'onUpload',['$event'] ] ] ] ]}}">
+}"中找到对应: {"chooseImage}"
+在后端文件{"D:\wxappUnpacker-master\dec\components\uploadImage.js}"中的方法{"{'onUpload'}}"中找到匹配: {"chooseImage}"
+在前端文件{"D:\wxappUnpacker-master\dec\components\uploadImage.wxml}"中的方法{"    <view bindtap="__e" class="upload_image_add" data-event-opts="{{[ [ 'tap',[ [ 'onUpload',['$event'] ] ] ] ]}}">
+}"中找到对应: {"chooseImage}"

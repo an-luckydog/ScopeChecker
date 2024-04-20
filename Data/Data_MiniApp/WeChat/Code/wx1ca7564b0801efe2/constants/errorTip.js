@@ -1,0 +1,29 @@
+Object.defineProperty(exports, "__esModule", {
+    value: !0
+}), exports.ERROR_TYPE = exports.CONFIRM_ERROR_TYPE = void 0;
+
+exports.ERROR_TYPE = {
+    ONLY_SHOP_CODE: 1,
+    ONLY_TABLE_CODE: 2,
+    INVALID_TABLE_CODE: 3,
+    EMPTY_TABLE_CODE: 4,
+    EXPIRED_CODE: 6,
+    NON_BUSINESS_HOURS: 7,
+    NEED_APP_LOGIN: 8,
+    NEED_CONTACT_BIZ: 10,
+    NEED_DOWNGRADE_CODE: 900,
+    SPLASH_NEED_DOWNGRADE_CODE: 12,
+    NOT_HAS_USER_ID: 13,
+    NEED_RELOAD: 99,
+    CUSTOM_JUMP: 100,
+    SHOP_NO_OPEN: 300,
+    CHECK_TIMES_MORE: 700
+};
+
+exports.CONFIRM_ERROR_TYPE = {
+    ONLY_SHOP_CODE: 1,
+    ONLY_TABLE_CODE: 2,
+    INVALID_TABLE_CODE: 3,
+    EMPTY_TABLE_CODE: 4,
+    NON_BUSINESS_HOURS: 7
+};

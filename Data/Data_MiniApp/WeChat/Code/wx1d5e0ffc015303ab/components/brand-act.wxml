@@ -1,0 +1,9 @@
+<view class="brandActive data-v-3daf2ba6">
+    <view class="left data-v-3daf2ba6">
+        <image bindtap="__e" class="activeCenter data-v-3daf2ba6" data-event-opts="{{[ [ 'tap',[ [ 'toActiveList',['$event'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'/hb2020/2.0/activeCenter.png'}}"></image>
+    </view>
+    <view class="right data-v-3daf2ba6">
+        <image bindtap="__e" class="activeFood data-v-3daf2ba6" data-event-opts="{{[ [ 'tap',[ [ 'toDelicious',['$event'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'/hb2020/2.0/activeFood.png'}}"></image>
+        <image bindtap="__e" class="activeStory data-v-3daf2ba6" data-event-opts="{{[ [ 'tap',[ [ 'toStory',['$event'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'/hb2020/2.0/activeStory.png'}}"></image>
+    </view>
+</view>

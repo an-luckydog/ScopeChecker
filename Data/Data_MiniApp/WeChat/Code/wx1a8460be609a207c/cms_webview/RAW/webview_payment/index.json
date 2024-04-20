@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "确认支付",
+    "usingComponents": {
+        "titan-one-component": "/@titan/cs/oc/i"
+    },
+    "component": true
+}

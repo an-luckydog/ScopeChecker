@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "集爱心活动",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-modal": "../../components/cy-modal/cy-modal"
+    }
+}

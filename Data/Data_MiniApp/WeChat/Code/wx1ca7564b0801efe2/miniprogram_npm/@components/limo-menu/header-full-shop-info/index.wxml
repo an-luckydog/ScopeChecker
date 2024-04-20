@@ -1,0 +1,96 @@
+<view class="full-shop-layer-style {{isH5Page?'h5-class':''}}">
+    <view class="full-shop-info-set {{showShopFlag?'set-active':'set-close'}}">
+        <scroll-view scrollY="true" style="height: 80%">
+            <view class="full-info-container">
+                <view bindtap="toggleFunc" class="shop-info-zone-style" wx:if="{{logo||shopRankTag}}">
+                    <view bindtap="toggleShopInfoFlag" class="header-left shop-logo" style="background-image:url({{logo}});" wx:if="{{logo}}"></view>
+                    <view class="header-right {{shopRankTag?'':'signle-shop-name'}}">
+                        <view class="{{detailTitleOverflow?'shop-title-overflow':'shop-name'}}" wx:if="{{logo}}">{{name}}</view>
+                        <view class="{{detailTitleOverflow?'overflow-margin':''}}" wx:if="{{shopRankTag}}">
+                            <view class="comment-tag {{logo?'':'single-tags'}}">
+                                <view class="{{'tag-type '+mustTagClass}}" wx:if="{{mustTagClass}}"></view>
+                                <view class="tag-content">{{shopRankTag.rankText}}</view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view class="content-shop-info">
+                    <view class="section section-normal" wx:if="{{shopNotices&&shopNotices.length}}">
+                        <view class="title">门店公告</view>
+                        <view class="shop-notices">
+                            <view class="shop-notice" wx:for="{{shopNotices}}" wx:key="index">
+                                <view class="shop-notice__main">
+                                    <image class="shop-notice__icon" mode="heightFix" src="{{item.imgUrl}}" wx:if="{{item.imgUrl}}"></image>
+                                    <view class="shop-notice__content">{{item.content}}</view>
+                                </view>
+                                <view bind:tap="clickNotice" class="shop-notice__btn theme-color" data-action-type="{{item.actionType}}" data-action-value="{{item.redirectUrl}}" wx:if="{{item.actionType&&item.redirectUrl}}">查看</view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="section" wx:if="{{showPromo}}">
+                        <view class="title">优惠</view>
+                        <view class="coupons-container" wx:if="{{couponList.length}}">
+                            <view class="coupons-inner-item" wx:for="{{couponList}}" wx:key="index">
+                                <normal-coupon-tag bind:handelCouponEvent="clickCouponEvent" couponTagsItem="{{item}}"></normal-coupon-tag>
+                            </view>
+                            <view bindtap="clickCouponEvent" class="more-coupons" wx:if="{{moreCoupon}}">查看更多</view>
+                        </view>
+                        <view class="item" wx:for="{{memberTags||[]}}" wx:key="type">
+                            <image class="icon" src="{{ICON_MAP[item.icon]}}" wx:if="{{item.displayTitle}}"></image>
+                            <image class="icon" src="{{ICON_MAP[item.icon]}}"></image>
+                            <view class="desc" wx:if="{{item.displayTitle}}">{{item.displayTitle}}</view>
+                            <view class="desc {{item.displayTitle?'sub-desc':''}}" wx:if="{{item.labelDesc}}">{{item.labelDesc}}</view>
+                        </view>
+                        <view class="item" wx:for="{{promotionTags||[]}}" wx:key="type">
+                            <image class="icon" src="{{ICON_MAP[item.icon]}}" wx:if="{{item.displayTitle}}"></image>
+                            <image class="icon" src="{{ICON_MAP[item.icon]}}" wx:else></image>
+                            <view class="desc" wx:if="{{item.displayTitle}}">{{item.displayTitle}}</view>
+                            <view class="desc {{item.displayTitle?'sub-desc':''}}" wx:if="{{item.labelDesc}}">{{item.labelDesc}}</view>
+                        </view>
+                    </view>
+                    <view bindtap="toggleFunc" class="section section-normal" wx:if="{{notice}}">
+                        <view class="title">公告</view>
+                        <view class="item">
+                            <view class="desc">{{notice}}</view>
+                        </view>
+                    </view>
+                    <view bindtap="toggleFunc" class="section section-normal" wx:if="{{serviceFee}}">
+                        <view class="title">{{serviceFee.title}}</view>
+                        <view class="item item-padding-0">
+                            <view class="desc">{{serviceFee.content}}</view>
+                        </view>
+                    </view>
+                    <view class="section" wx:if="{{detail}}">
+                        <view class="title">门店信息</view>
+                        <view catchtap="makeAddress" class="info address" wx:if="{{detail.address}}">
+                            <view class="address-detail">
+                                <view class="sec-title-text">地址：</view>
+                                <view class="detail-text">{{detail.address}}</view>
+                            </view>
+                            <image class="info-image" mode="aspectFill" src="https://p0.meituan.net/scarlett/06f501cea019da46fadb24de947756651875.png" wx:if="{{isShowIcon}}"></image>
+                        </view>
+                        <view catchtap="makePhone" class="info" wx:if="{{detail.phone}}">
+                            <view class="sec-title-text">电话：{{detail.phone}}</view>
+                            <image class="info-image" mode="aspectFill" src="https://p0.meituan.net/scarlett/49102adac8739b8aed6866f94ba403772004.png" wx:if="{{isShowIcon}}"></image>
+                        </view>
+                        <view class="info" wx:if="{{detail.openingTimes}}">
+                            <view class="sec-title-text">营业时间：</view>
+                            <view class="detail-text">{{detail.openingTimes}}</view>
+                        </view>
+                        <view class="info shop-license" wx:if="{{detail.foodSafetySwitch}}">
+                            <view class="sec-title-text">食品安全档案：</view>
+                            <view bindtap="jumpShopLicense" class="detail-text theme-color">去查看</view>
+                        </view>
+                        <view bindtap="jumpHome" class="jump-store" wx:if="{{shopHeadInfo.showShopHomeJumpEntrance}}">
+                            <view>{{shopHeadInfo.shopHomeJumpConfig.shopHomeJumpText}}</view>
+                            <image class="arrow-icon" src="https://p0.meituan.net/ingee/d6ef268e793c65c4cb7c28d19f764465783.png"></image>
+                        </view>
+                    </view>
+                    <view bindtap="toggleFunc" class="toggle-set">
+                        <image class="toggle-set-image" mode="aspectFill" src="https://p0.meituan.net/travelcube/2c46a9f059b1b870040b1bf1f0c2ea17308.png"></image>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

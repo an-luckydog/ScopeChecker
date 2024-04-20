@@ -1,0 +1,6 @@
+<limo-layout data="{{data}}" preview="{{preview}}"></limo-layout>
+<slot></slot>
+<loading data="{{loading}}" wx:if="{{loading}}"></loading>
+<modal bind:cancel="onModalCancel" bind:complete="onModalComplete" bind:ok="onModalOk" data="{{modal}}" wx:if="{{modal}}"></modal>
+<toast data="{{toast}}" wx:if="{{toast}}"></toast>
+<action-sheet bind:cancel="onModalCancel" bind:complete="onModalComplete" bind:ok="onModalOk" data="{{actionSheet}}" wx:if="{{actionSheet}}"></action-sheet>

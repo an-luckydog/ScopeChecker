@@ -1,0 +1,15 @@
+<view class="pre-price-container" wx:if="{{showComponent}}">
+    <view catch:tap="showPrePriceTipsFn" class="pre-price-content">
+        <view class="pre-left-text">到手预估</view>
+        <view class="pre-right-text">
+            <image class="hypotenuse" src="https://p0.meituan.net/travelcube/e01dd0fad7400199c13b282b815ae1da458.png"></image>
+            <view class="currency">{{currency}}</view>
+            <view class="pre-price">{{estimatedPrice}}</view>
+            <image class="symbol" src="https://p1.meituan.net/travelcube/7b15c5330ce9419effdc46f1ceb7c1ab873.png" wx:if="{{type!=='RECOMMEND_DEFAULT'}}"></image>
+        </view>
+    </view>
+    <block wx:if="{{prePriceTipsTag&&showPrePriceTips&&type!=='RECOMMEND_DEFAULT'}}">
+        <view class="triangle-common triangle-{{type}}"></view>
+        <view class="pre-price-tips-common pre-price-tips-{{type}}">根据您当前持有的优惠券、可享受的优惠活动等进行的单件商品最低应付金额预估（不包含配送费、打包费），最终请以实际金额为准</view>
+    </block>
+</view>

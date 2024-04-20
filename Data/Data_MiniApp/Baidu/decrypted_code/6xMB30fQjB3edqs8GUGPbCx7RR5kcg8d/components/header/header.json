@@ -1,0 +1,6 @@
+{
+	"component": true,
+	"usingComponents": {
+	  "notice":"/components/noticeBar/noticeBar"
+	}
+  }

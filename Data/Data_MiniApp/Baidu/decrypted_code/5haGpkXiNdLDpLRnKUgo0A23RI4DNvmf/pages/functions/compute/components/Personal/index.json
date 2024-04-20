@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "check-box": "/pages/functions/compute/components/Personal/components/checkBox"
+  }
+}

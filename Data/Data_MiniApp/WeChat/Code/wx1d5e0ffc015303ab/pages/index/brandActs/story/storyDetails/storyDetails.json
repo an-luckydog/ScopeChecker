@@ -1,0 +1,7 @@
+{
+    "navigationStyle": "default",
+    "navigationBarTitleText": "品牌故事",
+    "usingComponents": {
+        "app": "/components/privacy/privacy"
+    }
+}

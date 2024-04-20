@@ -1,0 +1,8 @@
+<view class="_loc_content data-v-a2f0f3c6" wx:if="{{showLocTip||showAuthAgain}}">
+    <image bindtap="__e" class="_locationGuid data-v-a2f0f3c6" data-event-opts="{{[ [ 'tap',[ [ 'clickResult',['$event'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'location_guide.png'}}" wx:if="{{showLocTip}}"></image>
+    <view class="_authAgain data-v-a2f0f3c6" wx:if="{{showAuthAgain}}">
+        <text class="data-v-a2f0f3c6">{{authAgainText}}</text>
+        <button class="_authAgainBtn data-v-a2f0f3c6" openType="openSetting">去授权</button>
+    </view>
+    <image bindtap="__e" class="_closeAuth data-v-a2f0f3c6" data-event-opts="{{[ [ 'tap',[ [ '_closeAuth',['$event'] ] ] ] ]}}" mode="widthFix" src="{{imgUrl+'close_line.png'}}" wx:if="{{showAuthAgain}}"></image>
+</view>

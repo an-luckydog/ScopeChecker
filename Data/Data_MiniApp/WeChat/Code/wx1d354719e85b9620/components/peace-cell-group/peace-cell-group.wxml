@@ -1,0 +1,3 @@
+<view class="peace-cell-group data-v-e2837eb0">
+    <slot></slot>
+</view>

@@ -1,0 +1,18 @@
+<view class="wx-open-setting data-v-48322618" wx:if="{{wxOpenSettingIsShow}}">
+    <view bindtap="__e" class="activityRule-mask data-v-48322618" data-event-opts="{{[ [ 'tap',[ [ 'closeWxOpenSetting',['$event'] ] ] ] ]}}"></view>
+    <view animation="{{actAni}}" class="{{['data-v-48322618',isStartAnimation?'activityRule-initAni':'','activityRule-center']}}">
+        <view class="opensetting data-v-48322618">
+            <view class="head data-v-48322618">
+                <image class="headimg data-v-48322618" mode="widthFix" src="{{staticUrl+'henanlogo.png'}}"></image>
+                <text class="data-v-48322618">青岛啤酒</text>
+                <text class="data-v-48322618">申请</text>
+                <image bindtap="__e" class="close data-v-48322618" data-event-opts="{{[ [ 'tap',[ [ 'closeWxOpenSetting',['$event'] ] ] ] ]}}" mode="widthFix" src="{{staticUrl+'closeimg.png'}}"></image>
+            </view>
+            <view class="content data-v-48322618">
+                <text class="data-v-48322618">获取您的地理位置信息</text>
+                <text class="data-v-48322618">获取地理位置可以给你提供更好的服务</text>
+            </view>
+            <button bindtap="__e" class="set data-v-48322618" data-event-opts="{{[ [ 'tap',[ [ 'openSetting',['$event'] ] ] ] ]}}">进行授权</button>
+        </view>
+    </view>
+</view>

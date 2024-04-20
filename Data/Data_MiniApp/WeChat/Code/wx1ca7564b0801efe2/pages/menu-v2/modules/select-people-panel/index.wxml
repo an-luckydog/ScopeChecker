@@ -1,0 +1,5 @@
+<view class="select-people-panel">
+    <view class="people-content">
+        <view bind:tap="selectPeopleCount" class="people-box {{item===showPeopleCount?'selected':''}}" data-people-count="{{item}}" wx:for="{{peopleList}}" wx:key="index">{{item==='-1'?'更多':item}}</view>
+    </view>
+</view>

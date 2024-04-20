@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mip-bdxd-refund-button": "/widgets/mip-bdxd-refund-button/mip-bdxd-refund-button",
+        "mip-bdxd-refund-progress-tip": "/widgets/mip-bdxd-refund-progress-tip/mip-bdxd-refund-progress-tip",
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "format-price": "/components/format-price/format-price"
+    }
+}

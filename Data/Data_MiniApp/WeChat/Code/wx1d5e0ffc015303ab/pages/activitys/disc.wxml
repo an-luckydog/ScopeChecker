@@ -1,0 +1,85 @@
+<view class="{{['data-v-044a275a','container',isSmallScreen?'smallScreen':'']}}">
+    <app-title bind:__l="__l" class="data-v-044a275a" safeHeight="{{safeTop}}" showBack="{{true}}" showTitle="{{false}}" vueId="3a90aded-1"></app-title>
+    <view class="{{['bg_mask','data-v-044a275a',!isSmallScreen?'flex-xc-yc-dirY':'']}}" style="{{'opacity:'+(discloadend?1:0)+';'+'height:'+(!isSmallScreen?'74%':'auto')+';'}}">
+        <view class="slogan_box data-v-044a275a">
+            <image class="slogan data-v-044a275a" mode="widthFix" src="{{imgUrl+'titlefont.png'}}" wx:if="{{!isSmallScreen}}"></image>
+            <image class="slogan data-v-044a275a" mode="widthFix" src="{{imgUrl+'titlefont.png'}}" wx:else></image>
+        </view>
+        <view class="vpoints_tips flex-xsb-yn data-v-044a275a">
+            <view class="data-v-044a275a">{{turntableActivityCogInfo.consumeVpoints+'啤酒花抽一次'}}</view>
+            <view class="flex-xn-yn data-v-044a275a">
+                <image class="data-v-044a275a" mode="widthFix" src="{{imgUrl+'point5.png'}}"></image>
+                <text class="data-v-044a275a" style="visibility:hidden;">0</text>
+                <text class="c_y data-v-044a275a">{{'当前啤酒花：'+$root.f0}}</text>
+            </view>
+        </view>
+        <view class="disc_box data-v-044a275a">
+            <image animation="{{animationData}}" bindload="__e" bindtransitionend="__e" class="disc data-v-044a275a" data-event-opts="{{[ [ 'load',[ [ 'discLoad',['$event'] ] ] ],[ 'transitionend',[ [ 'runEnd',['$event'] ] ] ] ]}}" mode="widthFix" src="{{discImg}}"></image>
+            <image bindtap="__e" class="pointer data-v-044a275a" data-event-opts="{{[ [ 'tap',[ ['lotteryPrize'] ] ] ]}}" mode="widthFix" src="{{imgUrl+'pointer.png'}}"></image>
+        </view>
+        <view class="footer-bot data-v-044a275a">
+            <view class="scroll_box data-v-044a275a" style="{{'visibility:'+($root.g0>0?'visible':'hidden')+';'}}">
+                <view class="scroll_box_center data-v-044a275a">
+                    <image class="laba data-v-044a275a" mode="widthFix" src="{{imgUrl+'shengyin.png'}}"></image>
+                    <view class="swiper_box data-v-044a275a" wx:if="{{$root.g1>0}}">
+                        <swiper autoplay="{{true}}" circular="{{true}}" class="data-v-044a275a" duration="{{1000}}" indicatorDots="{{false}}" interval="{{3000}}" vertical="{{true}}">
+                            <swiper-item class="data-v-044a275a" wx:for="{{list}}" wx:key="index">
+                                <view class="radio data-v-044a275a">
+                                    <view class="data-v-044a275a" style="margin-top:6rpx;width:96%;">
+                                        <text class="data-v-044a275a">{{''+item+''}}</text>
+                                    </view>
+                                </view>
+                            </swiper-item>
+                        </swiper>
+                    </view>
+                </view>
+            </view>
+            <view class="footer data-v-044a275a">
+                <view class="btn_box data-v-044a275a">
+                    <button bindtap="__e" class="btn_y_s data-v-044a275a" data-event-opts="{{[ [ 'tap',[ [ 'toLotteryList',['$event'] ] ] ] ]}}">抽奖记录</button>
+                    <button bindtap="__e" class="btn_y_s data-v-044a275a" data-event-opts="{{[ [ 'tap',[ [ 'toRule',['$event'] ] ] ] ]}}">活动规则</button>
+                </view>
+                <text bindtap="__e" class="active_tip data-v-044a275a" data-event-opts="{{[ [ 'tap',[ [ 'call',['$0'],['turntableActivityCogInfo.custcarePhonenum'] ] ] ] ]}}">{{'活动最终解释权归属青岛啤酒股份有限公司\n客服电话：'+turntableActivityCogInfo.custcarePhonenum}}</text>
+            </view>
+        </view>
+    </view>
+    <canvas canvasId="myCanvas" class="data-v-044a275a" hidden="{{!!discImg}}" id="canvas-disc-init" style="width:750rpx;height:750rpx;"></canvas>
+    <view class="result mask data-v-044a275a" hidden="{{!(resultOpacity!=0)}}" style="{{'opacity:'+resultOpacity+';'}}">
+        <view class="data-v-044a275a">
+            <view class="prize_box data-v-044a275a">
+                <view class="prize data-v-044a275a" wx:if="{{prizeBasicInfo.turntablePrizeType!='0'}}">
+                    <text class="title data-v-044a275a" style="{{'visibility:'+(prizeBasicInfo.turntablePrizeType!='3'?'visible':'hidden')+';'}}">恭喜您获得</text>
+                    <text class="prizeName data-v-044a275a" wx:if="{{prizeBasicInfo.turntablePrizeType=='4'}}">{{ticketInfo.ticketName}}</text>
+                    <block wx:else>
+                        <text class="prizeName data-v-044a275a" wx:if="{{prizeBasicInfo.turntablePrizeType=='1'}}">{{prizeBasicInfo.vpoints+prizeBasicInfo.turntablePrizeName}}</text>
+                        <text class="prizeName data-v-044a275a" wx:else>{{prizeBasicInfo.turntablePrizeType=='3'?'很遗憾 未中奖':prizeBasicInfo.turntablePrizeName}}</text>
+                    </block>
+                    <block wx:if="{{prizeBasicInfo}}">
+                        <image class="data-v-044a275a" mode="widthFix" src="{{imgUrl+'noprize.png'}}" wx:if="{{prizeBasicInfo.turntablePrizeType=='3'}}"></image>
+                        <image class="data-v-044a275a" mode="widthFix" src="{{goodsImgRoot+prizeBasicInfo.turntablePic}}" wx:else></image>
+                    </block>
+                    <view class="prizeTips data-v-044a275a" wx:if="{{prizeBasicInfo.turntablePrizeType=='2'}}">请前往<text class="data-v-044a275a">我的-实物奖</text>查看</view>
+                    <view class="prizeTips data-v-044a275a" wx:if="{{prizeBasicInfo.turntablePrizeType=='4'}}">请前往<text class="data-v-044a275a">我的-优惠券</text>查看</view>
+                    <view class="prizeTips data-v-044a275a" wx:if="{{prizeBasicInfo.turntablePrizeType=='1'}}">请前往<text class="data-v-044a275a">我的-啤酒花账单</text>查看</view>
+                </view>
+                <view class="cash data-v-044a275a" wx:else>
+                    <text class="title data-v-044a275a">恭喜您获得</text>
+                    <view class="money data-v-044a275a">{{''+(prizeBasicInfo.money||'0.00')+'元现金红包'}}</view>
+                    <view class="prizeTips data-v-044a275a">请前往“<text class="data-v-044a275a">我的-红包</text>”领奖</view>
+                </view>
+                <view class="btn_box data-v-044a275a">
+                    <button bindtap="__e" class="btn_yellow data-v-044a275a" data-event-opts="{{[ [ 'tap',[ [ 'toGetPrize',['$event'] ] ] ] ]}}" wx:if="{{prizeBasicInfo.turntablePrizeType=='2'}}">去领奖</button>
+                    <block wx:else>
+                        <button bindtap="__e" class="btn_yellow data-v-044a275a" data-event-opts="{{[ [ 'tap',[ [ 'toTx',['$event'] ] ] ] ]}}" wx:if="{{prizeBasicInfo.turntablePrizeType=='0'}}">去提现</button>
+                        <block wx:else>
+                            <button bindtap="__e" class="btn_yellow data-v-044a275a" data-event-opts="{{[ [ 'tap',[ [ 'toCoupon',['$event'] ] ] ] ]}}" wx:if="{{prizeBasicInfo.turntablePrizeType=='4'}}">去使用</button>
+                            <button bindtap="__e" class="btn_yellow data-v-044a275a" data-event-opts="{{[ [ 'tap',[ [ 'lotteryPrize',[true] ] ] ] ]}}" wx:else>再抽1次</button>
+                        </block>
+                    </block>
+                    <button bindtap="__e" class="btn_opacity data-v-044a275a" data-event-opts="{{[ [ 'tap',[ [ 'closeResult',['$event'] ] ] ] ]}}">确定</button>
+                </view>
+            </view>
+        </view>
+    </view>
+    <about-location bind:__l="__l" class="data-v-044a275a vue-ref" data-ref="compslocation" vueId="3a90aded-2"></about-location>
+</view>

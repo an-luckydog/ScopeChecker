@@ -1,0 +1,13 @@
+<template name="tag">
+    <view class="tag {{borderColor?'tag-border':'tag-wrap'}} {{size}} tag-{{type}}" style="{{borderColor?'color:'+borderColor+';':''}}">
+        <image class="tag-img" mode="heightFix" src="{{icon}}" wx:if="{{icon}}"></image>
+        <view class="tag-container" style="{{item.background?'background:'+item.background+';':''}}{{item.color?'color:'+item.color+';':''}}" wx:for="{{tags}}" wx:key="index">
+            <block wx:if="{{item.icon}}">
+                <image class="t-item tag-icon" src="{{item.icon}}" wx:if="{{lgc.isUrl(item.icon)}}"></image>
+                <view class="t-item tag-font base-icon {{item.icon}}" style="{{item.color?'color:'+item.color+';':''}}" wx:else></view>
+            </block>
+            <view class="t-item tag-title" wx:if="{{item.title}}">{{item.title}}</view>
+        </view>
+    </view>
+</template>
+<wxs module="lgc" src="index.wxs" />

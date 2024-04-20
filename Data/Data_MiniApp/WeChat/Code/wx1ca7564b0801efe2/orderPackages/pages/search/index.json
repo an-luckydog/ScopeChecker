@@ -1,0 +1,19 @@
+{
+    "navigationBarTitleText": "搜索",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF",
+    "disableScroll": true,
+    "componentPlaceholder": {
+        "desc-operate-panel": "empty-panel",
+        "cart-dish-extend": "view",
+        "dish-detail-extend": "view",
+        "universal-login": "view",
+        "login-modal": "view",
+        "phone-number-no-quota-modal": "view",
+        "dish-time-info": "view",
+        "package-details-panel": "empty-panel",
+        "dish-remark-panel": "empty-panel",
+        "lottery": "view"
+    }
+}

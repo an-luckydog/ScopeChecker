@@ -1,0 +1,13 @@
+{
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "componentPlaceholder": {
+        "container-panel": "view",
+        "dish-time-info-modal": "view",
+        "register-panel": "view",
+        "must-dish-panel": "view",
+        "lottery": "view"
+    }
+}

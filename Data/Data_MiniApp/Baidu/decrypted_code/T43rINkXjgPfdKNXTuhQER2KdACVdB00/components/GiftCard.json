@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "gift-btn": "./GiftBtn",
+        "one-px-line": "./OnePxLine"
+    },
+    "component": true
+}

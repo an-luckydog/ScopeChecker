@@ -1,0 +1,1 @@
+<image class="prompt-img-{{platform}}" src="{{promptSrc}}" style="top: {{top||180}}rpx"></image>

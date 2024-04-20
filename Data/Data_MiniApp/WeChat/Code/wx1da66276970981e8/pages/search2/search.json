@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "搜索",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "u-icon": "../../node-modules/uview-plus/components/u-icon/u-icon",
+        "c-page": "../../components/c-page/c-page"
+    }
+}

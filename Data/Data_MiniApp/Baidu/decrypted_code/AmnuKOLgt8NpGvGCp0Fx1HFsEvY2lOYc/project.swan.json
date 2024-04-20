@@ -1,0 +1,29 @@
+{
+    "compilation-args": {
+        "common": {
+            "enhance": true,
+            "babelSetting": {
+                "ignore": []
+            },
+            "quickPreview": true
+        },
+        "forceChanged": {
+            "quickPreview": true
+        }
+    },
+    "host": "baiduboxapp",
+    "projectname": "dpmapp",
+    "setting": {
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.190.255-rc",
+            "extensionJsVersion": "100.14.255"
+        }
+    },
+    "appid": "11553825",
+    "preview": {
+        "packageId": 1350967
+    }
+}

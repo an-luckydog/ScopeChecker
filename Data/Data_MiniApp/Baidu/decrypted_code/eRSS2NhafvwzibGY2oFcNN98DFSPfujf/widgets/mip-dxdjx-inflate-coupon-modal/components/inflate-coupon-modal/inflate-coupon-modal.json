@@ -1,0 +1,10 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "coupon-cards": "/widgets/mip-dxdjx-inflate-coupon-modal/components/coupon-card/coupon-card",
+        "button-group": "/widgets/mip-dxdjx-inflate-coupon-modal/components/button-group/button-group",
+        "pop-up": "/components/popup/popup",
+        "optimize-image": "/components/optimize-image/optimize-image"
+    }
+}

@@ -1,0 +1,113 @@
+<view class="item-adapter">
+    <view bindtap="menuDetail" class="item {{ifPropertyRender?dish.cssType:cssType}} {{ifPropertyRender&&dish.preventSale||preventSale?'opacity':''}} shadow-{{ifPropertyRender?dish.cssType:cssType}} {{ifPropertyRender&&customClass}}">
+        <view class="img-wrapper">
+            <image class="img" src="{{ifPropertyRender?dish.picUrl:picUrl}}" wx:if="{{ifPropertyRender?dish.picUrl:picUrl}}"></image>
+            <view class="mask-image dish-mask"></view>
+            <image class="hot-dish-tag rank-img" src="{{ifPropertyRender?dish.rank:rank}}" wx:if="{{ifPropertyRender?dish.rank:rank}}"></image>
+            <ui-hot-selling hotSellingData="{{ifPropertyRender?dish.hotSellingTag:hotSellingTag}}" wx:elif="{{ifPropertyRender?dish.hotSellingTag:hotSellingTag}}"></ui-hot-selling>
+            <ui-corner customClass="img-tag-wrapper" size="{{type==='RIGHT_LARGE'?'large':'small'}}" text="{{ifPropertyRender?dish.picTag:picTag}}" wx:elif="{{ifPropertyRender?dish.picTag:picTag}}"></ui-corner>
+            <view class="pic-label {{ifPropertyRender?dish.picLabel&&dish.picLabel.styleClass:picLabel&&picLabel.styleClass}}" wx:if="{{ifPropertyRender?dish.picLabel&&dish.picLabel.text:picLabel&&picLabel.text}}">
+                <view class="pic-label-icon" style="background-image: url('{{ifPropertyRender?dish.picLabel.icon:picLabel.icon}}')" wx:if="{{ifPropertyRender?dish.picLabel.icon:picLabel.icon}}"></view>{{ifPropertyRender?dish.picLabel.text:picLabel.text}}</view>
+        </view>
+        <view class="dish-details">
+            <view class="top-info" wx:if="{{type==='DEFAULT'||type==='SEARCH'}}">
+                <view class="name ellipsis">{{ifPropertyRender?dish.name:name}}</view>
+                <tag-list customClass="dish-tag-{{ifPropertyRender?dish.cssType:cssType}}" tagClass="dish-tags-{{ifPropertyRender?dish.cssType:cssType}} tags-margin-{{ifPropertyRender?dish.cssType:cssType}}" tagList="{{ifPropertyRender?dish.recommendTags:recommendTags}}" wx:if="{{ifPropertyRender?dish.recommendTags&&dish.recommendTags.length>0:recommendTags&&recommendTags.length>0}}"></tag-list>
+                <tag-list customClass="dish-tag-{{ifPropertyRender?dish.cssType:cssType}}" size="{{ifPropertyRender?dish.tagListSize:tagListSize}}" tagClass="dish-tags-{{ifPropertyRender?dish.cssType:cssType}} tags-margin-{{ifPropertyRender?dish.cssType:cssType}} describe-tag-list" tagList="{{ifPropertyRender?dish.dishDescribeTag:dishDescribeTag}}" wx:elif="{{ifPropertyRender?dish.dishDescribeTag&&dish.dishDescribeTag.length>0:dishDescribeTag&&dishDescribeTag.length>0}}"></tag-list>
+                <view class="dish-desc dish-sale-count ellipsis" wx:if="{{ifPropertyRender?dish.desc&&type!=='RIGHT_LARGE':desc}}">{{ifPropertyRender?dish.desc:desc}}</view>
+                <view class="dish-sale-count" wx:if="{{ifPropertyRender?dish.saleQuantity:saleQuantity}}">{{ifPropertyRender?dish.saleQuantity:saleQuantity}}</view>
+            </view>
+            <view class="top-info" wx:else>
+                <view class="name ellipsis">{{ifPropertyRender?dish.name:name}}</view>
+                <block wx:if="{{type==='SMALL'||type==='LARGE'}}">
+                    <tag-list customClass="dish-tag-{{ifPropertyRender?dish.cssType:cssType}}" tagClass="dish-tags-{{ifPropertyRender?dish.cssType:cssType}} tags-margin-{{ifPropertyRender?dish.cssType:cssType}}" tagList="{{ifPropertyRender?dish.recommendTags:recommendTags}}" wx:if="{{ifPropertyRender?dish.recommendTags&&dish.recommendTags.length>0:recommendTags}}"></tag-list>
+                    <view class="dish-sale-count" wx:elif="{{ifPropertyRender?dish.saleQuantity:saleQuantity}}">{{ifPropertyRender?dish.saleQuantity:saleQuantity}}</view>
+                    <tag-list customClass="dish-tag-{{ifPropertyRender?dish.cssType:cssType}}" size="{{ifPropertyRender?dish.tagListSize:tagListSize}}" tagClass="dish-tags-{{ifPropertyRender?dish.cssType:cssType}} tags-margin-{{ifPropertyRender?dish.cssType:cssType}} describe-tag-list" tagList="{{ifPropertyRender?dish.dishDescribeTag:dishDescribeTag}}" wx:elif="{{ifPropertyRender?dish.dishDescribeTag&&dish.dishDescribeTag.length>0:dishDescribeTag&&dishDescribeTag.length>0}}"></tag-list>
+                    <view class="dish-desc dish-sale-count ellipsis" wx:elif="{{ifPropertyRender?dish.desc:desc}}">{{ifPropertyRender?dish.desc:desc}}</view>
+                </block>
+                <view class="dish-sale-count" wx:elif="{{ifPropertyRender?dish.saleQuantity&&type!=='RECOMMEND_DEFAULT':saleQuantity&&type!=='RECOMMEND_DEFAULT'}}">{{ifPropertyRender?dish.saleQuantity:saleQuantity}}</view>
+            </view>
+            <view class="footer">
+                <block wx:if="{{type!=='SUPER_LARGE'&&type!=='RECOMMEND_LARGE'}}">
+                    <block wx:if="{{ifPropertyRender?dish.sampleTagList&&dish.sampleTagList.length:sampleTagList&&sampleTagList.length}}">
+                        <tag-list customClass="dish-tag-{{ifPropertyRender?dish.cssType:cssType}}" size="{{ifPropertyRender?dish.tagListSize:tagListSize}}" tagClass="dish-tags-{{ifPropertyRender?dish.cssType:cssType}} tags-margin-{{ifPropertyRender?dish.cssType:cssType}} describe-tag-list" tagList="{{tagListWithoutMemberPrice}}" wx:if="{{DGFStyleType===DGFStyles.CLASS1&&tagListOnlyMemberPrice.length}}"></tag-list>
+                        <block wx:elif="{{DGFStyleType===DGFStyles.CLASS3&&isLogin&&tagListOnlyMemberPrice.length}}">
+                            <tag-list customClass="dish-tag-{{ifPropertyRender?dish.cssType:cssType}}" size="{{ifPropertyRender?dish.tagListSize:tagListSize}}" tagClass="dish-tags-{{ifPropertyRender?dish.cssType:cssType}}" tagList="{{tagListOnlyMemberPrice}}"></tag-list>
+                            <tag-list customClass="dish-tag-{{ifPropertyRender?dish.cssType:cssType}}" size="{{ifPropertyRender?dish.tagListSize:tagListSize}}" tagClass="dish-tags-{{ifPropertyRender?dish.cssType:cssType}}" tagList="{{tagListWithoutMemberPrice}}"></tag-list>
+                        </block>
+                        <tag-list customClass="dish-tag-{{ifPropertyRender?dish.cssType:cssType}}" size="{{ifPropertyRender?dish.tagListSize:tagListSize}}" tagClass="dish-tags-{{ifPropertyRender?dish.cssType:cssType}}" tagList="{{ifPropertyRender?dish.sampleTagList:sampleTagList}}" wx:else></tag-list>
+                    </block>
+                    <tag-list customClass="dish-tag-{{ifPropertyRender?dish.cssType:cssType}}" size="{{ifPropertyRender?dish.tagListSize:tagListSize}}" tagClass="dish-tags-{{ifPropertyRender?dish.cssType:cssType}} describe-tag-list" tagList="{{ifPropertyRender?dish.dishDescribeTag:dishDescribeTag}}" wx:elif="{{(ifPropertyRender?dish.dishDescribeTag&&dish.dishDescribeTag.length>0:dishDescribeTag&&dishDescribeTag.length>0)&&(type==='RECOMMEND_DEFAULT'||type==='RIGHT_LARGE')}}"></tag-list>
+                    <view class="dish-desc ellipsis" wx:elif="{{(ifPropertyRender?dish.desc:desc)&&type==='RIGHT_LARGE'}}">{{ifPropertyRender?dish.desc:desc}}</view>
+                </block>
+                <view class="dish-price {{ifPropertyRender?dish.priceSmallFont:priceSmallFont?'small-font':''}}">
+                    <block wx:if="{{DGFStyleType===DGFStyles.CLASS1&&tagListOnlyMemberPrice.length}}">
+                        <view class="flex-center" wx:if="{{isLogin}}">
+                            <ui-member-price-tag-v2 bigPrice="{{true}}" dgfStyle="{{type==='RIGHT_LARGE'?'dgf-large':'dgf-small'}}" price="{{tagListOnlyMemberPrice[0].tagDesc}}" priceLabel="{{tagListOnlyMemberPrice[0].tagLabel}}" size="small"></ui-member-price-tag-v2>
+                            <view class="no-member-price large-no-member-price {{type==='RIGHT_LARGE'?'dgf-large':'dgf-small'}}">
+                                <view>非会员</view>
+                                <view class="currency" wx:if="{{!dish.hiddenCurrency}}">{{ifPropertyRender?dish.currency:currency}}</view>
+                                <view>{{ifPropertyRender?dish.originalPrice||dish.currentPrice:originalPrice||currentPrice}}</view>
+                            </view>
+                        </view>
+                        <view class="flex-center" wx:else>
+                            <view class="dish-price-info {{type==='RIGHT_LARGE'?'dish-price-info-large':'dish-price-info-small'}}" wx:if="{{ifPropertyRender?dish.currentPrice:currentPrice}}">
+                                <view class="dist-rmb" wx:if="{{!dish.hiddenCurrency}}">{{ifPropertyRender?dish.currency:currency}}</view>
+                                <view class="dist-rmb-currentPrice">{{ifPropertyRender?dish.currentPrice||dish.currentPrice:currentPrice||currentPrice}}</view>
+                                <view class="point-text" wx:if="{{dish.isPointPurchaseCategory}}">积分</view>
+                                <view class="start-unit-v2" wx:if="{{ifPropertyRender?dish.unit:unit}}">
+                                    <view class="unit-text-v2" wx:if="{{ifPropertyRender?dish.unit.text:unit.text}}">{{ifPropertyRender?dish.unit.text:unit.text}}</view>
+                                    <view class="unit-start-v2" wx:if="{{ifPropertyRender?dish.unit.start:unit.start}}">{{ifPropertyRender?dish.unit.start:unit.start}}</view>
+                                </view>
+                            </view>
+                            <view class="price-flex" wx:if="{{ifPropertyRender?dish.originalPrice&&dish.originalPrice!==dish.currentPrice:originalPrice&&originalPrice!==currentPrice}}">
+                                <view class="original-currency">{{ifPropertyRender?dish.currency:currency}}</view>
+                                <view class="original-price">{{ifPropertyRender?dish.originalPrice:originalPrice}}</view>
+                            </view>
+                            <view class="tag-list-wrap-bottom">
+                                <ui-member-price-tag-v2 dgfStyle="{{type==='RIGHT_LARGE'?'dgf-large':'dgf-small'}}" price="{{tagListOnlyMemberPrice[0].tagDesc}}" priceLabel="{{tagListOnlyMemberPrice[0].tagLabel}}" size="small"></ui-member-price-tag-v2>
+                            </view>
+                        </view>
+                    </block>
+                    <block wx:else>
+                        <view class="price-flex price-flex-baseline" wx:if="{{ifPropertyRender?dish.currentPrice:currentPrice}}">
+                            <view class="currency current-currency" wx:if="{{!dish.hiddenCurrency}}">{{ifPropertyRender?dish.currency:currency}}</view>
+                            <view class="price current-price">{{ifPropertyRender?dish.currentPrice:currentPrice}}</view>
+                            <view class="point-text" wx:if="{{dish.isPointPurchaseCategory}}">积分</view>
+                            <view class="start-unit" wx:if="{{ifPropertyRender?dish.unit:unit}}">
+                                <text class="unit-text" wx:if="{{ifPropertyRender?dish.unit.text:unit.text}}">{{ifPropertyRender?dish.unit.text:unit.text}}</text>
+                                <text class="unit-start" wx:if="{{ifPropertyRender?dish.unit.start:unit.start}}">{{ifPropertyRender?dish.unit.start:unit.start}}</text>
+                            </view>
+                        </view>
+                        <view class="price-flex" wx:if="{{ifPropertyRender?dish.originalPrice&&dish.originalPrice!==dish.currentPrice:originalPrice&&originalPrice!==currentPrice}}">
+                            <view class="original-currency">{{ifPropertyRender?dish.currency:currency}}</view>
+                            <view class="original-price">{{ifPropertyRender?dish.originalPrice:originalPrice}}</view>
+                        </view>
+                    </block>
+                </view>
+                <block wx:if="{{type==='SUPER_LARGE'||type==='RECOMMEND_LARGE'}}">
+                    <block wx:if="{{DGFStyleType===DGFStyles.CLASS1&&tagListOnlyMemberPrice.length}}"></block>
+                    <block wx:else>
+                        <tag-list customClass="dish-tag-{{ifPropertyRender?dish.cssType:cssType}}" tagClass="dish-tags-{{ifPropertyRender?dish.cssType:cssType}}" tagList="{{ifPropertyRender?dish.sampleTagList:sampleTagList}}" wx:if="{{ifPropertyRender?dish.sampleTagList&&dish.sampleTagList.length:sampleTagList&&sampleTagList.length}}"></tag-list>
+                    </block>
+                    <tag-list customClass="dish-tag-{{ifPropertyRender?dish.cssType:cssType}}" size="{{ifPropertyRender?dish.tagListSize:tagListSize}}" tagClass="dish-tags-{{ifPropertyRender?dish.cssType:cssType}} describe-tag-list" tagList="{{ifPropertyRender?dish.dishDescribeTag:dishDescribeTag}}" wx:if="{{ifPropertyRender?dish.dishDescribeTag&&dish.dishDescribeTag.length>0:dishDescribeTag&&dishDescribeTag.length}}"></tag-list>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view class="dish-pre-price-{{type}}" wx:if="{{(dish.estimatedPrice||estimatedPrice)&&(emptyCartTag&&ifPropertyRender||!ifPropertyRender)}}">
+        <pre-price estimatedPrice="{{dish.estimatedPrice||estimatedPrice}}" isFromMenuList="{{ifPropertyRender}}" type="{{type}}"></pre-price>
+    </view>
+    <view class="item-operation operation-ordered-{{dish.orderedSize||orderedSize}}" wx:if="{{type==='ORDERED'}}">
+        <view class="operation-mask"></view>
+        <view class="operation-element element-{{dish.cssType||cssType}}">
+            <slot name="operationArea"></slot>
+        </view>
+    </view>
+    <view class="item-operation operation-{{dish.cssType||cssType}}" wx:else>
+        <view class="operation-mask"></view>
+        <view class="operation-element element-{{dish.cssType||cssType}}">
+            <slot name="operationArea"></slot>
+        </view>
+    </view>
+</view>

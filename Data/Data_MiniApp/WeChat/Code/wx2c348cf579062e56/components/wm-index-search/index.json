@@ -1,0 +1,11 @@
+{
+    "component": true,
+    "usingComponents": {
+        "wm-navigator": "../../npm/wmfe/wxapp-component-navigator0_1_8/src/components/index",
+        "mprn-component": "../mprn-component/index",
+        "custom-mach-container": "../../pages/index/components/custom-mach-container/index",
+        "custom-native-container": "../../pages/index/components/custom-native-container/index",
+        "common-container": "../../npm/r2x/module-container1_1_4/lib/container/index",
+        "weapp-comp-privacy": "../../privacy/components/index"
+    }
+}

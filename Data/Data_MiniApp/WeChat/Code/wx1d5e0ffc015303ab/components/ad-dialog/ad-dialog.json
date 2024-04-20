@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "uni-transition": "/components/ad-dialog/uni-transition",
+        "ad-dialog-item": "/components/ad-dialog/ad-dialog-item",
+        "app": "/components/privacy/privacy"
+    }
+}

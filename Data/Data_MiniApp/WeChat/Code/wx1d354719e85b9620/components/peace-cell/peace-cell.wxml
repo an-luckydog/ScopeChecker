@@ -1,0 +1,19 @@
+<view catchtap="__e" class="{{['data-v-5b396626','peace-cell',center?'is__center':'',required?'is__required':'',errorMessage?'is__error':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'click',['$event'] ] ] ] ]}}">
+    <view class="{{['data-v-5b396626','peace-cell-label',required?'is__required':'']}}" style="{{$root.s0}}">
+        <block wx:if="{{label!==''}}">{{label}}</block>
+        <slot name="label" wx:else></slot>
+    </view>
+    <view class="peace-cell-value data-v-5b396626" style="{{$root.s1}}">
+        <view class="peace-cell-content data-v-5b396626">
+            <view class="peace-cell-body data-v-5b396626">
+                <block wx:if="{{value!==''}}">{{value}}</block>
+                <slot wx:else></slot>
+            </view>
+            <view catchtap="__e" class="peace-cell-right-icon data-v-5b396626" data-event-opts="{{[ [ 'tap',[ [ 'rightIconClick',['$event'] ] ] ] ]}}" wx:if="{{$slots['right-icon']}}">
+                <slot name="right-icon"></slot>
+            </view>
+            <image class="peace-cell-right-icon data-v-5b396626" src="{{$root.m0}}" style="{{$root.s2}}" wx:if="{{arrow}}"></image>
+        </view>
+        <view class="peace-cell-error data-v-5b396626" wx:if="{{errorMessage}}">{{errorMessage}}</view>
+    </view>
+</view>

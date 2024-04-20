@@ -1,0 +1,8 @@
+<view class="tip-wraper data-v-bc0cd74c" wx:if="{{showTip}}">
+    <view class="tip-text data-v-bc0cd74c">
+        <view class="data-v-bc0cd74c">点击</view>
+        <view class="tip-icon data-v-bc0cd74c"></view>
+        <view class="data-v-bc0cd74c">添加到“我的小程序”，找医生更方便</view>
+    </view>
+    <view catchtap="__e" class="tip-close data-v-bc0cd74c" data-event-opts="{{[ [ 'tap',[ [ 'closeTip',['$event'] ] ] ] ]}}"></view>
+</view>

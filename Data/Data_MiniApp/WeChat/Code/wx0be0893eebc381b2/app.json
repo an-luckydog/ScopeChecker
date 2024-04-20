@@ -1,0 +1,103 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/index/classify",
+        "pages/mine/mine",
+        "pages/mine/remind",
+        "ceshi/ceshi",
+        "pages/mine/voice",
+        "pages/maintain/maintain",
+        "pages/login/login",
+        "pages/login/login_password",
+        "pages/login/nick_name",
+        "pages/login/authorize",
+        "pages/login/authorize_end",
+        "pages/login/userHttp",
+        "pages/login/userPrivacy",
+        "pages/register/code",
+        "pages/register/register_password",
+        "pages/register/nick_name",
+        "pages/register/register_cl",
+        "pages/mine/subscribeMessage",
+        "pages/webview/index",
+        "pages/mine/agreement",
+        "answer/answer/answer",
+        "answer/wordlist/wordlist",
+        "answer/account/account",
+        "answer/answer_ss/answer",
+        "answer/wordlist_ss/wordlist",
+        "ranking/ranking",
+        "ranking/share",
+        "activity/index",
+        "activity/address",
+        "commodity/order/order_list",
+        "commodity/payResult/fail",
+        "commodity/payResult/success",
+        "commodity/index/detail",
+        "commodity/order/order_confirm",
+        "commodity/orderComponent/mail_address",
+        "commodity/order/order_details",
+        "commodity/order/orderLogistics",
+        "contact/contact",
+        "giftReport/index",
+        "giftReport/like",
+        "giftReport/otherlike",
+        "backChallenge/index",
+        "backChallenge/wordTest/question",
+        "backChallenge/testResult/fail",
+        "backChallenge/testResult/success",
+        "backChallenge/myChallenge/index",
+        "backChallenge/myChallenge/joined",
+        "backChallenge/myChallenge/share",
+        "backChallenge/invite/index",
+        "backChallenge/invite/beInvited",
+        "backChallenge/list/index",
+        "lottery/index/index",
+        "lottery/myLot/myLot",
+        "lottery/myReward/myReward",
+        "lottery/myReward/address",
+        "lottery/component/share"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "networkTimeout": {
+        "request": 5000,
+        "connectSocket": 5000,
+        "uploadFile": 5000,
+        "downloadFile": 5000
+    },
+    "subPackages": [
+        {
+            "root": "answer/"
+        },
+        {
+            "root": "ranking/"
+        },
+        {
+            "root": "activity/"
+        },
+        {
+            "root": "commodity/"
+        },
+        {
+            "root": "contact/",
+            "independent": true
+        },
+        {
+            "root": "giftReport/"
+        },
+        {
+            "root": "backChallenge/"
+        },
+        {
+            "root": "lottery/"
+        }
+    ],
+    "navigateToMiniProgramAppIdList": [
+        "wx273e7f8a66243ded"
+    ]
+}

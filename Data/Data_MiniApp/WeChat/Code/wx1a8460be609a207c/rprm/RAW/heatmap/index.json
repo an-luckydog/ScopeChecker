@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "跳转中...",
+    "enablePullDownRefresh": false,
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#ffffff",
+    "usingComponents": {
+        "titan-one-component": "/@titan/cs/oc/i"
+    },
+    "component": true
+}

@@ -1,0 +1,7 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "mip-dxdjx-inflate-coupon-modal": "/widgets/mip-dxdjx-inflate-coupon-modal/mip-dxdjx-inflate-coupon-modal"
+    }
+}

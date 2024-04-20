@@ -1,0 +1,3 @@
+<view class="bottom-bar-container {{isNativeTabbarPage?'has-native-tabbar':''}}">
+    <slot></slot>
+</view>

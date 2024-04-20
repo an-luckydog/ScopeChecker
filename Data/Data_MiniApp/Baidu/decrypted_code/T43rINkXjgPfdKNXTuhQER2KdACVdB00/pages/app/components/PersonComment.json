@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "person-comment-item": "../../../components/PersonCommentItem",
+        "game-bar-header": "../../../components/GameBarHeader"
+    },
+    "component": true
+}

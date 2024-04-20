@@ -1,0 +1,32 @@
+{
+    "component": true,
+    "usingComponents": {
+        "coupon-top": "/widgets/mip-dxdjx-product-coupon-top/mip-dxdjx-product-coupon-top",
+        "mip-doujin-carousel": "/widgets/mip-doujin-carousel/mip-doujin-carousel",
+        "mip-bdxd-product-price-info": "/widgets/mip-bdxd-product-price-info/mip-bdxd-product-price-info",
+        "mip-bdxd-product-spectifications-layer": "/widgets/mip-bdxd-product-spectifications-layer/mip-bdxd-product-spectifications-layer",
+        "mip-bdxd-product-detail-consult": "/widgets/mip-bdxd-product-detail-consult/mip-bdxd-product-detail-consult",
+        "mip-bdxd-product-bottom-bar": "/widgets/mip-bdxd-product-bottom-bar/mip-bdxd-product-bottom-bar",
+        "mip-bdxd-shop-card": "/widgets/mip-bdxd-shop-card/mip-bdxd-shop-card",
+        "mip-bdxd-gap": "/components/gap/gap",
+        "mip-bdxd-product-comment": "/widgets/mip-bdxd-product-comment/mip-bdxd-product-comment",
+        "mip-dxdjx-product-recommend": "/widgets/mip-dxdjx-product-recommend/mip-dxdjx-product-recommend",
+        "mip-dxdjx-like-list": "/widgets/mip-dxdjx-like-list/mip-dxdjx-like-list",
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "mip-sjh-live": "/widgets/mip-sjh-live/mip-sjh-live",
+        "mip-bdxd-recommend-group":"/widgets/mip-bdxd-recommend-group/mip-bdxd-recommend-group",
+        "mip-bdxd-join-group-pop-up":"/widgets/mip-bdxd-join-group-pop-up/mip-bdxd-join-group-pop-up",
+        "marquee-container": "/widgets/mip-bdxd-marquee-container/mip-bdxd-marquee-container",
+        "mip-bdxd-product-attribute-layer": "/widgets/mip-bdxd-product-attribute-layer/mip-bdxd-product-attribute-layer",
+        "anchor-navigator":"/components/anchor-navigator/anchor-navigator",
+        "float-ball":"/components/float-ball/float-ball",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "mip-dxdjx-inflate-coupon-modal": "/widgets/mip-dxdjx-inflate-coupon-modal/mip-dxdjx-inflate-coupon-modal",
+        "mip-bdxd-spu-rank": "/widgets/mip-bdxd-spu-rank/mip-bdxd-spu-rank",
+        "gt-dxdjx-h5-marketing-anchor": "/widgets/gt-dxdjx-h5-marketing-anchor/gt-dxdjx-h5-marketing-anchor",
+        "gt-dxdjx-h5-live-ball": "/widgets/gt-dxdjx-h5-live-ball/gt-dxdjx-h5-live-ball",
+        "cta-container": "/widgets/gt-dxdjx-h5-cta/gt-dxdjx-h5-cta",
+        "ug-ui": "@baidu/ug-task-supplier/dist/swan/ui",
+        "guarantee-sdk": "/widgets/mip-dxdjx-guarantee-sdk/mip-dxdjx-guarantee-sdk"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "ti-popup": "/titian-mp/RAW/popup/index"
+    },
+    "componentPlaceholder": {
+        "ti-popup": "view"
+    }
+}

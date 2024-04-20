@@ -1,0 +1,27 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F2F5F7",
+    "disableScroll": true,
+    "usingComponents": {
+        "cy-userinfo": "../../components/cy-userinfo/index",
+        "clinic-selector": "../../components/clinic-selector/clinic-selector",
+        "message-operation": "./components/message_operation/index",
+        "additional-action-block": "./components/additional_action_block/additional_action_block",
+        "link-notice-user": "./components/link_notice_user/link_notice_user",
+        "new-user-welfare-bar": "../../components/new_user_welfare_bar/index",
+        "qa-button-group": "./components/qa_button_group/qa_button_group",
+        "assess": "./components/assess/assess",
+        "title-doctor": "./components/title_doctor/title_doctor",
+        "seo-title-doctor": "./components/seo_title_doctor/seo_title_doctor",
+        "multiple-ask": "./components/multiple_ask/multiple_ask",
+        "replied-message": "./components/replied_message_container/replied_message_container",
+        "mp-html": "../../miniprogram_npm/mp-html/index",
+        "audio-message": "./components/audio/audio",
+        "feedback-card": "./components/feedback_card/feedback_card",
+        "feedback-detail": "./components/feedback_detail/feedback_detail",
+        "append-clinic": "./components/append_clinic/append_clinic",
+        "recommend-section": "./components/recommend_section/recommend_section"
+    }
+}

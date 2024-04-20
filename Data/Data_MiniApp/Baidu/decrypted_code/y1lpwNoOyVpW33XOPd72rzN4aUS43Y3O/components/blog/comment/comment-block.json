@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "comment-item": "/components/blog/comment/comment-item",
+    "comment-all": "/components/blog/comment/comment-all"
+  }
+}

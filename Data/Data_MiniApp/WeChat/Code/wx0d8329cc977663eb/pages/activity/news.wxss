@@ -1,0 +1,59 @@
+@import "../../wxParse/wxParse.wxss";
+
+page {
+    background: #f2f2f2;
+    padding-bottom: 30rpx;
+    font-family: 'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;
+}
+
+.main {
+    width: 750rpx;
+}
+
+.activityName {
+    background: #fff;
+    padding: 30rpx;
+    margin: 0 auto 20rpx auto;
+}
+
+.lineBox {
+    padding: 30rpx;
+    background: #fff;
+    border-bottom: 2rpx solid #f2f2f2;
+}
+
+image {
+    margin: 0rpx 8rpx;
+    width: 35rpx;
+    height: 35rpx;
+}
+
+.activityBody {
+    margin-bottom: 30rpx;
+}
+
+.m-t-3 {
+    margin-top: 30rpx;
+}
+
+.lineTab {
+    width: 280rpx;
+    font-size: 35rpx;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.activityIntroduce {
+    font-size: 34rpx;
+    display: inline-block;
+    font-weight: bold;
+    width: 390rpx;
+}
+
+.activityContent {
+    width: 690rpx;
+    font-size: 30rpx;
+    padding: 30rpx;
+    background: #fff;
+    border-bottom: 2rpx solid #f2f2f2;
+}

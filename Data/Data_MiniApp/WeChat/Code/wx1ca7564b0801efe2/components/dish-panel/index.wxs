@@ -1,0 +1,17 @@
+function isValid(d) {
+    return (d.status === 1)
+};
+
+function showOperation(d) {
+    var exts = d.extendList || [];
+    for (var i = 0; i < exts.length; i++) {
+        if (exts[((nt_0 = (i), null == nt_0 ? undefined : 'number' === typeof nt_0 ? nt_0 : "" + nt_0))][(0)] === "deal-dish-extend" || exts[((nt_1 = (i), null == nt_1 ? undefined : 'number' === typeof nt_1 ? nt_1 : "" + nt_1))][(0)] === "mb-dish-extend") {
+            return (false)
+        }
+    };
+    return (true)
+};
+module.exports = ({
+    isValid: isValid,
+    showOperation: showOperation,
+});

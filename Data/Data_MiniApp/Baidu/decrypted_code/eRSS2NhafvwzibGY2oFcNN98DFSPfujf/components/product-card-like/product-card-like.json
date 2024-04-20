@@ -1,0 +1,7 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "format-price": "/components/format-price/format-price"
+    }
+}

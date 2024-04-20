@@ -1,0 +1,13 @@
+{
+    "component": true,
+    "usingComponents": {
+        "LoginDialog": "/components/LoginDialog/LoginDialog",
+        "ContactButton": "/components/ContactButton/ContactButton",
+        "PrivacyPopup": "/components/PrivacyPopup/PrivacyPopup",
+        "ManagerToolkit": "/componentPacks/admin/ManagerToolkit/ManagerToolkit",
+        "SubMsgGuidePopup": "/components/SubMsgGuidePopup/SubMsgGuidePopup"
+    },
+    "componentPlaceholder": {
+        "ManagerToolkit": "view"
+    }
+}

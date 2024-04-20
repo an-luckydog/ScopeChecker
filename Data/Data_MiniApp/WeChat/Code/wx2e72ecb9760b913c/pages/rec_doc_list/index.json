@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "选医生",
+    "usingComponents": {
+        "bottom-button": "../../components/bottom-next-step-button/index"
+    }
+}

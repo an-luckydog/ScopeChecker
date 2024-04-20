@@ -1,0 +1,9 @@
+<view class="hot-zones-wrapper" style="{{compStyle}}">
+    <image class="hot-zones-img" mode="widthFix" showMenuByLongpress="true" src="{{imgUrl}}" wx:if="{{imgUrl}}"></image>
+    <view class="default-content" wx:else>
+        <view class="default-img"></view>
+    </view>
+    <view class="hot-zone-wrapper" wx:if="{{hotZonesData.length}}">
+        <view bind:tap="tapToJump" class="hot-zone-item" data-index="{{index}}" style="{{item.hotZoneStyle}}" wx:for="{{hotZonesData}}" wx:key="index"></view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "header": "../components/header/index",
+    "nav": "../components/nav/index",
+    "product": "../components/product/index",
+    "footer": "../components/footer/index"
+  }
+}

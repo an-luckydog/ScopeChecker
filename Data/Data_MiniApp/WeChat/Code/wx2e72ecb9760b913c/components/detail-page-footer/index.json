@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "cy-userinfo": "../../components/cy-userinfo/index"
+    }
+}

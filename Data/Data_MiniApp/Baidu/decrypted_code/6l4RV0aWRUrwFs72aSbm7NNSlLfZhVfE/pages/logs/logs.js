@@ -1,0 +1,1 @@
+window.define("6",function(n,o,e,t,i,a,s,g,w,u,d,r,l,f,m,c,p,C){var D=n(7);Page({data:{logs:[]},onLoad:function(){this.setData({logs:(i.getStorageSync("logs")||[]).map(function(n){return D.formatTime(new Date(n))})})}})}),window.__swanRoute="pages/logs/logs",window.usingComponents=[],window.usingPluginComponents=[],require("6");

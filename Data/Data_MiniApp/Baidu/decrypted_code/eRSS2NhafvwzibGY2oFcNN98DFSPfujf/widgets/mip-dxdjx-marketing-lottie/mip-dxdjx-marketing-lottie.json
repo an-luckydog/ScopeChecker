@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "lottie-image": "/components/lottie-image/lottie-image"
+    }
+}

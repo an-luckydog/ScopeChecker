@@ -1,0 +1,49 @@
+<template name="order-list">
+    <order-list id="{{mid}}" list="{{d.list}}"></order-list>
+</template>
+<template name="limo-layout">
+    <view class="container {{hasTabBar?'':'no-tab'}}" style="{{layoutStyle}}" wx:if="{{modules.length||dialogs.length||modal||toast}}">
+        <block wx:if="{{modules.length}}" wx:for="{{modules}}" wx:key="moduleId">
+            <view class="container-slot" style="{{item.layoutStyle}}" wx:if="{{item&&item.moduleName}}">
+                <template is="{{item.moduleName}}" data="{{mid:item.moduleId,d:item.data,modules:item.modules,layoutStyle:item.layoutStyle,extendList:item.extendList}}"></template>
+            </view>
+        </block>
+        <template is="rms-dialog" data="{{item:item,dialogs:dialogs}}" wx:if="{{dialogs.length}}" wx:for="{{dialogs}}" wx:key="moduleId"></template>
+        <view wx:if="{{modal&&(modal.title||modal.content)}}">
+            <template is="rms-modal" data="{{...modal}}"></template>
+        </view>
+        <view wx:if="{{toast&&toast.title}}">
+            <template is="rms-toast" data="{{toast:toast}}"></template>
+        </view>
+    </view>
+    <view wx:if="{{tooltip&&tooltip.text}}">
+        <template is="rms-tooltip" data="{{...tooltip}}"></template>
+    </view>
+</template>
+<template name="rms-dialog">
+    <view catchtap="onMaskTap" catchtouchmove="onMaskTouchMove" class="container-mask {{dialogs.length&&dialogs[dialogs.length-1].options.closeMask?'hidden':''}}" style="z-index:{{item.options.zIndex}};" wx:if="{{item.show}}"></view>
+    <view class="mask-item {{item.options.position}}" style="z-index:{{item.options.zIndex}};{{item.options.customStyle}}" wx:if="{{item.show}}">
+        <template is="dialog-header" data="{{...item.options.header}}" wx:if="{{item.options.header}}"></template>
+        <template is="{{item.moduleName}}" data="{{mid:item.moduleId,d:item.data}}"></template>
+    </view>
+</template>
+<template name="scroll-view">
+    <scroll-view enableFlex id="{{mid}}" scrollX="{{d.scrollX}}" scrollY="{{d.scrollY}}">
+        <template is="{{item.name}}" data="{{mid:item.id,d:item.data,modules:item.modules,layoutStyle:item.layoutStyle}}" wx:for="{{modules}}" wx:key="moduleId"></template>
+    </scroll-view>
+</template>
+<import src="../../components/core/index.wxml"></import>
+<theme-container class="theme-container" themeType="1">
+    <view class="navigator" style="height: {{navBarHeight}}px; padding-top: {{paddingTop}}px;">
+        <view class="list-title">订单列表</view>
+    </view>
+    <view class="vn-shadow" style="height: {{navBarHeight}}px;"></view>
+    <view class="container-mask loading-mask" wx:if="{{loading}}">
+        <view class="loading-pic"></view>
+    </view>
+    <common-error bind:errorButtonClick="refreshPage" btnText="{{errorInfo.btnText}}" errorTitle="{{errorInfo.errorTitle}}" wx:elif="{{errorInfo&&errorInfo.errorTitle}}"></common-error>
+    <view style="height: calc(100vh - {{navBarHeight}}px - 50px - env(safe-area-inset-bottom));" wx:else>
+        <template is="limo-layout" data="{{modules:modules,dialogs:dialogs,modal:modal,toast:toast,tooltip:tooltip,hasTabBar:hasTabBar,layoutStyle:layoutStyle}}"></template>
+    </view>
+</theme-container>
+<privacy-popup></privacy-popup>

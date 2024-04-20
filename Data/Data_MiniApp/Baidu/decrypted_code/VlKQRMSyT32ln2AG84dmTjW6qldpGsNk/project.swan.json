@@ -1,0 +1,16 @@
+{
+    "libVersion": "2.0.35",
+    "appid": "11806953",
+    "setting": {
+        "urlCheck": false
+    },
+    "compilation-args": {
+        "common": {
+            "babelSetting": {
+                "ignore": []
+            },
+            "enhance": true,
+            "imgCompress": true
+        }
+    }
+}

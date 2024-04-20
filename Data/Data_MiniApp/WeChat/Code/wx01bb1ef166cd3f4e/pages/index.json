@@ -1,0 +1,43 @@
+{
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "usingComponents": {
+        "Layout": "/components/Layout/Layout",
+        "BottomNavigation": "/components/BottomNavigation/BottomNavigation",
+        "ActionSheet": "/componentPacks/common/NativeActionSheet/ActionSheet",
+        "BulletLoading": "/components/BulletLoading/BulletLoading",
+        "LoginDialog": "/components/LoginDialog/LoginDialog",
+        "SwiperCard": "/pagePacks/index/SwiperCard/SwiperCard",
+        "RecommendHomePageBanner": "/pagePacks/index/RecommendHomePageBanner/RecommendHomePageBanner",
+        "DailyCash": "/pagePacks/index/DailyCash/DailyCash",
+        "FloatBar": "/pagePacks/index/FloatBar/FloatBar",
+        "TodaysLottery": "/pagePacks/index/TodaysLottery/TodaysLottery",
+        "UpcomingLottery": "/pagePacks/index/UpcomingLottery/UpcomingLottery",
+        "LuckySquare": "/pagePacks/index/LuckySquare/LuckySquare",
+        "RedEnvelopeCover": "/pagePacks/index/RedEnvelopeCover/RedEnvelopeCover",
+        "AddMinaBar": "/components/AddMinaBar/AddMinaBar",
+        "SquareOrderTip": "/pagePacks/index/SquareOrderTip/SquareOrderTip",
+        "ContactUs": "/pagePacks/index/ContactUs/ContactUs",
+        "RedPocket": "/pagePacks/index/RedPocket/RedPocket",
+        "SimpleRedPocket": "/pagePacks/index/SimpleRedPocket/SimpleRedPocket",
+        "IndexBannerAd": "/components/IndexBannerAd/IndexBannerAd",
+        "BigCardBg": "/pagePacks/index/BigCardBg/BigCardBg",
+        "PageError": "/components/PageError/PageError"
+    },
+    "componentPlaceholder": {
+        "BigCardBg": "view",
+        "SwiperCard": "view",
+        "RecommendHomePageBanner": "view",
+        "DailyCash": "view",
+        "UpcomingLottery": "view",
+        "RedEnvelopeCover": "view",
+        "TodaysLottery": "view",
+        "LuckySquare": "view",
+        "SquareOrderTip": "view",
+        "ContactUs": "view",
+        "FloatBar": "view",
+        "RedPocket": "view",
+        "SimpleRedPocket": "view",
+        "ActionSheet": "view"
+    }
+}

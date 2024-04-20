@@ -1,0 +1,13 @@
+{
+    "components": true,
+    "usingComponents": {
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "comment": "/components/comment-card/comment-card",
+        "optimize-image": "/components/optimize-image/optimize-image",
+        "gap":"/components/gap/gap",
+        "mip-bdxd-product-price-info": "/widgets/mip-bdxd-product-price-info/mip-bdxd-product-price-info",
+        "mip-bdxd-product-bottom-bar": "/widgets/mip-bdxd-product-bottom-bar/mip-bdxd-product-bottom-bar",
+        "mip-bdxd-product-spectifications-layer": "/widgets/mip-bdxd-product-spectifications-layer/mip-bdxd-product-spectifications-layer",
+        "basic-feed": "/widgets/mip-dxdjx-basic-feed/mip-dxdjx-basic-feed"
+    }
+}

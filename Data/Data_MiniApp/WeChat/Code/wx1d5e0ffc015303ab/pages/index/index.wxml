@@ -1,0 +1,70 @@
+<view class="index tab-height data-v-75380894">
+    <view class="data-v-75380894" style="{{'top:'+safeAreaTop+';'+'position:'+'absolute'+';'+'z-index:'+'100'+';'+'width:'+'100%'+';'+'line-height:'+safeAreaTop+';'}}">
+        <app-title bind:__l="__l" class="data-v-75380894" color="#fff" safeHeight="{{safeAreaTop}}" showLogo="{{false}}" showTitle="{{true}}" title="欢聚青啤" vueId="8dd740cc-1"></app-title>
+    </view>
+    <view class="banner-swiper data-v-75380894">
+        <swiper autoplay="{{true}}" circular="{{true}}" class="{{['data-v-75380894',dotStyle?'square-dot':'round-dot']}}" duration="500" indicatorActiveColor="{{bannerDotActiveColor}}" indicatorColor="{{bannerDotColor}}" indicatorDots="{{false}}" interval="5000">
+            <swiper-item class="{{['data-v-75380894',cardCur==index?'cur':'']}}" wx:for="{{swiperList}}" wx:key="index">
+                <view class="swiper-item data-v-75380894">
+                    <image bindtap="__e" class="{{['data-v-75380894',item.className]}}" data-event-opts="{{[ [ 'tap',[ [ 'handleJumpEvent',['$0'],[ [ ['swiperList','',index] ] ] ] ] ] ]}}" mode="widthFix" src="{{item.url}}" style="border-radius:10rpx;" wx:if="{{item.type=='image'||item.type=='video'}}"></image>
+                </view>
+            </swiper-item>
+        </swiper>
+        <view class="user-box data-v-75380894">
+            <view class="flex-xc-yc user-top data-v-75380894">
+                <view class="user-userImg data-v-75380894">
+                    <image bindtap="__e" class="avatar data-v-75380894" data-event-opts="{{[ [ 'tap',[ [ 'toModifyUserInfo',['$event'] ] ] ] ]}}" mode="widthFix" src="{{userInfo.headImgUrl||qpImgUrl+'shangchuantouxiang.png'}}"></image>
+                </view>
+                <view class="user-mes data-v-75380894">
+                    <view class="flex-xsb-yc data-v-75380894">
+                        <viw bind:__l="__l" class="user-mes-name text-overflow-ellipsis data-v-75380894" vueId="8dd740cc-2" vueSlots="{{['default']}}">{{userInfo.nickName||'微信用户'}}</viw>
+                        <viw bind:__l="__l" class="user-mes-point flex-xn-yc data-v-75380894" vueId="8dd740cc-3" vueSlots="{{['default']}}">
+                            <image class="data-v-75380894" mode="widthFix" src="{{qpImgUrl+'point1.png'}}"></image>
+                            <view class="data-v-75380894">{{'啤酒花:'+surplusVpoints}}</view>
+                        </viw>
+                    </view>
+                    <view class="user-mes-grade data-v-75380894">{{'等级：'+(vpsConsumerMemberInfo.vipName||'')+'（还差'+(vpsConsumerMemberInfo.showScanNextLev||'')+'瓶升级'}}<text class="data-v-75380894">{{vpsConsumerMemberInfo.lastVipName||''}}</text>）</view>
+                </view>
+            </view>
+            <view class="flex-xc-yc data-v-75380894">
+                <progress-bar bind:__l="__l" class="data-v-75380894" curNum="{{$root.m2}}" maxNum="{{$root.m1}}" minNum="{{$root.m0}}" vueId="8dd740cc-4"></progress-bar>
+            </view>
+        </view>
+    </view>
+    <view class="zhanwei data-v-75380894"></view>
+    <view class="main-part data-v-75380894" wx:if="{{$root.g0}}">
+        <view class="title-com data-v-75380894">
+            <main-title bind:__l="__l" class="data-v-75380894" titleName="活动专区" vueId="8dd740cc-5"></main-title>
+        </view>
+        <view class="swiper_box data-v-75380894" wx:if="{{$root.g1>0}}">
+            <swiper autoplay="{{true}}" circular="{{true}}" class="data-v-75380894" duration="{{1000}}" indicatorDots="{{false}}" interval="{{3000}}" vertical="{{true}}">
+                <swiper-item class="data-v-75380894" wx:for="{{userList}}" wx:key="index">
+                    <view class="radio data-v-75380894">
+                        <view class="data-v-75380894" style="margin-top:6rpx;width:96%;">
+                            <text class="data-v-75380894">{{''+item+''}}</text>
+                        </view>
+                    </view>
+                </swiper-item>
+            </swiper>
+        </view>
+        <act-com actLists="{{actLists}}" bind:__l="__l" class="data-v-75380894" vueId="8dd740cc-6"></act-com>
+    </view>
+    <view class="main-part data-v-75380894" wx:if="{{$root.g2}}">
+        <view class="title-com data-v-75380894">
+            <main-title bind:__l="__l" class="data-v-75380894" titleName="爆款推荐" vueId="8dd740cc-7"></main-title>
+        </view>
+        <shop-comui bind:__l="__l" class="data-v-75380894" shopLists="{{shopLists}}" source="index" vueId="8dd740cc-8"></shop-comui>
+    </view>
+    <index-a-c-t-list actList="{{shopLists}}" bind:__l="__l" class="data-v-75380894" vueId="8dd740cc-9" wx:if="{{$root.g3}}"></index-a-c-t-list>
+    <view class="main-part data-v-75380894">
+        <view class="title-com data-v-75380894">
+            <main-title bind:__l="__l" class="data-v-75380894" titleName="品牌活动" vueId="8dd740cc-10"></main-title>
+        </view>
+        <brand-act bind:__l="__l" class="data-v-75380894" vueId="8dd740cc-11"></brand-act>
+    </view>
+    <privacy bind:__l="__l" bind:unLoadPrivacy="__e" class="data-v-75380894" data-event-opts="{{[ [ '^unLoadPrivacy',[ ['e0'] ] ] ]}}" vueId="8dd740cc-12" wx:if="{{isShowPrivacy}}"></privacy>
+    <ad-dialog bind:__l="__l" bind:updateShowDialog="__e" class="data-v-75380894 vue-ref" data-event-opts="{{[ [ '^updateShowDialog',[ [ '__set_sync',['$0','showDialog_index','$event'],[''] ] ] ],[ '^updateShowDialog',[ [ '__set_sync',['$0','showDialog_index','$event'],[''] ] ] ] ]}}" data-ref="adaialog" duration="{{500}}" listData="{{adPic.adPic_4||[]}}" modeClass="{{['fade','zoom-in']}}" showDialog="{{showDialog_index}}" style="{{'display:'+(showDialog_index?'block':'none')+';'}}" vueId="8dd740cc-13"></ad-dialog>
+    <mask-coupon bind:__l="__l" class="data-v-75380894" couponNo="{{couponNo}}" vueId="8dd740cc-14"></mask-coupon>
+    <zdmkefu bind:__l="__l" class="data-v-75380894" vueId="8dd740cc-15"></zdmkefu>
+    <red-pack-money-scan bind:__l="__l" bind:handleCloseredpackPup="__e" class="data-v-75380894" data-event-opts="{{[ [ '^handleCloseredpackPup',[ ['e1'] ] ] ]}}" txMoney="{{txMoney}}" vueId="8dd740cc-16" waitActivation="{{waitActivation}}" wx:if="{{isActivation}}"></red-pack-money-scan>
+</view>

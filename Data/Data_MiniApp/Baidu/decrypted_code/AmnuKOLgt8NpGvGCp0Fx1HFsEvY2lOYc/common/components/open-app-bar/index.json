@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "open-app-bd": "../open-app-bd/index"
+    }
+}

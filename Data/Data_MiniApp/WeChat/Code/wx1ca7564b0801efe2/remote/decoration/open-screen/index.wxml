@@ -1,0 +1,6 @@
+<view class="full-screen-ad" wx:if="{{showAd&&show}}">
+    <view bindtap="close" class="operate-area">{{countdown}}s | 跳过</view>
+    <midas-report bind:moduleEvent="moduleEvent" moduleId="{{advId}}">
+        <image bind:tap="onClick" class="ad-bg" src="{{imgInfo?imgInfo.imgUrl:''}}"></image>
+    </midas-report>
+</view>

@@ -1,0 +1,8 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "m-item": "/components/form-item/form-item",
+        "address-layer": "/components/address-layer/address-layer"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "礼品卡详情",
+    "navigationStyle": "default",
+    "disableScroll": true,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

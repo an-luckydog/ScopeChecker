@@ -1,0 +1,72 @@
+<template name="operation-area">
+    <view class="op-field">
+        <view class="no-sale" wx:if="{{dish.status===DISH_STATUS.SOLD_OUT}}">{{SOLD_OUT_TEXT}}</view>
+        <view class="op-tips" wx:elif="{{dish.status===DISH_STATUS.TIME_NOT_SALE}}">{{NOT_CAN_SALE}}</view>
+        <view class="op-tips" wx:elif="{{dish.status===DISH_STATUS.CANNOT_SELECT}}"></view>
+        <block wx:elif="{{(dish.dishType===DISH_TYPE.SIMPLE_SPU||dish.dishType===DISH_TYPE.SIMPLE_COMBO||dish.dishType===DISH_TYPE.WEIGHT_SPU)&&(groupData.groupType===GROUP_TYPE.FIXED||dish.status===DISH_STATUS.SOLD_OUT||dish.status===DISH_STATUS.CANNOT_SELECT||dish.status===DISH_STATUS.TIME_NOT_SALE)}}"></block>
+        <view bindtap="addPanelSku" class="practice-btn" wx:elif="{{dish.dishType===DISH_TYPE.COMPLEX_SPU&&groupData.groupType===GROUP_TYPE.FIXED}}">{{dish.attrText||dish.desc?'修改做法':'选做法'}}</view>
+        <radio-box catch:checkRadio="checkRadio" checked="{{dish.selectedNum>0}}" wx:elif="{{groupData.groupChoiceType!==GROUP_CHOICE_TYPE.REPEATABLE}}"></radio-box>
+        <add-common bind:operationBtnClick="dishHandleFn" count="{{dish.selectedNum}}" dish="{{d.transDishType(dish)}}" preventDefault="{{true}}" wx:elif="{{groupData.groupChoiceType===GROUP_CHOICE_TYPE.REPEATABLE}}"></add-common>
+    </view>
+</template>
+<template name="one-figure-number">
+    <view class="unit-price">
+        <text class="dish-num" wx:if="{{dish.dishType!==DISH_TYPE.WEIGHT_SPU&&dish.count}}">{{dish.count}}{{dish.unit}}</text>
+        <text class="dish-num" wx:if="{{dish.dishType===DISH_TYPE.WEIGHT_SPU&&dish.weight}}">{{dish.weight}}{{dish.unit}}</text>
+        <text class="dish-price" wx:if="{{groupData.groupChoiceType===GROUP_CHOICE_TYPE.NON_REPEATABLE&&dish.curAddPrice>0}}">+¥{{dish.curAddPrice}}</text>
+        <text class="dish-price" wx:if="{{groupData.groupChoiceType===GROUP_CHOICE_TYPE.REPEATABLE&&dish.addPrice>0}}">+¥{{dish.addPrice}}</text>
+    </view>
+</template>
+<template name="multi-spec">
+    <view bindtap="clickSpecInfoFn" class="spec">
+        <text class="spec-info {{sudokuType===1?'ellipsis-two':'ellipsis-one'}}">{{dish.attrText||dish.desc}}</text>
+        <view class="base-icon icon-jiantou-you" wx:if="{{dish.selectedNum>0}}"></view>
+    </view>
+</template>
+<template name="stock">
+    <view class="inventory" wx:if="{{stockCount>0&&stockCount<10}}">还剩{{stockCount}}份</view>
+</template>
+<import src="../tag/index.wxml"></import>
+<view catchtap="clickCard" class="dish-item-common {{dish.selectedNum>0&&groupData.groupType===GROUP_TYPE.OPTIONAL?'selected':''}}" wx:if="{{sudokuType===1}}">
+    <view class="pic-field">
+        <view class="pic-wrap">
+            <image lazyLoad class="pic" src="{{dish.pic||'https://p0.meituan.net/scarlett/ca45859124838c068622a75a818b064a1640.jpg'}}"></image>
+            <template is="stock" data="{{stockCount:stockCount}}"></template>
+            <view class="required" wx:if="{{dish.required&&groupData.groupType===GROUP_TYPE.OPTIONAL}}">必选菜</view>
+        </view>
+    </view>
+    <view class="content">
+        <view class="content-wrap">
+            <view class="dish-title">{{dish.skuNameAndSpecAttr||dish.name}}<view class="tags" wx:if="{{dish.tags.length}}">
+                    <template is="tag" data="{{...item,size:'middle'}}" wx:for="{{dish.tags}}"></template>
+                </view>
+            </view>
+            <view class="tastes ellipsis-two" wx:if="{{(dish.attrText||dish.desc)&&groupData.groupType===GROUP_TYPE.FIXED}}">{{dish.attrText||dish.desc}}</view>
+            <template is="multi-spec" data="{{dish:dish,sudokuType:sudokuType}}" wx:if="{{(dish.attrText||dish.desc)&&groupData.groupType!==GROUP_TYPE.FIXED&&dish.status!==DISH_STATUS.SOLD_OUT}}"></template>
+            <template is="one-figure-number" data="{{dish:dish,groupData:groupData,DISH_TYPE:DISH_TYPE,GROUP_CHOICE_TYPE:GROUP_CHOICE_TYPE}}"></template>
+        </view>
+    </view>
+    <template is="operation-area" data="{{dish:dish,groupData:groupData,DISH_STATUS:DISH_STATUS,SOLD_OUT_TEXT:SOLD_OUT_TEXT,NOT_CAN_SALE:NOT_CAN_SALE,DISH_TYPE:DISH_TYPE,GROUP_TYPE:GROUP_TYPE,GROUP_CHOICE_TYPE:GROUP_CHOICE_TYPE}}"></template>
+</view>
+<view catchtap="clickCard" class="{{dish.selectedNum>0&&groupData.groupType===GROUP_TYPE.OPTIONAL?'selected':''}} {{pkgClassName}}" wx:else>
+    <view class="pic-field">
+        <view class="pic-wrap">
+            <image lazyLoad class="pic" src="{{dish.pic||'https://p0.meituan.net/scarlett/ca45859124838c068622a75a818b064a1640.jpg'}}"></image>
+            <template is="stock" data="{{stockCount:stockCount}}"></template>
+            <view class="required" wx:if="{{dish.required&&groupData.groupType===GROUP_TYPE.OPTIONAL}}">必选菜</view>
+        </view>
+    </view>
+    <view class="content">
+        <view class="content-wrap">
+            <view class="dish-title {{dish.attrText||dish.desc?'ellipsis-one':'ellipsis-two'}}">{{dish.skuNameAndSpecAttr||dish.name}}</view>
+            <view class="tags" wx:if="{{dish.tags.length}}">
+                <template is="tag" data="{{...item,size:'middle'}}" wx:for="{{dish.tags}}"></template>
+            </view>
+            <view class="tastes ellipsis-one" wx:if="{{(dish.attrText||dish.desc)&&groupData.groupType===GROUP_TYPE.FIXED}}">{{dish.attrText||dish.desc}}</view>
+            <template is="multi-spec" data="{{dish:dish,sudokuType:sudokuType}}" wx:if="{{(dish.attrText||dish.desc)&&groupData.groupType!==GROUP_TYPE.FIXED&&dish.status!==DISH_STATUS.SOLD_OUT}}"></template>
+            <template is="one-figure-number" data="{{dish:dish,groupData:groupData,DISH_TYPE:DISH_TYPE,GROUP_CHOICE_TYPE:GROUP_CHOICE_TYPE}}"></template>
+        </view>
+    </view>
+    <template is="operation-area" data="{{dish:dish,groupData:groupData,DISH_STATUS:DISH_STATUS,SOLD_OUT_TEXT:SOLD_OUT_TEXT,NOT_CAN_SALE:NOT_CAN_SALE,DISH_TYPE:DISH_TYPE,GROUP_TYPE:GROUP_TYPE,GROUP_CHOICE_TYPE:GROUP_CHOICE_TYPE}}"></template>
+</view>
+<wxs module="d" src="index.wxs" />

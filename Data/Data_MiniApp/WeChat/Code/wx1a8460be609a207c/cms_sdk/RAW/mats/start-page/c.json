@@ -1,0 +1,10 @@
+{
+    "componentPlaceholder": {
+        "CMSSDKIMEntry": "c_x21dv6lwo1d71"
+    },
+    "component": true,
+    "usingComponents": {
+        "CMSSDKIMEntry": "/cms_sdk_extension_package/RAW/mats/im-entry/c",
+        "c_x21dv6lwo1d71": "/@titan/cs/ph/i"
+    }
+}

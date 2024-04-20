@@ -1,0 +1,13 @@
+{
+    "usingComponents": {
+        "game-detail-desc": "./GameDetailDesc",
+        "game-detail-games-grid": "./GameDetailGamesGrid",
+        "tieba-card": "./TiebaCard",
+        "mod-line": "./ModLine",
+        "game-detail-basic-card": "./GameDetailBasicCard",
+        "game-detail-video-module": "./GameDetailVideoModule",
+        "game-bar-header": "./GameBarHeader",
+        "game-strategy-module": "./GameStrategyModule"
+    },
+    "component": true
+}

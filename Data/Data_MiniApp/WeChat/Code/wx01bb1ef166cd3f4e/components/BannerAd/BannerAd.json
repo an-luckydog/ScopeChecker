@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "KefuBox": "/componentPacks/kefu/KefuBox/KefuBox",
+        "MinaNavigator": "/components/MinaNavigator/MinaNavigator"
+    },
+    "componentPlaceholder": {
+        "KefuBox": "view"
+    }
+}

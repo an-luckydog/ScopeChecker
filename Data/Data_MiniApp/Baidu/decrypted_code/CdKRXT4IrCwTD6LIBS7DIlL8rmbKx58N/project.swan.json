@@ -1,0 +1,592 @@
+{
+    "disableUploadStaticScan": true,
+    "appInfo": {
+        "app_key": "CdKRXT4IrCwTD6LIBS7DIlL8rmbKx58N",
+        "app_name": "携程旅行",
+        "app_photo": "https://b.bdstatic.com/searchbox/mappconsole/image/20180404/1522832851129207.png",
+        "domains": {
+            "downloadFile": [
+                "https://vbooking.ctrip.com",
+                "https://mm.ctrip.com",
+                "https://dimg09.c-ctrip.com",
+                "https://m.ctrip.com",
+                "https://yunhai.ctrip.com",
+                "https://wx.qlogo.cn",
+                "https://images4.c-ctrip.com",
+                "https://pic.c-ctrip.com",
+                "https://dimg11.c-ctrip.com",
+                "https://images3.c-ctrip.com",
+                "https://dimg04.c-ctrip.com",
+                "https://pages.c-ctrip.com",
+                "https://pages.ctrip.com",
+                "https://dimg02.c-ctrip.com"
+            ],
+            "request": [
+                "https://mm.ctrip.com",
+                "https://accounts.ctrip.com",
+                "https://api.map.baidu.com",
+                "https://m.tieyou.com",
+                "https://m.ctrip.com",
+                "https://gateway.secure.ctrip.com",
+                "https://s.c-ctrip.com",
+                "https://ditu.google.cn",
+                "https://passport.ctrip.com",
+                "https://ic.ctrip.com",
+                "https://ic.ctrip.uat.qa.nt.ctripcorp.com",
+                "https://gateway.m.uat.qa.nt.ctripcorp.com",
+                "https://trains.ctrip.com"
+            ],
+            "socket": [
+                "wss://ws.i-ctrip.com",
+                "wss://socketio.ctrip.com"
+            ],
+            "uploadFile": [
+                "https://mm.ctrip.com"
+            ]
+        },
+        "fullPackageMaxSize": 8388608,
+        "isExistsPackage": false,
+        "isTp": false,
+        "mainPackageMaxSize": 2097152,
+        "needWeb": true,
+        "subPackageMaxSize": 2097152,
+        "tpAppId": null,
+        "webAction": [
+            "swan/navigateTo",
+            "swan/navigateBack",
+            "swan/switchTab",
+            "swan/reLaunch",
+            "swan/redirectTo",
+            "swan/postMessage",
+            "swan/previewImage",
+            "swan/getLocation"
+        ],
+        "webview_domains": [
+            "https://smarket.ctrip.com",
+            "https://m.ctrip.com",
+            "https://webresource.c-ctrip.com",
+            "https://accounts.ctrip.com",
+            "https://secure.ctrip.com",
+            "https://trains.ctrip.com",
+            "https://pages.ctrip.com",
+            "https://wx.tenpay.com"
+        ]
+    },
+    "appid": "11048657",
+    "appkey": "CdKRXT4IrCwTD6LIBS7DIlL8rmbKx58N",
+    "cloudTesting": {
+        "forcePreview": false
+    },
+    "compilation-args": {
+        "common": {
+            "babelSetting": {
+                "ignore": []
+            },
+            "enhance": true,
+            "useStrict": false
+        },
+        "options": [
+            {
+                "editable": true,
+                "extra": {
+                    "compilationArgs": "--module cmd",
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/dingzhi/indexstep2/indexstep2",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 0,
+                "name": "indexstep2",
+                "text": "indexstep2"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {
+                        "orderId": 9118255494
+                    },
+                    "index": "pages/dingzhi/index/index",
+                    "query": "orderId=9118255494",
+                    "scene": {}
+                },
+                "id": 1,
+                "text": "demandsuccess"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/dingzhi/orderdetail/orderdetail",
+                    "query": "orderId=9129916599&__navigator=7",
+                    "scene": {}
+                },
+                "id": 2,
+                "text": "订单详情"
+            },
+            {
+                "editable": true,
+                "extra": {
+                    "compilationArgs": "--module cmd",
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/hotel/booking/thirdbook",
+                    "query": "hotelid=8569357&cityid=10&roomid=175341160&paytype=2&outdate=2019-07-26&indate=2019-07-25&shadowid=0&ceckid=0&rateid=&allianceid=123&sid=456&sourceid=789&ouid=111",
+                    "scene": {}
+                },
+                "id": 3,
+                "name": "\b酒店第三方填写页",
+                "text": "\b酒店第三方填写页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/train/booking/booking/booking",
+                    "query": "dstation=%E6%9D%BE%E6%B1%9F%E5%8D%97&astation=%E4%B8%8A%E6%B5%B7%E8%99%B9%E6%A1%A5&ddate=2018-10-02&trainname=K751&seat=%E4%BA%8C%E7%AD%89%E5%BA%A7",
+                    "scene": {}
+                },
+                "id": 4,
+                "text": "订单填写页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/train/booking/oldPackage/package",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 5,
+                "text": "package"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/tripshoot/detail/detail",
+                    "query": "articleId=6545913",
+                    "scene": {}
+                },
+                "id": 6,
+                "text": "旅拍详情页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/gs/sight/detail",
+                    "query": "sightId=13607",
+                    "scene": {}
+                },
+                "id": 7,
+                "text": "货架"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/gs/sight/list",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 8,
+                "text": "攻略列表"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module amd",
+                    "ext": {},
+                    "index": "pages/gs/food/resDetail/resDetail",
+                    "query": "districtId=2&resId=16093660",
+                    "scene": {}
+                },
+                "id": 9,
+                "text": "餐馆详情"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module amd",
+                    "ext": {},
+                    "index": "pages/gs/food/specialFood/specialFood",
+                    "query": "districtId=2&foodId=7765430&destFoodId=3522",
+                    "scene": {}
+                },
+                "id": 10,
+                "text": "美食特色菜"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module amd",
+                    "ext": {},
+                    "index": "pages/gs/food/homeList/homeList",
+                    "query": "districtId=2",
+                    "scene": {}
+                },
+                "id": 11,
+                "text": "美食首页"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module amd",
+                    "ext": {},
+                    "index": "pages/tripshoot/webview/webview",
+                    "query": "data=%7B%22url%22%3A%22https%3A%2F%2Fm.ctrip.com%2Fwebapp%2Fyou%2Ftripshoot%2Fpaipai%2Fcomment%2FpriseList%3FisHideNavBar%3DYES%26seo%3D0%26isBaidu%3D1%26articleId%3D6042677%22%2C%22needLogin%22%3Afalse%2C%22isNavigate%22%3Atrue%2C%22loginErrorUrl%22%3A%22https%3A%2F%2Fm.ctrip.com%2Fwebapp%2Fyou%2Ftripshoot%2Fpaipai%2Fcomment%2FpriseList%3FisHideNavBar%3DYES%26seo%3D0%26isBaidu%3D1%26articleId%3D6042677%22%7D",
+                    "scene": {}
+                },
+                "id": 12,
+                "text": "demo"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module amd",
+                    "ext": {},
+                    "index": "pages/gs/food/resDetail/resDetail",
+                    "query": "data={\"needLogin\":true,\"isNavigate\":false,\"loginErrorUrl\":\"https%3A%2F%2Fm.ctrip.com%2Fwebapp%2Fyou%2Ffoods%2F2%2F12514436.html\"}&url=https%3A%2F%2Fm.ctrip.com%2Fwebapp%2Fyou%2Ffoods%2F2%2F12514436.html",
+                    "scene": {}
+                },
+                "id": 13,
+                "text": "登录test详情"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module amd",
+                    "ext": {},
+                    "index": "pages/home/homepage",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 14,
+                "text": "pages/home/homepage"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module amd",
+                    "ext": {},
+                    "index": "pages/ticket/home/home",
+                    "query": "",
+                    "scene": {}
+                },
+                "id": 15,
+                "text": "pages/ticket/home/home"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module amd",
+                    "ext": {},
+                    "index": "cwx/component/cwebview/cwebview",
+                    "query": "data={\"url\":\"https%3A%2F%2Fcontents.ctrip.com%2Fbuildingblocksweb%2Fspecial%2Fmembershipcard%2FMedical.html%3Fpopup%3Dclose%26ishidenavbar%3Dyes\",\"needLogin\":true,\"isNavigate\":false,\"loginErrorUrl\":\"https://m.ctrip.com/html5/\",\"pageId\":\"100032323\",\"shareData\":{\"bu\":\"bbz\",\"title\":\"shareData_title_111\",\"path\":\"https://smartprogram.baidu.com/docs/develop/api/show/navigationbar_swan-setNavigationBarColor/\",\"imageUrl\":\"https://images3.c-ctrip.com/marketing/2020/02/hw_quickapp_card/applyVisa.png\",\"desc\":\"shareData_desc_222\",\"customer\":null,\"noWebUrl\":false},\"wsg\":\"wsg_showUrlError_333\",\"isShareWebUrl\":false,\"noForceLogin\":false,\"loadingTitle\":\"loadingTitle_444\",\"loadingDuration\":10000,\"pageTitle\":{\"title\":\"pageTitle_555\",\"color\":{\"frontColor\":\"#000000\",\"backgroundColor\":\"#AAAAAA\"},\"loading\":true}}",
+                    "scene": {}
+                },
+                "id": 16,
+                "text": "cwx/component/cwebview/cwebview"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module amd",
+                    "ext": {},
+                    "index": "pages/gs/food/list/list",
+                    "query": "id=2",
+                    "scene": {}
+                },
+                "id": 17,
+                "text": "美食林大榜单"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/dingzhi/orderdetail/orderdetail",
+                    "query": "orderid=1",
+                    "scene": {}
+                },
+                "id": 18,
+                "text": "pages/dingzhi/orderdetail/orderdetail"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/tripshoot/detail/detail",
+                    "isPrefetch": false,
+                    "query": "articleId=7771525",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 19,
+                "text": "pages/tripshoot/detail/detail"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module amd",
+                    "ext": {},
+                    "index": "pages/tripshoot/pages/feeds/feeds",
+                    "isPrefetch": false,
+                    "query": "articleId=8494492",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 20,
+                "text": "feeds页面"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--is-opti-amd --module amd",
+                    "ext": {},
+                    "index": "pages/tripshoot/pages/feeds/feeds",
+                    "query": "articleId=9387909",
+                    "scene": {}
+                },
+                "id": 21,
+                "text": "feeds页面"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/you/lvpai/detail/detail",
+                    "query": "articleId=7596197",
+                    "scene": {}
+                },
+                "id": 22,
+                "text": "pages/you/lvpai/detail/detail"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/tripshoot/pages/feeds/feeds",
+                    "query": "articleId=7596197",
+                    "scene": {},
+                    "singleArgs": null
+                },
+                "id": 23,
+                "text": "pages/tripshoot/pages/feeds/feeds"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "cwx/component/country/country",
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 24,
+                "text": "cwx/component/country/country"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/tripshoot/webview/webview",
+                    "query": "data={\"url\":\"https://m.uat.qa.nt.ctripcorp.com/webapp/you/travelshoot/starBall/indexPage?isHideNavBar=yes&pop=close&autoawaken=close&clientAuth=B142D09CB087F9CB7A72493C39B9BEDD&from=https%3A%2F%2Fm.uat.qa.nt.ctripcorp.com%2Fwebapp%2Fplanet%2Fhome.html%3Fseo%3D0%26ishidenavebar%3Dyes\",\"needLogin\":false,\"isNavigate\":true}",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 25,
+                "text": "pages/tripshoot/webview/webview"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "cwx/component/cwebview/cwebview",
+                    "isPrefetch": false,
+                    "query": "data={\"url\":\"https%3A%2F%2Fm.uat.qa.nt.ctripcorp.com%2Fwebapp%2Fyou%2Ftravelshoot%2FstarBall%2FindexPage%3FisHideNavBar%3Dyes%26pop%3Dclose%26autoawaken%3Dclose%26clientAuth%3DB142D09CB087F9CB7A72493C39B9BEDD%26from%3Dhttps%253A%252F%252Fm.uat.qa.nt.ctripcorp.com%252Fwebapp%252Fplanet%252Fhome.html%253Fseo%253D0%2526ishidenavebar%253Dyes\",\"needLogin\":false,\"isNavigate\":true}",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 26,
+                "text": "cwx/component/cwebview/cwebview"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/tripshoot/webview/webview",
+                    "isPrefetch": false,
+                    "query": "data={\"url\":\"https%3A%2F%2Fm.uat.qa.nt.ctripcorp.com%2Fwebapp%2Fyou%2Ftravelshoot%2FstarBall%2FindexPage%3FisHideNavBar%3Dyes%26pop%3Dclose%26autoawaken%3Dclose%26clientAuth%3DB142D09CB087F9CB7A72493C39B9BEDD%26from%3Dhttps%253A%252F%252Fm.uat.qa.nt.ctripcorp.com%252Fwebapp%252Fplanet%252Fhome.html%253Fseo%253D0%2526ishidenavebar%253Dyes\",\"needLogin\":false,\"isNavigate\":true}",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 27,
+                "text": "pages/tripshoot/webview/webview"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/tripshoot/pages/feeds/feeds",
+                    "isPrefetch": false,
+                    "query": "articleId=10361409&adv=1",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 28,
+                "text": "pages/tripshoot/pages/feeds/feeds"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/tripshoot/pages/feeds/feeds",
+                    "isPrefetch": false,
+                    "query": "articleId=9078748",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 30,
+                "text": "pages/tripshoot/pages/feeds/feeds"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/tripshoot/pages/feeds/feeds",
+                    "isPrefetch": false,
+                    "query": "articleId=9632535",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 31,
+                "text": "pages/tripshoot/pages/feeds/feeds"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/tripshoot/pages/feeds/feeds",
+                    "isPrefetch": false,
+                    "query": "articleId=9632710&adv=0",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 32,
+                "text": "pages/tripshoot/pages/feeds/feeds"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--is-opti-amd --module amd",
+                    "ext": {},
+                    "index": "pages/tripshoot/pages/feeds/feeds",
+                    "isPrefetch": false,
+                    "query": "articleId=9632386&a=1",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 33,
+                "text": "pages/tripshoot/pages/feeds/feeds"
+            },
+            {
+                "extra": {
+                    "compileArgs": "--module cmd",
+                    "ext": {},
+                    "index": "pages/dingzhi/home/homepage",
+                    "isPrefetch": false,
+                    "query": "",
+                    "scene": {},
+                    "single": false,
+                    "singleArgs": null
+                },
+                "id": 34,
+                "text": "pages/dingzhi/home/homepage"
+            }
+        ],
+        "selected": -1
+    },
+    "compileType": "smartprogram",
+    "condition": {
+        "swan": {
+            "current": -1,
+            "dependencyGraph": false,
+            "list": [
+                {
+                    "id": "-1",
+                    "name": "dingzhiinde",
+                    "pathName": "pages/dingzhi/index/index",
+                    "query": ""
+                },
+                {
+                    "dependencyGraph": true,
+                    "name": "orderlist",
+                    "pathName": "pages/dingzhi/orderlist/orderlist",
+                    "query": ""
+                },
+                {
+                    "dependencyGraph": false,
+                    "name": "gs-webview",
+                    "pathName": "pages/gs/web/web",
+                    "query": "pageId=10650002679&h5Url=http%3A%2F%2Fm.ctrip.com%2Fwebapp%2Fyou%2Foperations%2Fglobalsearch.html%3Fkeyword%3D%E6%BE%B3%E9%97%A8%26twojumpwakeup%3D1%26popup%3Dclose%26autoawaken%3Dclose%26ishideheader%3D1",
+                    "scene": ""
+                },
+                {
+                    "dependencyGraph": false,
+                    "name": "thirdbooking",
+                    "pathName": "pages/hotel/booking/thirdbook",
+                    "query": "hotelid=2388618&cityid=7&roomid=249598074&paytype=2&outdate=2018-12-28&indate=2018-12-27&shadowid=0&ceckid=&rateid=&allianceid=123&sid=456&sourceid=789&ouid=111",
+                    "scene": ""
+                },
+                {
+                    "dependencyGraph": false,
+                    "name": "fk",
+                    "pathName": "pages/hotel/detail/index",
+                    "query": "id=436187",
+                    "scene": ""
+                },
+                {
+                    "dependencyGraph": true,
+                    "name": "汽车票列表",
+                    "pathName": "pages/bus/list/list",
+                    "query": "fromCity=北京&toCity=保定&date=2019-1-29&allianceid=986807&sid=1599029",
+                    "scene": ""
+                }
+            ]
+        }
+    },
+    "developType": "normal",
+    "editor": {
+        "curPath": "",
+        "expands": [],
+        "markdownUploadTimeMap": {},
+        "paths": [],
+        "recentlyFiles": []
+    },
+    "host": "baiduboxapp",
+    "libVersion": "3.15.146",
+    "minSwanVersion": "3.20.46",
+    "name": "baidu",
+    "preview": {
+        "packageId": 1174303
+    },
+    "project-info": {
+        "urlCheck": false
+    },
+    "projectname": "baidu",
+    "publish": {
+        "tips": [
+            "小程序包内容将被百度解析和收录，用于内容的风险控制。",
+            "您已开通分享web化，请确保分享web化体验无问题后，再进行发布。"
+        ],
+        "version": "1.1.143"
+    },
+    "setting": {
+        "urlCheck": false
+    },
+    "swan": {
+        "baiduboxapp": {
+            "swanJsVersion": "3.500.9",
+            "extensionJsVersion": "1.21.2"
+        }
+    },
+    "swanList": ""
+}

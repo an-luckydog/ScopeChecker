@@ -1,0 +1,9 @@
+<view class="{{['avtive-red-wait','flex-xc-yc',isBigScreen?'':'smallScreen']}}">
+    <view>
+        <red-pack-money-scan-wait-item bind:__l="__l" bind:toWaitWinningRecordRule="__e" data-event-opts="{{[ [ '^toWaitWinningRecordRule',[ ['toWaitWinningRecordRule'] ] ] ]}}" vueId="7c33cbe4-1"></red-pack-money-scan-wait-item>
+        <view class="flex-xc-yc">
+            <view bindtap="__e" class="avtive-red-wait-but1" data-event-opts="{{[ [ 'tap',[ [ 'toWaitWinningRecordRule',['$event'] ] ] ] ]}}">查看激活产品</view>
+            <view bindtap="__e" class="avtive-red-wait-but2" data-event-opts="{{[ [ 'tap',[ [ 'toScan',['$event'] ] ] ] ]}}">扫码激活</view>
+        </view>
+    </view>
+</view>

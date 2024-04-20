@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents":{
+    "pic-filter":"../../list/component/list_content_huangye2/component/picFilter/picFilter"
+  }
+}

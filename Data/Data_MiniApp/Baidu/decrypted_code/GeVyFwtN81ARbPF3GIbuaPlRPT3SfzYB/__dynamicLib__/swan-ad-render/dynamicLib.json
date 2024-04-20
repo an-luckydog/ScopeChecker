@@ -1,0 +1,10 @@
+{
+    "name": "swan-ad-render",
+    "publicComponents": {
+        "swan-ad-render": {
+            "path": "components/swan-ad-render/swan-ad-render",
+            "isSwanComponent": true
+        }
+    },
+    "main": "index.js"
+}

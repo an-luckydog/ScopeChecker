@@ -1,0 +1,6 @@
+problem_file_path,problem_function_name,problem_api,occurrences_in_frontend
+otherPagesCommon.js,{'created'},chooseImage,0
+otherPagesCommon.js,{'chooseImage'},chooseImage,0
+otherPagesCommon.js,{'loginFail'},chooseImage,0
+otherPagesCommon.js,{'bindInput'},chooseImage,0
+otherPagesCommon.js,{'chooseImage'},chooseImage,0

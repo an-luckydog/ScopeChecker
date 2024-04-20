@@ -1,0 +1,11 @@
+{
+    "navigationBarTitleText": "微信授权登录",
+    "disableScroll": true,
+    "usingComponents": {
+        "mprn-component": "../../components/mprn-component/index",
+        "custom-mach-container": "../index/components/custom-mach-container/index",
+        "custom-native-container": "../index/components/custom-native-container/index",
+        "common-container": "../../npm/r2x/module-container1_1_4/lib/container/index",
+        "weapp-comp-privacy": "../../privacy/components/index"
+    }
+}

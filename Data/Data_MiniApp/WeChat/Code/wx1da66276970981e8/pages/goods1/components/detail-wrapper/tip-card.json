@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-section": "../../../../components/c-section/c-section"
+    }
+}

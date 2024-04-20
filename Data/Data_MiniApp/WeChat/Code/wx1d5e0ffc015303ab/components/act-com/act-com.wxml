@@ -1,0 +1,3 @@
+<view class="act-box flex-xsb-ym data-v-b644dcdc">
+    <image bindtap="__e" class="data-v-b644dcdc" data-event-opts="{{[ [ 'tap',[ [ 'actJumpEvent',['$0'],[ [ ['actLists','picUrl',item.picUrl] ] ] ] ] ] ]}}" mode="widthFix" src="{{item.picUrl}}" wx:for="{{actLists}}" wx:key="picUrl"></image>
+</view>

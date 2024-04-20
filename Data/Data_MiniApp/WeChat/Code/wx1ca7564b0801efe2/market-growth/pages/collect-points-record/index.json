@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "集点明细",
+    "navigationBarTitleText": "集点明细",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

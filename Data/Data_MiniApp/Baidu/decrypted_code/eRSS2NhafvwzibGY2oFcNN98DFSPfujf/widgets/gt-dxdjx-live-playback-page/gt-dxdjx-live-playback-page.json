@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "mip-bdxd-product-spectifications-layer": "/widgets/mip-bdxd-product-spectifications-layer/mip-bdxd-product-spectifications-layer",
+        "optimize-image": "/components/optimize-image/optimize-image"
+    }
+}

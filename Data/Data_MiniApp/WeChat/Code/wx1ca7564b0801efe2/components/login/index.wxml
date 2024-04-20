@@ -1,0 +1,9 @@
+<template name="phone-number-no-quota-modal">
+    <phone-number-no-quota-modal id="{{mid}}" modalName="{{d.modalName}}"></phone-number-no-quota-modal>
+</template>
+<template name="login-modal">
+    <login-modal agreementDesc="{{d.agreementDesc}}" agreementList="{{d.agreementList}}" commonHeaders="{{d.commonHeaders}}" defaultLoginType="{{d.defaultLoginType}}" enableAutoFocus="{{d.enableAutoFocus}}" enabledLoginType="{{d.enabledLoginType}}" extraEventParams="{{d.extraEventParams}}" extraLoginParams="{{d.extraLoginParams}}" hasAgreed="{{d.hasAgreed}}" id="{{mid}}" modalName="{{d.modalName}}" revokeEventsName="{{d.revokeEventsName}}" useRevoke="{{d.useRevoke}}"></login-modal>
+</template>
+<template name="universal-login">
+    <universal-login agreementDesc="{{d.agreementDesc}}" agreementHeaders="{{d.agreementHeaders}}" agreementList="{{d.agreementList}}" agreementParams="{{d.agreementParams}}" authButtonClassName="{{d.authButtonClassName}}" commonHeaders="{{d.commonHeaders}}" defaultLoginType="{{d.defaultLoginType}}" enableAgreementDialog="{{d.enableAgreementDialog}}" enableAutoFocus="{{d.enableAutoFocus}}" enabledLoginType="{{d.enabledLoginType}}" extraEventParams="{{d.extraEventParams}}" extraLoginParams="{{d.extraLoginParams}}" hasAgreed="{{d.hasAgreed}}" id="{{mid}}" isDialog="{{d.isDialog}}" layout="{{d.layout}}" location="{{d.location}}" loginStatus="{{d.loginStatus}}" loginStyle="{{d.loginStyle}}" loginText="{{d.loginText}}" revokePrefix="{{d.revokePrefix}}" shopRegisterRedirectPath="{{d.shopRegisterRedirectPath}}" showOuterAgreement="{{d.showOuterAgreement}}" useNewAuthVersion="{{d.useNewAuthVersion}}" useRevoke="{{d.useRevoke}}" yodaOptions="{{d.yodaOptions}}"></universal-login>
+</template>

@@ -1,0 +1,10 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "gap":"/components/gap/gap",
+        "gt-dxdjx-h5-navigation":"/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "mip-bdxd-negotiate-history-card":"/widgets/mip-bdxd-negotiate-history-card/mip-bdxd-negotiate-history-card",
+        "login": "/components/login/login"
+    }
+}

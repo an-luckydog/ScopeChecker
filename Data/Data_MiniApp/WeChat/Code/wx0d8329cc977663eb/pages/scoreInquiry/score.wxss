@@ -1,0 +1,87 @@
+.aRow {
+    padding: 20rpx;
+    margin: 15rpx 20rpx;
+    font-size: 15px;
+    border: 1px solid #6CB7F4;
+    border-radius: 4px;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.05);
+}
+
+.activityRow {
+    margin-top: 15rpx;
+    padding: 10rpx 5rpx 10rpx 15rpx;
+    font-size: 30rpx;
+    box-shadow: 0 1px 0 rgba(0,0,0,.05);
+}
+
+.activityName {
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.activityIdentity {
+    overflow: hidden;
+    margin-top: 10rpx;
+    color: #9a9a9a;
+}
+
+.activityLevel {
+    float: right;
+    font-weight: normal;
+    margin-left: 30rpx;
+}
+
+.activityScore {
+    float: right;
+    margin-left: 30rpx;
+}
+
+.section {
+    position: relative;
+    font-size: 32rpx;
+    color: #6CB7F4;
+    font-weight: bold;
+}
+
+.down {
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    right: 60rpx;
+    top: 11px;
+}
+
+.picker {
+    box-shadow: none;
+}
+
+.search {
+    background: #6CB7F4;
+    color: #fff;
+    font-size: 32rpx;
+    padding: 0;
+}
+
+.search:active {
+    background: rgb(123,177,238);
+    color: #fff;
+    font-size: 18px;
+    padding: 0;
+}
+
+.sixCategory {
+    font-size: 32rpx;
+    color: #6CB7F4;
+    font-weight: bold;
+}
+
+.emptyShow {
+    padding-left: 0.5rem;
+    padding-top: 15rpx;
+    color: #c2c2c2;
+}
+
+.joinActivityBox {
+    margin-top: 15rpx;
+    border-top: 1px solid rgb(132,198,252);
+}

@@ -1,0 +1,18 @@
+<block wx:if="{{couponStyle&&couponStyle.couponAssistantSwitch}}">
+    <coupon-assistant-swiper bind:checkMore="onCouponAssistantCheckMore" bind:loadMore="onCouponAssistantLoadMore" bind:useCoupon="onUseCoupon" couponStyle="{{couponStyle}}" wx:if="{{couponStyle.position==='top_banner'}}"></coupon-assistant-swiper>
+</block>
+<block wx:else>
+    <view class="groupon-coupon-container" wx:if="{{couponList&&couponList.length>0}}">
+        <view class="groupon-coupon-tip">
+            <view class="edge"></view>
+            <view class="title">{{mtUserName?mtUserName+'在本店的团购券':'团购券'}}</view>
+            <image bindtap="showCouponPopTip" class="prompt" src="https://p1.meituan.net/travelcube/d3ffe378bff35a84824beaf189c7da6b838.png@22w_22h_80q"></image>
+            <view class="groupon-coupon-poptip" wx:if="{{showGroupCouponTips}}">识别到该手机号下可用的美团APP、大众点评APP团购券</view>
+        </view>
+        <view class="deal-coupon-swiper-wrap">
+            <view class="deal-coupon-swiper">
+                <groupon-coupon-item catch:cancelGrouponCoupon="cancelGrouponCouponEvent" catch:useGrouponCoupon="useGrouponCouponEvent" coupon="{{coupon}}" wx:for="{{couponList}}" wx:for-item="coupon" wx:key="skuId"></groupon-coupon-item>
+            </view>
+        </view>
+    </view>
+</block>

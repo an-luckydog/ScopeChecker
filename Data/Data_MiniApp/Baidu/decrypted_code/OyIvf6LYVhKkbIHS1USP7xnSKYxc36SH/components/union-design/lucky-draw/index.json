@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "scratch-card": "../scratchCard/index",
+        "draw-dialog": "../dialog/index"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "我的订单",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 0,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

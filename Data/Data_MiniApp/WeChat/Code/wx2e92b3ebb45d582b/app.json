@@ -1,0 +1,77 @@
+{
+    "pages": [
+        "modules/mmcover/pages/index/index",
+        "modules/mmcover/pages/detail/detail",
+        "modules/mmcover/pages/calendar/calendar",
+        "modules/mmcover/pages/upload/upload",
+        "modules/mmcover/pages/receiveall/receiveall",
+        "modules/x/webcontainer/webcontainer",
+        "launch/launch",
+        "__wx__/functional-page",
+        "__wx__/open-api-redirecting-page",
+        "__wx__/choose-wifi-credential-page"
+    ],
+    "window": {
+        "backgroundColor": "#f8f8f8",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "红包封面闹钟",
+        "navigationBarTextStyle": "black"
+    },
+    "networkTimeout": {
+        "request": 10000
+    },
+    "subPackages": [
+        {
+            "root": "modules/x/webcontainer/",
+            "name": "wcontainer",
+            "independent": false,
+            "pages": [
+                "modules/x/webcontainer/webcontainer"
+            ]
+        },
+        {
+            "root": "launch/",
+            "name": "launch",
+            "independent": false,
+            "pages": [
+                "launch/launch"
+            ]
+        },
+        {
+            "root": "/__wx__/",
+            "pages": [
+                "__wx__/functional-page",
+                "__wx__/open-api-redirecting-page",
+                "__wx__/choose-wifi-credential-page"
+            ]
+        }
+    ]
+}es.html",
+    "subPackages": [
+        {
+            "root": "modules/x/webcontainer/",
+            "name": "wcontainer",
+            "pages": [
+                "webcontainer"
+            ],
+            "independent": false
+        },
+        {
+            "root": "launch/",
+            "name": "launch",
+            "pages": [
+                "launch"
+            ],
+            "independent": false
+        },
+        {
+            "root": "/__wx__/",
+            "pages": [
+                "functional-page",
+                "open-api-redirecting-page",
+                "choose-wifi-credential-page"
+            ]
+        }
+    ]
+}

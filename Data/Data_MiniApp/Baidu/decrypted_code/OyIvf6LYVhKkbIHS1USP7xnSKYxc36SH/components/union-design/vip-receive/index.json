@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "swiper-text": "../swiper-text/index",
+        "receive-dialog": "../dialog/index"
+    }
+}

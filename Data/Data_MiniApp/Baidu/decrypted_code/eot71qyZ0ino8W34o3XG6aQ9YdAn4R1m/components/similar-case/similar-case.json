@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"legal-case":"/components/legal-case/legal-case","smt-rate":"@smt-ui/component/src/rate","lawyer-brand":"/components/lawyer-brand/lawyer-brand","swan-ad-render":"dynamicLib://swan-ad-render/swan-ad-render"}}

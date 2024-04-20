@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "zmn-button": "../../../../node-modules/@zmn/uni-ui/components/zmn-button/zmn-button",
+    "zmn-activity-dialog": "../../../../node-modules/@zmn/uni-ui/components/zmn-activity-dialog/zmn-activity-dialog"
+  }
+}

@@ -1,0 +1,9 @@
+<view class="limo-head-bg-layout" style="{{compStyle}}{{layoutStyle}}">
+    <view wx:if="{{styleType!==2&&picConfigCode!==2&&(defaultImgUrl||imgUrl)}}">
+        <view class="bg-mask" style="height:{{heightImg}}rpx" wx:if="{{showShadow}}"></view>
+        <image binderror="onImageError" bindload="onImageLoad" class="limo-head-bg-image" mode="aspectFill" src="{{showDefaultImg&&showDefaultImg!=='false'?defaultImgUrl:imgUrl}}" style="height:{{heightImg}}rpx"></image>
+    </view>
+    <view wx:if="{{(styleType===2||picConfigCode===2)&&imgList}}">
+        <limo-slide bannerInterval="{{bannerInterval}}" componentStyle="{{componentStyle}}" heightImg="{{heightImg}}" imgList="{{imgList}}"></limo-slide>
+    </view>
+</view>

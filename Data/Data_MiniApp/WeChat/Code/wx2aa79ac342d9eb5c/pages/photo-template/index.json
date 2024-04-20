@@ -1,0 +1,11 @@
+{
+    "navigationBarTitleText": "写真模板",
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "van-transition": "../../wxcomponents/vant/transition/index",
+        "van-popup": "../../wxcomponents/vant/popup/index",
+        "navbar": "../../components/navbar/navbar",
+        "operation-popup": "../../components/operation-popup/operation-popup",
+        "error-comp": "../../components/ErrorComp/ErrorComp"
+    }
+}

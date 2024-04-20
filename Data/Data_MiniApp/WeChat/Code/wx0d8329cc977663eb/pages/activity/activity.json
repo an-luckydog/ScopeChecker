@@ -1,0 +1,6 @@
+{
+    "enablePullDownRefresh": true,
+    "navigationBarTitleText": "活动详情",
+    "font-size": "16px",
+    "navigationBarTextStyle": "white"
+}

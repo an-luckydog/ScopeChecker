@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "重选医生",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "doctor-service-card": "../../../components/doctor-service-card/index"
+    }
+}

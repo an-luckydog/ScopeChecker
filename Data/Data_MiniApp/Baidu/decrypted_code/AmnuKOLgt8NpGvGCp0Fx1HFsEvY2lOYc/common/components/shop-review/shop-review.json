@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "review-dish": "../review-dish/review-dish",
+        "lazyload-image":"../lazyload-image/lazyload-image",
+        "star": "../star/star"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "navigationStyle": "custom",
+    "disableScroll": true,
+    "allowsBounceVertical": "NO",
+    "componentPlaceholder": {
+        "limo-rules-modal-v2": "empty-panel",
+        "coupon-rules-standard": "view",
+        "login-modal": "view",
+        "phone-number-no-quota-modal": "view",
+        "cart-dish-extend": "view",
+        "lottery": "view"
+    }
+}

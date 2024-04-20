@@ -1,0 +1,17 @@
+<uni-popup bind:__l="__l" class="data-v-3b6e3b4f vue-ref" data-ref="waitActivation_pup" maskClick="{{false}}" type="top" vueId="0fbdc7b2-1" vueSlots="{{['default']}}">
+    <view class="main-box data-v-3b6e3b4f">
+        <view class="top-logo data-v-3b6e3b4f">
+            <image class="data-v-3b6e3b4f" mode="widthFix" src="https://xcxsite.vjifen.com/v/static/qp120/myBag/welcomeagain.png"></image>
+        </view>
+        <view class="center-box data-v-3b6e3b4f">
+            <text class="data-v-3b6e3b4f">尊敬的用户您好：</text>
+            <text class="data-v-3b6e3b4f">该账号之前提交过账号注销，目前 处于冻结期，是否重新激活？</text>
+        </view>
+        <view class="bottom-box data-v-3b6e3b4f">
+            <view class="data-v-3b6e3b4f">
+                <text bindtap="__e" class="data-v-3b6e3b4f" data-event-opts="{{[ [ 'tap',[ [ 'exitProgram',['$event'] ] ] ] ]}}">不了，谢谢</text>
+            </view>
+            <view bindtap="__e" class="data-v-3b6e3b4f" data-event-opts="{{[ [ 'tap',[ [ 'activate',['$event'] ] ] ] ]}}">{{''+(activationType=='0'?'激活账号':'重新注册')+''}}</view>
+        </view>
+    </view>
+</uni-popup>

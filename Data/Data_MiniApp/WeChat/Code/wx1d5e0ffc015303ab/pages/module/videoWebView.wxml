@@ -1,0 +1,4 @@
+<view class="container data-v-482ac7b1">
+    <video autoplay="{{true}}" bindfullscreenchange="__e" bindplay="__e" class="data-v-482ac7b1" controls="{{false}}" data-event-opts="{{[ [ 'fullscreenchange',[ [ 'screenChange',['$event'] ] ] ],[ 'play',[ ['play'] ] ] ]}}" direction="0" id="myvideo" loop="{{true}}" src="{{videoUrl}}"></video>
+    <cover-view bindtap="__e" class="video-definition-btn data-v-482ac7b1" data-event-opts="{{[ [ 'tap',[ ['showDefinitionOption'] ] ] ]}}" style="{{'top:'+safeAreaTop+';'}}">返回</cover-view>
+</view>

@@ -1,0 +1,13 @@
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FAFAFC",
+    "navigationStyle": "custom",
+    "singlePage": {
+        "navigationBarFit": "squeezed"
+    },
+    "componentPlaceholder": {
+        "waterfall": "waterfall-placeholder"
+    }
+}

@@ -1,0 +1,14 @@
+<view class="{{['u-notice-bar','data-v-b57a1b82',type?'u-type-'+type+'-light-bg':'']}}" style="{{'background:'+computeBgColor+';'+'padding:'+padding+';'}}">
+    <view class="u-icon-wrap data-v-b57a1b82">
+        <u-icon bind:__l="__l" class="u-left-icon data-v-b57a1b82" color="{{computeColor}}" name="volume-fill" size="{{volumeSize}}" vueId="ab2c2a46-1" wx:if="{{volumeIcon}}"></u-icon>
+    </view>
+    <swiper autoplay="{{autoplay&&playState=='play'}}" bindchange="__e" circular="{{true}}" class="u-swiper data-v-b57a1b82" data-event-opts="{{[ [ 'change',[ [ 'change',['$event'] ] ] ] ]}}" disableTouch="{{disableTouch}}" interval="{{duration}}" vertical="{{vertical}}">
+        <swiper-item class="u-swiper-item data-v-b57a1b82" wx:for="{{list}}" wx:key="index">
+            <view bindtap="__e" class="{{['u-news-item','u-line-1','data-v-b57a1b82','u-type-'+type]}}" data-event-opts="{{[ [ 'tap',[ [ 'click',[index] ] ] ] ]}}" style="{{$root.s0}}">{{''+item+''}}</view>
+        </swiper-item>
+    </swiper>
+    <view class="u-icon-wrap data-v-b57a1b82">
+        <u-icon bind:__l="__l" bind:click="__e" class="u-right-icon data-v-b57a1b82" color="{{computeColor}}" data-event-opts="{{[ [ '^click',[ ['getMore'] ] ] ]}}" name="arrow-right" size="{{26}}" vueId="ab2c2a46-2" wx:if="{{moreIcon}}"></u-icon>
+        <u-icon bind:__l="__l" bind:click="__e" class="u-right-icon data-v-b57a1b82" color="{{computeColor}}" data-event-opts="{{[ [ '^click',[ ['close'] ] ] ]}}" name="close" size="{{24}}" vueId="ab2c2a46-3" wx:if="{{closeIcon}}"></u-icon>
+    </view>
+</view>

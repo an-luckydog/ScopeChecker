@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+        "peace-select": "/components/peace-select/peace-select",
+        "verify-mpsdk": "/wxcomponents/verify_mpsdk/index/index"
+    },
+    "component": true
+}

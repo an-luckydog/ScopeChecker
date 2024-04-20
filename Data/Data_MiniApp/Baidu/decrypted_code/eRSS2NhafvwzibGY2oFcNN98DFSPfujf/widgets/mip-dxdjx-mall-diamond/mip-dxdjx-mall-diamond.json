@@ -1,0 +1,7 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "diamond-card": "/widgets/mip-dxdjx-mall-diamond/diamond-card/diamond-card"
+    }
+}

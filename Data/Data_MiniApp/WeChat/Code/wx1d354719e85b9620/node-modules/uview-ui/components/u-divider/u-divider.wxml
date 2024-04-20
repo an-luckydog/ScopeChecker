@@ -1,0 +1,7 @@
+<view bindtap="__e" class="u-divider data-v-83afe7ca" data-event-opts="{{[ [ 'tap',[ [ 'click',['$event'] ] ] ] ]}}" style="{{'height:'+(height=='auto'?'auto':height+'rpx')+';'+'background-color:'+bgColor+';'+'margin-bottom:'+marginBottom+'rpx'+';'+'margin-top:'+marginTop+'rpx'+';'}}">
+    <view class="{{['u-divider-line','data-v-83afe7ca',type?'u-divider-line--bordercolor--'+type:'']}}" style="{{$root.s0}}"></view>
+    <view class="u-divider-text data-v-83afe7ca" style="{{'color:'+color+';'+'font-size:'+fontSize+'rpx'+';'}}" wx:if="{{useSlot}}">
+        <slot></slot>
+    </view>
+    <view class="{{['u-divider-line','data-v-83afe7ca',type?'u-divider-line--bordercolor--'+type:'']}}" style="{{$root.s1}}"></view>
+</view>

@@ -1,0 +1,8 @@
+{
+    "component": true,
+	"usingComponents": {
+        "imlp": "../imlp/imlp",
+		"imlp-button": "../button/button",
+		"imlp-dialog": "../dialog/dialog"
+    }
+}

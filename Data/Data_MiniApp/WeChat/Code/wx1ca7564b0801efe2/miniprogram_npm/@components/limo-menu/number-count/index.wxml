@@ -1,0 +1,24 @@
+<view class="number-count {{isBigSize?'number-count-big-size':''}} {{customClassName}}">
+    <view catchtap="addDish" class="start-area" wx:if="{{minBoughtCount>1&&count===0}}">{{minBoughtCount}}{{dish.unit}}起售<view catchtap="addDish" class="select-dish-extend-mask" wx:if="{{isBigSize}}"></view>
+    </view>
+    <view class="plus-minus-dish" wx:else>
+        <block wx:if="{{count>0}}">
+            <view class="minus">
+                <base-icon customClass="operation-minus-img {{isBigSize?' large':''}}" iconType="reduce"></base-icon>
+                <view catchtap="minusDishToCart" class="minus-trigger" hoverClass="active-minus"></view>
+                <view catchtap="minusDishToCart" class="operation-minus-mask" data-type="number" wx:if="{{isBigSize}}"></view>
+                <view catchtap="minusDishToCart" class="operation-plus-extend-mask" wx:if="{{extendClickArea}}"></view>
+            </view>
+            <view catchtap="onclickCountNumFunc" class="num">
+                <view class="number-click-area{{showCountStyle?' number-click-bg':''}}">{{count}}</view>
+            </view>
+        </block>
+        <view class="plus">
+            <base-icon customClass="operation-plus-img {{isBigSize?' large':''}}{{number.judgeAddDisable(dish,count,stockCount)?' rms-disable':''}}" customStyle="border-radius:50%" disabled="{{disabled}}" iconType="add"></base-icon>
+            <view catchtap="onTapHandle" class="plus-trigger" data-type="number" hoverClass="active-plus"></view>
+            <view catchtap="onTapHandle" class="operation-plus-mask" data-type="number" wx:if="{{isBigSize}}"></view>
+            <view catchtap="onTapHandle" class="operation-plus-extend-mask" data-type="number" wx:if="{{extendClickArea}}"></view>
+        </view>
+    </view>
+</view>
+<wxs module="number" src="../../../../components/menu/wxsModules/number.wxs" />

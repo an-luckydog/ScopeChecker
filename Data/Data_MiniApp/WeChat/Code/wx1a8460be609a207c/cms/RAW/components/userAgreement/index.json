@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "realUserAgreement": "/cms_extension_package/RAW/userAgreement/index",
+        "c_8mzzg6rcp5xct": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "realUserAgreement": "c_8mzzg6rcp5xct"
+    }
+}

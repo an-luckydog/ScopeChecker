@@ -1,0 +1,7 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "three-card": "/widgets/gt-dxdjx-h5-three-card/three-card/three-card"
+    }
+}

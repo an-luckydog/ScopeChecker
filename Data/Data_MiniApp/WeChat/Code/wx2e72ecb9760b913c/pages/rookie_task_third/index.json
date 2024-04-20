@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "新手任务",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-modal": "../../components/cy-modal/cy-modal"
+    }
+}

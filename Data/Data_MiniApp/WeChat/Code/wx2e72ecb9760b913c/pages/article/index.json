@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "健康资讯",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "mp-html": "../../miniprogram_npm/mp-html/index"
+    }
+}

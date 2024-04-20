@@ -1,0 +1,45 @@
+<view class="top-category-container container-style {{customClass||''}}">
+    <block wx:if="{{secondCategoryList&&secondCategoryList.length&&menuType===0}}">
+        <scroll-view scrollWithAnimation class="top-category" scrollLeft="{{secondCategoryScrollOffset}}" scrollX="true">
+            <view class="item-container {{item.categoryId==curSecondCategoryId?'active':''}}" id="secondCategory-{{item.categoryId}}" wx:for="{{secondCategoryList}}" wx:key="index">
+                <midas-simple bind:impressionend="exposeCategory" class="item-wrap" data-expose-category="{{item}}">
+                    <view bindtap="switchSecondCategoryTab" class="item" data-category-id="{{item.categoryId}}">
+                        <view class="item-txt ellipsis">{{item.categoryName}}</view>
+                        <red-point type="{{RED_POINT_TYPE.POINT}}" wx:if="{{item.count>0}}"></red-point>
+                    </view>
+                </midas-simple>
+            </view>
+        </scroll-view>
+        <view catchtap="showMoreCategory" class="left-mask" wx:if="{{showMoreSecondCategory}}">
+            <image class="mask-img" src="https://p0.meituan.net/scarlett/1292a553faa59f6d5fecc6a802df1ac6486.png"></image>
+        </view>
+        <view class="coupon-package-icon-1" wx:if="{{showCouponPackage}}">
+            <coupon-package-icon couponPageSize="{{payCouponDecoInfo.couponPageSize}}" imgUrl="{{payCouponDecoInfo.payCouponPackageShowImgUrl}}" sizeScale="{{payCouponDecoInfo.sizeScale}}"></coupon-package-icon>
+        </view>
+    </block>
+    <view class="top-category" wx:elif="{{categoryHeader&&categoryHeader.categoryName}}">
+        <dish-category-title bind:moreTap="dishPanelOrderd" bind:onCouponAssistantCheckMore="onCouponAssistantCheckMore" category="{{categoryHeader}}" class="category-header" couponAssistantStyle="{{couponAssistantStyle}}" couponCount="{{couponCount}}" hasMtLogin="{{hasMtLogin}}" mode="header"></dish-category-title>
+        <view class="{{payCouponDecoInfo.couponPageSize?'coupon-package-icon-decoration':'coupon-package-icon-2'}}" wx:if="{{showCouponPackage}}">
+            <coupon-package-icon couponPageSize="{{payCouponDecoInfo.couponPageSize}}" imgUrl="{{payCouponDecoInfo.payCouponPackageShowImgUrl}}" sizeScale="{{payCouponDecoInfo.sizeScale}}"></coupon-package-icon>
+        </view>
+    </view>
+</view>
+<view catchtap="hideMoreCategory" class="bg-mask" wx:if="{{showMoreCategory}}"></view>
+<view class="more-category-container" wx:if="{{showMoreCategory}}">
+    <view class="more-category-title">
+        <text class="title-txt">选择分类</text>
+        <view catchtap="hideMoreCategory" class="title-right">
+            <image class="mask-img-reverse" src="https://p0.meituan.net/scarlett/1292a553faa59f6d5fecc6a802df1ac6486.png"></image>
+        </view>
+    </view>
+    <view class="item-content">
+        <view class="item-line-container" wx:for="{{helper.format(secondCategoryList)}}" wx:key="index">
+            <view class="item-container" wx:for="{{item}}" wx:key="index">
+                <view bindtap="switchSecondCategoryTab" class="item {{item.categoryId==curSecondCategoryId?'active':''}} {{item.categoryName?'':'hidden'}}" data-category-id="{{item.categoryId}}">
+                    <text class="item-txt ellipsis">{{item.categoryName}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<wxs module="helper" src="../common/helper.wxs" />

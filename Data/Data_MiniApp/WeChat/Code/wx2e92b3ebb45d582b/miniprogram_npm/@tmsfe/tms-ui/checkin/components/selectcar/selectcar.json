@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "common-title": "../title/title",
+        "c-btn": "../button/index",
+        "user-profile": "../userprofile/index",
+        "banner": "/./miniprogram_npm/@tmsfe/tms-ui/banner/banner",
+        "navbar": "/./miniprogram_npm/@tmsfe/tms-ui/navbar/navbar"
+    }
+}

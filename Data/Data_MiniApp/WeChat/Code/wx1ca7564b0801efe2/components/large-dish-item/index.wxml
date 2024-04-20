@@ -1,0 +1,29 @@
+<import src="../tag/index.wxml"></import>
+<import src="../dish-item/index.wxml"></import>
+<view bindtap="openDetail" class="large dish-item {{dish.status!==1?'invalid':''}}">
+    <view class="pic-field">
+        <template is="pic-warp" data="{{dish:dish,mode:'large'}}"></template>
+        <view class="corner" wx:if="{{corner}}">
+            <template is="tag" data="{{...corner,size:'large'}}"></template>
+        </view>
+        <template is="market-label" data="{{dish:dish,size:'medium'}}" wx:elif="{{dish.marketingLabel}}"></template>
+    </view>
+    <view class="content">
+        <view class="dish-title-box">
+            <rich-text class="dish-title" nodes="{{d.getDish(dish,'large','name')}}"></rich-text>
+            <view class="c-item sales" wx:if="{{dish.saleQuantity>=0}}">月售{{dish.saleQuantity>9999?'9999+':dish.saleQuantity}}</view>
+        </view>
+        <view class="content-wrap" wx:if="{{dish.desc}}">
+            <view class="c-item desc">{{dish.desc}}</view>
+        </view>
+        <view class="content-wrap cw-no">
+            <view class="c-item tags" wx:if="{{tags&&tags.length}}">
+                <template is="tag" data="{{...item}}" wx:for="{{tags}}" wx:key="index"></template>
+            </view>
+        </view>
+        <view class="content-wrap">
+            <template is="price-field" data="{{dish:dish,extra:extra,memberTag:memberTag,showEst:showEst,slot:slot}}"></template>
+        </view>
+    </view>
+</view>
+<wxs module="d" src="../dish-item/index.wxs" />

@@ -1,0 +1,12 @@
+<view class="order-list">
+    <view class="default-image" wx:if="{{localOrderList.length===0}}">
+        <default-page-config code="{{code}}"></default-page-config>
+    </view>
+    <scroll-view enablePassive enhanced scrollY bindscrolltolower="loadMoreOrderList" class="scroll-view" lowerThreshold="150" showScrollbar="{{false}}" wx:else>
+        <view class="container">
+            <order-item orderData="{{item}}" wx:for="{{localOrderList}}" wx:key="index"></order-item>
+            <view class="more loading" wx:if="{{isLoading}}">加载中</view>
+            <view class="more" wx:if="{{noHasMore}}">没有更多了~</view>
+        </view>
+    </scroll-view>
+</view>

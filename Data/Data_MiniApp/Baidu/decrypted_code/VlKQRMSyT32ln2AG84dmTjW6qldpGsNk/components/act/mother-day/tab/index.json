@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"testing":"./testing-item","vaccines":"./vaccines-item","c-image":"../../../common/image","see":"./see","physical-package":"../../../physical/PhysicalPackage"}}

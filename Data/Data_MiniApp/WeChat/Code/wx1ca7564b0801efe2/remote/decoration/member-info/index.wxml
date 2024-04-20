@@ -1,0 +1,59 @@
+<view catchtap="toMemberCenter" class="member-card-wrapper {{doubleLined}} {{(memberCardData&&!memberCardData.assets||memberCardData.assets.length===0)&&(memberCardData.avatarUrl||memberCardData.memberCodeUrl)?'single-avatar':''}} default-bg-{{theme&&theme.custom&&(!theme.custom.backgroundColor||!theme.custom)&&!theme.custom.backgroundImg?theme.preset:''}}" style="{{formattedCustomStyle}} {{compStyle}}; {{animationStyle}} {{notLoginBgStyle}}">
+    <view class="member-avatar {{doubleLined}}" wx:if="{{memberCardData.avatarUrl&&isLogin}}">
+        <member-picfile class="member-avatar {{doubleLined}}" picStyle="border-radius:50%" picUrl="{{memberCardData.avatarUrl}}"></member-picfile>
+    </view>
+    <view class="member-main-content {{memberNewStyle}}" style="{{notLoginText}}">
+        <view class="{{titleBarStyle}}">
+            <view class="member-info {{doubleLined}}">
+                <view class="member-diamond" wx:if="{{!isLogin||!memberCardData.avatarUrl&&styleType===3}}">
+                    <icon-font color="{{textColor}}" iconType="vip"></icon-font>
+                </view>
+                <text class="member-nickname" wx:if="{{showNickName&&isLogin}}">{{memberCardData.nickName?memberCardData.nickName:defaultNickName}}</text>
+                <text class="member-info-ellipsis {{isLogin&&isCardTitleGrade&&labelCardTitle}}" style="{{cardNameFontStyle}}">
+                    <text class="not-login-title" style="{{notLoginText}}" wx:if="{{!isLogin}}">{{memberCardData.title}}</text>
+                    <text class="member-name" wx:if="{{isCardTitleGrade&&isLogin}}">{{memberCardData.title}}</text>
+                    <text class="rich-privilege" wx:if="{{memberCardData.richPrivilege&&memberCardData.richPrivilege.length}}">
+                        <text class="member-rich-privilege member-privilege-{{privilege.type}}" wx:for="{{memberCardData.richPrivilege}}" wx:for-item="privilege" wx:key="index">{{privilege.text}}</text>
+                    </text>
+                    <text class="member-privilege" style="{{notLoginText}}" wx:elif="{{memberCardData.privilege}}">{{memberCardData.privilege}}</text>
+                </text>
+            </view>
+            <view class="member-text-progress" wx:if="{{formattedRichTexts&&styleType!==1}}">
+                <rich-text nodes="{{formattedRichTexts}}"></rich-text>
+            </view>
+            <view class="member-bar-progress" wx:if="{{barProgress&&styleType!==1}}">
+                <view class="max-bar">
+                    <view class="current-bar" style="width: {{barProgress.percent}}%">
+                        <view class="bar-icon" wx:if="{{barProgress.percent>0&&showProgressIcon}}"></view>
+                    </view>
+                </view>
+                <view class="bar-desc">{{barProgress.currentNum}}/{{barProgress.totalNum}}</view>
+            </view>
+        </view>
+        <view class="member-assets-container {{memberCardData.assets.length>1?'multi-assets':''}}" wx:if="{{memberCardData.assets&&memberCardData.assets.length}}">
+            <view class="member-assets">
+                <view class="member-asset {{marginCompacted}} {{index+1===memberCardData.assets.length?'last':''}} {{assetNewStyle}}" wx:if="{{asset.name}}" wx:for="{{memberCardData.assets}}" wx:for-item="asset" wx:key="index">
+                    <text class="asset-name" style="{{textFontStyle}}">{{asset.name}}</text>
+                    <text class="asset-value" style="{{assetNumberFontStyle}}">{{asset.value>9999?'9999+':asset.value}}</text>
+                </view>
+            </view>
+            <view catchtap="toAssetDetail" class="expiration-reminder" data-asset-redirect-url="{{asset.redirectUrl}}" wx:if="{{!!asset.needExpirationRemind}}" wx:for="{{memberCardData.assets}}" wx:for-item="asset" wx:key="index">
+                <text>您有{{asset.name}}即将到期</text>
+                <view class="member-arrow sm">
+                    <icon-font color="{{assetNumberColor}}" iconType="right-arrow"></icon-font>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view catchtap="toMemberCode" class="member-code {{styleType==3&&doubleLined}}" wx:if="{{memberCardData.memberCodeUrl}}">
+        <view class="member-code-img">
+            <icon-font color="{{memberCodeFont}}" iconType="vip-code" wx:if="{{showCodeFont}}"></icon-font>
+        </view>
+        <view class="member-code-text" wx:if="{{styleType===3&&showCodeText}}">会员码</view>
+    </view>
+    <view class="member-btn {{customTheme&&customTheme.height>=90?'enlarged-btn':''}}" style="{{notLoginBtnStyle}}" wx:elif="{{memberCardData.buttonText&&!doubleLined&&(!isLogin||styleType===3)}}">{{memberCardData.buttonText}}</view>
+    <view class="member-arrow" wx:elif="{{styleType===3}}">
+        <icon-font color="{{textColor}}" iconType="right-arrow"></icon-font>
+    </view>
+    <image mode="widthFix" src="{{notLoginCustom}}" style="width:100%;" wx:if="{{!isLogin&&notLoginType===2}}"></image>
+</view>

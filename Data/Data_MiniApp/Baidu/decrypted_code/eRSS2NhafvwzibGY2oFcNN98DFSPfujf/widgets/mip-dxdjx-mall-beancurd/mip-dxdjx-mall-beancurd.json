@@ -1,0 +1,9 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "talent-live-card": "/widgets/mip-dxdjx-mall-beancurd/components/talent-live-card/talent-live-card",
+        "good-product-card": "/widgets/mip-dxdjx-mall-beancurd/components/good-product-card/good-product-card",
+        "optimize-image": "/components/optimize-image/optimize-image"
+    }
+}

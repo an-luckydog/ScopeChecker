@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "订单详情",
+    "usingComponents": {
+        "titan-one-component": "/@titan/cs/oc/i"
+    },
+    "component": true
+}

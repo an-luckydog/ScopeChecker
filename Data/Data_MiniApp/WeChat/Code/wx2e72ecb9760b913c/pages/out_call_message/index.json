@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "出诊时间地点",
+    "usingComponents": {
+        "make-notice": "./components/make-notice/index"
+    }
+}

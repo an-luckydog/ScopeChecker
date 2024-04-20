@@ -1,0 +1,62 @@
+<import src="../../../../components/tag/index.wxml"></import>
+<view class="shop-head" style="{{headStyle}}">
+    <view class="capsule-box" style="{{capsuleStyle}}">
+        <slot name="navigation-btn"></slot>
+        <view class="biz-modes" wx:if="{{bizTypeList&&bizTypeList.length}}">
+            <view bind:tap="toggleMode" class="biz-item{{item.bizType===selectedBizType?' select':''}}" data-index="{{index}}" data-mode="{{item.bizType}}" wx:for="{{bizTypeList}}" wx:key="name">
+                <view>{{item.bizTypeText}}</view>
+                <view class="vertical-line" wx:if="{{bizTypeList.length-1!==index}}"></view>
+            </view>
+        </view>
+        <view bind:tap="selectShop" class="name-box" wx:else>
+            <view class="shop-name">{{shopName}}</view>
+            <view class="base-icon icon-jiantou-you" wx:if="{{scWithoutTable}}"></view>
+        </view>
+        <view bind:tap="toSearch" class="search">
+            <view class="base-icon icon-sousuo"></view>
+        </view>
+    </view>
+    <view class="shop-info">
+        <view class="loading" wx:if="{{showLoading}}">
+            <view class="loading-icon"></view>
+            <view class="txt">{{selectedBizType===100?'正在匹配门店':'正在加载收货地址'}}</view>
+        </view>
+        <view class="shop" wx:else>
+            <slot name="shop-info-zt"></slot>
+            <slot name="shop-info-wm"></slot>
+            <slot name="shop-info-ph"></slot>
+        </view>
+        <slot name="joint-order"></slot>
+    </view>
+    <view class="shop-tag" wx:if="{{dpTag&&dpTag.rankText}}">
+        <view class="st-eat" wx:if="{{dpTag.rankType===1}}">
+            <image class="tag-img" src="https://p0.meituan.net/ingee/9502ff4a4a3656224bf192eaaf4e7c0110842.png"></image>
+            <view class="st-text">{{dpTag.rankText}}</view>
+        </view>
+        <view class="st-hot" wx:else>
+            <image class="tag-icon" src="https://p0.meituan.net/ingee/dd7dd443a917560c41fcc4ba1712ff094845.png"></image>
+            <view class="st-text">{{dpTag.rankText}}</view>
+        </view>
+    </view>
+    <view class="progress" wx:if="{{orderProductionProcess.processProgress&&orderProductionProcess.processText}}">
+        <product-progress processProgress="{{orderProductionProcess.processProgress}}" processText="{{orderProductionProcess.processText}}"></product-progress>
+    </view>
+    <view bind:tap="moreInfo" class="announcement">
+        <swiper autoplay circular vertical class="swiper" interval="{{3000}}">
+            <swiper-item class="swiper-item" wx:for="{{advNoticeList}}" wx:key="index">
+                <image class="icon-img" mode="heightFix" src="{{item.imgUrl}}" wx:if="{{item.imgUrl}}"></image>
+                <view class="base-icon icon-gonggao" wx:else></view>
+                <view class="content">{{item.content}}</view>
+            </swiper-item>
+            <swiper-item class="swiper-item" wx:for="{{promoTags}}" wx:key="index">
+                <template is="tag" data="{{...item.tagInfo,size:'middle'}}"></template>
+                <view class="content">{{item.labelDesc}}</view>
+            </swiper-item>
+            <swiper-item class="swiper-item" wx:if="{{(!advNoticeList||!advNoticeList.length)&&(!promoTags||!promoTags.length)}}">
+                <view class="content default">查看门店信息</view>
+            </swiper-item>
+        </swiper>
+        <view class="more">详情<view class="base-icon icon-jiantou-you"></view>
+        </view>
+    </view>
+</view>

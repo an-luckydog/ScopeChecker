@@ -1,0 +1,10 @@
+{
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "订单红包",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "sms-fk": "/packageA/pages/orderRed/components/FK/FK"
+    }
+}

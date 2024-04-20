@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "base-customer-service": "../wx-base-customer-service/index"
+    }
+}

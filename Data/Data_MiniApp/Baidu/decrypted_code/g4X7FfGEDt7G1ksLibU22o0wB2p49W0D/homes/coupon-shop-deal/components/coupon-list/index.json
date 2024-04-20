@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "c-shop-info-box": "/components/c-shop-info-box/index",
+        "c-shop-coupon-template": "/components/c-shop-coupon-template/index"
+    }
+}

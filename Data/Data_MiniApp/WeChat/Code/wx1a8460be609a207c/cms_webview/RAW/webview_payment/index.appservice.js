@@ -1,0 +1,52 @@
+$gwx_XC_69=function(_,_v,_n,_p,_s,_wp,_wl,$gwn,$gwl,$gwh,wh,$gstack,$gwrt,gra,grb,TestTest,wfor,_ca,_da,_r,_rz,_o,_oz,_1,_1z,_2,_2z,_m,_mz,nv_getDate,nv_getRegExp,nv_console,nv_parseInt,nv_parseFloat,nv_isNaN,nv_isFinite,nv_decodeURI,nv_decodeURIComponent,nv_encodeURI,nv_encodeURIComponent,$gdc,nv_JSON,_af,_gv,_ai,_grp,_gd,_gapi,$ixc,_ic,_w,_ev,_tsd){return function(path,global){
+if(typeof global==='undefined'){if (typeof __GWX_GLOBAL__==='undefined')global={};else global=__GWX_GLOBAL__;}if(typeof __WXML_GLOBAL__ === 'undefined') {__WXML_GLOBAL__={};
+}__WXML_GLOBAL__.modules = __WXML_GLOBAL__.modules || {};
+var e_={}
+if(typeof(global.entrys)==='undefined')global.entrys={};e_=global.entrys;
+var d_={}
+if(typeof(global.defines)==='undefined')global.defines={};d_=global.defines;
+var f_={}
+if(typeof(global.modules)==='undefined')global.modules={};f_=global.modules || {};
+var p_={}
+__WXML_GLOBAL__.ops_cached = __WXML_GLOBAL__.ops_cached || {}
+__WXML_GLOBAL__.ops_set = __WXML_GLOBAL__.ops_set || {};
+__WXML_GLOBAL__.ops_init = __WXML_GLOBAL__.ops_init || {};
+var z=__WXML_GLOBAL__.ops_set.$gwx_XC_69 || [];
+function gz$gwx_XC_69_1(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_XC_69_1)return __WXML_GLOBAL__.ops_cached.$gwx_XC_69_1
+__WXML_GLOBAL__.ops_cached.$gwx_XC_69_1=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([[9],[[9],[[9],[[9],[[8],'g',[[2,'!'],[[7],[3,'$primaryNoDone']]]],[[8],'l',[[2,'&&'],[[2,'!'],[[7],[3,'disableCMSMarketingModal']]],[[2,'!'],[[7],[3,'$cmsMarketingModalDisabled']]]]]],[[8],'m',[[7],[3,'$marketingModalNoBelongToPage']]]],[[8],'t',[[2,'!'],[1,0]]]],[[8],'u',[[2,'!'],[1,0]]]])
+Z([3,'titan-one-component'])
+Z([3,'1'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_XC_69_1);return __WXML_GLOBAL__.ops_cached.$gwx_XC_69_1
+}
+__WXML_GLOBAL__.ops_set.$gwx_XC_69=z;
+__WXML_GLOBAL__.ops_init.$gwx_XC_69=true;
+var x=['./cms_webview/RAW/webview_payment/index.wxml'];d_[x[0]]={}
+var m0=function(e,s,r,gg){
+var z=gz$gwx_XC_69_1()
+var oF5=_mz(z,'titan-one-component',['d',0,'id',1,'s',1],[],e,s,gg)
+_(r,oF5)
+return r
+}
+e_[x[0]]={f:m0,j:[],i:[],ti:[],ic:[]}
+if(path&&e_[path]){
+return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
+;g="$gwx_XC_69";var main=e_[path].f
+if (typeof global==="undefined")global={};global.f=$gdc(f_[path],"",1);
+try{
+main(env,{},root,global);
+_tsd(root)
+}catch(err){
+console.log(err)
+}
+;g="";
+return root;
+}
+}
+}
+}(__g.a,__g.b,__g.c,__g.d,__g.e,__g.f,__g.g,__g.h,__g.i,__g.j,__g.k,__g.l,__g.m,__g.n,__g.o,__g.p,__g.q,__g.r,__g.s,__g.t,__g.u,__g.v,__g.w,__g.x,__g.y,__g.z,__g.A,__g.B,__g.C,__g.D,__g.E,__g.F,__g.G,__g.H,__g.I,__g.J,__g.K,__g.L,__g.M,__g.N,__g.O,__g.P,__g.Q,__g.R,__g.S,__g.T,__g.U,__g.V,__g.W,__g.X,__g.Y,__g.Z,__g.aa);if(__vd_version_info__.delayedGwx||false)$gwx_XC_69();	if (__vd_version_info__.delayedGwx) __wxAppCode__['cms_webview/RAW/webview_payment/index.wxml'] = [$gwx_XC_69, './cms_webview/RAW/webview_payment/index.wxml'];else __wxAppCode__['cms_webview/RAW/webview_payment/index.wxml'] = $gwx_XC_69( './cms_webview/RAW/webview_payment/index.wxml' );
+	;__wxRoute = "cms_webview/RAW/webview_payment/index";__wxRouteBegin = true;__wxAppCurrentFile__="cms_webview/RAW/webview_payment/index.js";define("cms_webview/RAW/webview_payment/index.js",function(require,module,exports,window,document,frames,self,location,navigator,localStorage,history,Caches,screen,alert,confirm,prompt,XMLHttpRequest,WebSocket,Reporter,webkit,WeixinJSCore){
+"use strict";var e=require("../../../@babel/runtime/helpers/slicedToArray"),o=require("../../../@babel/runtime/helpers/objectSpread2"),t=require("../../../@babel/runtime/helpers/objectWithoutProperties"),n=["callbackUrl"],c=["data"],r=["data"],a=["data"],i=["data"],s=["data"],f=["data"];require("../titan.bootstrap.js"),global.beginDefinePage=!0;var u=global.bc("package","cms_webview"),l=require("../titan-scoped-env.js"),p=l.requirePlatform("cms_sdk").main.SDK,d=l.wx.rprm.pvars.env||"prod",m=(l.wx.rprm.config.form||{}||{}).basicInfo,y=(void 0===m?{}:m).cid,w={dev:"https://fusion.n.dev.weimob.com",qa:"https://fusion.n.saas.weimobqa.com",pl:"https://fusion.n.pl.weimob.com",prod:"https://fusion.n.weimob.com",production:"https://fusion.n.weimob.com"};function h(e){return/\/saas\/payment/gi.test(e)?e:e.replace(/(http|https):\/\/[^\/]+/,w[d])}l.Page({pagename:"common-webview_payment",$cmsNotRecommendVid:!0,data:{},onLoad:function(e){for(var o in this.reportOptions(e),e)"callbackUrl"===o&&/^http[s]?:\/\//i.test(e[o])||e[o]&&(e[o]=decodeURIComponent(e[o]));var c=e.callbackUrl,r=t(e,n),a=this.getRequestUrlParams(c);this.successUrl=h(decodeURIComponent(a.redirect_success)),this.failUrl=h(decodeURIComponent(a.redirect_fail)),this.callbackUrl="".concat(c.split("?")[0]).concat(this.toQueryUrlstring(a,"?"));var i=this.PayDoneCallback(this.callbackUrl,this.failUrl),s=i.success,f=i.fail,u=i.cancel,l=i.complete;this.wxrequestPayment({data:r,success:s,fail:f,cancel:u,complete:l})},wxrequestPayment:function(e){var n=this,r=e.data,a=t(e,c),i=!1,s="requestPayment";r.package=r.packExpand;try{"3.0"===r.videoVersion&&l.wx.canIUse("requestOrderPayment")?s="requestOrderPayment":r.orderInfo&&l.wx.canIUse("requestOrderPayment")&&(s="requestOrderPayment",r.orderInfo=JSON.parse(r.orderInfo))}catch(e){s="requestPayment"}l.wx[s](o(o({},r),{},{success:function(e){p.navigator({url:"/cms_webview/index?url=".concat(encodeURIComponent(n.successUrl)),mode:"redirect"})},fail:function(e){console.error("支付失败>>>",e),e.errMsg!="".concat(s,":fail cancel")?"function"==typeof a.fail&&a.fail():("function"==typeof a.cancel&&a.cancel(),i=!0)},complete:function(e){i?i=!1:e.errMsg!="".concat(s,":fail cancel")&&e.errMsg!="".concat(s,":cancel")||"function"==typeof a.cancel&&a.cancel(),"function"==typeof a.complete&&a.complete(e)}}))},ksPayment:function(e){var o=e.data,n=t(e,r),c="string"==typeof o.orderInfo?JSON.parse(o.orderInfo):o.orderInfo;l.ks.requestPayment({orderInfo:c,payType:"wxweb",success:function(e){"function"==typeof n.fail&&n.fail()},fail:function(e){"function"==typeof n.fail&&n.fail()},complete:function(e){"function"==typeof n.complete&&n.complete(o,e)}})},swanPayment:function(e){var o=e.data,n=t(e,a),c=!1,r="string"==typeof o.orderInfo?JSON.parse(o.orderInfo):o.orderInfo;l.swan.requestPolymerPayment({orderInfo:r,success:function(e){"function"==typeof n.success&&n.success(e)},fail:function(e){"requestPayment:fail cancel"!=e.errMsg?"function"==typeof n.fail&&n.fail(e):("function"==typeof n.cancel&&n.cancel(e),c=!0)},complete:function(e){c?c=!1:("requestPayment:fail cancel"!=e.errMsg&&"requestPayment:cancel"!=e.errMsg||"function"==typeof n.cancel&&n.cancel(),"function"==typeof n.complete&&n.complete(o,e))}})},alipayPayment:function(e){var o=e.data,n=t(e,i);l.my.tradePay({tradeNO:o.tradeNo,success:function(e){"function"==typeof n.success&&n.success&&n.success()},fail:function(e){"function"==typeof n.fail&&n.fail(e)},complete:function(e){"function"==typeof n.complete&&n.complete(o,e)}})},xhsPayment:function(e){var o=e.data,n=t(e,s),c="string"==typeof o.orderInfo?JSON.parse(o.orderInfo):o.orderInfo,r=c.wxUrl,a=(l.xhs.getStorageSync("WOS_WXAPP_SESSION")||{}).token,i="".concat(w[d],"/bos/shop/").concat(y,"/0/0/xhspay/pay/index");r&&(c.wxUrl="".concat(i,"?xapptoken=").concat(a||"","&pay_url=").concat(encodeURIComponent(r))),l.xhs.requestOrderPayment({orderInfo:c,success:function(e){l.xhs.onAppShow((function(e,o,t){l.setTimeout((function(){l.xhs.showModal({title:"确认支付状态",content:"是否支付成功？",confirmText:"支付成功",cancelText:"未支付",success:function(e){"function"==typeof n.success&&n.success()}}),l.xhs.offAppShow()}),500)}))},fail:function(e){"function"==typeof n.fail&&n.fail(e)},complete:function(e){"function"==typeof n.complete&&n.complete(e)}})},douyinPayment:function(e){var n=this,c=e.data,r=t(e,f);if(c.outOrderNo&&tt.canIUse("continueToPay"))tt.continueToPay({orderId:c.outOrderNo,outOrderNo:c.orderNos,success:function(e){"function"==typeof r.success&&r.success(e)},fail:function(e){n.reportOptions(e,"douyin_pay_error"),4===e.errNo?"function"==typeof r.cancel&&r.cancel(e):"function"==typeof r.fail&&r.fail(e)},complete:function(e){"function"==typeof r.complete&&r.complete(e)}});else if(tt.canIUse("createOrder")){var a=JSON.parse(c.douyinCreateOrderParam);tt.createOrder(o(o({},a),{},{success:function(e){"function"==typeof r.success&&r.success(e)},fail:function(e){n.reportOptions(e,"douyin_pay_error"),4===e.errNo?"function"==typeof r.cancel&&r.cancel(e):"function"==typeof r.fail&&r.fail(e)},complete:function(e){"function"==typeof r.complete&&r.complete(e)}}))}else"function"==typeof r.fail&&r.fail({errMsg:"版本不支持支付"})},PayDoneCallback:function(e,t){return{success:function(){p.navigator({url:"/cms_webview/index?url=".concat(encodeURIComponent(e)),mode:"redirect"})},fail:function(){p.navigator({url:"/cms_webview/index?url=".concat(encodeURIComponent(t)),mode:"redirect"})},cancel:function(){p.navigator({url:"/cms_webview/index?url=".concat(encodeURIComponent(t)),mode:"redirect"})},complete:function(e,t){l.wx.hound&&l.wx.hound.debug&&l.wx.hound.debug({url:"http://xapi.weimob.com:80/fe/vid_order_pay",method:"POST",tags:{"weimob-bosId":l.wx.rprm.pvars.bosId,"weimob-pid":l.wx.rprm.pvars.pid},data:{request:e,response:t,isvid:!!l.wx.fecommon.clickId,clickId:l.wx.fecommon.clickId,scene:l.wx.rprm.onLauchScene,extra:o(o({orderNo:e.orderNo},l.wx.rprm.vars),l.wx.rprm.pvars)}})}}},getRequestUrlParams:function(o){var t={},n="";if(!o)return{};o.indexOf("?")>=0&&(n=o.split("?")[1]||"");var c=n.split("&");return c.length&&c.forEach((function(o){var n=o.split("="),c=e(n,2),r=c[0],a=c[1];t[r]=a})),t},toQueryUrlstring:function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},o=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"",t="";for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t+="".concat(t?"&":"").concat(n,"=").concat(encodeURIComponent(e[n])));return o+t},reportOptions:function(e){var t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"vid_H5pay_options";l.wx.hound&&l.wx.hound.debug&&l.wx.hound.debug({url:"http://mapi.weimob.com:80/fe/"+t,method:"POST",tags:{"weimob-bosId":l.wx.rprm.pvars.bosId,"weimob-pid":l.wx.rprm.pvars.pid},data:{request:e,scene:l.wx.rprm.onLauchScene,extra:o(o({},l.wx.rprm.vars),l.wx.rprm.pvars)}})}}),global.ec(u),global.beginDefinePage=!1;
+},{isPage:false,isComponent:true,currentFile:'cms_webview/RAW/webview_payment/index.js'});require("cms_webview/RAW/webview_payment/index.js");

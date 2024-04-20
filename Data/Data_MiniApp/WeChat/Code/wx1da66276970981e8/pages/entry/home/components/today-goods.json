@@ -1,0 +1,9 @@
+{
+    "component": true,
+    "usingComponents": {
+        "z-swiper": "../../../../node-modules/@zebra-ui/swiper/components/z-swiper/z-swiper",
+        "z-swiper-item": "../../../../node-modules/@zebra-ui/swiper/components/z-swiper-item/z-swiper-item",
+        "today-goods-com-act": "./today-goods-com-act",
+        "today-goods-com-out": "./today-goods-com-out"
+    }
+}

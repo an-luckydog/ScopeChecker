@@ -1,0 +1,1 @@
+!function(){var e={Object:Object,Number:Number,String:String,Boolean:Boolean,Function:Function,Array:Array,Date:Date,RegExp:RegExp};for(var r in e)Object.defineProperty(e[r].prototype,"sjs_constructor",{writable:!0,value:r})}();

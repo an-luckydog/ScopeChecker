@@ -1,0 +1,19 @@
+<view class="main">
+    <view class="activityName">
+        <view class="lineTab">通知名称</view>
+        <view class="activityIntroduce">{{activityName}}</view>
+    </view>
+    <view class="activityBody">
+        <view class="lineBox">
+            <view class="lineTab">发送时间</view>
+            <view class="activityIntroduce">{{startTime}}</view>
+        </view>
+        <view class="m-t-3">
+            <view class="lineBox">
+                <view class="lineTab">主要内容</view>
+            </view>
+            <view class="activityContent">{{activityIntroduce}}</view>
+        </view>
+        <button bindtap="getCompanyMsg">企业详情</button>
+    </view>
+</view>

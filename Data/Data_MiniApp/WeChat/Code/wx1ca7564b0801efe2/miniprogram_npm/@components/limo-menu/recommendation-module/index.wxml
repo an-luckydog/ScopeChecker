@@ -1,0 +1,26 @@
+<view class="boss-recommendation-style" wx:if="{{recommendData.length>0}}">
+    <view class="title-list">
+        <block wx:for="{{recommendData}}" wx:for-index="idx" wx:for-item="recommendItem" wx:key="type">
+            <view bindtap="toggleRecommendListFunc" class="title-item {{recommendItem.type===selectedType?'title-selected':''}}" data-type="{{recommendItem.type}}">
+                <image class="title-img" src="{{recommendItem.type===RECOMMEND_CATEGORY.BOSS?'https://p0.meituan.net/scarlett/d46829cc42b69a6ade58d12cdff5c4301053.png':'https://p0.meituan.net/scarlett/b925d5d6dd7f2f6fa6bb9ebe61f00993905.png'}}"></image>
+                <text class="title-txt">{{recommendItem.title||'老板推荐'}}</text>
+            </view>
+            <view class="title-gap" wx:if="{{idx===0&&recommendData.length>1}}"></view>
+        </block>
+    </view>
+    <scroll-view bindscroll="collectFirstScreenDishEnd" class="recommendation-list-outer-container" id="scroll-container-recommendation" scrollAnchoring="true" scrollWithAnimation="true" scrollX="true" wx:if="{{tabItem}}" wx:for="{{recommendData}}" wx:for-index="idx" wx:for-item="tabItem" wx:key="type">
+        <view class="{{isHorizontalMode?'default-recommend-list':'big-recommend-list'}}" id="dish-list" wx:if="{{tabItem.type===selectedType}}">
+            <midas-simple bind:impressionend="exposeDish" data-expose-dish="{{spuItem}}" wx:for="{{tabItem.spuInfos}}" wx:for-index="idx" wx:for-item="spuItem" wx:key="spuId">
+                <dish-item bind:openDishDetail="menuDetail" categoryId="{{selectedType===RECOMMEND_CATEGORY.NET?-10:-1}}" fromComponent="recommendation-module" isLogin="{{isLogin}}" itemIndex="{{idx}}" menuUpdateTime="{{menuUpdateTime}}" shopId="{{urlParams.shopId}}" spuId="{{spuItem.spuId}}" type="{{isHorizontalMode?'RECOMMEND_DEFAULT':'RECOMMEND_LARGE'}}">
+                    <view slot="operationArea">
+                        <common-operation bind:operationCount="operationCount" bind:operationPanel="operationPanel" canClickCountNum="{{true}}" catch:showDishTimeInfoModalFn="showDishTimeInfoModal" operationData="{{spuItem.operationData}}"></common-operation>
+                    </view>
+                </dish-item>
+            </midas-simple>
+            <view bindtap="jumpToRecommendList" class="{{'search-more'}}" wx:if="{{tabItem.type===selectedType&&tabItem.showMore}}">
+                <view class="text">查看更多</view>
+                <view class="arrow-right"></view>
+            </view>
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mip-dxdjx-mall-user": "/widgets/mip-dxdjx-mall-user/mip-dxdjx-mall-user",
+        "mip-dxdjx-mall-diamond":"/widgets/mip-dxdjx-mall-diamond/mip-dxdjx-mall-diamond"
+    }
+}

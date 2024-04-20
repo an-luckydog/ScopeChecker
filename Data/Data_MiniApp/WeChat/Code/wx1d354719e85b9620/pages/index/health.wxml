@@ -1,0 +1,62 @@
+<view class="health data-v-5c2acb52" wx:if="{{!loading}}">
+    <none-family bind:__l="__l" class="data-v-5c2acb52" vueId="389806d8-1" wx:if="{{fmlList.length===0}}"></none-family>
+    <block wx:else>
+        <view class="top data-v-5c2acb52">
+            <swiper bindchange="__e" circular="{{true}}" class="swiper-container data-v-5c2acb52" data-event-opts="{{[ [ 'change',[ [ 'swiperChange',['$event'] ] ] ] ]}}" nextMargin="45rpx" previousMargin="45rpx">
+                <swiper-item class="data-v-5c2acb52" wx:for="{{fmlList}}" wx:key="index">
+                    <view class="{{['data-v-5c2acb52',currentIndex==index?'swiper-item':'swiper-item-side']}}">
+                        <view bindtap="__e" class="{{['data-v-5c2acb52',currentIndex==index?'file-famliy-swiper-item':'file-famliy-swiper-item-side']}}" data-event-opts="{{[ [ 'tap',[ [ 'goHealthUserInfoPage',['$event'] ] ] ] ]}}">
+                            <view class="header flex between data-v-5c2acb52">
+                                <u-image bind:__l="__l" class="data-v-5c2acb52" height="100rpx" src="{{imgUrl+'pages/health/'+(item.sex==='男'?'boy.png':'girl.png')}}" vueId="{{'389806d8-2-'+index}}" width="100rpx"></u-image>
+                                <view class="flex column flex-1 start between header-title data-v-5c2acb52">
+                                    <view class="flex header-name data-v-5c2acb52">
+                                        <label class="_span data-v-5c2acb52">{{item.name}}</label>
+                                        <u-tag bgColor="#F2F2F2" bind:__l="__l" class="data-v-5c2acb52" color="#999999" text="{{item.relation}}" type="info" vueId="{{'389806d8-3-'+index}}"></u-tag>
+                                    </view>
+                                    <view class="flex header-age data-v-5c2acb52">
+                                        <view class="sex data-v-5c2acb52" style="{{'background-image:'+'url('+(item.sex=='男'?imgUrl+'health/man.png':item.sex=='女'?imgUrl+'health/woman.png':'')+');'+';'}}"></view>
+                                        <view class="age data-v-5c2acb52" wx:if="{{item.age}}">{{item.age?item.age:''}}</view>
+                                    </view>
+                                </view>
+                            </view>
+                            <view class="content data-v-5c2acb52">
+                                <view class="h4 data-v-5c2acb52">健康信息</view>
+                                <view class="flex between data-v-5c2acb52">
+                                    <u-line-progress activeColor="#5B9EFF" bind:__l="__l" class="data-v-5c2acb52" height="16" inactiveColor="#D7E9FF" percent="{{item.percentage}}" showPercent="{{false}}" vueId="{{'389806d8-4-'+index}}"></u-line-progress>
+                                    <u-tag bgColor="rgba(244,248,255,1)" bind:__l="__l" borderColor="rgba(74,131,247,1)" class="data-v-5c2acb52" color="rgba(74,131,247,1)" text="{{item.percentage+'%'}}" vueId="{{'389806d8-5-'+index}}"></u-tag>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </swiper-item>
+            </swiper>
+        </view>
+        <view class="health-content data-v-5c2acb52">
+            <scroll-view class="health-tab-scroll data-v-5c2acb52" scrollX="true">
+                <view class="tab data-v-5c2acb52">
+                    <view bindtap="__e" class="{{['data-v-5c2acb52','tab-item ',tabIndex==item.index?'active':'']}}" data-event-opts="{{[ [ 'tap',[ [ 'changeTab',['$0'],[ [ ['tabList','index',item.index,'index'] ] ] ] ] ] ]}}" wx:for="{{tabList}}" wx:for-index="__i0__" wx:key="index">
+                        <view class="span data-v-5c2acb52">{{item.name}}</view>
+                    </view>
+                </view>
+            </scroll-view>
+            <view class="data-v-5c2acb52">
+                <health-all bind:__l="__l" class="data-v-5c2acb52" data="{{data}}" loaded="{{loaded}}" noData="{{noData}}" vueId="389806d8-6" wx:if="{{tabIndex===1}}"></health-all>
+                <block wx:else>
+                    <health-case bind:__l="__l" class="data-v-5c2acb52" data="{{data}}" loaded="{{loaded}}" noData="{{noData}}" vueId="389806d8-7" wx:if="{{tabIndex===3}}"></health-case>
+                    <block wx:else>
+                        <none-page bind:__l="__l" class="data-v-5c2acb52" text="暂无住院记录" vueId="389806d8-8" wx:if="{{tabIndex===4}}"></none-page>
+                        <block wx:else>
+                            <none-page bind:__l="__l" class="data-v-5c2acb52" text="暂无体检报告" vueId="389806d8-9" wx:if="{{tabIndex===5}}"></none-page>
+                            <block wx:else>
+                                <health-inspection bind:__l="__l" class="data-v-5c2acb52" data="{{data}}" loaded="{{loaded}}" noData="{{noData}}" vueId="389806d8-10" wx:if="{{tabIndex===7}}"></health-inspection>
+                                <block wx:else>
+                                    <health-other bind:__l="__l" class="data-v-5c2acb52" data="{{data}}" loaded="{{loaded}}" noData="{{noData}}" vueId="389806d8-11" wx:if="{{tabIndex===6}}"></health-other>
+                                </block>
+                            </block>
+                        </block>
+                    </block>
+                </block>
+            </view>
+        </view>
+    </block>
+</view>

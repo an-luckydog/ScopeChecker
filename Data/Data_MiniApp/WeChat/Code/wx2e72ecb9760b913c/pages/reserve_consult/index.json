@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "专家预约",
+    "usingComponents": {
+        "mp-html": "../../miniprogram_npm/mp-html/index"
+    }
+}

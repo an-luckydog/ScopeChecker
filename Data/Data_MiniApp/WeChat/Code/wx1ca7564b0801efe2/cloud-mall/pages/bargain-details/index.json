@@ -1,0 +1,10 @@
+{
+    "navigationBarTitleText": "砍价详情",
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#fd3d22",
+    "navigationBarTextStyle": "white",
+    "disableScroll": true,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

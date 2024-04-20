@@ -1,0 +1,71 @@
+page {
+    background: #f2f2f2;
+    padding-bottom: 30rpx;
+    font-family: 'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;
+}
+
+.main {
+    width: 750rpx;
+}
+
+.activityName {
+    background: #fff;
+    padding: 30rpx;
+    margin: 0 auto 20rpx auto;
+}
+
+.lineBox {
+    padding: 30rpx;
+    background: #fff;
+    border-bottom: 2rpx solid #f2f2f2;
+}
+
+button {
+    font-weight: bold;
+    color: #5bc0de;
+    background: #fff;
+}
+
+.joinBtn {
+    padding: 20rpx;
+    background: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f0ad4e;
+}
+
+.activityBody {
+    margin-bottom: 30rpx;
+}
+
+.m-t-3 {
+    margin-top: 30rpx;
+}
+
+.lineTab {
+    width: 280rpx;
+    font-size: 35rpx;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.activityIntroduce {
+    font-size: 34rpx;
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+    width: 390rpx;
+}
+
+button {
+    margin: 15rpx 0;
+}
+
+.activityContent {
+    width: 690rpx;
+    font-size: 28rpx;
+    padding: 30rpx;
+    background: #fff;
+    border-bottom: 2rpx solid #f2f2f2;
+}

@@ -1,0 +1,1 @@
+<image bind:tap="handleClick" class="element-picture" showMenuByLongpress="true" src="{{img}}"></image>

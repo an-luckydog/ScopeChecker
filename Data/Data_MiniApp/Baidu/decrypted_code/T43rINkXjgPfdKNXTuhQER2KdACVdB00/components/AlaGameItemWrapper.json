@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-item": "./GameItem",
+        "half-px-line": "./HalfPxLine"
+    },
+    "component": true
+}

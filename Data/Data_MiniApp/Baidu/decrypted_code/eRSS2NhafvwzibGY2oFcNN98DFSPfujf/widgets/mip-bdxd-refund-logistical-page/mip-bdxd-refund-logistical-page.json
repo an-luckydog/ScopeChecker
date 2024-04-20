@@ -1,0 +1,15 @@
+{
+    "component": true,
+    "usingComponents": {
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "mip-bdxd-order-goods-card": "/widgets/mip-bdxd-order-goods-card/mip-bdxd-order-goods-card",
+        "mip-bdxd-image-list":"/widgets/mip-bdxd-image-list/mip-bdxd-image-list",
+        "gap": "/components/gap/gap",
+        "m-form": "/components/form/form",
+        "m-item": "/components/form-item/form-item",
+        "m-input": "/components/input/input",
+        "m-text": "/components/textarea/textarea",
+        "login": "/components/login/login",
+        "pop-up": "/components/popup/popup"
+    }
+}

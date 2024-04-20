@@ -1,0 +1,27 @@
+/* 头图模块 ---s */.head-image-box{width:100vw;height:66.66666666666667vw}.head-image-box .head-image{width:100%;height:100%}
+
+/* 头图模块 ---e */
+
+/* 轮播模块 ---s */.slider{width:100vw;height:37.333333333333336vw}.slide-image{width:100vw;height:37.333333333333336vw}.slider .lazy-img{background-size:40%}
+
+/* 轮播模块 ---e */
+
+/* 轮播模块 ---s */.sliderBig{width:100vw;height:113.33333333333333vw;text-align:center}.sliderBig swan-swiper-item{position:relative}.sliderBig swan-swiper-item .swiperBg{width:100vw;height:113.33333333333333vw;filter:blur(5.333333333333333vw);-webkit-filter:blur(5.333333333333333vw)}.sliderBig swan-swiper-item .swiperBgImage{width:100vw;height:106.66666666666667vw}.sliderBig .slide-image-big{position:absolute;bottom:0;left:16.666666666666668vw;width:66.66666666666667vw;height:100vw;border-radius:2.6666666666666665vw}.slider .lazy-img{background-size:40%}
+
+/* 轮播模块 ---e */
+
+/* 一行X图 */.mAdWraper{overflow:hidden;font-size:0}.mAdWraper .lazy-img{background-size:60%}.pic{width:100%;height:100%}.pic750{width:100vw;height:26.666666666666668vw;background:#666;display:inline-block}.pic375{width:50vw;height:29.333333333333332vw;background:#666;display:inline-block}.pic250{width:33.333333333333336vw;height:44vw;background:#999;display:inline-block}.pic375-s{width:50vw;height:18.666666666666668vw;background:#666;display:inline-block}.pic250-s{width:33.333333333333336vw;height:20.666666666666668vw;background:#999;display:inline-block}.pic187-s{width:25%;height:18.666666666666668vw;background:#999;display:inline-block}
+
+/* 一行X图 */
+
+/* 图片标题 ---s */.image-title-box{width:100vw;height:10.666666666666666vw}.image-title-box .image-title{width:100%;height:100%}.image-title-box .image-title swan-image{width:100%;height:100%}
+
+/* 图片标题 ---e */
+
+/* 一行X个产品 ---s */.product-box{overflow:hidden}.pro1-box{position:relative;display:flex;flex-direction:row;height:26.666666666666668vw;padding:2.6666666666666665vw;border-bottom:0.5px solid #f6f6f6}.pro1-pic{width:26.666666666666668vw;height:26.666666666666668vw;background:#666}.pro1-info{margin-left:2.6666666666666665vw;width:61.333333333333336vw}.pro1-name{overflow:hidden;width:61.333333333333336vw;height:9.333333333333334vw;line-height:4.666666666666667vw}.gb-price{margin-top:7.333333333333333vw;color:#ff3b00;font-size:3.466666666666667vw}.gb-price2{margin-top:3.3333333333333335vw;color:#ff3b00;font-size:3.466666666666667vw}.ref-price{margin-top:1.3333333333333333vw;color:#a7a7a7;font-size:3.2vw;text-decoration:line-through}.pro2-box{overflow:hidden;float:left;position:relative;display:block;padding-left:2.6666666666666665vw;width:50%;height:71.46666666666667vw;box-sizing:border-box;border-right:0.5px solid #f6f6f6;border-bottom:0.5px solid #f6f6f6}.pro2-pic{width:45.333333333333336vw;height:45.333333333333336vw;background:#666}.pro2-info{width:45.333333333333336vw}.pro2-name{overflow:hidden;height:9.333333333333334vw;line-height:4.666666666666667vw}.pdtWraper{overflow:hidden}.pro3-box{overflow:hidden;position:relative;padding-left:2vw;width:33.333333333333336vw;height:53.333333333333336vw;float:left;box-sizing:border-box;border-bottom:0.5px solid #f6f6f6;border-right:0.5px solid #f6f6f6}.pro3-pic{width:28.666666666666668vw;height:28.666666666666668vw;background:#999}.pro3-name{overflow:hidden;width:28.666666666666668vw;height:9.333333333333334vw;line-height:4.666666666666667vw}.sold-out1{position:absolute;left:5.333333333333333vw;top:5.333333333333333vw;z-index:2;width:20vw;height:20vw;background-image:url("https://res.suning.cn/project/crdnode/weChat/image/sold_out_3.png");background-repeat:no-repeat;background-size:contain}.sold-out2{position:absolute;left:14.666666666666666vw;top:13.333333333333334vw;z-index:2;width:20vw;height:20vw;background-image:url("https://res.suning.cn/project/crdnode/weChat/image/sold_out_3.png");background-repeat:no-repeat;background-size:contain}.sold-out3{position:absolute;left:5.333333333333333vw;top:4vw;z-index:2;width:20vw;height:20vw;background-image:url("https://res.suning.cn/project/crdnode/weChat/image/sold_out_3.png");background-repeat:no-repeat;background-size:contain}
+
+/* 一行X个产品 ---e */
+
+/* tab --s*/.tabNav{overflow:hidden;display:flex;flex-direction:row;justify-content:space-between}.navItem{width:100%;height:10.666666666666666vw;text-align:center;box-sizing:border-box}.navItem>swan-image{width:100%;height:100%}.navText{padding-bottom:3.466666666666667vw;line-height:9.333333333333334vw;color:#000}.current{color:#fa163b;border-bottom:0.5333333333333333vw solid #fa163b}.tabWrap{min-height:80vw}
+
+/* tab --e */

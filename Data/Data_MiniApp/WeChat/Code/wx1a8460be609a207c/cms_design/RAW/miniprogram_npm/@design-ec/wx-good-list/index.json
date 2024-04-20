@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "ti-icon": "/titian-mp/RAW/icon/index",
+        "ti-loading": "/titian-mp/RAW/loading/index",
+        "good-card": "../wx-good-card/index"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "defaultTitle": "领奖类活动",
+    "navigationBarTitleText": "领奖类活动",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "disableScroll": false,
+    "transparentTitle": "auto",
+    "enablePullDownRefresh": true,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

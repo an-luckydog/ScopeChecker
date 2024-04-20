@@ -1,0 +1,8 @@
+{
+	"name": "bd_bcp_sdk",
+	"publicComponents": {
+		"imlp": "components/imlp/imlp",
+		"csdk": "components/csdk/csdk"
+	},
+	"main": "index.js"
+}

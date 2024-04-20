@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "image-upload": "/widgets/mip-bdxd-image-upload/mip-bdxd-image-upload"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "game-item": "./GameItem",
+        "mod-line": "./ModLine",
+        "game-ranting-badge": "./GameRantingBadge"
+    },
+    "component": true
+}

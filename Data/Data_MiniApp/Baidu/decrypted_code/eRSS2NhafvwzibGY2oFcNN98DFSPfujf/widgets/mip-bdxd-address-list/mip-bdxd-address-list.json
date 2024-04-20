@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mip-bdxd-address-card": "/widgets/mip-bdxd-address-card/mip-bdxd-address-card",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "mip-bdxd-gap": "/components/gap/gap",
+        "optimize-image":"/components/optimize-image/optimize-image",
+        "login": "/components/login/login"
+    }
+}

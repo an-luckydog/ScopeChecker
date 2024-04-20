@@ -1,0 +1,11 @@
+{
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "找医院",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "cy-search": "../../components/cy-search/index",
+        "cy-authorize": "../../components/cy-authorize/index",
+        "cy-loading": "../../components/cy-loading/index",
+        "cy-up2top": "../../components/cy-up2top/index"
+    }
+}

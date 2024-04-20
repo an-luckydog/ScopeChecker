@@ -1,0 +1,7 @@
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'Promise'}}"中找到匹配: {"chooseImage}"
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'chooseImg'}}"中找到匹配: {"chooseImage}"
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'map'}}"中找到匹配: {"chooseVideo}"
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'map'}}"中找到匹配: {"chooseMedia}"
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'request'}}"中找到匹配: {"chooseMedia}"
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'pastEve'}}"中找到匹配: {"getClipboardData}"
+在后端文件{"D:\wxappUnpacker-master\dec\app-service.js}"中的方法{"{'onLoad'}}"中找到匹配: {"getClipboardData}"

@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "快递超市-换绑手机",
+    "usingComponents": {
+        "c-page-launch": "../../components/c-page-launch/c-page-launch"
+    }
+}

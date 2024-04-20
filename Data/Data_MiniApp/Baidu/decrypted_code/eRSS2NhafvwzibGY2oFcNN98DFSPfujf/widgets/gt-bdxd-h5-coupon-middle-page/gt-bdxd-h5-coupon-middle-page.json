@@ -1,0 +1,10 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "coupon":"/components/coupon-card/coupon-five/index",
+        "login": "/components/login/login",
+        "optimize-image":"/components/optimize-image/optimize-image"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "component": true,
+    "usingComponents": {
+        "empty-list": "../empty-list/index",
+        "overlimit-tip": "../overlimit-tip/index",
+        "bottom-btn": "../bottom-btn/index",
+        "select-bar": "../select-bar/index",
+        "task-status": "../task-status/index",
+        "toasts": "/components/toasts/index",
+        "file-item": "/components/file-item/index"
+    }
+}

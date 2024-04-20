@@ -1,0 +1,215 @@
+<template name="cart-warn-modal">
+    <cart-warn-modal content="{{lgc.r(d.content,'')}}" extend="{{lgc.r(d.extend,'{}')}}" title="{{lgc.r(d.title,'')}}"></cart-warn-modal>
+</template>
+<template name="member-coupon-pop-up">
+    <member-coupon-pop-up businessData="{{lgc.r(d.businessData,'{}')}}" componentConfigJSON="{{lgc.r(d.componentConfigJSON,'')}}" couponList="{{lgc.r( d.couponList,[] )}}" couponRedirection="{{lgc.r(d.couponRedirection,'{}')}}" id="{{mid}}" redirection="{{lgc.r(d.redirection,'{}')}}" showModal="{{lgc.r(d.showModal,false)}}" showViewAll="{{lgc.r(d.showViewAll,false)}}"></member-coupon-pop-up>
+</template>
+<template name="video-module">
+    <video-module autoplay="{{lgc.r(d.autoplay,false)}}" circulate="{{lgc.r(d.circulate,false)}}" componentStyle="{{lgc.r(d.componentStyle,'{}')}}" fillShowSwitch="{{lgc.r(d.fillShowSwitch,true)}}" id="{{mid}}" layout="{{lgc.r(d.layout,'{}')}}" videoAuditInfo="{{lgc.r(d.videoAuditInfo,'{}')}}"></video-module>
+</template>
+<template name="member-canvas">
+    <member-canvas businessData="{{lgc.r(d.businessData,'{}')}}" feBasicResource="{{lgc.r(d.feBasicResource,'')}}" id="{{mid}}" isLogin="{{lgc.r(d.isLogin,false)}}" isMemberCanvas="{{true}}" loginAction="{{lgc.r(d.loginAction,'{}')}}" loginCanvasConfig="{{lgc.r(d.loginCanvasConfig,'{}')}}" needSecondRequest="{{lgc.r(d.needSecondRequest,false)}}"></member-canvas>
+</template>
+<template name="basic-canvas">
+    <member-canvas businessData="{{lgc.r(d.businessData,'{}')}}" feBasicResource="{{lgc.r(d.feBasicResource,'')}}" id="{{mid}}" isLogin="{{lgc.r(d.isLogin,false)}}" isMemberCanvas="{{false}}" loginAction="{{lgc.r(d.loginAction,'{}')}}" loginCanvasConfig="{{lgc.r(d.canvasConfig,'{}')}}" needSecondRequest="{{lgc.r(d.needSecondRequest,false)}}"></member-canvas>
+</template>
+<template name="member-info">
+    <member-info animationStyle="{{lgc.r(d.animationStyle,'')}}" businessData="{{lgc.r(d.businessData,'{}')}}" cardId="{{lgc.r(d.cardId,0)}}" componentStyle="{{lgc.r(d.componentStyle,'{}')}}" defaultNickName="{{lgc.r(d.defaultNickName,'')}}" id="{{mid}}" layout="{{lgc.r(d.layout,'{}')}}" memberCardInfo="{{lgc.r(d.memberCardInfo,'{}')}}" needSecondRequest="{{lgc.r(d.needSecondRequest,false)}}" notLoginConfig="{{lgc.r(d.notLoginConfig,'{}')}}" overallStyle="{{lgc.r(d.overallStyle,0)}}" showCardTitle="{{lgc.r(d.showCardTitle,true)}}" showMemberGrade="{{lgc.r(d.showMemberGrade,true)}}" showNickName="{{lgc.r(d.showNickName,false)}}" styleType="{{lgc.r(d.styleType,3)}}" theme="{{lgc.r(d.theme,'{}')}}"></member-info>
+</template>
+<template name="manual-slide">
+    <manual-slide advId="{{lgc.r(d.advId,'')}}" autoplay="{{lgc.r(d.autoplay,false)}}" backgroundImgUrl="{{lgc.r(d.backgroundImgUrl,'')}}" bannerInterval="{{lgc.r(d.bannerInterval,3)}}" bgColor="{{lgc.r(d.bgColor,'')}}" componentLayout="{{lgc.r(d.componentLayout,'')}}" componentStyle="{{lgc.r(d.componentStyle,'{}')}}" defaultImgUrl="{{lgc.r( d.defaultImgUrl,[] )}}" heightImg="{{lgc.r(d.heightImg,160)}}" id="{{mid}}" imgList="{{lgc.r( d.imgList,[] )}}" layout="{{lgc.r(d.layout,'{}')}}" templateStyle="{{lgc.r(d.templateStyle,1)}}"></manual-slide>
+</template>
+<template name="double-limo-slide">
+    <double-limo-slide advId="{{lgc.r(d.advId,'')}}" autoplay="{{lgc.r(d.autoplay,true)}}" bannerInterval="{{lgc.r(d.bannerInterval,3)}}" componentStyle="{{lgc.r(d.componentStyle,'{}')}}" heightImg="{{lgc.r(d.heightImg,160)}}" id="{{mid}}" imgList="{{lgc.r( d.imgList,[] )}}" layout="{{lgc.r(d.layout,'{}')}}" opacitySpu="{{lgc.r(d.opacitySpu,0.8)}}"></double-limo-slide>
+</template>
+<template name="limo-slide">
+    <limo-slide advId="{{lgc.r(d.advId,'')}}" autoplay="{{lgc.r(d.autoplay,true)}}" bannerInterval="{{lgc.r(d.bannerInterval,3)}}" circular="{{lgc.r(d.circular,true)}}" componentId="{{lgc.r(d.componentId,-1)}}" componentStyle="{{lgc.r(d.componentStyle,'{}')}}" current="{{lgc.r(d.current,0)}}" currentIndex="{{lgc.r(d.currentIndex,0)}}" defaultImgUrl="{{lgc.r(d.defaultImgUrl,'http://p1.meituan.net/scarlett/497822ef22088452f7e10d47a3ec7cfc1457.png')}}" duration="{{lgc.r(d.duration,500)}}" heightImg="{{lgc.r(d.heightImg,160)}}" id="{{mid}}" imgList="{{lgc.r( d.imgList,[] )}}" imgMode="{{lgc.r(d.imgMode,'scaleToFill')}}" layout="{{lgc.r(d.layout,'{}')}}" slideType="{{lgc.r(d.slideType,0)}}"></limo-slide>
+</template>
+<template name="limo-modal">
+    <limo-modal advId="{{lgc.r(d.advId,'')}}" componentStyle="{{lgc.r(d.componentStyle,'{}')}}" id="{{mid}}" imgInfos="{{lgc.r(d.imgInfos,'{}')}}" layout="{{lgc.r(d.layout,'{}')}}" limoModalStorage="{{lgc.r(d.limoModalStorage,'')}}" modalConfigResource="{{lgc.r(d.modalConfigResource,'{}')}}" preview="{{lgc.r(d.preview,false)}}" show="{{lgc.r(d.show,false)}}"></limo-modal>
+</template>
+<template name="cart-bar-top">
+    <cart-bar-top extendData="{{d.data}}"></cart-bar-top>
+</template>
+<template name="coupon-assistant-fly">
+    <coupon-assistant-fly loginStatus="{{lgc.r(d.loginStatus,false)}}" styleObj="{{lgc.r(d.styleObj,'')}}"></coupon-assistant-fly>
+</template>
+<template name="coupon-panel">
+    <coupon-panel></coupon-panel>
+</template>
+<template name="coupon-assistant-top">
+    <coupon-assistant-top styleObj="{{lgc.r(d.styleObj,'')}}"></coupon-assistant-top>
+</template>
+<template name="coupon-login">
+    <coupon-login isBind="{{lgc.r(d.isBind,false)}}" needPullCate="{{lgc.r(d.needPullCate,false)}}"></coupon-login>
+</template>
+<template name="mt-bind">
+    <mt-bind isBind="{{d.isBind}}"></mt-bind>
+</template>
+<template name="shop-info-ph">
+    <shop-info-ph peopleCount="{{lgc.r(d.peopleCount,'')}}" tableName="{{lgc.r(d.tableName,'')}}"></shop-info-ph>
+</template>
+<template name="joint-order-panel">
+    <joint-order-panel jointToastInfo="{{lgc.r(d.jointToastInfo,'{}')}}"></joint-order-panel>
+</template>
+<template name="joint-order">
+    <joint-order jointIcon="{{lgc.r(d.jointIcon,'')}}" jointText="{{lgc.r(d.jointText,'')}}"></joint-order>
+</template>
+<template name="shop-info-wm">
+    <shop-info-wm deliveryTimeText="{{lgc.r(d.deliveryTimeText,'')}}" selectedAddress="{{lgc.r(d.selectedAddress,'')}}" shopName="{{lgc.r(d.shopName,'')}}"></shop-info-wm>
+</template>
+<template name="shop-info-zt">
+    <shop-info-zt collectIcon="{{lgc.r(d.collectIcon,'')}}" collectIconActive="{{lgc.r(d.collectIconActive,'')}}" collectStyle="{{lgc.r(d.collectStyle,0)}}" collectTitle="{{lgc.r(d.collectTitle,'')}}" collected="{{lgc.r(d.collected,false)}}" distance="{{lgc.r(d.distance,'')}}" errTip="{{lgc.r(d.errTip,'')}}" shopName="{{lgc.r(d.shopName,'')}}"></shop-info-zt>
+</template>
+<template name="mandatory-dish-panel">
+    <mandatory-dish-panel solutions="{{lgc.r( d.solutions,[] )}}"></mandatory-dish-panel>
+</template>
+<template name="privacy-agreement">
+    <privacy-agreement agreements="{{d.agreements}}" popUpWindowsType="{{d.popUpWindowsType}}" templateIds="{{d.templateIds}}"></privacy-agreement>
+</template>
+<template name="select-people-panel">
+    <select-people-panel peopleCount="{{lgc.r(d.peopleCount,'1')}}"></select-people-panel>
+</template>
+<template name="limo-rules-modal-v2">
+    <limo-rules-modal-v2 agreement="{{d.agreement}}" headers="{{d.headers}}" id="{{mid}}"></limo-rules-modal-v2>
+</template>
+<template name="coupon-rules-standard">
+    <coupon-rules-standard id="{{mid}}" rulesParams="{{d.rulesParams}}" safePadding="{{d.safePadding}}"></coupon-rules-standard>
+</template>
+<template name="open-card-panel">
+    <open-card-panel bind:openCardRefreshPage="refreshPage" id="{{mid}}" needPopup="{{d.needPopup}}" openCardCoupon="{{d.openCardCoupon}}"></open-card-panel>
+</template>
+<template name="voucher-list-panel">
+    <voucher-list-panel customStyle="{{lgc.r(d.customStyle,'')}}" requestInfo="{{lgc.r(d.requestInfo,'{}')}}"></voucher-list-panel>
+</template>
+<template name="calculator-panel">
+    <calculator-panel calcStatus="{{lgc.r(d.calcStatus,1)}}"></calculator-panel>
+</template>
+<template name="coupon-package">
+    <coupon-package cardId="{{lgc.r(d.cardId,'')}}" couponPackageImg="{{lgc.r(d.couponPackageImg,'')}}" couponPageSize="{{lgc.r(d.couponPageSize,'')}}" couponPageSizeScale="{{lgc.r(d.couponPageSizeScale,'')}}" orgId="{{lgc.r(d.orgId,'')}}"></coupon-package>
+</template>
+<template name="shop-status-panel">
+    <shop-status-panel recommendInfo="{{lgc.r(d.recommendInfo,'{}')}}" status="{{lgc.r(d.status,0)}}"></shop-status-panel>
+</template>
+<template name="desc-operate-panel">
+    <desc-operate-panel dishInfo="{{lgc.r(d.dishInfo,'{}')}}"></desc-operate-panel>
+</template>
+<template name="dish-time-info">
+    <dish-time-info id="{{mid}}" spuId="{{lgc.r(d.spuId,'')}}"></dish-time-info>
+</template>
+<template name="coupon-dishes-panel">
+    <coupon-dishes-panel choiceNum="{{lgc.r(d.choiceNum,0)}}" dishList="{{lgc.r( d.dishList,[] )}}" id="{{mid}}"></coupon-dishes-panel>
+</template>
+<template name="dish-remark-panel">
+    <dish-remark-panel id="{{mid}}" orderRemarkDefaultWord="{{lgc.r(d.orderRemarkDefaultWord,'')}}" remarkText="{{lgc.r(d.remarkText,'')}}"></dish-remark-panel>
+</template>
+<template name="package-details-panel">
+    <package-details-panel id="{{mid}}" packageModalData="{{lgc.r(d.packageModalData,'{}')}}"></package-details-panel>
+</template>
+<template name="static-dish-panel">
+    <static-dish-panel id="{{mid}}" spuId="{{lgc.r(d.spuId,'')}}"></static-dish-panel>
+</template>
+<template name="package-dish-panel">
+    <package-dish-panel addType="{{lgc.r(d.addType,0)}}" autoScroll="{{lgc.r(d.autoScroll,false)}}" cartDishInfo="{{lgc.r(d.cartDishInfo,'{}')}}" extraParams="{{lgc.r(d.extraParams,'{}')}}" id="{{mid}}" spuId="{{lgc.r(d.spuId,'')}}"></package-dish-panel>
+</template>
+<template name="add-multi-panel">
+    <multi-spec-panel addType="{{lgc.r(d.addType,0)}}" autoScroll="{{lgc.r(d.autoScroll,false)}}" callbackInfo="{{lgc.r(d.callbackInfo,'{}')}}" cartDishInfo="{{lgc.r(d.cartDishInfo,'{}')}}" extraParams="{{lgc.r(d.extraParams,'{}')}}" groupId="{{lgc.r(d.groupId,'')}}" id="{{mid}}" panelType="add-multi-panel" spuId="{{lgc.r(d.spuId,'')}}"></multi-spec-panel>
+</template>
+<template name="multi-spec-panel">
+    <multi-spec-panel addType="{{lgc.r(d.addType,0)}}" autoScroll="{{lgc.r(d.autoScroll,false)}}" callbackInfo="{{lgc.r(d.callbackInfo,'{}')}}" cartDishInfo="{{lgc.r(d.cartDishInfo,'{}')}}" extraParams="{{lgc.r(d.extraParams,'{}')}}" groupId="{{lgc.r(d.groupId,'')}}" id="{{mid}}" panelType="multi-spec-panel" spuId="{{lgc.r(d.spuId,'')}}"></multi-spec-panel>
+</template>
+<template name="shop-info-panel">
+    <shop-info-panel advNoticeList="{{lgc.r( d.advNoticeList,[] )}}" id="{{mid}}" promoTags="{{lgc.r( d.promoTags,[] )}}"></shop-info-panel>
+</template>
+<template name="cart-list">
+    <cart-list cartTipBg="{{lgc.r(d.cartTipBg,'')}}" cartTipsStyles="{{lgc.r(d.cartTipsStyles,'{}')}}" id="{{mid}}"></cart-list>
+</template>
+<template name="menu-dish-recommend">
+    <menu-dish-recommend recommendDishList="{{lgc.r( d.recommendDishList,[] )}}"></menu-dish-recommend>
+</template>
+<template name="reserve-tip">
+    <reserve-tip tipTextList="{{lgc.r( d.tipTextList,[] )}}"></reserve-tip>
+</template>
+<template name="shop-status">
+    <shop-status status="{{lgc.r(d.status,0)}}" tips="{{lgc.r(d.tips,'')}}"></shop-status>
+</template>
+<template name="cart-bar">
+    <cart-bar actEntrance="{{lgc.r(d.actEntrance,'{}')}}" cartIcon="{{lgc.r(d.cartIcon,'https://p0.meituan.net/ingee/e2e1684c6d987339c45687df2fd0d57d2211.png')}}" cartStyles="{{lgc.r(d.cartStyles,'{}')}}" cartTipBgImg="{{lgc.r(d.cartTipBgImg,'')}}" cartTipsBgColor="{{lgc.r(d.cartTipsBgColor,'#FFF8D9')}}" cartTipsStyles="{{lgc.r(d.cartTipsStyles,'{}')}}" confirmButton="{{lgc.r(d.confirmButton,'{}')}}" id="{{mid}}">
+        <view slot="{{item.name}}" wx:if="{{extendList&&extendList.length}}" wx:for="{{extendList}}" wx:key="index">
+            <template is="{{item.name}}" data="{{d:item}}"></template>
+        </view>
+    </cart-bar>
+</template>
+<template name="menu-list">
+    <menu-list categories="{{lgc.r( d.categories,[] )}}" categoryDecorationConfig="{{lgc.r(d.categoryDecorationConfig,'{}')}}" id="{{mid}}" menuSettings="{{lgc.r(d.menuSettings,'{}')}}" pageCount="{{lgc.r(d.pageCount,0)}}" specialCategories="{{lgc.r( d.specialCategories,[] )}}">
+        <view slot="decorator-components">
+            <view class="container-slot" style="{{item.layoutStyle}}" wx:if="{{modules&&modules.length}}" wx:for="{{modules}}" wx:key="moduleId">
+                <template is="{{item.name}}" data="{{mid:item.id,d:item.data,modules:item.modules,layoutStyle:item.layoutStyle}}"></template>
+            </view>
+        </view>
+        <view slot="{{item.name}}" wx:if="{{extendList&&extendList.length}}" wx:for="{{extendList}}" wx:key="index">
+            <template is="{{item.name}}" data="{{d:item}}"></template>
+        </view>
+    </menu-list>
+</template>
+<template name="menu-head-info">
+    <menu-head-info bizTypeList="{{lgc.r( d.bizTypeList,[] )}}" componentDecorationConfigJSON="{{lgc.r(d.componentDecorationConfigJSON,'')}}" config="{{lgc.r(d.config,'{}')}}" dpTag="{{lgc.r(d.dpTag,'{}')}}" id="{{mid}}" orderProductionProcess="{{lgc.r(d.orderProductionProcess,'{}')}}" promoTags="{{lgc.r( d.promoTags,[] )}}" shopName="{{lgc.r(d.shopName,'')}}">
+        <view slot="{{item.name}}" wx:if="{{extendList&&extendList.length}}" wx:for="{{extendList}}" wx:key="index">
+            <template is="{{item.name}}" data="{{d:item}}"></template>
+        </view>
+    </menu-head-info>
+</template>
+<template name="limo-layout">
+    <view class="container {{hasTabBar?'':'no-tab'}}" style="{{layoutStyle}}" wx:if="{{modules.length||dialogs.length||toast||modal}}">
+        <block wx:if="{{modules.length}}" wx:for="{{modules}}" wx:key="moduleId">
+            <view class="container-slot" style="{{item.layoutStyle}}" wx:if="{{item&&item.moduleName}}">
+                <template is="{{item.moduleName}}" data="{{mid:item.moduleId,d:item.data,modules:item.modules,layoutStyle:item.layoutStyle,extendList:item.extendList}}"></template>
+            </view>
+        </block>
+        <template is="rms-dialog" data="{{item:item,dialogs:dialogs}}" wx:if="{{dialogs.length}}" wx:for="{{dialogs}}" wx:key="moduleId"></template>
+        <view wx:if="{{modal&&(modal.title||modal.content)}}">
+            <template is="rms-modal" data="{{...modal}}"></template>
+        </view>
+        <view wx:if="{{toast&&toast.title}}">
+            <template is="rms-toast" data="{{toast:toast}}"></template>
+        </view>
+    </view>
+    <view wx:if="{{tooltip&&tooltip.text}}">
+        <template is="rms-tooltip" data="{{...tooltip}}"></template>
+    </view>
+</template>
+<template name="rms-dialog">
+    <view catchtap="onMaskTap" catchtouchmove="onMaskTouchMove" class="container-mask {{dialogs.length&&dialogs[dialogs.length-1].options.closeMask?'hidden':''}}" style="z-index:{{item.options.zIndex}};" wx:if="{{item.show}}"></view>
+    <view class="mask-item {{item.options.position}}" style="z-index:{{item.options.zIndex}};{{item.options.customStyle}}" wx:if="{{item.show}}">
+        <template is="dialog-header" data="{{...item.options.header}}" wx:if="{{item.options.header}}"></template>
+        <template is="{{item.moduleName}}" data="{{mid:item.moduleId,d:item.data}}"></template>
+    </view>
+</template>
+<template name="scroll-view">
+    <scroll-view enableFlex id="{{mid}}" scrollX="{{d.scrollX}}" scrollY="{{d.scrollY}}">
+        <template is="{{item.name}}" data="{{mid:item.id,d:item.data,modules:item.modules,layoutStyle:item.layoutStyle}}" wx:for="{{modules}}" wx:key="moduleId"></template>
+    </scroll-view>
+</template>
+<template name="view-1">
+    <template is="{{item.name}}" data="{{mid:item.id,d:item.data,modules:item.modules,layoutStyle:item.layoutStyle}}" wx:for="{{modules}}" wx:key="moduleId"></template>
+</template>
+<template name="view">
+    <template is="{{item.name}}" data="{{mid:item.id,d:item.data,modules:item.modules,layoutStyle:item.layoutStyle}}" wx:for="{{modules}}" wx:key="moduleId"></template>
+</template>
+<template name="universal">
+    <view class="container-slot" style="{{item.layoutStyle}}" wx:if="{{modules&&modules.length}}" wx:for="{{modules}}" wx:key="moduleId">
+        <template is="{{item.name}}" data="{{mid:item.id,d:item.data,modules:item.modules,layoutStyle:item.layoutStyle}}"></template>
+    </view>
+    <template is="{{item.name}}" data="{{d:item}}" wx:if="{{extendList&&extendList.length}}" wx:for="{{extendList}}" wx:key="index"></template>
+</template>
+<import src="../../components/core/index.wxml"></import>
+<import src="../../components/login/index.wxml"></import>
+<theme-container themeType="1">
+    <view class="container-mask loading-mask" wx:if="{{loading}}">
+        <view class="loading-pic"></view>
+    </view>
+    <common-error bind:errorButtonClick="reload" btnText="{{errorInfo.btnText}}" errorTitle="{{errorInfo.errorTitle}}" errorType="{{errorInfo.errorType}}" wx:elif="{{errorInfo&&errorInfo.errorTitle}}"></common-error>
+    <template is="limo-layout" data="{{modules:modules,dialogs:dialogs,modal:modal,toast:toast,tooltip:tooltip,hasTabBar:hasTabBar,layoutStyle:layoutStyle}}" wx:else></template>
+</theme-container>
+<privacy-popup></privacy-popup>
+<wxs module="lgc" src="../../commons/index.wxs" />

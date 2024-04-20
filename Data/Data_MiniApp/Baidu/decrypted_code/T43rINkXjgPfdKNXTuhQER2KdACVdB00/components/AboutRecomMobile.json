@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "game-bar-header": "./GameBarHeader",
+        "about-recom-mobile-item": "./AboutRecomMobileItem"
+    },
+    "component": true
+}

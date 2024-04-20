@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "u-icon": "/node-modules/uview-ui/components/u-icon/u-icon",
+        "verify-mpsdk": "/wxcomponents/verify_mpsdk/index/index"
+    },
+    "component": true
+}

@@ -1,0 +1,32 @@
+<template name="element-rich-text">
+    <rich-text nodes="{{elConfig.content}}"></rich-text>
+</template>
+<template name="element-member-card">
+    <element-member-card bgColor="{{bgColor}}" bgPicUrl="{{bgPicUrl}}" bgType="{{bgType}}"></element-member-card>
+</template>
+<template name="element-member-property">
+    <element-member-property balance="{{balance}}" coupon="{{coupon}}" elConfig="{{elConfig}}" point="{{point}}"></element-member-property>
+</template>
+<template name="element-member-progress">
+    <element-member-progress elConfig="{{elConfig}}" memberGradeRight="{{memberGradeRight}}"></element-member-progress>
+</template>
+<template name="element-member-identity">
+    <element-member-identity cardGradeName="{{cardGradeName}}" cardTypeName="{{cardTypeName}}" elConfig="{{elConfig}}" nickName="{{nickName}}"></element-member-identity>
+</template>
+<template name="element-hot-zone">
+    <element-hot-zone bind:decorationCompClick="compClick" bind:hotClick="handleHotClick" hotZone="{{hotZone}}"></element-hot-zone>
+</template>
+<template name="element-line">
+    <element-line elConfig="{{elConfig}}"></element-line>
+</template>
+<template name="element-picture">
+    <element-picture action="{{action}}" img="{{img}}"></element-picture>
+</template>
+<template name="element-text">
+    <element-text elConfig="{{elConfig}}"></element-text>
+</template>
+<view bind:tap="handleLogin" class="free-element-panel" style="{{componentStyle}}" wx:if="{{showCanvas}}">
+    <view class="element-wrapper" style="{{item.componentStyle}}" wx:if="{{isMemberCanvas&&isLogin||!isMemberCanvas}}" wx:for="{{elementList}}">
+        <template is="{{item.elementName}}" data="{{...item.config}}"></template>
+    </view>
+</view>

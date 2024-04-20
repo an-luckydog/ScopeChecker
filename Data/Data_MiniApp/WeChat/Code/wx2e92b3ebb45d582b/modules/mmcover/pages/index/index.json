@@ -1,0 +1,8 @@
+{
+    "navigationStyle": "custom",
+    "usingComponents": {
+        "share-mask": "../../components/share-mask/share-mask",
+        "banner": "../../../../miniprogram_npm/@tmsfe/tms-ui/banner/banner",
+        "navbar": "../../../../miniprogram_npm/@tmsfe/tms-ui/navbar/navbar"
+    }
+}

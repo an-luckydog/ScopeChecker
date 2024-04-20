@@ -1,0 +1,11 @@
+{
+    "defaultTitle": "适用商品",
+    "navigationBarTitleText": "适用商品",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "disableScroll": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

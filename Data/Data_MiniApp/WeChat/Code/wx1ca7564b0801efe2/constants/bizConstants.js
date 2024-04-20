@@ -1,0 +1,442 @@
+Object.defineProperty(exports, "__esModule", {
+    value: !0
+}), exports.TITLE_CONTENT = exports.TASTE_REPEAT_CHOICE = exports.TAKE_COUPON_RESULT = exports.SOLD_OUT_TEXT = exports.SINGLE_CHOICE = exports.SHOP_STATUS = exports.SHOP_PROMOTION_TYPE = exports.SHOP_PROMOTION_TAG_TYPE = exports.SCAN_QRCODE_TEXT = exports.REQUIRE_MUST_DISH_TEXT = exports.RECOMMEND_CATEGORY = exports.PROMOTION_SELECT_STATUS = exports.PROMOTION_ICON_TYPE = exports.PROD_TIMEOUT = exports.PRICE_TYPE = exports.PORTAL_TAB_TYPE = exports.PLUGIN_CATEGORY = exports.PLACEHOLDER_DISH_PIC = exports.PICTURE_RATIO = exports.PAGE_FROM = exports.PACKAGE_TEMPLATE_TYPE = exports.OVER_PRICE_TITLE = exports.ORDER_DONE_TEXT = exports.ORDER_BIZ_TAG = exports.OPERATE_PACKAGE_TASTE_TYPE = exports.NO_LIMIT_CHOICE = exports.NOT_CAN_SALE = exports.MT_SPECIAL_DISCOUNT_ICON = exports.MENU_PAGE_INIT_CONFIG = exports.MEMBER_TITLE = exports.MAX_THRESHOLD = exports.MAX_SHOW_STOCK_COUNT = exports.INIT_PACKAGE = exports.GROUP_TYPE = exports.GROUP_CHOICE_TYPE = exports.EMPTY_MENU_ERROR_TITLE = exports.DISH_TYPE = exports.DISH_SOURCE = exports.DISH_SHOW_TYPE = exports.DISH_PROMOTION_TYPE_SRC = exports.DISH_DETAIL = exports.DISH_CATE_TYPE = exports.DISH_CATEGORY_ID = exports.DISH_CATEGORY_ICON_TYPE = exports.DISH_CATEGORY_CLASS_MAP = exports.DISH_ADD_FROM = exports.DEFINED_TITLE = exports.DEFAULT_ERROR_TITLE = exports.COUPON_ITEM_STYLE = exports.COUPON_ICON = exports.CONFIRM_TEXT = exports.CALCULATOR_STATUS = exports.BOSS_DISH_SHOW_TYPE = exports.BIZ_TYPE_MAP = exports.BIZ_MODE = exports.ATTR_TYPE = exports.AD_TYPE = exports.AD_FROM_TYPE = exports.ACTIVITY_SRC = exports.ACCOUNT_BIND_CODE = void 0;
+
+exports.CONFIRM_TEXT = "我知道了";
+
+exports.DEFAULT_ERROR_TITLE = "页面加载失败了";
+
+exports.EMPTY_MENU_ERROR_TITLE = "当前没有可点的菜品";
+
+exports.OVER_PRICE_TITLE = "（超出限购份数按菜品售卖价购买）";
+
+exports.MEMBER_TITLE = "（入会享会员专属特权）";
+
+exports.SCAN_QRCODE_TEXT = "进店扫码下单";
+
+exports.REQUIRE_MUST_DISH_TEXT = "选必点品并下单";
+
+exports.ORDER_DONE_TEXT = "选好了";
+
+exports.SOLD_OUT_TEXT = "今日售罄";
+
+exports.NOT_CAN_SALE = "非可售时间";
+
+exports.GROUP_TYPE = {
+    FIXED: 0,
+    OPTIONAL: 1
+};
+
+var _ = function(_) {
+    return _[_.ADD = 0] = "ADD", _[_.MODIFY = 1] = "MODIFY", _;
+}({});
+
+exports.OPERATE_PACKAGE_TASTE_TYPE = _;
+
+!function(_) {
+    _[_.NO_WAY = 0] = "NO_WAY", _[_.STORE_DINING = 1] = "STORE_DINING", _[_.TAKEAWAY = 2] = "TAKEAWAY";
+}({});
+
+exports.GROUP_CHOICE_TYPE = {
+    NON_REPEATABLE: 1,
+    REPEATABLE: 2
+};
+
+exports.DISH_TYPE = {
+    NORMAL: 0,
+    PACKAGE: 1
+};
+
+exports.PRICE_TYPE = {
+    NOT: 1,
+    FIXED: 2,
+    PRO_PORTION: 3
+};
+
+exports.DISH_PROMOTION_TYPE_SRC = {
+    PROMOTION_FULL_GIFT: "1_101",
+    PROMOTION_BUY_GIFT: "2_101",
+    PROMOTION_FULL_ADDPRICE: "3_101",
+    PROMOTION_NTH_DISCOUNT: "4_101",
+    PROMOTION_SPECIAL_PRICE: "5_101",
+    PROMOTION_GOODS_BUY_ADD: "6_101",
+    PROMOTION_GOODS_DISCOUNT: "7_101",
+    PROMOTION_NTH_CUT: "8_101",
+    PROMOTION_NTH_SPECIAL_PRICE: "9_101",
+    PROMOTION_FULL_COUNT_DISCOUNT: "10_101",
+    PROMOTION_FULL_COUNT_CUT: "11_101",
+    PROMOTION_FULL_COUNT_FIXED_PRICE: "12_101",
+    PROMOTION_FULL_COUNT_SPEC_PRICE: "13_101",
+    PROMOTION_FULL_ADD_GOODS_REDUCE: "14_101",
+    PROMOTION_FULL_DISCOUNT: "37_101",
+    POS_DISCOUNT_SPECIAL_PRICE: "5_102",
+    POS_DISCOUNT_GOODS_PRESENT: "24_102",
+    POS_DISCOUNT_GOODS_CUSTOM: "25_102",
+    MEMBER_DISCOUNT_GOODS_DISCOUNT: "7_103",
+    MEMBER_DISCOUNT_MEMBER_PRICE: "32_103",
+    MEMBER_SPECIAL_PRICE: "5_103",
+    MEMBER_GOODS_NTH_DISCOUNT: "9_103",
+    MEMBER_NTH_FREE: "8_103",
+    MEMBER_NTH_DISCOUNT: "4_103",
+    MEMBER_BUY_GIFT: "2_103",
+    MEMBER_CATEGORY_DISCOUNT: "22_103",
+    GROUP_COUPON_DISH_COUPON: "30_105",
+    GROUP_COUPON_CASH_COUPON: "31_105",
+    KOU_BEI_DISH_COUPON: "30_106",
+    KOU_BEI_CASH_COUPON: "31_106",
+    KOU_BEI_TIMES_CARD: "40_106",
+    DOUYIN_DISH_COUPON: "30_107",
+    DOUYIN_CASH_COUPON: "31_107",
+    DOUYIN_TIMES_CARD: "40_107",
+    KS_DISH_COUPON: "30_108",
+    KS_CASH_COUPON: "31_108",
+    DISH_WITH_FREE: "15_101",
+    DISH_WITH_FREE_MEMBER: "15_103",
+    POINT_PURCHASE: "74_103",
+    DISH_EXCHANGE_COUPON: "30_103"
+};
+
+exports.SHOP_PROMOTION_TYPE = {
+    VIP_DISCOUNT_OFFSET: 1e4,
+    FULL_GIFT: 1,
+    BUY_GIFT: 2,
+    FULL_ADDPRICE: 3,
+    NTH_DISCOUNT: 4,
+    SPECIAL_PRICE: 5,
+    GOODS_BUY_ADD: 6,
+    GOODS_DISCOUNT: 7,
+    NTH_CUT: 8,
+    NTH_SPECIAL_PRICE: 9,
+    FULL_COUNT_DISCOUNT: 10,
+    FULL_COUNT_CUT: 11,
+    FULL_COUNT_FIXED_PRICE: 12,
+    FULL_COUNT_SPEC_PRICE: 13,
+    ORDER_FULL_GOODS_REDUCE: 14,
+    DISH_WITH_FREE: 15,
+    DISCOUNT: 21,
+    CATEGORY_DISCOUNT: 22,
+    FULL_CUT: 23,
+    POS_CUT: 60,
+    POS_GIFT: 24,
+    GOODS_CUSTOM: 25,
+    POS_FREE_ORDER: 26,
+    POS_DISCOUNT: 27,
+    MEMBER_POINT: 28,
+    MEMBER_ASSET: 29,
+    GROUPON_DISH_COUPON: 30,
+    GROUPON_ORDER_COUPON: 31,
+    MEMBER_PRICE: 32,
+    MEMBER_DISCOUNT: 33,
+    ODDMENT: 34,
+    AUTOODDMENT: 35,
+    MEMBER_DISCOUNT_COUPON: 36,
+    FULL_DISCOUNT: 37,
+    TIMES_CARD: 40,
+    MB_POINT: 51,
+    MB_ASSET: 52
+};
+
+exports.INIT_PACKAGE = {
+    ADD: 1,
+    RECOVER: 2
+};
+
+exports.PROMOTION_ICON_TYPE = {
+    DISCOUNT: 1,
+    CUT: 2,
+    GIFT: 3,
+    CHANGE: 4,
+    MEMBER: 5,
+    COUPON: 6,
+    FREE: 7,
+    GROUPON: 8,
+    MEMBER_PRICE: 32,
+    MEMBER_DISCOUNT: 33,
+    MEMBER_COLLECT: 36,
+    DISH_WITH_FREE: 15
+};
+
+exports.SHOP_PROMOTION_TAG_TYPE = {
+    PROMOTION: 1,
+    MEMBER_PROMOTION: 2,
+    MEMBER_COUPON: 3
+};
+
+exports.CALCULATOR_STATUS = {
+    WEIGHT: 1,
+    ADD: 2
+};
+
+exports.MAX_THRESHOLD = 999;
+
+exports.PROMOTION_SELECT_STATUS = {
+    NOT_SELECTED: 0,
+    SELECTED: 1,
+    CAN_NOT_SELECT: 2,
+    DEFAULT_SELECTED: 3
+};
+
+exports.DISH_CATEGORY_ICON_TYPE = {
+    NONE: 0,
+    HOT: 1,
+    ORDERED_DISH: 2,
+    DISCOUNT: 3,
+    RECOMMEND: 4,
+    MEMBER: 5,
+    MT_SPECIAL_DISCOUNT: 6,
+    POINT_PURCHASE: 7
+};
+
+exports.DISH_CATEGORY_CLASS_MAP = {
+    0: "",
+    1: "hot",
+    2: "ordered",
+    3: "discount",
+    4: "recommend",
+    5: "member",
+    6: "mt-discount",
+    7: "point-purchase"
+};
+
+exports.DISH_CATEGORY_ID = {
+    ORDERED: -50,
+    HOT: -10,
+    DISCOUNT: -30,
+    RECOMMEND: -20,
+    MEMBER: -40,
+    MT_SPECIAL_DISCOUNT: -60,
+    POINT_PURCHASE: -70,
+    COUPON: -80
+};
+
+var E = "https://p0.meituan.net/scarlett/";
+
+exports.MT_SPECIAL_DISCOUNT_ICON = "https://p0.meituan.net/scarlett/929765f32083ca11c2773c53003d5b204302.png";
+
+exports.COUPON_ICON = "https://p0.meituan.net/travelcube/fff9e760b0df11b18efcc264dc30b1e32046.png";
+
+exports.DISH_SHOW_TYPE = {
+    DEFAULT: 0,
+    TWO_IN_ROW: 5,
+    LARGE: 5,
+    THREEE_IN_ROW: 6,
+    SMALL: 6,
+    BIG: 7,
+    SUPER_LARGE: 7,
+    MENU_AT_LEFT: -1,
+    MENU_AT_TOP: -2,
+    ORDERED: -3,
+    ORDERED_LARGE: -4,
+    RIGHT_LARGE: 8
+};
+
+exports.BOSS_DISH_SHOW_TYPE = {
+    DEFAULT: 0,
+    BIG: 1
+};
+
+exports.RECOMMEND_CATEGORY = {
+    BOSS: 1,
+    NET: 2
+};
+
+exports.PICTURE_RATIO = {
+    ONE_TO_ONE: 0,
+    FOUR_TO_THREE: 1,
+    SIXTEEN_TO_NINE: 2,
+    ORIGINAL_SIZE: 3
+};
+
+var O = {
+    ONE_TO_ONE: E + "ca45859124838c068622a75a818b064a1640.jpg",
+    FOUR_TO_THREE: E + "78fa560985243035f5a430a3f8e56e882649.jpg@335w_250h_90q",
+    SIXTEEN_TO_NINE: E + "d3a2a935c8d18fc7828f7f069fb8ba4f3410.jpg@_80q",
+    DEFAULT: E + "ca45859124838c068622a75a818b064a1640.jpg",
+    LARGE: E + "78fa560985243035f5a430a3f8e56e882649.jpg@335w_250h_90q",
+    SUPER_LARGE: E + "2387a1725e253fd9b8c55339214e666c4679.jpg",
+    SMALL: E + "694e2fca31982fdcf8614a310f6e0a451865.jpg",
+    DETAIL: "https://p1.meituan.net/travelcube/9decf35b6135ba0310682811e9d80c2d16869.png",
+    BOXES_DEFAULT: E + "543a409fc2526091dfa54d94117683505392.png",
+    ADD_ON: E + "ca45859124838c068622a75a818b064a1640.jpg",
+    RECOMMEND_DEFAULT: "https://p0.meituan.net/travelcube/acd2f07de1688d9981462c59284a768d1151.jpg@222w_166h_80q",
+    RECOMMEND_LARGE: E + "d3a2a935c8d18fc7828f7f069fb8ba4f3410.jpg@_80q",
+    SEARCH: E + "ca45859124838c068622a75a818b064a1640.jpg",
+    RIGHT_LARGE: E + "d3a2a935c8d18fc7828f7f069fb8ba4f3410.jpg@_80q"
+};
+
+exports.PLACEHOLDER_DISH_PIC = O;
+
+exports.MAX_SHOW_STOCK_COUNT = 10;
+
+exports.DISH_SOURCE = {
+    RESERVE: 1,
+    NORMAL: 0
+};
+
+exports.ORDER_BIZ_TAG = {
+    AHEAD: 1,
+    NORMAL: 0
+};
+
+exports.SHOP_STATUS = {
+    ONLINE: 1,
+    OFFLINE: 2
+};
+
+exports.ACTIVITY_SRC = {
+    KS: 108,
+    DOU_YIN: 107,
+    KOU_BEI_GROUP: 106,
+    GROUPON: 105,
+    MEMBER: 103
+};
+
+exports.PORTAL_TAB_TYPE = {
+    HOME: 0,
+    ORDER_MENU: 1,
+    TAKEAWAY: 2,
+    PRE_ORDER: 3,
+    ORDER: 4,
+    MINE: 8,
+    PICKUP: 9,
+    CUSTOM: 2014,
+    ORDER_CENTER: 2022,
+    TT_COUPON_LIST: 2036
+};
+
+exports.DISH_CATE_TYPE = {
+    RECOMMEND_DISH: 0,
+    RECOMMEND_CLASS: 1
+};
+
+exports.DISH_DETAIL = {
+    MAIN_DISH: 0,
+    RECOMMEND_DISH: 1
+};
+
+exports.TITLE_CONTENT = {
+    NET: "网友推荐",
+    NET_LIST: "网友推荐列表",
+    BOSS: "老板推荐",
+    PREMIUM_DISH: "菜品加价购",
+    FULL_PRICE_PREMIUM: "满额/每满额加价购",
+    FULL_PRICE_PREFERENTIAL: "满额/每满额优惠购",
+    MATCH_RECOMMEND: "搭配推荐",
+    CART: "购物车",
+    SEARCH_LIST: "搜索列表",
+    ORDER_LIST: "下单列表"
+};
+
+exports.DEFINED_TITLE = {
+    DEFAULT: 0,
+    DEFINED: 1
+};
+
+exports.PROD_TIMEOUT = 5e3;
+
+exports.TAKE_COUPON_RESULT = {
+    NO_LOGIN: -1,
+    NO_DATA: 100,
+    SUCCESS: 200,
+    FAIL: 210,
+    OUT_OF_LIMIT: 220,
+    END: 230
+};
+
+exports.MENU_PAGE_INIT_CONFIG = {
+    INIT_CART_HEIGHT: 90,
+    INIT_SEARCHBAR_HEIGHT: 110,
+    INIT_CATEGORY_TOP_HEIGHT: 73,
+    INIT_SEARCH_BANNER_HEIGHT: 286,
+    INIT_DEFAULT_RECYCLE_VIEW_WIDTH: 750,
+    INIT_LARGE_RECYCLE_VIEW_WIDTH: 750,
+    INIT_SUPER_LARGE_RECYCLE_VIEW_WIDTH: 750,
+    INIT_SMALL_RECYCLE_VIEW_WIDTH: 750,
+    INIT_RIGHT_LARGE_RECYCLE_VIEW_WIDTH: 750
+};
+
+exports.AD_TYPE = {
+    SPU: 2038,
+    MEMBER_ACTIVITY: 2,
+    MICRO_MALL: 3,
+    POINTS_MALL: 4,
+    MEMBER_INTEREST: 5,
+    MEMBER_CENTER: 6,
+    ARTICLE: 7
+};
+
+exports.AD_FROM_TYPE = {
+    BANNER: 0,
+    BOARD: 1
+};
+
+exports.DISH_ADD_FROM = {
+    DP_RECOMMEND: "DPRECOMMEND",
+    BOSS_RECOMMEND: "BOSSRECOMMEND",
+    DISH_LIST: "DISHLIST",
+    CART: "CART",
+    MUST_DISH_PANEL: "MUST_DISH_PANEL"
+};
+
+exports.ACCOUNT_BIND_CODE = {
+    MT: 51,
+    DP: 61
+};
+
+exports.SINGLE_CHOICE = 1;
+
+exports.NO_LIMIT_CHOICE = -1;
+
+exports.TASTE_REPEAT_CHOICE = {
+    MULTI: 1,
+    SINGLE: 2
+};
+
+exports.COUPON_ITEM_STYLE = {
+    DIAN_CAN: 1,
+    PANEL_TYPE: 2,
+    CONFIRM_PAGE_LIST: 3,
+    SMALL_SHOW_CHECKED: 4,
+    SHOW_CHECKED: 7
+};
+
+exports.BIZ_TYPE_MAP = {
+    ORDER: 1,
+    PRE_ORDER: 2,
+    TAKEAWAY: 3,
+    PICKUP: 4
+};
+
+var T = function(_) {
+    return _.MENU = "MENU", _.ORDER_CONFIRM = "ORDER_CONFIRM", _.SHOP_LIST = "SHOP_LIST", 
+    _.ADDRESS_LIST = "ADDRESS_LIST", _.ADDRESS_EDIT = "ADDRESS_EDIT", _.MAP_SELECT = "MAP_SELECT", 
+    _.MUST_DISH = "MUST_DISH", _;
+}({});
+
+exports.PAGE_FROM = T;
+
+exports.PACKAGE_TEMPLATE_TYPE = {
+    NORMAL: 0,
+    LIST: 1,
+    NO_PIC: 2
+};
+
+exports.BIZ_MODE = {
+    TABLE_MODE: 1,
+    NUMBER_MODE: 2,
+    BAR_CODE_MODE: 3,
+    COMBINED_TABLE_BAR_CODE: 13,
+    COMBINED_NUMBER_BAR_CODE: 23
+};
+
+!function(_) {
+    _.ORDER = "0", _.PRE_ORDER = "1", _.TAKEAWAY = "2", _.SELF_PICKUP = "4";
+}({});
+
+exports.PLUGIN_CATEGORY = -1e3;
+
+exports.ATTR_TYPE = {
+    METHOD: 1,
+    TASTE: 2,
+    SPEC: 3
+};

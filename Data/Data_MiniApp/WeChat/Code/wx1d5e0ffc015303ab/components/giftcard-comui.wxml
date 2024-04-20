@@ -1,0 +1,8 @@
+<view class="lipinka-box data-v-3d7e896c">
+    <view bindtap="__e" class="lipinka data-v-3d7e896c" data-event-opts="{{[ [ 'tap',[ [ 'toLipinkaGoods',['$0','$1','$2'],[ [ ['lipinkaList','',index,'giftCardInfoKey'] ],[ ['lipinkaList','',index,'giftCardType'] ],[ ['lipinkaList','',index,'giftCardName'] ] ] ] ] ] ]}}" wx:for="{{lipinkaList}}" wx:key="index">
+        <view class="lipinka-name data-v-3d7e896c">{{''+item.giftCardName+''}}</view>
+        <view class="lipinka-image data-v-3d7e896c">
+            <image class="goods_pic data-v-3d7e896c" mode="aspectFit" src="{{item.cover}}"></image>
+        </view>
+    </view>
+</view>

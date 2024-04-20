@@ -1,0 +1,60 @@
+<view class="main">
+    <view class="activityName">
+        <view class="lineTab">活动名称</view>
+        <view class="activityIntroduce">{{activityName}}</view>
+    </view>
+    <view class="activityBody">
+        <view class="lineBox">
+            <view class="lineTab">开始时间</view>
+            <view class="activityIntroduce">{{startTime}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">结束时间</view>
+            <view class="activityIntroduce">{{endTime}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">活动地点</view>
+            <view class="activityIntroduce">{{activityWhere}}</view>
+        </view>
+        <view class="lineBox">
+            <view class="lineTab">举办单位</view>
+            <view class="activityIntroduce">{{unit}}</view>
+        </view>
+        <view class="m-t-3">
+            <view class="lineBox">
+                <view class="lineTab">活动内容</view>
+            </view>
+            <view class="activityContent">{{activityIntroduce}}</view>
+        </view>
+    </view>
+    <view class="joinActivity">
+        <view wx:if="{{noteType=='未开始'}}">
+            <view class="joinBtn">活动未开始</view>
+        </view>
+        <view wx:elif="{{noteType=='已结束'}}">
+            <view style="{{couldNotSigin}}">
+                <view class="joinBtn" wx:if="{{signNumber==1||signNumber=='1'}}">活动已结束（一次签到）</view>
+                <view class="joinBtn" wx:elif="{{signNumber==0||signNumber=='0'}}">活动已结束（未签到）</view>
+                <view class="joinBtn" wx:elif="{{signNumber==2||signNumber=='2'}}">活动已结束（签到成功）</view>
+            </view>
+            <view style="{{sigInBtn}}">
+                <view wx:if="{{signNumber==1||signNumber=='1'}}">
+                    <button bindtap="toSignIn">二次签到</button>
+                </view>
+                <view class="joinBtn" wx:elif="{{signNumber==0||signNumber=='0'}}">活动已结束（未签到）</view>
+                <view class="joinBtn" wx:elif="{{signNumber==2||signNumber=='2'}}">活动已结束（签到成功）</view>
+            </view>
+        </view>
+        <view wx:elif="{{noteType=='进行中'}}">
+            <view class="joinBtn">
+                <view class="joinBtn" wx:if="{{signNumber==1||signNumber=='1'}}">活动进行中（一次签到）</view>
+                <view class="joinBtn" wx:elif="{{signNumber==0||signNumber=='0'}}">活动进行中</view>
+                <view class="joinBtn" wx:elif="{{signNumber==2||signNumber=='2'}}">操作异常</view>
+            </view>
+        </view>
+        <view wx:elif="{{couldEnroll}}">
+            <button bindtap="joinActivity">报名</button>
+        </view>
+        <view wx:else></view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "失效优惠券",
+    "usingComponents": {
+        "u-loading-icon": "../../node-modules/uview-plus/components/u-loading-icon/u-loading-icon",
+        "u-empty": "../../node-modules/uview-plus/components/u-empty/u-empty",
+        "c-page": "../../components/c-page/c-page",
+        "list-item": "./component/list-item"
+    }
+}

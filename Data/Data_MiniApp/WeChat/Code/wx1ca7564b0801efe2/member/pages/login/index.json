@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "会员登录",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

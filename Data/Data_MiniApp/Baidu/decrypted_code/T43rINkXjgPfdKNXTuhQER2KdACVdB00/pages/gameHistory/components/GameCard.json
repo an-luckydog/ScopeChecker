@@ -1,0 +1,10 @@
+{
+    "usingComponents": {
+        "delete-item-box": "../../../components/DeleteItemBox",
+        "empty-and-error": "../../../components/EmptyAndError",
+        "game-list-card": "../../../components/GameListCard",
+        "game-list-item": "../../../components/GameListItem",
+        "footer-label": "../../../components/Footer"
+    },
+    "component": true
+}

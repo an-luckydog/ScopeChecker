@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "u--text": "../../node-modules/uview-plus/components/u--text/u--text",
+        "u-button": "../../node-modules/uview-plus/components/u-button/u-button"
+    }
+}

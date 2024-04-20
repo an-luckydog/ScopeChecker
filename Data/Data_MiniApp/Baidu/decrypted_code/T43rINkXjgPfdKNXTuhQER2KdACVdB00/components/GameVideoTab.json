@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "game-detail-video-card": "./GameDetailVideoCard"
+    },
+    "component": true
+}

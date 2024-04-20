@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "coupon-seven": "/components/coupon-card/coupon-seven/index"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "defaultTitle": "盲盒抽奖",
+    "navigationBarTitleText": "盲盒抽奖",
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "disableScroll": false,
+    "transparentTitle": "auto",
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

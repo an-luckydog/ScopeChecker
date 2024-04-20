@@ -1,0 +1,4 @@
+<view catchtouchmove="prevent">
+    <advertising-modal ad="{{ad}}" advId="{{advId}}" bind:closeAdModalEvent="closeAdModalEvent" layout="{{adLayout}}" modalConfigResource="{{modalConfigResource}}" preview="{{preview}}" shopId="{{shopId}}" show="{{show}}"></advertising-modal>
+    <take-coupon-dialog bind:closeTakeCouponDialog="handleCloseTakeCouponDialog" bind:takeCouponHandleFn="takeCouponHandle" shopId="{{shopId}}" takeCouponData="{{newTakeCouponData}}"></take-coupon-dialog>
+</view>

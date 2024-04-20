@@ -1,0 +1,9 @@
+{
+    "components": true,
+    "usingComponents": {
+        "popup": "/components/popup/popup",
+        "coupon-three": "/components/coupon-card/coupon-three/index",
+        "coupon-ten": "/components/coupon-card/coupon-ten/index",
+        "mip-bdxd-activity-card": "/widgets/mip-bdxd-activity-card/mip-bdxd-activity-card"
+    }
+}

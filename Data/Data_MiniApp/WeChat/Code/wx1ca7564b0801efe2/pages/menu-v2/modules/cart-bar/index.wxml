@@ -1,0 +1,46 @@
+<import src="../../../../components/badge/index.wxml"></import>
+<import src="../../../../components/price/index.wxml"></import>
+<view class="cart-bar {{cartStyles.position===2?'float':''}} {{!tabbar?'no-tab':''}} {{dishCount>0?'show-cart':''}} {{!tabbar&&!dishCount?'cart-bar-height':''}}" style="{{cartDecorationStyles}}">
+    <block wx:if="{{!hideTips&&showTips&&actEntrance&&actEntrance.actType}}">
+        <slot name="cart-bar-top" wx:if="{{actEntrance.actType===1}}"></slot>
+        <view bind:tap="actEntranceClick" class="act-entrance pay-card" wx:else>
+            <view class="base-icon icon-huiyuanka"></view>
+            <view class="text-box">
+                <text class="text-style {{'text-style-'+item.type}}" decode="{{true}}" space="nbsp" style="{{item.style}}" wx:for="{{actEntrance.richTextList}}" wx:key="index">{{item.text}}</text>
+            </view>
+            <view class="base-icon icon-jiantou-you"></view>
+        </view>
+    </block>
+    <view class="coupon-assistant-fly {{actEntrance&&actEntrance.actType?'has-act':''}}" wx:if="{{!hideTips&&showTips}}">
+        <slot name="coupon-assistant-fly"></slot>
+    </view>
+    <view class="cart-box {{displayTips?'cb-show-tips':''}}" wx:if="{{dishCount>0}}">
+        <view class="cart-tips" style="{{cartTipBg}}">
+            <view class="ct-box">
+                <view class="tips-txt" style="{{cartTipsStyles[item.style]}}" wx:for="{{cartTips}}" wx:key="index">{{item.msg}}</view>
+            </view>
+        </view>
+        <view class="cart-content">
+            <view catch:tap="triggerCart" class="cart-bar-left">
+                <view class="cart-icon">
+                    <view class="cart-badge">
+                        <template is="badge" data="{{count:dishCount}}"></template>
+                    </view>
+                    <image class="icon-pic" src="{{cartIcon}}"></image>
+                </view>
+                <view class="cart-info">
+                    <view class="c-item" wx:if="{{actualPrice}}">
+                        <template is="price" data="{{currentPrice:actualPrice,size:'large',color:priceColor}}"></template>
+                    </view>
+                    <view class="c-item c-line">
+                        <view class="sub-price" style="{{subPriceColor}}" wx:if="{{discountPrice&&discountPrice!=='0'}}">已优惠¥{{discountPrice}}</view>
+                        <view class="discount-text" wx:if="{{campaignDiscount}}">{{campaignDiscount}}</view>
+                    </view>
+                </view>
+            </view>
+            <view catch:tap="onSelected" class="cart-bar-right {{cartStyles.btnStyleType===2?'square':''}} {{isBtnDisabled||loading?'loading':''}}">
+                <view class="cart-bar-btn">{{isBtnDisabled&&confirmButton.buttonText||confirmButton.buttonType?confirmButton.buttonText:btnText}}</view>
+            </view>
+        </view>
+    </view>
+</view>

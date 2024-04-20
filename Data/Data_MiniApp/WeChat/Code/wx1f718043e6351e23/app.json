@@ -1,0 +1,201 @@
+{
+    "cloud": true,
+    "pages": [
+        "pages/index/index",
+        "pages/case/list/index",
+        "pages/warehouse/list/index",
+        "pages/activity/list/index",
+        "pages/mine/index/index",
+        "pages/industry/index",
+        "pages/product/index",
+        "pages/brand/list/index",
+        "pages/cooperation/index",
+        "pages/mine/collect/index",
+        "pages/mine/likes/index",
+        "pages/mine/download/index",
+        "pages/mine/reverse/index",
+        "pages/mine/meeting/index",
+        "pages/mine/custom/index",
+        "pages/search/keyword/index",
+        "pages/search/result/glob",
+        "pages/preference/index",
+        "pages/news/list/index",
+        "pages/video/list/index",
+        "pages/form/index/index",
+        "pages/form/info/index",
+        "pages/form/register/index",
+        "pages/case/case_detail/index",
+        "pages/case/tool_detail/index",
+        "pages/scene/list/index",
+        "pages/scene/detail/index",
+        "pages/scene/download_list/index",
+        "pages/brand/index/index",
+        "pages/brand/detail/index",
+        "pages/common/webview/index",
+        "pages/activity/act_detail/index",
+        "pages/activity/video_detail/index",
+        "pages/activity/news_detail/index",
+        "pages/download/index",
+        "pages/online/detail/index",
+        "pages/online/downlist/index",
+        "pages/kt/detail/index",
+        "pages/juhe/index",
+        "pages/share/poster/index",
+        "pages/form/activity/index",
+        "pages/login/index",
+        "pages/common/not_found/index"
+    ],
+    "subPackages": [
+        {
+            "root": "jiatui/",
+            "pages": [
+                "pages/index/index",
+                "pages/card/index",
+                "pages/cardEdit/index",
+                "pages/poster/index/index",
+                "pages/photo/index/index",
+                "pages/poster/details/index",
+                "pages/cardInfo/index",
+                "pages/cardStyle/index",
+                "pages/cardType/index",
+                "pages/marketContent/index",
+                "pages/files/index/index",
+                "pages/files/my/index",
+                "pages/files/all/index",
+                "pages/guideCardInfoEdit/style/index",
+                "pages/guideCardInfoEdit/info/index",
+                "pages/guideCardInfoEdit/type/index",
+                "pages/guideCardInfoEdit/wechat/index",
+                "pages/guideCardInfoEdit/wechatwork/index",
+                "pages/createPoster/index",
+                "pages/radar/index/index",
+                "pages/stop/404/index",
+                "pages/cardPosition/edit/index",
+                "pages/cardPosition/check/index",
+                "pages/articleDetail/index",
+                "pages/shareRecord/index",
+                "pages/contentSearch/index",
+                "pages/data/index",
+                "pages/data/more/index",
+                "pages/data/detail/index",
+                "pages/video/my/index",
+                "pages/imageCropper/index",
+                "pages/articlePreview/index",
+                "pages/recommendContent/index",
+                "pages/webView/index"
+            ]
+        },
+        {
+            "root": "enroll/",
+            "pages": [
+                "pages/test/test",
+                "pages/enroll/guide/index",
+                "pages/enroll/enterInfo/index",
+                "pages/enroll/forum/index",
+                "pages/enroll/finish/index",
+                "pages/enroll/picktest/index",
+                "pages/enroll/privacy/index",
+                "pages/enroll/area-picker-test/index",
+                "pages/enroll/share/index"
+            ]
+        },
+        {
+            "root": "privacy/",
+            "pages": [
+                "pages/privacy/index"
+            ]
+        }
+    ],
+    "usingComponents": {
+        "header": "./components/header/index",
+        "home-tips": "./components/home-tips/index",
+        "loading": "./components/loading/index",
+        "share-btn": "./components/share-btn/index",
+        "consult-btn": "/components/consult-btn/index",
+        "rich-view": "./components/rich-view/index",
+        "rec-box": "./components/rec-box/index",
+        "title-more": "/components/home-title/index",
+        "home-swiper": "/components/home-swiper/index",
+        "article-swiper": "/components/article-swiper/index",
+        "home-custom-cases": "/components/home-custom-cases/index",
+        "home-recommend-goods": "/components/home-recommend-goods/index",
+        "industry-activities": "/components/industry-activities/index",
+        "industry-activities-my": "/components/industry-activities-my/index",
+        "industry-news": "/components/industry-news/index",
+        "relevant-information": "/components/relevant-information/index",
+        "cooperation-region": "/components/cooperation-region/index",
+        "video-list": "/components/video-list/index",
+        "case-list": "/components/case-list/index",
+        "video-box": "./components/video-box/index",
+        "warehouse-list": "/components/warehouse-list/index",
+        "brand-item": "./components/listItem/brand-item/index",
+        "theme-juhe-tabs": "/components/theme-juhe/index",
+        "card-top-msg": "/components/card/card-top-msg/index",
+        "no-card-tip": "/components/card/no-card-tip/index",
+        "share-card": "/components/card/share-card/index",
+        "share-pannel": "/components/card/share-pannel/index",
+        "meetingItem": "./components/listItem/meetingItem/index",
+        "customItem": "./components/listItem/customItem/index",
+        "Privacy": "/components/privacy/privacy"
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "腾讯云",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+    },
+    "tabBar": {
+        "backgroundColor": "#ffffff",
+        "selectedColor": "#1D54D1",
+        "color": "#B5B5B5",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "image/tencent_image/tabbar/tabbar-home.png",
+                "selectedIconPath": "image/tencent_image/tabbar/tabbar-home-active.png"
+            },
+            {
+                "pagePath": "pages/case/list/index",
+                "text": "案例",
+                "iconPath": "image/tencent_image/tabbar/tabbar-case.png",
+                "selectedIconPath": "image/tencent_image/tabbar/tabbar-case-active.png"
+            },
+            {
+                "pagePath": "pages/warehouse/list/index",
+                "text": "干货库",
+                "iconPath": "image/tencent_image/tabbar/tabbar-warehouse.png",
+                "selectedIconPath": "image/tencent_image/tabbar/tabbar-warehouse-active.png"
+            },
+            {
+                "pagePath": "pages/activity/list/index",
+                "text": "活动",
+                "iconPath": "image/tencent_image/tabbar/tabbar-activity.png",
+                "selectedIconPath": "image/tencent_image/tabbar/tabbar-activity-active.png"
+            },
+            {
+                "pagePath": "pages/mine/index/index",
+                "text": "我的",
+                "iconPath": "image/tencent_image/tabbar/tabbar-mine.png",
+                "selectedIconPath": "image/tencent_image/tabbar/tabbar-mine-active.png"
+            }
+        ]
+    },
+    "plugins": {
+        "tencentvideo": {
+            "version": "1.4.4",
+            "provider": "wxa75efa648b60994b"
+        },
+        "myPlugin": {
+            "version": "0.1.2",
+            "provider": "wx116d0dd5e6a39ac7"
+        }
+    },
+    "lazyCodeLoading": "requiredComponents",
+    "sitemapLocation": "sitemap.json",
+    "embeddedAppIdList": [
+        "wxa023b292fd19d41d"
+    ],
+    "__usePrivacyCheck__": true
+}

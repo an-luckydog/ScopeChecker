@@ -1,0 +1,14 @@
+{
+    "component": true,
+    "usingComponents": {
+        "dish-category-title": "../../../dish/dish-category-title/index",
+        "midas-simple": "../../../../midas-simple/index",
+        "red-point": "../../../../../miniprogram_npm/@components/limo-ui/ui-redpoint/index",
+        "coupon-package-icon": "../../../../../miniprogram_npm/@components/limo-menu/coupon-package-icon/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "扫桌码",
+    "navigationBarBackgroundColor": "#F4F4F4",
+    "navigationBarTextStyle": "black",
+    "componentPlaceholder": {
+        "default-page-config": "view",
+        "lottery": "view"
+    }
+}

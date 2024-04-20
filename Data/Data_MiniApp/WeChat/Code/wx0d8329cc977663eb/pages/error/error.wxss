@@ -1,0 +1,140 @@
+page {
+    background: #f2f2f2;
+    font-family: 'Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif;
+    height: 100%;
+    position: relative;
+}
+
+.main {
+    width: 750rpx;
+}
+
+.activityName {
+    background: #fff;
+    padding: 30rpx;
+    margin: 0 auto 20rpx auto;
+}
+
+.lineBox {
+    padding: 30rpx;
+    background: #fff;
+    border-bottom: 2rpx solid #f2f2f2;
+}
+
+button {
+    font-weight: bold;
+    color: #5bc0de;
+    background: #fff;
+}
+
+.joinBtn {
+    padding: 20rpx;
+    background: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f0ad4e;
+}
+
+.activityBody {
+    margin-bottom: 30rpx;
+}
+
+.m-t-3 {
+    margin-top: 30rpx;
+}
+
+.lineTab {
+    width: 280rpx;
+    font-size: 19px;
+    display: inline-block;
+}
+
+.activityIntroduce {
+    font-size: 18px;
+    display: inline-block;
+    text-align: right;
+    font-weight: bold;
+    width: 390rpx;
+    color: #333;
+}
+
+.activityContent {
+    width: 750rpx;
+    font-size: 17px;
+    padding: 30rpx;
+    background: #fff;
+    border-bottom: 2rpx solid #f2f2f2;
+}
+
+.activityContent textarea {
+    width: 690rpx;
+}
+
+.model {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750rpx;
+    height: 100%;
+    z-index: 999;
+    background: rgba(0,0,0,0.25);
+}
+
+.modelBody {
+    background: #f6f6f6;
+    padding: 5rpx 0 15rpx 0;
+    width: 750rpx;
+}
+
+.searchView {
+    position: relative;
+}
+
+.searchInput {
+    margin: 15rpx;
+    border: 5rpx solid #fff;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10rpx 20rpx 10rpx 60rpx;
+    font-size: 18px;
+}
+
+.searchImg {
+    width: 40rpx;
+    height: 38rpx;
+    position: absolute;
+    left: 28rpx;
+    top: 20rpx;
+}
+
+.activityRow-r {
+    margin: 15rpx;
+    width: 660rpx;
+    border: 1px solid #d2d2d2;
+    background: #ffffff;
+    padding: 20rpx 30rpx 15rpx 20rpx;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.activityName-r {
+    font-size: 20px;
+    margin-bottom: 10rpx;
+}
+
+.startTime-r {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
+    color: #a2a2a2;
+    font-size: 14px;
+}
+
+.place-r {
+    width: 50%;
+    display: inline-block;
+    text-align: laft;
+    color: #a2a2a2;
+    font-size: 14px;
+}

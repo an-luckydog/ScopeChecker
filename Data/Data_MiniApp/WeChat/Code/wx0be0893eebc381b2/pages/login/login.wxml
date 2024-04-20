@@ -1,0 +1,53 @@
+<block wx:if="{{pagesShow}}">
+    <import src="../../template/showToast.wxml"></import>
+    <view>
+        <template is="showToast" data="{{showToast:showToast}}"></template>
+        <view class="login-head">
+            <view class="icon-box">
+                <image src="../../img/wxicon.png"></image>
+                <image src="../../img/bd.png"></image>
+                <image src="../../img/sicon.png"></image>
+                <image src="../../img/six_icon.png"></image>
+            </view>
+            <view class="icon-text font26 color000">请绑定 / 注册英语四·六级账号</view>
+        </view>
+        <view class="container fff">
+            <view class="tab-swiper" current="{{current}}">
+                <view class="con_classify">
+                    <view class="height font32">
+                        <text class="left con tel"></text>
+                        <input bindinput="set_input" class="left input2 input1" data-check="codeLogin" data-double-check="true" data-inputid="3" data-name="veriMobile" maxlength="11" type="number" value="{{veriMobile}}">
+                            <view class="input3" wx:if="{{veriMobile.length<=0}}">请输入手机号码</view>
+                        </input>
+                        <view class=" left clear2">
+                            <image bindtap="clear_input" class="{{veriMobile_flag}}" data-btn="codeLogin" data-close="veriMobile_flag" data-input="veriMobile" data-inputid="3" src="../../img/clear.png" style="width:100%;height:100%"></image>
+                        </view>
+                        <view bindtap="send_captcha" class="right acquire {{sendCodeView}}">发送验证码</view>
+                        <view class="right acquire acquire-hl {{getCodeView}}">重新获取 {{codeSecond}}</view>
+                    </view>
+                    <view class="height font32">
+                        <text class="left con code"></text>
+                        <input bindinput="set_input" class="left input1" data-check="codeLogin" data-double-check="true" data-inputid="4" data-name="veriMobileCode" maxlength="6" type="number" value="{{veriMobileCode}}">
+                            <view class="input3" wx:if="{{veriMobileCode.length<=0}}">请输入验证码</view>
+                        </input>
+                        <image bindtap="clear_input" class="right clear2 {{veriMobileCode_flag}}" data-btn="codeLogin" data-close="veriMobileCode_flag" data-input="veriMobileCode" data-inputid="4" src="../../img/clear.png"></image>
+                    </view>
+                    <view class="font26 agree">
+                        <view class="agree-container color-333">
+                            <image bindtap="selectHttp" class="select_imgs" src="/img/select-gray.png " wx:if="{{!userHttp}}"></image>
+                            <image bindtap="selectHttp" class="select_imgs" src="/img/selected.png" wx:if="{{userHttp}}"></image>
+                            <view class="text">我已阅读并同意</view>
+                            <text bindtap="userHttpUrl" class="color-main">用户注册协议</text>和 <text bindtap="userPrivacy" class="color-main">隐私条款</text>
+                            <view class="tanceng_box" wx:if="{{microsoft}}">
+                                <view class="tanceng_text">
+                                    <view>请阅读并勾选下方协议</view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                    <button bindtap="send_veri_login" class="login font32 {{codeLogin?'login-hl':''}}">绑定/注册账号</button>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

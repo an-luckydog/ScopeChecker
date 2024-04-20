@@ -1,0 +1,11 @@
+<uni-popup bind:__l="__l" class="data-v-85593ff6 vue-ref" data-ref="media_popup" maskClick="{{false}}" type="top" vueId="bdf1f97c-1" vueSlots="{{['default']}}">
+    <view class="main_medal_popup data-v-85593ff6">
+        <view class="medal_info data-v-85593ff6">
+            <image bindtap="__e" class="close data-v-85593ff6" data-event-opts="{{[ [ 'tap',[ [ 'closePop',['$event'] ] ] ] ]}}" src="https://xcxsite.vjifen.com/v/static/qp120/Islander/island/close.png"></image>
+            <view class="medal_img data-v-85593ff6">
+                <image class="data-v-85593ff6" src="{{imgUrl}}"></image>
+            </view>
+            <view bindtap="__e" class="my_medal data-v-85593ff6" data-event-opts="{{[ [ 'tap',[ [ 'goWall',['$event'] ] ] ] ]}}" wx:if="{{medalFlag!=6}}">我的勋章</view>
+        </view>
+    </view>
+</uni-popup>

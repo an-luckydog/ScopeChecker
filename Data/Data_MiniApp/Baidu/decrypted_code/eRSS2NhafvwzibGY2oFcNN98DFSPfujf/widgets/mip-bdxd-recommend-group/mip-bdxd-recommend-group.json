@@ -1,0 +1,7 @@
+
+{
+    "component": true,
+    "usingComponents": {
+        "mip-bdxd-recommend-group-card":"/widgets/mip-bdxd-recommend-group-card/mip-bdxd-recommend-group-card"
+    }
+}

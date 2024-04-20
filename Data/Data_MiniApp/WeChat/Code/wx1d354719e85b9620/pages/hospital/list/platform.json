@@ -1,0 +1,5 @@
+{
+    "navigationBarTitleText": "选择医院",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 80
+}

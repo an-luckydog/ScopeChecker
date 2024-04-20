@@ -1,0 +1,15 @@
+{
+    "component": true,
+    "usingComponents": {
+        "toggle-more": "../toggle-more/index",
+        "ui-label": "../../limo-ui/ui-label/index",
+        "base-icon": "../../limo-ui/base-icon/index",
+        "normal-coupon-tag": "../../limo-ui/normal-coupon-tag/index",
+        "order-progress": "../../../../remote/decoration/order-progress/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,4 @@
+<theme-container options="{{options}}">
+    <common-theme-loading wx:if="{{showFullLoading}}"></common-theme-loading>
+</theme-container>
+<privacy-popup></privacy-popup>

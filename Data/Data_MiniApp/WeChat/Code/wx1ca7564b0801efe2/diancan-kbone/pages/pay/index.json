@@ -1,0 +1,9 @@
+{
+    "navigationBarBackgroundColor": "#EDEDED",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "支付中",
+    "enablePullDownRefresh": false,
+    "componentPlaceholder": {
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "m-item": "/components/form-item/form-item",
+        "gt-dxdjx-h5-navigation": "/widgets/gt-dxdjx-h5-navigation/gt-dxdjx-h5-navigation",
+        "address-layer": "/components/address-layer/address-layer",
+        "mip-bdxd-address-common": "/widgets/mip-bdxd-address-common/mip-bdxd-address-common",
+        "login": "/components/login/login"
+    }
+}

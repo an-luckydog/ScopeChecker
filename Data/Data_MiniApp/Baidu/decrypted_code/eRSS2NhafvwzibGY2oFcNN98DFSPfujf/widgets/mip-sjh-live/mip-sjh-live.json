@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "dynamic-picture": "/widgets/mip-sjh-live/components/dynamic-picture/dynamic-picture",
+        "count-down": "/widgets/mip-sjh-live/components/count-down/count-down",
+        "live-streaming": "/widgets/mip-sjh-live/components/live-streaming/live-streaming"
+    }
+}

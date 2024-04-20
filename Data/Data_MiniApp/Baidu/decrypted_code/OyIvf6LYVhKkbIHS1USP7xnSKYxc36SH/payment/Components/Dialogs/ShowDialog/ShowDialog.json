@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "dialog": "/payment/UI/Components/Base/Popups/Dialog/Dialog"
+    }
+}

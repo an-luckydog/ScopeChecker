@@ -1,0 +1,17 @@
+{
+    "component": true,
+    "usingComponents": {
+        "mini-cart": "../../../async-meal/components/mini-cart/index",
+        "yellow-strip": "../yellow-strip/index",
+        "cart-bar": "../cart-bar/index",
+        "mini-cart-add-on": "../../../async-meal/components/mini-cart-add-on/index",
+        "tips-banner": "../../../miniprogram_npm/@components/limo-menu/tips-banner/index",
+        "lottery": "plugin://wx87ebb56764fea681/lottery",
+        "studentVerify": "plugin://wxa16657d57059e0f0/verify"
+    },
+    "componentPlaceholder": {
+        "mini-cart": "view",
+        "mini-cart-add-on": "view",
+        "lottery": "view"
+    }
+}

@@ -1,0 +1,61 @@
+var DISH_TYPE = ({
+    NORMAL: 0,
+    PACKAGE: 1,
+});
+var computeCount = (function(spuDish, cartDishList) {
+    if (!spuDish) return;;
+    var spuId = spuDish.spuId;
+    var skuList = cartDishList && cartDishList[((nt_0 = (spuId), null == nt_0 ? undefined : 'number' === typeof nt_0 ? nt_0 : "" + nt_0))];
+    var count = 0;
+    if (skuList) {
+        count = skuList.reduce((function(previous, current) {
+            return (previous + current.count)
+        }), 0)
+    };
+    return (count)
+});
+var computeWeight = (function(spuDish, cartDishList) {
+    if (!spuDish) return;;
+    var spuId = spuDish.spuId;
+    var skuList = cartDishList[((nt_1 = (spuId), null == nt_1 ? undefined : 'number' === typeof nt_1 ? nt_1 : "" + nt_1))];
+    var weight = 0;
+    if (skuList) {
+        weight = skuList.reduce((function(previous, current) {
+            return (previous + current.weight)
+        }), 0)
+    };
+    return (weight)
+});
+var judgeComplexSpuDish = (function(spuDish) {
+    if (!spuDish) return;;
+    var result;
+    if (spuDish.methods && spuDish.methods.length > 0 || spuDish.tastes && spuDish.tastes.length > 0) {
+        result = true
+    } else {
+        result = false
+    };
+    return (result)
+});
+var getBtnStyle = (function(cartCount, isMustDishEnough, lackOfDeliveryMoney, cartBtnClickable) {
+    var style = 'btn';
+    if ((cartCount > 0 && lackOfDeliveryMoney <= 0 || !isMustDishEnough) && cartBtnClickable) {
+        style += ' highlight'
+    } else {
+        style += ' gray'
+    };
+    return (style)
+});
+var judgeSimpleSku = (function(spuDish, skuDish) {
+    if (!skuDish) return;;
+    var result = true;
+    if (skuDish.dishType === DISH_TYPE.PACKAGE || judgeComplexSpuDish(spuDish)) {
+        result = false
+    };
+    return (result)
+});
+module.exports = ({
+    computeCount: computeCount,
+    computeWeight: computeWeight,
+    getBtnStyle: getBtnStyle,
+    judgeSimpleSku: judgeSimpleSku,
+});

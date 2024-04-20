@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "店铺详情",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "usingComponents": {
+        "u-rate": "../../../node-modules/uview-plus/components/u-rate/u-rate",
+        "c-page": "../../../components/c-page/c-page"
+    }
+}

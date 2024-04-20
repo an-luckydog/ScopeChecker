@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "mod-line": "./ModLine",
+        "game-bar-header": "./GameBarHeader"
+    },
+    "component": true
+}

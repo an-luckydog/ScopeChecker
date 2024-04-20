@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "relate-exp-item": "/components/article/relate-exp/relate-exp-item/relate-exp-item"
+    }
+}

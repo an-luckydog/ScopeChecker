@@ -1,0 +1,20 @@
+module.exports = {
+    version: "v1.0.12",
+    getCmsConfigErr: "GET_CMSCONFIG_ERROR",
+    getCmsConfigCatch: "GET_CMSCONFIG_CATCH",
+    requestFail: "REQUEST_FAIL",
+    requestCatch: "REQUEST_CATCH",
+    getTheNoticeErr: "GET_NOTICE_ERROR",
+    sendSmsCodeErr: "SEND_SMSCODE_ERROR",
+    verifySmsCodeErr: "VERIFY_SMSCODE_ERROR",
+    updateIdinfoErr: "UPDATE_IDINFI_ERROR",
+    checkIdinfoErr: "CHECK_IDINFO_ERROR",
+    ocrinfoErr: "OCR_INFO_ERROR",
+    ocrinfoUploadErr: "OCR_INFO_UPLOAD_ERROR",
+    ocrinfoUploadFail: "OCR_INFO_UPLOAD_FAIL",
+    preLivingbodyExecErr: "PRE_LIVINGBODY_EXEC_ERROR",
+    livingbodyVerifyErr: "LIVINGBODY_VERIFY_ERROR",
+    exitVerifyFail: "EXIT_VERIFY_FAIL",
+    lipcodeErr: "LIP_CODE_ERROR",
+    memoryWarn: "MEMORY_WARNING"
+};

@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "realPhoneLogin": "/cms_extension_package/RAW/registLogin/phoneLogin/index",
+        "c_0ctv8705zxx8d3": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "realPhoneLogin": "c_0ctv8705zxx8d3"
+    }
+}

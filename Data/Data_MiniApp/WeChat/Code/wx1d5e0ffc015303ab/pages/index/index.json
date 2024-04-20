@@ -1,0 +1,19 @@
+{
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "首页",
+    "usingComponents": {
+        "progress-bar": "/components/progress-bar/progress-bar",
+        "main-title": "/components/main-title/main-title",
+        "act-com": "/components/act-com/act-com",
+        "privacy": "/components/privacy/privacy",
+        "ad-dialog": "/components/ad-dialog/ad-dialog",
+        "shop-comui": "/components/shop-comui",
+        "app-title": "/components/app-title",
+        "brand-act": "/components/brand-act",
+        "index-a-c-t-list": "/components/indexCom/indexACTList",
+        "mask-coupon": "/components/maskCoupon",
+        "zdmkefu": "/components/zdmkefu",
+        "red-pack-money-scan": "/components/red-pack-scan/red-pack-scan",
+        "app": "/components/privacy/privacy"
+    }
+}

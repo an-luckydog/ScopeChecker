@@ -1,0 +1,10 @@
+{
+    "component": true,
+    "usingComponents": {
+        "realRegistLogin": "/cms_extension_package/RAW/registLogin/index",
+        "c_ufhb3lank99cv": "/@titan/cs/ph/i"
+    },
+    "componentPlaceholder": {
+        "realRegistLogin": "c_ufhb3lank99cv"
+    }
+}

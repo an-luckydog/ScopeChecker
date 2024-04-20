@@ -1,0 +1,18 @@
+{
+    "navigationBarTitleText": "电影",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "usingComponents": {
+        "u-icon": "../../../node-modules/uview-plus/components/u-icon/u-icon",
+        "u-tabs": "../../../node-modules/uview-plus/components/u-tabs/u-tabs",
+        "c-film-card": "../../../components/c-film-card/c-film-card",
+        "c-cinema-card": "../../../components/c-cinema-card/c-cinema-card",
+        "u-loading-icon": "../../../node-modules/uview-plus/components/u-loading-icon/u-loading-icon",
+        "u-loadmore": "../../../node-modules/uview-plus/components/u-loadmore/u-loadmore",
+        "c-film-share": "../../../components/c-film-share/c-film-share",
+        "c-location-picker": "../../../components/c-location-picker/c-location-picker",
+        "c-page": "../../../components/c-page/c-page",
+        "film-vip-card": "../home/components/film-vip-card"
+    }
+}

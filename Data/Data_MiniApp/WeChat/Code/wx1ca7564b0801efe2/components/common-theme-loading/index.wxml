@@ -1,0 +1,7 @@
+<view class="page-loading-container">
+    <view class="content-container">
+        <view class="loading-container circle">
+            <view class="loading-shape"></view>
+        </view>
+    </view>
+</view>

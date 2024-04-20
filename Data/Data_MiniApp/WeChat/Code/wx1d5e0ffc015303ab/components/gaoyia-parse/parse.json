@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "weixin-parse-template": "/components/gaoyia-parse/components/wxParseTemplate0",
+        "app": "/components/privacy/privacy"
+    }
+}

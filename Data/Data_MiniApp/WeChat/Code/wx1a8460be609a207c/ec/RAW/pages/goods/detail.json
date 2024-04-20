@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "商品详情页",
+    "usingComponents": {
+        "titan-one-component": "/@titan/cs/oc/i"
+    },
+    "component": true
+}

@@ -1,0 +1,29 @@
+function getName(name, type) {
+    if (type === "large") {
+        return (typeof name === "string" ? [({
+            name: "div",
+            attrs: ({
+                style: "width: 100%;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;",
+            }),
+            children: [({
+                type: "text",
+                text: name,
+            })],
+        })] : name)
+    };
+    return (typeof name === "string" ? [({
+        type: "text",
+        text: name,
+    })] : name)
+};
+
+function getPic(pic, size) {
+    if (size === "large") {
+        return (pic || "https://p0.meituan.net/scarlett/d3a2a935c8d18fc7828f7f069fb8ba4f3410.jpg@_80q")
+    };
+    return (pic || "https://p0.meituan.net/scarlett/ca45859124838c068622a75a818b064a1640.jpg")
+};
+module.exports = ({
+    getName: getName,
+    getPic: getPic,
+});

@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "rec-feed-item": "/components/common/rec-feed/rec-feed-item/rec-feed-item"
+    }
+}

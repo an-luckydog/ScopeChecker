@@ -1,0 +1,7 @@
+<view bindtap="__e" class="{{['u-icon','data-v-31f9995e','u-icon--'+labelPos]}}" data-event-opts="{{[ [ 'tap',[ [ 'click',['$event'] ] ] ] ]}}" style="{{$root.s0}}">
+    <image class="u-icon__img data-v-31f9995e" mode="{{imgMode}}" src="{{name}}" style="{{$root.s1}}" wx:if="{{isImg}}"></image>
+    <text bindtouchstart="__e" class="{{['u-icon__icon','data-v-31f9995e',customClass]}}" data-event-opts="{{[ [ 'touchstart',[ [ 'touchstart',['$event'] ] ] ] ]}}" hoverClass="{{hoverClass}}" style="{{$root.s2}}" wx:else>
+        <text class="{{['u-icon__decimal','data-v-31f9995e',decimalIconClass]}}" hoverClass="{{hoverClass}}" style="{{$root.s3}}" wx:if="{{showDecimalIcon}}"></text>
+    </text>
+    <text class="u-icon__label data-v-31f9995e" style="{{'color:'+labelColor+';'+'font-size:'+$root.g0+';'+'margin-left:'+(labelPos=='right'?$root.g1:0)+';'+'margin-top:'+(labelPos=='bottom'?$root.g2:0)+';'+'margin-right:'+(labelPos=='left'?$root.g3:0)+';'+'margin-bottom:'+(labelPos=='top'?$root.g4:0)+';'}}" wx:if="{{label!==''}}">{{label+''}}</text>
+</view>

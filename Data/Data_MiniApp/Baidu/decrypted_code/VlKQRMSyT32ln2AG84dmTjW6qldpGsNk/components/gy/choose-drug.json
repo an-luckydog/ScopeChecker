@@ -1,0 +1,1 @@
+{"component":true,"usingComponents":{"c-popup":"../../mars_modules/@baidu/med-ui/dist/swan/components/Popup/Popup","drug-order-item":"./drug-order-item","c-checkbox":"../common/checkbox","c-button":"../../mars_modules/@baidu/med-ui/dist/swan/components/Button/Button"}}
