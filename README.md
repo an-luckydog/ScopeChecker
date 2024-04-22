@@ -66,21 +66,17 @@ To comprehensively study the impact of the scope misalignment, we have developed
 ### API-ScopeChecker
 
 #### Environment_1
+
 - Operating System: Windows 10/11
-- Android Device Version: Android 10~13
-- Appium Version: v1.22.3 (See [Appium Installation Guide](http://appium.io/docs/en/2.0/))
-- Android Debug Bridge (ADB) Version: 1.0.41
-- Python Version: 3.8
-
-
-Operating System: Windows 10/11 and macOS 13 is tested, but it should work on other versions as well.
-
-Python Version: >= 3.6
-
-Node.js Version: >= 12.22.12
+- IntelliJ IDEA Version：2023.3.6
+- Wechatdevtools：Stable 1.06.2307260
+- Java Version: Java8
 
 #### Installation_1
 
+1. IntelliJ IDEA Version [here](https://www.jetbrains.com/idea/download/?section=windows)
+2. Wechatdevtools [here](https://www.jetbrains.com/idea/download/?section=windows) other superApp ([QQ](),[Alipay](),[Baidu](),[Tiktok]())
+3. Java Version [here](https://www.jetbrains.com/idea/download/?section=windows)
 #### Seamless Deployment_1
 
 #### Usage_1
