@@ -11,16 +11,16 @@
 
 - [ScopeChecker](#scopechecker)
 
-  - [API-ScopeChecker](#api--scopechecker)
-    - [APISC-Environment](#apisc--environment)
-    - [APISC-Installation](#apisc--installation)
-    - [APISC-Seamless Deployment](#apisc--seamless-deployment)
-    - [APISC-Usage](#apisc--usage)
-  - [APP-ScopeChecker](#app--scopechecker)
-    - [APPSC-Environment](#appsc--environment)
-    - [APPSC-Installation](#appsc--installation)
-    - [APPSC-Seamless Deployment](#appsc--seamless-deployment)
-    - [APPSC-Usage](#appsc--usage)
+  - [API-ScopeChecker](#api-scopechecker)
+    - [Environment1](#environment1)
+    - [Installation1](#installation1)
+    - [Seamless Deployment1](#seamless-deployment1)
+    - [Usage1](#usage1)
+  - [APP-ScopeChecker](#app-scopechecker)
+    - [Environment2](#environment2)
+    - [Installation2](#installation2)
+    - [Seamless Deployment2](#seamless-deployment2)
+    - [Usage2](#usage2)
    
 - [Result](#result)
  
