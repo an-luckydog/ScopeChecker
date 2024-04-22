@@ -7,20 +7,20 @@
 
   - [Background](#background)
 
-  - [Motivating Examples](#motivating-example)
+  - [Motivating Examples](#motivating-examples)
 
 - [ScopeChecker](#scopechecker)
 
   - [API-ScopeChecker](#api-scopechecker)
-    - [Environment1](#environment1)
-    - [Installation1](#installation1)
-    - [Seamless Deployment1](#seamless-deployment1)
-    - [Usage1](#usage1)
+    - [Environment_1](#environment_1)
+    - [Installation_1](#installation_1)
+    - [Seamless Deployment_1](#seamless-deployment_1)
+    - [Usage_1](#usage_1)
   - [APP-ScopeChecker](#app-scopechecker)
-    - [Environment2](#environment2)
-    - [Installation2](#installation2)
-    - [Seamless Deployment2](#seamless-deployment2)
-    - [Usage2](#usage2)
+    - [Environment_2](#environment_2)
+    - [Installation_2](#installation_2)
+    - [Seamless Deployment_2](#seamless-deployment_2)
+    - [Usage_2](#usage_2)
    
 - [Result](#result)
  
@@ -65,7 +65,7 @@ To comprehensively study the impact of the scope misalignment, we have developed
 
 ### API-ScopeChecker
 
-#### Environment1
+#### Environment_1
 - Operating System: Windows 10/11
 - Android Device Version: Android 10~13
 - Appium Version: v1.22.3 (See [Appium Installation Guide](http://appium.io/docs/en/2.0/))
@@ -79,15 +79,15 @@ Python Version: >= 3.6
 
 Node.js Version: >= 12.22.12
 
-#### Installation1
+#### Installation_1
 
-#### Seamless Deployment1
+#### Seamless Deployment_1
 
-#### Usage1
+#### Usage_1
 
 ### APP-ScopeChecker
 
-#### Environment2
+#### Environment_2
 
 We recommend using a virtual environment to install the required packages.
 
@@ -95,9 +95,9 @@ Start by cloning the PCDA_APP from GitHub using the following command:
 
 git clone https://github.com/an-luckydog/ScopeChecker
 
-#### Installation2
+#### Installation_2
 
-#### Seamless Deployment2
+#### Seamless Deployment_2
 
 Add the following configuration to the `config.json` file:
 
@@ -142,7 +142,7 @@ The `type` field is used to specify the type of the applets. It is mapped to the
 
 If `append` is set to `false`, the output `applet_info.csv` file will be overwritten.
 
-#### Usage2
+#### Usage_2
 
 Navigate to the PCDA_APP directory and install the required packages using the following command:
 
