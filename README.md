@@ -5,7 +5,7 @@
 
 - [API-Scope Misalignment in the App-in-App Ecosystem](#api-scope-misalignment-in-the-app-in-app-ecosystem)
 
-  - [Backgrund](#background)
+  - [Background](#background)
 
   - [Motivating Examples](#motivating-example)
 
@@ -40,7 +40,7 @@ As a highlight, we received 8 positive responses from the superApp developers an
 
 ## API-Scope Misalignment in the App-in-App Ecosystem
 
-### Backgrund
+### Background
 
 To alleviate the challenges of traditional apps such as development complexity, cumbersome installation, and high resource consumption, mobile operating systems have developed a new app-in-app paradigm, which enables superApps to delegate specific functionalities and permissions to miniApps via providing APIs. These miniApps invoke the APIs of superApps to implement specific functionalities to meet the various requirements of users, such as social interactions, entertainment, travel and consumption. To enrich customized functionalities akin to native apps, the miniApps commonly integrate specialized web technologies like JavaScript, which empowers the miniApp to support cross-platform execution and installation-free usage. Once user installs a superApp, he/she gains the ability to engage with all the miniApps of that superApp. Such app-in-app paradigm allows superApps (e.g., WeChat, Facebook, TikTok) to build their own app ecosystems composed of miniApps, mirroring the profile of traditional app stores (Google Play, Apple Store). Notably, some top app-in-app ecosystems have gained remarkable user attraction, exceeding the scale of the traditional apps of mobile system.
 
@@ -65,7 +65,7 @@ To comprehensively study the impact of the scope misalignment, we have developed
 
 ### API-ScopeChecker
 
-#### Environment
+#### Environment1
 - Operating System: Windows 10/11
 - Android Device Version: Android 10~13
 - Appium Version: v1.22.3 (See [Appium Installation Guide](http://appium.io/docs/en/2.0/))
@@ -79,15 +79,15 @@ Python Version: >= 3.6
 
 Node.js Version: >= 12.22.12
 
-#### Installation
+#### Installation1
 
-#### Seamless Deployment
+#### Seamless Deployment1
 
-#### Usage
+#### Usage1
 
 ### APP-ScopeChecker
 
-#### Environment
+#### Environment2
 
 We recommend using a virtual environment to install the required packages.
 
@@ -95,9 +95,9 @@ Start by cloning the PCDA_APP from GitHub using the following command:
 
 git clone https://github.com/an-luckydog/ScopeChecker
 
-#### Installation
+#### Installation2
 
-#### Seamless Deployment
+#### Seamless Deployment2
 
 Add the following configuration to the `config.json` file:
 
@@ -142,7 +142,7 @@ The `type` field is used to specify the type of the applets. It is mapped to the
 
 If `append` is set to `false`, the output `applet_info.csv` file will be overwritten.
 
-#### Usage
+#### Usage2
 
 Navigate to the PCDA_APP directory and install the required packages using the following command:
 
