@@ -70,13 +70,14 @@ To comprehensively study the impact of the scope misalignment, we have developed
 - Operating System: Windows 10/11
 - IntelliJ IDEA Version：2023.3.6
 - Wechatdevtools：Stable 1.06.2307260
-- Java Version: Java8
+- Java Version: Java 8
 
 #### Installation_1
 
-1. IntelliJ IDEA Version [here](https://www.jetbrains.com/idea/download/?section=windows)
-2. Wechatdevtools [here](https://www.jetbrains.com/idea/download/?section=windows) other superApp ([QQ](),[Alipay](),[Baidu](),[Tiktok]())
-3. Java Version [here](https://www.jetbrains.com/idea/download/?section=windows)
+1. IntelliJ IDEA Version [here](https://www.jetbrains.com/idea/download/?section=windows).
+2. Wechatdevtools [here](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html). other superApp ([QQ](https://q.qq.com/wiki/tools/devtool/),[Alipay](https://opendocs.alipay.com/mini/ide/overview),[Baidu](https://smartprogram.baidu.com/docs/introduction/tool/),[Tiktok](https://developer.open-douyin.com/docs/resource/zh-CN/developer/tools/ide))
+3. Java Version：Java 8 [here](https://www.oracle.com/java/technologies/downloads/#java8-windows).
+
 #### Seamless Deployment_1
 
 #### Usage_1
