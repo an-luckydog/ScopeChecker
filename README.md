@@ -52,10 +52,8 @@ Similar to the permission mechanism in Android apps, miniApps need to request pe
 A representative instance of scope misalignment is illustrated in Fig. 1, depicting a permission request anomaly. The JD Shopping is a miniApp developed on top of the WeChat superApp. The JD miniApp provides a photo search feature (camera for search), indicated as the camera icon in Fig. 1(a)-① . When user clicks on the icon, a pop-up menu appears with two options: "Camera" and "Choose from album". If the user selects "Camera" (Fig. 1(a)-② ), the screen directly prompts to "Take Photo" (Fig. 1(b)) without requiring any permission to access the camera. 
 
 When the user checks permission setting for the camera for search feature, by clicking on the settings button of the JD miniApp (Fig.1(c)-③ ), on the permissions settings page, there is no camera related permission (Fig.1(d)). Even when the permission setting is closed, the camera resources can still be accessed. As s contrast, in another miniApp ID Photo, when user accesses the camera feature, a camera permission request is prompted and the permission settings page appropriately includes a "Camera" setting (Fig. 1(e)). 
-
+![](./Figures/motivating.png)
 Such permission request anomalies within the app-in-app ecosystem can easily be exploited by attackers, leading to security threats and functionality issues, such as privilege escalation, privacy leaks, component failure, which motivates us to systematically study it.
-
-![](./Figures/motivating.svg)
 
 ## ScopeChecker
 
