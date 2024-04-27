@@ -13,12 +13,10 @@
 
   - [API-ScopeChecker](#api-scopechecker)
     - [Environment_1](#environment_1)
-    - [Installation_1](#installation_1)
     - [Seamless Deployment_1](#seamless-deployment_1)
     - [Usage_1](#usage_1)
   - [APP-ScopeChecker](#app-scopechecker)
     - [Environment_2](#environment_2)
-    - [Installation_2](#installation_2)
     - [Seamless Deployment_2](#seamless-deployment_2)
     - [Usage_2](#usage_2)
    
@@ -43,9 +41,8 @@ As a highlight, we received 8 positive responses from the superApp developers an
 ### Background
 
 To alleviate the challenges of traditional apps such as development complexity, cumbersome installation, and high resource consumption, mobile operating systems have developed a new app-in-app paradigm, which enables superApps to delegate specific functionalities and permissions to miniApps via providing APIs. These miniApps invoke the APIs of superApps to implement specific functionalities to meet the various requirements of users, such as social interactions, entertainment, travel and consumption. To enrich customized functionalities akin to native apps, the miniApps commonly integrate specialized web technologies like JavaScript, which empowers the miniApp to support cross-platform execution and installation-free usage. Once user installs a superApp, he/she gains the ability to engage with all the miniApps of that superApp. Such app-in-app paradigm allows superApps (e.g., WeChat, Facebook, TikTok) to build their own app ecosystems composed of miniApps, mirroring the profile of traditional app stores (Google Play, Apple Store). Notably, some top app-in-app ecosystems have gained remarkable user attraction, exceeding the scale of the traditional apps of mobile system.
-
+![](./Figures/app-in-app.png)
 Similar to the permission mechanism in Android apps, miniApps need to request permissions when accessing to sensitive data. Nevertheless, in the app-in-app paradigm, the permission management is delegated to the superApp rather than the mobile system. And the miniApps’ permission requests have two restrictions: The available permissions to be requested are limited by the permissions granted for the superApp; The permissions have to be requested through specific APIs provided by superApps. However, the superApps’ permissions for miniApps are not at the granularity of the APIs, as one sensitive resource may have different APIs. Instead, superApps defines multiple permission scopes, each of which corresponds to specific type of sensitive resource. The privileged APIs are mapped to the scopes based on their usage and the accessed resources. A scope may contain one API or multiple APIs, and once a scope is granted to an API, all the APIs in that category are granted with access to the correspondingly resources. The permission request is realized by dynamically popping-up prompts to guide user making the decision for granting access ("accept" or "reject"), similar to the approach used in the Android apps. The developers of miniApps can invoke the getSetting API to obtain the permission granting status, and invoke the openSetting API to open the setting page for permission granting. Users can view and adjust the permission granting status for any miniApp via the miniApp’s settings page (located under "About" − > "Settings").
-
 
 ### Motivating Examples
 
@@ -66,34 +63,41 @@ To comprehensively study the impact of the scope misalignment, we have developed
 
 #### Environment_1
 
-- Operating System: Windows 10/11
-- IntelliJ IDEA Version：2023.3.6
-- Wechatdevtools：Stable 1.06.2307260
-- Java Version: Java 8
-
-#### Installation_1
-
-1. IntelliJ IDEA Version [here](https://www.jetbrains.com/idea/download/?section=windows).
-2. Wechatdevtools [here](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html). other superApp ([QQ](https://q.qq.com/wiki/tools/devtool/),[Alipay](https://opendocs.alipay.com/mini/ide/overview),[Baidu](https://smartprogram.baidu.com/docs/introduction/tool/),[Tiktok](https://developer.open-douyin.com/docs/resource/zh-CN/developer/tools/ide))
-3. Java Version：Java 8 [here](https://www.oracle.com/java/technologies/downloads/#java8-windows).
+- Operating System: Windows 10/11.
+- [IntelliJ IDEA Version](https://www.jetbrains.com/idea/download/?section=windows)：2023.3.6.
+- [Wechatdevtools](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)：Stable 1.06.2307260. other superApp ([QQ](https://q.qq.com/wiki/tools/devtool/),[Alipay](https://opendocs.alipay.com/mini/ide/overview),[Baidu](https://smartprogram.baidu.com/docs/introduction/tool/),[Tiktok](https://developer.open-douyin.com/docs/resource/zh-CN/developer/tools/ide))
+- [Java Version](https://www.oracle.com/java/technologies/downloads/#java8-windows): Java 8.
 
 #### Seamless Deployment_1
 
+Backend: Start the GptServer file in IDEA  and add the following configuration to the /target/classes/application.yaml configuration file:
+```bash
+gpt:
+  model:
+    key: "your gpt key"
+  proxy:
+   host: 127.0.0.1
+   port: 7890
+```
+Start test.java.
+Frontend：Start the MiniApp file in Wechatdevtools.Compile and run.
+
 #### Usage_1
+
+Enter the Applet API you wish to test (e.g., wx.chooseImage), then click 'Send'. The dialog box will promptly exhibit the test code generated by the comprehensive model. Should any discrepancies arise in the generated test code, kindly re-enter the API (e.g., wx.chooseImage), and the comprehensive model will promptly furnish the refined test code. Simply click 'Run', and the dialog box will autonomously execute the API's test code. For additional details, click 'Settings', where the scope information of the current API and the comparative analysis will be readily displayed.
 
 ### [APP-ScopeChecker](https://github.com/an-luckydog/ScopeChecker/tree/master/ScopeChecker/APP-ScopeChecker)
 
 #### Environment_2
 
 - Operating System: Windows 10/11
-- Python Version: >= 3.6
-- Node.js Version: >= 12.22.12
-
-#### Installation_2
+- [Python Version](https://www.python.org/downloads/): >= 3.6
+- [Node.js Version](https://nodejs.cn/download/): >= 12.22.12
+- [pycharm](https://www.jetbrains.com/pycharm/download/?section=windows#section=windows) ：2023.2
 
 #### Seamless Deployment_2
 
-##### Installing the Required Packages
+1. Installing the Required Packages
 
 Navigate to the PCDA_APP directory and install the required packages using the following command:
 ```bash
@@ -101,7 +105,7 @@ pip install -r requirements.txt
 ```
 We recommend using a virtual environment to install the required packages.
 
-##### Preparing the Configuration File
+2. Preparing the Configuration File
 
 Add the following configuration to the `config.json` file(The problem_apis parameter lists some of the problem api's, the full problem api's can be obtained from the Result documentation):
 ```json
