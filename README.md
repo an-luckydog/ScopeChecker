@@ -103,7 +103,7 @@ Enter the Applet API you wish to test (e.g., wx.chooseImage), then click 'Send'.
 
 1. Installing the Required Packages
 
-Navigate to the PCDA_APP directory and install the required packages using the following command:
+Navigate to the APP directory and install the required packages using the following command:
 ```bash
 pip install -r requirements.txt
 ```
@@ -154,9 +154,9 @@ If `append` is set to `false`, the output `applet_info.csv` file will be overwri
 
 #### Usage_2
 
-You should have the `config.json` file ready before running the PCDA detection script and having the WeChat or other applets as it is in the `input_applets_dir` directory.
+You should have the `config.json` file ready before running the detection script and having the WeChat or other applets as it is in the `input_applets_dir` directory.
 
-To test the PCDA detection script, run the following command:
+To test the detection script, run the following command:
 
 ```bash
 python3 main.py
