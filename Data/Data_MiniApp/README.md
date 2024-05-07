@@ -1,1 +1,1 @@
-Due to the file size limitation, only part of the source code and detection results of the applets in WeChat and Baidu Super App Platform are shown here, and the source code of other QQ, Alipay and Jitterbug applets can be obtained and analysed by using our method.
+Due to the file size limitation, only part of the source code and detection results of the miniApps in WeChat and Baidu superApp Platform are shown here, and the source code of other QQ, Alipay and Jitterbug applets can be obtained and analysed by using our method.
