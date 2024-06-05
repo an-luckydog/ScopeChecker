@@ -3,5 +3,3 @@
 **API-Scope Mapping**: This table lists the mapping of super application api -> system api -> system permissions -> Scope.
 
 **Scope Misalignment API**: This table lists the details of api's with Scope misalignment issues.
-
-**Scope Misalignment APP**: This table lists the details of app's with Scope misalignment issues.
