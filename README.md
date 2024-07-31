@@ -36,7 +36,7 @@ The "app-in-app" paradigm is an emerging trend in mobile system, where super app
 
 In this work, we conduct the first systematic study on the scope misalignment issues in the app-in-app ecosystems, uncovering their root causes and security risks. More importantly, we have developed an automatic tool ScopeChecker with LLM-based test case generation to accurately detect the scope misalignment in both superApps and miniApps. The ScopeChecker successfully identified 38 misaligned APIs in 5 top superApps after careful manual confirmation, achieving an optimal detection accuracy compared to the state-of-the-art miniAppfocused test methods. 
 
-As a highlight, we received 8 positive responses from the superApp developers and CNVD, encompassing 6 vulnerability confirmations with rewards: 1 high-risk (Baidu SRC: 1771863724718559232), 4 medium-risk (CNVD-2024-17003, CNVD-2024-15202 and 2 from Tencent SRC) and 1 low-risk (from TikTok SRC). To further explore the prevalence of scope misalignment in miniApps, the ScopeChecker is used to check over 42𝑘 realworld miniApps. The statistical verification result demonstrates that 51% of minApps have scope misalignment, with an average of 1.4 misaligned APIs per miniApp. Additionally, we illustrated 4 types of security threats raised by the scope misalignment by analyzing real-world exploitation cases. The materials of ScopeChecker are available at https://github.com/an-luckydog/ScopeChecker.
+As a highlight, we received 8 positive responses from the superApp developers and CNVD, encompassing 9 vulnerability confirmations with rewards: 1 high-risk (Baidu SRC: 1771863724718559232), 7 medium-risk (CNVD-2024-17003, CNVD-2024-15202, CNVD-2024-21831, CNVD-2024-33306, CNVD-2024-33307 and 2 from Tencent SRC) and 1 low-risk (from TikTok SRC). To further explore the prevalence of scope misalignment in miniApps, the ScopeChecker is used to check over 42𝑘 realworld miniApps. The statistical verification result demonstrates that 51% of minApps have scope misalignment, with an average of 1.4 misaligned APIs per miniApp. Additionally, we illustrated 4 types of security threats raised by the scope misalignment by analyzing real-world exploitation cases. The materials of ScopeChecker are available at https://github.com/an-luckydog/ScopeChecker.
 
 ## API-Scope Misalignment in the App-in-App Ecosystem
 
@@ -188,7 +188,7 @@ Scope misalignment may result in at least four types of malicious exploitation a
 
 ### [Vendor Response](https://github.com/an-luckydog/ScopeChecker/tree/master/Vendor%20Response)
 
-To gain insights from the SuperApp developers, we reported the scope misalignment issues and some typical misaligned APIs (e.g., qq.chooseVideo(), wx.getClipboardData(), swan.getClipboardData()) to the corresponding superApp development teams, including Baidu/TikTok/Tencent Security Response Center (SRC), and WeChat Support Teams. To date, we have received 8 positive responses, including 6 vulnerability confirmations with rewards: 1 high-risk from Baidu SRC, 2 medium-risk from Tencent SRC, 2 medium-risk from CNVD (CNVD-2024-17003, CNVD-2024-15202) and 1 low-risk from TikTok SRC.
+To gain insights from the SuperApp developers, we reported the scope misalignment issues and some typical misaligned APIs (e.g., qq.chooseVideo(), wx.getClipboardData(), swan.getClipboardData()) to the corresponding superApp development teams, including Baidu/TikTok/Tencent Security Response Center (SRC), and WeChat Support Teams. To date, we have received 8 positive responses, including 6 vulnerability confirmations with rewards: 1 high-risk from Baidu SRC, 2 medium-risk from Tencent SRC, 5 medium-risk from CNVD (CNVD-2024-17003, CNVD-2024-15202, CNVD-2024-21831, CNVD-2024-33306, CNVD-2024-33307) and 1 low-risk from TikTok SRC.
 
 Specifically, Baidu SRC and Tencent SRC recognised the great importance of the scope misalignment issues, classifying them as high-risk and medium-risk vulnerabilities, respectively. Tencent SRC places them into their core business area with a threat score of 5 (the highest score among medium-risks) with a contribution value of 175 (the highest value among medium-risks). The responses from these superApp developers indicate a high level of acknowledgement of the scope misalignment issues, affirming the practical security value of our study results.
 
@@ -200,5 +200,4 @@ Specifically, Baidu SRC and Tencent SRC recognised the great importance of the s
 
 **Scope Misalignment API**: This table lists the details of api's with Scope misalignment issues.
 
-**Scope Misalignment APP**: This table lists the details of app's with Scope misalignment issues.
 
