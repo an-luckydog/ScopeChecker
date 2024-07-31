@@ -20,13 +20,15 @@
     - [Seamless Deployment_2](#seamless-deployment_2)
     - [Usage_2](#usage_2)
    
-- [Result](#result)
+- [In The End](#in-the-end)
  
   - [Data](#data)
  
   - [Attack Video Demos](#attack-video-demos)
  
   - [Vendor Response](#vendor-response)
+
+  - [Results](#results)
 
 ## Abstract
 
@@ -41,7 +43,9 @@ As a highlight, we received 8 positive responses from the superApp developers an
 ### Background
 
 To alleviate the challenges of traditional apps such as development complexity, cumbersome installation, and high resource consumption, mobile operating systems have developed a new app-in-app paradigm, which enables superApps to delegate specific functionalities and permissions to miniApps via providing APIs. These miniApps invoke the APIs of superApps to implement specific functionalities to meet the various requirements of users, such as social interactions, entertainment, travel and consumption. To enrich customized functionalities akin to native apps, the miniApps commonly integrate specialized web technologies like JavaScript, which empowers the miniApp to support cross-platform execution and installation-free usage. Once user installs a superApp, he/she gains the ability to engage with all the miniApps of that superApp. Such app-in-app paradigm allows superApps (e.g., WeChat, Facebook, TikTok) to build their own app ecosystems composed of miniApps, mirroring the profile of traditional app stores (Google Play, Apple Store). Notably, some top app-in-app ecosystems have gained remarkable user attraction, exceeding the scale of the traditional apps of mobile system.
+
 ![](./Figures/app-in-app.png)
+
 Similar to the permission mechanism in Android apps, miniApps need to request permissions when accessing to sensitive data. Nevertheless, in the app-in-app paradigm, the permission management is delegated to the superApp rather than the mobile system. And the miniApps’ permission requests have two restrictions: The available permissions to be requested are limited by the permissions granted for the superApp; The permissions have to be requested through specific APIs provided by superApps. However, the superApps’ permissions for miniApps are not at the granularity of the APIs, as one sensitive resource may have different APIs. Instead, superApps defines multiple permission scopes, each of which corresponds to specific type of sensitive resource. The privileged APIs are mapped to the scopes based on their usage and the accessed resources. A scope may contain one API or multiple APIs, and once a scope is granted to an API, all the APIs in that category are granted with access to the correspondingly resources. The permission request is realized by dynamically popping-up prompts to guide user making the decision for granting access ("accept" or "reject"), similar to the approach used in the Android apps. The developers of miniApps can invoke the getSetting API to obtain the permission granting status, and invoke the openSetting API to open the setting page for permission granting. Users can view and adjust the permission granting status for any miniApp via the miniApp’s settings page (located under "About" − > "Settings").
 
 ### Motivating Examples
@@ -70,7 +74,7 @@ To comprehensively study the impact of the scope misalignment, we have developed
 
 #### Seamless Deployment_1
 
-Backend: Start the GptServer file in IDEA  and add the following configuration to the /target/classes/application.yaml configuration file:
+1. Backend: Start the GptServer file in IDEA  and add the following configuration to the /target/classes/application.yaml configuration file:
 ```bash
 gpt:
   model:
@@ -79,8 +83,8 @@ gpt:
    host: 127.0.0.1
    port: 7890
 ```
-Start test.java.
-Frontend：Start the MiniApp file in Wechatdevtools.Compile and run.
+Start Backend test.java.
+2. Frontend：Start the MiniApp file in Wechatdevtools. Compile and run.
 
 #### Usage_1
 
@@ -99,7 +103,7 @@ Enter the Applet API you wish to test (e.g., wx.chooseImage), then click 'Send'.
 
 1. Installing the Required Packages
 
-Navigate to the PCDA_APP directory and install the required packages using the following command:
+Navigate to the APP directory and install the required packages using the following command:
 ```bash
 pip install -r requirements.txt
 ```
@@ -150,9 +154,9 @@ If `append` is set to `false`, the output `applet_info.csv` file will be overwri
 
 #### Usage_2
 
-You should have the `config.json` file ready before running the PCDA detection script and having the WeChat or other applets as it is in the `input_applets_dir` directory.
+You should have the `config.json` file ready before running the detection script and having the WeChat or other applets as it is in the `input_applets_dir` directory.
 
-To test the PCDA detection script, run the following command:
+To test the detection script, run the following command:
 
 ```bash
 python3 main.py
@@ -174,9 +178,9 @@ Specifically, this folder lists the various data generated in the project includ
 
 ### [Data](https://github.com/an-luckydog/ScopeChecker/tree/master/Data)
 
-Data_MiniApp: This folder contains the applet source files, source code, inspection results and other files of each platform generated by APP_ScopeChecker in the inspection process.
+**Data_MiniApp**: This folder contains the applet source files, source code, inspection results and other files of each platform generated by APP_ScopeChecker in the inspection process.
 
-Data_SuperApi: This table lists the api execution samples generated during API_ScopeChecker execution, the actual Scope case, the standard Scope case, and the comparison results.
+**Data_SuperApi**: This table lists the api execution samples generated during API_ScopeChecker execution, the actual Scope case, the standard Scope case, and the comparison results.
 
 ### [Attack Video Demos](https://github.com/an-luckydog/ScopeChecker/tree/master/Attack%20%20Video%20Demos)
 
@@ -184,15 +188,17 @@ Scope misalignment may result in at least four types of malicious exploitation a
 
 ### [Vendor Response](https://github.com/an-luckydog/ScopeChecker/tree/master/Vendor%20Response)
 
-To gain insights from the SuperApp developers, we reported the scope misalignment issues and some typical misaligned APIs (e.g., qq.chooseVideo(), wx.getClipboardData(), swan.getClipboardData()) to the corresponding superApp development teams, including Baidu/TikTok/Tencent Security Response Center (SRC), and WeChat Support Teams. To date, we have received 8 positive responses, including 6 vulnerability confirmations with rewards: 1 high-risk from Baidu SRC, 2 medium-risk from Tencent SRC, 2 medium-risk from CNVD (CNVD-2024-17003, CNVD-2024-15202) and 1 low-risk from TikTok SRC. The received responses are summarised in Table 6. Specifically, Baidu SRC and Tencent SRC recognised the great importance of the scope misalignment issues, classifying them as high-risk and medium-risk vulnerabilities, respectively. Tencent SRC places them into their core business area with a threat score of 5 (the highest score among medium-risks) with a contribution value of 175 (the highest value among medium-risks). The responses from these superApp developers indicate a high level of acknowledgement of the scope misalignment issues, affirming the practical security value of our study results.
+To gain insights from the SuperApp developers, we reported the scope misalignment issues and some typical misaligned APIs (e.g., qq.chooseVideo(), wx.getClipboardData(), swan.getClipboardData()) to the corresponding superApp development teams, including Baidu/TikTok/Tencent Security Response Center (SRC), and WeChat Support Teams. To date, we have received 8 positive responses, including 6 vulnerability confirmations with rewards: 1 high-risk from Baidu SRC, 2 medium-risk from Tencent SRC, 2 medium-risk from CNVD (CNVD-2024-17003, CNVD-2024-15202) and 1 low-risk from TikTok SRC.
+
+Specifically, Baidu SRC and Tencent SRC recognised the great importance of the scope misalignment issues, classifying them as high-risk and medium-risk vulnerabilities, respectively. Tencent SRC places them into their core business area with a threat score of 5 (the highest score among medium-risks) with a contribution value of 175 (the highest value among medium-risks). The responses from these superApp developers indicate a high level of acknowledgement of the scope misalignment issues, affirming the practical security value of our study results.
 
 ### [Results](https://github.com/an-luckydog/ScopeChecker/tree/master/Result)
 
-Scope: The Wechat, QQ, Alipay, Tiktok, Baidu table lists the scope of each of the major mainstream super apps, the Scope General table lists the scope comparisons between them, and the Standard Scope table lists our standard scopes.
+**Scope**: The Wechat, QQ, Alipay, Tiktok, Baidu table lists the scope of each of the major mainstream super apps, the Scope General table lists the scope comparisons between them, and the Standard Scope table lists our standard scopes.
 
-API-Scope Mapping: This table lists the mapping of super application api -> system api -> system permissions -> Scope.
+**API-Scope Mapping**: This table lists the mapping of super application api -> system api -> system permissions -> Scope.
 
-Scope Misalignment API: This table lists the details of api's with Scope misalignment issues.
+**Scope Misalignment API**: This table lists the details of api's with Scope misalignment issues.
 
-Scope Misalignment APP: This table lists the details of app's with Scope misalignment issues.
+**Scope Misalignment APP**: This table lists the details of app's with Scope misalignment issues.
 
