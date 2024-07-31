@@ -149,6 +149,7 @@ The `type` field is used to specify the type of the applets. It is mapped to the
 | Baidu     | swan        |
 | QQ        | qq          |
 | Alipay    | my          |
+| Tiktok    | tt          |
 
 If `append` is set to `false`, the output `applet_info.csv` file will be overwritten.
 
