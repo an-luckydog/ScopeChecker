@@ -1,6 +1,9 @@
+venv
 .vscode/
-example/
-node_modules/
-package-lock.json
-yimuhaha
-yimuhaha.pub
+.idea/
+config*.json
+__pycache__/
+.DS_Store
+# folder start with "output_last"
+output*/
+
