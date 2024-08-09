@@ -1,32 +1,23 @@
-import os
-from config import Config
-from reader import AppletPathReader
-from utils.decrypter import AppletDecrypter
-from utils.unpacker import AppletUnpacker
-from analyzer import AppletAnalyzer
-from writer import ResultWriter
-import shutil
+import requests
+from bs4 import BeautifulSoup
 
-if __name__ == '__main__':
-    config = Config('config.json')
-    config.prepare()
-    type = config.type
-    reader = AppletPathReader(config.input_applets_dir, type)
-    problem_apis = config.problem_apis
-    writer = ResultWriter(config.report_dir, problem_apis, config.append, type)
+# 定义URL
+url = "https://developers.weixin.qq.com/miniprogram/dev/api/"
 
-    for appid, path in reader:
-        code_path = path
-        if type == 'wx':
-            decrypter = AppletDecrypter(appid, input_path=path,
-                                        output_path=os.path.join(config.decrypted_wxapkg_dir, appid + '.wxapkg'))
-            decrypter.decrypt()
-            unpacker = AppletUnpacker(appid, input_path=decrypter.output_path,
-                                      output_path=os.path.join(config.decrypted_code_dir, appid))
-            unpacker.unpack()
-            code_path = unpacker.output_path
-        else:
-            shutil.copytree(path, os.path.join(config.decrypted_code_dir, appid))
-        analyzer = AppletAnalyzer(appid, code_path, type)
-        result = analyzer.analyze(search_strings=problem_apis)
-        writer.write(result)
+# 发送GET请求获取网页内容
+response = requests.get(url)
+response.encoding = 'utf-8'  # 确保正确的编码
+
+# 解析网页内容
+soup = BeautifulSoup(response.text, "html.parser")
+
+# 提取API名称
+api_names = []
+for link in soup.find_all('a', class_='NavigationItem__router-link'):
+    text = link.get_text(strip=True)
+    if text.startswith("wx."):
+        api_names.append(text)
+
+# 打印API名称
+for name in api_names:
+    print(name)
